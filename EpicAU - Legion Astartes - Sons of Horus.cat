@@ -188,7 +188,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <rules>
                     <rule id="b450-5bd1-0ceb-d051" name="Standard Transport" hidden="false">
-                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
+                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino carries 2 Tactical-sized units; one of them may be a Damocles Command Rhino. The count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
                     </rule>
                   </rules>
                   <selectionEntryGroups>
@@ -221,6 +221,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                           </costs>
                         </selectionEntry>
                         <selectionEntry id="cd73-1d74-4be9-8f5f" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="model">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ff3-c1a0-efd7-4007" type="max"/>
+                          </constraints>
                           <infoLinks>
                             <infoLink id="b035-57fc-7212-3e7b" name="Damocles Command Rhino" hidden="false" targetId="aca5-de2d-8301-eba8" type="profile"/>
                             <infoLink id="a510-7804-1bd9-3a69" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
@@ -1525,7 +1528,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <rules>
                     <rule id="12fb-1965-d726-ef57" name="Standard Transport" hidden="false">
-                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
+                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino carries 2 Tactical-sized units; one of them may be a Damocles Command Rhino. The count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
                     </rule>
                   </rules>
                   <selectionEntryGroups>
@@ -1558,6 +1561,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                           </costs>
                         </selectionEntry>
                         <selectionEntry id="4f5f-29ec-4ec6-d674" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="model">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2bf-05d8-fbe8-6aae" type="max"/>
+                          </constraints>
                           <infoLinks>
                             <infoLink id="4e6e-c5d6-7c0e-137b" name="Damocles Command Rhino" hidden="false" targetId="aca5-de2d-8301-eba8" type="profile"/>
                             <infoLink id="31f3-e8f5-3258-9cc6" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
@@ -2357,7 +2363,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <rules>
                     <rule id="9bd5-2763-fa97-b070" name="Standard Transport" hidden="false">
-                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
+                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino carries 2 Tactical-sized units; one of them may be a Damocles Command Rhino. The count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
                     </rule>
                   </rules>
                   <selectionEntryGroups>
@@ -2390,6 +2396,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                           </costs>
                         </selectionEntry>
                         <selectionEntry id="a716-d1cd-b6bd-5b38" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="model">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b522-cb44-95da-dc14" type="max"/>
+                          </constraints>
                           <infoLinks>
                             <infoLink id="d615-4924-b6f8-7af1" name="Damocles Command Rhino" hidden="false" targetId="aca5-de2d-8301-eba8" type="profile"/>
                             <infoLink id="f69e-0cc2-1e82-2c50" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>

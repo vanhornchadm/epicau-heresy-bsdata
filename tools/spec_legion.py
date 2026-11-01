@@ -38,9 +38,9 @@ CORE_UPGRADES = [
     UP('Rapier Battery', parts=[U((1, 4), 'Rapier', 50)]),
     UP('Support Squads', parts=[Or(Opt('Tactical Support', U((1, 4), 'Tactical Support Squad', 25)),
                                    Opt('Heavy Support', U((1, 4), 'Heavy Support Squad', 50)), label='Support Squads')]),
-    UP('Standard Transport', 0, parts=[Fill(2, ('Rhino Armoured Carrier', 0), ('Damocles Command Rhino', 0))],
+    UP('Standard Transport', 0, parts=[Fill(2, ('Rhino Armoured Carrier', 0), ('Damocles Command Rhino', 0, 1))],
        desc='Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. '
-            'Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the '
+            'Each Rhino carries 2 Tactical-sized units; one of them may be a Damocles Command Rhino. The count is set from the '
             'formation; add this upgrade last, or adjust the transports if you change units afterwards.'),
     UP('Tank', parts=[Mix(1, 2, ('Vindicator', 50), ('Predator', 60), ('Sicaran Battle Tank', 80),
                           ('Typhon Siege Tank', 150), ('Cerberus Tank Destroyer', 150))]),

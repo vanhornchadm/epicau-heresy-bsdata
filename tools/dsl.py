@@ -27,8 +27,12 @@ def Mix(lo, hi, *units, label='Units'):
 
 
 def Fill(per, *units, space='Tactical Transport Space', label='Transports'):
-    """Exactly enough transports for the formation: one per `per` units tagged with `space`, in any mix of `units`."""
-    return {'kind': 'fill', 'per': per, 'space': space, 'units': [U((0, None), n, c) for n, c in units], 'label': label}
+    """Exactly enough transports for the formation: one per `per` units tagged with `space`.
+
+    units are (name, cost) or (name, cost, max_per_formation), in any mix.
+    """
+    return {'kind': 'fill', 'per': per, 'space': space,
+            'units': [U((0, u[2] if len(u) > 2 else None), u[0], u[1]) for u in units], 'label': label}
 
 
 def Swap(lo, hi, *swaps, label='Upgrades'):

@@ -18,7 +18,6 @@ from spec_legion import legion_army, LEGIONS  # noqa: E402
 from spec_others import OTHER_ARMIES, TITAN_WEAPON_SLOTS  # noqa: E402
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(HERE)
-REVISION = 1
 BS_VERSION = '2.03'
 AUTHOR = 'EpicAU Horus Heresy (community) - BSData conversion'
 SOURCE_URL = 'https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page'
@@ -525,11 +524,39 @@ class Builder:
         return '\n'.join(lines)
 
 
+XML_DECL = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
+ROOT_REV = re.compile(r'(<(?:gameSystem|catalogue)\b[^>]*?) (?:gameSystemRevision|revision)="\d+"')
+GST_REVISION = [1]  # set once the game system is written; catalogues record it as gameSystemRevision
+
+
+def without_revisions(text):
+    """File text with the root element's revision attributes removed, for change detection."""
+    prev = None
+    while prev != text:
+        prev, text = text, ROOT_REV.sub(r'\1', text, count=1)
+    return text
+
+
 def write(path, root, ns):
+    """Write a data file, bumping its revision only when its content changed.
+
+    Unchanged files are left untouched; new files start at revision 1. A changed catalogue
+    also records the game system revision it was built against.
+    """
     root.attrs['xmlns'] = ns
+    old = open(path, encoding='utf-8').read() if os.path.exists(path) else None
+    m = old and re.search(r'<(?:gameSystem|catalogue)\b[^>]*?\brevision="(\d+)"', old)
+    old_rev = int(m.group(1)) if m else 0
+    root.attrs['revision'] = max(old_rev, 1)
+    if 'gameSystemId' in root.attrs:
+        root.attrs['gameSystemRevision'] = GST_REVISION[0]
+    text = XML_DECL + root.render() + '\n'
+    if old is not None and without_revisions(old) == without_revisions(text):
+        return old_rev
+    root.attrs['revision'] = old_rev + 1
     with open(path, 'w', encoding='utf-8') as fh:
-        fh.write('<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n')
-        fh.write(root.render() + '\n')
+        fh.write(XML_DECL + root.render() + '\n')
+    return old_rev + 1
 
 
 CAT_NS = 'http://www.battlescribe.net/schema/catalogueSchema'
@@ -537,9 +564,9 @@ GST_NS = 'http://www.battlescribe.net/schema/gameSystemSchema'
 
 
 def header(cid, name, library=False):
-    return {'id': cid, 'name': name, 'revision': REVISION, 'battleScribeVersion': BS_VERSION, 'authorName': AUTHOR,
+    return {'id': cid, 'name': name, 'revision': 1, 'battleScribeVersion': BS_VERSION, 'authorName': AUTHOR,
             'authorContact': '', 'authorUrl': SOURCE_URL, 'library': str(library).lower(), 'gameSystemId': GST_ID,
-            'gameSystemRevision': REVISION}
+            'gameSystemRevision': GST_REVISION[0]}
 
 
 def build_gst():
@@ -547,7 +574,7 @@ def build_gst():
               f'archived EpicAU wiki ({SOURCE_URL}). Rules text is summarised; see the wiki and the NetEA rulebook '
               'for full wording. Add a primary army force, then optionally an Allied Contingent force from another '
               'catalogue.')
-    root = ordered('gameSystem', {'id': GST_ID, 'name': GST_NAME, 'revision': REVISION, 'battleScribeVersion': BS_VERSION,
+    root = ordered('gameSystem', {'id': GST_ID, 'name': GST_NAME, 'revision': 1, 'battleScribeVersion': BS_VERSION,
                                   'authorName': AUTHOR, 'authorContact': '', 'authorUrl': SOURCE_URL},
                    readme=readme,
                    publications=[X('publication', {'id': gid('pub', 'wiki'), 'name': 'EpicAU Wiki - Horus Heresy Supplement',
@@ -562,7 +589,7 @@ def build_gst():
                    categoryEntries=[X('categoryEntry', {'id': CAT[c], 'name': c, 'hidden': str(c in HIDDEN_CATS).lower()})
                                     for c in CATS],
                    sharedRules=[rule_el(RULE_ID[n], n, d) for n, d in RULES.items()])
-    write(os.path.join(OUT, GST_FILE), root, GST_NS)
+    GST_REVISION[0] = write(os.path.join(OUT, GST_FILE), root, GST_NS)
 
 
 def build_catalogue(army, library=None):

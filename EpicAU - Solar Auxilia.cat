@@ -1,0 +1,2351 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="1" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
+      <rules>
+        <rule id="f4ba-9e0e-f0df-c6e4" name="Army List" hidden="false">
+          <description>Strategy Rating 3. Formation initiative 2+.
+2 Support Detachments may be taken per Line Detachment.
+Each detachment may purchase up to three upgrades, each only once.
+Up to 1/3 of the army's points may be spent on Allies or Lords of War.
+Cohesive allies: Legio Titanicus, Legion Astartes, Knight Household.
+Disruptive allies: Mechanicum Taghmata, Daemons Of The Ruinstorm.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="8b86-a763-bda7-01e6" name="Allies" hidden="false" targetId="d6db-799f-23f8-2194" type="rule"/>
+        <infoLink id="6e5c-857c-cc3a-b2a0" name="Legate Commander" hidden="false" targetId="59fb-d336-6931-c7ba" type="rule"/>
+        <infoLink id="4af1-f195-7b16-68c7" name="Dedicated War Engine Transports" hidden="false" targetId="68a3-1fb7-9d48-7742" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c2ae-09a6-c144-b8d9" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
+        <categoryLink id="5144-29a0-50fa-0a54" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="2455-5854-292d-a1df" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71ca-c9e1-da76-27e2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2455-5854-292d-a1df" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3f32-402e-4afb-3c31" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="false"/>
+        <categoryLink id="690e-355f-4413-36b0" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3d94-1061-ddcc-6dd8" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ec5f-5fbd-5dd0-6458" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="173b-fb63-850f-4f71" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="eb1a-e8d5-9dcf-02dd" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false">
+          <constraints>
+            <constraint field="points" scope="roster" value="33.33" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="dab6-09ab-bf37-ce4a" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="2aea-fc0d-87ed-8846" name="Solar Auxilia (Allied Contingent)" hidden="false">
+      <rules>
+        <rule id="fdcd-2158-b76a-93d4" name="Army List" hidden="false">
+          <description>Strategy Rating 3. Formation initiative 2+.
+2 Support Detachments may be taken per Line Detachment.
+Each detachment may purchase up to three upgrades, each only once.
+Up to 1/3 of the army's points may be spent on Allies or Lords of War.
+Cohesive allies: Legio Titanicus, Legion Astartes, Knight Household.
+Disruptive allies: Mechanicum Taghmata, Daemons Of The Ruinstorm.
+Allied Contingent: formations here count towards the primary army's Allies &amp; Lords of War allowance. Supreme Commanders must come from the primary army.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="be9d-e2a6-cc49-43b2" name="Allies" hidden="false" targetId="d6db-799f-23f8-2194" type="rule"/>
+        <infoLink id="bbea-33eb-a4e3-4660" name="Legate Commander" hidden="false" targetId="59fb-d336-6931-c7ba" type="rule"/>
+        <infoLink id="9110-e1e5-c899-d805" name="Dedicated War Engine Transports" hidden="false" targetId="68a3-1fb7-9d48-7742" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="69d5-e916-cc1a-79f9" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
+        <categoryLink id="95d1-43ce-c605-229f" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="b046-fb92-d6a6-a8cd" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71ca-c9e1-da76-27e2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b046-fb92-d6a6-a8cd" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1bd1-4029-7dd0-9ca8" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="false"/>
+        <categoryLink id="6e34-e39c-7d63-7e93" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b944-1162-8950-a2be" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="2dab-cfdb-24f0-cd5d" name="Solar Auxilia Command Retinue" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0fe4-650e-5cda-b51b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ec44-97fa-d2ab-a6d7" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3a15-49d5-3bf8-7d9f" name="Lord Marshall" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a334-1085-75ff-c4ac" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd85-1019-de73-f3f1" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="799b-dbb4-e625-5b92" name="Lord Marshall" hidden="false" targetId="0e8a-01a5-746e-64a5" type="profile"/>
+            <infoLink id="2831-bd1b-e002-f408" name="Archeotech Pistol" hidden="false" targetId="5db8-a743-bb25-3e11" type="profile"/>
+            <infoLink id="f8be-a654-2895-aa29" name="Volkite Chargers" hidden="false" targetId="4b64-b983-1aab-ae7a" type="profile"/>
+            <infoLink id="7737-2d05-d42c-c3d0" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="f06b-c879-43f2-e4cb" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
+            <infoLink id="b2b2-5f69-c740-37d6" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="77f1-01b8-3ba5-8605" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1720-c552-9d83-414e" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e76f-c2ff-6f9c-b060" name="Veletaris Storm Section" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e91e-151f-1a4a-c14a" type="min"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b9-611c-dc72-4549" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5af4-c770-cb1b-7a55" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile"/>
+            <infoLink id="eb05-bc8c-aca5-f19e" name="Volkite Chargers OR" hidden="false" targetId="a818-d12d-e991-1023" type="profile"/>
+            <infoLink id="4b08-fcff-fcd9-43a1" name="Power Axes" hidden="false" targetId="f4c9-3ab4-7775-6061" type="profile"/>
+            <infoLink id="5d51-7070-3d1d-815a" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="81a1-bc59-6a36-b19a" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="258a-ceab-2806-b5d5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9cc3-2d8e-a6d6-c78b" name="Infantry Support Tank" hidden="false" collective="false" import="true" targetId="5d70-d250-6587-64ff" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e024-5887-346f-3f8f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="60d3-39d3-b7e9-9754" name="Ogryn Charonite Squad" hidden="false" collective="false" import="true" targetId="fdc3-ae96-cdd4-f194" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c85-3de6-2c2b-824f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1ffb-f299-d4ef-2516" name="Solar Auxilia Support" hidden="false" collective="false" import="true" targetId="0557-87d4-e3d2-e5b5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f72-31c3-59a7-4691" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f1b1-9c59-28d1-4732" name="Transport" hidden="false" collective="false" import="true" targetId="d238-ac26-d475-a765" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2e1-327a-42a2-d6e2" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3e27-3447-5d3f-35b1" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a8-9ed2-a37d-0620" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="300.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b161-8983-ea36-2eb2" name="Solar Auxilia Strike Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b83c-0205-6ba4-5899" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="77e2-b047-f79b-f1a1" name="Units" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad5c-8968-6782-88c0" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="915f-6ec9-f60d-b5c0" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="da44-b55c-0a89-97ea" name="Leman Russ Battle Tank" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c3b-2aa3-7857-de55" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5184-6018-829b-f98c" name="Leman Russ Battle Tank" hidden="false" targetId="8c83-a24c-f980-af60" type="profile"/>
+                <infoLink id="b7d7-f95a-83d2-211d" name="Battlecannon" hidden="false" targetId="81d8-e3de-0ee4-8b05" type="profile"/>
+                <infoLink id="2e26-180b-f2a2-4ea4" name="Lascannnon" hidden="false" targetId="42b8-ee86-f72d-c423" type="profile"/>
+                <infoLink id="6192-fc15-04e2-15a7" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bce7-d92b-fe7a-d9ba" name="Leman Russ Exterminator" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b60-068c-4b66-4e92" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="113b-f8ab-a046-77f7" name="Leman Russ Exterminator" hidden="false" targetId="a7bd-28bf-1ab9-3b09" type="profile"/>
+                <infoLink id="1f61-6775-4edf-f185" name="TL Autocannon" hidden="false" targetId="00dc-d8bf-cf40-ba17" type="profile"/>
+                <infoLink id="1fbf-4e0d-1592-030d" name="Heavy Bolter" hidden="false" targetId="b085-6db5-99a4-04ad" type="profile"/>
+                <infoLink id="e9ea-2983-c961-6e71" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9386-7ed6-15bb-f34d" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd6-31ff-f312-2e96" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5c43-1d14-e89a-3444" name="Vanquisher" hidden="false" collective="false" import="true" targetId="0ef3-1fcf-104a-f51e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b27-ff4c-929a-e05b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8f3d-a491-f686-d151" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7289-b899-849a-71f1" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a5b5-e0aa-1389-9592" name="Solar Auxilia Infantry Tercio" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="02a0-db2b-76bf-c955" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="10c2-3cee-68ef-d73d" name="Solar Auxilia Command Section" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1318-4844-945b-9b13" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="823d-1219-dbc7-f905" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a64f-913f-8503-8313" name="Solar Auxilia Command Section" hidden="false" targetId="0651-b8e0-03ca-7f31" type="profile"/>
+            <infoLink id="b9b2-50a3-7a95-7a68" name="Plasma Guns" hidden="false" targetId="9e5e-17d3-bffa-9eaa" type="profile"/>
+            <infoLink id="33d9-6362-d2b2-3f1f" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7967-f56b-9207-f777" name="Solar Auxilia Infantry Section" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee49-e37c-7d0a-d377" type="min"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eae-2a25-895c-f11b" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="367e-1b6f-48b7-fb74" name="Solar Auxilia Infantry Section" hidden="false" targetId="9056-bfbd-b004-a737" type="profile"/>
+            <infoLink id="3f3d-2ea1-fc8a-3a6e" name="Las-rifles" hidden="false" targetId="0fb3-dec3-5a58-0bfe" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d41d-c08f-b1af-e725" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f942-b53a-7e36-b170" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b121-0769-47e3-826f" name="Infantry Support Tank" hidden="false" collective="false" import="true" targetId="5d70-d250-6587-64ff" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2932-7421-a503-402a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6389-4c1c-44be-255c" name="Ogryn Charonite Squad" hidden="false" collective="false" import="true" targetId="fdc3-ae96-cdd4-f194" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f55-8a91-2a63-e20d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ac45-aaf2-3596-4051" name="Rapier Battery" hidden="false" collective="false" import="true" targetId="41d5-03e5-a678-9818" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21c4-9833-b7f2-73c8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="437d-1723-5adc-138c" name="Solar Auxilia Support" hidden="false" collective="false" import="true" targetId="0557-87d4-e3d2-e5b5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d13-b3f7-9c90-52ac" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b7bf-5f87-e269-fef1" name="Transport" hidden="false" collective="false" import="true" targetId="d238-ac26-d475-a765" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdef-d52f-2433-4210" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="c655-c124-5982-d392" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25aa-0bd7-b962-13ce" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc37-1db9-9b81-1958" name="Solar Auxilia Veletaris Storm Cohort" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b250-876f-3198-89ed" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="4164-2225-63c5-5fa1" name="Solar Auxilia Command Section" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf7a-6f79-7adf-921f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9c4-1957-d462-0098" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4d6b-89a3-e2fa-dfc9" name="Solar Auxilia Command Section" hidden="false" targetId="0651-b8e0-03ca-7f31" type="profile"/>
+            <infoLink id="2fbe-24ce-7721-ae12" name="Plasma Guns" hidden="false" targetId="9e5e-17d3-bffa-9eaa" type="profile"/>
+            <infoLink id="e425-df9f-8733-52d6" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e103-00ce-d479-36de" name="Veletaris Storm Section" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc3d-1be9-7ade-c6f7" type="min"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfaf-9161-723a-8e9d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c542-29ff-298b-8f8e" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile"/>
+            <infoLink id="71ae-2330-c3c2-a7cd" name="Volkite Chargers OR" hidden="false" targetId="a818-d12d-e991-1023" type="profile"/>
+            <infoLink id="6c21-d7b4-b4b4-a2ac" name="Power Axes" hidden="false" targetId="f4c9-3ab4-7775-6061" type="profile"/>
+            <infoLink id="2210-c68c-f564-75ad" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="da4d-c013-a03d-5d7b" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0852-c166-f4e1-a044" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="23d9-3cde-e838-36dc" name="Infantry Support Tank" hidden="false" collective="false" import="true" targetId="5d70-d250-6587-64ff" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a572-d270-a562-70b9" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bef8-0e70-191f-a354" name="Ogryn Charonite Squad" hidden="false" collective="false" import="true" targetId="fdc3-ae96-cdd4-f194" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a8-d64c-1be3-aa9b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4a0b-8c3e-3e41-0e13" name="Transport" hidden="false" collective="false" import="true" targetId="d238-ac26-d475-a765" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab0-03ed-bd0f-b8cc" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="41d4-84b9-778e-ad15" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32b1-a69e-a2df-2bec" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cde4-841e-4c1d-28e5" name="Solar Auxilia Orbital Support" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="578e-9242-3fcc-b268" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8ddf-2ff9-bb97-ba53" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+        <categoryLink id="3299-3d89-8d0b-fe88" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f517-1dca-d210-cbca" name="Units" hidden="false" collective="false" import="true" defaultSelectionEntryId="b5da-f4ce-e871-4f9d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="448e-0457-8c8c-dbae" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf65-8194-6a87-6482" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b5da-f4ce-e871-4f9d" name="Emperor Class Battleship" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d33b-d496-98c6-1375" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="73d5-2a1a-37c8-d0b9" name="Emperor Class Battleship" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8b6-55f9-da64-33ce" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65ed-806b-a342-bdbf" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7c4d-dbdc-dad3-9d4b" name="Emperor Class Battleship" hidden="false" targetId="f676-720b-9dcd-bcc4" type="profile"/>
+                    <infoLink id="9888-3a82-e5f2-9ade" name="Orbital Bombardment" hidden="false" targetId="cbee-2427-699c-900d" type="profile"/>
+                    <infoLink id="b437-de92-35bf-0af4" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                    <infoLink id="a179-c22a-8c05-1a6e" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="6066-2128-27bd-0f20" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="300.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c390-7d4e-6a24-a4dd" name="Dauntless Class Light Cruiser" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d71d-cf47-0a87-9000" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="083a-ad74-b005-b57c" name="Dauntless Class Light Cruiser" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c740-f5ae-f7de-5b4b" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6018-3aac-2c35-054c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2739-cd71-c924-748c" name="Dauntless Class Light Cruiser" hidden="false" targetId="fe70-74d3-f0af-fe9d" type="profile"/>
+                    <infoLink id="bf39-ee15-43a6-2787" name="Orbital Bombardment / Lance Battery" hidden="false" targetId="fa84-2aa1-e963-6fc6" type="profile"/>
+                    <infoLink id="048b-a8a0-3054-6357" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                    <infoLink id="f48d-be97-0cc7-5f52" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="05ac-abac-aee5-a0d7" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="9edf-3b94-f2f7-2205" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="150.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ab4-9ac6-9b1e-049c" name="Solar Auxilia Artillery Tank Battery" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9de2-7eca-2d77-3035" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c0bd-29da-cd18-18f1" name="Units" hidden="false" collective="false" import="true" defaultSelectionEntryId="c0c1-ce77-9f4f-4a69">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb39-ae7c-8891-29c6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c5c-1f54-c9f7-74fa" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c0c1-ce77-9f4f-4a69" name="Basilisks" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="427a-9490-0248-d54c" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="21db-3517-cb3d-1262" name="Basilisk" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="628c-ff9c-075a-c717" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aee-31eb-ab15-e636" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7c64-3990-c64b-c685" name="Basilisk" hidden="false" targetId="9fea-3d97-e797-9bae" type="profile"/>
+                    <infoLink id="cd13-fad1-c42d-5fef" name="Earthshaker Cannon" hidden="false" targetId="d7b0-4d45-7dfc-ee3f" type="profile"/>
+                    <infoLink id="bb9c-a711-4245-e3dc" name="Heavy Bolter" hidden="false" targetId="4366-9db2-ddb6-2c33" type="profile"/>
+                    <infoLink id="3d24-ccac-c3ba-491e" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="857a-8ddf-66e5-b94d" name="Bombards" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b30a-b5bb-5d7e-ecd0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="8008-db6e-060d-c0ad" name="Bombard" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c51-5fe4-142c-0115" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38d1-f834-c037-4d01" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3eb8-bb58-bcd8-9639" name="Bombard" hidden="false" targetId="8753-0fea-225f-0de2" type="profile"/>
+                    <infoLink id="154c-2976-c641-487c" name="Siege Mortar" hidden="false" targetId="9a99-49a5-37d1-5f7d" type="profile"/>
+                    <infoLink id="9627-ed34-d092-602a" name="Heavy Bolter" hidden="false" targetId="641a-5c99-c824-c6a1" type="profile"/>
+                    <infoLink id="3d3c-15bb-714b-c073" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
+                    <infoLink id="1a07-6e11-c91d-0f37" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e6bd-b1c6-3be8-9a25" name="Medusas" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fea3-5d86-35e3-5a2d" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="8f45-5584-04de-3f14" name="Medusa" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5c1-cc76-3be5-943e" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd90-0ba4-47f0-3aab" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fbc1-424c-0270-1853" name="Medusa" hidden="false" targetId="b237-9463-8e26-c0f1" type="profile"/>
+                    <infoLink id="8ea3-3e0f-2565-5a86" name="Medusa Siege Cannon" hidden="false" targetId="e3a0-a0fc-275f-4ffa" type="profile"/>
+                    <infoLink id="30fa-5ea2-5252-7031" name="Heavy Bolter" hidden="false" targetId="183a-2d2a-e7ed-6f80" type="profile"/>
+                    <infoLink id="42d0-91f4-628f-3a3c" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="6ea9-122a-804e-a0a0" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0e7e-a35d-8c40-69fa" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d11-5df3-52c0-086a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2bc6-b1ff-edad-96d6" name="Solar Auxilia Malcador Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e74e-d204-cfaf-0ffb" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="db7d-9aa9-541b-4488" name="Units" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a30-55ce-017a-8afa" type="min"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c8b-2881-f424-e43c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b679-9842-9030-dce0" name="Malcador Heavy Tank" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c3-f860-5425-9e1d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9aae-f82e-00a0-720a" name="Malcador Heavy Tank" hidden="false" targetId="1280-c35b-1340-10c6" type="profile"/>
+                <infoLink id="1383-98c1-e91a-fb1c" name="2 x Autocannons" hidden="false" targetId="8825-4f1d-f4e0-101c" type="profile"/>
+                <infoLink id="464c-b799-9bba-d874" name="Battlecannon" hidden="false" targetId="7274-d214-4176-46dc" type="profile"/>
+                <infoLink id="ec43-1c00-c763-3fbb" name="Heavy Bolter" hidden="false" targetId="33a1-5c34-50b3-5f87" type="profile"/>
+                <infoLink id="24d9-5412-995e-ad58" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="5747-c2d7-db05-befb" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4ee4-bf1e-c5d4-1c7f" name="Malcador Infernus Special Weapons Tank" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c50d-1e5f-cd97-9929" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6184-a9a6-5b93-89e8" name="Malcador Infernus Special Weapons Tank" hidden="false" targetId="7dfc-a431-14cb-241d" type="profile"/>
+                <infoLink id="f5a0-cee2-5dc7-3235" name="Infernus Cannon" hidden="false" targetId="ae9e-c86c-16e0-f62b" type="profile"/>
+                <infoLink id="acdc-2569-e218-4397" name="2 x Autocannons" hidden="false" targetId="ed40-96cb-43d8-ed1d" type="profile"/>
+                <infoLink id="6f9d-8ca2-e5a9-e853" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="e479-13ca-98a3-1258" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3724-7563-5724-d17b" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a0b-1d45-ad9b-169e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2462-9338-9c6b-0a04" name="Solar Auxilia Super Heavy Tank" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ddef-6267-0d14-ffd6" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="785d-c582-efcf-d7f0" name="Units" hidden="false" collective="false" import="true" defaultSelectionEntryId="bfeb-c1b9-dfc5-3829">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e79-75a5-334d-db77" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472e-b288-5e0f-5d20" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bfeb-c1b9-dfc5-3829" name="Baneblade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2a3-f018-8ce9-cf5a" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2325-4855-0aa0-8ae0" name="Baneblade" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2739-6363-da5c-25b7" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab3-33ea-6ae8-8f47" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3e12-ed93-f799-e9f3" name="Baneblade" hidden="false" targetId="2aba-f19a-d0e1-d601" type="profile"/>
+                    <infoLink id="4ca3-ac99-f691-5b0a" name="3 x TL Heavy Bolters" hidden="false" targetId="2d30-8bca-fb4d-5109" type="profile"/>
+                    <infoLink id="8685-9f23-ab83-27e1" name="Autocannon" hidden="false" targetId="5ac3-89f7-ae8d-7933" type="profile"/>
+                    <infoLink id="6bfc-f03d-20b1-ecbd" name="2 x Lascannon" hidden="false" targetId="77e1-e7ab-80a3-9378" type="profile"/>
+                    <infoLink id="71d3-ab6d-8d87-e8b9" name="Baneblade Main Cannon" hidden="false" targetId="191c-debe-5c36-b1d5" type="profile"/>
+                    <infoLink id="d17d-b54c-bd0e-39d2" name="Demolisher Cannon" hidden="false" targetId="0c27-6aa0-8336-a4de" type="profile"/>
+                    <infoLink id="5045-8c0a-354b-da3c" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="80ee-0eda-f844-8f42" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0207-4409-2b8f-48cf" name="Shadowsword" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1cb-8832-d730-0f82" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f615-da48-9cb0-36ef" name="Shadowsword" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="607f-70cf-92b8-96ab" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4821-0188-f575-f38e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5d55-cc17-93a4-419e" name="Shadowsword" hidden="false" targetId="f5e6-ad64-b4ee-0643" type="profile"/>
+                    <infoLink id="e44c-2f16-1f07-1a2a" name="Volcano Cannon" hidden="false" targetId="6cbe-a7e1-5af3-7e47" type="profile"/>
+                    <infoLink id="caea-23cf-0a46-2960" name="2 x Heavy Bolter" hidden="false" targetId="4bd2-9741-15ef-629e" type="profile"/>
+                    <infoLink id="b49d-db3a-6415-6dd2" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="fe12-fe6d-ebd0-8a6d" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="b4b4-1468-345d-7b7b" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8450-2e06-55b2-9697" name="Stormsword" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b3c-e687-3714-5fca" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="458e-1023-31d2-37d6" name="Stormsword" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="972f-274e-a3e5-fe67" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="472d-9f80-d196-c44e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6cc5-01e0-ff79-7544" name="Stormsword" hidden="false" targetId="3f91-5a3f-d3fc-d1cd" type="profile"/>
+                    <infoLink id="ec50-e80b-26fc-f8ae" name="Stormsword Siege Cannon" hidden="false" targetId="a047-2e66-be30-eae8" type="profile"/>
+                    <infoLink id="0c1e-8e52-9892-b09e" name="2 x TL Heavy Bolters" hidden="false" targetId="cb91-6b37-1188-872d" type="profile"/>
+                    <infoLink id="f62b-61b0-b731-5035" name="2 x Lascannon" hidden="false" targetId="2b38-45d1-328d-e156" type="profile"/>
+                    <infoLink id="4f63-b30d-5975-e7e6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="05f3-9266-456e-35e1" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="1a02-d985-1731-9704" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="41ef-eb51-0b67-f93f" name="Stormblade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1a2-cb93-277b-3e94" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="20b1-38b8-c98e-3219" name="Stormblade" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7944-d078-b99b-7269" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d44-0c5b-9466-b8fa" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0bb3-b4f1-b3cf-2df3" name="Stormblade" hidden="false" targetId="799d-3704-9790-e091" type="profile"/>
+                    <infoLink id="a0b6-45c8-1c51-c872" name="Plasma Blastgun" hidden="false" targetId="b7a0-35d8-52a2-b941" type="profile"/>
+                    <infoLink id="9b65-9b5c-c0ba-c2a5" name="2 x TL Heavy Bolter" hidden="false" targetId="2437-3220-51f2-e9ef" type="profile"/>
+                    <infoLink id="38a5-fd2e-e1b1-0d40" name="2 x Lascannon" hidden="false" targetId="48cf-bd6e-3482-a781" type="profile"/>
+                    <infoLink id="58d3-9c3c-ebfd-23b9" name="Heavy Bolter" hidden="false" targetId="8ccb-5326-d9d3-8208" type="profile"/>
+                    <infoLink id="f1b3-97b7-c649-5cb8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="2c18-76f5-d2db-5373" name="Slow Firing" hidden="false" targetId="fe36-0a82-a4ee-3f54" type="rule"/>
+                    <infoLink id="c5f6-5f46-38d1-ed8b" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4057-2530-2323-5995" name="Stormhammer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e6-5322-ec21-bd94" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2990-c545-8eec-d0ad" name="Stormhammer" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60c0-d847-6a97-85f7" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fa1-5dc4-7031-5942" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f8cd-d72c-adf0-95d0" name="Stormhammer" hidden="false" targetId="5fdd-8517-235a-cb7f" type="profile"/>
+                    <infoLink id="8b34-c64b-0892-7ce8" name="Stormhammer Cannon" hidden="false" targetId="0e34-98ba-ed54-5f02" type="profile"/>
+                    <infoLink id="e2fa-8afd-a1d3-48bd" name="6 x Heavy Bolter (3 L, 3 R)" hidden="false" targetId="eb49-6ba0-2187-b9ff" type="profile"/>
+                    <infoLink id="c73f-f6dc-1b68-20b9" name="Dual BattleCannon" hidden="false" targetId="201f-e7ca-5711-9e58" type="profile"/>
+                    <infoLink id="6174-07aa-1634-d023" name="Lascannon" hidden="false" targetId="e3ab-974e-0877-6743" type="profile"/>
+                    <infoLink id="492b-48c5-7c97-099a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="0436-2acc-38d4-bf87" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7167-a755-7897-c288" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f9cc-bd3a-c59a-199f" name="Solar Auxilia Super Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f32d-74bb-53af-9cb1" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="64f0-bea1-8725-a256" name="Units" hidden="false" collective="false" import="true" defaultSelectionEntryId="833c-1c30-0c66-0541">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0727-7860-e850-3bd5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6dd-c38c-38ac-6684" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="833c-1c30-0c66-0541" name="Baneblade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9543-7e8e-6d09-5987" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="460b-4ce0-d098-32d7" name="Baneblade" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a96f-fff7-745b-c252" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c121-b051-54b3-8bc4" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9fb2-ee60-a48b-9862" name="Baneblade" hidden="false" targetId="2aba-f19a-d0e1-d601" type="profile"/>
+                    <infoLink id="ccfa-6535-5b24-eccd" name="3 x TL Heavy Bolters" hidden="false" targetId="2d30-8bca-fb4d-5109" type="profile"/>
+                    <infoLink id="5207-6b18-02f7-d2db" name="Autocannon" hidden="false" targetId="5ac3-89f7-ae8d-7933" type="profile"/>
+                    <infoLink id="529a-5bfa-002f-b466" name="2 x Lascannon" hidden="false" targetId="77e1-e7ab-80a3-9378" type="profile"/>
+                    <infoLink id="ccdd-5b34-4d0b-3a50" name="Baneblade Main Cannon" hidden="false" targetId="191c-debe-5c36-b1d5" type="profile"/>
+                    <infoLink id="d8e4-372a-14c9-e9b8" name="Demolisher Cannon" hidden="false" targetId="0c27-6aa0-8336-a4de" type="profile"/>
+                    <infoLink id="83d2-ebd6-9528-1764" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="bf55-5ffd-5dfb-ff75" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="839b-1bc5-383a-3d8a" name="Shadowsword" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c3-3218-976e-ca07" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2ca6-d3dc-9dfa-29fc" name="Shadowsword" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c4a-37b4-0db7-f91b" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1027-1daf-858e-a375" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0b85-2ba3-56a7-c292" name="Shadowsword" hidden="false" targetId="f5e6-ad64-b4ee-0643" type="profile"/>
+                    <infoLink id="7be6-2efc-05a9-0c97" name="Volcano Cannon" hidden="false" targetId="6cbe-a7e1-5af3-7e47" type="profile"/>
+                    <infoLink id="f185-4c65-06b5-d19d" name="2 x Heavy Bolter" hidden="false" targetId="4bd2-9741-15ef-629e" type="profile"/>
+                    <infoLink id="ddf3-13f9-3ee1-198d" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="0c63-2a5a-d487-9137" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="3325-ae47-ef24-6f04" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5ed5-85ca-5fed-435a" name="Stormsword" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06ac-e133-50ea-6a00" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="fb53-8768-413e-d095" name="Stormsword" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89cf-4ab9-2243-a7f9" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="729c-b20d-f09d-f818" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fdef-99de-1063-8819" name="Stormsword" hidden="false" targetId="3f91-5a3f-d3fc-d1cd" type="profile"/>
+                    <infoLink id="954f-7cac-ae56-929b" name="Stormsword Siege Cannon" hidden="false" targetId="a047-2e66-be30-eae8" type="profile"/>
+                    <infoLink id="1312-148c-0be0-3a32" name="2 x TL Heavy Bolters" hidden="false" targetId="cb91-6b37-1188-872d" type="profile"/>
+                    <infoLink id="8b0a-60a5-58df-badc" name="2 x Lascannon" hidden="false" targetId="2b38-45d1-328d-e156" type="profile"/>
+                    <infoLink id="19a4-d351-2f53-3ba3" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="5a50-2b75-3a20-a91d" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="6982-0303-90d9-a20c" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="13ae-8127-0f25-db78" name="Stormblade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df3b-4972-4ad1-2d11" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3a73-4237-c97f-200e" name="Stormblade" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22e2-1247-84ac-92d4" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b252-50ef-535a-fe09" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ddfe-4736-7ee7-e258" name="Stormblade" hidden="false" targetId="799d-3704-9790-e091" type="profile"/>
+                    <infoLink id="9784-0dd8-539b-454f" name="Plasma Blastgun" hidden="false" targetId="b7a0-35d8-52a2-b941" type="profile"/>
+                    <infoLink id="3c4a-a380-6a36-283a" name="2 x TL Heavy Bolter" hidden="false" targetId="2437-3220-51f2-e9ef" type="profile"/>
+                    <infoLink id="c7de-51d3-7e1e-87cf" name="2 x Lascannon" hidden="false" targetId="48cf-bd6e-3482-a781" type="profile"/>
+                    <infoLink id="d83a-7b1e-56f1-d103" name="Heavy Bolter" hidden="false" targetId="8ccb-5326-d9d3-8208" type="profile"/>
+                    <infoLink id="9a50-35c1-9ba0-b406" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="2dcd-2b77-1dc0-42d5" name="Slow Firing" hidden="false" targetId="fe36-0a82-a4ee-3f54" type="rule"/>
+                    <infoLink id="3642-05c3-a3d8-d873" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="85ef-3e54-2ba7-8066" name="Stormhammer" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41e9-2424-5188-e573" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="da38-ef3d-9721-416a" name="Stormhammer" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f51-b3b4-406b-1a28" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69da-9773-8eff-b312" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1508-963f-7275-858d" name="Stormhammer" hidden="false" targetId="5fdd-8517-235a-cb7f" type="profile"/>
+                    <infoLink id="cd34-1d09-83d6-5743" name="Stormhammer Cannon" hidden="false" targetId="0e34-98ba-ed54-5f02" type="profile"/>
+                    <infoLink id="8e36-e40c-03bd-0cbe" name="6 x Heavy Bolter (3 L, 3 R)" hidden="false" targetId="eb49-6ba0-2187-b9ff" type="profile"/>
+                    <infoLink id="e531-9484-adc5-2c4d" name="Dual BattleCannon" hidden="false" targetId="201f-e7ca-5711-9e58" type="profile"/>
+                    <infoLink id="78df-ef83-99ea-cc30" name="Lascannon" hidden="false" targetId="e3ab-974e-0877-6743" type="profile"/>
+                    <infoLink id="04a9-d1f9-d8d9-9ce8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f62a-7f81-30a3-eb6e" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4148-7d5c-4830-50ea" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="500.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="89c1-8cba-4cc2-616e" name="Solar Auxilia Close Support Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c4e4-b494-23d9-904e" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ef71-df78-aa7c-ffa2" name="Units" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="444d-fd45-6c34-fa0c" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46c6-6cf8-dc27-107d" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="649f-0941-8d0c-764d" name="Leman Russ Demolisher" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9233-92df-f752-bdb4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7561-6db2-7875-9d98" name="Leman Russ Demolisher" hidden="false" targetId="30ee-2269-4474-28f6" type="profile"/>
+                <infoLink id="f0ca-fed2-3600-9adb" name="Demolisher Cannon" hidden="false" targetId="f423-bd5a-cc07-6484" type="profile"/>
+                <infoLink id="831d-11a6-77ff-7dd1" name="Lascannon" hidden="false" targetId="b316-0842-a568-de44" type="profile"/>
+                <infoLink id="1f9f-e371-b609-e3dd" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="f3fc-695d-a01c-329d" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+                <infoLink id="9f25-924c-d664-44f8" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bfb0-563a-9fb3-cc69" name="Leman Russ Incinerator" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7deb-7148-2d21-bade" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8f48-7e12-796a-0a3b" name="Leman Russ Incinerator" hidden="false" targetId="11fc-5a12-806a-d634" type="profile"/>
+                <infoLink id="06f8-5341-baa3-1556" name="TL Volkite Demi Culverin" hidden="false" targetId="a5c8-8850-1252-e5d4" type="profile"/>
+                <infoLink id="4b49-a0f2-96be-bfe2" name="Lascannon" hidden="false" targetId="cdd5-72fd-8b08-f1c1" type="profile"/>
+                <infoLink id="ee21-dcf4-ecce-edd1" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="9d19-befd-66ab-f0af" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8569-391e-75c2-3ef1" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee1-f93a-b87d-a869" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="bb5a-0a84-9004-1052" name="Executioner" hidden="false" collective="false" import="true" targetId="0848-2211-d849-99ac" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e1a-335b-54f4-a963" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5ed5-cb27-052f-4878" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caf8-7406-c132-ac6d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="362c-38e6-e6c7-89e7" name="Solar Auxilia Tarantula Battery" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2aea-fc0d-87ed-8846" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="3547-6216-35bf-5221" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8d7d-cf5d-ac3f-c5a5" name="Tarantula" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d521-88d1-0e89-70fa" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0264-844e-a495-9ed2" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e644-de00-bd57-935a" name="Tarantula" hidden="false" targetId="a345-6b96-2653-2621" type="profile"/>
+            <infoLink id="ae0b-148a-d0cd-6bfd" name="TL Heavy Bolter" hidden="false" targetId="c75e-96ba-a97d-b39c" type="profile"/>
+            <infoLink id="dd9d-6032-8036-e6be" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+            <infoLink id="3e46-f690-7dfc-3509" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1b94-182d-c462-ee67" name="Tarantula Hyperios" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d550-6e58-9700-5570" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba58-ffd8-839a-a2bf" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="6714-7e93-0974-1411" name="Tarantula Hyperios" hidden="false" targetId="bc19-6dba-9893-e358" type="profile"/>
+            <infoLink id="276d-31cc-60f6-0371" name="Missile Rack" hidden="false" targetId="1b94-aa76-552a-ee75" type="profile"/>
+            <infoLink id="e02d-41f8-b760-2ab2" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+            <infoLink id="d87b-5db7-8d0a-9a62" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="8149-eed9-dfb1-7e2c" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c52-836d-5f67-a30a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="125.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e431-3247-91eb-31e3" name="Solar Auxilia Avenger Wing" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e804-858a-36d0-cef6" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
+        <categoryLink id="4915-51bf-02d7-e402" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="77a1-037b-bcc7-887e" name="Imperial Navy Avenger Strike Fighter" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a91f-d0dd-45da-0172" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="406e-025c-c4e0-5bc5" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0523-1b66-27ca-358a" name="Imperial Navy Avenger Strike Fighter" hidden="false" targetId="ee62-a2e7-7e16-52b3" type="profile"/>
+            <infoLink id="7442-9dd3-3506-e83e" name="Avenger Cannon" hidden="false" targetId="fc80-dad3-6ff5-4748" type="profile"/>
+            <infoLink id="ccc0-68c9-f270-345a" name="TL Lascannons" hidden="false" targetId="4c2d-6ee6-a83c-4ff7" type="profile"/>
+            <infoLink id="33f3-93b9-e596-7b7f" name="Heavy Stubber" hidden="false" targetId="5e88-d56c-95d3-c058" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef32-3b14-d35e-854e" name="Solar Auxilia Primaris-Lightning Wing" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="7b0d-84dc-1469-8b05" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
+        <categoryLink id="7f87-43fa-a2b7-7f3a" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ca32-8a4a-3240-cd4f" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f0-db2c-107c-6440" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="487e-2f19-6f10-502d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9d31-7764-a4fd-7287" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" targetId="7c92-8f7f-c77e-81ae" type="profile"/>
+            <infoLink id="6420-7c27-be27-37ac" name="TL Lascannons" hidden="false" targetId="931c-879f-36f0-beb3" type="profile"/>
+            <infoLink id="a8d8-5917-b3f8-8da5" name="TL Autocannons" hidden="false" targetId="4e4d-73ca-8751-3500" type="profile"/>
+            <infoLink id="0914-c0e4-5a83-737e" name="Kraken Heavy Missiles" hidden="false" targetId="203f-597d-651d-a1fb" type="profile"/>
+            <infoLink id="cf3d-2ab7-dd43-cbe2" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="225.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="0557-87d4-e3d2-e5b5" name="Solar Auxilia Support" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="5fb0-e580-cb89-4156" name="Solar Auxilia Support" hidden="false">
+          <description>Add 4 Auxilia Flamer Section (Close Support Section) or Veletaris Storm units in any combination.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5956-873e-8703-5423" name="Units" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f362-e783-2574-8822" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b09d-93a6-8422-cc3e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f2df-75f7-f9ab-3cc8" name="Solar Auxilia Close Support Section" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a52-2db4-4536-5148" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ca57-d255-1e72-0fb6" name="Solar Auxilia Close Support Section" hidden="false" targetId="07e4-f6e0-ab2f-54e2" type="profile"/>
+                <infoLink id="5d35-78f6-c6ac-36fc" name="Flamers" hidden="false" targetId="6041-b864-8cf2-9c9e" type="profile"/>
+                <infoLink id="cd3f-8b5f-b5a7-d7c7" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2a9f-73d0-6088-6745" name="Veletaris Storm Section" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd70-0448-156f-5fa9" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b771-09a7-6a88-66ee" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile"/>
+                <infoLink id="d270-4a20-b44a-6d05" name="Volkite Chargers OR" hidden="false" targetId="a818-d12d-e991-1023" type="profile"/>
+                <infoLink id="36ad-8696-b72e-3e4c" name="Power Axes" hidden="false" targetId="f4c9-3ab4-7775-6061" type="profile"/>
+                <infoLink id="8b04-4612-0872-c3dd" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0848-2211-d849-99ac" name="Executioner" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d936-591d-b69d-8b15" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1116-6822-4e32-3d30" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b553-cc3f-1eb9-f12e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ce77-c487-f8c0-8d2a" name="Leman Russ Executioner (replaces Leman Russ)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1971-f82d-99ba-e46d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="16da-6ed2-b7bc-6b75" name="Leman Russ Executioner" hidden="false" targetId="f743-4acc-8fce-3bb6" type="profile"/>
+                <infoLink id="9674-cb67-8660-3377" name="Plasma Cannon" hidden="false" targetId="73dd-4390-643c-5527" type="profile"/>
+                <infoLink id="3f1e-b058-d039-4015" name="Lascannon" hidden="false" targetId="ac7a-3c8d-06a8-3f0f" type="profile"/>
+                <infoLink id="2345-7181-d272-4ea3" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="4052-2df4-7875-6f1f" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+                <infoLink id="4b85-f773-a563-d108" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d70-d250-6587-64ff" name="Infantry Support Tank" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d7ea-228b-9ad6-cdbd" name="Units" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9d5-6e51-7ad1-40f4" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ef-530e-e35e-aa18" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="0670-ebc0-df2c-a94b" name="Leman Russ Demolisher" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b677-7128-ac7f-0a1f" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4b78-b7c5-9020-bcec" name="Leman Russ Demolisher" hidden="false" targetId="30ee-2269-4474-28f6" type="profile"/>
+                <infoLink id="8ff4-33cc-6279-fb33" name="Demolisher Cannon" hidden="false" targetId="f423-bd5a-cc07-6484" type="profile"/>
+                <infoLink id="34d6-8fd0-23d8-f027" name="Lascannon" hidden="false" targetId="b316-0842-a568-de44" type="profile"/>
+                <infoLink id="9bee-b577-43a5-6872" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="2d92-12ad-73a7-214a" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+                <infoLink id="264f-cffd-a4b8-50de" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="447f-8086-d5d2-ef4a" name="Malcador Infernus Special Weapons Tank" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8111-f5fb-352d-779c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f6e6-0cec-1ab4-5b95" name="Malcador Infernus Special Weapons Tank" hidden="false" targetId="7dfc-a431-14cb-241d" type="profile"/>
+                <infoLink id="564d-5394-96ad-2a68" name="Infernus Cannon" hidden="false" targetId="ae9e-c86c-16e0-f62b" type="profile"/>
+                <infoLink id="b95f-c1d8-95c2-65e3" name="2 x Autocannons" hidden="false" targetId="ed40-96cb-43d8-ed1d" type="profile"/>
+                <infoLink id="161d-33bf-3a57-2069" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="59e6-77fd-fa20-78e1" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fdc3-ae96-cdd4-f194" name="Ogryn Charonite Squad" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="1b7e-d012-9e9f-1504" name="Ogryn Charonite Squad" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d46-9be7-0d65-d847" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a01-0345-f323-bf9d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7852-3e64-539f-f54f" name="Ogryn Charonite Squad" hidden="false" targetId="f4d5-d80c-7d7e-ef9c" type="profile"/>
+            <infoLink id="5adb-6529-3737-84b1" name="Charonite Claws" hidden="false" targetId="3142-2ece-9ca2-dee7" type="profile"/>
+            <infoLink id="8125-4a67-6cf1-d0c9" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="573c-f380-2d5f-04e2" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="41d5-03e5-a678-9818" name="Rapier Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntries>
+        <selectionEntry id="b3c6-8adb-6655-9f97" name="Solar Auxilia Rapier Platform" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f5-8d4b-b102-1035" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a4e-2d85-b3e2-86f6" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="fb19-436b-bd22-d44a" name="Solar Auxilia Rapier Platform" hidden="false" targetId="8222-f575-52b7-3c1e" type="profile"/>
+            <infoLink id="e83c-40eb-d7bd-035d" name="Laser Destroyer OR" hidden="false" targetId="7de5-cab6-561a-2668" type="profile"/>
+            <infoLink id="b29f-603e-d42a-7a8a" name="Quad Mortar OR" hidden="false" targetId="3c47-ee68-33f3-febb" type="profile"/>
+            <infoLink id="dd39-4d86-ba5e-ed13" name="Quad Heavy Bolter" hidden="false" targetId="f4d2-4900-730d-bdd5" type="profile"/>
+            <infoLink id="aa93-e23b-1417-12f8" name="Mounted" hidden="false" targetId="4357-7618-ea64-6347" type="rule"/>
+            <infoLink id="7d84-e27b-c79b-b320" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
+            <infoLink id="ac09-290e-232b-3a0d" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d238-ac26-d475-a765" name="Transport" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="cd7a-07ed-7ca4-88d5" name="Transport" hidden="false">
+          <description>Add enough transports to carry the entire detachment.</description>
+        </rule>
+      </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d317-276e-6d33-d3fc" name="Transport" hidden="false" collective="false" import="true" defaultSelectionEntryId="f324-b0b7-d2ca-e212">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6e-87b1-a9a8-8b12" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d4a-11df-fd2b-0745" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f324-b0b7-d2ca-e212" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89a4-aef1-d562-add6" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2efe-5937-970e-19ad" name="Dracosan Armoured Transport" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bf0-1228-b861-27d1" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1b61-e6c6-011e-d7af" name="Dracosan Armoured Transport" hidden="false" targetId="3b2a-57fe-eb17-6727" type="profile"/>
+                    <infoLink id="1c29-c27f-079b-2af0" name="TL Lascannon" hidden="false" targetId="c312-b2c6-80bb-2a80" type="profile"/>
+                    <infoLink id="d879-0867-0526-82f3" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="7898-0a2c-bf38-22f1" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="75.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ef56-4743-1468-1616" name="Stormlord" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9022-f132-c8ae-e31e" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="424d-c130-88aa-af68" name="Stormlord" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f492-c46b-769e-d6ba" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3ae0-777d-6fd9-8375" name="Stormlord" hidden="false" targetId="1c25-2839-2e9b-5c39" type="profile"/>
+                    <infoLink id="935d-9570-725b-556e" name="Vulcan Mega-Bolter" hidden="false" targetId="1336-1bb2-f11e-d9e9" type="profile"/>
+                    <infoLink id="d660-f1c7-6295-d992" name="3 x TL Heavy Bolters" hidden="false" targetId="85b3-c1a9-df1e-89b5" type="profile"/>
+                    <infoLink id="ed2e-7599-d1bb-7671" name="2 x Heavy Flamers" hidden="false" targetId="daa8-4454-7a45-db75" type="profile"/>
+                    <infoLink id="985d-195e-78cd-8cd6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="ee70-c1b4-fb1e-7fa0" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+                    <infoLink id="1dbf-cef7-1faf-1fdf" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                    <infoLink id="b841-dd99-4242-cf51" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="200.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5bcd-8dd2-7b9e-69e8" name="Arvus Lighter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="034b-7ca5-31be-59dc" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7f56-15ab-e488-8ba4" name="Arvus Lighter Orbital Shuttle" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e388-0f5e-4b16-d06c" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d874-b2f7-4974-62fe" name="Arvus Lighter Orbital Shuttle" hidden="false" targetId="496c-454a-32b7-d39d" type="profile"/>
+                    <infoLink id="aaa4-0667-0a6d-736a" name="Multi-Laser" hidden="false" targetId="c97b-879e-943c-dbe5" type="profile"/>
+                    <infoLink id="04a0-6a85-c8f6-a4da" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
+                    <infoLink id="6a21-3607-b90d-004d" name="Planetfall" hidden="false" targetId="6a98-a141-f09e-3c89" type="rule"/>
+                    <infoLink id="55f7-8ff2-c30f-3c72" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ef3-1fcf-104a-f51e" name="Vanquisher" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8bef-7365-6569-b64e" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5a1-2488-087e-07ed" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a4a-060b-5c79-9d26" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c590-ab32-39bf-bf62" name="Leman Russ Vanquisher (replaces Leman Russ)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fda-2f99-7d7a-c575" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e4a7-18d0-272b-3193" name="Leman Russ Vanquisher" hidden="false" targetId="8254-a3b9-a3fd-93f5" type="profile"/>
+                <infoLink id="9ac0-43cb-f1b0-aa7d" name="Vanquisher Cannon" hidden="false" targetId="bea1-9dc2-5d06-be2a" type="profile"/>
+                <infoLink id="c0a4-fc50-1492-ba76" name="Lascannon" hidden="false" targetId="10d6-f78d-4fc4-c32b" type="profile"/>
+                <infoLink id="b6b7-3aa1-def5-0341" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="982e-f1a4-74bf-ba12" name="Legate Commander" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="increment" field="1654-bba0-0d32-76a2" value="1.0">
+          <repeats>
+            <repeat field="points" scope="roster" value="500.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" repeats="1" roundUp="true"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1654-bba0-0d32-76a2" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="2545-28eb-b7a9-ad05" name="Legate Commander" hidden="false" targetId="59fb-d336-6931-c7ba" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="bacb-5aec-9af1-1496" name="Legate Commander" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f305-d4ff-85b4-a0cf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc4-ffeb-abd0-dbcf" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cd4b-f373-ffdf-02d2" name="Legate Commander" hidden="false" targetId="e3e2-afed-67c2-1d15" type="profile"/>
+            <infoLink id="e355-1a5c-1567-732d" name="Power Fist" hidden="false" targetId="f158-8a5e-30ba-3700" type="profile"/>
+            <infoLink id="9cc7-e5ec-5e6f-7629" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
+            <infoLink id="6865-9d9d-be07-c348" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
+            <infoLink id="7559-9429-811c-892d" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="188a-9a6b-03e4-0a3d" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="5e1f-236e-aca5-33d0" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile id="8825-4f1d-f4e0-101c" name="2 x Autocannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45 cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ed40-96cb-43d8-ed1d" name="2 x Autocannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4bd2-9741-15ef-629e" name="2 x Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="daa8-4454-7a45-db75" name="2 x Heavy Flamers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm AND (15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+, Ignore Cover AND (small arms) Ignore Cover</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="77e1-e7ab-80a3-9378" name="2 x Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2b38-45d1-328d-e156" name="2 x Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="48cf-bd6e-3482-a781" name="2 x Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2437-3220-51f2-e9ef" name="2 x TL Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cb91-6b37-1188-872d" name="2 x TL Heavy Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2d30-8bca-fb4d-5109" name="3 x TL Heavy Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="85b3-c1a9-df1e-89b5" name="3 x TL Heavy Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eb49-6ba0-2187-b9ff" name="6 x Heavy Bolter (3 L, 3 R)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5db8-a743-bb25-3e11" name="Archeotech Pistol" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms) EA(+1), MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="496c-454a-32b7-d39d" name="Arvus Lighter Orbital Shuttle" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">30cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Skimmer, Planetfall. Transport: May carry two infantry units (Ogryn Charonite and Rapier Platforms take up two spaces each).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5ac3-89f7-ae8d-7933" name="Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc80-dad3-6ff5-4748" name="Avenger Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP3/AT5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2aba-f19a-d0e1-d601" name="Baneblade" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC 3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="191c-debe-5c36-b1d5" name="Baneblade Main Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9fea-3d97-e797-9bae" name="Basilisk" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="81d8-e3de-0ee4-8b05" name="Battlecannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7274-d214-4176-46dc" name="Battlecannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75 cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8753-0fea-225f-0de2" name="Bombard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3142-2ece-9ca2-dee7" name="Charonite Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1), MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fe70-74d3-f0af-fe9d" name="Dauntless Class Light Cruiser" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">SC</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Transport: May carry up to 20 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Lord Marshall, Solar Auxlia Command Section, Solar Auxilia Infantry Section, Solar Auxilia Close Support Section, Veletaris Storm, Ogryn Charonite Squad or Rapier Platforms.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c27-6aa0-8336-a4de" name="Demolisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT4+ Ignore Cover AND (small arms) Ignore Cover, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f423-bd5a-cc07-6484" name="Demolisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm AND (15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT4+, Ignore Cover</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3b2a-57fe-eb17-6727" name="Dracosan Armoured Transport" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC2, Reinforced Armour. Transport: May carry four infantry units. Ogryn Charonites take up two spaces. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="201f-e7ca-5711-9e58" name="Dual BattleCannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT4+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d7b0-4d45-7dfc-ee3f" name="Earthshaker Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">120cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT4+ OR 1 BP, Indirect Fire</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f676-720b-9dcd-bcc4" name="Emperor Class Battleship" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">SC</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Slow and Steady, Transport: May carry up to 60 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Lord Marshall, Solar Auxlia Command Section, Solar Auxilia Infantry Section, Solar Auxilia Close Support Section, Veletaris Storm, Ogryn Charonite Squad or Rapier Platforms.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6041-b864-8cf2-9c9e" name="Flamers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm AND (15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+, Ignore Cover AND / (small arms) Ignore Cover</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Weapon lines are combined; check the wiki sheet.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b085-6db5-99a4-04ad" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4366-9db2-ddb6-2c33" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="641a-5c99-c824-c6a1" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="183a-2d2a-e7ed-6f80" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="33a1-5c34-50b3-5f87" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8ccb-5326-d9d3-8208" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5e88-d56c-95d3-c058" name="Heavy Stubber" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AA6+, Rear Arc</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee62-a2e7-7e16-52b3" name="Imperial Navy Avenger Strike Fighter" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AC</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Fighter-Bomber</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7c92-8f7f-c77e-81ae" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AC</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Fighter</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae9e-c86c-16e0-f62b" name="Infernus Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="203f-597d-651d-a1fb" name="Kraken Heavy Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+, Single Shot, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0fb3-dec3-5a58-0bfe" name="Las-rifles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="42b8-ee86-f72d-c423" name="Lascannnon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e3ab-974e-0877-6743" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b316-0842-a568-de44" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cdd5-72fd-8b08-f1c1" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac7a-3c8d-06a8-3f0f" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="10d6-f78d-4fc4-c32b" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7de5-cab6-561a-2668" name="Laser Destroyer OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP6+/AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e3e2-afed-67c2-1d15" name="Legate Commander" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">CH</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Leader, Inspiring</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c83-a24c-f980-af60" name="Leman Russ Battle Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">25cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="30ee-2269-4474-28f6" name="Leman Russ Demolisher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f743-4acc-8fce-3bb6" name="Leman Russ Executioner" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a7bd-28bf-1ab9-3b09" name="Leman Russ Exterminator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">25cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="11fc-5a12-806a-d634" name="Leman Russ Incinerator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8254-a3b9-a3fd-93f5" name="Leman Russ Vanquisher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">25cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e8a-01a5-746e-64a5" name="Lord Marshall" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Supreme Commander, Invulnerable Save</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1280-c35b-1340-10c6" name="Malcador Heavy Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7dfc-a431-14cb-241d" name="Malcador Infernus Special Weapons Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">3+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b237-9463-8e26-c0f1" name="Medusa" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e3a0-a0fc-275f-4ffa" name="Medusa Siege Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm AND (15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW4+, Ignore CoverAND (small arms), Ignore Cover, MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1b94-aa76-552a-ee75" name="Missile Rack" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AA4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c97b-879e-943c-dbe5" name="Multi-Laser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f4d5-d80c-7d7e-ef9c" name="Ogryn Charonite Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">3+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cbee-2427-699c-900d" name="Orbital Bombardment" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">8 BP, MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fa84-2aa1-e963-6fc6" name="Orbital Bombardment / Lance Battery" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 BP, MW / MW2+, TK(D3)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Weapon lines are combined; check the wiki sheet.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b7a0-35d8-52a2-b941" name="Plasma Blastgun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x MW2+, FxF, Slow Firing</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="73dd-4390-643c-5527" name="Plasma Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9e5e-17d3-bffa-9eaa" name="Plasma Guns" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f4c9-3ab4-7775-6061" name="Power Axes" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f158-8a5e-30ba-3700" name="Power Fist" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1), MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f4d2-4900-730d-bdd5" name="Quad Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3c47-ee68-33f3-febb" name="Quad Mortar OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+, Indirect Fire, Disrupt</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f5e6-ad64-b4ee-0643" name="Shadowsword" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC 3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a99-49a5-37d1-5f7d" name="Siege Mortar" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">1 BP, Indirect Fire, Ignore Cover</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="07e4-f6e0-ab2f-54e2" name="Solar Auxilia Close Support Section" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0651-b8e0-03ca-7f31" name="Solar Auxilia Command Section" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Commander.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9056-bfbd-b004-a737" name="Solar Auxilia Infantry Section" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8222-f575-52b7-3c1e" name="Solar Auxilia Rapier Platform" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">10cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Mounted. A Solar Auxilia Rapier platform must select one weapon system before the start of the game. All platforms in a single detachment must select the same weapon system.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="799d-3704-9790-e091" name="Stormblade" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5fdd-8517-235a-cb7f" name="Stormhammer" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0e34-98ba-ed54-5f02" name="Stormhammer Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">60cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1c25-2839-2e9b-5c39" name="Stormlord" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">3+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC3, Reinforced Armour, Thick Rear Armour. Transport: May carry 8 infantry units (Ogryns take up two spaces each). Additionally, up to 4 units being transported may fire and/or use their FF values during an assault. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3f91-5a3f-d3fc-d1cd" name="Stormsword" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a047-2e66-be30-eae8" name="Stormsword Siege Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 BP, Disrupt, Ignore Cover</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="00dc-d8bf-cf40-ba17" name="TL Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4e4d-73ca-8751-3500" name="TL Autocannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+/AA5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c75e-96ba-a97d-b39c" name="TL Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c312-b2c6-80bb-2a80" name="TL Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4c2d-6ee6-a83c-4ff7" name="TL Lascannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5/AA5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="931c-879f-36f0-beb3" name="TL Lascannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+/AA5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a5c8-8850-1252-e5d4" name="TL Volkite Demi Culverin" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP3+/AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a345-6b96-2653-2621" name="Tarantula" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc19-6dba-9893-e358" name="Tarantula Hyperios" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bea1-9dc2-5d06-be2a" name="Vanquisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT2+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4f2b-adaa-1777-a1f0" name="Veletaris Storm Section" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+ / 4+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+ / 6+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Veletaris Storm Sections are all armed with either Volkite Chargers OR Power Axes, choose one option before the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6cbe-a7e1-5af3-7e47" name="Volcano Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">90cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW2+, TK(D3), FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b64-b983-1aab-ae7a" name="Volkite Chargers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a818-d12d-e991-1023" name="Volkite Chargers OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1336-1bb2-f11e-d9e9" name="Vulcan Mega-Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">4 x AP3+/AT5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>

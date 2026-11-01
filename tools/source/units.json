@@ -1,0 +1,7226 @@
+{
+ "Legion Astartes": [
+  {
+   "name": "Champion",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Charnabal Sabre",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Sniper, Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save, Leader"
+  },
+  {
+   "name": "Chaplain",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Crozius Arcanum",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save, Inspiring, Leader"
+  },
+  {
+   "name": "Librarian",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Force Weapon",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Smite",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW, EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save, Leader"
+  },
+  {
+   "name": "Lieutenant Commander",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Paragon Blade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save, Commander"
+  },
+  {
+   "name": "Lord Commander",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Paragon Blade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save, Supreme Commander"
+  },
+  {
+   "name": "Assault Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Chainswords",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Jump Packs"
+  },
+  {
+   "name": "Breacher Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Melta-cutters",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Armorbane, Lance"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Despoiler Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Chainswords & Bolt Pistols",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Counts as Tactical Squad for transport capacity purposes."
+  },
+  {
+   "name": "Destroyer Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Assault Launcher",
+     "range": "15cm",
+     "firepower": "AP4+, Fleshbane"
+    }
+   ],
+   "notes": "Jump Packs. Count as Assault Squad for transport capacity purposes."
+  },
+  {
+   "name": "Heavy Support Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Heavy Weapons",
+     "range": "45cm",
+     "firepower": "2 x AP5+/AT6+"
+    },
+    {
+     "name": "Flak Missiles",
+     "range": "30cm",
+     "firepower": "AA6+"
+    }
+   ],
+   "notes": "Count as Tactical Squad for transport capacity purposes."
+  },
+  {
+   "name": "Outrider Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Chainswords",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Mounted, Scout"
+  },
+  {
+   "name": "Rapier",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "10cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Laser Destroyer OR",
+     "range": "45cm",
+     "firepower": "AP6+/AT4+"
+    },
+    {
+     "name": "Quad Mortar OR",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+, Indirect Fire, Disrupt"
+    },
+    {
+     "name": "Quad Heavy Bolter OR",
+     "range": "30cm",
+     "firepower": "2 x AP4+"
+    },
+    {
+     "name": "Graviton Cannon",
+     "range": "45cm",
+     "firepower": "AP5+/AT5+, Disrupt"
+    }
+   ],
+   "notes": "Mounted. A Legion Rapier must select one weapon system before the start of the game."
+  },
+  {
+   "name": "Reconnaissance Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Sniper Rifles",
+     "range": "30cm",
+     "firepower": "AP5+, Sniper, Fleshbane"
+    }
+   ],
+   "notes": "Scout, Infiltrator. Count as Tactical Squad for transport capacity purposes."
+  },
+  {
+   "name": "Tactical Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Boltguns",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Tactical Support Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Special Weapons",
+     "range": "15cm AND / (15cm)",
+     "firepower": "2 x AP4+, Ignore Cover AND / (small arms) Ignore Cover, EA(+1)",
+     "misaligned": true
+    }
+   ],
+   "notes": "Count as Tactical Squad for transport capacity purposes."
+  },
+  {
+   "name": "Terminators",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Power Fists",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Reaper Autocannon",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT6+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Attack Bike",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Scimitar Jetbike",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Plasma Cannon",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+, Fleshbane"
+    }
+   ],
+   "notes": "Skimmer."
+  },
+  {
+   "name": "Land Speeder",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Multi-Melta OR Plasma Cannon / Heavy Bolter",
+     "range": "15cm AND (15cm) OR / 30cm AND / 30cm",
+     "firepower": "AP5+/AT5+, MW AND (small arms) MW, OR / AP5+/AT5+, Fleshbane AND AP5+",
+     "misaligned": true
+    }
+   ],
+   "notes": "Scout, Skimmer. A Land Speeder must select either a Multi-Melta OR Plasma Cannon & Heavy Bolter weapon system before the start of the game."
+  },
+  {
+   "name": "Javelin Attack Speeder",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "TL Lascannon OR TL Cyclone Missile Launcher",
+     "range": "45cm OR 45cm",
+     "firepower": "AT4+OR AP3+/AT5+"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Scout, Skimmer. A Javelin Attack Speeder must select either a TL Lascannon OR TL Cyclone Missile Launcher weapon variant before the start of the game."
+  },
+  {
+   "name": "Arquitor Bombard",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Spicula Rocket System",
+     "range": "30cm",
+     "firepower": "D3 x AP5+/AT5+"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour."
+  },
+  {
+   "name": "Basilisk",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Earthshaker Cannon",
+     "range": "120cm",
+     "firepower": "AP4+/AT4+ OR 1BP, Indirect Fire"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Caestus Assault Ram",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Firefury Missile",
+     "range": "30cm",
+     "firepower": "1 BP, Single Shot"
+    },
+    {
+     "name": "Magna Melta",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP3+/AT3+, MW AND (small arms) MW"
+    }
+   ],
+   "notes": "Planetfall, Reinforced Armour, Skimmer, Transport: May carry 2 Breacher Marine units OR 2 Terminator units"
+  },
+  {
+   "name": "Contemptor Dreadnought",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Close Combat Weapon",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "Plasma Cannon",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+, Fleshbane"
+    },
+    {
+     "name": "Heavy Conversion Beamer",
+     "range": "30cm",
+     "firepower": "AP5+/AT6+, Disrupt"
+    },
+    {
+     "name": "Kheres Assault Cannon",
+     "range": "30cm",
+     "firepower": "AP4+/AT5+"
+    },
+    {
+     "name": "TL Autocannon",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+"
+    },
+    {
+     "name": "Multi-Melta",
+     "range": "15cm",
+     "firepower": "AP5+/AT5+, MW AND (small arms) MW"
+    },
+    {
+     "name": "TL Lascannon",
+     "range": "45cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "Havoc Launcher",
+     "range": "45cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Invulnerable Save, Walker. A Contemptor Dreadnought must select two arm mounted weapons at no extra cost before the start of the game. A Contemptor Dreadnought may take a carapace mounted Havoc Launcher at an extra 5 pts per unit."
+  },
+  {
+   "name": "Damocles Command Rhino",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Combi-bolter",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Commander, Transport: May carry two Tactical units."
+  },
+  {
+   "name": "Deredeo Dreadnought",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "5+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "Aiolos Missile Launcher",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+, Disrupt"
+    },
+    {
+     "name": "Helitical Targeting Array",
+     "range": "30cm",
+     "firepower": "2 x AA5+"
+    },
+    {
+     "name": "Anvilus Autocannon Battery OR",
+     "range": "45cm OR",
+     "firepower": "2 x AP5+/AT5+ OR"
+    },
+    {
+     "name": "Hellfire Plasma Cannon",
+     "range": "30cm",
+     "firepower": "AP4+/AT4+, Fleshbane"
+    }
+   ],
+   "notes": "Invulnerable Save, Walker. A Deredeo Dreadnought must select either an Autocannon Battery OR Hellfire Plasma Cannon variant before the start of the game."
+  },
+  {
+   "name": "Dreadnought",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+ / 3+",
+   "cc": "5+ / 4+",
+   "ff": "4+ / 5+",
+   "weapons": [
+    {
+     "name": "TL Lascannon",
+     "range": "45cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "TL Missile Launcher OR",
+     "range": "45cm OR",
+     "firepower": "AP4+/AT5+ OR"
+    },
+    {
+     "name": "Power Fist",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "TL Autocannon",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+"
+    }
+   ],
+   "notes": "Walker. A Dreadnought must select either a TL Lascannon / Missile Launcher OR TL Autocannon / Power Fist variant before the start of the game."
+  },
+  {
+   "name": "Kharybdis Assault Claw",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Storm Launcher",
+     "range": "30cm",
+     "firepower": "3 x AP5+/AT6+, Single Shot"
+    },
+    {
+     "name": "Melta Ram",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW"
+    },
+    {
+     "name": "Heat Blast",
+     "range": "(15cm)",
+     "firepower": "(small arms) Ignore Cover"
+    }
+   ],
+   "notes": "Planetfall, Skimmer, Transport: May carry 4 of the following Tactical, Breacher, Assault, Rapier OR 2 Terminators OR 1 Dreadnought."
+  },
+  {
+   "name": "Land Raider Achilles",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "3+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Achilles Quad Mortar",
+     "range": "45cm",
+     "firepower": "AP4+/AT4+"
+    },
+    {
+     "name": "2 x TL Multi-Melta OR",
+     "range": "15cm AND (15cm) OR",
+     "firepower": "AP4+/AT4+, MW AND (small arms) MW OR"
+    },
+    {
+     "name": "2 x TL Volkite Culverin",
+     "range": "45cm",
+     "firepower": "AP4+, Disrupt"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Transport: May carry 1 of the following Tactical, Breacher OR 1 Terminator. A Land Raider Achilles must select either 2 x Volkite Culverins OR 2 x Multi-Meltas before the start of the game."
+  },
+  {
+   "name": "Land Raider Phobos",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x TL Lascannons",
+     "range": "45cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Transport: May carry 2 of the following Tactical, Breacher OR 1 Terminator."
+  },
+  {
+   "name": "Land Raider Proteus",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x TL Lascannons",
+     "range": "45cm",
+     "firepower": "AT4+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Exploratory Augury Web, Transport: May carry 2 of the following Tactical, Breacher OR 1 Terminator."
+  },
+  {
+   "name": "Leviathan Siege Dreadnought",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Siege Claw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Armorbane, Siege"
+    },
+    {
+     "name": "Siege Drill",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Armorbane, Siege, EA(+2)"
+    },
+    {
+     "name": "Cyclonic Melta Lance",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW, EA(+1)"
+    },
+    {
+     "name": "Storm Cannon",
+     "range": "15cm",
+     "firepower": "AP4+/AT5+"
+    },
+    {
+     "name": "Grav-flux Bombard",
+     "range": "15cm",
+     "firepower": "AP3+/AT3+, Disrupt"
+    }
+   ],
+   "notes": "Reinforced Armour, Invulnerable Save, Walker. A Leviathan Siege Dreadnought must select two arm mounted weapons at no extra cost before the start of the game."
+  },
+  {
+   "name": "Medusa",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Medusa Siege Cannon",
+     "range": "30cm AND (15cm)",
+     "firepower": "AP4+/AT4+, MW, Indirect Fire AND (small arms) MW"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Predator",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "3+ OR / 5+",
+   "weapons": [
+    {
+     "name": "TL Lascannon OR",
+     "range": "45cm OR",
+     "firepower": "AT4+, OR"
+    },
+    {
+     "name": "Predator Cannon OR",
+     "range": "45cm OR",
+     "firepower": "AP5+/AT5+ OR"
+    },
+    {
+     "name": "Flamestorm Cannon",
+     "range": "30cm AND (15cm)",
+     "firepower": "AP3+, Ignore Cover AND (small arms) Ignore Cover"
+    },
+    {
+     "name": "AND",
+     "range": "AND",
+     "firepower": "AND"
+    },
+    {
+     "name": "2 x Heavy Bolters OR",
+     "range": "30cm OR",
+     "firepower": "AP5+ OR"
+    },
+    {
+     "name": "2 x Lascannon OR",
+     "range": "45cm OR",
+     "firepower": "AT5+ OR"
+    },
+    {
+     "name": "2 x Heavy Flamers",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+, Ignore Cover AND (small arms) Ignore Cover"
+    }
+   ],
+   "notes": "A Legion Predator must select either a TL Lascannon OR Predator Cannon OR Flamestorm Cannon. A Legion Predator must also select either Heavy Bolters OR Lascannons OR Heavy Flamers for its side sponsons. Heavy Flamers and Heavy Bolters convey a FF value of 3+. You must select all weapon options before the start of the game."
+  },
+  {
+   "name": "Predator Executioner",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Plasma Destroyer OR",
+     "range": "45cm OR",
+     "firepower": "AP4+/AT4+, Fleshbane OR"
+    },
+    {
+     "name": "Heavy Conversion Beamer",
+     "range": "75cm",
+     "firepower": "AT2+"
+    },
+    {
+     "name": "2 x Lascannons",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "A Legion Predator Executioner must select either a Plasma Destroyer OR Heavy Conversion Beamer before the start of the game."
+  },
+  {
+   "name": "Predator Infernus",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Magma Melter",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP3+/AT3+, MW AND (small arms) MW"
+    },
+    {
+     "name": "2 x Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Rhino Armoured Carrier",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Combi-Bolter",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Transport: May carry 2 Tactical Squad units."
+  },
+  {
+   "name": "Sicaran Battle Tank",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Accelerator Cannon",
+     "range": "45cm",
+     "firepower": "2 x AP4+/AT5+"
+    },
+    {
+     "name": "3 x Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Sicaran Venator",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Neutron Beam",
+     "range": "30cm",
+     "firepower": "AP5+/AT4+, Armorbane, Disrupt, FxF"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Sicaran Omega Tank Destroyer",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Omega Plasma Array",
+     "range": "30cm",
+     "firepower": "2 x AT3+, Armorbane, Lance"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour."
+  },
+  {
+   "name": "Vindicator",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Demolisher Cannon",
+     "range": "30cm AND (15cm)",
+     "firepower": "AP3+/AT4+, Ignore Cover AND (small arms) Ignore Cover"
+    }
+   ],
+   "notes": "Walker."
+  },
+  {
+   "name": "Vindicator Laser Destroyer",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Laser Destroyer Array",
+     "range": "60cm",
+     "firepower": "AP6+/AT3+, Armorbane"
+    }
+   ],
+   "notes": "Walker."
+  },
+  {
+   "name": "Whirlwind",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Vengeance & Castellan Missiles",
+     "range": "45cm",
+     "firepower": "BP 1, Ignore Cover, Indirect Fire"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Whirlwind Hyperios",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Hyperios Launcher",
+     "range": "60cm",
+     "firepower": "AT4+/AA4+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Whirlwind Scorpius",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Scorpius Multi Launcher",
+     "range": "45cm",
+     "firepower": "2 x AP5+/AT5+, Indirect Fire"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Cerberus Tank Destroyer",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Neutron Laser Battery",
+     "range": "60cm",
+     "firepower": "2 x AT3+, Armorbane, Disrupt, Feedback, FxF"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "DC2, Reinforced Armour."
+  },
+  {
+   "name": "Falchion Super Heavy Tank Destroyer",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "TL Volcano Cannon",
+     "range": "90cm",
+     "firepower": "AP2+/AT2+, MW, TK(D3+1) FxF"
+    },
+    {
+     "name": "2 x Quad Lascannon",
+     "range": "45cm",
+     "firepower": "2 x AT4+"
+    }
+   ],
+   "notes": "DC4, Reinforced Armour."
+  },
+  {
+   "name": "Fellblade Super Heavy Tank",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Fellblade Cannon",
+     "range": "75cm",
+     "firepower": "AP2+/AT2+, MW, TK"
+    },
+    {
+     "name": "2 x Quad Lascannon",
+     "range": "45cm",
+     "firepower": "2 x AT4+"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+, FxF"
+    },
+    {
+     "name": "Demolisher Cannon",
+     "range": "30cm",
+     "firepower": "AP3+/AT4+, Disrupt, Ignore Cover, FxF"
+    }
+   ],
+   "notes": "DC4, Reinforced Armour."
+  },
+  {
+   "name": "Glaive Super Heavy Tank",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Volkite Carronade",
+     "range": "45cm AND (15cm)",
+     "firepower": "4 x AP3+/AT5+, Disrupt, Ignore Cover AND (small arms) Ignore Cover"
+    },
+    {
+     "name": "2 x Quad Lascannon",
+     "range": "45cm",
+     "firepower": "2 x AT4+"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+"
+    }
+   ],
+   "notes": "DC4, Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Spartan Assault Tank",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x Quad Lascannon",
+     "range": "45cm",
+     "firepower": "2 x AT4+"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+, FxF"
+    }
+   ],
+   "notes": "DC2, Reinforced Armour, Thick Rear Armour, Transport: May carry four of the following units Tactical, Breacher OR 2 Terminators. Critical Hit: Unit is destroyed and all units within 5cm suffer a standard hit on a 6+"
+  },
+  {
+   "name": "Mastodon Heavy Assault Transport",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Siege Melta Array",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm (1 R, 1 L)",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "2 x Heavy Flamer",
+     "range": "15cm (1 R, 1 L)",
+     "firepower": "AP4+, Ignore Cover"
+    },
+    {
+     "name": "Skyreaper Battery",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT5+/AA5+"
+    }
+   ],
+   "notes": "DC4, 2 Void Shields, Reinforced Armour, Thick Rear Armour, Transport: May carry eight of the following units Tactical, Breacher OR 4 Terminators OR 2 Dreadnoughts and 4 Tacticals. A Mastodon may exchange its Skyreaper Battery for a Command Relay. A Mastodon with a Command Relay has the Exploratory Augury Web special rule."
+  },
+  {
+   "name": "Typhon Siege Tank",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Dreadhammer Siege Cannon",
+     "range": "30cm AND (15cm)",
+     "firepower": "3BP, Indirect Fire, Ignore Cover, FxF AND (small arms) Ignore Cover"
+    },
+    {
+     "name": "2 x Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "DC2, Reinforced Armour."
+  },
+  {
+   "name": "Xiphon Interceptor",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter",
+   "armour": "5+",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "2 x TL Lascannons",
+     "range": "30cm",
+     "firepower": "AT4+/AA5+, FxF"
+    },
+    {
+     "name": "Rotary Missile Launcher",
+     "range": "45cm",
+     "firepower": "AT5+, FxF"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Fire Raptor Gunship",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter-Bomber",
+   "armour": "5+",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "TL Avenger Bolt Cannon",
+     "range": "30cm",
+     "firepower": "2 x AP2+/AT5+, FxF"
+    },
+    {
+     "name": "Hellstrike Missile Pod",
+     "range": "45cm",
+     "firepower": "2 x AT4+, Fwd"
+    },
+    {
+     "name": "2 x Quad Heavy Bolter OR",
+     "range": "15cm OR",
+     "firepower": "AP4+/AA6+ (1 R, 1 L) OR"
+    },
+    {
+     "name": "2 x Reaper Autocannon Battery",
+     "range": "30cm",
+     "firepower": "AP5+/AT6+ (1 R, 1 L)"
+    }
+   ],
+   "notes": "Reinforced Armour. A Fire Raptor must select either Quad Heavy Bolters OR Reaper Autocannons before the start of the game."
+  },
+  {
+   "name": "Sokar Pattern Storm Bird Heavy Attack Ship",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC/WE",
+   "speed": "Bomber",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Dreadstrike Missile Array",
+     "range": "45cm",
+     "firepower": "4 x AT4+"
+    },
+    {
+     "name": "4 x TL Lascannons",
+     "range": "30cm",
+     "firepower": "AT4+/AA4+"
+    },
+    {
+     "name": "3 x TL Heavy Bolter",
+     "range": "15cm",
+     "firepower": "AP4+, FxF"
+    }
+   ],
+   "notes": "DC4, Planetfall, Reinforced Armour, 1 Void Shield. Transport: May carry 10 of the following units Tactical, Breacher, Assault, Terminator, Outrider Squad, Dreadnought units, plus non WE transports. Dreadnoughts and Terminators take up 2 spaces each."
+  },
+  {
+   "name": "Storm Eagle Attack Ship",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC/WE",
+   "speed": "Fighter-Bomber",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Hellstrike Missile Pod",
+     "range": "45cm",
+     "firepower": "2 x AT4+"
+    },
+    {
+     "name": "Vengeance Launcher",
+     "range": "45cm",
+     "firepower": "1 BP, FxF"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+/AA5+"
+    }
+   ],
+   "notes": "DC1, Planetfall, Reinforced Armour, Transport: May carry 4 of the following units, Tactical, Breacher, Assault OR 2 Terminators."
+  },
+  {
+   "name": "Thunderhawk Gunship",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC/WE",
+   "speed": "Bomber",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Thunderhawk Cannon OR",
+     "range": "60cm OR",
+     "firepower": "AP3+/AT3+ OR"
+    },
+    {
+     "name": "Thunderhawk Laser Destroyer",
+     "range": "45cm",
+     "firepower": "2 x AP6+/AT3, Armorbane, FxF"
+    },
+    {
+     "name": "TL Lascannon",
+     "range": "45cm",
+     "firepower": "AT4+/AA5+, FxF"
+    },
+    {
+     "name": "2 x TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+, FxF"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "15cm",
+     "firepower": "AP4+, RF"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "15cm",
+     "firepower": "AP4+, LF"
+    }
+   ],
+   "notes": "DC2, Planetfall, Reinforced Armour, Transport: May carry 8 of the following units, Tactical, Breacher, Assault OR 4 Terminators OR 5 Outrider Squads."
+  },
+  {
+   "name": "Thunderhawk Transporter",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC/WE",
+   "speed": "Bomber",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x TL Heavy Bolter",
+     "range": "15cm",
+     "firepower": "AP4+/AA5+"
+    }
+   ],
+   "notes": "DC2, Planetfall, Reinforced Armour, Transport: May carry 2 of the following units Rhino Armoured Carrier, Medusa, Basilisk, Sicaran, Predator, Vindicator, Basilisk OR 1 Land Raider Phobos/Proteus."
+  },
+  {
+   "name": "Drop Pod",
+   "section": "Aircraft & Spacecraft",
+   "type": "Special",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Deathstorm Bombardment",
+     "range": "15cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "Planetfall, Transport: May carry 1 formation that only includes the following units Tactical, Breacher, Assault, Rapier, Dreadnought. Once landed resolve any attacks against all units within 15cm of the Drop Pod. Units transported disembark and must be placed within 5cm of the Drop Pod or within 5cm of another unit from the same formation that has landed, as long as all units remain withing 15cm of the Drop Pod. Once landed, the Drop Pod has no further effect."
+  },
+  {
+   "name": "Strike Cruiser",
+   "section": "Aircraft & Spacecraft",
+   "type": "SC",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Orbital Bombardment",
+     "range": "-",
+     "firepower": "5BP, MW"
+    }
+   ],
+   "notes": "Transport: May carry 20 of the following units; Tactical, Breacher, Assault, Rapier, Outrider Bike, Terminator. Additionally, 20 of the following units; Dreadnoughts, Rhinos, Land Raiders, Whirlwinds, Basilisk, Medusa, Sicaran, Predators or Vindicators; plus 6 Thunderhawks, 2 Storm Birds and enough Assault Rams, Assault Claws, Drop Pods or Storm Eagles to carry any other units on board."
+  },
+  {
+   "name": "Battle Barge",
+   "section": "Aircraft & Spacecraft",
+   "type": "SC",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Orbital Bombardment",
+     "range": "-",
+     "firepower": "14BP, MW"
+    }
+   ],
+   "notes": "Slow and Steady: May not be used on the first turn of a battle unless the scenario specifically says otherwise. Transport: May carry 60 of the following units; Tactical, Breacher, Assault, Rapier, Outrider Bike, Terminator. Additionally, 60 of the following units; Dreadnoughts, Rhinos, Land Raiders, Whirlwinds, Basilisk, Medusa, Sicaran, Predators or Vindicators; plus 9 Thunderhawks, 4 Storm Birds and enough Assault Rams, Assault Claws, Drop Pods or Storm Eagles to carry any other units on board."
+  }
+ ],
+ "Loyalist Legions": [
+  {
+   "name": "Medusan Immortals Squad",
+   "section": "Iron Hands",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Melta-cutters",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Armorbane, Lance"
+    }
+   ],
+   "notes": "Fearless. Count as Breacher Marines for transport capacity purposes."
+  },
+  {
+   "name": "Gorgon Terminator Squad",
+   "section": "Iron Hands",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Power Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    },
+    {
+     "name": "Graviton Weapons",
+     "range": "15cm",
+     "firepower": "2 x AP5+/AT6+, Disrupt"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Ferrus Manus, the Bane of Asirnoth",
+   "section": "Iron Hands",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Forgebreaker",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    },
+    {
+     "name": "The Medusan Carapace",
+     "range": "15cm AND (15cm)",
+     "firepower": "2 x AP4+/AT4+, Fleshbane AND (small arms) Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Dark Fury Assault Marines",
+   "section": "Raven Guard",
+   "type": "INF",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Lightning Claws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, EA(+1)"
+    }
+   ],
+   "notes": "Scout."
+  },
+  {
+   "name": "Mor Deythan Strike Squad",
+   "section": "Raven Guard",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Sniper Rifle",
+     "range": "30cm",
+     "firepower": "AP5+ Sniper"
+    },
+    {
+     "name": "Combi Weapons",
+     "range": "(15cm)",
+     "firepower": "(small arms) First Strike"
+    }
+   ],
+   "notes": "Scout, Infiltrator."
+  },
+  {
+   "name": "Darkwing Pattern Storm Eagle",
+   "section": "Raven Guard",
+   "type": "AC",
+   "speed": "Fighter Bomber",
+   "armour": "5+",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Eclipse Missiles",
+     "range": "45cm",
+     "firepower": "1 BP, Disrupt, FxF"
+    },
+    {
+     "name": "2 x TL Lascannon",
+     "range": "45cm",
+     "firepower": "AT4+/AA5+, FxF"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+, FxF"
+    }
+   ],
+   "notes": "Reinforced Armour, Invulnerable Save(6+), Transport: May carry 3 of the following units, Tactical, Breacher, Assault OR 1 Terminator unit."
+  },
+  {
+   "name": "Corvus Corax, the Shadow Lord",
+   "section": "Raven Guard",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Whip",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, Fleshbane, EA(+2)"
+    },
+    {
+     "name": "Modified Archaeotech Pistols",
+     "range": "(15cm)",
+     "firepower": "(small arms) First Strike, Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save, Infiltrator, Jump Packs."
+  },
+  {
+   "name": "Pyroclast Squad",
+   "section": "Salamanders",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Flame Projector",
+     "range": "(15cm) OR (base contact)",
+     "firepower": "(small arms) EA(+1) OR (assault weapons) Armorbane"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Firedrake Terminator Squad",
+   "section": "Salamanders",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Thunder Hammer & Shield",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Vulkan, the Promethean Fire",
+   "section": "Salamanders",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Dawnbringer",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) TK(1) OR MW, EA(+2)"
+    },
+    {
+     "name": "The Furnace's Heart",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+/AT4+, MW AND (small arms) MW, EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save (4+)."
+  },
+  {
+   "name": "Fulmentarus Terminator Squad",
+   "section": "Ultramarines",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Reaper Autocannon",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT5+, Ignore Cover"
+    },
+    {
+     "name": "Cyclone Missile Launcher",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+, Ignore Cover"
+    },
+    {
+     "name": "Power Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Loctarus Storm Squad",
+   "section": "Ultramarines",
+   "type": "INF",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane"
+    }
+   ],
+   "notes": "Jump Packs."
+  },
+  {
+   "name": "Invictarus Suzerain Squad",
+   "section": "Ultramarines",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Legatine Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW"
+    },
+    {
+     "name": "Plasma Pistols",
+     "range": "(15cm)",
+     "firepower": "(small arms) Fleshbane"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Roboute Guilliman, Master of Ultramar",
+   "section": "Ultramarines",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Hand of Dominion",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    },
+    {
+     "name": "Arbitrator",
+     "range": "15cm AND (15cm)",
+     "firepower": "2 x AP4+ AND (small arms) EA(+3)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Phalanx Warder Squad",
+   "section": "Imperial Fists",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Melta-cutters",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Armorbane, Lance"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Templar Brethren",
+   "section": "Imperial Fists",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Castellum Stronghold",
+   "section": "Imperial Fists",
+   "type": "WE",
+   "speed": "Immobile",
+   "armour": "3+",
+   "cc": "-",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "2 x Hyperios Battery",
+     "range": "30cm",
+     "firepower": "AA6+"
+    },
+    {
+     "name": "2 x TL Lascannon",
+     "range": "45cm",
+     "firepower": "AT4+"
+    }
+   ],
+   "notes": "DC 3, 2 Void Shields, Reinforced Armour, Thick Rear Armour, Invulnerable Save, Fearless, Exploratory Augury Web, Fortifications, Transport: May carry 8 infantry units."
+  },
+  {
+   "name": "Primus Redoubt",
+   "section": "Imperial Fists",
+   "type": "WE",
+   "speed": "Immobile",
+   "armour": "3+",
+   "cc": "-",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "2 x Hyperios Battery",
+     "range": "30cm",
+     "firepower": "AA6+"
+    },
+    {
+     "name": "Turbolaser Destructor",
+     "range": "60cm",
+     "firepower": "4 x AP5+/AT3+"
+    }
+   ],
+   "notes": "DC 3, 2 Void Shields, Reinforced Armour, Thick Rear Armour, Invulnerable Save, Fearless, Exploratory Augury Web, Fortifications, Transport: May carry 10 infantry units."
+  },
+  {
+   "name": "Rogal Dorn, Praetorian of Terra",
+   "section": "Imperial Fists",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Storms Teeth",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "The Voice of Terra",
+     "range": "15cm AND (15cm)",
+     "firepower": "2 x AP4+ AND (small arms) EA(+3)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Angel Tears Squad",
+   "section": "Blood Angels",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x Assault Launchers",
+     "range": "30cm",
+     "firepower": "AP4+, Fleshbane"
+    }
+   ],
+   "notes": "Jump Packs. Count as Assault Marines for transport purposes."
+  },
+  {
+   "name": "Crimson Paladin Squad",
+   "section": "Blood Angels",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    },
+    {
+     "name": "Iliastus Assault Cannon",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Dawnbreaker Cohort Squad",
+   "section": "Blood Angels",
+   "type": "INF",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Falling Star Pattern Power Spear",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Jump Packs, Infiltrator."
+  },
+  {
+   "name": "Sanguinius, the Angel",
+   "section": "Blood Angels",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "3+",
+   "cc": "2+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Spear of Telesto",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, MW, EA(+1) AND (assault weapons) Sniper, MW, EA(+1)"
+    },
+    {
+     "name": "Archaeotech Pistol",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW, EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save, Jump Packs."
+  },
+  {
+   "name": "Dreadwing Interemptor Squad",
+   "section": "Dark Angels",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Plasma Burners",
+     "range": "15cm AND (15cm)",
+     "firepower": "2 x AP4+/AT4+, Fleshbane, Ignore Cover AND (small arms) Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Lion El'Johnson, the Son of the Forest",
+   "section": "Dark Angels",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "2+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "The Lion Sword",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, MW, EA(+1) AND (assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Master-crafted Volkite Pistol",
+     "range": "(15cm)",
+     "firepower": "(small arms) Sniper, MW, EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Kyzagan Assault Speeder",
+   "section": "White Scars",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Kheres Pattern Assault Cannon",
+     "range": "30cm",
+     "firepower": "AP4+/AT5+"
+    },
+    {
+     "name": "2 x Reaper Autocannon",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT6+"
+    }
+   ],
+   "notes": "Skimmer."
+  },
+  {
+   "name": "Golden Keshig",
+   "section": "White Scars",
+   "type": "LV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Scatterbolt Launcher",
+     "range": "15cm",
+     "firepower": "AP5+, Disrupt"
+    },
+    {
+     "name": "Kontos Power Lance",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, MW, Single Shot"
+    },
+    {
+     "name": "Power Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    }
+   ],
+   "notes": "Skimmer."
+  },
+  {
+   "name": "Ebon Keshig Squad",
+   "section": "White Scars",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Glaive",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, MW, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Fearless."
+  },
+  {
+   "name": "Jaghatai Khan, the Great Khan",
+   "section": "White Scars",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Vengeance Lance",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, MW, EA(+1) AND (assault weapons) First Strike, EA(+1)"
+    },
+    {
+     "name": "Sabre of Unity",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Bolt Pistol",
+     "range": "(15cm)",
+     "firepower": "(small arms) EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+)"
+  },
+  {
+   "name": "Grey Slayer Pack",
+   "section": "Space Wolves",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Chainswords & Bolt Pistols",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Ferocity. Count as Tactical Marines for transport capacity purposes"
+  },
+  {
+   "name": "Deathsworn Pack",
+   "section": "Space Wolves",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Power Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane"
+    }
+   ],
+   "notes": "Fearless, Ferocity. Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Varagyr Wolf Guard Terminator Squad",
+   "section": "Space Wolves",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Frost Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Reaper Autocannon",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT6+"
+    }
+   ],
+   "notes": "Ferocity, Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Leman Russ, the Wolf King",
+   "section": "Space Wolves",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Mjalnar",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+3)"
+    },
+    {
+     "name": "Wolves of Fenrir",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+2)"
+    },
+    {
+     "name": "Bolt Pistol",
+     "range": "(15cm)",
+     "firepower": "(small arms) EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+), Ferocity."
+  }
+ ],
+ "Traitor Legions": [
+  {
+   "name": "Night Raptor Squad",
+   "section": "Night Lords",
+   "type": "INF",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Power Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane"
+    }
+   ],
+   "notes": "Jump Packs, Brutal. Count as Assault Marines for transport capacity purposes."
+  },
+  {
+   "name": "Terror Squad",
+   "section": "Night Lords",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Chainglaives",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1)"
+    }
+   ],
+   "notes": "Infiltrator, Brutal. Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Konrad Curze, the Night Haunter",
+   "section": "Night Lords",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Mercy & Forgiveness",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    },
+    {
+     "name": "The Widowmakers",
+     "range": "(15cm)",
+     "firepower": "(small arms) First Strike EA(+2)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(5+), Infiltrator, Brutal."
+  },
+  {
+   "name": "Rampager Squad",
+   "section": "World Eaters",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Cadere Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1)"
+    }
+   ],
+   "notes": "Fearless, Brutal, Berserk. Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Red Butcher Terminator Squad",
+   "section": "World Eaters",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Power Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+2)"
+    }
+   ],
+   "notes": "Fearless, Brutal, Berserk, Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Angron, Master of the World Eaters",
+   "section": "World Eaters",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Gorefather & Gorechild",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(D3+1)"
+    },
+    {
+     "name": "The Spite Furnace",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW, EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+), Infiltrator."
+  },
+  {
+   "name": "Palatine Blades",
+   "section": "Emperors Children",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Dueling Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, EA(+2)"
+    }
+   ],
+   "notes": "Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Kakophoni Squad",
+   "section": "Emperors Children",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "The Cacophony",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT6+ Disrupt"
+    }
+   ],
+   "notes": "Fearless. Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Phoenix Terminator Squad",
+   "section": "Emperors Children",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Phoenix Power Spear",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, MW, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Fulgrim, the Illuminator",
+   "section": "Emperors Children",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "2+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Blade of the Laer",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) First Strike, MW, EA(+2)"
+    },
+    {
+     "name": "Firebrand",
+     "range": "(15cm)",
+     "firepower": "(small arms) Sniper, EA(+2)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(5+)."
+  },
+  {
+   "name": "Havoc Support Squad",
+   "section": "Iron Warriors",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Havoc Autocannons",
+     "range": "30cm",
+     "firepower": "3 x AP5+/AT6+, Ignore Cover"
+    }
+   ],
+   "notes": "Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Iron Circle Automata",
+   "section": "Iron Warriors",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Olympia Bolt Cannon",
+     "range": "15cm",
+     "firepower": "AP3+/AT6+"
+    },
+    {
+     "name": "Graviton Maul",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    }
+   ],
+   "notes": "Counts as a Dreadnought for Transport Purposes. Walker, Fearless, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Tyrant Siege Terminator Squad",
+   "section": "Iron Warriors",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Cyclone Missile Launcher",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+, Ignore Cover"
+    },
+    {
+     "name": "Reaper Autocannon",
+     "range": "30cm",
+     "firepower": "2 x AP5+/AT6+"
+    },
+    {
+     "name": "Power Fists",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Stormblade",
+   "section": "Iron Warriors",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    },
+    {
+     "name": "2 x Twin-linked Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Plasma Blastgun",
+     "range": "45cm",
+     "firepower": "2 x AP2+/AT2+, MW, Slow Firing, FxF"
+    }
+   ],
+   "notes": "DC 3, Reinforced Armour."
+  },
+  {
+   "name": "Tormentor",
+   "section": "Iron Warriors",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    },
+    {
+     "name": "2 x Twin-linked Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "Volcano Cannon",
+     "range": "90cm",
+     "firepower": "AP2+/AT2+, MW, TK(D3), FxF"
+    }
+   ],
+   "notes": "DC 3, 1 Void Shield Reinforced Armour, Transport: May carry Perturabo."
+  },
+  {
+   "name": "Perturabo, Primarch of the Iron Warriors",
+   "section": "Iron Warriors",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "The Logos",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    },
+    {
+     "name": "Wrist Cannon",
+     "range": "15cm AND (15cm)",
+     "firepower": "2 x AP4+/AT4+ AND (small arms) MW, EA(+1)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+), Cortex Controller."
+  },
+  {
+   "name": "Grave Warden Terminator Squad",
+   "section": "Death Guard",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Power Fist",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Assault Grenade Launchers",
+     "range": "15cm AND (15cm)",
+     "firepower": "2 x AP4+/AT6+ Disrupt, Ignore Cover AND (small arms) Ignore Cover, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Walker."
+  },
+  {
+   "name": "Deathshroud Terminator",
+   "section": "Death Guard",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Power Scythes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+2)"
+    },
+    {
+     "name": "Chem-Flamer",
+     "range": "(15cm)",
+     "firepower": "(small arms) Fleshbane, Ignore Cover"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Walker."
+  },
+  {
+   "name": "Mortarion, the Pale King",
+   "section": "Death Guard",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Silence",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    },
+    {
+     "name": "Lantern",
+     "range": "(15cm)",
+     "firepower": "(small arms) EA(+2)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save (5+), Infiltrator."
+  },
+  {
+   "name": "Gal Vorbak Dark Brethren",
+   "section": "Word Bearers",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Daemonic Blade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1)"
+    }
+   ],
+   "notes": "Infiltrator, Scout, Invulnerable Save(6+). Gal Vorbak cannot claim objectives for the purposes of victory conditions. Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Incendiary Squad",
+   "section": "Word Bearers",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Axe-rakes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    },
+    {
+     "name": "Inferno Pistols",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP3+ Ignore Cover AND (small arms) First Strike, Ignore Cover, EA(+1)"
+    }
+   ],
+   "notes": "Jump Packs, Fearless. Count as Assault Marines for transport capacity purposes."
+  },
+  {
+   "name": "Mal Ghara Tainted Contemptor Dreadnought",
+   "section": "Word Bearers",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Tainted Power Claw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Warpfire Plasma Cannon",
+     "range": "30cm AND (15cm)",
+     "firepower": "AP5+/AT5+, Fleshbane, Disrupt AND (small arms) Fleshbane"
+    }
+   ],
+   "notes": "Walker, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Lorgar, the Voice of Truth",
+   "section": "Word Bearers",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Illuminarum",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Volkite Pistol",
+     "range": "(15cm)",
+     "firepower": "(small arms) EA(+1)"
+    },
+    {
+     "name": "Burning Lore",
+     "range": "30cm",
+     "firepower": "AP4+/AT4+/AA4+, Fleshbane"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(4+)."
+  },
+  {
+   "name": "Reaver Attack Squad",
+   "section": "Sons of Horus",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Signum Bolt Pistols",
+     "range": "(15cm)",
+     "firepower": "(small arms) Sniper"
+    }
+   ],
+   "notes": "Infiltrator. Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Justaerin Terminator Squad",
+   "section": "Sons of Horus",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Fists",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Multi-Melta",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+/AT4+, MW AND (small arms) MW, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Horus Lupercal, Breaker of Tyrants",
+   "section": "Sons of Horus",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "World Breaker",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, TK(1)"
+    },
+    {
+     "name": "Warmaster's Talon",
+     "range": "(base contact) OR (15cm)",
+     "firepower": "(assault weapons) MW, EA(+2) OR (small arms) EA(+2)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Headhunter Kill Team",
+   "section": "Alpha Legion",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Signum Bolt Pistols",
+     "range": "(15cm)",
+     "firepower": "(small arms) Sniper"
+    }
+   ],
+   "notes": "Scout. Count as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Laerenaen Terminator Squad",
+   "section": "Alpha Legion",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Power Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane, EA(+1)"
+    },
+    {
+     "name": "Volkite Chargers",
+     "range": "15cm AND (15cm)",
+     "firepower": "2 x AP3+ AND (small arms) EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Scout."
+  },
+  {
+   "name": "Alpharius & Omegon",
+   "section": "Alpha Legion",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Pale Spear",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+3)"
+    },
+    {
+     "name": "Master-craft Boltguns",
+     "range": "(15cm)",
+     "firepower": "(small arms) First Strike, EA(+3)"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(4+)."
+  },
+  {
+   "name": "Khenetai Blades",
+   "section": "Thousand Sons",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Force Blades",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+2)"
+    }
+   ],
+   "notes": "Invulnerable Save(6+), Counts as Tactical Marines for transport capacity purposes."
+  },
+  {
+   "name": "Ammitara Intercessor Squad",
+   "section": "Thousand Sons",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Sniper Rifle",
+     "range": "30cm",
+     "firepower": "AP4+, Sniper"
+    }
+   ],
+   "notes": "Scout, Infiltrator, Invulnerable Save(6+), Count as Tactical Marines for transport capacity purposes"
+  },
+  {
+   "name": "Sekhmet Terminator Squad",
+   "section": "Thousand Sons",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Force Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Force Blast",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Invulnerable Save (5+)."
+  },
+  {
+   "name": "Magnus the Red, the Crimson King",
+   "section": "Thousand Sons",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Blade of Ahn-Nunurta",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW"
+    },
+    {
+     "name": "Psyfire Serpenta",
+     "range": "(15cm) AND 30cm",
+     "firepower": "(small arms) MW, EA(+2) AND AP4+/AT4+, MW"
+    }
+   ],
+   "notes": "Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save (5+)."
+  }
+ ],
+ "Legio Custodes": [
+  {
+   "name": "Captain-General",
+   "section": "Infantry",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "2+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Apollonian Spear",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Sniper, MW EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save(6+), Supreme Commander, Inspiring."
+  },
+  {
+   "name": "Tribune",
+   "section": "Infantry",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "-",
+     "range": "-",
+     "firepower": "-"
+    }
+   ],
+   "notes": "Invulnerable Save(6+), Commander."
+  },
+  {
+   "name": "Aquilon Terminator",
+   "section": "Infantry",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Lastrum Storm Bolter",
+     "range": "(15cm)",
+     "firepower": "(small arms) EA(+1)"
+    },
+    {
+     "name": "Solerite Power Gauntlet",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Invulnerable Save(6+)."
+  },
+  {
+   "name": "Custodian Guard",
+   "section": "Infantry",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Guardian Spear",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1) Fleshbane"
+    }
+   ],
+   "notes": "Invulnerable Save(6+)."
+  },
+  {
+   "name": "Ephoroi Custodes",
+   "section": "Infantry",
+   "type": "INF",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Guardian Spear",
+     "range": "(15cm) AND (base contact)",
+     "firepower": "(small arms) EA(+1) AND (assault weapons) EA(+1)"
+    }
+   ],
+   "notes": "Scout, Infiltrator. Counts as Sentinel Guard for transport capacity purposes."
+  },
+  {
+   "name": "Venatari Squad",
+   "section": "Infantry",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Kinetic Destroyer",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Scout, Jump Packs, Invulnerable Save(6+). Count as Aquilon Terminators for transport capacity purposes."
+  },
+  {
+   "name": "Sagittarum Custodes",
+   "section": "Infantry",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Adrastus Bolt Caliver",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT6+"
+    }
+   ],
+   "notes": "Invulnerable Save(6+)."
+  },
+  {
+   "name": "Sentinel Guard",
+   "section": "Infantry",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Sentinel Warblade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1) Fleshbane"
+    }
+   ],
+   "notes": "Invulnerable Save(5+)."
+  },
+  {
+   "name": "Sisters of Silence",
+   "section": "Infantry",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Boltguns",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Fearless. Count as a Sentinel Guard for transport capacity purposes."
+  },
+  {
+   "name": "Callidus Grav-Tank",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Lastrum Bolt Cannon",
+     "range": "30cm",
+     "firepower": "2 x AP4+"
+    },
+    {
+     "name": "Iliastus Accelerator Cannon",
+     "range": "45cm",
+     "firepower": "AP4+/AT4+, Fleshbane"
+    }
+   ],
+   "notes": "Reinforced Armour, Skimmer, Invulnerable Save(6+)"
+  },
+  {
+   "name": "Contemptor-Achilles Dreadnought",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Achilles Dreadspear",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    }
+   ],
+   "notes": "Invulnerable Save(6+), Walker."
+  },
+  {
+   "name": "Contemptor-Galatus Dreadnought",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Galatus Warblade",
+     "range": "(base contact) AND (15cm)",
+     "firepower": "(assault weapons) MW, EA(+1) AND (small arms) Ignore Cover, EA(+1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Invulnerable Save(6+), Walker."
+  },
+  {
+   "name": "Coronus Grav-Carrier",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Iliastus Accelerator Cannon",
+     "range": "45cm",
+     "firepower": "AP4+/AT4+, Fleshbane"
+    },
+    {
+     "name": "Arachnus Blaze Cannon",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Invulnerable Save(6+), Skimmer, Transport: May carry 2 of the Sentinel Guard, Custodian Guard OR 1 Aquilon Terminator."
+  },
+  {
+   "name": "Custodes Agamatus",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Lance",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, First Strike"
+    },
+    {
+     "name": "Iliastus Bolt Cannon",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Mounted, Skimmer"
+  },
+  {
+   "name": "Pallas Grav-Attack Vehicle",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Arachnus Blaze Cannon",
+     "range": "30cm",
+     "firepower": "2 x AP4+/AT5+, Fleshbane"
+    }
+   ],
+   "notes": "Reinforced Armour, Invulnerable Save"
+  },
+  {
+   "name": "Telemon Heavy Dreadnought",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x Telemon Caestus OR",
+     "range": "(close combat) OR",
+     "firepower": "(assault weapons) MW, EA(+1) OR"
+    },
+    {
+     "name": "Arachnus Storm Cannon",
+     "range": "15cm",
+     "firepower": "AP4+/AT4+, MW, TK(1)"
+    }
+   ],
+   "notes": "Reinforced Armour, Invulnerable Save(6+), Walker."
+  },
+  {
+   "name": "Ares Gunship",
+   "section": "War Engine, Aircraft, Spacecraft",
+   "type": "AC",
+   "speed": "Fighter",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "2 x Arachnus Heavy Blaze Cannon",
+     "range": "15cm",
+     "firepower": "2 x AP4+/AT5+, Fleshbane"
+    },
+    {
+     "name": "Arachnus Magna-Blaze Cannon",
+     "range": "30cm",
+     "firepower": "AP4+/AT4+, Fleshbane"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Orion Assault Dropship",
+   "section": "War Engine, Aircraft, Spacecraft",
+   "type": "AC",
+   "speed": "Bomber",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x Arachnus Heavy Blaze Cannon",
+     "range": "15cm",
+     "firepower": "2 x AP4+/AT5+, Fleshbane"
+    },
+    {
+     "name": "2 x Lastrum Bolt Cannon",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "2 x Spiculus Heavy Bolt Launchers",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "DC 2, Reinforced Armour, Invulnerable Save(6+). Transport: May carry 6 Sentinel OR Custodian Guard units OR 4 Aquilon Terminator units."
+  }
+ ],
+ "Solar Auxilia": [
+  {
+   "name": "Legate Commander",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Power Fist",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "Leader, Inspiring"
+  },
+  {
+   "name": "Lord Marshall",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Archeotech Pistol",
+     "range": "(15cm)",
+     "firepower": "(small arms) EA(+1), MW"
+    },
+    {
+     "name": "Volkite Chargers",
+     "range": "15cm",
+     "firepower": "AP5+/AT6+"
+    }
+   ],
+   "notes": "Supreme Commander, Invulnerable Save"
+  },
+  {
+   "name": "Ogryn Charonite Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Charonite Claws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Solar Auxilia Rapier Platform",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "10cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Laser Destroyer OR",
+     "range": "45cm",
+     "firepower": "AP6+/AT4+"
+    },
+    {
+     "name": "Quad Mortar OR",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+, Indirect Fire, Disrupt"
+    },
+    {
+     "name": "Quad Heavy Bolter",
+     "range": "30cm",
+     "firepower": "2 x AP4+"
+    }
+   ],
+   "notes": "Mounted. A Solar Auxilia Rapier platform must select one weapon system before the start of the game. All platforms in a single detachment must select the same weapon system."
+  },
+  {
+   "name": "Solar Auxilia Command Section",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Plasma Guns",
+     "range": "15cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "Commander."
+  },
+  {
+   "name": "Solar Auxilia Infantry Section",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Las-rifles",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Solar Auxilia Close Support Section",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Flamers",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP5+, Ignore Cover AND / (small arms) Ignore Cover",
+     "misaligned": true
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Veletaris Storm Section",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "5+ / 4+",
+   "ff": "4+ / 6+",
+   "weapons": [
+    {
+     "name": "Volkite Chargers OR",
+     "range": "(15cm)",
+     "firepower": "AP5+/AT6+"
+    },
+    {
+     "name": "Power Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW"
+    }
+   ],
+   "notes": "Veletaris Storm Sections are all armed with either Volkite Chargers OR Power Axes, choose one option before the game."
+  },
+  {
+   "name": "Tarantula",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "Immobile",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+"
+    }
+   ],
+   "notes": "Teleport, Scout."
+  },
+  {
+   "name": "Tarantula Hyperios",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "Immobile",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Missile Rack",
+     "range": "30cm",
+     "firepower": "AA4+"
+    }
+   ],
+   "notes": "Teleport, Scout."
+  },
+  {
+   "name": "Arvus Lighter Orbital Shuttle",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "-",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Multi-Laser",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Skimmer, Planetfall. Transport: May carry two infantry units (Ogryn Charonite and Rapier Platforms take up two spaces each)."
+  },
+  {
+   "name": "Malcador Heavy Tank",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x Autocannons",
+     "range": "45 cm",
+     "firepower": "AP5+/AT6+"
+    },
+    {
+     "name": "Battlecannon",
+     "range": "75 cm",
+     "firepower": "AP4+/AT4+"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Malcador Infernus Special Weapons Tank",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Infernus Cannon",
+     "range": "30cm",
+     "firepower": "AP3+"
+    },
+    {
+     "name": "2 x Autocannons",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Leman Russ Battle Tank",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Battlecannon",
+     "range": "75cm",
+     "firepower": "AP4+/AT4+"
+    },
+    {
+     "name": "Lascannnon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour."
+  },
+  {
+   "name": "Leman Russ Demolisher",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Demolisher Cannon",
+     "range": "30cm AND (15cm)",
+     "firepower": "AP3+/AT4+, Ignore Cover"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Leman Russ Exterminator",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "TL Autocannon",
+     "range": "45cm",
+     "firepower": "AP4+/AT5+"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour."
+  },
+  {
+   "name": "Leman Russ Executioner",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Plasma Cannon",
+     "range": "45cm",
+     "firepower": "MW4+"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Leman Russ Incinerator",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "TL Volkite Demi Culverin",
+     "range": "45cm",
+     "firepower": "2 x AP3+/AT5+"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour."
+  },
+  {
+   "name": "Leman Russ Vanquisher",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Vanquisher Cannon",
+     "range": "75cm",
+     "firepower": "AP4+/AT2+"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour."
+  },
+  {
+   "name": "Basilisk",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Earthshaker Cannon",
+     "range": "120cm",
+     "firepower": "AP4+/AT4+ OR 1 BP, Indirect Fire"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Bombard",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Siege Mortar",
+     "range": "45cm",
+     "firepower": "1 BP, Indirect Fire, Ignore Cover"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Medusa",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Medusa Siege Cannon",
+     "range": "30cm AND (15cm)",
+     "firepower": "MW4+, Ignore CoverAND (small arms), Ignore Cover, MW"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Valdor Tank hunter",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Neutron Beam Laser",
+     "range": "45cm",
+     "firepower": "MW3+, Disrupt"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Baneblade",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "3 x TL Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "Autocannon",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Baneblade Main Cannon",
+     "range": "75cm",
+     "firepower": "AP3+/AT3+"
+    },
+    {
+     "name": "Demolisher Cannon",
+     "range": "30cm",
+     "firepower": "AP3+/AT4+ Ignore Cover AND (small arms) Ignore Cover, FxF"
+    }
+   ],
+   "notes": "DC 3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+."
+  },
+  {
+   "name": "Dracosan Armoured Transport",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "TL Lascannon",
+     "range": "45cm",
+     "firepower": "AT4+"
+    }
+   ],
+   "notes": "DC2, Reinforced Armour. Transport: May carry four infantry units. Ogryn Charonites take up two spaces. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+."
+  },
+  {
+   "name": "Shadowsword",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Volcano Cannon",
+     "range": "90cm",
+     "firepower": "MW2+, TK(D3), FxF"
+    },
+    {
+     "name": "2 x Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "DC 3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+."
+  },
+  {
+   "name": "Stormblade",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Plasma Blastgun",
+     "range": "45cm",
+     "firepower": "2 x MW2+, FxF, Slow Firing"
+    },
+    {
+     "name": "2 x TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+, FxF"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+."
+  },
+  {
+   "name": "Stormhammer",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Stormhammer Cannon",
+     "range": "60cm",
+     "firepower": "AP3+/AT3+"
+    },
+    {
+     "name": "6 x Heavy Bolter (3 L, 3 R)",
+     "range": "30cm",
+     "firepower": "AP5+"
+    },
+    {
+     "name": "Dual BattleCannon",
+     "range": "75cm",
+     "firepower": "AP3+/AT4+, FxF"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+, FxF"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+."
+  },
+  {
+   "name": "Stormlord",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Vulcan Mega-Bolter",
+     "range": "45cm",
+     "firepower": "4 x AP3+/AT5+, FxF"
+    },
+    {
+     "name": "3 x TL Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "2 x Heavy Flamers",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+, Ignore Cover AND (small arms) Ignore Cover"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour, Thick Rear Armour. Transport: May carry 8 infantry units (Ogryns take up two spaces each). Additionally, up to 4 units being transported may fire and/or use their FF values during an assault. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+."
+  },
+  {
+   "name": "Stormsword",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Stormsword Siege Cannon",
+     "range": "30cm",
+     "firepower": "3 BP, Disrupt, Ignore Cover"
+    },
+    {
+     "name": "2 x TL Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP4+"
+    },
+    {
+     "name": "2 x Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+."
+  },
+  {
+   "name": "Imperial Navy Avenger Strike Fighter",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter-Bomber",
+   "armour": "5+",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "Avenger Cannon",
+     "range": "30cm",
+     "firepower": "2 x AP3/AT5+, FxF"
+    },
+    {
+     "name": "TL Lascannons",
+     "range": "30cm",
+     "firepower": "AT5/AA5+, FxF"
+    },
+    {
+     "name": "Heavy Stubber",
+     "range": "30cm",
+     "firepower": "AA6+, Rear Arc"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Imperial Navy Primaris-Lightning Strike Fighter",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter",
+   "armour": "6+",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "TL Lascannons",
+     "range": "30cm",
+     "firepower": "AT4+/AA5+, FxF"
+    },
+    {
+     "name": "TL Autocannons",
+     "range": "30cm",
+     "firepower": "AP5+/AT6+/AA5+, FxF"
+    },
+    {
+     "name": "Kraken Heavy Missiles",
+     "range": "30cm",
+     "firepower": "AT4+, Single Shot, FxF"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Dauntless Class Light Cruiser",
+   "section": "Aircraft & Spacecraft",
+   "type": "SC",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Orbital Bombardment / Lance Battery",
+     "range": "-",
+     "firepower": "3 BP, MW / MW2+, TK(D3)",
+     "misaligned": true
+    }
+   ],
+   "notes": "Transport: May carry up to 20 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Lord Marshall, Solar Auxlia Command Section, Solar Auxilia Infantry Section, Solar Auxilia Close Support Section, Veletaris Storm, Ogryn Charonite Squad or Rapier Platforms."
+  },
+  {
+   "name": "Emperor Class Battleship",
+   "section": "Aircraft & Spacecraft",
+   "type": "SC",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Orbital Bombardment",
+     "range": "-",
+     "firepower": "8 BP, MW"
+    }
+   ],
+   "notes": "Slow and Steady, Transport: May carry up to 60 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Lord Marshall, Solar Auxlia Command Section, Solar Auxilia Infantry Section, Solar Auxilia Close Support Section, Veletaris Storm, Ogryn Charonite Squad or Rapier Platforms."
+  }
+ ],
+ "Mechanicum Taghmata": [
+  {
+   "name": "Archmagos Prime",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Power Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "Supreme Commander, Reinforced Armour, Invulnerable Save, Cortex Controller. Upgrades the unit type to AV"
+  },
+  {
+   "name": "Magos Prime",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Power Weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "Commander, Invulnerable Save, Cortex Controller. Upgrades the unit type to AV"
+  },
+  {
+   "name": "Tech Priests",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x Graviton Guns",
+     "range": "15cm",
+     "firepower": "AP5+/AT5+, Disrupt"
+    }
+   ],
+   "notes": "Leader, Cortex Controller"
+  },
+  {
+   "name": "Tech Thralls",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Las-Locks",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Automaton"
+  },
+  {
+   "name": "Thallax",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Multi-Melta",
+     "range": "15cm AND (15cm)",
+     "firepower": "MW5+ AND (small arms) MW"
+    }
+   ],
+   "notes": "Jump Packs"
+  },
+  {
+   "name": "Ursarax",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Lightning Claws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "Jump Packs"
+  },
+  {
+   "name": "Myrmidon Destructors",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Power Fist",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), MW"
+    },
+    {
+     "name": "Volkite Culverin",
+     "range": "(45 cm)",
+     "firepower": "AP4+/AP6+, Disrupt"
+    }
+   ],
+   "notes": "Formations containing units of Myrmidon Destructors may not take a March action."
+  },
+  {
+   "name": "Myrmidon Secutors",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Axes",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1)"
+    },
+    {
+     "name": "Volkite chargers",
+     "range": "(15 cm)",
+     "firepower": "(small arms) EA(+1)"
+    }
+   ],
+   "notes": "May not take a March action"
+  },
+  {
+   "name": "Scyllax Guardian-Automata",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Mechandrite Array",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Singularity"
+    }
+   ],
+   "notes": "Cybernetica Cortex, Fearless"
+  },
+  {
+   "name": "Hyperios Platform",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "0cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Hyperios Launcher",
+     "range": "30cm",
+     "firepower": "AT6+/AA4+"
+    }
+   ],
+   "notes": "Automaton"
+  },
+  {
+   "name": "Tarantula Platform",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "0cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "6+ / 5+",
+   "weapons": [
+    {
+     "name": "TL Lascannon OR",
+     "range": "45cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "TL Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+"
+    }
+   ],
+   "notes": "Automaton. A Tarantula Platform is armed with a TL Lascannon OR a TL Heavy Bolter. Choose one option before the game."
+  },
+  {
+   "name": "Vorax Battle-Automata",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Rotor Cannon",
+     "range": "30cm",
+     "firepower": "AP4+"
+    }
+   ],
+   "notes": "Cybernetica Cortex, Fearless, Scout, Walker"
+  },
+  {
+   "name": "Castellax Battle-Automata",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Mauler Bolt Cannon",
+     "range": "30cm",
+     "firepower": "AP4+/AT6+"
+    },
+    {
+     "name": "Power Blade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "Cybernetica Cortex, Fearless, Invulnerable Save, Walker."
+  },
+  {
+   "name": "Karacnos Assault Tank",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Karacnos Mortar Battery",
+     "range": "45cm",
+     "firepower": "BP 1, Ignore Cover, Fleshbane"
+    },
+    {
+     "name": "Lightning-Blaster Sentinels",
+     "range": "15cm",
+     "firepower": "AP5+, Disrupt"
+    },
+    {
+     "name": "Shock Ram",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Invulnerable Save, Reinforced Armour, Walker."
+  },
+  {
+   "name": "Krios Battle Tank",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Lightning Cannon OR",
+     "range": "45cm",
+     "firepower": "MW5+"
+    },
+    {
+     "name": "Pulsar Fusil",
+     "range": "30cm",
+     "firepower": "AP5+/AT3+"
+    }
+   ],
+   "notes": "Invulnerable Save, Reinforced Armour, Walker. A Krios Battle Tank is armed with a Lightning Cannon OR a Pulsar Fusil, choose one weapon before the game."
+  },
+  {
+   "name": "Mechanicum Land Raider",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+ / 3+ / 4+",
+   "weapons": [
+    {
+     "name": "2 x Twin Lascannon OR",
+     "range": "45cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "2 x Flamestorm Cannon OR",
+     "range": "15cm",
+     "firepower": "AP3+, Ignore Cover"
+    },
+    {
+     "name": "2 x Twin Multimelta",
+     "range": "15cm",
+     "firepower": "MW4+"
+    },
+    {
+     "name": "Twin Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP4+"
+    }
+   ],
+   "notes": "Invulnerable Save, Reinforced Armour, Thick Rear Armour, Transport: May carry 1 Thallax, Ursarax or Myrmidon unit OR 2 of the following units: Tech Thrall, Tech Priest, Scyllax A Mechanicum Land Raider is armed with Twin Lascannons OR Flamestorm Cannons OR Twin Multi-Meltas, choose which weapon before the game."
+  },
+  {
+   "name": "Minotaur Artillery Tank",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Minotaur Earthshaker Cannons",
+     "range": "90cm",
+     "firepower": "BP2, Indirect Fire"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour"
+  },
+  {
+   "name": "Thanatar Battle-Automata",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Hellex Plasma Mortar OR",
+     "range": "30cm",
+     "firepower": "BP1, Indirect Fire, Ignore Cover"
+    },
+    {
+     "name": "Sollex Heavy Lascannon",
+     "range": "60cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "Twin Mauler Bolt Cannon",
+     "range": "30cm",
+     "firepower": "AP3+/AT6+"
+    }
+   ],
+   "notes": "Cybernetica Cortex, Fearless, Invulnerable Save, Reinforced Armour, Walker A Tanatar Battle-Automata is armed with a Hellex Plasma Mortar OR a Sollex Heavy Lascannon, choose one weapon before the game."
+  },
+  {
+   "name": "Triaros Armoured Conveyor",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Twin Mauler Bolt Cannon",
+     "range": "30cm",
+     "firepower": "AP3+/AT6+"
+    },
+    {
+     "name": "Shock Ram",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Invulnerable Save, Reinforced Armour, Walker, Transport: May carry 2 Thallax, Ursarax or Myrmidon unit OR 4 of the following units: Tech Thrall, Tech Priest, Scyllax"
+  },
+  {
+   "name": "Vultarax Stratos-Automata",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Vultarax Arc Blaster",
+     "range": "15cm",
+     "firepower": "AP3+/AT6+"
+    },
+    {
+     "name": "2 x Setheno Havoc Launcher",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+, Ignore Cover"
+    }
+   ],
+   "notes": "Skimmer."
+  },
+  {
+   "name": "Falchion",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "TL Volcano Cannon",
+     "range": "90cm",
+     "firepower": "MW3+, TK D3+1, FxF"
+    },
+    {
+     "name": "2 x Quad Lascannon",
+     "range": "45cm",
+     "firepower": "2 x AT4+"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour. Critical Hit: This unit is destroyed and all units within 5cm of the Falchion suffer a standard hit on a 6+."
+  },
+  {
+   "name": "Ordinatus Minoris",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "3 x Volkite Culverins",
+     "range": "45cm",
+     "firepower": "AP4+/AT6+, Disrupt"
+    },
+    {
+     "name": "Bellacosa Volcano Cannon OR",
+     "range": "90cm",
+     "firepower": "MW2+, TK(D3), FxF"
+    },
+    {
+     "name": "Ulator Sonic Destroyer",
+     "range": "75cm",
+     "firepower": "BP3, Disrupt, Lance, FxF"
+    }
+   ],
+   "notes": "DC2, 1 Void Shield, Reinforced Armour. Critical Hit Effect: The Ordinatus is destroyed. All units within 15cm suffer a standard hit on a 5+."
+  },
+  {
+   "name": "Ordinatus Majoris",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "3 x Volkite Culverins",
+     "range": "45cm",
+     "firepower": "AP4+/AT6+, Disrupt"
+    },
+    {
+     "name": "2 x Twin Lascannons",
+     "range": "45cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "Sonic Disruptor",
+     "range": "100cm",
+     "firepower": "BP10, Ignore Cover, Disrupt, FxF"
+    },
+    {
+     "name": "6 x Golgothan Missiles",
+     "range": "Unlimited",
+     "firepower": "BP2, MW, Indirect Fire, Single Shot, FxF"
+    },
+    {
+     "name": "Nova Cannon",
+     "range": "100cm",
+     "firepower": "3 x MW3+, TK (D3), Singularity, FxF"
+    }
+   ],
+   "notes": "DC4, 4 Void Shields, Inspiring, Reinforced Armour. An Ordinatus Majoris is armed with a Sonic Disruptor OR Golgothan Missiles OR a Nova cannon; choose one option before the game. Critical Hit Effect: The Ordinatus is destroyed. All units within 15cm suffer a hit on a 5+. All friendly formations within line of sight take a Blast Marker."
+  }
+ ],
+ "Legio Titanicus": [
+  {
+   "name": "Legate",
+   "section": "Upgrades",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "-",
+     "range": "-",
+     "firepower": "-"
+    }
+   ],
+   "notes": "Supreme Commander"
+  },
+  {
+   "name": "Veteran Princeps",
+   "section": "Upgrades",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "-",
+     "range": "-",
+     "firepower": "-"
+    }
+   ],
+   "notes": "Commander, Leader"
+  },
+  {
+   "name": "Sacred Icon",
+   "section": "Upgrades",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "-",
+     "range": "-",
+     "firepower": "-"
+    }
+   ],
+   "notes": "Inspiring"
+  },
+  {
+   "name": "Carapace Multi-Lasers",
+   "section": "Upgrades",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Multi-Laser",
+     "range": "30cm",
+     "firepower": "2 x AP5+/AT6+/AA5+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Imperator Support Titan (experimental)",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Plasma Annihilator",
+     "range": "90cm",
+     "firepower": "4x MW2+, TK(D3), Slow Firing, Fwd"
+    },
+    {
+     "name": "Hellstorm Cannon",
+     "range": "60cm",
+     "firepower": "10BP, Fwd"
+    },
+    {
+     "name": "Defense Laser",
+     "range": "90cm",
+     "firepower": "MW2+/AA4+ TK(D3)"
+    },
+    {
+     "name": "4x Battle Cannons",
+     "range": "75cm",
+     "firepower": "AP4+/AT4+"
+    },
+    {
+     "name": "Quake Cannon",
+     "range": "90cm",
+     "firepower": "3BP, MW, FxF"
+    },
+    {
+     "name": "Tertiary armament",
+     "range": "(15cm)",
+     "firepower": "(small arms), EA(+2)"
+    },
+    {
+     "name": "Leg Bastions",
+     "range": "-",
+     "firepower": "Counts as a Corvus Assault Pod"
+    }
+   ],
+   "notes": "DC 12, 8 Void Shields, Cortex Controller, Fearless, Inspiring, Reinforced Armour, Walker, Secondary Targeting Protocols. May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater than 2cm wide. Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired."
+  },
+  {
+   "name": "Reaver Battle Titan",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "3 x Scout or Battle Titan Weapon Variants",
+     "range": "-",
+     "firepower": "2 x Arm, Forward Arc / 1 x Carapace, Fixed Forward",
+     "misaligned": true
+    }
+   ],
+   "notes": "DC 6, 4 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater than 2cm wide. Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 6+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired."
+  },
+  {
+   "name": "Warhound Scout Titan",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 Scout Titan Weapon Variants",
+     "range": "-",
+     "firepower": "2 x Arm, Forward Arc"
+    }
+   ],
+   "notes": "DC 3, 2 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater than 2cm wide. Critical Hit: The Warhound staggers D6cm in a random direction taking an additional DC, any units that come into base contact with the Warhound as it staggers take a standard hit on a 6+."
+  },
+  {
+   "name": "Warlord Battle Titan",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "2+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "4 x Scout or Battle Titan Weapon Variants",
+     "range": "-",
+     "firepower": "2 x Arm, Forward Arc, 2 x Carapace, Fixed Forward"
+    }
+   ],
+   "notes": "DC 8, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater than 2cm wide. Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired."
+  },
+  {
+   "name": "Warmonger Support Titan (experimental)",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "8 x Support Missiles",
+     "range": "Unlimited",
+     "firepower": "Support missile warheads (may only fire 1x missile per turn)"
+    },
+    {
+     "name": "Vengeance Cannon",
+     "range": "90cm",
+     "firepower": "2x MW2+ TK(D3), Fwd"
+    },
+    {
+     "name": "4x Hydra Autocannon",
+     "range": "45cm",
+     "firepower": "2x AP4+/AT5+/AA5+"
+    },
+    {
+     "name": "Fire Control Centre",
+     "range": "-",
+     "firepower": "Re-roll one failed to hit roll from one weapons system per turn"
+    },
+    {
+     "name": "Head Gun",
+     "range": "45cm",
+     "firepower": "AP4+/AT4+ FxF"
+    },
+    {
+     "name": "Tertiary armament",
+     "range": "(15cm)",
+     "firepower": "(small arms), EA(+2)"
+    },
+    {
+     "name": "Leg Bastions",
+     "range": "-",
+     "firepower": "Counts as a Corvus Assault Pod"
+    }
+   ],
+   "notes": "DC 12, 8 Void Shields, Cortex Controller, Fearless, Inspiring, Reinforced Armour, Walker, Secondary Targeting Protocols. May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater than 2cm wide. Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired."
+  },
+  {
+   "name": "Scout Titan Weapons",
+   "section": "Weapon Variants",
+   "type": "Vulcan Mega Bolter",
+   "speed": "45cm",
+   "armour": "4 x AP3+/AT5+",
+   "cc": "-",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Plasma Blastgun",
+   "section": "Weapon Variants",
+   "type": "45cm",
+   "speed": "2 x MW2+, Slow Firing",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Turbo Laser Destructor",
+   "section": "Weapon Variants",
+   "type": "60cm",
+   "speed": "4 x AP5+/AT3+",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Inferno Gun",
+   "section": "Weapon Variants",
+   "type": "30cm",
+   "speed": "3 BP, Ignore Cover",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Battle Titan Weapons",
+   "section": "Weapon Variants",
+   "type": "Apocalypse Missile Launcer",
+   "speed": "60cm",
+   "armour": "3 BP, Disrupt",
+   "cc": "-",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Carapace Landing Pad",
+   "section": "Weapon Variants",
+   "type": "-",
+   "speed": "-",
+   "armour": "Carapace mount only. Grants BP weapons the Indirect Fire special rule.",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Close Combat Weapon (Arm mount only)",
+   "section": "Weapon Variants",
+   "type": "(base contact)",
+   "speed": "(assault weapons) EA(+3), TK(D3)",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Corvus Assault Pod",
+   "section": "Weapon Variants",
+   "type": "-",
+   "speed": "-",
+   "armour": "Transport. May carry 10 infantry units. Terminators, Breachers, Thallax, Ursarax, Myrmidon take up 2 spaces each.",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Gatling Blaster",
+   "section": "Weapon Variants",
+   "type": "60cm",
+   "speed": "4 x AP4+/AT4+",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Laser Blaster",
+   "section": "Weapon Variants",
+   "type": "60cm",
+   "speed": "6 x AP5+/AT3+",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Laser Burner",
+   "section": "Weapon Variants",
+   "type": "(base contact) OR / (15cm)",
+   "speed": "(assault weapons) EA(+4) / OR (small arms) EA(+2)",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Melta Cannon",
+   "section": "Weapon Variants",
+   "type": "30cm AND (15cm)",
+   "speed": "MW2+, TK(D3) AND (small arms) EA(+1) TK(D6)",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Quake Cannon",
+   "section": "Weapon Variants",
+   "type": "90cm",
+   "speed": "3 BP, MW",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Plasma Cannon",
+   "section": "Weapon Variants",
+   "type": "60cm",
+   "speed": "3 x MW2+, Slow Firing",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Plasma Destructor",
+   "section": "Weapon Variants",
+   "type": "75cm",
+   "speed": "5 x MW2+, Slow Firing",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Support Missile (carapace only) Warhead type (choose one) Vortex Warp Deathstrike Barrage",
+   "section": "Weapon Variants",
+   "type": "Unlimited",
+   "speed": "Indirect Fire, Warhead, One-shot / 3 BP, MW, TK(1), Ignore Cover / MW2+, TK(D3) / MW2+, TK(D6) / 10 BP, DIsrupt",
+   "armour": "Warp missiles ignore enemy shields.",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  },
+  {
+   "name": "Volcano Cannon",
+   "section": "Weapon Variants",
+   "type": "90cm",
+   "speed": "MW2+, TK(D3)",
+   "armour": "-",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": ""
+  }
+ ],
+ "Knight Household": [
+  {
+   "name": "Lord Scion",
+   "section": "Nobles",
+   "type": "CH",
+   "speed": "",
+   "armour": "",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "Master Knight Commander",
+     "range": "(base contact)",
+     "firepower": "EA(+1)"
+    }
+   ],
+   "notes": "Leader"
+  },
+  {
+   "name": "Seneschal",
+   "section": "Nobles",
+   "type": "CH",
+   "speed": "",
+   "armour": "",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "Master Knight Commander",
+     "range": "(base contact)",
+     "firepower": "EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save, Supreme Commander"
+  },
+  {
+   "name": "Preceptor",
+   "section": "Nobles",
+   "type": "CH",
+   "speed": "",
+   "armour": "",
+   "cc": "",
+   "ff": "",
+   "weapons": [],
+   "notes": "Commander, Leader"
+  },
+  {
+   "name": "Questorius Knight-Crusader",
+   "section": "Questorius Knights",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Rapid-Fire Battlecannon",
+     "range": "75cm",
+     "firepower": "AP3+/AT3+"
+    },
+    {
+     "name": "Avenger Gatling Cannon",
+     "range": "30cm",
+     "firepower": "3 x AP3+/AT5+"
+    },
+    {
+     "name": "Twin Icarus Autocannon",
+     "range": "45cm",
+     "firepower": "AP4+/AT5+/AA5+"
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Questorius Knight-Errant",
+   "section": "Questorius Knights",
+   "type": "WE",
+   "speed": "25cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Thermal Cannon / Reaper Chainsword",
+     "range": "30cm AND / (15cm) / (base contact)",
+     "firepower": "MW4+ AND / (small arms) MW / (assault weapons) MW, EA(+1)",
+     "misaligned": true
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Questorius Knight-Gallant",
+   "section": "Questorius Knights",
+   "type": "WE",
+   "speed": "25cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Thunderstrike Gauntlet",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1), TK(1)"
+    },
+    {
+     "name": "Reaper Chainsword",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Stormspear Rocket Pod",
+     "range": "45cm",
+     "firepower": "2 x AT5+"
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Questorius Knight-Magaera",
+   "section": "Questorius Knights",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Lightning Cannon",
+     "range": "45cm",
+     "firepower": "MW5+"
+    },
+    {
+     "name": "Twin Linked Rad Cleanser",
+     "range": "15cm",
+     "firepower": "AP3+, Ignore Cover"
+    },
+    {
+     "name": "Hekaton Siege Claw",
+     "range": "(base contact)",
+     "firepower": "EA(+1) OR MW EA(+2) versus immobile targets"
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Cortex Controller, Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Questorius Knight-Paladin",
+   "section": "Questorius Knights",
+   "type": "WE",
+   "speed": "25cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Questorius Battle Cannon",
+     "range": "75cm",
+     "firepower": "AP3+/AT5+"
+    },
+    {
+     "name": "Reaper Chainsword",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: destroyed."
+  },
+  {
+   "name": "Questorius Knight-Styrix",
+   "section": "Questorius Knights",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Volkite Chieorovile",
+     "range": "45cm",
+     "firepower": "2 x AP3+/AT6+, Disrupt"
+    },
+    {
+     "name": "Twin Linked Rad Cleanser",
+     "range": "15cm",
+     "firepower": "AP3+, Ignore Cover"
+    },
+    {
+     "name": "Hekaton Siege Claw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1) OR EA(+2), MW versus immobile targets"
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Cortex Controller, Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Questorius Knight-Warden",
+   "section": "Questorius Knights",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Avenger Gattling Cannon",
+     "range": "30cm",
+     "firepower": "3 x AP3+/AT5+"
+    },
+    {
+     "name": "Thunderstrike Gauntlet",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), TK(1)"
+    },
+    {
+     "name": "Ironstorm Missile Pod",
+     "range": "60cm",
+     "firepower": "BP1, Indirect Fire"
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: destroyed."
+  },
+  {
+   "name": "Cerastus Knight-Acheron",
+   "section": "Cerastus Knights",
+   "type": "WE",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Flame cannon / Twin Heavy Bolter / Destroyer Chainfist",
+     "range": "30cm AND / (15cm) / 30cm / (base contact)",
+     "firepower": "2 x AP3+/AT6+, Ignores Cover AND / (small arms) Ignores Cover / AP4+ / (assault weapons) MW, EA(+1), TK(1)",
+     "misaligned": true
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Cerastus Knight-Atropos",
+   "section": "Cerastus Knights",
+   "type": "WE",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Atrapos Lascutter / Graviton Singularity Cannon",
+     "range": "(15cm) AND / (base contact) / 30cm",
+     "firepower": "(small arms ) EA(+1), MW / (assault weapons) EA(+1), MW / 2x AT4+/AP5+, Lance, Singularity",
+     "misaligned": true
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Cerastus Knight-Castigator",
+   "section": "Cerastus Knights",
+   "type": "WE",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Castigator Pattern Bolt Cannon",
+     "range": "45cm",
+     "firepower": "2x AP3+/AT5+"
+    },
+    {
+     "name": "Tempest Warblade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+2)"
+    }
+   ],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker. Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Cerastus Knight-Lancer",
+   "section": "Cerastus Knights",
+   "type": "WE",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Cerastus Shock Lance",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1), First strike, TK(1)"
+    },
+    {
+     "name": "Shock Blast",
+     "range": "15cm",
+     "firepower": "AP4+/AT5+, Disrupt"
+    }
+   ],
+   "notes": "DC2, Ion Gauntlet, Reinforced Armour, Walker. Critical hit effect: Destroyed."
+  },
+  {
+   "name": "Dominus Knight-Castellan",
+   "section": "Dominus Knights",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: destroyed."
+  },
+  {
+   "name": "Dominus Knight-Valiant",
+   "section": "Dominus Knights",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [],
+   "notes": "DC2, Ion Shield, Reinforced Armour, Walker, Critical hit effect: destroyed."
+  },
+  {
+   "name": "Armiger Knight-Helverin",
+   "section": "Armiger Knights",
+   "type": "LV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x Armiger Autocannon",
+     "range": "45cm",
+     "firepower": "2 x AP3+/AT5+"
+    }
+   ],
+   "notes": "Ion Shield (5+), Scout, Walker."
+  },
+  {
+   "name": "Armiger Knight-Warglaive",
+   "section": "Armiger Knights",
+   "type": "LV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Reaper Chain-cleaver",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW EA(+1)"
+    },
+    {
+     "name": "Thermal Spear",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW"
+    }
+   ],
+   "notes": "Ion Shield (5+), Scout, Walker."
+  },
+  {
+   "name": "Acastus Knight Porpyhrion",
+   "section": "Acastus Knights",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x TL Magna Lascannon",
+     "range": "60cm",
+     "firepower": "AT3+, Lance"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Autocannon",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+"
+    },
+    {
+     "name": "Ironstorm Missile Pod",
+     "range": "45cm",
+     "firepower": "BP 3/AA5+"
+    }
+   ],
+   "notes": "DC3, Ion Shield, Reinforced Armour, Walker, Critical hit effect: Destroyed."
+  }
+ ],
+ "Imperial Militia": [
+  {
+   "name": "Discipline Master",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Power Weapon",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW EA(+1)"
+    }
+   ],
+   "notes": "Inspiring, Leader"
+  },
+  {
+   "name": "Rogue Psyker",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Psychic Bolt",
+     "range": "(15 cm)",
+     "firepower": "(small arms), MW EA(+1)"
+    }
+   ],
+   "notes": "Fearless, Inspiring"
+  },
+  {
+   "name": "Auxilia Rapier Platform",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "10cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Laser Destroyer OR",
+     "range": "45 cm",
+     "firepower": "AP6+/AT4+"
+    },
+    {
+     "name": "Quad Mortar OR",
+     "range": "45cm",
+     "firepower": "AP5+/AT6+, Indirect Fire"
+    },
+    {
+     "name": "Quad Heavy Bolter",
+     "range": "30cm",
+     "firepower": "2 x AP4+"
+    }
+   ],
+   "notes": "Mounted. An Auxilia Rapier Platform must select one weapon system before the start of a game."
+  },
+  {
+   "name": "Cavalry Auxiliary",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "20cm",
+   "armour": "6+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Power Lances",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), First Strike EA (+1)"
+    }
+   ],
+   "notes": "Infiltrate, Mounted, Scout."
+  },
+  {
+   "name": "Force Commander",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Archaeotech Pistol",
+     "range": "(15 cm)",
+     "firepower": "(small arms), MW EA(+1)"
+    },
+    {
+     "name": "Plasma Guns",
+     "range": "15cm",
+     "firepower": "2 x AP5+/AT5+"
+    }
+   ],
+   "notes": "Supreme Commander, Invulnerable Save."
+  },
+  {
+   "name": "Levy Auxiliaries",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "-",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Auxilia weapons",
+     "range": "(15 cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Militia Auxiliary",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "6+",
+   "cc": "6+ OR / 5+",
+   "ff": "5+ OR / 6+",
+   "weapons": [
+    {
+     "name": "Rifles OR",
+     "range": "(15 cm) OR",
+     "firepower": "(small arms) OR"
+    },
+    {
+     "name": "Pistol and Combat Weapon",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Militia Auxiliary units in a formation can only use either Rifles OR Pistol and Close Combat Weapon, this must be selected prior to the start of the game. Additional Militia Auxiliary units added to a formation must use the same weapon type."
+  },
+  {
+   "name": "Militia Bikers",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Auxilia Pistol and Combat Weapon",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Mounted."
+  },
+  {
+   "name": "Militia Fire Support Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Heavy Stubbers",
+     "range": "30cm",
+     "firepower": "2 x AP5+ / AND AA6+",
+     "misaligned": true
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Militia Grenadier Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Lascarbines",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    },
+    {
+     "name": "Plasma Guns",
+     "range": "15cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Motorcycle Commander",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Auxilia Pistol and Combat Weapon",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Commander, Mounted."
+  },
+  {
+   "name": "Ogryn Brute Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+ / 4+ / 3+",
+   "cc": "4+ / 5+ / 3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power weapons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), MW EA (+1)"
+    },
+    {
+     "name": "Ripper Guns",
+     "range": "(15cm)",
+     "firepower": "(small arms), EA (+1)"
+    },
+    {
+     "name": "Chaos Spawn Mutations",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), EA (+D3)"
+    }
+   ],
+   "notes": "Ogryn Brute Squads are all armed with Power weapons OR Ripper Guns Or Chaos Spawn Mutations- choose one option before the game. Chaos Spawn Mutations may only be selected by a detachment with the Traitors Provenance upgrade."
+  },
+  {
+   "name": "Platoon Command Squad",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "6+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Heavy Stubbers",
+     "range": "30cm",
+     "firepower": "2x AP5+ / AND AA6+",
+     "misaligned": true
+    }
+   ],
+   "notes": "Commander"
+  },
+  {
+   "name": "Recon Auxiliary",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "-",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Sniper Rifles",
+     "range": "30cm",
+     "firepower": "AP5+, Sniper"
+    }
+   ],
+   "notes": "Scout"
+  },
+  {
+   "name": "Auxilia Sentinel",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "20cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Multilaser",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Scout, Walker."
+  },
+  {
+   "name": "Basilisk Artillery Carriage",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "0 cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Earthshaker Cannon",
+     "range": "120cm",
+     "firepower": "AP4+/AT4+ OR 1BP, Indirect fire"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Medusa Artillery Carriage",
+   "section": "Light Vehicles",
+   "type": "LV",
+   "speed": "0 cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Medusa Siege Gun",
+     "range": "30cm",
+     "firepower": "MW4+, Ignores Cover"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Arvus Lighter Orbital Shuttle",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "-",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Multi-Laser",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Skimmer, Planetfall. Transport: (May carry two infantry units. Ogryn Brute Squads count as two units.)"
+  },
+  {
+   "name": "Land Raider Proteus",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x Twin Lascannons",
+     "range": "45cm",
+     "firepower": "AT4+"
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour, Exploratory Augury Web, Transport: (May carry 2 INF units. Ogryn Brute Squads count as 2 units.)"
+  },
+  {
+   "name": "Leman Russ Battle Tank",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Lascannon",
+     "range": "45 cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Battle Cannon",
+     "range": "75 cm",
+     "firepower": "AP4+/AT4+"
+    },
+    {
+     "name": "2 x Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Leman Russ Demolisher",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Lascannon / Demolisher Cannon / 2 x Heavy Bolters",
+     "range": "45 cm / 30 cm AND / (15cm) / (30cm)",
+     "firepower": "AT5+ / AP3+/AT4+, Disrupt, Ignores Cover AND / (small arms), Ignores Cover / AP5+",
+     "misaligned": true
+    }
+   ],
+   "notes": "Reinforced Armour, Thick Rear Armour"
+  },
+  {
+   "name": "Auxilia Leman Russ Exterminator",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Lascannon",
+     "range": "45 cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Twin Autocannon",
+     "range": "45 cm",
+     "firepower": "AP4+/AT5+"
+    },
+    {
+     "name": "2 x Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Auxilia Leman Russ Vanquisher",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "25cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Lascannon",
+     "range": "45 cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Vanquisher Cannon",
+     "range": "75 cm",
+     "firepower": "AP4+/AT2+"
+    },
+    {
+     "name": "2 x Heavy Bolters",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Auxilia Malcador",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x Lascannon",
+     "range": "45 cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Battle Cannon",
+     "range": "75 cm",
+     "firepower": "AP4+/AT4+"
+    },
+    {
+     "name": "Heavy Bolter",
+     "range": "30cm",
+     "firepower": "AP5+"
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Auxilia Malcador Annihalator",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x Lascannon / Twin Lascannon / Demolisher Cannon",
+     "range": "45 cm / 45 cm / 30cm AND / (15cm)",
+     "firepower": "AT5+ / AT4+ / AP3+/AT4+, Disrupt, Ignores Cover AND / (small arms), Ignores Cover",
+     "misaligned": true
+    }
+   ],
+   "notes": "Reinforced Armour"
+  },
+  {
+   "name": "Auxilia Rhino",
+   "section": "Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Combi Bolter",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Transport: (May carry 2 INF units. Ogryn Brute Squads count as 2 units.)"
+  },
+  {
+   "name": "Imperial Navy Avenger Strike Fighter",
+   "section": "War Engines, Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter-Bomber",
+   "armour": "5+",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "Avenger Cannon",
+     "range": "30cm",
+     "firepower": "2 x AP3/AT5+, FxF"
+    },
+    {
+     "name": "Twin Linked Lascannons",
+     "range": "30cm",
+     "firepower": "AT5/AA5+, FxF"
+    },
+    {
+     "name": "Heavy Stubber",
+     "range": "30cm",
+     "firepower": "AA6+, Rear Arc"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Imperial Navy Primaris-Lightning Strike Fighter",
+   "section": "War Engines, Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter",
+   "armour": "6+",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "Twin Linked Lascannons",
+     "range": "30cm",
+     "firepower": "AT4+/AA5+, FxF"
+    },
+    {
+     "name": "Twin Linked Autocannons",
+     "range": "30cm",
+     "firepower": "AP5+/AT6+/AA5+, FxF"
+    },
+    {
+     "name": "Kraken Heavy Missiles",
+     "range": "30cm",
+     "firepower": "AT4+, Single Shot, FxF"
+    }
+   ],
+   "notes": ""
+  },
+  {
+   "name": "Auxilia Baneblade",
+   "section": "War Engines, Aircraft & Spacecraft",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "3 x TL Heavy Bolters / Autocannon / 2 x Lascannons / Main Battle Cannon / Demolisher Cannon",
+     "range": "30 cm / 45 cm / 45 cm / 75 cm / 30cm AND / (15 cm)",
+     "firepower": "AP4+ / AP5+/AT6+ / AT5+ / AP3+/AT3+ / AP3+/AT4+, Ignores Cover AND (small arms) Ignore Cover, FxF",
+     "misaligned": true
+    }
+   ],
+   "notes": "DC3, Reinforced Armour. Critical Hit Effect: Destroyed. any units within 5cm of the model suffer a hit on a roll of 6+."
+  },
+  {
+   "name": "Auxilia Gorgon",
+   "section": "War Engines, Aircraft & Spacecraft",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "2 x TL Autocannon",
+     "range": "45 cm",
+     "firepower": "AP4+/AT5+"
+    },
+    {
+     "name": "Gorgon Mortars OR",
+     "range": "30 cm",
+     "firepower": "2BP, Fwd, Indirect, Single Shot"
+    },
+    {
+     "name": "2 x TL Heavy Bolters",
+     "range": "30 cm",
+     "firepower": "AP4+"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour, Walker, Transport: (May carry 8 INF units. Ogryn Brute Squads count as 2 units.) Critical Hit Effect: The Gorgon is immobilised and D6 infantry units inside the Gorgon take a hit. Further Critical Hits destroy the Gorgon."
+  },
+  {
+   "name": "Auxilia Stormhammer",
+   "section": "War Engines, Aircraft & Spacecraft",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "6 x Heavy Bolters",
+     "range": "30 cm",
+     "firepower": "AP5+"
+    },
+    {
+     "name": "Lascannon",
+     "range": "45 cm",
+     "firepower": "AT5+"
+    },
+    {
+     "name": "Dual Battlecannon",
+     "range": "75 cm",
+     "firepower": "AP3+/AT4+, FxF"
+    },
+    {
+     "name": "Stormhammer Cannon",
+     "range": "60 cm",
+     "firepower": "AP3+/AT3+"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour. Critical Hit Effect: Destroyed. any units within 5cm of the model suffer a hit on a roll of 6+."
+  },
+  {
+   "name": "Dauntless Class Light Cruiser",
+   "section": "War Engines, Aircraft & Spacecraft",
+   "type": "SC",
+   "speed": "",
+   "armour": "",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "Orbital Bombardment / Lance Battery",
+     "range": "",
+     "firepower": "3BP, MW / MW2+, TK(D3)",
+     "misaligned": true
+    }
+   ],
+   "notes": "Transport: May carry up to 20 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Force Commander, Militia Auxiliaries, Levy Auxiliaries, Militia Grenadiers, Miltia Fire Support Squads, Ogryn Brute Squad or Auxilia Rapier Platforms."
+  },
+  {
+   "name": "Emperor Class Battleship",
+   "section": "War Engines, Aircraft & Spacecraft",
+   "type": "SC",
+   "speed": "",
+   "armour": "",
+   "cc": "",
+   "ff": "",
+   "weapons": [
+    {
+     "name": "Orbital Bombardment",
+     "range": "",
+     "firepower": "8BP, MW",
+     "misaligned": true
+    }
+   ],
+   "notes": "Slow and steady: may not be used on the first two turns of a battle unless the scenario specifically says otherwise. Transport: May carry up to 60 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Force Commander, Militia Auxiliaries, Levy Auxiliaries, Militia Grenadiers, Miltia Fire Support Squads, Ogryn Brute Squad or Auxilia Rapier Platforms."
+  }
+ ],
+ "Daemons Of The Ruinstorm": [
+  {
+   "name": "Herald of Khorne",
+   "section": "Daemons of Khorne",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Daemon Blade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1), MW"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Daemon Prince of Khorne",
+   "section": "Daemons of Khorne",
+   "type": "INF",
+   "speed": "15cm/30cm",
+   "armour": "3+/4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Daemon Weapon",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), EA(+2), MW"
+    }
+   ],
+   "notes": "Commander, Leader, Fearless, Reinforced Armour, Invulnerable Save, Inspiring May have wings: count as Jump Packs. Speed increase to 30cm, Save reduced to 4+"
+  },
+  {
+   "name": "Bloodletters",
+   "section": "Daemons of Khorne",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Hellblades",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Flesh Hounds",
+   "section": "Daemons of Khorne",
+   "type": "INF",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Fangs and Claws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Infiltrator, Invulnerable Save."
+  },
+  {
+   "name": "Bloodcrushers",
+   "section": "Daemons of Khorne",
+   "type": "INF",
+   "speed": "20cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Juggernaut Charge",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), MW"
+    }
+   ],
+   "notes": "Berserk, Invulnerable Save, Mounted, Walker."
+  },
+  {
+   "name": "Skull Cannon",
+   "section": "Daemons of Khorne",
+   "type": "LV",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Skull Cannon",
+     "range": "45cm",
+     "firepower": "AP3+/AP5+, Ignore Cover"
+    }
+   ],
+   "notes": "Invulnerable Save."
+  },
+  {
+   "name": "Bloodthirster (Greater Daemon)",
+   "section": "Daemons of Khorne",
+   "type": "WE",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Axe of Khorne",
+     "range": "(base contact)",
+     "firepower": "(assault weapon) EA(+1), TK"
+    },
+    {
+     "name": "Lash of Khorne",
+     "range": "(base contact)",
+     "firepower": "(assault weapon) EA(+1), MW"
+    }
+   ],
+   "notes": "DC 3, Commander, Leader, Reinforced Armour, Berserk, Invulnerable Save, Walker, Jump Packs, Inspiring, Fearless. Critical Hit Effect: Hurled back into the warp. Drags any units within 5cm back with it on a roll of 6+."
+  },
+  {
+   "name": "Herald of Nurgle",
+   "section": "Daemons of Nurgle",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Sorcerous Blast",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW EA (+1)"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Daemon Prince of Nurgle",
+   "section": "Daemons of Nurgle",
+   "type": "INF",
+   "speed": "15cm/30cm",
+   "armour": "3+/4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Daemon Weapon",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), MW EA (+1)"
+    },
+    {
+     "name": "Warp Blast",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW EA (+1)"
+    }
+   ],
+   "notes": "Commander, Leader, Fearless, Reinforced Armour, Invulnerable Save, Inspiring May have wings: count as Jump Packs. Speed increase to 30cm, Save reduced to 4+"
+  },
+  {
+   "name": "Plaguebearers",
+   "section": "Daemons of Nurgle",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Plague Sword",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Nurglings",
+   "section": "Daemons of Nurgle",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Tiny Sharp Teeth",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Scout, Invulnerable Save."
+  },
+  {
+   "name": "Beasts of Nurgle",
+   "section": "Daemons of Nurgle",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Acidic Slime",
+     "range": "(base contact)",
+     "firepower": "(assault Weapons), Ignore Cover"
+    },
+    {
+     "name": "Cloud of Flies",
+     "range": "(15cm)",
+     "firepower": "(small arms), Ignore Cover"
+    }
+   ],
+   "notes": "Fearless, Invulnerable Save, Mounted, Walker"
+  },
+  {
+   "name": "Plague Drones",
+   "section": "Daemons of Nurgle",
+   "type": "LV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Plague Swords",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Invulnerable Save, Infiltrator, Scout, Jump Pack"
+  },
+  {
+   "name": "Great Unclean One (Greater Daemon)",
+   "section": "Daemons of Nurgle",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Nurglings Swarm / Stream of Corruption",
+     "range": "(base contact) / (15cm) / 30cm",
+     "firepower": "(assault weapon), EA (+1) / (small arms), Ignore Cover, EA (+1) AND / BP3, Ignore Cover",
+     "misaligned": true
+    }
+   ],
+   "notes": "DC4, Commander, Leader, Reinforced Armour, Invulnerable Save, Walker, Inspiring, Fearless. Critical Hit Effect: Hurled back into the warp. Drags any units within 5cm back with it on a roll of 6+."
+  },
+  {
+   "name": "Herald of Slaanesh",
+   "section": "Daemons of Slaanesh",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Daemon Blade",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW EA (+1)"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Daemon Prince of Slaanesh",
+   "section": "Daemons of Slaanesh",
+   "type": "INF",
+   "speed": "15cm/30cm",
+   "armour": "3+/4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Crushing Claws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), MW, First Strike"
+    },
+    {
+     "name": "Sopoforic Musk",
+     "range": "(15cm)",
+     "firepower": "(small arms), MW EA (+1)"
+    }
+   ],
+   "notes": "Commander, Leader, Fearless, Reinforced Armour, Invulnerable Save, Inspiring May have wings: count as Jump Packs. Speed increase to 30cm, Save reduced to 4+"
+  },
+  {
+   "name": "Daemonettes",
+   "section": "Daemons of Slaanesh",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Talons",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Invulnerable Save, First Strike"
+  },
+  {
+   "name": "Fiends",
+   "section": "Daemons of Slaanesh",
+   "type": "INF",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Rending Claws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), EA (+1)"
+    }
+   ],
+   "notes": "Infiltrator, Invulnerable Save, First Strike, Scout"
+  },
+  {
+   "name": "Seekers",
+   "section": "Daemons of Slaanesh",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Daemonic Talons",
+     "range": "(base contact)",
+     "firepower": "(assault Weapons)"
+    }
+   ],
+   "notes": "First Strike, Invulnerable Save, Mounted"
+  },
+  {
+   "name": "Seeker Chariot",
+   "section": "Daemons of Slaanesh",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Fleshshredder",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), EA (+1)"
+    }
+   ],
+   "notes": "Invulnerable Save, Walker, First Strike"
+  },
+  {
+   "name": "Keeper of Secrets (Greater Daemon)",
+   "section": "Daemons of Slaanesh",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Lash of Torment",
+     "range": "(base contact)",
+     "firepower": "(assault weapon), MW, EA (+1), First Strike"
+    },
+    {
+     "name": "Gaze of Slaanesh",
+     "range": "(15cm)",
+     "firepower": "(small arms), MW, EA (+1), First Strike"
+    }
+   ],
+   "notes": "DC3, Commander, Leader, Reinforced Armour, Invulnerable Save, Walker, Inspiring, Fearless. Critical Hit Effect: Hurled back into the warp. Drags any units within 5cm back with it on a roll of 6+."
+  },
+  {
+   "name": "Herald of Tzeentch",
+   "section": "Daemons of Tzeentch",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Sorcerous blast",
+     "range": "(15cm)",
+     "firepower": "(small arms) MW EA(+1)"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Daemon Prince of Tzeentch",
+   "section": "Daemons of Tzeentch",
+   "type": "INF",
+   "speed": "15cm/30cm",
+   "armour": "3+/4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Warp Tempest",
+     "range": "(15cm)",
+     "firepower": "(small arms), MW, EA (+2)"
+    }
+   ],
+   "notes": "Commander, Leader, Fearless, Reinforced Armour, Invulnerable Save, Inspiring May have wings: count as Jump Packs. Speed increase to 30cm, Save reduced to 4"
+  },
+  {
+   "name": "Horrors",
+   "section": "Daemons of Tzeentch",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Daemonic Fire",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Flamers",
+   "section": "Daemons of Tzeentch",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Flames",
+     "range": "(15cm)",
+     "firepower": "(small arms), EA (+1)"
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Screamers",
+   "section": "Daemons of Tzeentch",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Fangs and Claws",
+     "range": "(base contact)",
+     "firepower": "(assault Weapons)"
+    }
+   ],
+   "notes": "Jump Packs, Invulnerable Save"
+  },
+  {
+   "name": "Burning Chariot of Tzeentch",
+   "section": "Daemons of Tzeentch",
+   "type": "LV",
+   "speed": "20cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Exalted Flamer",
+     "range": "(15cm) OR / 30cm",
+     "firepower": "(small arms), EA (+1), Ignore Cover, / D3x AT5+",
+     "misaligned": true
+    }
+   ],
+   "notes": "Invulnerable Save"
+  },
+  {
+   "name": "Lord of Change (Greater Daemon)",
+   "section": "Daemons of Tzeentch",
+   "type": "WE",
+   "speed": "30cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Bedlam Staff / Withering Gaze",
+     "range": "(base contact) / (15cm) AND, / 45cm",
+     "firepower": "(assault weapon), MW, EA (+1) / (small arms), MW, EA (+1) / 2x MW3+",
+     "misaligned": true
+    }
+   ],
+   "notes": "DC 3, Commander, Leader, Reinforced Armour, Invulnerable Save, Walker, Jump Packs, Inspiring, Fearless. Critical Hit Effect: Hurled back into the warp. Drags any units within 5cm back with it on a roll of 6+."
+  },
+  {
+   "name": "Furies",
+   "section": "Chaos Undivided",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "6+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Fangs and Claws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    },
+    {
+     "name": "Aerial Assault",
+     "range": "30cm",
+     "firepower": "AA6+"
+    }
+   ],
+   "notes": "Jump Pack, Invulnerable Save, Scouts"
+  },
+  {
+   "name": "Chaos Spawn",
+   "section": "Chaos Undivided",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Chaos Spawn Mutations",
+     "range": "(base contact)",
+     "firepower": "(assault weapons), EA (+D3)"
+    }
+   ],
+   "notes": "Fearless, Invulnerable Save"
+  },
+  {
+   "name": "Soul Grinder",
+   "section": "Chaos Undivided",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Harvester Claws / Phlegm / Vomit",
+     "range": "(base contact) AND / (15cm) / 30cm / 15cm",
+     "firepower": "(assault weapons) MW, EA (+1) / (small arms), EA (+2) / AP4+/AT4+/AA5+ / AP3+, Ignore Cover",
+     "misaligned": true
+    }
+   ],
+   "notes": "Invulnerable Save, Berserk, Walker"
+  },
+  {
+   "name": "Chaos Altar",
+   "section": "Chaos Undivided",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Arcane Tech",
+     "range": "45cm",
+     "firepower": "D3x AP4+/AT4+/AA4+"
+    }
+   ],
+   "notes": "DC3, Reinforced Armour, Invulnerable Save, Fearless, Inspiring. Critical Hit Effect: Destroyed. Units within 5cm suffer MW6+ attack"
+  }
+ ],
+ "Orks of Telon Reach": [
+  {
+   "name": "Boyz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Big Shoota",
+     "range": "30cm",
+     "firepower": "AP6+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Nobz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Big Choppas",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) EA(+1)"
+    },
+    {
+     "name": "2 x Big Shoota",
+     "range": "30cm",
+     "firepower": "AP6+"
+    }
+   ],
+   "notes": "Leader."
+  },
+  {
+   "name": "Grotz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "-",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Teef & Klaws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons)"
+    }
+   ],
+   "notes": "Expendable. Grotz do not count towards a transport units transport capacity."
+  },
+  {
+   "name": "Warboss",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "15cm",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Power Klaw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    }
+   ],
+   "notes": "Commander."
+  },
+  {
+   "name": "Warlord",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Power Klaw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Kombi-Shoota",
+     "range": "15cm",
+     "firepower": "AP5+, Fleshbane"
+    }
+   ],
+   "notes": "Supreme Commander, Invulnerable Save."
+  },
+  {
+   "name": "Mekboy",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Kustom Blasta",
+     "range": "15cm AND / (15cm)",
+     "firepower": "AP5+/AT4+ Armourbane AND / (small arms) Armourbane",
+     "misaligned": true
+    }
+   ],
+   "notes": "Leader, Invulnerable Save."
+  },
+  {
+   "name": "Weirdboy",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Gork's Foot!",
+     "range": "15cm AND (15cm)",
+     "firepower": "D3 x MW5+ AND / (small arms) MW, EA(+D3)",
+     "misaligned": true
+    }
+   ],
+   "notes": "Invulnerable Save."
+  },
+  {
+   "name": "Cyborkz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Power Klaws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Killsaw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane"
+    }
+   ],
+   "notes": "Reinforced Armour, Ferocity."
+  },
+  {
+   "name": "Mega Nobz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "3+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Power Klaws",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Snazzguns",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+/AT4+, Armorbane AND (small arms) Armorbane"
+    }
+   ],
+   "notes": "Leader, Invulnerable Save."
+  },
+  {
+   "name": "Burna Boyz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Burnaz",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+, Ignore Cover AND (small arms) Ignore Cover"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Lootaz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Deffguns",
+     "range": "45cm",
+     "firepower": "D3 x AP5+/AT6+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Tankbustaz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Rokkit Launchas",
+     "range": "30cm",
+     "firepower": "AP5+/AT4+/AA6+"
+    },
+    {
+     "name": "Tankbusta Bombs",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Armorbane"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Storm Boyz",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Stikkbombz",
+     "range": "15cm",
+     "firepower": "AP5+/AT6+, Disrupt"
+    }
+   ],
+   "notes": "Jump Packs."
+  },
+  {
+   "name": "Kommandos",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Stikkbombz",
+     "range": "15cm",
+     "firepower": "AP5+/AT6+, Disrupt"
+    }
+   ],
+   "notes": "Infiltrator, Scout."
+  },
+  {
+   "name": "Warbike",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "35cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Dakkaguns",
+     "range": "(15cm)",
+     "firepower": "(small arms) EA(+1)"
+    }
+   ],
+   "notes": "Mounted."
+  },
+  {
+   "name": "Gun Crew",
+   "section": "Infantry & Character Units",
+   "type": "INF",
+   "speed": "15cm",
+   "armour": "-",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Big Gun",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "Mounted."
+  },
+  {
+   "name": "Zzap Gun",
+   "section": "Infantry & Character Units",
+   "type": "CH",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Zzap Gun",
+     "range": "30cm",
+     "firepower": "AP5+/AT4+, MW"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Warbuggy",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Heavy Shoota",
+     "range": "30cm",
+     "firepower": "AP5+/AT6+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Skorcha",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "35cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Skorcha",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+, Ignore Cover, Disrupt AND (small arms) Ignore Cover"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Killa Kan",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "15cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Big Shoota",
+     "range": "30cm",
+     "firepower": "AP6+"
+    },
+    {
+     "name": "Power Klaw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Killsaw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Fleshbane"
+    }
+   ],
+   "notes": "Walker"
+  },
+  {
+   "name": "Trukk",
+   "section": "Light & Armoured Vehicles",
+   "type": "LV",
+   "speed": "30cm",
+   "armour": "6+",
+   "cc": "6+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Shoota",
+     "range": "(15cm)",
+     "firepower": "(small arms)"
+    }
+   ],
+   "notes": "Transport: May carry 2 INF units. Units transported by a Trukk may use their ranged or small arms weapons while mounted in the Trukk."
+  },
+  {
+   "name": "Deff Dread",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Deffguns",
+     "range": "45cm",
+     "firepower": "D3 x AP5+/AT6+"
+    },
+    {
+     "name": "2 x Kombat Klaw",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    }
+   ],
+   "notes": "Walker"
+  },
+  {
+   "name": "Gorkanaut",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "4+",
+   "ff": "6+",
+   "weapons": [
+    {
+     "name": "Deffstorm Mega-Shoota",
+     "range": "15cm",
+     "firepower": "2 x AP3+"
+    },
+    {
+     "name": "Klaw of Gork",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Skorcha",
+     "range": "15cm",
+     "firepower": "AP4+, Ignore Cover, Disrupt"
+    },
+    {
+     "name": "2 x Rokkit Launchaz",
+     "range": "30cm",
+     "firepower": "AP5+/AT4+/AA6+"
+    }
+   ],
+   "notes": "Reinforced Armour, Walker."
+  },
+  {
+   "name": "Morkanaut",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Kustom Mega-Kannon",
+     "range": "30cm",
+     "firepower": "AT4+, Lance"
+    },
+    {
+     "name": "Klaw of Mork",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) MW, EA(+1)"
+    },
+    {
+     "name": "Kustom Mega-Blasta",
+     "range": "15cm",
+     "firepower": "AP6+/AT4+, Armourbane"
+    },
+    {
+     "name": "2 x Rokkit Launchaz",
+     "range": "30cm",
+     "firepower": "AP5+/AT4+/AA6+"
+    }
+   ],
+   "notes": "Reinforced Armour, Walker."
+  },
+  {
+   "name": "Battlewagon",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x Heavy Shoota",
+     "range": "30cm",
+     "firepower": "AP5+/AT6+"
+    }
+   ],
+   "notes": "Transport: May carry 4 INF units."
+  },
+  {
+   "name": "Gunwagon",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "5+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Big Gun",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Flakwagon",
+   "section": "Light & Armoured Vehicles",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "Flakka-Dakka Gun",
+     "range": "30cm",
+     "firepower": "2 x AP6+/AT6+/AA6+"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Battlefortress",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "5+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Deff Rolla",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) Firststrike, Fleshbane"
+    },
+    {
+     "name": "2 x Deffguns",
+     "range": "45cm",
+     "firepower": "D3 x AP5+/AT6+"
+    },
+    {
+     "name": "2 x Heavy Shoota",
+     "range": "30cm",
+     "firepower": "AP5+/AT6+"
+    }
+   ],
+   "notes": "DC 2, Reinforced Armour, Walker, Transport: May carry 8 INF units."
+  },
+  {
+   "name": "Gunfortress",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "6+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "2 x Deth Kannon",
+     "range": "45cm",
+     "firepower": "AT4+, Armorbane"
+    },
+    {
+     "name": "3 x Big Gun",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+"
+    },
+    {
+     "name": "3 x Deffguns",
+     "range": "45cm",
+     "firepower": "D3 x AP5+/AT6+"
+    }
+   ],
+   "notes": "DC 3, Reinforced Armour."
+  },
+  {
+   "name": "Stompa",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "4+",
+   "weapons": [
+    {
+     "name": "Dethkannon",
+     "range": "45cm",
+     "firepower": "AT4+, Armorbane"
+    },
+    {
+     "name": "Supa-Gatler",
+     "range": "45cm",
+     "firepower": "4 x AP4+/AT6+"
+    },
+    {
+     "name": "Mega-Choppa",
+     "range": "(base contact)",
+     "firepower": "(assault weapons) TK(1), EA(+D3)"
+    }
+   ],
+   "notes": "DC 3, D3 Power Fields, Reinforced Armour, Walker."
+  },
+  {
+   "name": "Gargant",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Gaze of Mork",
+     "range": "30cm",
+     "firepower": "AP4+/AT4+, MW, TK(1)"
+    },
+    {
+     "name": "2 x Soopagunz",
+     "range": "60cm",
+     "firepower": "BP 2, MW"
+    },
+    {
+     "name": "Skorcha",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+, Ignore Cover AND (small arms) Ignore Cover"
+    },
+    {
+     "name": "Mega-Choppa OR",
+     "range": "(base contact) OR",
+     "firepower": "(assault weapons) TK(1), EA(+D3) OR"
+    },
+    {
+     "name": "Supa-Zzap Gun",
+     "range": "60cm",
+     "firepower": "AP4+/AT4+, MW, TK(D3)"
+    }
+   ],
+   "notes": "DC 8, D6 Power Fields, Reinforced Armour, Thick Rear Armour, Walker. Players must select between a Supa-Zzap Gun OR a Mega-Choppa, before the game commences, you cannot take both."
+  },
+  {
+   "name": "Great Gargant",
+   "section": "War Engines",
+   "type": "WE",
+   "speed": "15cm",
+   "armour": "4+",
+   "cc": "3+",
+   "ff": "3+",
+   "weapons": [
+    {
+     "name": "Gaze of Mork",
+     "range": "30cm",
+     "firepower": "AP4+/AT4+, MW, TK(1)"
+    },
+    {
+     "name": "3 x Soopagunz",
+     "range": "60cm",
+     "firepower": "BP 2, MW"
+    },
+    {
+     "name": "Skorcha",
+     "range": "15cm AND (15cm)",
+     "firepower": "AP4+, Ignore Cover AND (small arms) Ignore Cover"
+    },
+    {
+     "name": "Mega-Choppa OR",
+     "range": "(base contact) OR",
+     "firepower": "(assault weapons) TK(1), EA(+D3) OR"
+    },
+    {
+     "name": "Supa-Zzap Gun",
+     "range": "60cm",
+     "firepower": "AP4+/AT4+, MW, TK(D3)"
+    },
+    {
+     "name": "2 x Big Gun",
+     "range": "30cm",
+     "firepower": "AP5+/AT5+"
+    }
+   ],
+   "notes": "DC 12, D6+6 Power Fields, Reinforced Armour, Thick Rear Armour, Walker. Players must select between a Supa-Zzap Gun OR a Mega-Choppa, before the game commences, you cannot take both."
+  },
+  {
+   "name": "DakkaJet",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter",
+   "armour": "4+",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "2 x Twin Heavy Shootas",
+     "range": "30cm",
+     "firepower": "AP4+/AA5+, Fwd"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Fighta-Bomma",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC",
+   "speed": "Fighter-Bomber",
+   "armour": "4+",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "Twin Heavy Shootas",
+     "range": "30cm",
+     "firepower": "AP4+/AA5+, Fwd"
+    },
+    {
+     "name": "2 x Rokkits",
+     "range": "30cm",
+     "firepower": "AT4+"
+    },
+    {
+     "name": "Supa Stix Bombz",
+     "range": "15cm",
+     "firepower": "BP 2"
+    }
+   ],
+   "notes": "-"
+  },
+  {
+   "name": "Landa",
+   "section": "Aircraft & Spacecraft",
+   "type": "AC/WE",
+   "speed": "Bomber",
+   "armour": "5+",
+   "cc": "6+",
+   "ff": "5+",
+   "weapons": [
+    {
+     "name": "-",
+     "range": "-",
+     "firepower": "-"
+    }
+   ],
+   "notes": "DC 2, Reinforced Armour, Transport: May carry 8 INF units."
+  },
+  {
+   "name": "Drop Rok",
+   "section": "Aircraft & Spacecraft",
+   "type": "Special",
+   "speed": "-",
+   "armour": "-",
+   "cc": "-",
+   "ff": "-",
+   "weapons": [
+    {
+     "name": "-",
+     "range": "-",
+     "firepower": "-"
+    }
+   ],
+   "notes": "Self-Planetfall, Transport: May carry 1 formation. When landing a Drop Rok, roll twice for scatter, a Drop Rok may land in dangerous terrain, but not impassable terrain. If the Drop Rok lands in impassable terrain it and its passengers are destroyed. Units transported disembark and must be placed within 5cm of the Drop Rok or within 5cm of another unit from the same formation that has \"landed\", as long as all units remain within 15cm of the Drop Rok. Units disembarking from a Drop Rok cannot be targeted by a unit on Overwatch. Once landed, the Drop Rok becomes impassable terrain and has no further effect."
+  }
+ ]
+}

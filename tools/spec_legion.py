@@ -1,5 +1,5 @@
 """Legion Astartes core list and the 18 unique Legion variations (EpicAU wiki)."""
-from dsl import U, Opt, Or, Mix, Swap, F, UP, ARMY
+from dsl import U, Opt, Or, Mix, Swap, Fill, F, UP, ARMY
 
 LEGION_SHEETS = ['Legion Astartes', 'Loyalist Legions', 'Traitor Legions']
 
@@ -38,8 +38,10 @@ CORE_UPGRADES = [
     UP('Rapier Battery', parts=[U((1, 4), 'Rapier', 50)]),
     UP('Support Squads', parts=[Or(Opt('Tactical Support', U((1, 4), 'Tactical Support Squad', 25)),
                                    Opt('Heavy Support', U((1, 4), 'Heavy Support Squad', 50)), label='Support Squads')]),
-    UP('Standard Transport', 0, parts=[U((1, None), 'Rhino Armoured Carrier')],
-       desc='Add enough Rhinos to transport the entire formation after all other upgrades are chosen.'),
+    UP('Standard Transport', 0, parts=[Fill(2, ('Rhino Armoured Carrier', 0), ('Damocles Command Rhino', 0))],
+       desc='Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. '
+            'Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the '
+            'formation; add this upgrade last, or adjust the transports if you change units afterwards.'),
     UP('Tank', parts=[Mix(1, 2, ('Vindicator', 50), ('Predator', 60), ('Sicaran Battle Tank', 80),
                           ('Typhon Siege Tank', 150), ('Cerberus Tank Destroyer', 150))]),
     UP('Teleport', 50, rules=['Teleport'], desc='Add the Teleport special rule to each INF unit in the formation.'),
@@ -100,6 +102,16 @@ CORE_FORMATIONS = [
     F('Legion Super Heavy Tank Destroyer', 'low', 300, [U(1, 'Falchion Super Heavy Tank Destroyer')]),
     F('Legion Super Heavy Tank Battery', 'low', 400,
       [Or(Opt('Typhon', U(3, 'Typhon Siege Tank')), Opt('Cerberus', U(3, 'Cerberus Tank Destroyer')))]),
+]
+
+# Units that take one Tactical space in a Rhino. Most say "counts as Tactical" on the reference sheet;
+# Mor Deythan and Templar Brethren have no note but are offered Standard Transport, so they are included.
+# Demi-Gods count as their retinue's type and are tagged by the generator.
+TACTICAL_SPACE = [
+    'Tactical Squad', 'Despoiler Squad', 'Tactical Support Squad', 'Heavy Support Squad', 'Reconnaissance Squad',
+    'Mor Deythan Strike Squad', 'Templar Brethren', 'Grey Slayer Pack', 'Deathsworn Pack', 'Terror Squad',
+    'Rampager Squad', 'Palatine Blades', 'Kakophoni Squad', 'Havoc Support Squad', 'Gal Vorbak Dark Brethren',
+    'Reaver Attack Squad', 'Headhunter Kill Team', 'Khenetai Blades', 'Ammitara Intercessor Squad',
 ]
 
 LEGION_RULES = ['Legion Astartes', 'Allies', 'Demi-God', 'Exploratory Augury Web', 'Feedback', 'Fleshbane',
@@ -368,6 +380,6 @@ def legion_army(legion=None):
         notes = L.get('notes', [])
         name = f'Legion Astartes - {legion}'
     return ARMY(name, LEGION_SHEETS, 5, '1+', 3, 4, 1 / 3, list(formations.values()), upgrades,
-                cohesive=cohesive, disruptive=disruptive, rules=LEGION_RULES,
+                cohesive=cohesive, disruptive=disruptive, rules=LEGION_RULES, transport_space=TACTICAL_SPACE,
                 notes=['A line or support detachment may choose up to four upgrades; each upgrade only once and only one transport option.',
                        'Up to 1/3 of the army\'s points may be spent on Allies and/or Lords of War.'] + notes)

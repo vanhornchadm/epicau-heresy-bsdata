@@ -582,6 +582,13 @@
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
+    <profile id="4203-10f3-d102-8f62" name="Combi-bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
     <profile id="2df0-38e8-762b-4d19" name="Contemptor Dreadnought" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
@@ -645,6 +652,16 @@
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aca5-de2d-8301-eba8" name="Damocles Command Rhino" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">30cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Commander, Transport: May carry two Tactical units.</characteristic>
       </characteristics>
     </profile>
     <profile id="b63c-57f2-e2d5-2df2" name="Dark Fury Assault Marines" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

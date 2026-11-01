@@ -132,6 +132,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="2fe1-9518-5b74-5230" name="Tactical Squad" hidden="false" targetId="d3da-67a5-7cb3-2f67" type="profile"/>
                     <infoLink id="aa2d-2574-58c5-75a9" name="Boltguns" hidden="false" targetId="4817-774d-0ef5-4aa4" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="c347-3afb-696a-d99a" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -155,6 +158,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="aa78-ee48-9e9d-7a6b" name="Despoiler Squad" hidden="false" targetId="54d2-5175-0834-f426" type="profile"/>
                     <infoLink id="fd7b-e4ff-8767-023e" name="Chainswords &amp; Bolt Pistols" hidden="false" targetId="6ea5-4a9b-f684-1625" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="ff4f-a064-adf3-faab" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -175,12 +181,65 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c40-5a6f-821b-0ceb" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="b1ce-c8d5-e28c-419a" name="Standard Transport" hidden="false" collective="false" import="true" targetId="8e5c-6a74-ad63-84e7" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry id="9d9e-e3b6-e933-ea44" name="Standard Transport" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fef3-9030-6a45-5819" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="858a-a8c4-5721-7ba7" type="max"/>
                   </constraints>
-                </entryLink>
+                  <rules>
+                    <rule id="4fe9-9110-6430-4ce7" name="Standard Transport" hidden="false">
+                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
+                    </rule>
+                  </rules>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="42fb-6958-ad43-87e7" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="11d3-2823-7a64-b8f4">
+                      <modifiers>
+                        <modifier type="increment" field="6364-4bda-e981-c5a0" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="481e-8b13-7f1b-8530" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                        <modifier type="increment" field="fdab-6b07-3c26-d500" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="481e-8b13-7f1b-8530" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6364-4bda-e981-c5a0" type="min"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdab-6b07-3c26-d500" type="max"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry id="11d3-2823-7a64-b8f4" name="Rhino Armoured Carrier" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="c1f7-7965-5c10-35b9" name="Rhino Armoured Carrier" hidden="false" targetId="8893-b2e4-b674-e7c3" type="profile"/>
+                            <infoLink id="a13f-8c69-6c12-c32c" name="Combi-Bolter" hidden="false" targetId="667e-1b61-5cad-898d" type="profile"/>
+                            <infoLink id="8261-d1db-87c6-4328" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="bece-c469-9d46-3efc" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="c0c5-5d06-8e53-c3b3" name="Damocles Command Rhino" hidden="false" targetId="aca5-de2d-8301-eba8" type="profile"/>
+                            <infoLink id="478f-ea7f-0f14-81cf" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
+                            <infoLink id="13c6-4a63-796a-db71" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+                            <infoLink id="4944-d08b-4f44-6313" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
                 <entryLink id="7fad-8291-bcb4-8af7" name="Drop Assault" hidden="false" collective="false" import="true" targetId="699f-a42f-d8ef-9bc2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98b0-fedf-633c-c5b5" type="max"/>
@@ -1441,6 +1500,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="f549-cc7e-1f4b-cb59" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
             <infoLink id="799e-5006-783f-184a" name="Infiltrator" hidden="false" targetId="f14b-f1e8-683e-cd73" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="4150-ed0d-317f-65ac" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -1456,12 +1518,65 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b4e-1904-91a7-c97d" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="2f21-8c02-0496-9337" name="Standard Transport" hidden="false" collective="false" import="true" targetId="8e5c-6a74-ad63-84e7" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry id="a697-fc8e-499c-61a1" name="Standard Transport" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df03-a0e0-290f-c6c5" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30b0-0f55-7818-fd0a" type="max"/>
                   </constraints>
-                </entryLink>
+                  <rules>
+                    <rule id="e8d3-11b4-6343-e313" name="Standard Transport" hidden="false">
+                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
+                    </rule>
+                  </rules>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="7c7b-a230-ae46-b3f3" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="a93e-dc4d-8463-6ced">
+                      <modifiers>
+                        <modifier type="increment" field="f2e8-1152-c4cb-9d8c" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="ccc6-d17c-b94f-63b8" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                        <modifier type="increment" field="001e-a8eb-1245-3d87" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="ccc6-d17c-b94f-63b8" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2e8-1152-c4cb-9d8c" type="min"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="001e-a8eb-1245-3d87" type="max"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry id="a93e-dc4d-8463-6ced" name="Rhino Armoured Carrier" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="5eab-9b53-3756-299c" name="Rhino Armoured Carrier" hidden="false" targetId="8893-b2e4-b674-e7c3" type="profile"/>
+                            <infoLink id="c881-7713-e97c-7ce2" name="Combi-Bolter" hidden="false" targetId="667e-1b61-5cad-898d" type="profile"/>
+                            <infoLink id="a9cf-4314-0e41-29c7" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="7158-baf1-74c4-5c29" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="b4cb-2a7e-5100-f7f7" name="Damocles Command Rhino" hidden="false" targetId="aca5-de2d-8301-eba8" type="profile"/>
+                            <infoLink id="7493-45bb-0715-ab68" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
+                            <infoLink id="6415-893c-1ef0-f31f" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+                            <infoLink id="7bb8-20f2-5cb7-2701" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
                 <entryLink id="900d-181e-d4ad-2f94" name="Drop Assault" hidden="false" collective="false" import="true" targetId="699f-a42f-d8ef-9bc2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7e9-79cc-f037-fdcd" type="max"/>
@@ -2209,6 +2324,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="b334-c98b-7377-09b9" name="Sniper" hidden="false" targetId="e5cd-d8ff-75bb-52b4" type="rule"/>
             <infoLink id="a07a-984a-242d-0715" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="cb7d-b83c-508d-b7ff" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -2224,12 +2342,65 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="973d-cd55-e9f6-81c9" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="4716-270d-32b9-ea1a" name="Standard Transport" hidden="false" collective="false" import="true" targetId="8e5c-6a74-ad63-84e7" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry id="5f90-0ffc-a428-6e4c" name="Standard Transport" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="944e-6894-5e7d-5df5" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29cd-f412-41a5-241f" type="max"/>
                   </constraints>
-                </entryLink>
+                  <rules>
+                    <rule id="a30e-b449-4ae5-3400" name="Standard Transport" hidden="false">
+                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
+                    </rule>
+                  </rules>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="9db9-38bc-98d2-6e9b" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd23-3161-f81c-324d">
+                      <modifiers>
+                        <modifier type="increment" field="47b9-1aee-3cd3-b837" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="9460-ad84-dd38-7649" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                        <modifier type="increment" field="3301-4e4f-001e-e559" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="9460-ad84-dd38-7649" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b9-1aee-3cd3-b837" type="min"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3301-4e4f-001e-e559" type="max"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry id="dd23-3161-f81c-324d" name="Rhino Armoured Carrier" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="5e6b-a5d6-5529-9646" name="Rhino Armoured Carrier" hidden="false" targetId="8893-b2e4-b674-e7c3" type="profile"/>
+                            <infoLink id="fa96-0578-a43e-0955" name="Combi-Bolter" hidden="false" targetId="667e-1b61-5cad-898d" type="profile"/>
+                            <infoLink id="706d-cf9e-2cea-fe10" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="2bf2-d6df-71d6-1d74" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="4146-ebda-10f2-d4eb" name="Damocles Command Rhino" hidden="false" targetId="aca5-de2d-8301-eba8" type="profile"/>
+                            <infoLink id="a4a7-0860-5e7c-b79c" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
+                            <infoLink id="f9b2-8d41-90cd-b604" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+                            <infoLink id="e956-8825-a9d6-8286" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
                 <entryLink id="3005-6a98-d988-537a" name="Drop Assault" hidden="false" collective="false" import="true" targetId="699f-a42f-d8ef-9bc2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e7d-d0c5-e0e4-fc95" type="max"/>
@@ -2390,6 +2561,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <categoryLinks>
             <categoryLink id="4407-219d-f14e-4a3e" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false"/>
             <categoryLink id="6cd9-d80b-22c5-084e" name="Primarch" hidden="false" targetId="ef4e-f5b8-029c-6e3f" primary="false"/>
+            <categoryLink id="eae0-e510-e6b6-1017" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2404,6 +2576,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="b76b-5989-0b4b-eaca" name="Tactical Squad" hidden="false" targetId="d3da-67a5-7cb3-2f67" type="profile"/>
             <infoLink id="c711-0407-9896-523b" name="Boltguns" hidden="false" targetId="4817-774d-0ef5-4aa4" type="profile"/>
           </infoLinks>
+          <categoryLinks>
+            <categoryLink id="1541-fe53-bc20-92a9" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
+          </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -2419,12 +2594,65 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08d3-a473-719e-c2b9" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="39b9-aa9e-dbd3-92cb" name="Standard Transport" hidden="false" collective="false" import="true" targetId="8e5c-6a74-ad63-84e7" type="selectionEntry">
+              <selectionEntries>
+                <selectionEntry id="92ea-bf98-c48c-f459" name="Standard Transport" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e02f-1088-66ea-f098" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b9-0f1d-536a-6c66" type="max"/>
                   </constraints>
-                </entryLink>
+                  <rules>
+                    <rule id="1960-c97b-2767-db67" name="Standard Transport" hidden="false">
+                      <description>Add enough Rhino Armoured Carriers to transport the entire formation after all other upgrades are chosen. Each Rhino or Damocles Command Rhino carries 2 Tactical-sized units, and the count is set from the formation; add this upgrade last, or adjust the transports if you change units afterwards.</description>
+                    </rule>
+                  </rules>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="4d0e-fe5b-b162-5c71" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="b7de-5c0f-61f5-baa4">
+                      <modifiers>
+                        <modifier type="increment" field="e32d-c1ab-91d9-a384" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="a5f4-5983-afa2-ae2a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                        <modifier type="increment" field="81e2-477e-1d65-4798" value="1">
+                          <repeats>
+                            <repeat field="selections" scope="a5f4-5983-afa2-ae2a" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dca3-6748-53f0-e4bb" repeats="1" roundUp="true"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e32d-c1ab-91d9-a384" type="min"/>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81e2-477e-1d65-4798" type="max"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry id="b7de-5c0f-61f5-baa4" name="Rhino Armoured Carrier" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="004e-881a-c860-3beb" name="Rhino Armoured Carrier" hidden="false" targetId="8893-b2e4-b674-e7c3" type="profile"/>
+                            <infoLink id="36e8-a723-348a-151d" name="Combi-Bolter" hidden="false" targetId="667e-1b61-5cad-898d" type="profile"/>
+                            <infoLink id="2630-10f5-f41c-de8a" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="ff39-2d0d-5349-e72d" name="Damocles Command Rhino" hidden="false" collective="false" import="true" type="model">
+                          <infoLinks>
+                            <infoLink id="5cbd-3986-c187-5407" name="Damocles Command Rhino" hidden="false" targetId="aca5-de2d-8301-eba8" type="profile"/>
+                            <infoLink id="0cc2-244e-80d4-cd2e" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
+                            <infoLink id="c48f-7e90-d90d-6849" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+                            <infoLink id="d94f-0d4f-8119-e545" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
                 <entryLink id="fce0-8262-3834-2dbb" name="Drop Assault" hidden="false" collective="false" import="true" targetId="699f-a42f-d8ef-9bc2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="655c-ff73-1a84-df14" type="max"/>
@@ -3169,6 +3397,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="a828-c031-7c6b-064d" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                     <infoLink id="c405-8c52-bd95-a3c3" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="d3f4-62c6-5823-cad7" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
@@ -3193,6 +3424,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="06ac-b715-754a-f1e4" name="Heavy Weapons" hidden="false" targetId="51f7-7c66-fb72-2a26" type="profile"/>
                     <infoLink id="68a5-0914-a17a-1018" name="Flak Missiles" hidden="false" targetId="e586-6217-e4ae-7049" type="profile"/>
                   </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="1bfe-5b54-07fd-6789" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
+                  </categoryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="50.0"/>
                   </costs>
@@ -3205,31 +3439,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8e5c-6a74-ad63-84e7" name="Standard Transport" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="245b-8984-8b84-a36b" name="Standard Transport" hidden="false">
-          <description>Add enough Rhinos to transport the entire formation after all other upgrades are chosen.</description>
-        </rule>
-      </rules>
-      <selectionEntries>
-        <selectionEntry id="28a2-2461-97a6-150f" name="Rhino Armoured Carrier" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46d4-8f75-6e53-50ef" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="da09-0b74-a412-c009" name="Rhino Armoured Carrier" hidden="false" targetId="8893-b2e4-b674-e7c3" type="profile"/>
-            <infoLink id="f8d0-2b70-878b-b059" name="Combi-Bolter" hidden="false" targetId="667e-1b61-5cad-898d" type="profile"/>
-            <infoLink id="4386-2f1c-d6fa-4be9" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>

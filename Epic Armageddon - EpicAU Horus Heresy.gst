@@ -39,7 +39,8 @@
     <categoryEntry id="5568-d0c7-8d10-dce0" name="Spacecraft" hidden="false"/>
     <categoryEntry id="ef4e-f5b8-029c-6e3f" name="Primarch" hidden="false"/>
     <categoryEntry id="5485-21a2-ac74-b69e" name="Character" hidden="false"/>
-    <categoryEntry id="ba14-d0f1-f942-df54" name="Configuration" hidden="false"/>
+    <categoryEntry id="ba14-d0f1-f942-df54" name="Configuration" hidden="true"/>
+    <categoryEntry id="dca3-6748-53f0-e4bb" name="Tactical Transport Space" hidden="true"/>
   </categoryEntries>
   <sharedRules>
     <rule id="d6db-799f-23f8-2194" name="Allies" hidden="false">

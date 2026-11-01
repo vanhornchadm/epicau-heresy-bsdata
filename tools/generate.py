@@ -38,7 +38,8 @@ UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Notes']
 WEAPON_CHARS = ['Range', 'Firepower', 'Notes']
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
-        'Primarch', 'Character', 'Configuration']
+        'Primarch', 'Character', 'Configuration', 'Tactical Transport Space']
+HIDDEN_CATS = {'Configuration', 'Tactical Transport Space'}  # internal bookkeeping categories
 CAT = {c: gid('cat', c) for c in CATS}
 SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': 'Lord of War',
             'horde': 'Daemonic Horde', 'greater': 'Greater Daemon Horde', 'followers': 'Followers of Chaos',
@@ -231,6 +232,7 @@ class Builder:
     def __init__(self, army, cat_id, profiles, allied_force_id):
         self.army, self.cat_id, self.prof, self.allied_force_id = army, cat_id, profiles, allied_force_id
         self.missing = []
+        self.formation_id = None  # set while a formation is being built (scope for transport counts)
 
     def find_unit(self, name):
         for sheet in self.army['sheets']:
@@ -246,6 +248,9 @@ class Builder:
         unit = self.find_unit(part['unit'])
         eid = gid('se', self.cat_id, path)
         ids, rules, cats = self.prof.unit_profiles(unit)
+        space = self.army['transport_space']
+        if space and (unit['name'] in space or 'Demi-God' in unit['notes']):
+            cats = cats + ['Tactical Transport Space']
         cons = []
         if part['min'] is not None and part['min'] > 0:
             cons.append(constraint(gid('con', eid, 'min'), 'min', part['min']))
@@ -293,6 +298,8 @@ class Builder:
                 grps.append(ordered('selectionEntryGroup', {'id': gid_, 'name': p['label'], 'hidden': 'false',
                                                             'collective': 'false', 'import': 'true'},
                                     constraints=cons, selectionEntries=kids))
+            elif p['kind'] == 'fill':
+                grps.append(self.fill_group(pp, p))
             elif p['kind'] == 'swap':
                 gid_ = gid('seg', self.cat_id, pp)
                 cons = [constraint(gid('con', gid_, 'min'), 'min', p['min'])] if p['min'] else []
@@ -309,33 +316,64 @@ class Builder:
                                     constraints=cons, selectionEntries=kids))
         return ses, grps
 
+    def fill_group(self, path, p):
+        """Transports sized to the formation: min = max = ceil(tagged units / per), any mix of types."""
+        if not self.formation_id:
+            raise ValueError(f'{self.army["name"]}: transport fill outside a formation ({path})')
+        g = gid('seg', self.cat_id, path)
+        kids = [self.unit_entry(f'{path}/{j}', u) for j, u in enumerate(p['units'])]
+        cmin, cmax = gid('con', g, 'min'), gid('con', g, 'max')
+        mods = [X('modifier', {'type': 'increment', 'field': c, 'value': '1'},
+                  [X('repeats', children=[repeat(CAT[p['space']], p['per'], self.formation_id, round_up=True,
+                                                 child=True)])]) for c in (cmin, cmax)]
+        return ordered('selectionEntryGroup', {'id': g, 'name': p['label'], 'hidden': 'false', 'collective': 'false',
+                                               'import': 'true', 'defaultSelectionEntryId': kids[0].attrs['id']},
+                       modifiers=mods, constraints=[constraint(cmin, 'min', 0), constraint(cmax, 'max', 0)],
+                       selectionEntries=kids)
+
     # -- upgrades
+    @staticmethod
+    def formation_bound(u):
+        """Upgrades whose contents depend on the formation are built inline rather than shared."""
+        return any(p['kind'] == 'fill' for p in u['parts'])
+
+    def upgrade_entry(self, uid, name, u, path, extra_cons=()):
+        ses, grps = self.parts(path, u['parts'])
+        mods, cons = ([], [])
+        if u['maxn'] is not None:
+            mods, cons = per_points_limit(uid, u['maxn'], u['per'], u['round_up'])
+        cons = cons + list(extra_cons)
+        rules = [rule_el(gid('r', uid), name, u['desc'])] if u['desc'] else []
+        return ordered('selectionEntry', {'id': uid, 'name': name, 'hidden': 'false', 'collective': 'false',
+                                          'import': 'true', 'type': 'upgrade'},
+                       modifiers=mods, constraints=cons, rules=rules,
+                       infoLinks=[info_rule(uid, r) for r in u['rules']],
+                       selectionEntries=ses, selectionEntryGroups=grps, costs=cost(u['cost']))
+
     def shared_upgrades(self):
-        out = []
-        for name, u in self.army['upgrades'].items():
-            uid = self.upgrade_id(name)
-            ses, grps = self.parts(f'upgrade/{name}', u['parts'])
-            mods, cons = ([], [])
-            if u['maxn'] is not None:
-                mods, cons = per_points_limit(uid, u['maxn'], u['per'], u['round_up'])
-            rules = [rule_el(gid('r', uid), name, u['desc'])] if u['desc'] else []
-            out.append(ordered('selectionEntry', {'id': uid, 'name': name, 'hidden': 'false', 'collective': 'false',
-                                                  'import': 'true', 'type': 'upgrade'},
-                               modifiers=mods, constraints=cons, rules=rules,
-                               infoLinks=[info_rule(uid, r) for r in u['rules']],
-                               selectionEntries=ses, selectionEntryGroups=grps, costs=cost(u['cost'])))
-        return out
+        return [self.upgrade_entry(self.upgrade_id(name), name, u, f'upgrade/{name}')
+                for name, u in self.army['upgrades'].items() if not self.formation_bound(u)]
 
     def upgrade_id(self, name):
         return gid('upgrade', self.cat_id, name)
 
     def upgrade_link(self, owner, name):
+        """An entryLink to the shared upgrade, or an inline copy for formation-bound upgrades."""
         if name not in self.army['upgrades']:
             raise KeyError(f'{self.army["name"]}: unknown upgrade {name!r} in {owner}')
+        u = self.army['upgrades'][name]
+        if self.formation_bound(u):
+            uid = gid('upgrade', owner, name)
+            return self.upgrade_entry(uid, name, u, f'{owner}/upgrade/{name}',
+                                      extra_cons=[constraint(gid('con', uid, 'max'), 'max', 1)])
         lid = gid('el', owner, name)
         return X('entryLink', {'id': lid, 'name': name, 'hidden': 'false', 'collective': 'false', 'import': 'true',
                                'targetId': self.upgrade_id(name), 'type': 'selectionEntry'},
                  [X('constraints', children=[constraint(gid('con', lid, 'max'), 'max', 1)])])
+
+    @staticmethod
+    def split(items):
+        return [i for i in items if i.tag == 'selectionEntry'], [i for i in items if i.tag == 'entryLink']
 
     def upgrades_group(self, fid, f):
         cap = {'support': self.army['support_cap'], 'low': self.army['low_cap']}.get(f['slot'], self.army['upgrade_cap'])
@@ -346,17 +384,19 @@ class Builder:
                 links.append(self.upgrade_link(fid, names[0]))
             else:
                 sg = gid('seg', fid, chunk)
+                ses, els = self.split([self.upgrade_link(sg, n) for n in names])
                 groups.append(ordered('selectionEntryGroup', {'id': sg, 'name': ' / '.join(names), 'hidden': 'false',
                                                               'collective': 'false', 'import': 'true'},
                                       constraints=[constraint(gid('con', sg, 'max'), 'max', 1)],
-                                      entryLinks=[self.upgrade_link(sg, n) for n in names]))
+                                      selectionEntries=ses, entryLinks=els))
         if not links and not groups:
             return None
         g = gid('seg', fid, 'upgrades')
         cons = [constraint(gid('con', g, 'max'), 'max', cap)] if cap else []
+        ses, els = self.split(links)
         return ordered('selectionEntryGroup', {'id': g, 'name': 'Upgrades', 'hidden': 'false', 'collective': 'false',
                                                'import': 'true'},
-                       constraints=cons, selectionEntryGroups=groups, entryLinks=links)
+                       constraints=cons, selectionEntries=ses, selectionEntryGroups=groups, entryLinks=els)
 
     def titan_weapons(self, fid, f):
         count = 0
@@ -389,6 +429,7 @@ class Builder:
     # -- formations
     def formation(self, f):
         fid = gid('formation', self.cat_id, f['slot'], f['name'])
+        self.formation_id = fid
         primary = SLOT_CAT[f['slot']]
         cats = [cat_link(fid, primary, True)]
         if f['slot'] == 'low':
@@ -518,7 +559,8 @@ def build_gst():
                            X('characteristicType', {'id': gid('ct', 'Unit', c), 'name': c}) for c in UNIT_CHARS])]),
                        X('profileType', {'id': PT_WEAPON, 'name': 'Weapon'}, [X('characteristicTypes', children=[
                            X('characteristicType', {'id': gid('ct', 'Weapon', c), 'name': c}) for c in WEAPON_CHARS])])]),
-                   categoryEntries=[X('categoryEntry', {'id': CAT[c], 'name': c, 'hidden': 'false'}) for c in CATS],
+                   categoryEntries=[X('categoryEntry', {'id': CAT[c], 'name': c, 'hidden': str(c in HIDDEN_CATS).lower()})
+                                    for c in CATS],
                    sharedRules=[rule_el(RULE_ID[n], n, d) for n, d in RULES.items()])
     write(os.path.join(OUT, GST_FILE), root, GST_NS)
 

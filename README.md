@@ -31,11 +31,12 @@ These rules are enforced:
 - Per-formation upgrade caps (four for Legion, Mechanicum and Militia; three for Solar Auxilia; uncapped elsewhere), each upgrade once, and OR-groups such as one transport option.
 - Army-wide caps on upgrades: one Legate, one Captain-General, one Archmagos Prime, one Seneschal. Free Legate Commanders and Discipline Masters are limited to one per 500 points or part thereof.
 - Titan weapon slots: Warhound 2, Warhound pack 4, Reaver 3, Warlord 4, with their costs.
+- Standard Transport (Legion lists) requires exactly enough transports: one per 2 Tactical-sized units in the formation, rounded up. That counts squads added by upgrades such as Support Squads, and a Primarch, who takes his retinue's space. Characters, Dreadnoughts and Rapiers take no space. The transports can be any mix of Rhino Armoured Carriers and Damocles Command Rhinos, both 0 pts. Add Standard Transport last; if units change afterwards, BattleScribe flags the transport count until you fix it.
 
 These rules are shown as text only, not enforced:
 
 - Ally compatibility (cohesive or disruptive) and the -1 strategy penalty for a disruptive ally.
-- "Enough transports to carry the formation."
+- "Enough transports to carry the formation" for every transport upgrade other than Standard Transport (Heavy Transport, Assault Claw, Drop Assault and so on).
 - Daemon god-matching (Followers or Greater Daemons must share their Horde's god), the 3-9 minimum per Followers unit type, and one Daemon Prince per Chaos faction.
 - Militia Provenance: only two types per army, and the Traitor Militia requirement.
 - Mount restrictions on Titan weapons (arm or carapace).

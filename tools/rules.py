@@ -68,10 +68,32 @@ RULES = {
     'Slow Firing': "Core rule: may only fire every other turn.",
     'Titan Killer': "Core rule: each hit causes the listed number of damage points to a war engine.",
     'Extra Attacks': "Core rule: grants the listed number of additional close combat or firefight attacks.",
+    'First Strike': "The unit strikes first in an assault: its attacks are resolved, and casualties removed, before the enemy's.",
+    'Small Arms': "Core rule: a weapon shown in brackets with (small arms) is only used in firefights, adding its listed abilities and Extra Attacks to the unit's FF attacks. It cannot shoot in the shooting phase.",
+    'Assault Weapons': "Core rule: a weapon marked (assault weapons) is used in close combat, adding its listed abilities and Extra Attacks to the unit's CC attacks.",
+    'Barrage': "Core rule: BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.",
+    'Fixed Forward Fire Arc': "Core rule (FxF): the weapon may only target units in a 90-degree arc straight ahead of the unit.",
+    'Forward Fire Arc': "Core rule (Fwd): the weapon may only target units in the 180-degree arc to the unit's front.",
+    'Rear Fire Arc': "Core rule: the weapon may only target units in the 180-degree arc to the unit's rear.",
+    'Left Fire Arc': "Core rule (LF): the weapon may only target units in the arc to the unit's left side.",
+    'Right Fire Arc': "Core rule (RF): the weapon may only target units in the arc to the unit's right side.",
+    'Damage Capacity': "Core rule (DC): a war engine has this many damage points. Each unsaved hit removes one and it is destroyed at zero. War engines can also take critical hits.",
+    'Critical Hits': "Core rule: some damage against a war engine causes a critical hit. The effect for each unit is given in its notes.",
+    'Slow and Steady': "Spacecraft with this rule may not be used in the opening turn(s) of a battle stated in their notes, unless the scenario says otherwise.",
+    'Fortifications': "Static defences with 0cm speed; Siege weapons count as Macro-Weapons against them. The EpicAU fortifications page was not archived.",
+    'Secondary Targeting Protocols': "Listed on the experimental Emperor-class Titans but not defined on the archived EpicAU wiki.",
 }
 
-# Short tokens used in weapon/unit notes that map onto the rules above.
-ALIASES = {
-    'MW': 'Macro-Weapon', 'TK': 'Titan Killer', 'EA': 'Extra Attacks',
-    'Void Shield': 'Void Shields', 'Teleport special rule': 'Teleport',
-}
+# Abbreviations and spelling variants used in the reference sheets: (regex, rule name).
+# Matched case-sensitively against unit notes and weapon firepower.
+ALIASES = [
+    (r'MW', 'Macro-Weapon'), (r'TK', 'Titan Killer'), (r'EA', 'Extra Attacks'),
+    (r'Void Shield', 'Void Shields'), (r'Ignores Cover', 'Ignore Cover'), (r'Armourbane', 'Armorbane'),
+    (r'Indirect(?: [Ff]ire)?', 'Indirect Fire'), (r'Jump Pack', 'Jump Packs'), (r'Scouts', 'Scout'),
+    (r'Infiltrate', 'Infiltrator'), (r'One-shot', 'Single Shot'), (r'First ?[Ss]trike', 'First Strike'),
+    (r'[Ss]mall [Aa]rms', 'Small Arms'), (r'[Aa]ssault [Ww]eapons?', 'Assault Weapons'),
+    (r'\d+ ?BP|BP ?\d+', 'Barrage'), (r'FxF|Fixed Forward', 'Fixed Forward Fire Arc'),
+    (r'Fwd|Forward Arc', 'Forward Fire Arc'), (r'Rear Arc', 'Rear Fire Arc'), (r'LF', 'Left Fire Arc'),
+    (r'RF', 'Right Fire Arc'), (r'DC ?\d+', 'Damage Capacity'), (r'Critical [Hh]it', 'Critical Hits'),
+    (r'Slow and [Ss]teady', 'Slow and Steady'),
+]

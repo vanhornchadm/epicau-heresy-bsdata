@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bfce-126c-14cf-2e49" name="EpicAU - Legion Astartes - Dark Angels" revision="2" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="bfce-126c-14cf-2e49" name="EpicAU - Legion Astartes - Dark Angels" revision="3" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="039f-62fd-6054-1990" name="Legion Astartes - Dark Angels" hidden="false">
       <rules>
@@ -131,6 +131,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="60a5-7c38-95cb-acce" name="Tactical Squad" hidden="false" targetId="d3da-67a5-7cb3-2f67" type="profile"/>
                     <infoLink id="54d8-b8a6-f849-581c" name="Boltguns" hidden="false" targetId="4817-774d-0ef5-4aa4" type="profile"/>
+                    <infoLink id="fd8b-5096-8141-02f6" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="11fe-40b4-301f-dc13" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
@@ -157,6 +158,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="b401-4703-6db6-0c63" name="Despoiler Squad" hidden="false" targetId="54d2-5175-0834-f426" type="profile"/>
                     <infoLink id="e220-6c15-518a-dcab" name="Chainswords &amp; Bolt Pistols" hidden="false" targetId="6ea5-4a9b-f684-1625" type="profile"/>
+                    <infoLink id="f8b3-f1d9-3431-a1e2" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="8bc3-2e40-d4f3-a8fd" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
@@ -215,6 +217,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="8a2e-ae80-7f9e-c8ce" name="Rhino Armoured Carrier" hidden="false" targetId="8893-b2e4-b674-e7c3" type="profile"/>
                             <infoLink id="f400-d94c-607e-ee18" name="Combi-Bolter" hidden="false" targetId="667e-1b61-5cad-898d" type="profile"/>
                             <infoLink id="6fd3-1b65-82f7-b862" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                            <infoLink id="3994-9c25-00b6-ec4b" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -229,6 +232,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="0091-1e38-4578-8f43" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
                             <infoLink id="5815-1d4e-b384-c394" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
                             <infoLink id="c811-e996-98c9-5154" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                            <infoLink id="45c0-4428-0169-bff9" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -341,6 +345,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="2d34-46d0-46e6-478f" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
             <infoLink id="998b-936d-c677-50ca" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="d79a-a134-82ec-d67e" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="ae42-b8fd-cc96-ca30" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
@@ -447,6 +452,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="3d6f-a232-21ed-3de9" name="Assault Squad" hidden="false" targetId="6c3f-0575-a694-7cb2" type="profile"/>
             <infoLink id="f53f-0208-1888-88aa" name="Chainswords" hidden="false" targetId="eafc-0c5c-50f6-0f0a" type="profile"/>
             <infoLink id="e75b-4f31-0231-1dac" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
+            <infoLink id="2335-675b-d745-5410" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -512,6 +518,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="5037-f023-5408-7788" name="Melta-cutters" hidden="false" targetId="6367-6533-c4a3-ed7a" type="profile"/>
             <infoLink id="2975-4ddd-d66f-240e" name="Armorbane" hidden="false" targetId="0be9-a6dd-0220-503a" type="rule"/>
             <infoLink id="ea04-2251-ceae-861a" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
+            <infoLink id="192f-728d-43b5-e13e" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -639,6 +646,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="34fe-826e-f5f7-fd86" name="Heavy Bolter" hidden="false" targetId="494f-f2d0-29f6-10de" type="profile"/>
                     <infoLink id="829e-c572-4a45-a752" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
                     <infoLink id="89eb-9774-089f-f5ec" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="ffd6-7b49-2b0f-f26a" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -664,6 +672,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="02a2-b937-1bea-0e19" name="Vengeance &amp; Castellan Missiles" hidden="false" targetId="3d7b-9f0d-1f12-fa6a" type="profile"/>
                     <infoLink id="031f-5980-9ae9-f7ca" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
                     <infoLink id="9203-3402-8bdc-4ce5" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="f6c4-c460-0c92-4063" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -689,6 +698,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="bf47-caa4-a163-11a1" name="Earthshaker Cannon" hidden="false" targetId="75f5-683d-09b2-48f6" type="profile"/>
                     <infoLink id="9e64-cf3b-2c36-7529" name="Heavy Bolter" hidden="false" targetId="d722-7063-edc0-8042" type="profile"/>
                     <infoLink id="0e99-2493-5dbd-4cb2" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
+                    <infoLink id="4d4c-2c47-3edd-daf4" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -739,6 +749,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="4399-b2f1-6627-56da" name="Assault Squad" hidden="false" targetId="6c3f-0575-a694-7cb2" type="profile"/>
             <infoLink id="f543-427d-a9c9-a8a8" name="Chainswords" hidden="false" targetId="eafc-0c5c-50f6-0f0a" type="profile"/>
             <infoLink id="0bf6-bf0b-0370-13ef" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
+            <infoLink id="dcb2-103d-2626-6994" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -790,6 +801,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="529d-c444-80ce-98e5" name="Melta-cutters" hidden="false" targetId="6367-6533-c4a3-ed7a" type="profile"/>
             <infoLink id="4557-2863-c658-2a4d" name="Armorbane" hidden="false" targetId="0be9-a6dd-0220-503a" type="rule"/>
             <infoLink id="21bc-c347-dff6-772f" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
+            <infoLink id="5b38-5373-5b5e-2401" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -869,6 +881,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="277a-0811-47f9-a4f9" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
             <infoLink id="e8e7-dd74-a694-5acd" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="a2e8-958a-c931-7e90" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="9fcb-f71b-5ec1-786f" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
@@ -930,6 +943,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="988c-51e1-941f-cae7" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="bb2a-568e-61d8-5b55" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="7db6-5ae2-01a7-3337" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="d713-f9d7-c138-10b8" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="c402-6e9b-3e1c-eda6" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
@@ -1052,6 +1067,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="1b38-6eaa-2496-66b8" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="4b0b-9e7d-2461-fe39" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="07e3-f1e8-17b5-f6b8" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="9423-4185-49e9-9b94" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="99d7-8da8-2cb5-7b3a" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="60.0"/>
@@ -1157,6 +1174,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="b182-724b-602e-e31b" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
             <infoLink id="7c0b-8ed7-9f29-dfed" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
             <infoLink id="6c3f-de40-c438-20d4" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="da51-98bc-a5e7-bafd" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1315,6 +1333,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="0f62-03e5-5216-9cdc" name="Chainswords" hidden="false" targetId="456a-9086-85ae-ee0f" type="profile"/>
                     <infoLink id="0b88-db6b-74ac-dcbf" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
                     <infoLink id="7d8a-dfab-c72c-1012" name="Mounted" hidden="false" targetId="4357-7618-ea64-6347" type="rule"/>
+                    <infoLink id="489d-7b70-a713-1505" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1394,6 +1413,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="8db2-6f98-7c0c-338b" name="2 x Lascannon OR" hidden="false" targetId="03fb-530e-3268-5841" type="profile"/>
             <infoLink id="2fcb-99fe-6d23-9871" name="2 x Heavy Flamers" hidden="false" targetId="b630-4ccb-c670-e49f" type="profile"/>
             <infoLink id="296e-dbf1-e474-e5e2" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+            <infoLink id="07b8-9182-43a1-b3b2" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="60.0"/>
@@ -1555,6 +1575,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="0ec9-03f9-4beb-b184" name="Rhino Armoured Carrier" hidden="false" targetId="8893-b2e4-b674-e7c3" type="profile"/>
                             <infoLink id="f61f-ba39-5fad-2b0e" name="Combi-Bolter" hidden="false" targetId="667e-1b61-5cad-898d" type="profile"/>
                             <infoLink id="f068-556d-cc34-4d60" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                            <infoLink id="6f3c-ce15-9819-d0e5" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -1569,6 +1590,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="9e62-a940-56a1-b0d6" name="Combi-bolter" hidden="false" targetId="4203-10f3-d102-8f62" type="profile"/>
                             <infoLink id="7962-b2de-9517-b18a" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
                             <infoLink id="efdd-18cd-b170-a7af" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                            <infoLink id="7760-7d1a-e927-df60" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -1652,6 +1674,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="a08c-236b-c543-26ac" name="Armorbane" hidden="false" targetId="0be9-a6dd-0220-503a" type="rule"/>
                 <infoLink id="8e53-3b9d-85e7-7839" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="834f-2715-4658-f00f" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                <infoLink id="ac2b-38d2-d507-615b" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
@@ -1725,6 +1748,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="6588-5b9f-c3fc-aec3" name="Sabre Missiles" hidden="false" targetId="1fd4-dc1f-8279-c7cf" type="profile"/>
             <infoLink id="166f-9a87-4117-1093" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
             <infoLink id="6bf4-d94c-9f2c-fc27" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="01c1-2e3c-27ab-40b8" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1820,6 +1844,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="ec9f-06c4-18f5-4a6e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="ae4d-2635-6322-8b2a" name="Planetfall" hidden="false" targetId="6a98-a141-f09e-3c89" type="rule"/>
             <infoLink id="c470-7024-3a35-6e8b" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+            <infoLink id="6133-e2cf-d554-73cd" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+            <infoLink id="7483-cf5f-d398-235d" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="eb84-3e62-2ba7-e149" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="125.0"/>
@@ -1867,6 +1894,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="4ed6-b15d-b83c-728d" name="Orbital Bombardment" hidden="false" targetId="ddf9-8688-f80c-863a" type="profile"/>
                     <infoLink id="e21b-b466-bd01-4696" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                     <infoLink id="57bf-5f5b-a36f-e06d" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="a211-5bd3-91c8-0f4a" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="ff7e-bce7-8e60-c08f" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false"/>
@@ -1894,7 +1922,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="017e-2142-56ae-42b8" name="Battle Barge" hidden="false" targetId="dc32-81cc-dc16-3c4c" type="profile"/>
                     <infoLink id="bd44-bd2c-27cb-e792" name="Orbital Bombardment" hidden="false" targetId="c72f-9a20-b310-0a43" type="profile"/>
                     <infoLink id="8d53-c308-158c-167c" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                    <infoLink id="fd3f-4dde-4614-c644" name="Slow and Steady" hidden="false" targetId="931d-35b7-00f9-bfd2" type="rule"/>
                     <infoLink id="724a-9f78-4cf9-d6fa" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="ddb2-749b-fc97-a673" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="c7b3-661e-e92b-466a" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false"/>
@@ -1944,6 +1974,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="39e6-fffe-37ef-319a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="19f6-f8c6-7cd4-9760" name="Planetfall" hidden="false" targetId="6a98-a141-f09e-3c89" type="rule"/>
             <infoLink id="aa35-e7a6-3839-c922" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+            <infoLink id="9896-879e-8915-fdd7" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="042a-90ed-0007-1ffe" name="Left Fire Arc" hidden="false" targetId="8fd7-7a53-db8a-8526" type="rule"/>
+            <infoLink id="f8dc-7b3b-10ad-f59b" name="Right Fire Arc" hidden="false" targetId="24b1-8727-a5a1-0b4b" type="rule"/>
+            <infoLink id="bc6c-f431-68c3-4ce6" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1977,6 +2011,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="d686-9e6f-9082-2fd5" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="9d81-10c6-ff99-3414" name="Planetfall" hidden="false" targetId="6a98-a141-f09e-3c89" type="rule"/>
             <infoLink id="93e1-a86d-0d85-43a7" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+            <infoLink id="d41b-d601-89cf-6ecd" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="100.0"/>
@@ -2009,6 +2044,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="8576-4f06-3b0a-3c61" name="Demolisher Cannon" hidden="false" targetId="9249-ea27-7c28-6b5d" type="profile"/>
             <infoLink id="0a97-8972-663f-e866" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
             <infoLink id="c2c5-deee-8577-3eea" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+            <infoLink id="ba16-b7c3-f414-cc55" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
@@ -2061,6 +2097,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="de75-eb96-c624-1e00" name="2 x Quad Heavy Bolter OR" hidden="false" targetId="ee41-5256-2dec-7f7a" type="profile"/>
             <infoLink id="0a9b-687c-88e7-7aba" name="2 x Reaper Autocannon Battery" hidden="false" targetId="6947-9c6e-b181-fcec" type="profile"/>
             <infoLink id="7639-74cd-174a-e38e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="918d-0c9d-1d53-16d5" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="0d9f-7935-9456-9159" name="Forward Fire Arc" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2086,6 +2124,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="6e2b-f250-22a1-8012" name="Xiphon Interceptor" hidden="false" targetId="daf7-2cd6-68e7-69cc" type="profile"/>
             <infoLink id="0198-3262-3d62-c626" name="2 x TL Lascannons" hidden="false" targetId="ec5f-f767-f9c8-a544" type="profile"/>
             <infoLink id="e840-8d56-4082-88cf" name="Rotary Missile Launcher" hidden="false" targetId="669e-75af-d3fc-432d" type="profile"/>
+            <infoLink id="393f-e12e-c628-9a75" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2116,6 +2155,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="17d8-dea1-6d2b-cb40" name="Planetfall" hidden="false" targetId="6a98-a141-f09e-3c89" type="rule"/>
             <infoLink id="032c-f80c-bf73-e007" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
             <infoLink id="e0f6-2fef-4023-3815" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
+            <infoLink id="d012-5145-1e2d-4c19" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="5227-0288-9005-d528" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2159,6 +2200,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="f8de-d54d-d83a-dd5c" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                     <infoLink id="7201-d51d-8037-7880" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="8126-da23-47c0-b5af" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="1f0f-3246-3c4e-ec94" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                    <infoLink id="552c-1cd9-1790-6eb6" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2188,6 +2231,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="201a-823e-9b1f-0f91" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                     <infoLink id="03ad-8bb3-815c-b4ad" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                     <infoLink id="f521-aeef-ffd4-cd96" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                    <infoLink id="29f3-5317-6e0e-dae3" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="c5bf-cacb-20e8-2a7f" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2223,6 +2268,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="88b6-4884-bfce-427a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="c47a-7c11-c1c0-32db" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="30d5-fa39-507b-4c68" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+            <infoLink id="3f9d-c029-3563-0d72" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="2114-8776-f5db-f20c" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2262,6 +2309,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="87c4-0102-80d8-9259" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                     <infoLink id="a7c1-3acb-326a-7a80" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
                     <infoLink id="641f-5344-40e9-ac71" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="5b66-9ce1-73a5-ee0e" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="ec65-044c-efd7-03f5" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                    <infoLink id="23d5-bdfc-8aca-e39a" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                    <infoLink id="b945-47e4-d907-56b9" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2290,6 +2341,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="0d85-2961-1e29-d780" name="Feedback" hidden="false" targetId="e977-24ca-df0a-2945" type="rule"/>
                     <infoLink id="b011-5794-14a8-48cc" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                     <infoLink id="d604-2a43-42a3-abe4" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                    <infoLink id="2280-df41-dc69-dc57" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                    <infoLink id="d5ff-7ec8-8053-fa84" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2338,6 +2391,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="9ea2-fe4a-0645-3abe" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
             <infoLink id="f250-05d2-aa21-fb93" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
             <infoLink id="da47-224f-6e74-ff20" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="a20d-8ad0-b47d-9d8b" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2414,6 +2468,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="9964-9476-54c8-32b8" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                     <infoLink id="4960-2744-fa75-eeaa" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="6abb-f413-d735-b10e" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="f69d-b347-6a48-5f93" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                    <infoLink id="b19a-ec99-8d73-ff98" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2443,6 +2499,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="c1ce-d36b-4208-a76d" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                     <infoLink id="87e2-25ff-a1da-0878" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                     <infoLink id="f400-0b6b-633b-8668" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                    <infoLink id="9785-a7c8-be3c-6df6" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="a287-1fb9-dd88-b5f7" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2501,8 +2559,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="075a-751c-6b0f-99d8" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
             <infoLink id="1e0e-adbe-36f6-c048" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
             <infoLink id="079f-cb71-a7e5-2427" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
+            <infoLink id="ac57-02a7-c9e4-da61" name="First Strike" hidden="false" targetId="d859-b0a0-af5c-bb73" type="rule"/>
             <infoLink id="dfa1-d0b0-21f0-0ad2" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="1b67-7aa8-d399-6a9b" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="61b5-4bd3-e1d3-7e6f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="1067-6d63-41c5-cfa4" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="615a-8b2e-26de-03e6" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false"/>
@@ -2526,6 +2587,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="f7b0-538a-dafc-8cf8" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
             <infoLink id="3f4d-7bee-6590-c1cb" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="2225-4c0f-d91e-58ba" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="8233-7fac-ec4a-e885" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -2603,6 +2665,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="a894-1747-ce6e-d976" name="Magma Melter" hidden="false" targetId="b34e-ab93-5038-410f" type="profile"/>
                 <infoLink id="611d-42c0-7333-d471" name="2 x Heavy Bolter" hidden="false" targetId="a713-bc1e-3f2c-5d87" type="profile"/>
                 <infoLink id="ea35-d6ce-e8c2-5fa2" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                <infoLink id="8c8f-42cc-d06d-188c" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
@@ -2650,6 +2713,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="0560-a9ea-c180-e973" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                 <infoLink id="4ac3-efb6-e0c9-148b" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                 <infoLink id="f413-43b6-ce88-3aba" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                <infoLink id="0359-8e7e-ce62-a326" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
@@ -2718,6 +2782,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="7a30-5429-fcc9-5f82" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
             <infoLink id="5993-61aa-0e1d-ce07" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
             <infoLink id="ed18-cc38-8427-8b41" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="5e28-2957-8c18-4727" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="4c4a-73b6-f94a-0b06" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
@@ -2749,6 +2815,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="4a39-6d28-eaf3-4aef" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
             <infoLink id="0045-a534-28ea-e739" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
             <infoLink id="1a5d-b8f4-c364-a369" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="4d68-d6fa-9f7b-3807" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="7125-7d1f-c468-3541" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
@@ -2785,6 +2853,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="0c5e-0a8d-3f50-5ae0" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
                     <infoLink id="1be2-59fd-b010-c7a1" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="b65d-bdcb-b047-99a7" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="189a-8aa3-b99f-da0b" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="2fdd-993b-72f8-d263" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="3241-72dd-3fb1-3401" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
@@ -2816,6 +2886,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="03fa-0a0f-dd83-7500" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
                     <infoLink id="4971-92ce-d54e-a15e" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
                     <infoLink id="0efa-90a5-11be-f71f" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="6119-0145-8ad6-3975" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="e083-046e-c89f-af89" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
@@ -2847,6 +2918,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="e7c5-a4a9-91a4-0dec" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
                     <infoLink id="aa62-5874-a8a1-bb9b" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
                     <infoLink id="10c6-e097-4cbc-5770" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="1ee4-2c6a-6935-fc17" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="870a-718a-4d37-ed05" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
@@ -2888,6 +2960,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="e569-c5bd-750e-2dd7" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
                 <infoLink id="5fb6-cc3f-7bfc-24e7" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                 <infoLink id="26c2-f9bd-9d67-664f" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                <infoLink id="43cc-ec26-1629-d2e1" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="50.0"/>
@@ -2914,6 +2987,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="5520-8bbb-cb49-1891" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                 <infoLink id="31f0-c02d-9da0-28ac" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                 <infoLink id="8b52-430c-cefe-92ca" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                <infoLink id="86d9-90b6-7af4-d662" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                <infoLink id="791b-851e-624f-0ebe" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60.0"/>
@@ -2958,6 +3033,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="0d30-4d88-6e1d-bc1b" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                 <infoLink id="a944-9617-a2ce-0e3f" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                 <infoLink id="1fb5-8d83-785b-ef09" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                <infoLink id="a8ec-0848-9e3b-e1bd" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                <infoLink id="f890-524b-3102-5e15" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="100.0"/>
@@ -3081,6 +3158,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="8cf4-1b84-af98-8e45" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                     <infoLink id="30dc-14ee-f8c8-311b" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                     <infoLink id="ddf9-6ab5-6d1c-b87a" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                    <infoLink id="6e48-0ae6-77cc-4962" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                    <infoLink id="9a35-676a-f4c5-696c" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="74b6-d295-27e7-d021" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="125.0"/>
@@ -3114,6 +3194,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="2155-df8f-d68d-91cb" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                     <infoLink id="ee31-528b-6e5a-75e7" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="3ee5-2460-0847-4c40" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="475d-60c8-c13a-47ff" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="4c9d-6371-14aa-494b" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="200.0"/>
@@ -3181,6 +3263,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="498b-1108-4009-6169" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
                     <infoLink id="8a0d-8ba6-9765-ce39" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
                     <infoLink id="3353-76cb-5183-42ab" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="adcf-873a-ac81-8dbd" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="90ed-1e4a-4913-1c44" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
@@ -3211,6 +3294,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="328f-6672-1f6f-01ee" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
                     <infoLink id="5162-b357-3cce-f12c" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
                     <infoLink id="20a7-6883-e7ca-1840" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="af1e-2a61-8fca-7949" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="f2c2-8f79-d692-61b0" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
@@ -3281,6 +3365,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="1b0a-e499-c925-b60b" name="Special Weapons" hidden="false" targetId="2702-b282-fc7e-d854" type="profile"/>
                     <infoLink id="e97f-b500-1add-23f8" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                     <infoLink id="9636-0065-70da-7569" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="7ce6-ca53-745c-80b4" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="8879-7e42-515b-e35f" name="Tactical Transport Space" hidden="false" targetId="dca3-6748-53f0-e4bb" primary="false"/>
@@ -3345,6 +3430,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="c7fb-cb44-2087-8edc" name="Demolisher Cannon" hidden="false" targetId="9249-ea27-7c28-6b5d" type="profile"/>
                 <infoLink id="eeb1-9fc5-4bba-1cc6" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
                 <infoLink id="ff72-5a4e-6b2f-04c9" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                <infoLink id="cb4b-be96-f1dc-0341" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="50.0"/>
@@ -3364,6 +3450,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="f668-9a5f-37d1-80af" name="2 x Lascannon OR" hidden="false" targetId="03fb-530e-3268-5841" type="profile"/>
                 <infoLink id="cb2c-33cb-a000-72f6" name="2 x Heavy Flamers" hidden="false" targetId="b630-4ccb-c670-e49f" type="profile"/>
                 <infoLink id="34bb-d723-83b7-9e07" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                <infoLink id="aab3-ea67-2733-4bc1" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="60.0"/>
@@ -3394,6 +3481,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="12b4-2e4a-f528-0ce5" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="f6b1-e89b-2859-6b83" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
                 <infoLink id="e0e7-4a0f-1662-6daf" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                <infoLink id="4cab-c8f8-efeb-e6a1" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                <infoLink id="5933-c49b-8a42-29f7" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                <infoLink id="a3a8-1806-ec65-4945" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                <infoLink id="66b5-f71c-5e52-4ede" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="150.0"/>
@@ -3411,6 +3502,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="b396-72aa-b789-81b5" name="Feedback" hidden="false" targetId="e977-24ca-df0a-2945" type="rule"/>
                 <infoLink id="5e6c-60b0-7b1a-96bb" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="9189-e0ab-d1d7-1aa2" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                <infoLink id="ab3d-0f63-62bb-e8e2" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                <infoLink id="12ed-39ae-0757-6d2f" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="150.0"/>

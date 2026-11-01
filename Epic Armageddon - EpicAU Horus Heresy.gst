@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="2" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="3" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
@@ -216,6 +216,48 @@
     </rule>
     <rule id="4b49-c4e2-b896-4689" name="Extra Attacks" hidden="false">
       <description>Core rule: grants the listed number of additional close combat or firefight attacks.</description>
+    </rule>
+    <rule id="d859-b0a0-af5c-bb73" name="First Strike" hidden="false">
+      <description>The unit strikes first in an assault: its attacks are resolved, and casualties removed, before the enemy's.</description>
+    </rule>
+    <rule id="b2c9-ae47-ce23-0fa6" name="Small Arms" hidden="false">
+      <description>Core rule: a weapon shown in brackets with (small arms) is only used in firefights, adding its listed abilities and Extra Attacks to the unit's FF attacks. It cannot shoot in the shooting phase.</description>
+    </rule>
+    <rule id="5d5a-3534-a8bf-4935" name="Assault Weapons" hidden="false">
+      <description>Core rule: a weapon marked (assault weapons) is used in close combat, adding its listed abilities and Extra Attacks to the unit's CC attacks.</description>
+    </rule>
+    <rule id="f379-0377-5661-ed26" name="Barrage" hidden="false">
+      <description>Core rule: BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.</description>
+    </rule>
+    <rule id="8f11-c190-ff78-a7d6" name="Fixed Forward Fire Arc" hidden="false">
+      <description>Core rule (FxF): the weapon may only target units in a 90-degree arc straight ahead of the unit.</description>
+    </rule>
+    <rule id="e787-7eab-2cba-d6f0" name="Forward Fire Arc" hidden="false">
+      <description>Core rule (Fwd): the weapon may only target units in the 180-degree arc to the unit's front.</description>
+    </rule>
+    <rule id="e953-40ea-7719-e17c" name="Rear Fire Arc" hidden="false">
+      <description>Core rule: the weapon may only target units in the 180-degree arc to the unit's rear.</description>
+    </rule>
+    <rule id="8fd7-7a53-db8a-8526" name="Left Fire Arc" hidden="false">
+      <description>Core rule (LF): the weapon may only target units in the arc to the unit's left side.</description>
+    </rule>
+    <rule id="24b1-8727-a5a1-0b4b" name="Right Fire Arc" hidden="false">
+      <description>Core rule (RF): the weapon may only target units in the arc to the unit's right side.</description>
+    </rule>
+    <rule id="b2d2-de55-191a-358d" name="Damage Capacity" hidden="false">
+      <description>Core rule (DC): a war engine has this many damage points. Each unsaved hit removes one and it is destroyed at zero. War engines can also take critical hits.</description>
+    </rule>
+    <rule id="f048-04fb-786f-b4e5" name="Critical Hits" hidden="false">
+      <description>Core rule: some damage against a war engine causes a critical hit. The effect for each unit is given in its notes.</description>
+    </rule>
+    <rule id="931d-35b7-00f9-bfd2" name="Slow and Steady" hidden="false">
+      <description>Spacecraft with this rule may not be used in the opening turn(s) of a battle stated in their notes, unless the scenario says otherwise.</description>
+    </rule>
+    <rule id="589c-8651-5655-a06b" name="Fortifications" hidden="false">
+      <description>Static defences with 0cm speed; Siege weapons count as Macro-Weapons against them. The EpicAU fortifications page was not archived.</description>
+    </rule>
+    <rule id="b2b1-6882-acb7-9daa" name="Secondary Targeting Protocols" hidden="false">
+      <description>Listed on the experimental Emperor-class Titans but not defined on the archived EpicAU wiki.</description>
     </rule>
   </sharedRules>
 </gameSystem>

@@ -166,9 +166,12 @@ TITAN_WEAPONS = json.load(open(os.path.join(HERE, 'source', 'titan_weapons.json'
 # Rule keywords are capitalised on the wiki, so match case-sensitively to avoid hits like "transport capacity".
 PATTERN_OVERRIDES = {'Scout': r'Scout(?! Titan)', 'Commander': r'(?<!Supreme )(?<!Lieutenant )(?<!Lord )Commander',
                      'Transport': r'Transport(?= ?[:.])'}
-RULE_PATTERNS = [(name, re.compile(r'(?<![A-Za-z])' + PATTERN_OVERRIDES.get(name, re.escape(name)) + r'(?![A-Za-z])'))
+# A following capital is allowed so run-together text like "Ignore CoverAND" still matches.
+RULE_PATTERNS = [(name, re.compile(r'(?<![A-Za-z])' + PATTERN_OVERRIDES.get(name, re.escape(name)) + r'(?![a-z])'))
                  for name in RULES]
-ALIAS_PATTERNS = [(target, re.compile(r'(?<![A-Za-z])' + re.escape(tok) + r'(?![a-z])')) for tok, target in ALIASES.items()]
+ALIAS_PATTERNS = [(target, re.compile(r'(?<![A-Za-z])(?:' + pat + r')(?![a-z])')) for pat, target in ALIASES]
+for _, target in ALIASES:
+    assert target in RULES, f'alias target {target!r} has no rule'
 
 
 def rules_in(text):

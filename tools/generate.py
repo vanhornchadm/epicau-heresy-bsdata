@@ -32,9 +32,13 @@ def gid(*key):
 
 GST_ID = gid('gst', GST_NAME)
 PTS = 'points'
-PT_UNIT, PT_WEAPON = gid('pt', 'Unit'), gid('pt', 'Weapon')
-UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Notes']
-WEAPON_CHARS = ['Range', 'Firepower', 'Notes']
+PT_UNIT, PT_WAR_ENGINE, PT_WEAPON = gid('pt', 'Unit'), gid('pt', 'War Engine'), gid('pt', 'Weapon')
+# A unit's weapons sit in its own profile, one line per weapon, as in the Epic Armageddon BSData, so each unit's row
+# lists its guns. War engines get their damage capacity, void shields and critical hit as columns of their own.
+UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Weapons', 'Range', 'Firepower', 'Weapon Notes', 'Notes']
+WAR_ENGINE_CHARS = UNIT_CHARS + ['Damage Capacity', 'Void Shields', 'Critical Hit']
+WEAPON_CHARS = ['Range', 'Firepower', 'Notes']  # chosen Titan weapons
+LINE_BREAK = '<BR><BR>'  # separates weapon lines, as in the Epic Armageddon BSData
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
         'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit',
@@ -73,9 +77,9 @@ EXTRA_UNITS = {
                     {'name': '2 x Sponson Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'},
                     {'name': '2 x Sponson Lascannon (instead of Sponson Heavy Bolters)', 'range': '45cm',
                      'firepower': 'AT5+'}],
-        'notes': 'DC2, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed. Each Kratos takes either '
-                 'the Kratos Battlecannon or the Melta Cannon, and heavy bolters or lascannons on both the hull and '
-                 'the sponsons. (Fan rules, not on the EpicAU wiki: Dakka Dakka proposal, November 2024.)'}, {
+        'notes': 'DC2, Reinforced Armour, Thick Rear Armour. Each Kratos takes either the Kratos Battlecannon or the '
+                 'Melta Cannon, and heavy bolters or lascannons on both the hull and the sponsons. (Fan rules, not on '
+                 'the EpicAU wiki: Dakka Dakka proposal, November 2024.) Critical Hit: Unit is destroyed.'}, {
         'name': 'Sicaran Punisher', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '3+',
         'weapons': [{'name': 'Punisher Rotary Cannon', 'range': '30cm', 'firepower': '3 x AP3+/AT6+'},
                     {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
@@ -94,7 +98,7 @@ EXTRA_UNITS = {
                     {'name': '2 x Scout or Battle Titan Weapon Variants', 'range': '-', 'firepower': '2 x Arm, Forward Arc'},
                     {'name': 'Carapace AA Guns', 'range': '45cm', 'firepower': '4 x AA5+'}],
         'notes': f'DC 6, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
-                 f'{TITAN_CRIT} {EPIC_UK}'}, {
+                 f'{EPIC_UK} {TITAN_CRIT}'}, {
         'name': 'Warmaster Heavy Battle Titan', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': '4 x Revelator Missile', 'range': '60cm', 'firepower': '1 BP, Single Shot, Fixed Forward'},
                     {'name': '2 x Suzerain Plasma Destructor', 'range': '60cm',
@@ -103,7 +107,7 @@ EXTRA_UNITS = {
                     {'name': '1 x Scout or Battle Titan Weapon Variant', 'range': '-',
                      'firepower': '1 x Carapace, Fixed Forward'}],
         'notes': f'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
-                 f'{TITAN_CRIT} {EPIC_UK}'}],
+                 f'{EPIC_UK} {TITAN_CRIT}'}],
 }
 
 
@@ -278,21 +282,29 @@ class Catalogue:
         self.profiles = {}  # pid -> X
 
     def unit_profiles(self, unit):
-        """Return (profile ids, rule names, categories) for a unit record, registering shared profiles."""
-        key = (self.scope, unit['name'])
-        uid = gid('prof', *key, 'unit')
+        """Return (profile ids, rule names, categories) for a unit record, registering its shared profile."""
+        uid = gid('prof', self.scope, unit['name'], 'unit')
         if uid not in self.profiles:
-            vals = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff'], unit['notes']]
-            self.profiles[uid] = profile(uid, unit['name'], PT_UNIT, 'Unit', UNIT_CHARS, vals)
-        ids = [(uid, unit['name'])]
-        for i, w in enumerate(unit['weapons']):
-            if not (w['name'] or w['firepower']) or w['name'] in ('-',):
-                continue
-            wid = gid('prof', *key, 'weapon', i)
-            if wid not in self.profiles:
-                self.profiles[wid] = profile(wid, w['name'] or 'Weapons', PT_WEAPON, 'Weapon', WEAPON_CHARS,
-                                             [w['range'], w['firepower'], 'Weapon lines are combined; check the wiki sheet.' if w.get('misaligned') else ''])
-            ids.append((wid, w['name'] or 'Weapons'))
+            names, ranges, firepower, wnotes = [], [], [], []
+            for w in unit['weapons']:
+                if not (w['name'] or w['firepower']) or w['name'] in ('-',):
+                    continue
+                fp, traits = split_firepower(w['firepower'])
+                if w.get('misaligned'):
+                    traits = (traits + '; ' if traits else '') + 'Weapon lines are combined; check the wiki sheet.'
+                names.append(w['name'] or 'Weapons')
+                ranges.append(w['range'] or '-')
+                firepower.append(fp or '-')
+                wnotes.append(traits or '-')
+            weapons = [LINE_BREAK.join(col) for col in (names, ranges, firepower, wnotes)]
+            stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff']]
+            if is_war_engine(unit):
+                dc, shields, crit, notes = war_engine_fields(unit['notes'])
+                self.profiles[uid] = profile(uid, unit['name'], PT_WAR_ENGINE, 'War Engine', WAR_ENGINE_CHARS,
+                                             stats + weapons + [notes, dc, shields, crit])
+            else:
+                self.profiles[uid] = profile(uid, unit['name'], PT_UNIT, 'Unit', UNIT_CHARS,
+                                             stats + weapons + [unit['notes']])
         text = unit['notes'] + ' ' + ' '.join(w['firepower'] for w in unit['weapons'])
         cats = []
         if unit['type'].startswith('CH'):
@@ -303,7 +315,7 @@ class Catalogue:
             cats.append('Supreme Commander')
         if 'Demi-God' in unit['notes']:
             cats.append('Primarch')
-        return ids, rules_in(text), cats
+        return [(uid, unit['name'])], rules_in(text), cats
 
     def weapon_profile(self, w):
         wid = gid('prof', self.scope, 'titan-weapon', w['name'])
@@ -311,6 +323,35 @@ class Catalogue:
             self.profiles[wid] = profile(wid, w['name'], PT_WEAPON, 'Weapon', WEAPON_CHARS,
                                          [w['range'], w['firepower'], w['notes']])
         return wid
+
+
+def split_firepower(text):
+    """'2 x AP3+/AT3+, Armourbane, FxF' -> ('2 x AP3+/AT3+', 'Armourbane, FxF')."""
+    head, _, rest = text.partition(',')
+    return head.strip(), rest.strip()
+
+
+DC_RE = re.compile(r'\bDC ?\(?(\d+)\)?')
+SHIELDS_RE = re.compile(r'(\d+) ?(?:x )?Void Shields?', re.I)
+CRIT_RE = re.compile(r'Critical [Hh]it(?: [Ee]ffect)?\s*[:\-]?\s*(.*)$', re.S)
+
+
+def is_war_engine(unit):
+    return 'WE' in unit['type'] or bool(DC_RE.search(unit['notes']))
+
+
+def war_engine_fields(notes):
+    """Split a war engine's notes into (damage capacity, void shields, critical hit, remaining notes)."""
+    dc, shields, crit = DC_RE.search(notes), SHIELDS_RE.search(notes), CRIT_RE.search(notes)
+    rest = notes
+    for m in (crit, shields, dc):
+        if m:
+            rest = rest[:m.start()] + ',' + rest[m.end():]
+    rest = re.sub(r'\s*([,.])\s*(?:[,.]\s*)+', r'\1 ', rest)  # tidy separators left by the removals
+    rest = re.sub(r'\s+', ' ', rest).strip(' ,.')
+    crit = crit.group(1).strip() if crit else ''
+    return (dc.group(1) if dc else '-', shields.group(1) if shields else '-',
+            (crit[:1].upper() + crit[1:]) if crit else '-', (rest + ('.' if rest[-1].isalnum() else '')) if rest else '-')
 
 
 def profile(pid, name, type_id, type_name, chars, vals):
@@ -918,6 +959,9 @@ def build_gst():
                    profileTypes=X('profileTypes', children=[
                        X('profileType', {'id': PT_UNIT, 'name': 'Unit'}, [X('characteristicTypes', children=[
                            X('characteristicType', {'id': gid('ct', 'Unit', c), 'name': c}) for c in UNIT_CHARS])]),
+                       X('profileType', {'id': PT_WAR_ENGINE, 'name': 'War Engine'}, [X('characteristicTypes', children=[
+                           X('characteristicType', {'id': gid('ct', 'War Engine', c), 'name': c})
+                           for c in WAR_ENGINE_CHARS])]),
                        X('profileType', {'id': PT_WEAPON, 'name': 'Weapon'}, [X('characteristicTypes', children=[
                            X('characteristicType', {'id': gid('ct', 'Weapon', c), 'name': c}) for c in WEAPON_CHARS])])]),
                    categoryEntries=[X('categoryEntry', {'id': CAT[c], 'name': c, 'hidden': str(c in HIDDEN_CATS).lower()})

@@ -6,7 +6,7 @@ BattleScribe (v2.03 schema) data for the EpicAU community's Horus Heresy supplem
 
 | File | What it is |
 |---|---|
-| `Epic Armageddon - EpicAU Horus Heresy.gst` | Game system: costs, Unit/Weapon profile types, categories, shared special rules |
+| `Epic Armageddon - EpicAU Horus Heresy.gst` | Game system: costs, Unit, War Engine and Weapon profile types, categories, shared special rules |
 | `EpicAU - Legion Astartes.cat` | The Legion list: the core formations plus all 18 Legions' formations, Primarchs, allies and restrictions, chosen with a Legion selection |
 | `EpicAU - Legio Custodes / Solar Auxilia / Mechanicum Taghmata / Legio Titanicus / Knight Household / Imperial Militia / Daemons Of The Ruinstorm.cat` | The other army lists |
 | `tools/` | The scraper, list specs and generator used to build the files |
@@ -44,6 +44,7 @@ These rules are shown as text only, not enforced:
 
 ## Data decisions and gaps
 
+- **Profiles follow the layout of the [Epic Armageddon BSData](https://github.com/BSData/wh40k-epic-armageddon).** Each unit's weapons are in its own profile, one line per weapon, in Weapons, Range, Firepower and Weapon Notes columns. That way every unit's row in a roster lists its own guns. War engines use a War Engine profile with Damage Capacity, Void Shields and Critical Hit columns. Chosen Titan weapons stay separate Weapon profiles, listed under the Titan that carries them.
 - **Orks of Telon Reach is not included.** The Internet Archive never captured the army list page, only its unit reference sheet, so there are no formations to build from.
 - **Sabre Strike Tank** is in the Legion list but missing from the wiki reference sheet. Its stats come from Departmento Munitorum.
 - **Solar Auxilia Tank Hunter Squadron** (3 Valdor Tank Hunters, 250 pts, support) comes from Departmento Munitorum. The Valdor is on the wiki reference sheet, but the archived army list has no formation for it.

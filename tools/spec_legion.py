@@ -1,7 +1,7 @@
 """Legion Astartes core list and the 18 unique Legion variations (EpicAU wiki)."""
 import json
 
-from dsl import U, Opt, Or, Mix, Swap, Fill, F, UP, ARMY
+from dsl import U, Opt, Or, Mix, Swap, Fill, Carry, F, UP, ARMY
 
 LEGION_SHEETS = ['Legion Astartes', 'Loyalist Legions', 'Traitor Legions']
 
@@ -10,9 +10,10 @@ NEW_SICARANS = [U((0, 6), 'Sicaran Punisher', 75, new=True), U((0, 6), 'Sicaran 
 
 
 def heavy_transport(*types):
-    costs = {'Land Raider Phobos': 75, 'Land Raider Proteus': 75, 'Spartan Assault Tank': 125,
-             'Mastodon Heavy Assault Transport': 200}
-    return Or(*[Opt(t, U((1, None), t, costs[t])) for t in types], label='Transport')
+    # (cost, capacity in transport space: Tactical-sized units take 1, Terminators and Dreadnoughts 2)
+    specs = {'Land Raider Phobos': (75, 2), 'Land Raider Proteus': (75, 2), 'Spartan Assault Tank': (125, 4),
+             'Mastodon Heavy Assault Transport': (200, 8)}
+    return Or(*[Opt(t, Carry(specs[t][1], t, specs[t][0])) for t in types], label='Transport')
 
 
 CORE_UPGRADES = [
@@ -21,10 +22,12 @@ CORE_UPGRADES = [
         ('Predator', 'Whirlwind Scorpius', 20),
         (('Land Raider Proteus', 'Land Raider Phobos'), 'Land Raider Achilles', 25),
         ('Contemptor Dreadnought', 'Deredeo Dreadnought', 40), ('Vindicator', 'Vindicator Laser Destroyer', 20))]),
-    UP('Assault Claw', parts=[U((1, None), 'Kharybdis Assault Claw', 75)],
-       desc='Add enough Kharybdis Assault Claws to transport the entire formation.'),
-    UP('Assault Ram', parts=[U((1, None), 'Caestus Assault Ram', 50)],
-       desc='Add enough Caestus Assault Rams to transport the entire formation.'),
+    UP('Assault Claw', parts=[Carry(4, 'Kharybdis Assault Claw', 75, space='Assault Claw space')],
+       desc='Add enough Kharybdis Assault Claws to transport the entire formation. Each carries 4 Tactical-sized '
+            'units, 2 Terminators or 1 Dreadnought; the count is set from the formation.'),
+    UP('Assault Ram', parts=[Carry(2, 'Caestus Assault Ram', 50, space='Transport units')],
+       desc='Add enough Caestus Assault Rams to transport the entire formation. Each carries 2 Breacher or '
+            'Terminator units; the count is set from the formation.'),
     UP('Centurion', 50, parts=[Or(Opt('Librarian', U(1, 'Librarian')), Opt('Chaplain', U(1, 'Chaplain')),
                                   Opt('Champion', U(1, 'Champion')), label='Centurion')]),
     UP('Dreadnought', parts=[Mix(1, 2, ('Dreadnought', 50), ('Contemptor Dreadnought', 60),
@@ -33,7 +36,9 @@ CORE_UPGRADES = [
        desc='Transport the entire formation in Drop Pods.'),
     UP('Heavy Transport', parts=[heavy_transport('Land Raider Phobos', 'Land Raider Proteus',
                                                  'Spartan Assault Tank', 'Mastodon Heavy Assault Transport')],
-       desc='Add enough transports to carry the entire formation.'),
+       desc='Add enough transports to carry the entire formation. Land Raiders carry 2 Tactical-sized units or 1 '
+            'Terminator, Spartans twice that and Mastodons four times (Dreadnoughts count as Terminators); the '
+            'count is set from the formation.'),
     UP('Hyperios', 75, parts=[U(1, 'Whirlwind Hyperios')]),
     UP('Praetor', parts=[Or(Opt('Lieutenant Commander', U(1, 'Lieutenant Commander'), cost=50),
                             Opt('Lord Commander', U(1, 'Lord Commander'), cost=100), label='Praetor')],

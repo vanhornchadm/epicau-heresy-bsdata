@@ -44,11 +44,37 @@ CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde'
         'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit',
         'Not available with the chosen Configuration']
 HIDDEN_CATS = {'Tactical Transport Space', 'Upgraded Unit'}  # internal bookkeeping categories
+
+
+def ally_rules():
+    """Primary-army key -> (cohesive armies, disruptive armies), from each list (and each Legion choice).
+
+    Qualifiers such as '(Traitor Legions)' or '(Nurgle)' are dropped: only the army itself is checked. Lists that
+    name no allies at all (Legio Custodes) are left out, so they place no restriction.
+    """
+    base = lambda names: {re.sub(r'\s*\(.*\)\s*$', '', n) for n in names}
+    legion = legion_catalogue()
+    lists = [(a['name'], a['cohesive'], a['disruptive']) for a in OTHER_ARMIES]
+    lists.append(('Legion Astartes (core list)',) + legion['core_allies'])
+    lists += [(f'Legion Astartes ({l["name"]})', l['cohesive'], l['disruptive']) for l in legion['legions']]
+    return {f'Primary army: {name}': (base(c), base(d)) for name, c, d in lists if c or d}
+
+
+ALLY_RULES = ally_rules()
+ALLY_NA_CAT = 'Not an allowed ally of the primary army'
+CATS += list(ALLY_RULES) + [ALLY_NA_CAT]
+HIDDEN_CATS |= set(ALLY_RULES)
 CAT = {c: gid('cat', c) for c in CATS}
 SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': 'Lord of War',
             'horde': 'Daemonic Horde', 'greater': 'Greater Daemon Horde', 'followers': 'Followers of Chaos',
             'special': 'Special Selection'}
 RULE_ID = {name: gid('rule', name) for name in RULES}
+# Hidden cost types counting how much transport space a unit takes, one per weighting scheme in the transports'
+# capacities: most take Tactical-sized units 1 and bulky units (Terminators, Dreadnoughts, Ogryns...) 2; the
+# Caestus counts units of any size; the Kharybdis fits 4 Tactical-sized units, 2 Terminators or 1 Dreadnought.
+TRANSPORT_SCHEMES = ['Transport space', 'Transport units', 'Assault Claw space']
+COST_ID = {s: gid('cost', s) for s in TRANSPORT_SCHEMES}
+BULKY = re.compile(r'Terminator|Dreadnought|Ogryn|Thallax|Ursarax|Myrmidon|Aquilon')
 NA_CAT = 'Not available with the chosen Configuration'  # flags selections a Configuration choice has ruled out
 NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that shows fan-made units roster-wide
 
@@ -377,6 +403,31 @@ def part_units(parts):
     return names
 
 
+def transport_space(unit, scheme):
+    """Transport space a unit takes under `scheme` (characters and vehicles other than Dreadnoughts take none)."""
+    if unit['type'].startswith('CH') or not (unit['type'] == 'INF' or 'Dreadnought' in unit['name']):
+        return 0
+    bulky = bool(BULKY.search(unit['name']))
+    if scheme == 'Transport units':
+        return 1
+    if scheme == 'Assault Claw space':
+        return 4 if 'Dreadnought' in unit['name'] else 2 if bulky else 1
+    return 2 if bulky else 1
+
+
+def transport_schemes(army):
+    """The transport-space schemes used by the list's transport upgrades."""
+    def spaces(parts):
+        for p in parts:
+            if p['kind'] == 'fill':
+                yield p['space']
+            elif p['kind'] == 'or':
+                for o in p['opts']:
+                    yield from spaces(o['parts'])
+    found = {s for u in army['upgrades'].values() for s in spaces(u['parts'])}
+    return [s for s in TRANSPORT_SCHEMES if s in found]
+
+
 def has_new(army):
     """True if the army list has fan-made formations or options behind the 'Allow fan-made units' toggle."""
     def parts_new(parts):
@@ -409,6 +460,9 @@ class Builder:
         self.variants = None  # the formation's swap upgrade (e.g. Armoury Assets) while it is being built
         self.offered = set()  # units offered directly by the parts being built
         self.context = None  # name of the upgrade whose parts are being built (None = the formation's own units)
+        self.schemes = transport_schemes(army)  # transport-space cost types this list's transports use
+        self.retinue = {}  # scheme -> space taken by a Demi-God, which counts as its retinue's unit type
+        self.primary_force_id = gid('force', cat_id, 'primary')
 
     def find_unit(self, name):
         for sheet in self.army['sheets']:
@@ -441,7 +495,16 @@ class Builder:
                                           'hidden': str(hidden).lower(), 'collective': 'false', 'import': 'true',
                                           'type': 'model'},
                        modifiers=list(mods), constraints=cons, infoLinks=links,
-                       categoryLinks=[cat_link(eid, c) for c in cats], costs=cost(part['each']))
+                       categoryLinks=[cat_link(eid, c) for c in cats], costs=self.unit_costs(unit, part['each']))
+
+    def unit_costs(self, unit, each):
+        """Points plus the transport space the unit takes under each scheme this list uses."""
+        costs = cost(each)
+        for scheme in self.schemes:
+            space = self.retinue.get(scheme, 1) if 'Demi-God' in unit['notes'] else transport_space(unit, scheme)
+            if space:
+                costs.add(X('cost', {'name': scheme, 'typeId': COST_ID[scheme], 'value': fmt(space)}))
+        return costs
 
     def parts(self, path, parts):
         """Convert DSL parts to (selectionEntries, selectionEntryGroups)."""
@@ -574,10 +637,15 @@ class Builder:
             raise ValueError(f'{self.army["name"]}: transport fill outside a formation ({path})')
         g = gid('seg', self.cat_id, path)
         kids = [self.unit_entry(f'{path}/{j}', u) for j, u in enumerate(p['units'])]
+        for j, u in enumerate(p['units']):  # swap upgrades (e.g. Land Raider to Achilles) count within the total
+            kids += [self.variant_entry(f'{path}/{j}', u, to, each) for to, each in self.variants_for(u['unit'])]
         cmin, cmax = gid('con', g, 'min'), gid('con', g, 'max')
-        mods = [X('modifier', {'type': 'increment', 'field': c, 'value': '1'},
-                  [X('repeats', children=[repeat(CAT[p['space']], p['per'], self.formation_id, round_up=True,
-                                                 child=True)])]) for c in (cmin, cmax)]
+        if p['space'] in COST_ID:  # weighted transport space, summed over the formation
+            counted = repeat('any', p['per'], self.formation_id, field=COST_ID[p['space']], round_up=True, child=True)
+        else:  # one per unit tagged with the category
+            counted = repeat(CAT[p['space']], p['per'], self.formation_id, round_up=True, child=True)
+        mods = [X('modifier', {'type': 'increment', 'field': c, 'value': '1'}, [X('repeats', children=[counted])])
+                for c in (cmin, cmax)]
         return ordered('selectionEntryGroup', {'id': g, 'name': p['label'], 'hidden': 'false', 'collective': 'false',
                                                'import': 'true', 'defaultSelectionEntryId': kids[0].attrs['id']},
                        modifiers=mods, constraints=[constraint(cmin, 'min', 0), constraint(cmax, 'max', 0)],
@@ -587,7 +655,8 @@ class Builder:
     @staticmethod
     def formation_bound(u):
         """Upgrades whose contents depend on the formation are built inline rather than shared."""
-        return any(p['kind'] in ('fill', 'swap') for p in u['parts'])
+        return any(p['kind'] in ('fill', 'swap') or (p['kind'] == 'or' and Builder.formation_bound(
+            {'parts': [q for o in p['opts'] for q in o['parts']]})) for p in u['parts'])
 
     @staticmethod
     def swap_part(u):
@@ -739,6 +808,7 @@ class Builder:
         if f['slot'] != 'low':
             mods.append(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT['Allies & Lords of War']},
                           [X('conditions', children=[condition('instanceOf', self.allied_force_id, 1, 'force')])]))
+        mods += self.ally_modifiers()
         if f['name'] == 'Daemonic Overlord':
             cid = gid('con', fid, 'required')
             cons.append(constraint(cid, 'min', 1, scope='force'))
@@ -747,6 +817,9 @@ class Builder:
         rules = [rule_el(gid('r', fid), f['name'], f['note'])] if f['note'] else []
         self.variants = self.swap_context(fid, f)
         self.offered = set(part_units(f['units']))
+        retinue = [self.find_unit(n) for n in part_units(f['units'])]
+        self.retinue = {scheme: max([transport_space(r, scheme) for r in retinue if 'Demi-God' not in r['notes']] or [1])
+                        for scheme in self.schemes}
         ses, grps = self.parts('/'.join(['formation', f['slot'], f['name']] + key), f['units'])
         tw = self.titan_weapons(fid, f)
         up = self.upgrades_group(fid, f)
@@ -768,6 +841,36 @@ class Builder:
         if show or f.get('hide_for'):
             self.gate(el, show=show, hide=self.legion_hide(f.get('hide_for')))
         return el
+
+    # -- allies
+    def in_primary(self):
+        return X('conditions', children=[condition('instanceOf', self.primary_force_id, 1, 'force')])
+
+    def ally_modifiers(self):
+        """Tag primary formations with their army, and check allied formations against the primary's ally lists.
+
+        A primary formation of a list without a Legion choice gets the hidden 'Primary army: <list>' category
+        (Legion choices tag themselves instead). An allied formation gets the ALLY_NA_CAT category, which the
+        Allied Contingent allows none of, when the roster's primary army doesn't list this army as an ally, and
+        has '(disruptive ally: -1 strategy rating)' added to its name when it lists it as disruptive."""
+        name = self.army['name']
+        mods = []
+        key = f'Primary army: {name}'
+        if key in CAT and not self.army.get('legions'):
+            mods.append(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[key]}, [self.in_primary()]))
+        not_allowed = [k for k, (c, d) in ALLY_RULES.items() if name not in c | d]
+        disruptive = [k for k, (c, d) in ALLY_RULES.items() if name in d]
+        for keys, mod in ((not_allowed, {'type': 'add', 'field': 'category', 'value': CAT[ALLY_NA_CAT]}),
+                          (disruptive, {'type': 'append', 'field': 'name',
+                                        'value': ' (disruptive ally: -1 strategy rating)'})):
+            if keys:
+                present = [condition('atLeast', CAT[k], 1, 'roster', child=True, forces=True) for k in keys]
+                group = X('conditionGroup', {'type': 'and'}, [
+                    X('conditions', children=[condition('instanceOf', self.allied_force_id, 1, 'force')]),
+                    X('conditionGroups', children=[X('conditionGroup', {'type': 'or'},
+                                                     [X('conditions', children=present)])])])
+                mods.append(X('modifier', mod, [X('conditionGroups', children=[group])]))
+        return mods
 
     # -- Legion choice
     def legion_option_id(self, legion):
@@ -843,9 +946,11 @@ class Builder:
             lines += L['notes']
             lines.append('Cohesive allies: ' + (', '.join(L['cohesive']) or 'none') + '.')
             lines.append('Disruptive allies: ' + (', '.join(L['disruptive']) or 'none') + '.')
+            key = f'Primary army: Legion Astartes ({L["name"] or "core list"})'
+            tag = [X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[key]}, [self.in_primary()])]
             opts.append(ordered('selectionEntry', {'id': oid, 'name': L['name'] or 'None (core list)', 'hidden': 'false',
                                                    'collective': 'false', 'import': 'true', 'type': 'upgrade'},
-                                constraints=[constraint(gid('con', oid, 'max'), 'max', 1)],
+                                modifiers=tag, constraints=[constraint(gid('con', oid, 'max'), 'max', 1)],
                                 rules=[rule_el(gid('r', oid), L['name'] or 'Core list', '\n'.join(lines))]))
         group = ordered('selectionEntryGroup', {'id': g, 'name': 'Legion', 'hidden': 'false', 'collective': 'false',
                                                 'import': 'true', 'defaultSelectionEntryId': opts[0].attrs['id']},
@@ -894,7 +999,10 @@ class Builder:
         sc_id = gid('cl', fid, 'Supreme Commander')
         if allied:
             sc = [constraint(gid('con', sc_id, 'max'), 'max', 0, scope='parent', child=True)]
-            extra = []
+            na = gid('cl', fid, ALLY_NA_CAT)
+            extra = [ordered('categoryLink', {'id': na, 'name': ALLY_NA_CAT, 'hidden': 'false',
+                                              'targetId': CAT[ALLY_NA_CAT], 'primary': 'false'},
+                             constraints=[constraint(gid('con', na, 'max'), 'max', 0)])]
         else:
             sc = [constraint(gid('con', sc_id, 'max'), 'max', 1, scope='roster', child=True, forces=True)]
             sp_id = gid('cl', fid, 'Spacecraft')
@@ -1010,7 +1118,9 @@ def build_gst():
                    publications=[X('publication', {'id': gid('pub', 'wiki'), 'name': 'EpicAU Wiki - Horus Heresy Supplement',
                                                    'publisherUrl': SOURCE_URL})],
                    costTypes=X('costTypes', children=[X('costType', {'id': PTS, 'name': 'pts', 'defaultCostLimit': '-1.0',
-                                                                    'hidden': 'false'})]),
+                                                                    'hidden': 'false'})] + [
+                       X('costType', {'id': COST_ID[s], 'name': s, 'defaultCostLimit': '-1.0', 'hidden': 'true'})
+                       for s in TRANSPORT_SCHEMES]),
                    profileTypes=X('profileTypes', children=[
                        X('profileType', {'id': PT_UNIT, 'name': 'Unit'}, [X('characteristicTypes', children=[
                            X('characteristicType', {'id': gid('ct', 'Unit', c), 'name': c}) for c in UNIT_CHARS])]),

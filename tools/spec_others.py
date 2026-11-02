@@ -1,5 +1,5 @@
 """Non-Legion EpicAU Horus Heresy army lists."""
-from dsl import U, Opt, Or, Mix, Swap, F, UP, ARMY
+from dsl import U, Opt, Or, Mix, Swap, Carry, F, UP, ARMY
 
 NAVY_SHEET = 'Solar Auxilia'  # Avenger / Primaris-Lightning profiles live on the Solar Auxilia sheet
 
@@ -29,8 +29,9 @@ CUSTODES = ARMY(
         UP('Captain-General', 100, parts=[U(1, 'Captain-General')], maxn=1),
         UP('Senior Officer', 25, parts=[U(1, 'Tribune')]),
         UP('Teleport', 50, rules=['Teleport'], desc='Add the Teleport special rule to each unit in the formation.'),
-        UP('Carrier', parts=[U((1, None), 'Coronus Grav-Carrier', 75)],
-           desc='Add enough Coronus Grav-Carriers to transport the whole detachment.'),
+        UP('Carrier', parts=[Carry(2, 'Coronus Grav-Carrier', 75)],
+           desc='Add enough Coronus Grav-Carriers to transport the whole detachment (2 Custodes units or 1 '
+                'Aquilon Terminator each); the count is set from the formation.'),
     ],
     cohesive=[], disruptive=[],
     rules=["The Emperor's Chosen", 'Allies'],
@@ -40,9 +41,9 @@ CUSTODES = ARMY(
            'The wiki does not list which armies are cohesive or disruptive allies for Legio Custodes.'])
 
 # ---------------------------------------------------------------- Solar Auxilia
-SA_TRANSPORT = Or(Opt('Dracosan Armoured Transport', U((1, None), 'Dracosan Armoured Transport', 75)),
-                  Opt('Stormlord', U((1, None), 'Stormlord', 200)),
-                  Opt('Arvus Lighter', U((1, None), 'Arvus Lighter Orbital Shuttle', 25)), label='Transport')
+SA_TRANSPORT = Or(Opt('Dracosan Armoured Transport', Carry(4, 'Dracosan Armoured Transport', 75)),
+                  Opt('Stormlord', Carry(8, 'Stormlord', 200)),
+                  Opt('Arvus Lighter', Carry(2, 'Arvus Lighter Orbital Shuttle', 25)), label='Transport')
 SA_SUPER_HEAVIES = ['Baneblade', 'Shadowsword', 'Stormsword', 'Stormblade', 'Stormhammer']
 LEGATE = ['Legate Commander']
 SOLAR_AUXILIA = ARMY(
@@ -90,7 +91,9 @@ SOLAR_AUXILIA = ARMY(
         UP('Infantry Support Tank', parts=[Mix(1, 2, ('Leman Russ Demolisher', 50), ('Malcador Infernus Special Weapons Tank', 50))]),
         UP('Ogryn Charonite Squad', 75, parts=[U(2, 'Ogryn Charonite Squad')]),
         UP('Rapier Battery', 100, parts=[U(4, 'Solar Auxilia Rapier Platform')]),
-        UP('Transport', parts=[SA_TRANSPORT], desc='Add enough transports to carry the entire detachment.'),
+        UP('Transport', parts=[SA_TRANSPORT],
+           desc='Add enough transports to carry the entire detachment (infantry units take 1 space, Ogryns 2; '
+                'Arvus 2, Dracosan 4, Stormlord 8); the count is set from the formation.'),
         UP('Vanquisher', parts=[Swap(1, 1, (('Leman Russ Battle Tank', 'Leman Russ Exterminator'),
                                             'Leman Russ Vanquisher', 25))]),
         UP('Legate Commander', 0, parts=[U(1, 'Legate Commander')], rules=['Legate Commander'], maxn=1, per=500,
@@ -103,8 +106,8 @@ SOLAR_AUXILIA = ARMY(
            'Up to 1/3 of the army\'s points may be spent on Allies or Lords of War.'])
 
 # ---------------------------------------------------------------- Mechanicum Taghmata
-MECH_TRANSPORT = Or(Opt('Triaros Armoured Conveyor', U((1, None), 'Triaros Armoured Conveyor', 75)),
-                    Opt('Mechanicum Land Raider', U((1, None), 'Mechanicum Land Raider', 75)), label='Transport')
+MECH_TRANSPORT = Or(Opt('Triaros Armoured Conveyor', Carry(4, 'Triaros Armoured Conveyor', 75)),
+                    Opt('Mechanicum Land Raider', Carry(2, 'Mechanicum Land Raider', 75)), label='Transport')
 MECHANICUM = ARMY(
     'Mechanicum Taghmata', ['Mechanicum Taghmata', NAVY_SHEET], 3, '2+', 3, 4, 1 / 3,
     formations=[
@@ -135,7 +138,9 @@ MECHANICUM = ARMY(
                               Opt('Magos Prime', U(1, 'Magos Prime'), cost=50), label='Magos')],
            desc='Upgrade 1 Tech-Priest or Myrmidon unit in the formation to an Archmagos Prime (0-1 per army) or a Magos Prime.'),
         UP('Tech-Priest', parts=[U((1, 3), 'Tech Priests', 25)]),
-        UP('Transport', parts=[MECH_TRANSPORT], desc='Add enough transports to carry the entire formation.'),
+        UP('Transport', parts=[MECH_TRANSPORT],
+           desc='Add enough transports to carry the entire formation (Thallax, Ursarax and Myrmidons take 2 '
+                'spaces, other infantry 1; Land Raider 2, Triaros 4); the count is set from the formation.'),
         UP('Krios', parts=[U((1, 3), 'Krios Battle Tank', 50)]),
         UP('Karacnos', parts=[U((1, 3), 'Karacnos Assault Tank', 75)]),
         UP('Thanatar', parts=[U((1, 3), 'Thanatar Battle-Automata', 75)]),
@@ -240,9 +245,9 @@ KNIGHTS = ARMY(
            'The wiki sets no Allies/Lords of War limit for Knight Household; 1/3 is used, matching Departmento Munitorum.'])
 
 # ---------------------------------------------------------------- Imperial Militia
-IM_TRANSPORT = Or(Opt('Arvus Lighter', U((1, None), 'Arvus Lighter Orbital Shuttle', 25)),
-                  Opt('Auxilia Rhinos', U((1, None), 'Auxilia Rhino', 12.5)),
-                  Opt('Auxilia Land Raider', U((1, None), 'Land Raider Proteus', 50)), label='Transport')
+IM_TRANSPORT = Or(Opt('Arvus Lighter', Carry(2, 'Arvus Lighter Orbital Shuttle', 25)),
+                  Opt('Auxilia Rhinos', Carry(2, 'Auxilia Rhino', 12.5)),
+                  Opt('Auxilia Land Raider', Carry(2, 'Land Raider Proteus', 50)), label='Transport')
 PROVENANCE_TYPES = ['Warrior Elite', 'Survivors of the Dark Age', 'Feral Warriors', 'Traitors']
 DM = ['Discipline Master']
 MILITIA = ARMY(
@@ -280,8 +285,9 @@ MILITIA = ARMY(
     ],
     upgrades=[
         UP('Fire Support', 100, parts=[U(4, 'Militia Fire Support Squad')]),
-        UP('Heavy Transport', parts=[U((1, None), 'Auxilia Gorgon', 125)],
-           desc='Add enough Gorgon Heavy Transporters to transport the entire formation.'),
+        UP('Heavy Transport', parts=[Carry(8, 'Auxilia Gorgon', 125)],
+           desc='Add enough Gorgon Heavy Transporters to transport the entire formation (8 infantry units each, '
+                'Ogryns count as 2); the count is set from the formation.'),
         UP('Militia Auxiliary', 50, parts=[U(4, 'Militia Auxiliary')]),
         UP('Ogryn Brute Squad', 150, parts=[U(4, 'Ogryn Brute Squad')]),
         UP('Provenance', 50, parts=[Or(*[Opt(p) for p in PROVENANCE_TYPES], label='Provenance')], rules=['Provenance'],
@@ -290,7 +296,9 @@ MILITIA = ARMY(
            rules=['Provenance'], desc='Warrior Elite, Survivors of the Dark Age or Feral Warriors only.'),
         UP('Sniper', 75, parts=[U(4, 'Recon Auxiliary')]),
         UP('Transport', parts=[IM_TRANSPORT],
-           desc='Add enough transports to carry the entire formation (Arvus 25 pts each, Rhinos 25 pts per 2, Land Raider 50 pts each).'),
+           desc='Add enough transports to carry the entire formation (Arvus 25 pts each, Rhinos 25 pts per 2, '
+                'Land Raider 50 pts each; each carries 2 infantry units, Ogryns count as 2); the count is set from '
+                'the formation.'),
         UP('Vanquisher', parts=[Swap(1, 1, (('Leman Russ Battle Tank', 'Auxilia Leman Russ Exterminator',
                                              'Leman Russ Demolisher'), 'Auxilia Leman Russ Vanquisher', 25))]),
         UP('Discipline Master', 0, parts=[Or(Opt('Discipline Master', U(1, 'Discipline Master')),

@@ -13,6 +13,11 @@ def U(n, unit, each=0, label=None, new=False):
     return {'kind': 'unit', 'unit': unit, 'min': lo, 'max': hi, 'each': each, 'label': label, 'new': new}
 
 
+def Carry(per, unit, each, space='Transport space'):
+    """One transport type sized to the formation: `per` is how much `space` each transport carries."""
+    return Fill(per, (unit, each), space=space, label='Transports')
+
+
 def Opt(label, *parts, cost=0):
     """One option of an Or(): a labelled bundle of U()/Mix() parts with an optional cost."""
     return {'label': label, 'parts': list(parts), 'cost': cost}
@@ -31,6 +36,9 @@ def Mix(lo, hi, *units, label='Units'):
 
 def Fill(per, *units, space='Tactical Transport Space', label='Transports'):
     """Exactly enough transports for the formation: one per `per` units tagged with `space`.
+
+    space is a category (each tagged unit counts 1) or a transport-space cost type such as 'Transport space',
+    where bulky units count more (see TRANSPORT_SCHEMES in generate.py).
 
     units are (name, cost) or (name, cost, max_per_formation), in any mix.
     """

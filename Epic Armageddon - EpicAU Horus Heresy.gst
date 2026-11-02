@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="8" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
   </publications>
   <costTypes>
     <costType id="points" name="pts" defaultCostLimit="-1.0" hidden="false"/>
+    <costType id="f52a-9ea6-2bb3-2a37" name="Transport space" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="9b58-ba34-d974-341c" name="Transport units" defaultCostLimit="-1.0" hidden="true"/>
+    <costType id="53ea-b6c5-c500-fb0e" name="Assault Claw space" defaultCostLimit="-1.0" hidden="true"/>
   </costTypes>
   <profileTypes>
     <profileType id="5e39-4dae-2d39-3e75" name="Unit">
@@ -64,6 +67,32 @@
     <categoryEntry id="dca3-6748-53f0-e4bb" name="Tactical Transport Space" hidden="true"/>
     <categoryEntry id="1c1a-168c-d3cf-3310" name="Upgraded Unit" hidden="true"/>
     <categoryEntry id="592b-0da0-9d99-08ca" name="Not available with the chosen Configuration" hidden="false"/>
+    <categoryEntry id="a7bb-d807-775b-67a3" name="Primary army: Solar Auxilia" hidden="true"/>
+    <categoryEntry id="422d-1a0b-703f-b8be" name="Primary army: Mechanicum Taghmata" hidden="true"/>
+    <categoryEntry id="9058-983e-c324-62a4" name="Primary army: Legio Titanicus" hidden="true"/>
+    <categoryEntry id="26a2-ea6d-4d79-445f" name="Primary army: Knight Household" hidden="true"/>
+    <categoryEntry id="ed05-1bd8-1e03-af1c" name="Primary army: Imperial Militia" hidden="true"/>
+    <categoryEntry id="1c10-b820-4588-74dd" name="Primary army: Daemons Of The Ruinstorm" hidden="true"/>
+    <categoryEntry id="fbc3-4530-e34d-3e92" name="Primary army: Legion Astartes (core list)" hidden="true"/>
+    <categoryEntry id="027f-543a-9ab7-362f" name="Primary army: Legion Astartes (Iron Hands)" hidden="true"/>
+    <categoryEntry id="cdb7-8175-d8f5-e789" name="Primary army: Legion Astartes (Raven Guard)" hidden="true"/>
+    <categoryEntry id="0e75-595f-c943-9de7" name="Primary army: Legion Astartes (Salamanders)" hidden="true"/>
+    <categoryEntry id="9f63-b141-7da9-b4a9" name="Primary army: Legion Astartes (Ultramarines)" hidden="true"/>
+    <categoryEntry id="a914-8960-4425-06b1" name="Primary army: Legion Astartes (Imperial Fists)" hidden="true"/>
+    <categoryEntry id="d300-75be-c303-5ebb" name="Primary army: Legion Astartes (Blood Angels)" hidden="true"/>
+    <categoryEntry id="3162-8794-c22f-7807" name="Primary army: Legion Astartes (Dark Angels)" hidden="true"/>
+    <categoryEntry id="d037-4311-962d-1cd1" name="Primary army: Legion Astartes (White Scars)" hidden="true"/>
+    <categoryEntry id="2fc6-7090-5156-e67b" name="Primary army: Legion Astartes (Space Wolves)" hidden="true"/>
+    <categoryEntry id="e0d0-2698-7314-b6b3" name="Primary army: Legion Astartes (Night Lords)" hidden="true"/>
+    <categoryEntry id="4475-2bda-6380-001c" name="Primary army: Legion Astartes (World Eaters)" hidden="true"/>
+    <categoryEntry id="90e7-0b6b-eacd-a5ee" name="Primary army: Legion Astartes (Emperor's Children)" hidden="true"/>
+    <categoryEntry id="ddfc-8dee-03f2-0f39" name="Primary army: Legion Astartes (Iron Warriors)" hidden="true"/>
+    <categoryEntry id="3ee5-34f0-b818-8a51" name="Primary army: Legion Astartes (Death Guard)" hidden="true"/>
+    <categoryEntry id="8d15-2339-9ba7-4154" name="Primary army: Legion Astartes (Word Bearers)" hidden="true"/>
+    <categoryEntry id="0741-f83d-1df8-9c36" name="Primary army: Legion Astartes (Sons of Horus)" hidden="true"/>
+    <categoryEntry id="158a-6d8f-110a-3929" name="Primary army: Legion Astartes (Alpha Legion)" hidden="true"/>
+    <categoryEntry id="8e75-5c6e-2a7f-54dc" name="Primary army: Legion Astartes (Thousand Sons)" hidden="true"/>
+    <categoryEntry id="813c-67a8-ed81-24f9" name="Not an allowed ally of the primary army" hidden="false"/>
   </categoryEntries>
   <selectionEntries>
     <selectionEntry id="a361-b07f-1b9c-872c" name="Allow fan-made units" hidden="false" collective="false" import="true" type="upgrade">

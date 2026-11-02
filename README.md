@@ -34,12 +34,18 @@ These rules are enforced:
 - Army-wide caps on upgrades: one Legate, one Captain-General, one Archmagos Prime, one Seneschal. Free Legate Commanders and Discipline Masters are limited to one per 500 points or part thereof.
 - Titan weapon slots: Warhound 2, Warhound pack 4, Reaver 3, Warlord 4, with their costs.
 - Standard Transport (Legion lists) requires exactly enough transports: one per 2 Tactical-sized units in the formation, rounded up. That counts squads added by upgrades such as Support Squads, and a Primarch, who takes his retinue's space. Characters, Dreadnoughts and Rapiers take no space. The transports are Rhino Armoured Carriers, and one of them per formation may be a Damocles Command Rhino instead. Both cost 0 pts. Add Standard Transport last; if units change afterwards, BattleScribe flags the transport count until you fix it.
+- Every other transport upgrade also requires exactly enough transports for the formation. This covers Heavy Transport, Assault Claw and Assault Ram (Legion), Carrier (Custodes), Transport (Solar Auxilia, Mechanicum, Militia) and Heavy Transport (Militia). Units take transport space according to each transport's capacity on the reference sheets.
+  - **Space per unit:** infantry take 1 space. Bulky units take 2: Terminators, Dreadnoughts, Ogryns, Thallax, Ursarax, Myrmidons and Aquilon Terminators. A Primarch takes his retinue's space, and characters and other vehicles take none.
+  - **Capacity:** a Land Raider carries 2 spaces, a Spartan 4, and a Mastodon or Gorgon 8.
+  - **Exceptions:** a Caestus carries any 2 units. A Kharybdis carries 4 Tactical-sized units, 2 Terminators or 1 Dreadnought.
+  - **How it works:** the space is counted with hidden cost types, so it never shows in the roster. As with Standard Transport, add transports after the formation's other units, or adjust them afterwards. Drop Assault and Teleport need no count.
+- Allies: an Allied Contingent must come from an army the primary army lists as an ally. For a Legion primary army, that means the chosen Legion's list. Otherwise its formations fall under "Not an allowed ally of the primary army", which the contingent allows none of. Formations from a disruptive ally get "(disruptive ally: -1 strategy rating)" added to their names. Legio Custodes lists no allies on the wiki, so it isn't restricted.
 - Swap upgrades (Armoury Assets, Scythes of the Khan, Vanquisher, Executioner, Hyperios, Expanded Armoury, Enhanced Forge and the Daemon Prince upgrades) replace units one-for-one. Taking the upgrade reveals the upgraded units next to the units they replace, including units added by other upgrades such as Tank or Heavy Transport. Each upgraded unit takes an original's place and costs the original's price plus the swap cost. The upgrade's own limit (such as 1-2 units for Armoury Assets) is enforced, and only swaps for units the formation can contain are offered. A swap is left out where another upgrade already sells the upgraded unit: the Dreadnought upgrade offers Deredeos directly, so Armoury Assets doesn't swap its Contemptors.
 
 These rules are shown as text only, not enforced:
 
-- Ally compatibility (cohesive or disruptive) and the -1 strategy penalty for a disruptive ally.
-- "Enough transports to carry the formation" for every transport upgrade other than Standard Transport (Heavy Transport, Assault Claw, Drop Assault and so on).
+- Ally qualifiers such as "Legion Astartes (Traitor Legions)" or "Daemons Of The Ruinstorm (Nurgle)": only the army is checked, not the Legion's allegiance or the Daemons' god. The strategy rating itself isn't changed; the disruptive label shows the penalty.
+- Which units each transport may carry (for example, Rhinos can't carry Terminators): only the amount of space is checked.
 - Daemon god-matching (Followers or Greater Daemons must share their Horde's god), the 3-9 minimum per Followers unit type, and one Daemon Prince per Chaos faction.
 - Militia Provenance: only two types per army, and the Traitor Militia requirement.
 - Mount restrictions on Titan weapons (arm or carapace).

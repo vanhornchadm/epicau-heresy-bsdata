@@ -162,11 +162,12 @@ TITANICUS = ARMY(
         F('Warhound Scout Pack', 'line', 500, [U(2, 'Warhound Scout Titan')], 'Veteran Princeps'),
         F('Reaver Titan', 'line', 575, [U(1, 'Reaver Battle Titan')], 'Legate OR Veteran Princeps, Air Defence, Sacred Icon'),
         F('Warlord Titan', 'line', 725, [U(1, 'Warlord Battle Titan')], 'Legate OR Veteran Princeps, Air Defence, Sacred Icon'),
-        F('Warbringer Nemesis Titan', 'line', 650, [U(1, 'Warbringer Nemesis Titan')],
+        F('Warbringer Nemesis Titan', 'line', 675, [U(1, 'Warbringer Nemesis Titan')],
           'Legate OR Veteran Princeps, Sacred Icon',
           note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
                'costs 750 pts with weapons. Here it takes a Quake or Volcano Cannon on the carapace and 2 arm weapons at '
-               'EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade.'),
+               'EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. Priced, as in Epic-UK, a little '
+               'above a Reaver with Air Defence carrying the same weapons.'),
         F('Warmaster Titan', 'line', 1050, [U(1, 'Warmaster Heavy Battle Titan')],
           'Legate OR Veteran Princeps, Sacred Icon', maxn=1,
           note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '

@@ -51,9 +51,9 @@ These rules are shown as text only, not enforced:
 - **Warbringer Nemesis Titan and Warmaster Titan** are fan-made, not part of EpicAU. Both are adapted from the [Epic-UK](http://epic-uk.co.uk/wp/army-lists/) Adeptus Titanicus codex (version 080925).
   - **What's kept:** the Epic-UK stat lines and fixed weapons.
   - **What's changed to fit EpicAU:** Cortex Controller, EpicAU's reactor critical-hit wording, and EpicAU's priced Titan weapon slots in place of Epic-UK's weapon tables.
-  - **Warbringer (650 pts):** a Quake or Volcano Cannon on the carapace, plus 2 weapons.
+  - **Warbringer (675 pts):** a Quake or Volcano Cannon on the carapace, plus 2 weapons.
   - **Warmaster (0-1, 1050 pts):** 1 carapace weapon.
-  - **Points:** Epic-UK's prices include weapons (750 and 1500 pts). The Warbringer's is scaled down by about the same ratio as EpicAU's Reaver and Warlord prices. The Warmaster is priced between a fully armed Warlord and the 1350 pt Emperor-class Titans. Epic-UK's own Warmaster price is marked as unsettled, and this one is weaker than an Emperor (DC 10 and 7 shields against 12 and 8, no Inspiring, no transport).
+  - **Points:** Epic-UK's prices include weapons (750 and 1500 pts). The Warbringer costs 50 pts more than a Reaver with Air Defence carrying the same weapons, the same gap as in Epic-UK. The Warmaster is priced between a fully armed Warlord and the 1350 pt Emperor-class Titans. Epic-UK's own Warmaster price is marked as unsettled, and this one is weaker than an Emperor (DC 10 and 7 shields against 12 and 8, no Inspiring, no transport).
   - **Upgrades:** both have built-in AA guns, so neither takes Air Defence.
 - **Not included:** the Arquitor Bombard (Legion) and the Dominus Knight-Castellan and Knight-Valiant have stats on the wiki reference sheets, but neither the wiki nor Departmento Munitorum gives them a formation.
 - **Legio Custodes strategy rating:** the wiki says "1+", which looks like a typo for the initiative value. The data uses 5, matching Departmento Munitorum. The wiki also lists no Custodes allies.

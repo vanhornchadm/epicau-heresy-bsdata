@@ -210,7 +210,29 @@ def per_points_limit(owner, maxn, per, round_up, scope='roster'):
     mod = X('modifier', {'type': 'increment', 'field': cid, 'value': fmt(maxn)},
             [X('repeats', children=[repeat('any', per, 'roster', field=PTS, round_up=round_up, child=True,
                                            forces=True)])])
-    return [mod], [constraint(cid, 'max', 0, scope=scope, child=True, forces=True)]
+    return [mod, points_limit_label(owner, maxn, per, round_up)], \
+        [constraint(cid, 'max', 0, scope=scope, child=True, forces=True)]
+
+
+LABEL_UP_TO = 20000  # roster size up to which an over-limit entry is labelled
+
+
+def points_limit_label(owner, maxn, per, round_up):
+    """Append the points limit to the entry's name while the roster is too small for its selections.
+
+    BattleScribe's error names the entry but not the reason, so this puts the reason in the name. Allowed is
+    maxn per full `per` pts (maxn per `per` pts or part thereof with round_up); one AND group per threshold.
+    """
+    groups = []
+    for k in range(LABEL_UP_TO // per + 1):
+        pts = condition('atMost', 'any', k * per, 'roster', field=PTS, child=True, forces=True) if round_up else \
+            condition('lessThan', 'any', (k + 1) * per, 'roster', field=PTS, child=True, forces=True)
+        sel = condition('greaterThan', owner, k * maxn, 'roster', child=True, forces=True)
+        groups.append(X('conditionGroup', {'type': 'and'}, [X('conditions', children=[pts, sel])]))
+    limit = f'{maxn} per {per} pts or part thereof' if round_up else f'0-{maxn} per full {per} pts'
+    return X('modifier', {'type': 'append', 'field': 'name', 'value': f' (not enough points: {limit})'},
+             [X('conditionGroups', children=[X('conditionGroup', {'type': 'or'},
+                                               [X('conditionGroups', children=groups)])])])
 
 
 # ------------------------------------------------------------------ units & profiles

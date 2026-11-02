@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="3" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="4" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -861,6 +861,80 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <repeats>
             <repeat field="points" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" repeats="1" roundUp="false"/>
           </repeats>
+        </modifier>
+        <modifier type="append" field="name" value=" (not enough points: 0-1 per full 2000 pts)">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="2000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="4000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="6000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="8000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="10000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="12000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="5.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="14000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="6.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="16000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="7.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="18000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="20000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="9.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="points" scope="roster" value="22000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="any" type="lessThan"/>
+                    <condition field="selections" scope="roster" value="10.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2bdb-9a7d-5a75-3830" type="greaterThan"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>

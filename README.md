@@ -27,7 +27,7 @@ These rules are enforced:
 - Support Detachments: up to the list's number per Line Detachment (3 for Legion, Custodes and Mechanicum; 2 for Solar Auxilia, Militia and Knights). Daemons get 1 Followers of Chaos and 1 Greater Daemon Horde per Daemonic Horde.
 - Allies + Lords of War share a points allowance, as a percentage of total roster points: 1/3 for most lists, 1/2 for Custodes, and none for Titanicus.
 - One Supreme Commander per roster, and none in an Allied Contingent. One Spacecraft per roster.
-- Formation limits such as "0-1" and "0-1 per full 2000 pts". These count the roster's current points total.
+- Formation limits such as "0-1" and "0-1 per full 2000 pts". These count the roster's current points total. When a roster is too small for what it contains, the entry's name gains the reason, for example "Warhound Titan (not enough points: 0-1 per full 4000 pts)". BattleScribe's error then names the limit. This labelling covers rosters up to 20,000 pts.
 - Per-formation upgrade caps (four for Legion, Mechanicum and Militia; three for Solar Auxilia; uncapped elsewhere), each upgrade once, and OR-groups such as one transport option.
 - Army-wide caps on upgrades: one Legate, one Captain-General, one Archmagos Prime, one Seneschal. Free Legate Commanders and Discipline Masters are limited to one per 500 points or part thereof.
 - Titan weapon slots: Warhound 2, Warhound pack 4, Reaver 3, Warlord 4, with their costs.

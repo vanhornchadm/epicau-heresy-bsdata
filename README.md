@@ -58,6 +58,7 @@ These rules are shown as text only, not enforced:
   - **Special Rules (<unit>)** holds rule values such as "Invulnerable Save (6+)" or "Ion Shield (5+)", and any other text.
   - **Critical Hit (<unit>)** holds a critical hit too long for the War Engine's Critical Hit column, which then says "See rules".
   - **Titan Movement** is one rule shared by all Titans, covering stepping over terrain.
+- **Rules the sheets abbreviate are named by their abbreviation:** MW (Macro-Weapon), TK (Titan Killer), EA (Extra Attacks), BP (Barrage), and the fire arcs FxF, Fwd, LF and RF. That way New Recruit links the abbreviation in weapon profiles to its rule. Each description starts with the full name.
 - **Profile cells are kept short.** New Recruit moves a column below the table when any of its cells is longer than 80 characters, or 52 in a profile with more than 5 columns. It counts the whole cell, line breaks included.
   - **Weapon cells too long for the table:** the cell goes into a "<weapon> notes" rule, and it says "See weapon notes" instead.
   - **Weapons column:** about 40 units with many or long-named weapons still go over 52 characters, so New Recruit shows that column below their table. These include Titans, super-heavy tanks, Knights and gunships.

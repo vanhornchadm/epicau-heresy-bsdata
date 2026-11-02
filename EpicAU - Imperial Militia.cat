@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="13" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="16" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="14" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="8149-95da-d7f3-bbe3" name="Imperial Militia" hidden="false">
       <rules>
@@ -183,8 +183,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="4561-b8ab-2016-153f" name="Plasma Guns" hidden="false" targetId="8449-2786-8fa5-cd22" type="profile"/>
             <infoLink id="26bb-7ec7-6262-13a1" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="3a56-96b5-6e4c-6b1d" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
-            <infoLink id="18f0-5a39-f38d-ed8f" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-            <infoLink id="10d2-5ce3-d433-19a7" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="18f0-5a39-f38d-ed8f" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="10d2-5ce3-d433-19a7" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
             <infoLink id="4497-de38-6219-17ab" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <categoryLinks>
@@ -332,8 +332,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="1c4a-25c2-4356-fffe" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
                             <infoLink id="3dd0-8f4b-933a-eabf" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                             <infoLink id="8197-a995-971d-867e" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-                            <infoLink id="828b-38a0-17b5-7b49" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
-                            <infoLink id="276e-afd3-95b5-9aec" name="Forward Fire Arc" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
+                            <infoLink id="828b-38a0-17b5-7b49" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                            <infoLink id="276e-afd3-95b5-9aec" name="Fwd" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
                             <infoLink id="6f62-1b69-7608-fa45" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                           </infoLinks>
                           <selectionEntryGroups>
@@ -959,8 +959,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="28e1-2f15-f7f3-8034" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
                             <infoLink id="bc64-b5c5-9384-6044" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                             <infoLink id="b6cc-c79f-5690-3ac3" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-                            <infoLink id="589d-991d-0646-fc33" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
-                            <infoLink id="ad10-4db8-0e5d-3ed6" name="Forward Fire Arc" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
+                            <infoLink id="589d-991d-0646-fc33" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                            <infoLink id="ad10-4db8-0e5d-3ed6" name="Fwd" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
                             <infoLink id="1d12-5198-b447-bce5" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                           </infoLinks>
                           <selectionEntryGroups>
@@ -1401,8 +1401,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="6439-f323-0c9f-6af7" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
                             <infoLink id="640b-7531-154b-dc36" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                             <infoLink id="8d05-80c3-56a0-f701" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-                            <infoLink id="8512-0d43-c109-c6a9" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
-                            <infoLink id="e29b-8e5d-0588-59e0" name="Forward Fire Arc" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
+                            <infoLink id="8512-0d43-c109-c6a9" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                            <infoLink id="e29b-8e5d-0588-59e0" name="Fwd" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
                             <infoLink id="fe5a-cabb-66c5-0f59" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                           </infoLinks>
                           <selectionEntryGroups>
@@ -1738,8 +1738,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="eeff-3f3c-0e5d-b258" name="Weapons (Emperor Class Battleship)" hidden="false" targetId="625b-a2ee-756c-cb6e" type="rule"/>
                     <infoLink id="f648-629a-4630-713d" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
                     <infoLink id="6317-16f6-f22c-df0c" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                    <infoLink id="491e-3f9c-5323-0c49" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                    <infoLink id="8c2a-c660-1bcc-e750" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                    <infoLink id="491e-3f9c-5323-0c49" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="8c2a-c660-1bcc-e750" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                     <infoLink id="37bc-67b7-44b0-828e" name="Slow and Steady" hidden="false" targetId="931d-35b7-00f9-bfd2" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
@@ -1771,9 +1771,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="3ebb-1679-448c-ea3d" name="Weapons (Dauntless Class Light Cruiser)" hidden="false" targetId="cf00-81d1-361e-28f7" type="rule"/>
                     <infoLink id="09db-cc79-e310-872c" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
                     <infoLink id="3773-19db-60ab-7514" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                    <infoLink id="2a95-5547-71a2-6eb0" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                    <infoLink id="5d5d-9644-8d26-d534" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
-                    <infoLink id="d558-2e05-2a4c-ba9b" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                    <infoLink id="2a95-5547-71a2-6eb0" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="5d5d-9644-8d26-d534" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="d558-2e05-2a4c-ba9b" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="23c3-da95-7a04-1847" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false"/>
@@ -1871,7 +1871,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="01c1-db67-cc93-c605" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
             <infoLink id="7c79-e6c1-088c-9762" name="Mounted" hidden="false" targetId="4357-7618-ea64-6347" type="rule"/>
             <infoLink id="a95c-dd25-3b40-7cf3" name="First Strike" hidden="false" targetId="d859-b0a0-af5c-bb73" type="rule"/>
-            <infoLink id="ec08-3480-43a7-4dbd" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="ec08-3480-43a7-4dbd" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
             <infoLink id="5561-77ac-d695-6478" name="Infiltrator" hidden="false" targetId="f14b-f1e8-683e-cd73" type="rule"/>
             <infoLink id="3c83-3838-de89-2766" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
@@ -1978,7 +1978,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="ae29-81ae-3fc8-8553" name="Basilisk Artillery Carriage" hidden="false" targetId="d654-bfc0-8153-1774" type="profile"/>
                     <infoLink id="c113-2e1e-ab63-b252" name="Earthshaker Cannon" hidden="false" targetId="f341-9057-e248-9617" type="profile"/>
                     <infoLink id="5583-5c67-80ca-c327" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-                    <infoLink id="6b23-b2a6-fddd-4970" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                    <infoLink id="6b23-b2a6-fddd-4970" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2002,7 +2002,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="195d-2ad9-8609-71b9" name="Medusa Artillery Carriage" hidden="false" targetId="9ce0-5360-4840-ddba" type="profile"/>
                     <infoLink id="d376-b538-677c-3666" name="Medusa Siege Gun" hidden="false" targetId="4793-14ac-71c4-82c4" type="profile"/>
-                    <infoLink id="e21e-1cc5-58d2-25bf" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="e21e-1cc5-58d2-25bf" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="daed-ae62-44e9-e8a2" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                   </infoLinks>
                   <costs>
@@ -2484,7 +2484,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="e7c4-8f42-5713-21e3" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                     <infoLink id="4552-0dfb-c2fd-cf84" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                     <infoLink id="98b5-30ad-83f1-33ba" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                    <infoLink id="6a0e-5402-ca93-aca6" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                    <infoLink id="6a0e-5402-ca93-aca6" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="5984-d1e2-2026-af1d" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                     <infoLink id="f22e-65d5-0b2f-9be1" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                   </infoLinks>
@@ -2515,7 +2515,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="0909-1320-d1f7-7a20" name="Stormhammer Cannon" hidden="false" targetId="04a9-b8b2-c130-90cb" type="profile"/>
                     <infoLink id="2d64-5e48-05eb-47a7" name="Critical Hit (Auxilia Stormhammer)" hidden="false" targetId="913c-8006-a6f4-b598" type="rule"/>
                     <infoLink id="e6ee-a597-9988-271a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                    <infoLink id="b204-1ee4-b69d-2322" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                    <infoLink id="b204-1ee4-b69d-2322" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="2012-a578-da3c-d020" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                     <infoLink id="3709-3591-0819-2a6a" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                   </infoLinks>
@@ -2818,7 +2818,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="eeae-887b-32f6-795d" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="2d53-6d21-0957-dcea" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                 <infoLink id="8131-6e5f-20ec-5251" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                <infoLink id="0098-cc19-8bb6-6c96" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                <infoLink id="0098-cc19-8bb6-6c96" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                 <infoLink id="2716-5f54-f2a7-3df5" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                 <infoLink id="8b32-0e6b-5d72-5ae6" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
               </infoLinks>
@@ -2838,7 +2838,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="2594-f4b2-05da-1038" name="Stormhammer Cannon" hidden="false" targetId="04a9-b8b2-c130-90cb" type="profile"/>
                 <infoLink id="4931-f65b-ca27-2efc" name="Critical Hit (Auxilia Stormhammer)" hidden="false" targetId="913c-8006-a6f4-b598" type="rule"/>
                 <infoLink id="e27e-aaba-f476-23ca" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="8bc3-2442-5190-f9b7" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+                <infoLink id="8bc3-2442-5190-f9b7" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                 <infoLink id="cadf-3198-6f4e-12e8" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                 <infoLink id="976c-21f0-e493-5aa2" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
               </infoLinks>
@@ -2925,7 +2925,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="6c10-3efe-bc9b-d725" name="Avenger Cannon" hidden="false" targetId="7366-0eec-4c56-8e53" type="profile"/>
             <infoLink id="c79e-1646-0b21-0559" name="Twin Linked Lascannons" hidden="false" targetId="5b58-b4b9-7de7-5f7d" type="profile"/>
             <infoLink id="c1a9-3ce2-9416-1118" name="Heavy Stubber" hidden="false" targetId="a448-6198-ec3b-43bd" type="profile"/>
-            <infoLink id="01bd-7f44-6ee6-ba2a" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="01bd-7f44-6ee6-ba2a" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
             <infoLink id="2bd4-640a-8171-fab8" name="Rear Fire Arc" hidden="false" targetId="e953-40ea-7719-e17c" type="rule"/>
           </infoLinks>
           <costs>
@@ -3010,7 +3010,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="b63d-fe66-fe4f-8b08" name="Twin Linked Autocannons" hidden="false" targetId="b996-2ecc-b7be-f3bf" type="profile"/>
             <infoLink id="ce6a-7c06-62d6-a799" name="Kraken Heavy Missiles" hidden="false" targetId="00bb-e7c2-4a76-57de" type="profile"/>
             <infoLink id="d565-477c-6445-f6dd" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
-            <infoLink id="5e72-0062-9fe1-dcb2" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="5e72-0062-9fe1-dcb2" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3138,8 +3138,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="fa05-857d-1119-576c" name="Chaos Spawn Mutations" hidden="false" targetId="86e1-a4f0-427e-eec5" type="profile"/>
             <infoLink id="a1ac-8c48-6ce3-aa03" name="Weapon Options (Ogryn Brute Squad)" hidden="false" targetId="bfdd-54e2-e610-2a39" type="rule"/>
             <infoLink id="1aa2-662e-94f1-95b6" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule"/>
-            <infoLink id="07c6-485f-667d-acc3" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-            <infoLink id="67cc-792f-0ecf-ceeb" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="07c6-485f-667d-acc3" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="67cc-792f-0ecf-ceeb" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
             <infoLink id="afb5-592c-03d6-bff9" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
             <infoLink id="6b9b-c4b7-4ee1-5bcd" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
@@ -3568,8 +3568,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="3b17-c845-cc63-86b0" name="Power Weapon" hidden="false" targetId="d184-459e-5b73-f6f4" type="profile"/>
                     <infoLink id="be91-c93e-9c5c-a8bd" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
                     <infoLink id="6218-627c-6c75-a2a7" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-                    <infoLink id="c53b-be2b-ebe7-5530" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                    <infoLink id="60ae-00c1-58b8-8410" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="c53b-be2b-ebe7-5530" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="60ae-00c1-58b8-8410" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                     <infoLink id="08c2-f391-9607-1d86" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
@@ -3599,8 +3599,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="3d54-ca18-7f93-ea4d" name="Psychic Bolt" hidden="false" targetId="04df-dcf1-615d-aeb1" type="profile"/>
                     <infoLink id="a6a6-e685-a6d1-ca89" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
                     <infoLink id="75e5-b36b-517c-7e2c" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-                    <infoLink id="736b-6a25-db11-bde6" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                    <infoLink id="b144-a97c-b552-3e27" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="736b-6a25-db11-bde6" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="b144-a97c-b552-3e27" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                     <infoLink id="29d9-26c8-892a-5e90" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
                   <categoryLinks>

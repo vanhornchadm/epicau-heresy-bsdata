@@ -21,7 +21,7 @@ RULES = {
     'Fleshbane': "Hits from this weapon's AP, CC or FF value reduce the target's save by 1 when allocated to INF or LV units. No effect against AV or WE.",
     'Lance': "AV units with Reinforced Armour may not re-roll saves against hits from this weapon. No effect against INF or LV.",
     'Legion Astartes': "Two Blast markers are needed to suppress a unit or kill one in a broken formation. The formation breaks at two Blast markers per unit, counts half its Blast markers (rounded down) in assault resolution, takes Blast markers equal to its units (not half) when it rallies, and Leaders remove 2 Blast markers instead of 1.",
-    'Macro-Weapon': "Targets get no save unless they have Reinforced Armour or an Invulnerable Save, and even then cannot re-roll. Only applies to the unit type matching the to-hit value used.",
+    'Macro-Weapon': "Macro-Weapon: targets get no save unless they have Reinforced Armour or an Invulnerable Save, and even then cannot re-roll. Only applies to the unit type matching the to-hit value used.",
     'Remorseless': "A broken formation suffers only -1 (not -2) to its rally roll for being broken.",
     'Siege': "The weapon counts as a Macro-Weapon against units with 0cm speed.",
     'Singularity': "Each unmodified to-hit roll of 6 generates another attack dice; further 6s keep generating dice.",
@@ -66,23 +66,28 @@ RULES = {
     'Disrupt': "Core rule: every hit places a Blast marker even if saved.",
     'Single Shot': "Core rule: may only be fired once per battle.",
     'Slow Firing': "Core rule: may only fire every other turn.",
-    'Titan Killer': "Core rule: each hit causes the listed number of damage points to a war engine.",
-    'Extra Attacks': "Core rule: grants the listed number of additional close combat or firefight attacks.",
+    'Titan Killer': "Core rule (Titan Killer): each hit causes the listed number of damage points to a war engine.",
+    'Extra Attacks': "Core rule (Extra Attacks): grants the listed number of additional close combat or firefight attacks.",
     'First Strike': "The unit strikes first in an assault: its attacks are resolved, and casualties removed, before the enemy's.",
     'Small Arms': "Core rule: a weapon shown in brackets with (small arms) is only used in firefights, adding its listed abilities and Extra Attacks to the unit's FF attacks. It cannot shoot in the shooting phase.",
     'Assault Weapons': "Core rule: a weapon marked (assault weapons) is used in close combat, adding its listed abilities and Extra Attacks to the unit's CC attacks.",
-    'Barrage': "Core rule: BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.",
-    'Fixed Forward Fire Arc': "Core rule (FxF): the weapon may only target units in a 90-degree arc straight ahead of the unit.",
-    'Forward Fire Arc': "Core rule (Fwd): the weapon may only target units in the 180-degree arc to the unit's front.",
+    'Barrage': "Core rule (Barrage): BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.",
+    'Fixed Forward Fire Arc': "Core rule (Fixed Forward Fire Arc): the weapon may only target units in a 90-degree arc straight ahead of the unit.",
+    'Forward Fire Arc': "Core rule (Forward Fire Arc): the weapon may only target units in the 180-degree arc to the unit's front.",
     'Rear Fire Arc': "Core rule: the weapon may only target units in the 180-degree arc to the unit's rear.",
-    'Left Fire Arc': "Core rule (LF): the weapon may only target units in the arc to the unit's left side.",
-    'Right Fire Arc': "Core rule (RF): the weapon may only target units in the arc to the unit's right side.",
+    'Left Fire Arc': "Core rule (Left Fire Arc): the weapon may only target units in the arc to the unit's left side.",
+    'Right Fire Arc': "Core rule (Right Fire Arc): the weapon may only target units in the arc to the unit's right side.",
     'Damage Capacity': "Core rule (DC): a war engine has this many damage points. Each unsaved hit removes one and it is destroyed at zero. War engines can also take critical hits.",
     'Critical Hits': "Core rule: some damage against a war engine causes a critical hit. The effect for each unit is given in its notes.",
     'Slow and Steady': "Spacecraft with this rule may not be used in the opening turn(s) of a battle stated in their notes, unless the scenario says otherwise.",
     'Fortifications': "Static defences with 0cm speed; Siege weapons count as Macro-Weapons against them. The EpicAU fortifications page was not archived.",
     'Secondary Targeting Protocols': "Listed on the experimental Emperor-class Titans but not defined on the archived EpicAU wiki.",
 }
+
+# Rules shown under the abbreviation the reference sheets use, so New Recruit links it in profile text
+# ('MW5+' -> the MW rule). The description starts with the full name.
+ACRONYMS = {'Macro-Weapon': 'MW', 'Titan Killer': 'TK', 'Extra Attacks': 'EA', 'Barrage': 'BP',
+            'Fixed Forward Fire Arc': 'FxF', 'Forward Fire Arc': 'Fwd', 'Left Fire Arc': 'LF', 'Right Fire Arc': 'RF'}
 
 # Abbreviations and spelling variants used in the reference sheets: (regex, rule name).
 # Matched case-sensitively against unit notes and weapon firepower.

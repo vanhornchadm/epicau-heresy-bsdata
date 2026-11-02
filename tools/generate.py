@@ -13,7 +13,7 @@ from xml.sax.saxutils import escape, quoteattr
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from rules import RULES, ALIASES  # noqa: E402
+from rules import RULES, ALIASES, ACRONYMS  # noqa: E402
 from spec_legion import legion_catalogue  # noqa: E402
 from spec_others import OTHER_ARMIES, TITAN_WEAPON_SLOTS  # noqa: E402
 from weapon_options import WEAPON_OPTIONS, REPLACED_ROWS  # noqa: E402
@@ -320,7 +320,7 @@ def rule_el(rid, name, desc):
 
 
 def info_rule(owner, name):
-    return X('infoLink', {'id': gid('il', owner, name), 'name': name, 'hidden': 'false',
+    return X('infoLink', {'id': gid('il', owner, name), 'name': ACRONYMS.get(name, name), 'hidden': 'false',
                           'targetId': RULE_ID[name], 'type': 'rule'})
 
 
@@ -1420,7 +1420,7 @@ def build_gst():
                    categoryEntries=[X('categoryEntry', {'id': CAT[c], 'name': c, 'hidden': str(c in HIDDEN_CATS).lower()})
                                     for c in CATS],
                    selectionEntries=[new_units_toggle()],
-                   sharedRules=[rule_el(RULE_ID[n], n, d) for n, d in RULES.items()])
+                   sharedRules=[rule_el(RULE_ID[n], ACRONYMS.get(n, n), d) for n, d in RULES.items()])
     GST_REVISION[0] = write(os.path.join(OUT, GST_FILE), root, GST_NS)
 
 

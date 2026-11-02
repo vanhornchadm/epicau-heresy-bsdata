@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="17" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
@@ -141,8 +141,8 @@
     <rule id="a6b2-6364-a6e6-8d1d" name="Legion Astartes" hidden="false">
       <description>Two Blast markers are needed to suppress a unit or kill one in a broken formation. The formation breaks at two Blast markers per unit, counts half its Blast markers (rounded down) in assault resolution, takes Blast markers equal to its units (not half) when it rallies, and Leaders remove 2 Blast markers instead of 1.</description>
     </rule>
-    <rule id="cdd5-87d5-df9f-9349" name="Macro-Weapon" hidden="false">
-      <description>Targets get no save unless they have Reinforced Armour or an Invulnerable Save, and even then cannot re-roll. Only applies to the unit type matching the to-hit value used.</description>
+    <rule id="cdd5-87d5-df9f-9349" name="MW" hidden="false">
+      <description>Macro-Weapon: targets get no save unless they have Reinforced Armour or an Invulnerable Save, and even then cannot re-roll. Only applies to the unit type matching the to-hit value used.</description>
     </rule>
     <rule id="1c5a-eb38-f506-2b8b" name="Remorseless" hidden="false">
       <description>A broken formation suffers only -1 (not -2) to its rally roll for being broken.</description>
@@ -270,11 +270,11 @@
     <rule id="fe36-0a82-a4ee-3f54" name="Slow Firing" hidden="false">
       <description>Core rule: may only fire every other turn.</description>
     </rule>
-    <rule id="ed59-9ced-a699-b761" name="Titan Killer" hidden="false">
-      <description>Core rule: each hit causes the listed number of damage points to a war engine.</description>
+    <rule id="ed59-9ced-a699-b761" name="TK" hidden="false">
+      <description>Core rule (Titan Killer): each hit causes the listed number of damage points to a war engine.</description>
     </rule>
-    <rule id="4b49-c4e2-b896-4689" name="Extra Attacks" hidden="false">
-      <description>Core rule: grants the listed number of additional close combat or firefight attacks.</description>
+    <rule id="4b49-c4e2-b896-4689" name="EA" hidden="false">
+      <description>Core rule (Extra Attacks): grants the listed number of additional close combat or firefight attacks.</description>
     </rule>
     <rule id="d859-b0a0-af5c-bb73" name="First Strike" hidden="false">
       <description>The unit strikes first in an assault: its attacks are resolved, and casualties removed, before the enemy's.</description>
@@ -285,23 +285,23 @@
     <rule id="5d5a-3534-a8bf-4935" name="Assault Weapons" hidden="false">
       <description>Core rule: a weapon marked (assault weapons) is used in close combat, adding its listed abilities and Extra Attacks to the unit's CC attacks.</description>
     </rule>
-    <rule id="f379-0377-5661-ed26" name="Barrage" hidden="false">
-      <description>Core rule: BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.</description>
+    <rule id="f379-0377-5661-ed26" name="BP" hidden="false">
+      <description>Core rule (Barrage): BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.</description>
     </rule>
-    <rule id="8f11-c190-ff78-a7d6" name="Fixed Forward Fire Arc" hidden="false">
-      <description>Core rule (FxF): the weapon may only target units in a 90-degree arc straight ahead of the unit.</description>
+    <rule id="8f11-c190-ff78-a7d6" name="FxF" hidden="false">
+      <description>Core rule (Fixed Forward Fire Arc): the weapon may only target units in a 90-degree arc straight ahead of the unit.</description>
     </rule>
-    <rule id="e787-7eab-2cba-d6f0" name="Forward Fire Arc" hidden="false">
-      <description>Core rule (Fwd): the weapon may only target units in the 180-degree arc to the unit's front.</description>
+    <rule id="e787-7eab-2cba-d6f0" name="Fwd" hidden="false">
+      <description>Core rule (Forward Fire Arc): the weapon may only target units in the 180-degree arc to the unit's front.</description>
     </rule>
     <rule id="e953-40ea-7719-e17c" name="Rear Fire Arc" hidden="false">
       <description>Core rule: the weapon may only target units in the 180-degree arc to the unit's rear.</description>
     </rule>
-    <rule id="8fd7-7a53-db8a-8526" name="Left Fire Arc" hidden="false">
-      <description>Core rule (LF): the weapon may only target units in the arc to the unit's left side.</description>
+    <rule id="8fd7-7a53-db8a-8526" name="LF" hidden="false">
+      <description>Core rule (Left Fire Arc): the weapon may only target units in the arc to the unit's left side.</description>
     </rule>
-    <rule id="24b1-8727-a5a1-0b4b" name="Right Fire Arc" hidden="false">
-      <description>Core rule (RF): the weapon may only target units in the arc to the unit's right side.</description>
+    <rule id="24b1-8727-a5a1-0b4b" name="RF" hidden="false">
+      <description>Core rule (Right Fire Arc): the weapon may only target units in the arc to the unit's right side.</description>
     </rule>
     <rule id="b2d2-de55-191a-358d" name="Damage Capacity" hidden="false">
       <description>Core rule (DC): a war engine has this many damage points. Each unsaved hit removes one and it is destroyed at zero. War engines can also take critical hits.</description>

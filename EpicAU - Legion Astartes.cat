@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="12" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="13" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -5767,6 +5767,259 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="240.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d118-ca39-39af-0bd0" name="Legion Arquitor Bombard Squadron" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="027f-543a-9ab7-362f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cdb7-8175-d8f5-e789" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0e75-595f-c943-9de7" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f63-b141-7da9-b4a9" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a914-8960-4425-06b1" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d300-75be-c303-5ebb" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3162-8794-c22f-7807" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d037-4311-962d-1cd1" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2fc6-7090-5156-e67b" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value=" (disruptive ally: -1 strategy rating)">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="592b-0da0-9d99-08ca">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="7440-52b0-00fb-f7f9" name="Legion Arquitor Bombard Squadron" hidden="false">
+          <description>Fan-made formation, not part of EpicAU: the Arquitor Bombard is on the wiki reference sheet, but neither the wiki nor Departmento Munitorum gives it a formation. It is priced against the Predator (60 pts): similar firepower at shorter range, faster, with a 5+ save.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="6279-1167-5e45-0906" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6bc8-33f6-d771-666a" name="Arquitor Bombard" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="602f-4d50-ad0f-2fd4" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="299d-3c55-6ba3-835e" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1886-3dd4-f56d-ed61" name="Arquitor Bombard" hidden="false" targetId="dc8c-9d81-e711-f74d" type="profile"/>
+            <infoLink id="4486-c016-1348-c504" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="55.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="30a0-f81a-db78-7aaf" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1675-afc3-d580-efd9" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3ebc-2744-40ef-1fce" name="Centurion" hidden="false" collective="false" import="true" targetId="839d-c809-7edd-2efd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3386-2742-046d-7abd" value="0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3386-2742-046d-7abd" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="cf3c-b0e2-7e39-06ee" name="Centurion" hidden="true" collective="false" import="true" targetId="6cd5-1fc8-ad5b-8711" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c5c1-fb95-72f0-7c54" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5c1-fb95-72f0-7c54" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7074-a178-2003-928c" name="Hyperios" hidden="false" collective="false" import="true" targetId="b7c4-f844-14b7-809b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d9-cf35-ea76-9e71" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75c0-74ea-4858-37ec" name="Legion Tarantula Battery" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="027f-543a-9ab7-362f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cdb7-8175-d8f5-e789" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0e75-595f-c943-9de7" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f63-b141-7da9-b4a9" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a914-8960-4425-06b1" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d300-75be-c303-5ebb" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3162-8794-c22f-7807" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d037-4311-962d-1cd1" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2fc6-7090-5156-e67b" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value=" (disruptive ally: -1 strategy rating)">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="592b-0da0-9d99-08ca">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="1aff-c1a2-d88a-b529" name="Legion Tarantula Battery" hidden="false">
+          <description>Fan-made formation, not part of EpicAU: mirrors the Solar Auxilia Tarantula Battery (125 pts), with the Mechanicum Tarantula's choice of twin lascannons or heavy bolters.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="5809-8c7e-4d46-99e0" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="75e1-e653-c86c-bb4f" name="Legion Tarantula" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71d3-85c8-036a-91be" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ba-e2c2-7f53-8b19" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4b7b-8943-75f3-6695" name="Legion Tarantula" hidden="false" targetId="2fe7-2c08-8748-f3d8" type="profile"/>
+            <infoLink id="f88f-2e5d-8ff2-6755" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+            <infoLink id="8e41-ba5c-f711-eed6" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b32d-4942-387e-b194" name="Legion Tarantula Hyperios" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23e9-9485-7f04-4f69" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8dd-63b0-5c69-91fb" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="e40a-05c0-ab4a-f4ba" name="Legion Tarantula Hyperios" hidden="false" targetId="43d1-852a-4f3f-b699" type="profile"/>
+            <infoLink id="b8e6-3ee3-78e2-dd3e" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+            <infoLink id="1241-9f3d-c552-0b7b" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="125.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b142-49fd-23c5-659d" name="Legion Reconnaissance Squad" hidden="false" collective="false" import="true" type="unit">
@@ -39124,6 +39377,20 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+), Infiltrator.</characteristic>
       </characteristics>
     </profile>
+    <profile id="dc8c-9d81-e711-f74d" name="Arquitor Bombard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">35cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Spicula Rocket System&lt;BR&gt;&lt;BR&gt;Heavy Bolter</characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">D3 x AP5+/AT5+&lt;BR&gt;&lt;BR&gt;AP5+</characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour.</characteristic>
+      </characteristics>
+    </profile>
     <profile id="0c85-3c76-58c2-e497" name="Assault Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
@@ -39980,6 +40247,34 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP5+/AT5+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">MW AND (small arms) MW, OR / AP5+/AT5+, Fleshbane AND AP5+; Weapon lines are combined; check the wiki sheet.</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Scout, Skimmer. A Land Speeder must select either a Multi-Melta OR Plasma Cannon &amp; Heavy Bolter weapon system before the start of the game.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2fe7-2c08-8748-f3d8" name="Legion Tarantula" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannon OR&lt;BR&gt;&lt;BR&gt;TL Heavy Bolter</characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. A Legion Tarantula is armed with a TL Lascannon OR a TL Heavy Bolter; choose one option before the game. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula with the Mechanicum Tarantula Platform's weapon choice, as in Legions Imperialis.)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="43d1-852a-4f3f-b699" name="Legion Tarantula Hyperios" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Missile Rack</characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm</characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AA4+</characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula Hyperios.)</characteristic>
       </characteristics>
     </profile>
     <profile id="3e8f-538a-1969-e64f" name="Leman Russ, the Wolf King" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

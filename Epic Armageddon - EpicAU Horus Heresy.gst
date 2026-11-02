@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="10" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
@@ -101,7 +101,7 @@
       </constraints>
       <rules>
         <rule id="b85c-31ef-bd96-d0b9" name="Allow fan-made units" hidden="false">
-          <description>Shows fan-made units and options that are not part of EpicAU (see the README for their sources). Taking it in any force shows them in every force of the roster; removing it flags any that were taken. Legion Astartes: Legion Kratos Heavy Tank Squadron, Sicaran Punisher, Sicaran Arcus. Legio Titanicus: Warbringer Nemesis Titan, Warmaster Titan.</description>
+          <description>Shows fan-made units and options that are not part of EpicAU (see the README for their sources). Taking it in any force shows them in every force of the roster; removing it flags any that were taken. Legion Astartes: Legion Arquitor Bombard Squadron, Legion Tarantula Battery, Legion Kratos Heavy Tank Squadron, Sicaran Punisher, Sicaran Arcus. Legio Titanicus: Warbringer Nemesis Titan, Warmaster Titan.</description>
         </rule>
       </rules>
       <categoryLinks>

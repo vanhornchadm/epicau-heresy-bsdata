@@ -81,7 +81,8 @@ NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that 
 # Units not present on the wiki reference sheet: the Sabre from Departmento Munitorum, the Kratos from fan rules
 # posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09), and
 # the Warbringer and Warmaster adapted from the Epic-UK Adeptus Titanicus codex (version 080925), and the Sicaran
-# Punisher and Arcus: the Sicaran Battle Tank's hull with main guns derived from existing EpicAU weapons.
+# Punisher and Arcus: the Sicaran Battle Tank's hull with main guns derived from existing EpicAU weapons. The Legion
+# Tarantulas use the Solar Auxilia Tarantula hulls with the Mechanicum Tarantula's weapon choice.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -119,7 +120,16 @@ EXTRA_UNITS = {
                     {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
         'notes': 'Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with an Arcus Missile '
                  'Launcher built from the Whirlwind Scorpius launcher and the Hellstrike Missile Pod, firing direct '
-                 'anti-tank or Skyspear anti-aircraft missiles.)'}],
+                 'anti-tank or Skyspear anti-aircraft missiles.)'}, {
+        'name': 'Legion Tarantula', 'type': 'LV', 'speed': 'Immobile', 'armour': '6+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'TL Lascannon OR', 'range': '45cm', 'firepower': 'AT4+'},
+                    {'name': 'TL Heavy Bolter', 'range': '30cm', 'firepower': 'AP4+'}],
+        'notes': 'Teleport, Scout. A Legion Tarantula is armed with a TL Lascannon OR a TL Heavy Bolter; choose one '
+                 'option before the game. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula with the '
+                 'Mechanicum Tarantula Platform\'s weapon choice, as in Legions Imperialis.)'}, {
+        'name': 'Legion Tarantula Hyperios', 'type': 'LV', 'speed': 'Immobile', 'armour': '6+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Missile Rack', 'range': '30cm', 'firepower': 'AA4+'}],
+        'notes': 'Teleport, Scout. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula Hyperios.)'}],
     'Legio Titanicus': [{
         'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': 'Quake Cannon or Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},

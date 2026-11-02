@@ -22,7 +22,7 @@ Each catalogue provides two forces:
 
 In either Legion Astartes force, the required **Legion** entry picks the Legion, or "None (core list)". The choice shows that Legion's own formations and hides the core formations it replaces or removes. Space Wolves also get their own Centurion upgrade. The description on each Legion option lists what it adds and replaces, plus its allies. If you change the Legion after adding formations, formations that no longer belong are flagged.
 
-**Allow fan-made units** is a Configuration entry in the Legion Astartes and Legio Titanicus forces. It shows the fan-made units and options that aren't part of EpicAU: the Legion Kratos Heavy Tank Squadron, the Sicaran Punisher and Arcus, and the Warbringer Nemesis and Warmaster Titans. They stay hidden until it's taken. Taking it in any force turns them on for the whole roster. If you remove it, or change a Legion, anything that no longer fits is flagged under "Not available with the chosen Configuration".
+**Allow fan-made units** is a Configuration entry in the Legion Astartes and Legio Titanicus forces. It shows the fan-made units and options that aren't part of EpicAU: the Legion Kratos Heavy Tank Squadron, Arquitor Bombard Squadron and Tarantula Battery, the Sicaran Punisher and Arcus, and the Warbringer Nemesis and Warmaster Titans. They stay hidden until it's taken. Taking it in any force turns them on for the whole roster. If you remove it, or change a Legion, anything that no longer fits is flagged under "Not available with the chosen Configuration".
 
 These rules are enforced:
 
@@ -67,7 +67,9 @@ These rules are shown as text only, not enforced:
   - **Warmaster (0-1, 1050 pts):** 1 carapace weapon.
   - **Points:** Epic-UK's prices include weapons (750 and 1500 pts). The Warbringer costs 50 pts more than a Reaver with Air Defence carrying the same weapons, the same gap as in Epic-UK. The Warmaster is priced between a fully armed Warlord and the 1350 pt Emperor-class Titans. Epic-UK's own Warmaster price is marked as unsettled, and this one is weaker than an Emperor (DC 10 and 7 shields against 12 and 8, no Inspiring, no transport).
   - **Upgrades:** both have built-in AA guns, so neither takes Air Defence.
-- **Not included:** the Arquitor Bombard (Legion) and the Dominus Knight-Castellan and Knight-Valiant have stats on the wiki reference sheets, but neither the wiki nor Departmento Munitorum gives them a formation.
+- **Legion Arquitor Bombard Squadron** is a fan-made formation, not part of EpicAU. The Arquitor's stats are on the wiki reference sheet, but neither the wiki nor Departmento Munitorum gives it a formation. It's a support detachment of 4-6 Arquitors at 55 pts each, with Centurion and Hyperios upgrades like the Predator Strike Squadron. It's priced against the Predator (60 pts): similar firepower at shorter range, faster, with a 5+ save. Munitorum has an unused "2 for 250 pts" entry, which is far too expensive for a tank weaker than a Sicaran.
+- **Legion Tarantula Battery** is fan-made, not part of EpicAU. It mirrors the Solar Auxilia Tarantula Battery: 4 Tarantulas and 1 Tarantula Hyperios for 125 pts, Immobile, with Teleport and Scout. The Tarantulas take the Mechanicum Tarantula's choice of twin lascannons or twin heavy bolters, as in Legions Imperialis.
+- **Not included:** the Dominus Knight-Castellan and Knight-Valiant have stats on the wiki reference sheets, but neither the wiki nor Departmento Munitorum gives them a formation.
 - **Legio Custodes strategy rating:** the wiki says "1+", which looks like a typo for the initiative value. The data uses 5, matching Departmento Munitorum. The wiki also lists no Custodes allies.
 - **Knight Household Allies/LoW allowance:** the wiki doesn't state one. The data uses 1/3, matching Departmento Munitorum.
 - Where the wiki writes "X OR Y" units, they are modelled as an exclusive choice. "In any combination" or "of any configuration" lets you mix them.

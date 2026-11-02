@@ -88,6 +88,15 @@ CORE_FORMATIONS = [
       [Or(Opt('Outrider Bikes', U(5, 'Outrider Squad')), Opt('Attack Bikes', U(5, 'Attack Bike')))], 'Centurion'),
     F('Legion Predator Strike Squadron', 'support', 0, [U((4, 6), 'Predator', 60)], 'Centurion, Armoury Assets, Hyperios'),
     F('Legion Rapier Weapons Battery', 'support', 240, [U(6, 'Rapier')], 'Drop Assault'),
+    F('Legion Arquitor Bombard Squadron', 'support', 0, [U((4, 6), 'Arquitor Bombard', 55)], 'Centurion, Hyperios',
+      new=True,
+      note='Fan-made formation, not part of EpicAU: the Arquitor Bombard is on the wiki reference sheet, but neither the '
+           'wiki nor Departmento Munitorum gives it a formation. It is priced against the Predator (60 pts): similar '
+           'firepower at shorter range, faster, with a 5+ save.'),
+    F('Legion Tarantula Battery', 'support', 125, [U(4, 'Legion Tarantula'), U(1, 'Legion Tarantula Hyperios')],
+      new=True,
+      note='Fan-made formation, not part of EpicAU: mirrors the Solar Auxilia Tarantula Battery (125 pts), with the '
+           'Mechanicum Tarantula\'s choice of twin lascannons or heavy bolters.'),
     F('Legion Reconnaissance Squad', 'support', 150, [U(4, 'Reconnaissance Squad')],
       'Standard Transport OR Drop Assault OR Assault Claw, Centurion'),
     F('Legion Sicaran Battle Squadron', 'support', 0, [Mix(4, 6, *SICARANS, *NEW_SICARANS)], 'Centurion, Hyperios'),

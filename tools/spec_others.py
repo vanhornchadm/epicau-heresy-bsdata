@@ -173,13 +173,27 @@ TITANICUS = ARMY(
                'costs 750 pts with weapons. Here it takes a Quake or Volcano Cannon on the carapace and 2 arm weapons at '
                'EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. Priced, as in Epic-UK, a little '
                'above a Reaver with Air Defence carrying the same weapons.'),
-        F('Warmaster Titan', 'line', 1050, [U(1, 'Warmaster Heavy Battle Titan')],
-          'Legate OR Veteran Princeps, Sacred Icon', maxn=1, new=True,
+        F('Warmaster Titan', 'low', 1050, [U(1, 'Warmaster Heavy Battle Titan')],
+          'Legate OR Veteran Princeps, Sacred Icon', new=True,
           note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
                'is a 0-1 Support Titan costing 1500 pts with weapons and is meant mainly for friendly games. Here its '
                'carapace weapon is chosen at EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. '
                'Priced between a fully armed Warlord and the 1350 pt Emperor-class Titans, which are tougher and better '
-               'armed.'),
+               'armed. Like them it is a Lord of War with no limit.'),
+        F('Dire Wolf Titan', 'line', 300, [U(1, 'Dire Wolf Heavy Scout Titan')], 'Veteran Princeps', new=True,
+          note='Fan-made, not part of EpicAU: a heavy scout Titan from Legions Imperialis on the Warhound chassis, with '
+               'Infiltrator, built-in Ardex mega-bolters and one heavy weapon. It costs about 1/6 more than a Warhound '
+               'with weapons, as in Legions Imperialis.'),
+        F('Warlord-Sinister Titan', 'line', 950, [U(1, 'Warlord-Sinister Battle Titan')],
+          'Legate OR Veteran Princeps, Air Defence, Sacred Icon', new=True,
+          note='Fan-made, not part of EpicAU: a Psi-Titan from Legions Imperialis on the Warlord chassis, with fixed psi '
+               'weapons and a Dread Aura. It costs about 1/8 more than a fully armed Warlord, as in Legions Imperialis.'),
+        F('Warmaster Iconoclast Titan', 'low', 1100, [U(1, 'Warmaster Iconoclast Titan')],
+          'Legate OR Veteran Princeps, Air Defence, Sacred Icon', new=True,
+          note='Fan-made, not part of EpicAU: the close-assault Warmaster from Legions Imperialis, faster than the '
+               'Warmaster, with a chainsword, a gatling array and a Kirus siege drill or grav imploder. Legions '
+               'Imperialis prices it the same as the Warmaster; here it matches the Warmaster with a weapon. Like the '
+               'Warmaster and the Emperor-class Titans it is a Lord of War with no limit.'),
         F('Emperor Class Titan', 'low', 1350,
           [Or(Opt('Imperator', U(1, 'Imperator Support Titan (experimental)')),
               Opt('Warmonger', U(1, 'Warmonger Support Titan (experimental)')))], 'Legate OR Veteran Princeps'),
@@ -196,7 +210,8 @@ TITANICUS = ARMY(
     notes=['Each upgrade may only be taken once per formation.',
            'Legio Titanicus has no Support Detachments.',
            'Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. '
-           'The fan-made Warbringer carries a Quake or Volcano Cannon plus 2 weapons, and the Warmaster 1. '
+           'The fan-made Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf '
+           '1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder. '
            'Arm/carapace mount restrictions are noted on each weapon.',
            'The wiki sets no Allies/Lords of War points limit for Legio Titanicus.'])
 TITAN_WEAPON_SLOTS = {'Warhound Scout Titan': (2, SCOUT_WEAPONS),
@@ -205,7 +220,13 @@ TITAN_WEAPON_SLOTS = {'Warhound Scout Titan': (2, SCOUT_WEAPONS),
                       # Fan-made, adapted from Epic-UK: the Warbringer's carapace must take a Quake or Volcano Cannon.
                       'Warbringer Nemesis Titan': [('Carapace Weapon', 1, [('Quake Cannon', 75), ('Volcano Cannon', 50)]),
                                                    ('Titan Weapons', 2, SCOUT_WEAPONS + BATTLE_WEAPONS)],
-                      'Warmaster Heavy Battle Titan': (1, SCOUT_WEAPONS + BATTLE_WEAPONS)}
+                      'Warmaster Heavy Battle Titan': (1, SCOUT_WEAPONS + BATTLE_WEAPONS),
+                      # Fan-made, converted from Legions Imperialis; Neutron Laser, Conversion Beam Dissipator and the
+                      # Kirus weapons are fan-made Titan weapons (FAN_TITAN_WEAPONS in generate.py).
+                      'Dire Wolf Heavy Scout Titan': [('Titan Weapons', 1, [('Volcano Cannon', 50), ('Neutron Laser', 25),
+                                                                             ('Conversion Beam Dissipator', 50)])],
+                      'Warmaster Iconoclast Titan': [('Kirus Weapon', 1, [('Kirus Siege Drill', 0),
+                                                                          ('Kirus Grav Imploder', 0)])]}
 
 # ---------------------------------------------------------------- Knight Household
 QUESTORIS = ['Questorius Knight-Paladin', 'Questorius Knight-Errant']

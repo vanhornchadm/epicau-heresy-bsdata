@@ -90,6 +90,9 @@ TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the
               "destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan "
               "loses a point of DC, 4-6 the reactor is repaired.")
 EPIC_UK = '(Fan rules adapted from the Epic-UK Adeptus Titanicus codex, version 080925; not part of EpicAU.)'
+LI_TITAN = '(Fan-made, not part of EpicAU: converted from Legions Imperialis against the EpicAU {base}.)'
+WARHOUND_CRIT = ('Critical Hit: The Titan staggers D6cm in a random direction taking an additional DC, any units that come '
+                 'into base contact with it as it staggers take a standard hit on a 6+.')
 EXTRA_UNITS = {
     'Legion Astartes': [{
         'name': 'Sabre Strike Tank', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
@@ -182,7 +185,36 @@ EXTRA_UNITS = {
                     {'name': '1 x Scout or Battle Titan Weapon Variant', 'range': '-',
                      'firepower': '1 x Carapace, Fixed Forward'}],
         'notes': f'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
-                 f'{EPIC_UK} {TITAN_CRIT}'}],
+                 f'{EPIC_UK} {TITAN_CRIT}'}, {
+        'name': 'Dire Wolf Heavy Scout Titan', 'type': 'WE', 'speed': '30cm', 'armour': '5+', 'cc': '4+', 'ff': '4+',
+        'weapons': [{'name': 'Ardex Mega-Bolters', 'range': '30cm', 'firepower': '4 x AP4+/AT6+'},
+                    {'name': '1 x Dire Wolf Weapon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'}],
+        'notes': 'DC 3, 2 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller, Infiltrator. '
+                 f'{TITAN_STEP} {LI_TITAN.format(base="Warhound")} {WARHOUND_CRIT}'}, {
+        'name': 'Warlord-Sinister Battle Titan', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '2+', 'ff': '3+',
+        'weapons': [{'name': 'Sinistramanus Tenebrae', 'range': '75cm', 'firepower': '3 x MW3+, TK(1), Fwd'},
+                    {'name': 'Antipathic Tempest', 'range': '45cm', 'firepower': '2 BP, Ignore Cover, Disrupt'},
+                    {'name': 'Death Pulse', 'range': '(15cm)', 'firepower': '(small arms), EA(+2)'}],
+        'notes': 'DC 8, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. Dread Aura: enemy '
+                 'formations within 15cm subtract 1 from their rally tests. A Psi-Titan for Loyalist Legions only. '
+                 f'{TITAN_STEP} {LI_TITAN.format(base="Warlord")} {TITAN_CRIT}'}, {
+        'name': 'Warmaster Iconoclast Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
+        'weapons': [{'name': 'Desolator Chainsword', 'range': '(base contact)',
+                     'firepower': '(assault weapons) EA(+3), TK(D3)'},
+                    {'name': 'Cruciator Gatling Array', 'range': '45cm', 'firepower': '6 x AP4+/AT5+, Fwd'},
+                    {'name': '1 x Kirus Siege Drill or Grav Imploder', 'range': '-', 'firepower': '1 x Arm'}],
+        'notes': 'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. '
+                 f'{TITAN_STEP} {LI_TITAN.format(base="Warmaster")} {TITAN_CRIT}'}],
+}
+# Fan-made Titan weapons for the Titans above, converted from Legions Imperialis against EpicAU's Titan weapons.
+FAN_TITAN_WEAPONS = {
+    'Neutron Laser': {'name': 'Neutron Laser', 'range': '60cm', 'firepower': 'MW3+, Disrupt', 'notes': ''},
+    'Conversion Beam Dissipator': {'name': 'Conversion Beam Dissipator', 'range': '60cm', 'firepower': '3 x MW3+',
+                                   'notes': 'Within 15cm it fires 2 x AP4+/AT4+ instead.'},
+    'Kirus Siege Drill': {'name': 'Kirus Siege Drill', 'range': '(base contact)',
+                          'firepower': '(assault weapons) EA(+2), TK(D6), Siege', 'notes': ''},
+    'Kirus Grav Imploder': {'name': 'Kirus Grav Imploder', 'range': '15cm AND (base contact)',
+                            'firepower': '2 x MW3+, Disrupt, Ignore Cover AND (assault weapons) EA(+1), TK(D3)', 'notes': ''},
 }
 
 
@@ -190,7 +222,8 @@ EXTRA_UNITS = {
 # an asterisk after their names.
 FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion Tarantula', 'Legion Tarantula Hyperios',
              'Ascalon', 'Araknae Weapons Platform', 'Saturnine Terminators', 'Saturnine Dreadnought',
-             'Termite Assault Drill', 'Warbringer Nemesis Titan', 'Warmaster Heavy Battle Titan'}
+             'Termite Assault Drill', 'Warbringer Nemesis Titan', 'Warmaster Heavy Battle Titan',
+             'Dire Wolf Heavy Scout Titan', 'Warlord-Sinister Battle Titan', 'Warmaster Iconoclast Titan'}
 
 
 def star(name, fan):
@@ -343,6 +376,7 @@ UNITS = json.load(open(os.path.join(HERE, 'source', 'units.json')))
 for sheet, extra in EXTRA_UNITS.items():
     UNITS[sheet].extend(extra)
 TITAN_WEAPONS = json.load(open(os.path.join(HERE, 'source', 'titan_weapons.json')))
+TITAN_WEAPONS.update(FAN_TITAN_WEAPONS)
 # Rule keywords are capitalised on the wiki, so match case-sensitively to avoid hits like "transport capacity".
 PATTERN_OVERRIDES = {'Scout': r'Scout(?! Titan)', 'Commander': r'(?<!Supreme )(?<!Lieutenant )(?<!Lord )Commander',
                      'Transport': r'Transport(?= ?[:.])'}
@@ -841,7 +875,8 @@ class Builder:
                 w = TITAN_WEAPONS[name]
                 eid = gid('se', fid, 'tw', *key, name)
                 pid = self.prof.weapon_profile(w)
-                kids.append(ordered('selectionEntry', {'id': eid, 'name': name, 'hidden': 'false', 'collective': 'false',
+                kids.append(ordered('selectionEntry', {'id': eid, 'name': star(name, name in FAN_TITAN_WEAPONS),
+                                                       'hidden': 'false', 'collective': 'false',
                                                        'import': 'true', 'type': 'upgrade'},
                                     constraints=[constraint(gid('con', eid, 'max'), 'max', count)],
                                     infoLinks=[X('infoLink', {'id': gid('il', eid), 'name': name, 'hidden': 'false',

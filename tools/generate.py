@@ -39,6 +39,11 @@ UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Weapons', 'Range', 'Firepo
 WAR_ENGINE_CHARS = UNIT_CHARS + ['Damage Capacity', 'Void Shields', 'Critical Hit']
 WEAPON_CHARS = ['Range', 'Firepower', 'Notes']  # chosen Titan weapons
 LINE_BREAK = '<BR><BR>'  # separates weapon lines, as in the Epic Armageddon BSData
+# Roster viewers move a column below the table when its text is too wide, so profile cells are kept narrow: long
+# lines wrap, the Notes column lists only short rule names, and longer notes (weapon options, transport capacity,
+# long critical hits) go in a '<unit> notes' rule shown with the unit's rules.
+COLUMN_WIDTH = 25
+SEE_NOTES = 'See unit notes'
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
         'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit',
@@ -377,39 +382,101 @@ def rules_in(text):
     return list(dict.fromkeys(found))
 
 
+def wrap(text, width=COLUMN_WIDTH):
+    """Greedy word wrap into lines of at most `width` characters (a longer single word keeps its own line)."""
+    lines = []
+    for word in text.split():
+        if lines and len(lines[-1]) + 1 + len(word) <= width:
+            lines[-1] += ' ' + word
+        else:
+            lines.append(word)
+    return lines or ['']
+
+
+def weapon_columns(rows):
+    """Weapons, Range, Firepower and Weapon Notes cells: one entry per weapon, each wrapped and padded so a
+    weapon's lines stay level across the four columns."""
+    cols = [[], [], [], []]
+    for row in rows:
+        wrapped = [wrap(cell) for cell in row]
+        height = max(len(w) for w in wrapped)
+        for col, w in zip(cols, wrapped):
+            col.append('<BR>'.join(w + [''] * (height - len(w))))
+    return [LINE_BREAK.join(col) for col in cols]
+
+
+def split_notes(notes):
+    """Split unit notes into (short rule names for the Notes column, longer text for the unit-notes rule)."""
+    keywords, details = [], []
+    for sentence in re.split(r'(?<=\.)\s+(?=[A-Z(])', notes.strip()):
+        items = sentence.rstrip('.').split(', ')
+        for i, item in enumerate(items):
+            if len(item) <= 28 and ':' not in item and len(item.split()) <= 4 and item.strip(' -'):
+                keywords.append(item.strip())
+            else:
+                details.append(', '.join(items[i:]).rstrip('.') + '.')
+                break
+    return keywords, ' '.join(details)
+
+
+def notes_cell(keywords, details):
+    """The Notes column: rule names packed onto lines without splitting a name, then a pointer to the notes rule."""
+    lines = []
+    for item in keywords:
+        if lines and len(lines[-1]) + 2 + len(item) + 1 <= COLUMN_WIDTH:  # room for a trailing comma
+            lines[-1] += ', ' + item
+        else:
+            if lines:
+                lines[-1] += ','
+            lines.append(item)
+    return '<BR>'.join(lines + ([SEE_NOTES] if details else [])) or '-'
+
+
 class Catalogue:
     """Collects shared profiles for one catalogue."""
 
     def __init__(self, scope):
         self.scope = scope
         self.profiles = {}  # pid -> X
+        self.rules = {}  # rid -> X: '<unit> notes' rules holding text too long for the profile
+        self.notes_rule = {}  # profile id -> (rule id, rule name)
 
     def unit_profiles(self, unit):
         """Return (profile ids, rule names, categories) for a unit record, registering its shared profile."""
         uid = gid('prof', self.scope, unit['name'], 'unit')
         if uid not in self.profiles:
-            names, ranges, firepower, wnotes = [], [], [], []
+            rows, combined = [], False
             for w in unit['weapons']:
                 if not (w['name'] or w['firepower']) or w['name'] in ('-',):
                     continue
                 fp, traits = split_firepower(w['firepower'])
-                if w.get('misaligned'):
-                    traits = (traits + '; ' if traits else '') + 'Weapon lines are combined; check the wiki sheet.'
-                names.append(w['name'] or 'Weapons')
-                ranges.append(w['range'] or '-')
-                firepower.append(fp or '-')
-                wnotes.append(traits or '-')
-            weapons = [LINE_BREAK.join(col) for col in (names, ranges, firepower, wnotes)]
+                combined |= bool(w.get('misaligned'))
+                rows.append([w['name'] or 'Weapons', w['range'] or '-', fp or '-', traits or '-'])
+            weapons = weapon_columns(rows) if rows else ['-'] * 4
             stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff']]
+            display = star(unit['name'], unit['name'] in FAN_UNITS)
             if is_war_engine(unit):
                 dc, shields, crit, notes = war_engine_fields(unit['notes'])
-                self.profiles[uid] = profile(uid, star(unit['name'], unit['name'] in FAN_UNITS), PT_WAR_ENGINE,
-                                             'War Engine', WAR_ENGINE_CHARS,
-                                             stats + weapons + [notes, dc, shields, crit])
+                keywords, details = split_notes(notes if notes != '-' else '')
+                if len(crit) > COLUMN_WIDTH:  # long critical hits go to the unit notes too
+                    details = (details + ' ' if details else '') + f'Critical Hit: {crit}'
+                    crit = SEE_NOTES
+                cells = [notes_cell(keywords, details), dc, shields, crit]
             else:
-                self.profiles[uid] = profile(uid, star(unit['name'], unit['name'] in FAN_UNITS), PT_UNIT, 'Unit',
-                                             UNIT_CHARS,
-                                             stats + weapons + [unit['notes']])
+                keywords, details = split_notes(unit['notes'] if unit['notes'] != '-' else '')
+                cells = [notes_cell(keywords, details)]
+            if combined:
+                details = (details + ' ' if details else '') + 'Weapon lines are combined; check the wiki sheet.'
+                cells[0] = notes_cell(keywords, details)
+            if is_war_engine(unit):
+                self.profiles[uid] = profile(uid, display, PT_WAR_ENGINE, 'War Engine', WAR_ENGINE_CHARS,
+                                             stats + weapons + cells)
+            else:
+                self.profiles[uid] = profile(uid, display, PT_UNIT, 'Unit', UNIT_CHARS, stats + weapons + cells)
+            if details:
+                rid = gid('rule', self.scope, unit['name'], 'notes')
+                self.rules[rid] = rule_el(rid, f'{display} notes', details)
+                self.notes_rule[uid] = (rid, f'{display} notes')
         text = unit['notes'] + ' ' + ' '.join(w['firepower'] for w in unit['weapons'])
         cats = []
         if unit['type'].startswith('CH'):
@@ -568,6 +635,11 @@ class Builder:
         cons += list(extra_cons)
         links = [X('infoLink', {'id': gid('il', eid, pid), 'name': pname, 'hidden': 'false', 'targetId': pid,
                                 'type': 'profile'}) for pid, pname in ids]
+        notes_rule = self.prof.notes_rule.get(ids[0][0])
+        if notes_rule:  # text too long for the profile's Notes column
+            rid, rname = notes_rule
+            links.append(X('infoLink', {'id': gid('il', eid, rid), 'name': rname, 'hidden': 'false', 'targetId': rid,
+                                        'type': 'rule'}))
         links += [info_rule(eid, r) for r in rules]
         return ordered('selectionEntry', {'id': eid, 'name': star(name or part['label'] or unit['name'],
                                                                    unit['name'] in FAN_UNITS),
@@ -1233,6 +1305,7 @@ def build_catalogue(army):
     forces = [b.force(False), b.force(True)]
     root = ordered('catalogue', header(cid, f'EpicAU - {army["name"]}'), forceEntries=forces,
                    selectionEntries=formations, sharedSelectionEntries=upgrades,
+                   sharedRules=sorted(profiles.rules.values(), key=lambda r: (r.attrs['name'], r.attrs['id'])) or None,
                    sharedProfiles=sorted(profiles.profiles.values(), key=lambda p: (p.attrs['name'], p.attrs['id'])))
     write(os.path.join(OUT, f'EpicAU - {army["name"]}.cat'), root, CAT_NS)
     return b.missing

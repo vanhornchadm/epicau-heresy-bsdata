@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="14" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="15" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -6326,13 +6326,8 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="df88-7f99-9df5-a864" name="Legion Ascalon Squadron" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="37a3-3910-3069-0fcd" name="Legion Ascalon Squadron" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
-          </conditions>
-        </modifier>
         <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
           <conditionGroups>
             <conditionGroup type="and">
@@ -6395,81 +6390,34 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         </modifier>
       </modifiers>
       <rules>
-        <rule id="d971-258b-c8af-2fd2" name="Legion Ascalon Squadron" hidden="false">
-          <description>Fan-made, not part of EpicAU: a heavy flame tank from Legions Imperialis, converted against the Spartan.</description>
+        <rule id="f44d-3e39-65cf-f08e" name="Legion Ascalon Squadron" hidden="false">
+          <description>Fan-made, not part of EpicAU: a heavy flame tank from Legions Imperialis, converted against the Spartan. Legions Imperialis lists it as Heavy Armour, like the Fellblade, Typhon and Cerberus, which EpicAU makes Lords of War.</description>
         </rule>
       </rules>
       <categoryLinks>
-        <categoryLink id="a382-2249-bfca-5675" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+        <categoryLink id="3dec-5fb3-d71a-923d" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
+        <categoryLink id="8f69-8b74-7227-4938" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="35dd-36cb-a28e-9978" name="Ascalon" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="989b-a698-d541-81dd" name="Ascalon" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db4d-35a6-09cf-09e9" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e354-2127-b3d7-1f53" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb8-5cce-a88d-da89" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bff9-73bd-a40f-a0e2" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="df1f-9ac0-9034-c0db" name="Ascalon" hidden="false" targetId="ff97-e43c-2cdb-6171" type="profile"/>
-            <infoLink id="c2da-90fe-cba6-fecf" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="f90e-aafc-87fc-ab68" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
-            <infoLink id="9bce-71a4-e1cb-468d" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="a3f4-0add-e4fd-c547" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-            <infoLink id="dd0c-c5bc-b6d0-d8c1" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-            <infoLink id="bed7-22bc-7c18-fff5" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+            <infoLink id="ff8c-3259-730c-40cb" name="Ascalon" hidden="false" targetId="ff97-e43c-2cdb-6171" type="profile"/>
+            <infoLink id="55bf-506d-1d35-39fa" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="b953-825a-1332-4a02" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+            <infoLink id="baf6-24b4-1a79-c10a" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+            <infoLink id="e71d-f019-766b-b21f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="7d4b-38dd-94f3-64d0" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+            <infoLink id="2d3b-4ba3-ff2e-5757" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="125.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="2668-a806-6a8d-65b6" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9033-c98d-7313-beb8" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="2ae1-3dc2-bc8a-796c" name="Centurion" hidden="false" collective="false" import="true" targetId="839d-c809-7edd-2efd" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="af7a-d288-9f01-f543" value="0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af7a-d288-9f01-f543" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="e819-08f8-395f-e9a4" name="Centurion" hidden="true" collective="false" import="true" targetId="6cd5-1fc8-ad5b-8711" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="8357-5519-7104-7eeb" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8357-5519-7104-7eeb" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="d6d8-3954-4a85-0d71" name="Hyperios" hidden="false" collective="false" import="true" targetId="b7c4-f844-14b7-809b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da3f-bfc1-0d63-7b57" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>

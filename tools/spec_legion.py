@@ -101,8 +101,10 @@ CORE_FORMATIONS = [
       note='Fan-made formation, not part of EpicAU: the Arquitor Bombard is on the wiki reference sheet, but neither the '
            'wiki nor Departmento Munitorum gives it a formation. It is priced against the Predator (60 pts): similar '
            'firepower at shorter range, faster, with a 5+ save.'),
-    F('Legion Ascalon Squadron', 'support', 0, [U((1, 3), 'Ascalon', 125)], 'Centurion, Hyperios', new=True,
-      note='Fan-made, not part of EpicAU: a heavy flame tank from Legions Imperialis, converted against the Spartan.'),
+    F('Legion Ascalon Squadron', 'low', 0, [U((1, 3), 'Ascalon', 125)], new=True,
+      note='Fan-made, not part of EpicAU: a heavy flame tank from Legions Imperialis, converted against the Spartan. '
+           'Legions Imperialis lists it as Heavy Armour, like the Fellblade, Typhon and Cerberus, which EpicAU makes '
+           'Lords of War.'),
     F('Legion Araknae Weapons Battery', 'support', 0, [U((2, 4), 'Araknae Weapons Platform', 45)], new=True,
       note='Fan-made, not part of EpicAU: immobile weapons platforms from Legions Imperialis, converted against the '
            'Tarantula and Sicaran.'),

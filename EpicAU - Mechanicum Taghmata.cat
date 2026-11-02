@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="7" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -291,7 +291,85 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                           <selectionEntries>
                             <selectionEntry id="fbdf-fa1e-8b74-9bdd" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
-                                <infoLink id="b916-8a25-9d10-146e" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="b916-8a25-9d10-146e" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
+                                  <modifiers>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Lascannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7a5-018a-a181-3400" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="45cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7a5-018a-a181-3400" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AT4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7a5-018a-a181-3400" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7a5-018a-a181-3400" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7a5-018a-a181-3400" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Flamestorm Cannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a1-6cb0-26ae-bb71" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a1-6cb0-26ae-bb71" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AP3+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a1-6cb0-26ae-bb71" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="Ignore Cover&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a1-6cb0-26ae-bb71" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="3+">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a1-6cb0-26ae-bb71" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Multimelta&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8c-d287-c6e1-2f66" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8c-d287-c6e1-2f66" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="MW4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8c-d287-c6e1-2f66" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8c-d287-c6e1-2f66" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8c-d287-c6e1-2f66" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                </infoLink>
                                 <infoLink id="3a59-1758-4eb8-077a" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="40cf-8e91-5b06-567e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="f4ae-b222-d65e-03cf" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -300,6 +378,40 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                 <infoLink id="f65b-9e3f-5a94-d681" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                                 <infoLink id="6b4a-007f-f330-5b2e" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                               </infoLinks>
+                              <selectionEntryGroups>
+                                <selectionEntryGroup id="8134-588c-6534-3753" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="c7a5-018a-a181-3400">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b243-f127-a9db-344b" type="min"/>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="582d-fa06-1ffa-2a65" type="max"/>
+                                  </constraints>
+                                  <selectionEntries>
+                                    <selectionEntry id="c7a5-018a-a181-3400" name="2 x Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c266-c161-3c5b-f1ba" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="75a1-6cb0-26ae-bb71" name="2 x Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="036e-8ee1-79ec-b21b" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="9d8c-d287-c6e1-2f66" name="2 x Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efdd-1a66-1c8b-6afc" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                  </selectionEntries>
+                                </selectionEntryGroup>
+                              </selectionEntryGroups>
                               <costs>
                                 <cost name="pts" typeId="points" value="75.0"/>
                               </costs>
@@ -513,7 +625,85 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                           <selectionEntries>
                             <selectionEntry id="d8c1-4391-b48c-1b18" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
-                                <infoLink id="fc33-536b-0ecf-d010" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="fc33-536b-0ecf-d010" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
+                                  <modifiers>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Lascannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a81a-03f1-3193-4ffc" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="45cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a81a-03f1-3193-4ffc" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AT4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a81a-03f1-3193-4ffc" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a81a-03f1-3193-4ffc" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a81a-03f1-3193-4ffc" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Flamestorm Cannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5613-caec-7c32-42f1" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5613-caec-7c32-42f1" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AP3+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5613-caec-7c32-42f1" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="Ignore Cover&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5613-caec-7c32-42f1" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="3+">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5613-caec-7c32-42f1" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Multimelta&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="019a-e689-c582-b766" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="019a-e689-c582-b766" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="MW4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="019a-e689-c582-b766" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="019a-e689-c582-b766" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="019a-e689-c582-b766" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                </infoLink>
                                 <infoLink id="51c2-9f71-e0fc-6498" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="a87a-6c73-76a5-5c7e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="b254-619d-f94f-ea38" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -522,6 +712,40 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                 <infoLink id="ce72-3db8-868d-0972" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                                 <infoLink id="3d06-0e5f-4278-d323" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                               </infoLinks>
+                              <selectionEntryGroups>
+                                <selectionEntryGroup id="daf8-a29c-565c-16e3" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a81a-03f1-3193-4ffc">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="daa5-45bc-1e88-3272" type="min"/>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd5c-ec6f-2b1b-f225" type="max"/>
+                                  </constraints>
+                                  <selectionEntries>
+                                    <selectionEntry id="a81a-03f1-3193-4ffc" name="2 x Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7fd-2a59-9971-e630" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="5613-caec-7c32-42f1" name="2 x Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c2b-9ec0-aeb8-56f0" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="019a-e689-c582-b766" name="2 x Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9d3-0668-7f2d-201b" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                  </selectionEntries>
+                                </selectionEntryGroup>
+                              </selectionEntryGroups>
                               <costs>
                                 <cost name="pts" typeId="points" value="75.0"/>
                               </costs>
@@ -741,7 +965,85 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                           <selectionEntries>
                             <selectionEntry id="b3c1-82d5-7ba5-f5c0" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
-                                <infoLink id="c44c-14bd-d41a-b5f1" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="c44c-14bd-d41a-b5f1" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
+                                  <modifiers>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Lascannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9296-6df6-5600-bfe3" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="45cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9296-6df6-5600-bfe3" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AT4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9296-6df6-5600-bfe3" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9296-6df6-5600-bfe3" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9296-6df6-5600-bfe3" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Flamestorm Cannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d90-b1a1-6093-9022" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d90-b1a1-6093-9022" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AP3+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d90-b1a1-6093-9022" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="Ignore Cover&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d90-b1a1-6093-9022" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="3+">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d90-b1a1-6093-9022" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Multimelta&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-d611-e1d6-ab6a" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-d611-e1d6-ab6a" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="MW4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-d611-e1d6-ab6a" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-d611-e1d6-ab6a" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-d611-e1d6-ab6a" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                </infoLink>
                                 <infoLink id="9302-12ba-820b-7c59" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="7062-6998-710d-63c6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="70d0-d157-2b3f-abc7" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -750,6 +1052,40 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                 <infoLink id="863f-7883-ada8-d20a" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                                 <infoLink id="4bd9-ea62-658c-e388" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                               </infoLinks>
+                              <selectionEntryGroups>
+                                <selectionEntryGroup id="fc07-2946-2c5b-165e" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="9296-6df6-5600-bfe3">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b40-d07f-76ba-8fbf" type="min"/>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f419-2750-fd36-5c23" type="max"/>
+                                  </constraints>
+                                  <selectionEntries>
+                                    <selectionEntry id="9296-6df6-5600-bfe3" name="2 x Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df2b-d528-f060-1c1a" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="1d90-b1a1-6093-9022" name="2 x Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4e9-ca03-9e53-b920" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="bc40-d611-e1d6-ab6a" name="2 x Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d9c-55fa-0b80-4f9f" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                  </selectionEntries>
+                                </selectionEntryGroup>
+                              </selectionEntryGroups>
                               <costs>
                                 <cost name="pts" typeId="points" value="75.0"/>
                               </costs>
@@ -1158,7 +1494,50 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28f6-62e4-569c-01cb" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="616e-f656-003c-4bd7" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile"/>
+            <infoLink id="616e-f656-003c-4bd7" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile">
+              <modifiers>
+                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Hellex Plasma Mortar&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab17-cad3-91b2-f6a3" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="30cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab17-cad3-91b2-f6a3" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="BP1&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab17-cad3-91b2-f6a3" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="9000-985e-2684-f643" value="Indirect Fire, Ignore&lt;BR&gt;Cover&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab17-cad3-91b2-f6a3" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Sollex Heavy Lascannon&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9602-370d-34e1-4f47" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="60cm&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9602-370d-34e1-4f47" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AT4+&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9602-370d-34e1-4f47" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9602-370d-34e1-4f47" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="742c-5351-205d-4321" name="Thanatar Battle-Automata notes" hidden="false" targetId="d21c-cc9e-8dd1-16f5" type="rule"/>
             <infoLink id="bd25-84a0-98c3-684a" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="a275-8ebd-d051-97df" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -1169,6 +1548,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="7abf-c7cd-b18e-5e52" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
             <infoLink id="5aa3-6d24-a102-cd3f" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="706d-4284-eef4-59a4" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab17-cad3-91b2-f6a3">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b807-fe93-a9c7-191f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="077c-a855-c96d-94fa" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="ab17-cad3-91b2-f6a3" name="Hellex Plasma Mortar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a869-e32e-e904-8431" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9602-370d-34e1-4f47" name="Sollex Heavy Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ccb-7aad-03c9-ccf6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -1271,13 +1676,82 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="173b-5a9a-3c8e-b694" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="7506-87aa-6fd2-80c7" name="Krios Battle Tank" hidden="false" targetId="63a6-8246-a3cf-1607" type="profile"/>
+            <infoLink id="7506-87aa-6fd2-80c7" name="Krios Battle Tank" hidden="false" targetId="63a6-8246-a3cf-1607" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Lightning Cannon">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1deb-153a-b626-1519" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="45cm">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1deb-153a-b626-1519" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="MW5+">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1deb-153a-b626-1519" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1deb-153a-b626-1519" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Pulsar Fusil">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d97-2dce-7a9f-1cd9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="30cm">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d97-2dce-7a9f-1cd9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP5+/AT3+">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d97-2dce-7a9f-1cd9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="4fb2-89bc-dd26-677f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d97-2dce-7a9f-1cd9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="c490-4c12-d65c-a724" name="Krios Battle Tank notes" hidden="false" targetId="b4d5-88ec-6642-2179" type="rule"/>
             <infoLink id="b770-7979-b7d0-5f53" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="f130-4fd8-a2cc-1753" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="7db6-114c-665a-1619" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
             <infoLink id="b221-78e9-e3b5-a423" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="64cf-cd57-ae8b-79b6" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1deb-153a-b626-1519">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12cb-04a1-3eb2-9950" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89fe-1604-56a7-99e6" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1deb-153a-b626-1519" name="Lightning Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="043e-db96-b2fd-fbb5" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="9d97-2dce-7a9f-1cd9" name="Pulsar Fusil" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a69a-ecd1-a98c-88d3" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -1604,7 +2078,85 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                           <selectionEntries>
                             <selectionEntry id="a78e-cb1a-dce2-acf3" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
-                                <infoLink id="e8af-b235-b67e-d0ea" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="e8af-b235-b67e-d0ea" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
+                                  <modifiers>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Lascannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1173-6327-d21b-4da6" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="45cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1173-6327-d21b-4da6" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AT4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1173-6327-d21b-4da6" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1173-6327-d21b-4da6" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1173-6327-d21b-4da6" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Flamestorm Cannon&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d4-eaa1-3a05-e2a5" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d4-eaa1-3a05-e2a5" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AP3+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d4-eaa1-3a05-e2a5" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="Ignore Cover&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d4-eaa1-3a05-e2a5" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="3+">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d4-eaa1-3a05-e2a5" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="2 x Twin Multimelta&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd3-8d8e-40bf-e5af" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="15cm&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd3-8d8e-40bf-e5af" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="MW4+&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd3-8d8e-40bf-e5af" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd3-8d8e-40bf-e5af" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                                      <conditions>
+                                        <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd3-8d8e-40bf-e5af" type="atLeast"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                </infoLink>
                                 <infoLink id="ca82-9492-93d1-6d1a" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="7737-5fa3-19b9-2473" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="f7f7-2e8d-29c9-0391" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -1613,6 +2165,40 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                 <infoLink id="a590-e3a5-3888-6b72" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                                 <infoLink id="ce73-d308-954c-aa44" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                               </infoLinks>
+                              <selectionEntryGroups>
+                                <selectionEntryGroup id="192b-4d00-a172-73ee" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="1173-6327-d21b-4da6">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8122-c621-4640-f559" type="min"/>
+                                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3cf-c4ec-2ae6-0946" type="max"/>
+                                  </constraints>
+                                  <selectionEntries>
+                                    <selectionEntry id="1173-6327-d21b-4da6" name="2 x Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d41d-9272-4795-9106" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="75d4-eaa1-3a05-e2a5" name="2 x Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6382-1e18-53d1-89d7" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                    <selectionEntry id="5fd3-8d8e-40bf-e5af" name="2 x Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                      <constraints>
+                                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d317-566b-6a67-4c58" type="max"/>
+                                      </constraints>
+                                      <costs>
+                                        <cost name="pts" typeId="points" value="0.0"/>
+                                      </costs>
+                                    </selectionEntry>
+                                  </selectionEntries>
+                                </selectionEntryGroup>
+                              </selectionEntryGroups>
                               <costs>
                                 <cost name="pts" typeId="points" value="75.0"/>
                               </costs>
@@ -1736,10 +2322,89 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35aa-2ce3-62c5-0d9a" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="5377-7a6d-a49d-3340" name="Tarantula Platform" hidden="false" targetId="8611-9c76-2dc0-31e2" type="profile"/>
+            <infoLink id="5377-7a6d-a49d-3340" name="Tarantula Platform" hidden="false" targetId="8611-9c76-2dc0-31e2" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="TL Lascannon">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="157f-7d7e-efdc-b2c2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="45cm">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="157f-7d7e-efdc-b2c2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AT4+">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="157f-7d7e-efdc-b2c2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="157f-7d7e-efdc-b2c2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5376-4e08-3028-9ae5" value="6+">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="157f-7d7e-efdc-b2c2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="TL Heavy Bolter">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e72-c031-c163-0d03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="30cm">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e72-c031-c163-0d03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP4+">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e72-c031-c163-0d03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e72-c031-c163-0d03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5376-4e08-3028-9ae5" value="5+">
+                  <conditions>
+                    <condition field="selections" scope="1f1c-d9d7-71c6-2040" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6e72-c031-c163-0d03" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="d8a0-32d7-1ba8-cf09" name="Tarantula Platform notes" hidden="false" targetId="e7f9-fc66-00d1-96f7" type="rule"/>
             <infoLink id="4041-8c1f-40c0-55ef" name="Automaton" hidden="false" targetId="7a75-4235-9819-0fe3" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7498-dba8-b8a2-254b" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="157f-7d7e-efdc-b2c2">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf85-67ec-acf8-6f12" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="298e-3b1e-2293-5708" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="157f-7d7e-efdc-b2c2" name="TL Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b5e-57ac-d176-815d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6e72-c031-c163-0d03" name="TL Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6e8-db17-89d2-0cc9" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -2045,7 +2710,50 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c5e-7b7c-d6a3-7700" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="3053-faae-81c2-ae4d" name="Ordinatus Minoris" hidden="false" targetId="14fa-7852-d562-2f8e" type="profile"/>
+            <infoLink id="3053-faae-81c2-ae4d" name="Ordinatus Minoris" hidden="false" targetId="14fa-7852-d562-2f8e" type="profile">
+              <modifiers>
+                <modifier type="append" field="8053-23b9-7271-666e" value="&lt;BR&gt;&lt;BR&gt;Bellacosa Volcano Cannon">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f73d-c735-8437-d722" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="3069-85d5-1a17-f28e" value="&lt;BR&gt;&lt;BR&gt;90cm">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f73d-c735-8437-d722" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8397-b72d-83b9-ce5f" value="&lt;BR&gt;&lt;BR&gt;MW2+">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f73d-c735-8437-d722" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="a2db-1347-a5a5-688a" value="&lt;BR&gt;&lt;BR&gt;TK(D3), FxF">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f73d-c735-8437-d722" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="&lt;BR&gt;&lt;BR&gt;Ulator Sonic Destroyer">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1fce-d035-46e1-98c6" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="3069-85d5-1a17-f28e" value="&lt;BR&gt;&lt;BR&gt;75cm">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1fce-d035-46e1-98c6" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8397-b72d-83b9-ce5f" value="&lt;BR&gt;&lt;BR&gt;BP3">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1fce-d035-46e1-98c6" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="a2db-1347-a5a5-688a" value="&lt;BR&gt;&lt;BR&gt;Disrupt, Lance, FxF">
+                  <conditions>
+                    <condition field="selections" scope="e51c-8087-e2c3-3181" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1fce-d035-46e1-98c6" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="2c80-25f4-2659-2180" name="Ordinatus Minoris notes" hidden="false" targetId="1cfa-777e-72a6-69ec" type="rule"/>
             <infoLink id="e04d-c668-d1bd-a151" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
             <infoLink id="994c-9c8e-68ee-56f6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -2058,6 +2766,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="5ac3-8c78-b88c-4c46" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
             <infoLink id="f259-23e1-0192-aac6" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="bccd-b289-a723-7a71" name="Main gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="f73d-c735-8437-d722">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98c8-e26d-b717-465b" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ce1-00b2-8a83-efac" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="f73d-c735-8437-d722" name="Bellacosa Volcano Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e01-9820-8a9c-3e76" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1fce-d035-46e1-98c6" name="Ulator Sonic Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7f1-d386-25aa-788c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -2521,13 +3255,82 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b3c-e65a-8e80-3fe8" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="f002-a935-1022-42ee" name="Krios Battle Tank" hidden="false" targetId="63a6-8246-a3cf-1607" type="profile"/>
+            <infoLink id="f002-a935-1022-42ee" name="Krios Battle Tank" hidden="false" targetId="63a6-8246-a3cf-1607" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Lightning Cannon">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d0d-7d49-83d2-9412" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="45cm">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d0d-7d49-83d2-9412" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="MW5+">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d0d-7d49-83d2-9412" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d0d-7d49-83d2-9412" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Pulsar Fusil">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e207-9212-dda8-822a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="30cm">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e207-9212-dda8-822a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP5+/AT3+">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e207-9212-dda8-822a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="df76-8021-89cc-0de6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e207-9212-dda8-822a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="a090-8999-8628-149f" name="Krios Battle Tank notes" hidden="false" targetId="b4d5-88ec-6642-2179" type="rule"/>
             <infoLink id="c11d-02e2-c883-ee55" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="ae43-cf00-a7e8-6433" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="c877-d80e-d158-d96b" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
             <infoLink id="83f2-8054-7446-5d31" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7003-5d59-70c3-2b04" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9d0d-7d49-83d2-9412">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0dc-a88b-ddd8-e1f7" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ccc-45e0-632d-65cc" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9d0d-7d49-83d2-9412" name="Lightning Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9076-4a8f-4bee-c31b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e207-9212-dda8-822a" name="Pulsar Fusil" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b7-1166-c733-1302" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
@@ -2572,7 +3375,50 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1845-329d-90f3-931c" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="8743-a384-252b-feb1" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile"/>
+            <infoLink id="8743-a384-252b-feb1" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile">
+              <modifiers>
+                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Hellex Plasma Mortar&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="915c-e661-c3a1-e626" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="30cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="915c-e661-c3a1-e626" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="BP1&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="915c-e661-c3a1-e626" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="9000-985e-2684-f643" value="Indirect Fire, Ignore&lt;BR&gt;Cover&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="915c-e661-c3a1-e626" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Sollex Heavy Lascannon&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfd6-b254-12ea-737a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="eac3-6a94-cb92-4e59" value="60cm&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfd6-b254-12ea-737a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="d5dc-a6b1-1fdc-bb30" value="AT4+&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfd6-b254-12ea-737a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="prepend" field="9000-985e-2684-f643" value="-&lt;BR&gt;&lt;BR&gt;">
+                  <conditions>
+                    <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfd6-b254-12ea-737a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="c0f9-24d6-9474-0f5a" name="Thanatar Battle-Automata notes" hidden="false" targetId="d21c-cc9e-8dd1-16f5" type="rule"/>
             <infoLink id="f35e-dd51-1d06-a57b" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="9cd4-d920-28bf-b186" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -2583,6 +3429,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="6669-f35d-4454-a142" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
             <infoLink id="870b-d5c3-6f53-fbb0" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="99f1-801a-1981-5cc5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="915c-e661-c3a1-e626">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="050e-13f3-fe84-5d9f" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b037-3041-f6fb-a315" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="915c-e661-c3a1-e626" name="Hellex Plasma Mortar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b91b-c73a-f5fa-d26c" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="dfd6-b254-12ea-737a" name="Sollex Heavy Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f26-8aae-5075-a671" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
           </costs>
@@ -2770,10 +3642,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Lightning Cannon OR&lt;BR&gt;&lt;BR&gt;Pulsar Fusil</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">MW5+&lt;BR&gt;&lt;BR&gt;AP5+/AT3+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59"></characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30"></characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643"></characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save,&lt;BR&gt;Reinforced Armour,&lt;BR&gt;Walker&lt;BR&gt;See unit notes</characteristic>
       </characteristics>
     </profile>
@@ -2798,10 +3670,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+ / 3+ / 4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">2 x Twin Lascannon OR&lt;BR&gt;&lt;BR&gt;2 x Flamestorm Cannon OR&lt;BR&gt;&lt;BR&gt;2 x Twin Multimelta&lt;BR&gt;&lt;BR&gt;Twin Heavy Bolter</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;15cm&lt;BR&gt;&lt;BR&gt;15cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP3+&lt;BR&gt;&lt;BR&gt;MW4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;Ignore Cover&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin Heavy Bolter</characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm</characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP4+</characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save,&lt;BR&gt;Reinforced Armour,&lt;BR&gt;Thick Rear Armour&lt;BR&gt;See unit notes</characteristic>
       </characteristics>
     </profile>
@@ -2871,10 +3743,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">5+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">5+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">5+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">3 x Volkite Culverins&lt;BR&gt;&lt;BR&gt;Bellacosa Volcano Cannon&lt;BR&gt;OR&lt;BR&gt;&lt;BR&gt;Ulator Sonic Destroyer</characteristic>
-        <characteristic name="Range" typeId="3069-85d5-1a17-f28e">45cm&lt;BR&gt;&lt;BR&gt;90cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;75cm</characteristic>
-        <characteristic name="Firepower" typeId="8397-b72d-83b9-ce5f">AP4+/AT6+&lt;BR&gt;&lt;BR&gt;MW2+&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;BP3</characteristic>
-        <characteristic name="Weapon Notes" typeId="a2db-1347-a5a5-688a">Disrupt&lt;BR&gt;&lt;BR&gt;TK(D3), FxF&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;Disrupt, Lance, FxF</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">3 x Volkite Culverins</characteristic>
+        <characteristic name="Range" typeId="3069-85d5-1a17-f28e">45cm</characteristic>
+        <characteristic name="Firepower" typeId="8397-b72d-83b9-ce5f">AP4+/AT6+</characteristic>
+        <characteristic name="Weapon Notes" typeId="a2db-1347-a5a5-688a">Disrupt</characteristic>
         <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour&lt;BR&gt;See unit notes</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">1</characteristic>
@@ -2902,10 +3774,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+ / 5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannon OR&lt;BR&gt;&lt;BR&gt;TL Heavy Bolter</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59"></characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30"></characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643"></characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Automaton&lt;BR&gt;See unit notes</characteristic>
       </characteristics>
     </profile>
@@ -2958,10 +3830,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Hellex Plasma Mortar OR&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;Sollex Heavy Lascannon&lt;BR&gt;&lt;BR&gt;Twin Mauler Bolt Cannon</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;60cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">BP1&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;AT4+&lt;BR&gt;&lt;BR&gt;AP3+/AT6+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Indirect Fire, Ignore&lt;BR&gt;Cover&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin Mauler Bolt Cannon</characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm</characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP3+/AT6+</characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex,&lt;BR&gt;Fearless,&lt;BR&gt;Invulnerable Save,&lt;BR&gt;Reinforced Armour&lt;BR&gt;See unit notes</characteristic>
       </characteristics>
     </profile>

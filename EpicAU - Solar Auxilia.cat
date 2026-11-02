@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="8" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
       <rules>
@@ -189,11 +189,90 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69b9-611c-dc72-4549" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="5af4-c770-cb1b-7a55" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile"/>
+            <infoLink id="5af4-c770-cb1b-7a55" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Volkite Chargers">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0df6-e8e7-81ba-320a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="(15cm)">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0df6-e8e7-81ba-320a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP5+/AT6+">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0df6-e8e7-81ba-320a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0df6-e8e7-81ba-320a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0df6-e8e7-81ba-320a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Power Axes">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b399-661c-b9b7-8382" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="(base contact)">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b399-661c-b9b7-8382" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="(assault weapons) MW">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b399-661c-b9b7-8382" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b399-661c-b9b7-8382" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5376-4e08-3028-9ae5" value="6+">
+                  <conditions>
+                    <condition field="selections" scope="e76f-c2ff-6f9c-b060" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b399-661c-b9b7-8382" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="bccb-59f5-0395-c6f8" name="Veletaris Storm Section notes" hidden="false" targetId="817f-01fc-3222-41fd" type="rule"/>
             <infoLink id="5d51-7070-3d1d-815a" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="fb01-5e38-9d7c-68b0" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="262a-52a4-96d6-7082" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="0df6-e8e7-81ba-320a">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bd-c921-bc67-d320" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2728-ae28-9385-2cda" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0df6-e8e7-81ba-320a" name="Volkite Chargers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d94-6a80-21bf-d9bf" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b399-661c-b9b7-8382" name="Power Axes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c5d-4cf8-1f99-45db" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -936,11 +1015,90 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfaf-9161-723a-8e9d" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="c542-29ff-298b-8f8e" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile"/>
+            <infoLink id="c542-29ff-298b-8f8e" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Volkite Chargers">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb9f-03d9-c84b-ab4e" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="(15cm)">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb9f-03d9-c84b-ab4e" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP5+/AT6+">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb9f-03d9-c84b-ab4e" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb9f-03d9-c84b-ab4e" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fb9f-03d9-c84b-ab4e" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Power Axes">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd0-cf3d-1968-5cd8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="(base contact)">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd0-cf3d-1968-5cd8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="(assault weapons) MW">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd0-cf3d-1968-5cd8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd0-cf3d-1968-5cd8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5376-4e08-3028-9ae5" value="6+">
+                  <conditions>
+                    <condition field="selections" scope="e103-00ce-d479-36de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2bd0-cf3d-1968-5cd8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="74d4-cfbf-0489-480d" name="Veletaris Storm Section notes" hidden="false" targetId="817f-01fc-3222-41fd" type="rule"/>
             <infoLink id="2210-c68c-f564-75ad" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="43a5-00be-3d6e-2f9d" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="6419-c1ff-f6df-f037" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb9f-03d9-c84b-ab4e">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="089e-909f-c2a3-a7d8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="783e-58f7-10db-40e3" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="fb9f-03d9-c84b-ab4e" name="Volkite Chargers" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cdd-497f-e787-e54e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2bd0-cf3d-1968-5cd8" name="Power Axes" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eae-3a3a-4ea5-cdef" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -2568,11 +2726,90 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd70-0448-156f-5fa9" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="b771-09a7-6a88-66ee" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile"/>
+                <infoLink id="b771-09a7-6a88-66ee" name="Veletaris Storm Section" hidden="false" targetId="4f2b-adaa-1777-a1f0" type="profile">
+                  <modifiers>
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Volkite Chargers">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbce-b167-ae4e-eae9" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="eac3-6a94-cb92-4e59" value="(15cm)">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbce-b167-ae4e-eae9" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP5+/AT6+">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbce-b167-ae4e-eae9" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="9000-985e-2684-f643" value="-">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbce-b167-ae4e-eae9" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="5376-4e08-3028-9ae5" value="4+">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbce-b167-ae4e-eae9" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Power Axes">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9bc-fc4e-af7e-8d6e" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="eac3-6a94-cb92-4e59" value="(base contact)">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9bc-fc4e-af7e-8d6e" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="(assault weapons) MW">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9bc-fc4e-af7e-8d6e" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="9000-985e-2684-f643" value="-">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9bc-fc4e-af7e-8d6e" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="5376-4e08-3028-9ae5" value="6+">
+                      <conditions>
+                        <condition field="selections" scope="2a9f-73d0-6088-6745" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9bc-fc4e-af7e-8d6e" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
                 <infoLink id="e436-2400-66b6-e75b" name="Veletaris Storm Section notes" hidden="false" targetId="817f-01fc-3222-41fd" type="rule"/>
                 <infoLink id="8b04-4612-0872-c3dd" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                 <infoLink id="4bba-dfc5-dc4b-9782" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="738c-40af-122b-e09f" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="fbce-b167-ae4e-eae9">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4641-1de6-76c5-95bf" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab88-1630-78eb-071e" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="fbce-b167-ae4e-eae9" name="Volkite Chargers" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4684-930f-54ae-3b56" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="f9bc-fc4e-af7e-8d6e" name="Power Axes" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc15-7a19-aea5-67e9" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
                 <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -2659,12 +2896,109 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a4e-2d85-b3e2-86f6" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="fb19-436b-bd22-d44a" name="Solar Auxilia Rapier Platform" hidden="false" targetId="8222-f575-52b7-3c1e" type="profile"/>
+            <infoLink id="fb19-436b-bd22-d44a" name="Solar Auxilia Rapier Platform" hidden="false" targetId="8222-f575-52b7-3c1e" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Laser Destroyer">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2263-9c50-3df6-72c5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="45cm">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2263-9c50-3df6-72c5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP6+/AT4+">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2263-9c50-3df6-72c5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2263-9c50-3df6-72c5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Quad Mortar">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9a2-432d-d540-9fa7" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="45cm">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9a2-432d-d540-9fa7" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP5+/AT6+">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9a2-432d-d540-9fa7" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="Indirect Fire, Disrupt">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9a2-432d-d540-9fa7" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Quad Heavy Bolter">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5700-c4e3-db2c-e1ab" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="eac3-6a94-cb92-4e59" value="30cm">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5700-c4e3-db2c-e1ab" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="2 x AP4+">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5700-c4e3-db2c-e1ab" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="9000-985e-2684-f643" value="-">
+                  <conditions>
+                    <condition field="selections" scope="b3c6-8adb-6655-9f97" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5700-c4e3-db2c-e1ab" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="cdf7-bb42-e0db-f994" name="Solar Auxilia Rapier Platform notes" hidden="false" targetId="61e6-244e-70a6-0044" type="rule"/>
             <infoLink id="aa93-e23b-1417-12f8" name="Mounted" hidden="false" targetId="4357-7618-ea64-6347" type="rule"/>
             <infoLink id="7d84-e27b-c79b-b320" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
             <infoLink id="ac09-290e-232b-3a0d" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="f43e-f6ca-df74-683b" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="2263-9c50-3df6-72c5">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc7c-59ed-5e4c-e27a" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a7e-26d6-0ae2-2f00" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="2263-9c50-3df6-72c5" name="Laser Destroyer" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e36a-20d3-3e35-fd9d" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="c9a2-432d-d540-9fa7" name="Quad Mortar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea14-3587-77db-f6d8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5700-c4e3-db2c-e1ab" name="Quad Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72d0-99c0-1f0d-47c2" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -3399,10 +3733,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Laser Destroyer OR&lt;BR&gt;&lt;BR&gt;Quad Mortar OR&lt;BR&gt;&lt;BR&gt;Quad Heavy Bolter</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP6+/AT4+&lt;BR&gt;&lt;BR&gt;AP5+/AT6+&lt;BR&gt;&lt;BR&gt;2 x AP4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;Indirect Fire, Disrupt&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59"></characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30"></characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643"></characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Mounted&lt;BR&gt;See unit notes</characteristic>
       </characteristics>
     </profile>
@@ -3523,10 +3857,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+ / 4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+ / 6+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Volkite Chargers OR&lt;BR&gt;&lt;BR&gt;Power Axes</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(15cm)&lt;BR&gt;&lt;BR&gt;(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP5+/AT6+&lt;BR&gt;&lt;BR&gt;(assault weapons) MW</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59"></characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30"></characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643"></characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
       </characteristics>
     </profile>

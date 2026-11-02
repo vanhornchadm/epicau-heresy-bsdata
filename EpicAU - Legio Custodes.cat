@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e58-c014-c5e4-5c80" name="EpicAU - Legio Custodes" revision="6" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e58-c014-c5e4-5c80" name="EpicAU - Legio Custodes" revision="7" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="6d49-ab7e-2c53-847a" name="Legio Custodes" hidden="false">
       <rules>
@@ -894,7 +894,50 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="701b-1fa0-36c3-342a" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="cfa1-98af-0bfa-6734" name="Telemon Heavy Dreadnought" hidden="false" targetId="428c-bef7-fdab-2828" type="profile"/>
+                <infoLink id="cfa1-98af-0bfa-6734" name="Telemon Heavy Dreadnought" hidden="false" targetId="428c-bef7-fdab-2828" type="profile">
+                  <modifiers>
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="2 x Telemon Caestus">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-7163-4ee9-46a8" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="eac3-6a94-cb92-4e59" value="(close combat)">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-7163-4ee9-46a8" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="(assault weapons) MW">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-7163-4ee9-46a8" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="9000-985e-2684-f643" value="EA(+1)">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-7163-4ee9-46a8" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Arachnus Storm Cannon">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778d-f66d-de6b-202b" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="eac3-6a94-cb92-4e59" value="15cm">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778d-f66d-de6b-202b" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="d5dc-a6b1-1fdc-bb30" value="AP4+/AT4+">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778d-f66d-de6b-202b" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="9000-985e-2684-f643" value="MW, TK(1)">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778d-f66d-de6b-202b" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
                 <infoLink id="17dd-ed81-f695-ad43" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="f177-603b-203a-6320" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
                 <infoLink id="f458-af08-1ca5-d25c" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
@@ -903,6 +946,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="7e46-76a9-27ae-954c" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                 <infoLink id="98f8-eaa7-1ff2-263f" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
               </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="8601-4ba8-55c3-1872" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="4cf5-7163-4ee9-46a8">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="370b-680e-b131-8dbd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be0e-0826-f2d0-6e2a" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="4cf5-7163-4ee9-46a8" name="2 x Telemon Caestus" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff0-7e8e-638e-848e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="778d-f66d-de6b-202b" name="Arachnus Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82db-98ef-2326-7f4e" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
                 <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
@@ -1476,10 +1545,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">2 x Telemon Caestus OR&lt;BR&gt;&lt;BR&gt;Arachnus Storm Cannon</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(close combat) OR&lt;BR&gt;&lt;BR&gt;15cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(assault weapons) MW&lt;BR&gt;&lt;BR&gt;AP4+/AT4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">EA(+1) OR&lt;BR&gt;&lt;BR&gt;MW, TK(1)</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59"></characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30"></characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643"></characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour,&lt;BR&gt;Invulnerable Save(6+),&lt;BR&gt;Walker</characteristic>
       </characteristics>
     </profile>

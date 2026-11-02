@@ -56,6 +56,11 @@ These rules are shown as text only, not enforced:
 - **Profile cells are kept narrow** (25 characters per line). Roster viewers move a column below the table when its text is too wide.
   - **Long cells:** they wrap onto extra lines, and each weapon's lines stay level across the weapon columns.
   - **Notes column:** lists only the short rule names. Longer text goes into a "<unit> notes" rule shown with the unit's rules, and the column says "See unit notes". That text covers weapon-option sentences, transport capacities, Titan movement rules and long critical-hit effects.
+- **Weapon choices are picked on the unit.** Where a reference sheet lists alternative weapons ("X OR Y"), the unit has a pick for each choice, which starts on the first option. Its profile lists the fixed weapons and only the chosen ones, in sheet order, with no "OR".
+  - Some units pick twice: the Contemptor and Leviathan Dreadnoughts' two arm weapons, and the Saturnine Terminators' two weapons. Each pick may take the same weapon. The Contemptor's Havoc Launcher is an optional +5 pts pick.
+  - Where the sheet gives one FF per option (Predator sponsons, Dreadnought, Veletaris, Mechanicum Tarantula and Land Raider, Militia Auxiliary), the choice sets the unit's FF.
+  - The choices are listed in `tools/weapon_options.py`. Rules that every unit in a formation must choose the same weapon (Solar Auxilia Rapiers, Veletaris, Militia Auxiliary) are not enforced.
+  - Titan weapon slots are chosen on the formation, as before.
 - **Orks of Telon Reach is not included.** The Internet Archive never captured the army list page, only its unit reference sheet, so there are no formations to build from.
 - **Sabre Strike Tank** is in the Legion list but missing from the wiki reference sheet. Its stats come from Departmento Munitorum.
 - **Solar Auxilia Tank Hunter Squadron** (3 Valdor Tank Hunters, 250 pts, support) comes from Departmento Munitorum. The Valdor is on the wiki reference sheet, but the archived army list has no formation for it.
@@ -91,7 +96,7 @@ These rules are shown as text only, not enforced:
 - **Legio Custodes strategy rating:** the wiki says "1+", which looks like a typo for the initiative value. The data uses 5, matching Departmento Munitorum. The wiki also lists no Custodes allies.
 - **Knight Household Allies/LoW allowance:** the wiki doesn't state one. The data uses 1/3, matching Departmento Munitorum.
 - Where the wiki writes "X OR Y" units, they are modelled as an exclusive choice. "In any combination" or "of any configuration" lets you mix them.
-- Some reference-sheet rows have weapon columns that don't line up, including Land Speeder, Tactical Support Squad and some Knights and Militia units. Those units get a single combined weapon profile with a note.
+- Some reference-sheet rows have weapon columns that don't line up, including Tactical Support Squad and some Knights and Militia units. Those units get a single combined weapon profile with a note. The Land Speeder's and Javelin's combined rows are split into their weapon choices.
 - **Rules text is summarised in my own words**, not copied. Use the wiki and the NetEA rulebook for full wording. Flavour text is omitted.
 
 ## Validation status

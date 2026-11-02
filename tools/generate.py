@@ -16,6 +16,7 @@ sys.path.insert(0, HERE)
 from rules import RULES, ALIASES  # noqa: E402
 from spec_legion import legion_catalogue  # noqa: E402
 from spec_others import OTHER_ARMIES, TITAN_WEAPON_SLOTS  # noqa: E402
+from weapon_options import WEAPON_OPTIONS, REPLACED_ROWS  # noqa: E402
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(HERE)
 BS_VERSION = '2.03'
@@ -35,7 +36,8 @@ PTS = 'points'
 PT_UNIT, PT_WAR_ENGINE, PT_WEAPON = gid('pt', 'Unit'), gid('pt', 'War Engine'), gid('pt', 'Weapon')
 # A unit's weapons sit in its own profile, one line per weapon, as in the Epic Armageddon BSData, so each unit's row
 # lists its guns. War engines get their damage capacity, void shields and critical hit as columns of their own.
-UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Weapons', 'Range', 'Firepower', 'Weapon Notes', 'Notes']
+WEAPON_COLUMNS = ['Weapons', 'Range', 'Firepower', 'Weapon Notes']
+UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF'] + WEAPON_COLUMNS + ['Notes']
 WAR_ENGINE_CHARS = UNIT_CHARS + ['Damage Capacity', 'Void Shields', 'Critical Hit']
 WEAPON_CHARS = ['Range', 'Firepower', 'Notes']  # chosen Titan weapons
 LINE_BREAK = '<BR><BR>'  # separates weapon lines, as in the Epic Armageddon BSData
@@ -405,6 +407,54 @@ def weapon_columns(rows):
     return [LINE_BREAK.join(col) for col in cols]
 
 
+OR_END = re.compile(r',?\s*\bOR$')
+
+
+def weapon_row(w, option=False):
+    """[name, range, firepower, notes] for a sheet weapon row; an option's row drops the "OR" the sheet ends each
+    of its cells with."""
+    fp, traits = split_firepower(w['firepower'])
+    cells = [w['name'] or 'Weapons', w['range'], fp, traits]
+    return [(OR_END.sub('', c) if option else c) or '-' for c in cells]
+
+
+def shown_weapons(unit):
+    """The sheet's weapon rows worth a line in the profile ('AND' rows only join two lists of options)."""
+    return [w for w in unit['weapons'] if (w['name'] or w['firepower']) and w['name'] not in ('-', 'AND')]
+
+
+USED_OPTIONS = set()  # units in WEAPON_OPTIONS that were built
+
+
+def unit_options(unit):
+    """(weapon choice groups with each option's rows resolved, sheet rows the choices take out of the profile)."""
+    groups = WEAPON_OPTIONS.get(unit['name'], [])
+    if groups:
+        USED_OPTIONS.add(unit['name'])
+    sheet = {OR_END.sub('', w['name']): w for w in unit['weapons']}
+    order = [w['name'] for w in unit['weapons']]
+    replaced = REPLACED_ROWS.get(unit['name'], [])
+    used = set(replaced)
+    resolved = []
+    for g in groups:
+        options, at = [], []  # at: where the group's rows sit on the sheet
+        for o in g['options']:
+            rows = []
+            for r in o['rows']:
+                if isinstance(r, dict):
+                    at += [order.index(n) for n in replaced]
+                else:
+                    if r not in sheet:
+                        raise ValueError(f'{unit["name"]}: weapon option {r!r} is not a row on its sheet')
+                    used.add(sheet[r]['name'])
+                    at.append(order.index(sheet[r]['name']))
+                    r = sheet[r]
+                rows.append(weapon_row(r, option=True))
+            options.append(dict(o, rows=rows))
+        resolved.append(dict(g, options=options, at=min(at, default=len(order))))
+    return resolved, used
+
+
 def split_notes(notes):
     """Split unit notes into (short rule names for the Notes column, longer text for the unit-notes rule)."""
     keywords, details = [], []
@@ -445,14 +495,11 @@ class Catalogue:
         """Return (profile ids, rule names, categories) for a unit record, registering its shared profile."""
         uid = gid('prof', self.scope, unit['name'], 'unit')
         if uid not in self.profiles:
-            rows, combined = [], False
-            for w in unit['weapons']:
-                if not (w['name'] or w['firepower']) or w['name'] in ('-',):
-                    continue
-                fp, traits = split_firepower(w['firepower'])
-                combined |= bool(w.get('misaligned'))
-                rows.append([w['name'] or 'Weapons', w['range'] or '-', fp or '-', traits or '-'])
-            weapons = weapon_columns(rows) if rows else ['-'] * 4
+            groups, chosen = unit_options(unit)
+            fixed = [w for w in shown_weapons(unit) if w['name'] not in chosen]  # chosen weapons are added on the unit
+            combined = any(w.get('misaligned') for w in fixed)
+            rows = [weapon_row(w) for w in fixed]
+            weapons = weapon_columns(rows) if rows else [None] * 4 if groups else ['-'] * 4
             stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff']]
             display = star(unit['name'], unit['name'] in FAN_UNITS)
             if is_war_engine(unit):
@@ -527,9 +574,10 @@ def war_engine_fields(notes):
 
 
 def profile(pid, name, type_id, type_name, chars, vals):
+    """A profile; an empty value shows '-', and None leaves the cell blank for weapon choices to fill."""
     return X('profile', {'id': pid, 'name': name, 'hidden': 'false', 'typeId': type_id, 'typeName': type_name}, [
         X('characteristics', children=[X('characteristic', {'name': c, 'typeId': gid('ct', type_name, c)},
-                                         text=v or '-') for c, v in zip(chars, vals)])])
+                                         text='' if v is None else v or '-') for c, v in zip(chars, vals)])])
 
 
 # ------------------------------------------------------------------ list -> XML
@@ -641,12 +689,54 @@ class Builder:
             links.append(X('infoLink', {'id': gid('il', eid, rid), 'name': rname, 'hidden': 'false', 'targetId': rid,
                                         'type': 'rule'}))
         links += [info_rule(eid, r) for r in rules]
+        choices, groups = self.weapon_choices(eid, unit)
+        if choices:
+            links[0].add(X('modifiers', children=choices))
         return ordered('selectionEntry', {'id': eid, 'name': star(name or part['label'] or unit['name'],
                                                                    unit['name'] in FAN_UNITS),
                                           'hidden': str(hidden).lower(), 'collective': 'false', 'import': 'true',
                                           'type': 'model'},
                        modifiers=list(mods), constraints=cons, infoLinks=links,
-                       categoryLinks=[cat_link(eid, c) for c in cats], costs=self.unit_costs(unit, part['each']))
+                       categoryLinks=[cat_link(eid, c) for c in cats], selectionEntryGroups=groups,
+                       costs=self.unit_costs(unit, part['each']))
+
+    def weapon_choices(self, eid, unit):
+        """(modifiers for the unit's profile link, choice groups) for a unit's weapon options: each chosen option
+        adds its weapons' lines to the profile's weapon columns, before or after the fixed weapons as on the sheet,
+        and may set its FF."""
+        groups, chosen = unit_options(unit)
+        type_name = 'War Engine' if is_war_engine(unit) else 'Unit'
+        fixed = [unit['weapons'].index(w) for w in shown_weapons(unit) if w['name'] not in chosen]
+        blank = not fixed  # the first choice starts the cells
+        before, after, grps = [], [], []
+        for i, g in enumerate(groups):
+            assert not (blank and i == 0 and g['optional']), f'{unit["name"]}: first weapon choice must be required'
+            first = not blank and g['at'] < fixed[0]
+            mods = []
+            before.append(mods) if first else after.append(mods)
+            g_id = gid('seg', eid, 'weapons', i)
+            kids = []
+            for j, o in enumerate(g['options']):
+                oid = gid('se', eid, 'weapons', i, j)
+                kids.append(ordered('selectionEntry', {'id': oid, 'name': o['label'], 'hidden': 'false',
+                                                       'collective': 'false', 'import': 'true', 'type': 'upgrade'},
+                                    constraints=[constraint(gid('con', oid, 'max'), 'max', 1)], costs=cost(o['cost'])))
+                taken = [X('conditions', children=[condition('atLeast', oid, 1, eid, child=True)])]
+                for c, v in zip(WEAPON_COLUMNS, weapon_columns(o['rows']) if o['rows'] else []):
+                    v = v + LINE_BREAK if first else v if blank and i == 0 else LINE_BREAK + v
+                    mods.append(X('modifier', {'type': 'prepend' if first else 'append',
+                                               'field': gid('ct', type_name, c), 'value': v}, taken))
+                if o['ff']:
+                    mods.append(X('modifier', {'type': 'set', 'field': gid('ct', type_name, 'FF'), 'value': o['ff']},
+                                  taken))
+            cons = [constraint(gid('con', g_id, 'max'), 'max', 1)]
+            attrs = {'id': g_id, 'name': g['label'], 'hidden': 'false', 'collective': 'false', 'import': 'true'}
+            if not g['optional']:
+                cons.insert(0, constraint(gid('con', g_id, 'min'), 'min', 1))
+                attrs['defaultSelectionEntryId'] = kids[0].attrs['id']
+            grps.append(ordered('selectionEntryGroup', attrs, constraints=cons, selectionEntries=kids))
+        # prepends go on in reverse, so the groups before the fixed weapons keep their sheet order
+        return [m for mods in before[::-1] + after for m in mods], grps
 
     def unit_costs(self, unit, each):
         """Points plus the transport space the unit takes under each scheme this list uses."""
@@ -1322,8 +1412,11 @@ def main():
             missing[a['name']] = sorted(set(m))
     for k, v in missing.items():
         print(f'MISSING units in {k}: {v}')
+    unused = sorted(set(WEAPON_OPTIONS) - USED_OPTIONS)
+    if unused:
+        print(f'UNUSED weapon options (no such unit): {unused}')
     print(f'Wrote {len(armies)} catalogues and 1 game system to {OUT}')
-    return 1 if missing else 0
+    return 1 if missing or unused else 0
 
 
 if __name__ == '__main__':

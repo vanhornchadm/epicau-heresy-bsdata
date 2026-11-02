@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="5" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="6" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -22,6 +22,7 @@ Choose the Legion in the Legion entry; its allies and special formations are lis
         <infoLink id="68dd-b61f-6d37-2cee" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="8b0f-ae7d-0caa-36e1" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
         <categoryLink id="bffa-5d67-311f-fff4" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
         <categoryLink id="f119-3c88-230f-84d4" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="false">
           <modifiers>
@@ -51,7 +52,11 @@ Choose the Legion in the Legion entry; its allies and special formations are lis
             <constraint field="points" scope="roster" value="33.33" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="0584-813c-53a8-e9fc" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="8b0f-ae7d-0caa-36e1" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
+        <categoryLink id="d1d9-1551-8408-64fe" name="Not available for the chosen Legion" hidden="false" targetId="3832-ec3b-e9b9-5b1f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a0e-b3ad-30f7-5101" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="c0f7-9b93-3823-9b5b" name="Legion Astartes (Allied Contingent)" hidden="false">
@@ -76,6 +81,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <infoLink id="f157-e68f-015a-04f5" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="7f4e-9748-f22f-e475" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
         <categoryLink id="507a-726d-d15a-c8a6" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
         <categoryLink id="63d8-0dba-040e-0f3b" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="false">
           <modifiers>
@@ -95,7 +101,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6293-c98e-4479-9797" type="max"/>
           </constraints>
         </categoryLink>
-        <categoryLink id="7f4e-9748-f22f-e475" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
+        <categoryLink id="d1d1-a46f-1a6c-33fc" name="Not available for the chosen Legion" hidden="false" targetId="3832-ec3b-e9b9-5b1f" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a4d-a3ca-5db2-778e" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
@@ -1066,7 +1076,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="e355-725e-c35b-b596" value="1.0">
+                    <modifier type="set" field="e355-725e-c35b-b596" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -1131,7 +1141,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="fdcb-cc7b-f52e-f09f" value="0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -1144,9 +1154,6 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdcb-cc7b-f52e-f09f" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="c23f-ecd2-3606-405d" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -1728,7 +1735,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="c522-e7e3-f0c4-053e" value="1.0">
+                    <modifier type="set" field="c522-e7e3-f0c4-053e" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -1776,15 +1783,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="7bb4-d8c4-4606-74fb" value="0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bb4-d8c4-4606-74fb" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="bd8e-0666-d6ab-9d61" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -1840,7 +1844,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="afc1-5684-36ea-626e" value="1.0">
+                    <modifier type="set" field="afc1-5684-36ea-626e" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -2457,7 +2461,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="fa9a-ce2f-e578-a5bd" value="1.0">
+                    <modifier type="set" field="fa9a-ce2f-e578-a5bd" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -2510,7 +2514,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="85ca-ca9f-bbe2-5110" value="0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
@@ -2518,7 +2522,6 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a8de-c792-0df6-612c" type="max"/>
-        <constraint field="selections" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85ca-ca9f-bbe2-5110" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="7b93-6b1a-0ce8-9522" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -2691,7 +2694,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="de66-bec8-a96a-e3a3" value="1.0">
+                <modifier type="set" field="de66-bec8-a96a-e3a3" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -2796,7 +2799,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="d366-f9a9-329f-64ef" value="1.0">
+                <modifier type="set" field="d366-f9a9-329f-64ef" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -2881,7 +2884,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="31e1-0f41-034a-afa8" value="1.0">
+                <modifier type="set" field="31e1-0f41-034a-afa8" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -2973,7 +2976,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="bfc7-0929-9645-1911" value="1.0">
+                <modifier type="set" field="bfc7-0929-9645-1911" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -3021,7 +3024,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="ad65-296f-ab78-c630" value="0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditionGroups>
             <conditionGroup type="or">
               <conditions>
@@ -3043,7 +3046,6 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2867-2fd5-3e28-1a81" type="max"/>
-        <constraint field="selections" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad65-296f-ab78-c630" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="d187-711b-e85a-b767" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -3100,7 +3102,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="0942-8d96-0ea0-a29f" value="1.0">
+                <modifier type="set" field="0942-8d96-0ea0-a29f" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -3129,15 +3131,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="6544-f59d-eb8d-d3cb" value="0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6544-f59d-eb8d-d3cb" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="6e2a-13ad-efc4-2bb0" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -3281,7 +3280,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="7412-c210-3bec-166d" value="1.0">
+                <modifier type="set" field="7412-c210-3bec-166d" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -3310,15 +3309,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="f22b-b905-13eb-8e22" value="0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f22b-b905-13eb-8e22" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ccfa-4163-c061-ec93" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -3370,7 +3366,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="95cb-9756-5264-1cbe" value="1.0">
+                <modifier type="set" field="95cb-9756-5264-1cbe" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -3448,7 +3444,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="323d-b9d1-7c66-6829" value="1.0">
+                <modifier type="set" field="323d-b9d1-7c66-6829" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -3694,7 +3690,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="763e-374d-012a-f79c" value="1.0">
+                <modifier type="set" field="763e-374d-012a-f79c" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -3814,7 +3810,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="078b-6530-3d34-91a2" value="1.0">
+                <modifier type="set" field="078b-6530-3d34-91a2" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -4052,7 +4048,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="d6bb-baad-14de-5708" value="1.0">
+                <modifier type="set" field="d6bb-baad-14de-5708" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -4269,7 +4265,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="6c4f-a38c-8fc3-58b9" value="1.0">
+                <modifier type="set" field="6c4f-a38c-8fc3-58b9" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -4382,7 +4378,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="58d9-8bfe-a3b4-4544" value="1.0">
+                <modifier type="set" field="58d9-8bfe-a3b4-4544" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -4469,7 +4465,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="2952-a10c-4009-4541" value="1.0">
+                <modifier type="set" field="2952-a10c-4009-4541" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -4544,7 +4540,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="dbff-3628-b839-5f80" value="1.0">
+                <modifier type="set" field="dbff-3628-b839-5f80" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -4573,15 +4569,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="e22d-7b3e-c105-0c81" value="0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="1000.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e22d-7b3e-c105-0c81" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="c71c-16ca-2142-8c7e" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -4904,7 +4897,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="3246-faa5-b1a3-f019" value="1.0">
+                <modifier type="set" field="3246-faa5-b1a3-f019" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -5219,15 +5212,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="71f7-4a0a-dec2-d968" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71f7-4a0a-dec2-d968" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="f2ee-bfed-e364-a5fa" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -5446,7 +5436,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="ed03-a964-dcb5-b53c" value="1.0">
+                    <modifier type="set" field="ed03-a964-dcb5-b53c" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -5489,15 +5479,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="70f3-8798-5a15-d7bc" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70f3-8798-5a15-d7bc" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="53e5-4862-4580-a5bd" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -5626,7 +5613,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="219e-2730-7c80-9701" value="1.0">
+                    <modifier type="set" field="219e-2730-7c80-9701" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -5678,18 +5665,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="cdf8-c55d-8879-2a94" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -5697,7 +5684,6 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9b6d-b6aa-680f-bf75" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf8-c55d-8879-2a94" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="de03-a142-8e4a-f771" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -5754,7 +5740,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="0bb0-a145-a050-e09e" value="1.0">
+                <modifier type="set" field="0bb0-a145-a050-e09e" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -5788,15 +5774,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="5821-a884-8250-b296" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="53a7-c802-4dad-703c" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5821-a884-8250-b296" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="edaf-c6b3-9f2e-8794" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -5862,20 +5847,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="5715-c8db-cde3-3041" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5715-c8db-cde3-3041" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="5c1a-265f-3e4b-5169" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
         <categoryLink id="c2e6-fc67-f336-3c0d" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
@@ -5982,7 +5964,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="fa09-0cc8-baa5-dad4" value="1.0">
+                <modifier type="set" field="fa09-0cc8-baa5-dad4" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -6006,15 +5988,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="1654-1273-4260-49dc" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c12-0ae4-5955-1a0c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e2f9-0156-66fa-b98e" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1654-1273-4260-49dc" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ce7f-045f-40d1-5889" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -6631,15 +6612,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="0187-b046-9542-fc93" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9806-d95a-ba33-48c5" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0187-b046-9542-fc93" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="0e28-58b1-aa33-6cab" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -6698,7 +6678,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="9c8d-f4b5-891a-0a92" value="1.0">
+                <modifier type="set" field="9c8d-f4b5-891a-0a92" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -6727,15 +6707,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="5457-5a46-488b-c6c7" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5457-5a46-488b-c6c7" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="d9aa-4e44-f658-04c8" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -6875,7 +6852,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="9f88-f8d7-46fd-9a18" value="1.0">
+                <modifier type="set" field="9f88-f8d7-46fd-9a18" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -6904,15 +6881,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="43a8-7beb-539f-df93" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43a8-7beb-539f-df93" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="a684-5124-0ca4-5aaf" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -6950,15 +6924,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="dc84-0564-13f3-4bc2" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2960-0f21-d19b-52e1" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cfe6-eed0-e2e3-b78b" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc84-0564-13f3-4bc2" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="e8b7-28be-98f8-a90b" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -7059,15 +7032,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="097e-3d1b-cac3-62e9" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="097e-3d1b-cac3-62e9" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="0a57-f722-6de6-7ff7" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -7193,7 +7163,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="e628-6d88-1f3a-a5fd" value="1.0">
+                    <modifier type="set" field="e628-6d88-1f3a-a5fd" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -7234,15 +7204,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="80ee-c79b-a7fe-8398" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a1f9-fbe8-df2a-b093" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80ee-c79b-a7fe-8398" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="e5d8-57e1-b7ba-7e3e" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -7303,15 +7272,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="3d1f-9d4a-71b1-6073" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77a9-c6f5-a8a7-eec3" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e558-b13c-3f62-1f44" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d1f-9d4a-71b1-6073" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="5580-49ee-c37d-1ae0" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -7925,15 +7893,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="5339-df13-33a4-f996" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3253-62d3-9f07-3588" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5339-df13-33a4-f996" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="58ea-0e84-15e0-e720" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
@@ -8315,7 +8282,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="fcbb-4cab-2db2-0be6" value="1.0">
+                    <modifier type="set" field="fcbb-4cab-2db2-0be6" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -8351,15 +8318,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="7faf-3282-edf7-ddd4" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7faf-3282-edf7-ddd4" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="7d9b-e79a-62c6-63a3" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -8428,15 +8392,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="633a-6ec7-06bd-76a5" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="78be-5a16-a15c-a412" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="633a-6ec7-06bd-76a5" type="max"/>
       </constraints>
       <rules>
         <rule id="5100-6db5-86df-c688" name="Invictarus Suzerain Detachment" hidden="false">
@@ -9027,15 +8990,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="7d9a-6f43-feac-6d9f" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4fc-64a1-61d7-7b4e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="99e3-bdb0-a0ba-8789" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d9a-6f43-feac-6d9f" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="7f72-2743-33c0-bc44" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -9703,15 +9665,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="6192-71a9-2bc2-a3da" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8524-9a83-3584-f9f5" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6192-71a9-2bc2-a3da" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="4ff4-485e-9960-22f7" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -10283,7 +10244,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="4ef3-9bd8-dbf2-7829" value="1.0">
+                <modifier type="set" field="4ef3-9bd8-dbf2-7829" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -10317,15 +10278,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="b69e-342f-816f-e655" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="545d-2634-6861-fda5" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b69e-342f-816f-e655" type="max"/>
       </constraints>
       <rules>
         <rule id="3274-3de6-e17e-971b" name="Templar Brethren Detachment" hidden="false">
@@ -10487,15 +10447,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="7a6e-263a-e614-b155" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ae6b-f32f-6354-3f2c" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a6e-263a-e614-b155" type="max"/>
       </constraints>
       <rules>
         <rule id="4b90-e24b-486d-2e4c" name="Castellum Stronghold" hidden="false">
@@ -10551,15 +10510,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="b7f2-f4f7-4120-3ebf" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a7f1-a7d6-9fc5-6a8e" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7f2-f4f7-4120-3ebf" type="max"/>
       </constraints>
       <rules>
         <rule id="a783-9a13-669e-0b86" name="Primus Redoubt" hidden="false">
@@ -10605,15 +10563,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="9b14-7dad-4c66-f21e" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b14-7dad-4c66-f21e" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="d219-81b9-0182-b9c5" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
         <categoryLink id="e37f-6b4f-5918-b716" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
@@ -10673,7 +10628,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="e2ef-b562-b0b8-3650" value="1.0">
+                <modifier type="set" field="e2ef-b562-b0b8-3650" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -10697,15 +10652,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="ed92-5818-bf71-1803" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2784-14f1-b9c1-f3fd" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ce2b-52b2-1c49-275f" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed92-5818-bf71-1803" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b498-d6ee-0bb9-5060" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -11368,15 +11322,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="0a32-b073-80ca-ff49" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a32-b073-80ca-ff49" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="d30c-1c25-23ec-7cb8" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -11443,15 +11394,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="9c28-ae66-d7cd-523e" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c28-ae66-d7cd-523e" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="b973-a8fb-54b2-b736" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -11514,15 +11462,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="7d09-f69d-5eaf-c7b4" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d09-f69d-5eaf-c7b4" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="9665-d946-ba3e-19f0" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -11585,15 +11530,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="e1d8-a72f-f67b-14e4" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31c9-9941-e55d-7f69" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c9cc-3eb8-1f33-40c2" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1d8-a72f-f67b-14e4" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="0fc8-6b56-c4fe-faaf" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -11699,15 +11643,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="b929-eea8-86d5-008f" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="10ba-7119-93c0-3c8a" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b929-eea8-86d5-008f" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="b2ab-35ac-a960-8f0a" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -11780,7 +11723,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="7019-2e4a-f927-bf68" value="1.0">
+                <modifier type="set" field="7019-2e4a-f927-bf68" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -11804,15 +11747,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="fe3c-aad4-a7b1-e6f8" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c2a-a7e1-c337-16d0" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="891b-038c-90c4-3559" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe3c-aad4-a7b1-e6f8" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ab2c-0e31-8ac6-1bc9" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -12418,15 +12360,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="79da-49fb-70b8-a806" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79da-49fb-70b8-a806" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="1b6f-02bc-6a31-dfcc" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -12620,7 +12559,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="4cfc-8a7e-a523-f413" value="1.0">
+                    <modifier type="set" field="4cfc-8a7e-a523-f413" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -12651,15 +12590,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="be49-fb5e-c449-b148" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be49-fb5e-c449-b148" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="e4ba-d5e5-7800-2918" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -12730,7 +12666,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="d1c4-96da-da89-d9be" value="1.0">
+                <modifier type="set" field="d1c4-96da-da89-d9be" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -12754,15 +12690,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="7b28-721c-5040-779e" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9e36-84e4-0f68-2e3b" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b28-721c-5040-779e" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="358b-3d82-08d9-f7e3" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
@@ -12832,15 +12767,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="71e3-50da-e459-e55a" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ddaf-54e6-e5ea-4b3a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9335-ba87-083d-9f1e" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71e3-50da-e459-e55a" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d8aa-6a1c-3cba-4bf4" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -12949,15 +12883,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="d060-95f2-b22b-ad43" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d060-95f2-b22b-ad43" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ad09-b5fd-d244-3486" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -13361,7 +13292,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="fde8-e1ba-bb71-28d0" value="1.0">
+                    <modifier type="set" field="fde8-e1ba-bb71-28d0" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -13399,15 +13330,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="7119-7fbd-403b-11f0" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7119-7fbd-403b-11f0" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="403d-902e-9aa9-30de" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -13538,15 +13466,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="91ba-3a0a-06b0-6af3" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91ba-3a0a-06b0-6af3" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="72d2-5b4c-5320-1fcf" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -13866,15 +13791,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="e91e-e9d6-3b2b-fb8e" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0ca4-4474-2fc8-7691" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e91e-e9d6-3b2b-fb8e" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="97fc-f818-fb5b-d877" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -14246,15 +14170,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="8e2d-843c-7ce6-a0d3" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7f4a-ff03-d0ce-5cd1" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e2d-843c-7ce6-a0d3" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="01a4-cc0c-e267-085a" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -14325,15 +14248,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="79f0-4bf8-53f5-df23" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3bb9-7da8-b5ba-0510" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79f0-4bf8-53f5-df23" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="b586-0a19-377f-457e" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -14475,7 +14397,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="8e31-ae6e-b445-4790" value="1.0">
+                    <modifier type="set" field="8e31-ae6e-b445-4790" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -14522,13 +14444,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </conditionGroup>
           </conditionGroups>
         </modifier>
-        <modifier type="set" field="9402-45fc-62e2-e4a9" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditionGroups>
-            <conditionGroup type="or">
+            <conditionGroup type="and">
               <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="atLeast"/>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="equalTo"/>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="equalTo"/>
               </conditions>
             </conditionGroup>
           </conditionGroups>
@@ -14536,7 +14458,6 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cd29-dfcf-b6f4-3116" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9402-45fc-62e2-e4a9" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="d8b9-ecd7-327c-3e9e" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -14593,7 +14514,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="1784-f694-cda5-1a8a" value="1.0">
+                <modifier type="set" field="1784-f694-cda5-1a8a" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -14617,15 +14538,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="9f67-0472-2f5e-0f41" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67af-3dc9-dcc5-5a09" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a14a-7843-d349-a4aa" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f67-0472-2f5e-0f41" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="211c-7b56-5a36-b641" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -15301,15 +15221,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="ff2e-8831-b41f-1901" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c65e-a730-aa28-a31d" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff2e-8831-b41f-1901" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="e168-991f-646f-0d15" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
@@ -15449,7 +15368,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="974b-713d-0c0a-5083" value="1.0">
+                <modifier type="set" field="974b-713d-0c0a-5083" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -15483,15 +15402,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="8731-a079-03ee-9e62" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d04f-4a18-8859-2ceb" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8731-a079-03ee-9e62" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="02c5-6c4e-ccca-24c9" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -15561,15 +15479,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="c36d-6db3-00b0-1dc7" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ed81-5eba-378d-f468" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9937-56c6-3c96-c683" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c36d-6db3-00b0-1dc7" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="b281-5999-864b-a5bf" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -15692,15 +15609,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="883e-1501-fcf8-3b58" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf33-e135-0dd0-a85a" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="883e-1501-fcf8-3b58" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="9c13-a65c-b36e-f876" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -15838,7 +15754,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="0878-567e-0b39-a0b6" value="1.0">
+                <modifier type="set" field="0878-567e-0b39-a0b6" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -15872,15 +15788,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="fc6f-3ef8-4cb2-f418" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4cd2-e4fa-140c-cb74" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc6f-3ef8-4cb2-f418" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="0bea-65c2-8f16-b982" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -16515,15 +16430,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="5cac-3fc8-94b5-ca08" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="49c2-8494-d42b-bed1" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5cac-3fc8-94b5-ca08" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="19fd-c090-9047-3599" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -16606,7 +16520,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="817d-2270-6b9b-0591" value="1.0">
+                    <modifier type="set" field="817d-2270-6b9b-0591" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -16637,15 +16551,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="ae84-3f60-de7f-c012" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab43-04ff-c709-418a" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="83e9-412d-a9ee-35e5" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae84-3f60-de7f-c012" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3d33-ef16-a8d0-9218" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -16759,15 +16672,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="c8d7-53de-3ced-cf62" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8d7-53de-3ced-cf62" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="8aa8-3a2d-981b-1136" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -17151,7 +17061,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="f7ae-e514-9805-11df" value="1.0">
+                    <modifier type="set" field="f7ae-e514-9805-11df" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -17194,15 +17104,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="f2ed-f7c8-e5c6-4137" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ed-f7c8-e5c6-4137" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="ca4a-9a5e-8ccd-0538" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -17337,7 +17244,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="b04e-4fb6-411b-e636" value="1.0">
+                <modifier type="set" field="b04e-4fb6-411b-e636" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -17371,15 +17278,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="6478-32a3-035d-7009" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6478-32a3-035d-7009" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="98e4-3131-1d8f-2e83" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -17981,7 +17885,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="293e-ef3e-a1ed-7fb1" value="1.0">
+                    <modifier type="set" field="293e-ef3e-a1ed-7fb1" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -18034,15 +17938,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="0d4d-ff55-5183-500d" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="15b4-c4d4-eacb-0f02" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d4d-ff55-5183-500d" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="315b-3709-b159-76fb" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -18159,15 +18062,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="87d3-432f-eef5-b405" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d794-ef50-473d-09f7" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87d3-432f-eef5-b405" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="32ad-1986-d7f6-c5b7" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -18609,15 +18511,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="e2d2-d4ed-0b4c-5e17" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="929b-f278-b553-b154" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d2-d4ed-0b4c-5e17" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="3038-1478-c33e-5066" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
         <categoryLink id="23e8-b59e-5fa1-f520" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
@@ -18724,7 +18623,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="7d62-c5f8-41a7-15db" value="1.0">
+                <modifier type="set" field="7d62-c5f8-41a7-15db" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -18753,15 +18652,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="b0d5-82a2-e004-a0eb" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0d5-82a2-e004-a0eb" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="a175-36fc-dfb8-3126" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -18897,7 +18793,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="b3ef-0321-b385-2601" value="1.0">
+                    <modifier type="set" field="b3ef-0321-b385-2601" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -18933,15 +18829,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="51ce-6ff5-8abe-e6e7" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2bc5-aa5c-9291-8916" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51ce-6ff5-8abe-e6e7" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="2561-3208-90a4-38b9" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -19027,7 +18922,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="7e38-c51d-bb2c-2e6e" value="1.0">
+                    <modifier type="set" field="7e38-c51d-bb2c-2e6e" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -19058,15 +18953,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="d505-1bfc-f8aa-12c8" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1db9-27ae-2ec8-2216" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa70-a8e0-b0a0-e189" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d505-1bfc-f8aa-12c8" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="febf-151d-f421-ca04" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -19681,15 +19575,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="6753-4fc5-e950-9cee" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b4ba-c6d8-fbf8-10f7" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6753-4fc5-e950-9cee" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="405a-f099-77e9-e2c0" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -19829,7 +19722,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="fab0-637d-c3cb-b70e" value="1.0">
+                <modifier type="set" field="fab0-637d-c3cb-b70e" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -19863,15 +19756,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="ed46-e4f5-a680-6576" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7ba7-459a-66c2-2057" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed46-e4f5-a680-6576" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="9632-40bf-5405-dd8c" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -19952,7 +19844,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="5504-2b5f-54c1-db35" value="1.0">
+                    <modifier type="set" field="5504-2b5f-54c1-db35" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -19995,15 +19887,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="9e5e-dc6b-33f5-0e01" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e5e-dc6b-33f5-0e01" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="eb38-c5d8-cff2-74ff" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -20161,7 +20050,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="a68e-e881-65e9-01f1" value="1.0">
+                <modifier type="set" field="a68e-e881-65e9-01f1" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -20185,15 +20074,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="19a5-ac1b-0e34-cdf1" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e523-7626-c881-2fb9" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f6d6-9fee-948d-5ee9" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19a5-ac1b-0e34-cdf1" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="a6a7-aae9-df5c-47b4" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -20863,15 +20751,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="3ee0-1cdd-d290-5970" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ecf4-e693-de2a-9669" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ee0-1cdd-d290-5970" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="1c11-30b8-54f2-8dda" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
@@ -21017,7 +20904,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="4a39-f0ed-54d3-c335" value="1.0">
+                    <modifier type="set" field="4a39-f0ed-54d3-c335" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -21065,15 +20952,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="f5a0-3b99-6e76-d920" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d63d-a8f5-8a45-1906" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a0-3b99-6e76-d920" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="b3fb-868a-3ddf-fa3a" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
@@ -21157,7 +21043,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="837f-124b-2495-a2a8" value="1.0">
+                    <modifier type="set" field="837f-124b-2495-a2a8" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -21195,15 +21081,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="2be8-f493-a788-c134" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="56f6-26b4-2d57-b99e" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="537e-b913-5026-e732" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be8-f493-a788-c134" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="ab04-cbbf-167a-bc8b" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -21813,15 +21698,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="217f-0414-8bf1-d7b7" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="217f-0414-8bf1-d7b7" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="631a-63e6-aaf0-7a86" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -21961,7 +21843,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="db12-d1a6-8258-7440" value="1.0">
+                    <modifier type="set" field="db12-d1a6-8258-7440" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -22004,15 +21886,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="bc14-c05f-b73a-6d8f" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc14-c05f-b73a-6d8f" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="71ee-3bac-cdb9-5d0c" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -22096,7 +21975,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="bba9-f67c-89cd-2b8e" value="1.0">
+                    <modifier type="set" field="bba9-f67c-89cd-2b8e" value="1">
                       <conditions>
                         <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                       </conditions>
@@ -22127,15 +22006,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="8e53-9ce7-584b-0df4" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="299e-504d-5f1a-1ec6" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e041-e363-7f44-a7c5" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e53-9ce7-584b-0df4" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="d678-b642-696c-d72b" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>
@@ -22803,15 +22681,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="125f-a326-41ba-dc4a" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125f-a326-41ba-dc4a" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="6a51-09d3-af03-9921" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -22936,15 +22811,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="98d1-a384-2506-b5a6" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98d1-a384-2506-b5a6" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="b292-3ccc-1ded-a237" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -23075,15 +22947,12 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="2984-3027-78ed-11ac" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2984-3027-78ed-11ac" type="max"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="282f-301c-451b-c982" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -23164,7 +23033,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="set" field="b25e-e1c4-7b69-1ba8" value="1.0">
+                <modifier type="set" field="b25e-e1c4-7b69-1ba8" value="1">
                   <conditions>
                     <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
                   </conditions>
@@ -23188,15 +23057,14 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
           </conditions>
         </modifier>
-        <modifier type="set" field="321c-bfbe-038c-b8f3" value="1000.0">
+        <modifier type="add" field="category" value="3832-ec3b-e9b9-5b1f">
           <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="atLeast"/>
+            <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="646d-df90-618f-e97d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="63a5-3efe-ebe3-a726" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="321c-bfbe-038c-b8f3" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="33e2-f3e0-aeb8-6334" name="Demi-God" hidden="false" targetId="a32b-c2cb-bc57-6904" type="rule"/>

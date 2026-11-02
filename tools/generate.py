@@ -37,14 +37,14 @@ UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Notes']
 WEAPON_CHARS = ['Range', 'Firepower', 'Notes']
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
-        'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit']
+        'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit',
+        'Not available for the chosen Legion']
 HIDDEN_CATS = {'Tactical Transport Space', 'Upgraded Unit'}  # internal bookkeeping categories
 CAT = {c: gid('cat', c) for c in CATS}
 SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': 'Lord of War',
             'horde': 'Daemonic Horde', 'greater': 'Greater Daemon Horde', 'followers': 'Followers of Chaos',
             'special': 'Special Selection'}
 RULE_ID = {name: gid('rule', name) for name in RULES}
-ANY = 1000  # constraint value standing in for "no limit" where a limit is switched on and off
 
 # Unit not present on the wiki reference sheet (stats from Departmento Munitorum).
 EXTRA_UNITS = {
@@ -503,7 +503,7 @@ class Builder:
         """An entryLink to the shared upgrade, or an inline copy for formation-bound upgrades."""
         el = self.upgrade_link_el(owner + (f'/{key}' if key else ''), name, u, key)
         if show_for or hide_for:
-            self.gate(el, show_for, hide_for, gid('con', el.attrs['id'], 'max'), 1)
+            self.gate(el, show_for, hide_for, gid('con', el.attrs['id'], 'max'))
         return el
 
     def upgrade_link_el(self, owner, name, u, key):
@@ -620,37 +620,46 @@ class Builder:
                      selectionEntries=ses, selectionEntryGroups=grps + [g for g in (tw, up) if g],
                      entryLinks=extra, costs=cost(f['cost']))
         if f.get('show_for') or f.get('hide_for'):
-            cid = gid('con', fid, 'legion')
-            el.list_child('constraints').add(constraint(cid, 'max', ANY))
-            self.gate(el, f.get('show_for'), f.get('hide_for'), cid, ANY)
+            self.gate(el, f.get('show_for'), f.get('hide_for'))
         return el
 
     # -- Legion choice
     def legion_option_id(self, legion):
         return gid('legion', self.cat_id, legion or 'None')
 
-    def legion_conditions(self, legions):
-        conds = [condition('atLeast', self.legion_option_id(l), 1, 'force', child=True) for l in legions]
+    def legion_conditions(self, legions, chosen=True):
+        """Conditions true when any of `legions` is chosen (or, with chosen=False, when none of them is)."""
+        conds = [condition('atLeast' if chosen else 'equalTo', self.legion_option_id(l), 1 if chosen else 0, 'force',
+                           child=True) for l in legions]
         if len(conds) == 1:
             return X('conditions', children=conds)
-        return X('conditionGroups', children=[X('conditionGroup', {'type': 'or'}, [X('conditions', children=conds)])])
+        return X('conditionGroups', children=[X('conditionGroup', {'type': 'or' if chosen else 'and'},
+                                                [X('conditions', children=conds)])])
 
-    def gate(self, el, show_for, hide_for, cmax, allowed):
+    def gate(self, el, show_for, hide_for, cmax=None):
         """Show `el` only for the Legions in show_for, or hide it for those in hide_for.
 
-        Hiding stops new selections; cmax (a max constraint on el) is also dropped to 0 so a selection left over
-        from another Legion choice is flagged. allowed is cmax's value while el is available."""
+        Hiding stops new selections. A selection left over from another Legion choice is flagged by dropping
+        cmax (el's max constraint, for upgrades) to 0, or for formations, which have no limit to lower, by adding
+        the 'Not available for the chosen Legion' category, which the force allows none of."""
         mods = el.list_child('modifiers', first=True)
         if show_for:
             el.attrs['hidden'] = 'true'
-            next(c for c in el.iter_tag('constraint') if c.attrs['id'] == cmax).attrs['value'] = '0'
-            for field, value in (('hidden', 'false'), (cmax, fmt(allowed))):
-                mods.add(X('modifier', {'type': 'set', 'field': field, 'value': value},
-                           [self.legion_conditions(show_for)]))
+            mods.add(X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'false'},
+                       [self.legion_conditions(show_for)]))
+            off = self.legion_conditions(show_for, chosen=False)
+            if cmax:
+                next(c for c in el.iter_tag('constraint') if c.attrs['id'] == cmax).attrs['value'] = '0'
+                mods.add(X('modifier', {'type': 'set', 'field': cmax, 'value': '1'}, [self.legion_conditions(show_for)]))
         if hide_for:
-            for field, value in (('hidden', 'true'), (cmax, '0')):
-                mods.add(X('modifier', {'type': 'set', 'field': field, 'value': value},
-                           [self.legion_conditions(hide_for)]))
+            mods.add(X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'true'},
+                       [self.legion_conditions(hide_for)]))
+            off = self.legion_conditions(hide_for)
+            if cmax:
+                mods.add(X('modifier', {'type': 'set', 'field': cmax, 'value': '0'}, [off]))
+        if not cmax:
+            mods.add(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT['Not available for the chosen Legion']},
+                       [off]))
 
     def legion_entry(self):
         """The required Legion choice: 'None' keeps the core list; a Legion adds and replaces formations."""
@@ -746,8 +755,14 @@ class Builder:
                              constraints=sc))
         links += extra
         if a.get('legions'):
-            links.append(X('categoryLink', {'id': gid('cl', fid, 'Configuration'), 'name': 'Configuration',
-                                            'hidden': 'false', 'targetId': CAT['Configuration'], 'primary': 'false'}))
+            # BattleScribe lists categories in this order; the Legion choice goes first.
+            links.insert(0, X('categoryLink', {'id': gid('cl', fid, 'Configuration'), 'name': 'Configuration',
+                                               'hidden': 'false', 'targetId': CAT['Configuration'], 'primary': 'false'}))
+            na = gid('cl', fid, 'Not available for the chosen Legion')
+            links.append(ordered('categoryLink', {'id': na, 'name': 'Not available for the chosen Legion',
+                                                  'hidden': 'false', 'targetId': CAT['Not available for the chosen Legion'],
+                                                  'primary': 'false'},
+                                 constraints=[constraint(gid('con', na, 'max'), 'max', 0)]))
         desc = self.army_summary(allied)
         return ordered('forceEntry', {'id': fid, 'name': name, 'hidden': 'false'},
                        rules=[rule_el(gid('r', fid), 'Army List', desc)],

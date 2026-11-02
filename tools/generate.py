@@ -48,7 +48,8 @@ RULE_ID = {name: gid('rule', name) for name in RULES}
 
 # Units not present on the wiki reference sheet: the Sabre from Departmento Munitorum, the Kratos from fan rules
 # posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09), and
-# the Warbringer and Warmaster adapted from the Epic-UK Adeptus Titanicus codex (version 080925).
+# the Warbringer and Warmaster adapted from the Epic-UK Adeptus Titanicus codex (version 080925), and the Sicaran
+# Punisher and Arcus: the Sicaran Battle Tank's hull with main guns derived from existing EpicAU weapons.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -74,7 +75,19 @@ EXTRA_UNITS = {
                      'firepower': 'AT5+'}],
         'notes': 'DC2, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed. Each Kratos takes either '
                  'the Kratos Battlecannon or the Melta Cannon, and heavy bolters or lascannons on both the hull and '
-                 'the sponsons. (Fan rules, not on the EpicAU wiki: Dakka Dakka proposal, November 2024.)'}],
+                 'the sponsons. (Fan rules, not on the EpicAU wiki: Dakka Dakka proposal, November 2024.)'}, {
+        'name': 'Sicaran Punisher', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '3+',
+        'weapons': [{'name': 'Punisher Rotary Cannon', 'range': '30cm', 'firepower': '3 x AP3+/AT6+'},
+                    {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
+        'notes': 'Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with a Punisher Rotary '
+                 'Cannon matching the Knight Avenger Gatling Cannon against infantry, as in Legions Imperialis, and one '
+                 'step weaker against armour.)'}, {
+        'name': 'Sicaran Arcus', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '3+',
+        'weapons': [{'name': 'Arcus Missile Launcher', 'range': '45cm', 'firepower': '2 x AT4+/AA5+'},
+                    {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
+        'notes': 'Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with an Arcus Missile '
+                 'Launcher built from the Whirlwind Scorpius launcher and the Hellstrike Missile Pod, firing direct '
+                 'anti-tank or Skyspear anti-aircraft missiles.)'}],
     'Legio Titanicus': [{
         'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': 'Quake Cannon or Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},

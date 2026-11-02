@@ -5,7 +5,8 @@ from dsl import U, Opt, Or, Mix, Swap, Fill, F, UP, ARMY
 
 LEGION_SHEETS = ['Legion Astartes', 'Loyalist Legions', 'Traitor Legions']
 
-SICARANS = [('Sicaran Battle Tank', 75), ('Sicaran Venator', 75), ('Sicaran Omega Tank Destroyer', 75)]
+SICARANS = [('Sicaran Battle Tank', 75), ('Sicaran Venator', 75), ('Sicaran Omega Tank Destroyer', 75),
+            ('Sicaran Punisher', 75), ('Sicaran Arcus', 75)]  # Punisher and Arcus are fan-made
 
 
 def heavy_transport(*types):

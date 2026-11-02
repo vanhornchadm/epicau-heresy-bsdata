@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="8" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -4460,6 +4460,34 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <infoLink id="36e6-cf15-974f-fef8" name="Armorbane" hidden="false" targetId="0be9-a6dd-0220-503a" type="rule"/>
                 <infoLink id="92e2-7166-8010-4a0b" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
                 <infoLink id="ec61-d15f-ba14-a24b" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="75.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2721-a2c0-af9d-a659" name="Sicaran Punisher" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bb1-3bf1-2172-351e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7058-fed4-f637-c573" name="Sicaran Punisher" hidden="false" targetId="4040-48ee-f05b-5986" type="profile"/>
+                <infoLink id="7423-377d-17f2-6342" name="Punisher Rotary Cannon" hidden="false" targetId="a173-93ed-13cf-8a92" type="profile"/>
+                <infoLink id="e710-12b6-74d5-b3b6" name="3 x Heavy Bolter" hidden="false" targetId="10a6-aabe-8849-73f4" type="profile"/>
+                <infoLink id="d021-fdb1-2e8e-2073" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="75.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4ef7-d221-55be-6e01" name="Sicaran Arcus" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59d8-8123-b0bc-83e6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9666-c558-43bd-887f" name="Sicaran Arcus" hidden="false" targetId="7774-442a-9fe0-8b1b" type="profile"/>
+                <infoLink id="d70d-2578-61ef-6e0a" name="Arcus Missile Launcher" hidden="false" targetId="0ad3-33ae-417e-3d51" type="profile"/>
+                <infoLink id="4ba2-7a39-ef1c-88ed" name="3 x Heavy Bolter" hidden="false" targetId="ce70-178e-1014-dd39" type="profile"/>
+                <infoLink id="805b-0a93-d39d-5680" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="75.0"/>
@@ -26491,7 +26519,21 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
+    <profile id="10a6-aabe-8849-73f4" name="3 x Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
     <profile id="95a7-ac30-82b8-7503" name="3 x Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ce70-178e-1014-dd39" name="3 x Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
@@ -26598,6 +26640,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms) MW, EA(+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0ad3-33ae-417e-3d51" name="Arcus Missile Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AT4+/AA5+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -28410,6 +28459,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
+    <profile id="a173-93ed-13cf-8a92" name="Punisher Rotary Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 x AP3+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
     <profile id="b2ab-f562-b192-0e85" name="Pyroclast Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
@@ -28617,6 +28673,16 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour, Invulnerable Save (5+).</characteristic>
       </characteristics>
     </profile>
+    <profile id="7774-442a-9fe0-8b1b" name="Sicaran Arcus" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">35cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">3+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with an Arcus Missile Launcher built from the Whirlwind Scorpius launcher and the Hellstrike Missile Pod, firing direct anti-tank or Skyspear anti-aircraft missiles.)</characteristic>
+      </characteristics>
+    </profile>
     <profile id="967e-9469-a22f-7b42" name="Sicaran Battle Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
@@ -28635,6 +28701,16 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4040-48ee-f05b-5986" name="Sicaran Punisher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">35cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">3+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with a Punisher Rotary Cannon matching the Knight Avenger Gatling Cannon against infantry, as in Legions Imperialis, and one step weaker against armour.)</characteristic>
       </characteristics>
     </profile>
     <profile id="a96a-96f6-1f27-b59e" name="Sicaran Venator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

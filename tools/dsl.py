@@ -70,10 +70,13 @@ def F(name, slot, cost=0, units=(), up='', maxn=None, per=None, round_up=False, 
             'extra_up': list(extra_up), 'new': new}
 
 
-def UP(name, cost=0, parts=(), rules=(), desc=None, maxn=None, per=None, round_up=False):
-    """An upgrade. maxn/per limit how many times it may be taken across the army."""
+def UP(name, cost=0, parts=(), rules=(), desc=None, maxn=None, per=None, round_up=False, new=False):
+    """An upgrade. maxn/per limit how many times it may be taken across the army.
+
+    new: a fan-made upgrade shown only when the roster's 'Allow fan-made units' toggle is on.
+    """
     return {'name': name, 'cost': cost, 'parts': list(parts), 'rules': list(rules), 'desc': desc,
-            'maxn': maxn, 'per': per, 'round_up': round_up}
+            'maxn': maxn, 'per': per, 'round_up': round_up, 'new': new}
 
 
 def ARMY(name, sheets, strategy, initiative, supports_per_line, upgrade_cap, allies_fraction,

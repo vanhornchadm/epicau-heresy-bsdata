@@ -22,7 +22,7 @@ Each catalogue provides two forces:
 
 In either Legion Astartes force, the required **Legion** entry picks the Legion, or "None (core list)". The choice shows that Legion's own formations and hides the core formations it replaces or removes. Space Wolves also get their own Centurion upgrade. The description on each Legion option lists what it adds and replaces, plus its allies. If you change the Legion after adding formations, formations that no longer belong are flagged.
 
-**Allow fan-made units** is a Configuration entry in the Legion Astartes and Legio Titanicus forces. It shows the fan-made units and options that aren't part of EpicAU: the Legion Kratos Heavy Tank Squadron, Arquitor Bombard Squadron and Tarantula Battery, the Sicaran Punisher and Arcus, and the Warbringer Nemesis and Warmaster Titans. They stay hidden until it's taken. Taking it in any force turns them on for the whole roster. If you remove it, or change a Legion, anything that no longer fits is flagged under "Not available with the chosen Configuration".
+**Allow fan-made units** is a Configuration entry in the Legion Astartes and Legio Titanicus forces. It shows the fan-made units and options that aren't part of EpicAU: Legion formations (Kratos, Arquitor, Tarantula, Ascalon, Araknae, Saturnine Terminators and Saturnine Dreadnoughts), the Sicaran Punisher and Arcus, the Termite Assault and Palisade Drop Pod upgrades, and the Warbringer Nemesis and Warmaster Titans. They stay hidden until it's taken. Taking it in any force turns them on for the whole roster. If you remove it, or change a Legion, anything that no longer fits is flagged under "Not available with the chosen Configuration".
 
 These rules are enforced:
 
@@ -69,6 +69,17 @@ These rules are shown as text only, not enforced:
   - **Upgrades:** both have built-in AA guns, so neither takes Air Defence.
 - **Legion Arquitor Bombard Squadron** is a fan-made formation, not part of EpicAU. The Arquitor's stats are on the wiki reference sheet, but neither the wiki nor Departmento Munitorum gives it a formation. It's a support detachment of 4-6 Arquitors at 55 pts each, with Centurion and Hyperios upgrades like the Predator Strike Squadron. It's priced against the Predator (60 pts): similar firepower at shorter range, faster, with a 5+ save. Munitorum has an unused "2 for 250 pts" entry, which is far too expensive for a tank weaker than a Sicaran.
 - **Legion Tarantula Battery** is fan-made, not part of EpicAU. It mirrors the Solar Auxilia Tarantula Battery: 4 Tarantulas and 1 Tarantula Hyperios for 125 pts, Immobile, with Teleport and Scout. The Tarantulas take the Mechanicum Tarantula's choice of twin lascannons or twin heavy bolters, as in Legions Imperialis.
+- **Ascalon, Araknae, Saturnine Terminators, Saturnine Dreadnought, Termite and Palisade Drop Pod** are fan-made. No Epic source has them, so their Legions Imperialis rules are converted against existing EpicAU units, the same way as the Sicaran variants.
+  - **Legion Ascalon Squadron:** 1-3 Ascalons at 125 pts each. Each is a heavy flame tank built on the Spartan's war engine hull, with DC 3 and CC 5+ to match its extra wound and close-combat bonus in Legions Imperialis. It carries the Knight-Acheron's flame cannon (30cm, 2× AP3+/AT6+, Ignore Cover).
+  - **Legion Araknae Weapons Battery:** 2-4 immobile platforms at 45 pts each. Each is a sturdier Tarantula (armour 5+, Invulnerable Save) carrying one gun:
+    - quad accelerator autocannon, 45cm, 3× AP4+/AT5+
+    - twin Punisher cannon, 30cm, 4× AP3+/AT6+/AA5+
+    - Orias missiles, 45cm, 2 BP, Indirect Fire, single shot
+  - **Legion Saturnine Terminator Detachment:** 4-6 units at 85 pts each. They're Terminators with an Invulnerable Save for their two wounds, but CC 4+. Each carries two of plasma bombards (30cm, AP4+/AT5+, Indirect Fire), twin heavy disintegrators (15cm, AP4+/AT4+, MW) or disruption fists.
+  - **Legion Saturnine Dreadnought Talon:** 3-6 at 90 pts each. They're Deredeo-like walkers with an Invulnerable Save. Each carries a heavy plasma bombard (30cm, 2× AP4+/AT5+, Indirect Fire) or a graviton pulveriser (15cm, AP3+/AT4+, Disrupt), plus an inversion beamer (30cm, AP5+/AT4+).
+  - **Termite Assault:** a transport option offered wherever Assault Claw is. Each Termite costs 30 pts and carries 2 Tactical-sized units or 1 Terminator. A formation carried entirely in Termites may arrive as if it had Teleport.
+  - **Palisade Drop Pod:** a 25-pt upgrade for formations with Drop Assault. Once it lands, units within 15cm get a 6+ Invulnerable Save.
+  - **Not added:** the Dreadnought Drop Pod and Deathstorm Drop Pod. EpicAU's Drop Pod already carries Dreadnoughts and has a Deathstorm Bombardment.
 - **Not included:** the Dominus Knight-Castellan and Knight-Valiant have stats on the wiki reference sheets, but neither the wiki nor Departmento Munitorum gives them a formation.
 - **Legio Custodes strategy rating:** the wiki says "1+", which looks like a typo for the initiative value. The data uses 5, matching Departmento Munitorum. The wiki also lists no Custodes allies.
 - **Knight Household Allies/LoW allowance:** the wiki doesn't state one. The data uses 1/3, matching Departmento Munitorum.

@@ -82,7 +82,8 @@ NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that 
 # posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09), and
 # the Warbringer and Warmaster adapted from the Epic-UK Adeptus Titanicus codex (version 080925), and the Sicaran
 # Punisher and Arcus: the Sicaran Battle Tank's hull with main guns derived from existing EpicAU weapons. The Legion
-# Tarantulas use the Solar Auxilia Tarantula hulls with the Mechanicum Tarantula's weapon choice.
+# Tarantulas use the Solar Auxilia Tarantula hulls with the Mechanicum Tarantula's weapon choice. The Ascalon, Araknae,
+# Saturnine Terminators and Dreadnought and the Termite convert their Legions Imperialis rules against EpicAU units.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -129,7 +130,43 @@ EXTRA_UNITS = {
                  'Mechanicum Tarantula Platform\'s weapon choice, as in Legions Imperialis.)'}, {
         'name': 'Legion Tarantula Hyperios', 'type': 'LV', 'speed': 'Immobile', 'armour': '6+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Missile Rack', 'range': '30cm', 'firepower': 'AA4+'}],
-        'notes': 'Teleport, Scout. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula Hyperios.)'}],
+        'notes': 'Teleport, Scout. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula Hyperios.)'}, {
+        'name': 'Ascalon', 'type': 'WE', 'speed': '25cm', 'armour': '4+', 'cc': '5+', 'ff': '4+',
+        'weapons': [{'name': 'Ascalon Inferno Gun', 'range': '30cm AND (15cm)',
+                     'firepower': '2 x AP3+/AT6+, Ignore Cover AND (small arms) Ignore Cover'}],
+        'notes': 'DC3, Reinforced Armour, Thick Rear Armour. (Fan-made, not on the EpicAU wiki: the Spartan\'s hull with '
+                 'a third damage point and better close combat, as in Legions Imperialis, and the Knight-Acheron\'s '
+                 'flame cannon.) Critical Hit: Unit is destroyed and all units within 5cm suffer a standard hit on '
+                 'a 6+.'}, {
+        'name': 'Araknae Weapons Platform', 'type': 'LV', 'speed': 'Immobile', 'armour': '5+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Quad Accelerator Autocannon OR', 'range': '45cm', 'firepower': '3 x AP4+/AT5+'},
+                    {'name': 'Twin Punisher Cannon OR', 'range': '30cm', 'firepower': '4 x AP3+/AT6+/AA5+'},
+                    {'name': 'Orias Heavy Frag Missiles', 'range': '45cm', 'firepower': '2 BP, Indirect Fire, Single Shot'}],
+        'notes': 'Invulnerable Save. An Araknae carries one of the listed weapons; choose before the game. (Fan-made, not '
+                 'on the EpicAU wiki: a sturdier Tarantula with weapons scaled from the Sicaran\'s accelerator cannon, '
+                 'the Sicaran Punisher and the Whirlwind, as in Legions Imperialis.)'}, {
+        'name': 'Saturnine Terminators', 'type': 'INF', 'speed': '15cm', 'armour': '4+', 'cc': '4+', 'ff': '3+',
+        'weapons': [{'name': 'Plasma Bombards', 'range': '30cm', 'firepower': 'AP4+/AT5+, Indirect Fire'},
+                    {'name': 'Twin Heavy Disintegrators', 'range': '15cm', 'firepower': 'AP4+/AT4+, MW'},
+                    {'name': 'Disruption Fists', 'range': '(base contact)', 'firepower': '(assault weapons) MW, EA(+1)'}],
+        'notes': 'Reinforced Armour, Thick Rear Armour, Invulnerable Save. Each unit carries two of the listed weapons '
+                 '(a pair of one, or one each of two); choose before the game. (Fan-made, not on the EpicAU wiki: '
+                 'Terminators with two wounds\' worth of protection and less close combat punch, as in Legions '
+                 'Imperialis.)'}, {
+        'name': 'Saturnine Dreadnought', 'type': 'AV', 'speed': '15cm', 'armour': '3+', 'cc': '5+', 'ff': '4+',
+        'weapons': [{'name': 'Heavy Plasma Bombard OR', 'range': '30cm', 'firepower': '2 x AP4+/AT5+, Indirect Fire'},
+                    {'name': 'Graviton Pulveriser', 'range': '15cm', 'firepower': 'AP3+/AT4+, Disrupt'},
+                    {'name': 'Inversion Beamer', 'range': '30cm', 'firepower': 'AP5+/AT4+'}],
+        'notes': 'Walker, Reinforced Armour, Invulnerable Save. A Saturnine Dreadnought carries a Heavy Plasma Bombard OR '
+                 'a Graviton Pulveriser, plus an Inversion Beamer; choose before the game. (Fan-made, not on the EpicAU '
+                 'wiki: the Deredeo\'s profile with two wounds\' worth of protection, and weapons scaled from the '
+                 'Leviathan\'s grav-flux bombard, as in Legions Imperialis.)'}, {
+        'name': 'Termite Assault Drill', 'type': 'AV', 'speed': '15cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Twin-linked Bolters', 'range': '(15cm)', 'firepower': '(small arms)'}],
+        'notes': 'Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. Tunnels to '
+                 'battle: a formation carried entirely in Termites may be held off the table and arrive as if it had '
+                 'the Teleport rule. (Fan-made, not on the EpicAU wiki: a Land Raider\'s capacity, as in Legions '
+                 'Imperialis.)'}],
     'Legio Titanicus': [{
         'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': 'Quake Cannon or Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
@@ -455,6 +492,7 @@ def new_unit_names(army):
         for p in f['units']:
             if p['kind'] == 'mix':
                 names += [u['unit'] for u in p['units'] if u.get('new')]
+    names += [f'{n} upgrade' for n, u in army['upgrades'].items() if u.get('new')]
     return list(dict.fromkeys(names))
 
 
@@ -721,9 +759,11 @@ class Builder:
     def upgrade_link_one(self, owner, name, u, key=None, show_for=(), hide_for=()):
         """An entryLink to the shared upgrade, or an inline copy for formation-bound upgrades."""
         el = self.upgrade_link_el(owner + (f'/{key}' if key else ''), name, u, key)
-        if show_for or hide_for:
-            self.gate(el, show=self.legion_show(show_for), hide=self.legion_hide(hide_for),
-                      cmax=gid('con', el.attrs['id'], 'max'))
+        if u.get('new') and show_for:
+            raise ValueError(f'{name}: a fan-made Legion upgrade would need both conditions together')
+        show = self.new_show() if u.get('new') else self.legion_show(show_for)
+        if show or hide_for:
+            self.gate(el, show=show, hide=self.legion_hide(hide_for), cmax=gid('con', el.attrs['id'], 'max'))
         return el
 
     def upgrade_link_el(self, owner, name, u, key):
@@ -754,7 +794,8 @@ class Builder:
             else:
                 sg = gid('seg', fid, chunk)
                 ses, els = self.split([el for n in names for el in self.upgrade_link(sg, n)])
-                groups.append(ordered('selectionEntryGroup', {'id': sg, 'name': ' / '.join(names), 'hidden': 'false',
+                label = ' / '.join(n for n in names if not self.army['upgrades'].get(n, {}).get('new'))  # fan-made hidden
+                groups.append(ordered('selectionEntryGroup', {'id': sg, 'name': label, 'hidden': 'false',
                                                               'collective': 'false', 'import': 'true'},
                                       constraints=[constraint(gid('con', sg, 'max'), 'max', 1)],
                                       selectionEntries=ses, entryLinks=els))

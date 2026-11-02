@@ -53,6 +53,14 @@ CORE_UPGRADES = [
     UP('Tank', parts=[Mix(1, 2, ('Vindicator', 50), ('Predator', 60), ('Sicaran Battle Tank', 80),
                           ('Typhon Siege Tank', 150), ('Cerberus Tank Destroyer', 150))]),
     UP('Teleport', 50, rules=['Teleport'], desc='Add the Teleport special rule to each INF unit in the formation.'),
+    # Fan-made (Legions Imperialis units with no Epic rules), behind 'Allow fan-made units'
+    UP('Termite Assault', parts=[Carry(2, 'Termite Assault Drill', 30)], rules=['Teleport'], new=True,
+       desc='Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 '
+            'Terminator each); the count is set from the formation. A formation carried entirely in Termites may '
+            'arrive as if it had the Teleport rule.'),
+    UP('Palisade Drop Pod', 25, rules=['Invulnerable Save'], new=True,
+       desc='Only with Drop Assault. One of the formation\'s Drop Pods is a Palisade: once it lands, units of the '
+            'formation within 15cm of it have a 6+ Invulnerable Save while they stay in range.'),
 ]
 
 T_STD = 'Standard Transport OR Drop Assault OR Assault Claw OR Heavy Transport'
@@ -93,6 +101,18 @@ CORE_FORMATIONS = [
       note='Fan-made formation, not part of EpicAU: the Arquitor Bombard is on the wiki reference sheet, but neither the '
            'wiki nor Departmento Munitorum gives it a formation. It is priced against the Predator (60 pts): similar '
            'firepower at shorter range, faster, with a 5+ save.'),
+    F('Legion Ascalon Squadron', 'support', 0, [U((1, 3), 'Ascalon', 125)], 'Centurion, Hyperios', new=True,
+      note='Fan-made, not part of EpicAU: a heavy flame tank from Legions Imperialis, converted against the Spartan.'),
+    F('Legion Araknae Weapons Battery', 'support', 0, [U((2, 4), 'Araknae Weapons Platform', 45)], new=True,
+      note='Fan-made, not part of EpicAU: immobile weapons platforms from Legions Imperialis, converted against the '
+           'Tarantula and Sicaran.'),
+    F('Legion Saturnine Terminator Detachment', 'support', 0, [U((4, 6), 'Saturnine Terminators', 85)],
+      'Heavy Transport OR Teleport OR Assault Ram, Centurion', new=True,
+      note='Fan-made, not part of EpicAU: from Legions Imperialis, converted against Legion Terminators (75 pts).'),
+    F('Legion Saturnine Dreadnought Talon', 'support', 0, [U((3, 6), 'Saturnine Dreadnought', 90)],
+      'Drop Assault, Centurion', new=True,
+      note='Fan-made, not part of EpicAU: from Legions Imperialis, converted against the Deredeo (100 pts) and '
+           'Leviathan (75 pts) Dreadnoughts.'),
     F('Legion Tarantula Battery', 'support', 125, [U(4, 'Legion Tarantula'), U(1, 'Legion Tarantula Hyperios')],
       new=True,
       note='Fan-made formation, not part of EpicAU: mirrors the Solar Auxilia Tarantula Battery (125 pts), with the '
@@ -429,6 +449,10 @@ def legion_catalogue():
             else:
                 a['upgrades'][u['name']] = u
     a['formations'] = list(core.values()) + list(extra.values())
+    for f in a['formations']:  # fan-made transport options sit beside the ones they resemble
+        f['up'] = f['up'].replace('Assault Claw', 'Assault Claw OR Termite Assault')
+        if 'Drop Assault' in f['up']:
+            f['up'] += ', Palisade Drop Pod'
     a['legions'] = [dict(name=legion, allegiance=L['allegiance'], cohesive=L['cohesive'], disruptive=L['disruptive'],
                          notes=L.get('notes', [])) for legion, L in LEGIONS.items()]
     a['core_allies'] = (CORE_COHESIVE, CORE_DISRUPTIVE)

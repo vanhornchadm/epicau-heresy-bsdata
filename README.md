@@ -52,11 +52,10 @@ These rules are shown as text only, not enforced:
 
 ## Data decisions and gaps
 
-- **Each weapon has its own profile.** A unit has a Unit profile with Type, Speed, Armour, CC, FF and Notes. War engines use a War Engine profile, which adds Damage Capacity, Void Shields and Critical Hit. After it comes one Weapon profile per weapon, with Range, Firepower and Notes, in reference-sheet order. A weapon option keeps the sheet's "OR" at the end of its name. Chosen Titan weapons use the same Weapon profile, listed under the Titan that carries them.
-- **Profile cells are kept short.** New Recruit moves a column below the table when any of its cells is longer than 80 characters, or 52 in a profile with more than 5 columns. It counts the whole cell, line breaks included.
-  - **Notes column:** lists the rule names that fit. The rest goes into a "<unit> notes" rule shown with the unit's rules, and the column says "See unit notes". That rule also holds weapon-option sentences, transport capacities, Titan movement rules and long critical-hit effects.
-  - **Weapon cells too long for the table:** the cell goes into a "<weapon> notes" rule, and it says "See weapon notes" instead.
-  - `tools/check.py` reports any cell over these limits.
+- **Profiles follow the layout of the [Epic Armageddon BSData](https://github.com/BSData/wh40k-epic-armageddon).** Each unit's weapons are in its own profile, one line per weapon, in Weapons, Range, Firepower and Weapon Notes columns. That way every unit's row in a roster lists its own guns. War engines use a War Engine profile with Damage Capacity, Void Shields and Critical Hit columns. Chosen Titan weapons stay separate Weapon profiles, listed under the Titan that carries them.
+- **Profile cells are kept narrow** (25 characters per line). Roster viewers move a column below the table when its text is too wide.
+  - **Long cells:** they wrap onto extra lines, and each weapon's lines stay level across the weapon columns.
+  - **Notes column:** lists only the short rule names. Longer text goes into a "<unit> notes" rule shown with the unit's rules, and the column says "See unit notes". That text covers weapon-option sentences, transport capacities, Titan movement rules and long critical-hit effects.
 - **Orks of Telon Reach is not included.** The Internet Archive never captured the army list page, only its unit reference sheet, so there are no formations to build from.
 - **Sabre Strike Tank** is in the Legion list but missing from the wiki reference sheet. Its stats come from Departmento Munitorum.
 - **Solar Auxilia Tank Hunter Squadron** (3 Valdor Tank Hunters, 250 pts, support) comes from Departmento Munitorum. The Valdor is on the wiki reference sheet, but the archived army list has no formation for it.

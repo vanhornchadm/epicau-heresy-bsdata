@@ -33,17 +33,19 @@ def gid(*key):
 GST_ID = gid('gst', GST_NAME)
 PTS = 'points'
 PT_UNIT, PT_WAR_ENGINE, PT_WEAPON = gid('pt', 'Unit'), gid('pt', 'War Engine'), gid('pt', 'Weapon')
-# A unit's weapons sit in its own profile, one line per weapon, as in the Epic Armageddon BSData, so each unit's row
-# lists its guns. War engines get their damage capacity, void shields and critical hit as columns of their own.
-UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Weapons', 'Range', 'Firepower', 'Weapon Notes', 'Notes']
+# Each weapon is a Weapon profile of its own, listed after its unit's profile, so no cell has to hold several weapons.
+# War engines get their damage capacity, void shields and critical hit as columns of their own.
+UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Notes']
 WAR_ENGINE_CHARS = UNIT_CHARS + ['Damage Capacity', 'Void Shields', 'Critical Hit']
-WEAPON_CHARS = ['Range', 'Firepower', 'Notes']  # chosen Titan weapons
-LINE_BREAK = '<BR><BR>'  # separates weapon lines, as in the Epic Armageddon BSData
-# Roster viewers move a column below the table when its text is too wide, so profile cells are kept narrow: long
-# lines wrap, the Notes column lists only short rule names, and longer notes (weapon options, transport capacity,
-# long critical hits) go in a '<unit> notes' rule shown with the unit's rules.
-COLUMN_WIDTH = 25
+WEAPON_CHARS = ['Range', 'Firepower', 'Notes']  # unit weapons and chosen Titan weapons
+# New Recruit moves a column below the table when any of its cells is longer than 80 characters, or 52 in a profile
+# with more than 5 columns (its whole text, <BR> tags included, in a window wider than 500px). Text too long for a
+# cell (weapon options, transport capacity, long critical hits) goes in a '<unit> notes' or '<weapon> notes' rule
+# shown with the unit's rules, and the Notes column lists only the rule names that fit.
+CELL_LIMIT = 80
+WIDE_CELL_LIMIT = 52
 SEE_NOTES = 'See unit notes'
+SEE_WEAPON_NOTES = 'See weapon notes'
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
         'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit',
@@ -382,29 +384,6 @@ def rules_in(text):
     return list(dict.fromkeys(found))
 
 
-def wrap(text, width=COLUMN_WIDTH):
-    """Greedy word wrap into lines of at most `width` characters (a longer single word keeps its own line)."""
-    lines = []
-    for word in text.split():
-        if lines and len(lines[-1]) + 1 + len(word) <= width:
-            lines[-1] += ' ' + word
-        else:
-            lines.append(word)
-    return lines or ['']
-
-
-def weapon_columns(rows):
-    """Weapons, Range, Firepower and Weapon Notes cells: one entry per weapon, each wrapped and padded so a
-    weapon's lines stay level across the four columns."""
-    cols = [[], [], [], []]
-    for row in rows:
-        wrapped = [wrap(cell) for cell in row]
-        height = max(len(w) for w in wrapped)
-        for col, w in zip(cols, wrapped):
-            col.append('<BR>'.join(w + [''] * (height - len(w))))
-    return [LINE_BREAK.join(col) for col in cols]
-
-
 def split_notes(notes):
     """Split unit notes into (short rule names for the Notes column, longer text for the unit-notes rule)."""
     keywords, details = [], []
@@ -420,16 +399,13 @@ def split_notes(notes):
 
 
 def notes_cell(keywords, details):
-    """The Notes column: rule names packed onto lines without splitting a name, then a pointer to the notes rule."""
-    lines = []
-    for item in keywords:
-        if lines and len(lines[-1]) + 2 + len(item) + 1 <= COLUMN_WIDTH:  # room for a trailing comma
-            lines[-1] += ', ' + item
-        else:
-            if lines:
-                lines[-1] += ','
-            lines.append(item)
-    return '<BR>'.join(lines + ([SEE_NOTES] if details else [])) or '-'
+    """(Notes column, unit-notes text): the rule names that fit the column, then a pointer to the notes rule, which
+    takes the names that don't fit ahead of the longer text."""
+    for n in range(len(keywords), -1, -1):
+        more = ' '.join(([', '.join(keywords[n:]) + '.'] if keywords[n:] else []) + ([details] if details else []))
+        cell = ', '.join(keywords[:n] + ([SEE_NOTES] if more else []))
+        if len(cell) <= WIDE_CELL_LIMIT:
+            return cell or '-', more
 
 
 class Catalogue:
@@ -438,41 +414,44 @@ class Catalogue:
     def __init__(self, scope):
         self.scope = scope
         self.profiles = {}  # pid -> X
-        self.rules = {}  # rid -> X: '<unit> notes' rules holding text too long for the profile
+        self.rules = {}  # rid -> X: '<unit> notes' and '<weapon> notes' rules holding text too long for the profile
         self.notes_rule = {}  # profile id -> (rule id, rule name)
+        self.unit_weapons = {}  # unit profile id -> [(weapon profile id, name)]
 
     def unit_profiles(self, unit):
-        """Return (profile ids, rule names, categories) for a unit record, registering its shared profile."""
+        """Return ((profile id, name) for the unit and its weapons, rule names, categories) for a unit record,
+        registering its shared profiles."""
         uid = gid('prof', self.scope, unit['name'], 'unit')
+        display = star(unit['name'], unit['name'] in FAN_UNITS)
         if uid not in self.profiles:
-            rows, combined = [], False
+            weapons, combined = [], False
             for w in unit['weapons']:
-                if not (w['name'] or w['firepower']) or w['name'] in ('-',):
+                if not (w['name'] or w['firepower']) or w['name'] in ('-', 'AND'):  # 'AND' rows only join two lists
                     continue
                 fp, traits = split_firepower(w['firepower'])
                 combined |= bool(w.get('misaligned'))
-                rows.append([w['name'] or 'Weapons', w['range'] or '-', fp or '-', traits or '-'])
-            weapons = weapon_columns(rows) if rows else ['-'] * 4
+                # an option's 'OR' stays on its name; the sheet repeats it at the end of each cell of the row
+                vals = [re.sub(r',?\s*\bOR$', '', v) or '-' for v in (w['range'], fp, traits)]
+                name = w['name'] or 'Weapons'
+                weapons.append((self.weapon_profile(('weapon', name, *vals), name, vals), name))
+            self.unit_weapons[uid] = weapons
             stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff']]
-            display = star(unit['name'], unit['name'] in FAN_UNITS)
             if is_war_engine(unit):
                 dc, shields, crit, notes = war_engine_fields(unit['notes'])
                 keywords, details = split_notes(notes if notes != '-' else '')
-                if len(crit) > COLUMN_WIDTH:  # long critical hits go to the unit notes too
+                if len(crit) > WIDE_CELL_LIMIT:  # long critical hits go to the unit notes too
                     details = (details + ' ' if details else '') + f'Critical Hit: {crit}'
                     crit = SEE_NOTES
-                cells = [notes_cell(keywords, details), dc, shields, crit]
             else:
                 keywords, details = split_notes(unit['notes'] if unit['notes'] != '-' else '')
-                cells = [notes_cell(keywords, details)]
             if combined:
                 details = (details + ' ' if details else '') + 'Weapon lines are combined; check the wiki sheet.'
-                cells[0] = notes_cell(keywords, details)
+            notes, details = notes_cell(keywords, details)
             if is_war_engine(unit):
                 self.profiles[uid] = profile(uid, display, PT_WAR_ENGINE, 'War Engine', WAR_ENGINE_CHARS,
-                                             stats + weapons + cells)
+                                             stats + [notes, dc, shields, crit])
             else:
-                self.profiles[uid] = profile(uid, display, PT_UNIT, 'Unit', UNIT_CHARS, stats + weapons + cells)
+                self.profiles[uid] = profile(uid, display, PT_UNIT, 'Unit', UNIT_CHARS, stats + [notes])
             if details:
                 rid = gid('rule', self.scope, unit['name'], 'notes')
                 self.rules[rid] = rule_el(rid, f'{display} notes', details)
@@ -487,14 +466,28 @@ class Catalogue:
             cats.append('Supreme Commander')
         if 'Demi-God' in unit['notes']:
             cats.append('Primarch')
-        return [(uid, star(unit['name'], unit['name'] in FAN_UNITS))], rules_in(text), cats
+        return [(uid, display)] + self.unit_weapons[uid], rules_in(text), cats
 
-    def weapon_profile(self, w):
-        wid = gid('prof', self.scope, 'titan-weapon', w['name'])
+    def weapon_profile(self, key, name, vals):
+        """A shared Weapon profile; a cell too long for the table goes to a '<weapon> notes' rule instead."""
+        wid = gid('prof', self.scope, *key)
         if wid not in self.profiles:
-            self.profiles[wid] = profile(wid, w['name'], PT_WEAPON, 'Weapon', WEAPON_CHARS,
-                                         [w['range'], w['firepower'], w['notes']])
+            details = ' '.join(f'{c}: {v}' for c, v in zip(WEAPON_CHARS, vals) if len(v) > CELL_LIMIT)
+            vals = [SEE_WEAPON_NOTES if len(v) > CELL_LIMIT else v for v in vals]
+            self.profiles[wid] = profile(wid, name, PT_WEAPON, 'Weapon', WEAPON_CHARS, vals)
+            if details:
+                rid = gid('rule', self.scope, *key, 'notes')
+                self.rules[rid] = rule_el(rid, f'{name} notes', details)
+                self.notes_rule[wid] = (rid, f'{name} notes')
         return wid
+
+    def titan_weapon_profile(self, w):
+        return self.weapon_profile(('titan-weapon', w['name']), w['name'], [w['range'], w['firepower'], w['notes']])
+
+    def notes_links(self, owner, pids):
+        """infoLinks to the notes rules of these profiles."""
+        return [X('infoLink', {'id': gid('il', owner, rid), 'name': rname, 'hidden': 'false', 'targetId': rid,
+                               'type': 'rule'}) for rid, rname in (self.notes_rule[p] for p in pids if p in self.notes_rule)]
 
 
 def split_firepower(text):
@@ -635,11 +628,7 @@ class Builder:
         cons += list(extra_cons)
         links = [X('infoLink', {'id': gid('il', eid, pid), 'name': pname, 'hidden': 'false', 'targetId': pid,
                                 'type': 'profile'}) for pid, pname in ids]
-        notes_rule = self.prof.notes_rule.get(ids[0][0])
-        if notes_rule:  # text too long for the profile's Notes column
-            rid, rname = notes_rule
-            links.append(X('infoLink', {'id': gid('il', eid, rid), 'name': rname, 'hidden': 'false', 'targetId': rid,
-                                        'type': 'rule'}))
+        links += self.prof.notes_links(eid, [pid for pid, _ in ids])  # text too long for the profiles' cells
         links += [info_rule(eid, r) for r in rules]
         return ordered('selectionEntry', {'id': eid, 'name': star(name or part['label'] or unit['name'],
                                                                    unit['name'] in FAN_UNITS),
@@ -929,13 +918,14 @@ class Builder:
             for name, each in weapons:
                 w = TITAN_WEAPONS[name]
                 eid = gid('se', fid, 'tw', *key, name)
-                pid = self.prof.weapon_profile(w)
+                pid = self.prof.titan_weapon_profile(w)
                 kids.append(ordered('selectionEntry', {'id': eid, 'name': star(name, name in FAN_TITAN_WEAPONS),
                                                        'hidden': 'false', 'collective': 'false',
                                                        'import': 'true', 'type': 'upgrade'},
                                     constraints=[constraint(gid('con', eid, 'max'), 'max', count)],
                                     infoLinks=[X('infoLink', {'id': gid('il', eid), 'name': name, 'hidden': 'false',
                                                               'targetId': pid, 'type': 'profile'})]
+                                    + self.prof.notes_links(eid, [pid])
                                     + [info_rule(eid, r) for r in rules_in(w['firepower'] + ' ' + w['notes'])],
                                     costs=cost(each)))
             groups.append(ordered('selectionEntryGroup', {'id': g, 'name': label, 'hidden': 'false',

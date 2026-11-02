@@ -33,4 +33,12 @@ for p in sorted(glob.glob(os.path.join(D, '*.cat'))):
         print('PROBLEM', os.path.basename(p), 'dups', dup[:5], 'clash', clash[:5], 'unresolved', unresolved[:8])
     else:
         print('ok', os.path.basename(p), len(forms), 'formations')
+    # New Recruit moves a column below the table when a cell is over 80 characters (52 with more than 5 columns)
+    for prof in root.iter(f'{ns}profile'):
+        chars = list(prof.iter(f'{ns}characteristic'))
+        limit = 52 if len(chars) > 5 else 80
+        wide = [(c.get('name'), len(c.text or '')) for c in chars if len(c.text or '') > limit]
+        if wide:
+            problems += 1
+            print('PROBLEM', os.path.basename(p), prof.get('name'), 'cells too long for the table', wide)
 sys.exit(1 if problems else 0)

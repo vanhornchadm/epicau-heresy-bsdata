@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="7" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="8" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -175,6 +175,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="f282-c5c8-cd70-d89e" name="Tech Thralls" hidden="false" targetId="ca55-2d4a-bd2d-1064" type="profile"/>
+            <infoLink id="16ea-79d4-0282-4a79" name="Las-Locks" hidden="false" targetId="bf35-6747-d536-9485" type="profile"/>
             <infoLink id="16c7-db52-5e75-5364" name="Automaton" hidden="false" targetId="7a75-4235-9819-0fe3" type="rule"/>
             <infoLink id="45b4-439d-cf85-10e5" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
@@ -190,6 +191,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="ae75-34a3-3995-e2b4" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
+            <infoLink id="4c14-522a-6295-8437" name="2 x Graviton Guns" hidden="false" targetId="f9d5-b490-85f2-e93b" type="profile"/>
             <infoLink id="836d-d1fe-3742-e445" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="e006-34d6-8771-153d" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
             <infoLink id="ff46-8e2d-9419-9255" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
@@ -248,6 +250,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="b279-b240-742c-90d1" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="3bae-4372-d205-ddf4" name="Triaros Armoured Conveyor" hidden="false" targetId="f202-5cd9-859f-1571" type="profile"/>
+                                <infoLink id="069a-3d5f-4ae7-ae6b" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
+                                <infoLink id="2702-d17e-2a58-c271" name="Shock Ram" hidden="false" targetId="f883-8719-c034-dd0f" type="profile"/>
                                 <infoLink id="78d9-d350-670b-35e1" name="Triaros Armoured Conveyor notes" hidden="false" targetId="364a-76a7-f176-f6c0" type="rule"/>
                                 <infoLink id="a186-5211-223b-6c18" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="0559-da44-dfdf-dbb1" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -292,6 +296,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="fbdf-fa1e-8b74-9bdd" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="b916-8a25-9d10-146e" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="433c-ce91-21a2-3fcd" name="2 x Twin Lascannon OR" hidden="false" targetId="a095-dd72-f2ac-e19c" type="profile"/>
+                                <infoLink id="61d6-0e40-7b29-1b9b" name="2 x Flamestorm Cannon OR" hidden="false" targetId="56da-8f58-3c2c-40eb" type="profile"/>
+                                <infoLink id="5d6a-6122-eaae-6111" name="2 x Twin Multimelta" hidden="false" targetId="d95d-6461-3ae1-76e5" type="profile"/>
+                                <infoLink id="d40c-857e-ae2a-4d2b" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
                                 <infoLink id="3a59-1758-4eb8-077a" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="40cf-8e91-5b06-567e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="f4ae-b222-d65e-03cf" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -412,6 +420,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="dc5d-289d-6b8a-d757" name="Thallax" hidden="false" targetId="73a2-31a5-0d50-b1e3" type="profile"/>
+            <infoLink id="a595-4611-96db-fa04" name="Multi-Melta" hidden="false" targetId="aec3-fc16-c2b8-fca2" type="profile"/>
             <infoLink id="0252-3c7a-9aea-10fb" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
             <infoLink id="9bb9-4025-461a-3e37" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="23fa-26d5-ad38-ba96" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
@@ -470,6 +479,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="9f79-12dc-375e-3c03" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="a320-722d-5531-bede" name="Triaros Armoured Conveyor" hidden="false" targetId="f202-5cd9-859f-1571" type="profile"/>
+                                <infoLink id="e853-8a92-89c6-8bd2" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
+                                <infoLink id="bf7b-0cdf-bc06-0bda" name="Shock Ram" hidden="false" targetId="f883-8719-c034-dd0f" type="profile"/>
                                 <infoLink id="642a-1b0c-0b65-65c3" name="Triaros Armoured Conveyor notes" hidden="false" targetId="364a-76a7-f176-f6c0" type="rule"/>
                                 <infoLink id="abc0-5a56-a6f1-8651" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="d7db-0f07-cdae-e222" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -514,6 +525,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="d8c1-4391-b48c-1b18" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="fc33-536b-0ecf-d010" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="39c0-6222-ae1a-d820" name="2 x Twin Lascannon OR" hidden="false" targetId="a095-dd72-f2ac-e19c" type="profile"/>
+                                <infoLink id="6e12-3707-9273-5011" name="2 x Flamestorm Cannon OR" hidden="false" targetId="56da-8f58-3c2c-40eb" type="profile"/>
+                                <infoLink id="179e-909d-b1f5-a523" name="2 x Twin Multimelta" hidden="false" targetId="d95d-6461-3ae1-76e5" type="profile"/>
+                                <infoLink id="359c-090b-427e-f020" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
                                 <infoLink id="51c2-9f71-e0fc-6498" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="a87a-6c73-76a5-5c7e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="b254-619d-f94f-ea38" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -639,6 +654,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="e9ef-73ad-5650-893b" name="Ursarax" hidden="false" targetId="6f20-6d28-bbe7-aa02" type="profile"/>
+            <infoLink id="17c7-6dc7-c1af-ade1" name="Lightning Claws" hidden="false" targetId="d1f8-e949-7cf7-0ff4" type="profile"/>
             <infoLink id="059b-a377-c34b-77bc" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
             <infoLink id="3db5-e1f0-1ea4-a0bc" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="608e-68d1-b1ee-4475" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
@@ -698,6 +714,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="6069-53d2-f864-1580" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="dd91-94ef-0314-2884" name="Triaros Armoured Conveyor" hidden="false" targetId="f202-5cd9-859f-1571" type="profile"/>
+                                <infoLink id="edd0-8442-7073-e8fc" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
+                                <infoLink id="8936-b91d-230f-24d4" name="Shock Ram" hidden="false" targetId="f883-8719-c034-dd0f" type="profile"/>
                                 <infoLink id="6028-1443-329b-7b0a" name="Triaros Armoured Conveyor notes" hidden="false" targetId="364a-76a7-f176-f6c0" type="rule"/>
                                 <infoLink id="c1e4-44c0-ef9c-6a8f" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="97e4-7049-d0db-51a1" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -742,6 +760,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="b3c1-82d5-7ba5-f5c0" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="c44c-14bd-d41a-b5f1" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="58b5-7584-1adf-50c6" name="2 x Twin Lascannon OR" hidden="false" targetId="a095-dd72-f2ac-e19c" type="profile"/>
+                                <infoLink id="89f4-a3e2-ea51-ca3b" name="2 x Flamestorm Cannon OR" hidden="false" targetId="56da-8f58-3c2c-40eb" type="profile"/>
+                                <infoLink id="43b7-a468-5656-225d" name="2 x Twin Multimelta" hidden="false" targetId="d95d-6461-3ae1-76e5" type="profile"/>
+                                <infoLink id="65f0-498d-030f-3b2c" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
                                 <infoLink id="9302-12ba-820b-7c59" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="7062-6998-710d-63c6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="70d0-d157-2b3f-abc7" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -852,6 +874,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="2946-bb6b-afbb-6fdf" name="Vorax Battle-Automata" hidden="false" targetId="e63f-9678-efb6-65e3" type="profile"/>
+            <infoLink id="46d3-e806-38d2-1a41" name="Rotor Cannon" hidden="false" targetId="fb6e-fadf-3ba7-7704" type="profile"/>
             <infoLink id="370b-b908-80b9-258f" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="c1a3-594b-0514-6293" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
             <infoLink id="b8b5-f9d9-8ffc-0f4d" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
@@ -950,6 +973,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="2bfb-bcb4-f0e5-f8a8" name="Castellax Battle-Automata" hidden="false" targetId="7a2b-4000-d7b7-7768" type="profile"/>
+            <infoLink id="7c80-0590-fe51-e766" name="Mauler Bolt Cannon" hidden="false" targetId="4710-0e15-2eed-a7eb" type="profile"/>
+            <infoLink id="3a82-fbea-3db3-013e" name="Power Blade" hidden="false" targetId="cd39-c92d-2af0-f365" type="profile"/>
+            <infoLink id="8550-1bef-4a85-8383" name="Castellax Battle-Automata notes" hidden="false" targetId="6654-5356-1eb1-30f1" type="rule"/>
             <infoLink id="1616-cc0d-c563-ffb8" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="4582-0108-821b-a88a" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="33eb-792c-9aa4-4763" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
@@ -969,6 +995,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="b7bd-5834-8f6e-c6a7" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
+            <infoLink id="3b9c-07c9-265c-867e" name="2 x Graviton Guns" hidden="false" targetId="f9d5-b490-85f2-e93b" type="profile"/>
             <infoLink id="54a5-f222-9698-67e9" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="d3e5-2426-1789-bcc6" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
             <infoLink id="a040-4a02-7eff-5f25" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
@@ -1077,6 +1104,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="252b-b9a0-c7bd-922b" name="Vultarax Stratos-Automata" hidden="false" targetId="829a-bafe-47c4-bdb4" type="profile"/>
+            <infoLink id="184e-b425-6f11-fd63" name="Vultarax Arc Blaster" hidden="false" targetId="a233-4a7f-666c-2ee0" type="profile"/>
+            <infoLink id="8b63-8300-ac58-a77d" name="2 x Setheno Havoc Launcher" hidden="false" targetId="a516-2894-5108-36ae" type="profile"/>
             <infoLink id="1151-70b5-c8e1-8a48" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
             <infoLink id="6a93-c162-8c46-0028" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
           </infoLinks>
@@ -1159,6 +1188,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="616e-f656-003c-4bd7" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile"/>
+            <infoLink id="4b43-d631-c100-686c" name="Hellex Plasma Mortar OR" hidden="false" targetId="653d-c149-bf6d-f852" type="profile"/>
+            <infoLink id="0d65-9b3f-a2aa-a6c2" name="Sollex Heavy Lascannon" hidden="false" targetId="9a96-e8b9-24f6-378e" type="profile"/>
+            <infoLink id="2651-3eeb-0976-29e7" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
             <infoLink id="742c-5351-205d-4321" name="Thanatar Battle-Automata notes" hidden="false" targetId="d21c-cc9e-8dd1-16f5" type="rule"/>
             <infoLink id="bd25-84a0-98c3-684a" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="a275-8ebd-d051-97df" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -1272,6 +1304,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="7506-87aa-6fd2-80c7" name="Krios Battle Tank" hidden="false" targetId="63a6-8246-a3cf-1607" type="profile"/>
+            <infoLink id="4f90-db26-82bc-7029" name="Lightning Cannon OR" hidden="false" targetId="31df-001b-909c-02ec" type="profile"/>
+            <infoLink id="15b4-a032-5516-3a96" name="Pulsar Fusil" hidden="false" targetId="e969-2202-5984-1b67" type="profile"/>
             <infoLink id="c490-4c12-d65c-a724" name="Krios Battle Tank notes" hidden="false" targetId="b4d5-88ec-6642-2179" type="rule"/>
             <infoLink id="b770-7979-b7d0-5f53" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="f130-4fd8-a2cc-1753" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -1371,6 +1405,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="2fbf-f38f-b6d5-5917" name="Karacnos Assault Tank" hidden="false" targetId="02fd-6427-562f-dc1f" type="profile"/>
+            <infoLink id="5e0e-ccf9-598a-7ab8" name="Karacnos Mortar Battery" hidden="false" targetId="0df6-5327-8025-6372" type="profile"/>
+            <infoLink id="41ea-42bf-9c0c-b492" name="Lightning-Blaster Sentinels" hidden="false" targetId="ca10-3263-603f-4761" type="profile"/>
+            <infoLink id="8815-2141-6263-9db0" name="Shock Ram" hidden="false" targetId="f883-8719-c034-dd0f" type="profile"/>
             <infoLink id="aec9-cb96-4958-a712" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
             <infoLink id="daab-3f6a-756b-d7d6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="beb8-ed30-3c46-ec49" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -1470,6 +1507,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="64c5-d2b4-26b3-f2dc" name="Myrmidon Secutors" hidden="false" targetId="91e4-6f15-fc60-c85a" type="profile"/>
+                    <infoLink id="5562-ec91-4225-0072" name="Power Axes" hidden="false" targetId="a9d0-4785-1e0a-3d9f" type="profile"/>
+                    <infoLink id="1cf0-4a7d-57cc-fd5e" name="Volkite chargers" hidden="false" targetId="f583-f7a6-1a6c-7875" type="profile"/>
                     <infoLink id="bf0f-8377-0571-5a0e" name="Myrmidon Secutors notes" hidden="false" targetId="4e00-6791-6457-b2a8" type="rule"/>
                     <infoLink id="1b4f-5e64-28ca-e63c" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                     <infoLink id="33d0-5c45-4f2b-ecd7" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
@@ -1497,6 +1536,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="2bfd-bd66-1da8-772a" name="Myrmidon Destructors" hidden="false" targetId="c2fe-0e03-8fa3-dee5" type="profile"/>
+                    <infoLink id="5ae5-6b0d-feb0-c2a3" name="Power Fist" hidden="false" targetId="935d-f3df-4e45-0dad" type="profile"/>
+                    <infoLink id="ab5a-3bb0-1b67-74bf" name="Volkite Culverin" hidden="false" targetId="456b-5faa-a0f5-8db7" type="profile"/>
                     <infoLink id="5a51-8635-77c2-9cfc" name="Myrmidon Destructors notes" hidden="false" targetId="a3d0-a476-69e6-8f0b" type="rule"/>
                     <infoLink id="a739-91eb-c8ab-b0ae" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                     <infoLink id="0deb-b472-0508-9d1b" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
@@ -1561,6 +1602,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="d9ae-a278-29f2-da5d" name="Triaros Armoured Conveyor" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="dca8-97f9-8502-4440" name="Triaros Armoured Conveyor" hidden="false" targetId="f202-5cd9-859f-1571" type="profile"/>
+                                <infoLink id="6e8e-dfae-ae84-cb69" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
+                                <infoLink id="5a50-c1f8-4477-93eb" name="Shock Ram" hidden="false" targetId="f883-8719-c034-dd0f" type="profile"/>
                                 <infoLink id="29fb-b30c-b48f-c81e" name="Triaros Armoured Conveyor notes" hidden="false" targetId="364a-76a7-f176-f6c0" type="rule"/>
                                 <infoLink id="9c3c-e289-5b7f-6469" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="c68b-d50c-97a3-ae87" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -1605,6 +1648,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <selectionEntry id="a78e-cb1a-dce2-acf3" name="Mechanicum Land Raider" hidden="false" collective="false" import="true" type="model">
                               <infoLinks>
                                 <infoLink id="e8af-b235-b67e-d0ea" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile"/>
+                                <infoLink id="37d6-dba8-736a-3a14" name="2 x Twin Lascannon OR" hidden="false" targetId="a095-dd72-f2ac-e19c" type="profile"/>
+                                <infoLink id="086a-ce60-218f-258e" name="2 x Flamestorm Cannon OR" hidden="false" targetId="56da-8f58-3c2c-40eb" type="profile"/>
+                                <infoLink id="640f-4a65-7cfa-f311" name="2 x Twin Multimelta" hidden="false" targetId="d95d-6461-3ae1-76e5" type="profile"/>
+                                <infoLink id="547c-f26d-a1e7-f4eb" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
                                 <infoLink id="ca82-9492-93d1-6d1a" name="Mechanicum Land Raider notes" hidden="false" targetId="63ee-4636-2c9f-a41b" type="rule"/>
                                 <infoLink id="7737-5fa3-19b9-2473" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                                 <infoLink id="f7f7-2e8d-29c9-0391" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
@@ -1737,6 +1784,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="5377-7a6d-a49d-3340" name="Tarantula Platform" hidden="false" targetId="8611-9c76-2dc0-31e2" type="profile"/>
+            <infoLink id="ab3c-f8fb-b1e2-0835" name="TL Lascannon OR" hidden="false" targetId="bf98-6b00-cf51-16e2" type="profile"/>
+            <infoLink id="3bbf-9972-ae6e-c26d" name="TL Heavy Bolter" hidden="false" targetId="0b5a-1122-15de-26c9" type="profile"/>
             <infoLink id="d8a0-32d7-1ba8-cf09" name="Tarantula Platform notes" hidden="false" targetId="e7f9-fc66-00d1-96f7" type="rule"/>
             <infoLink id="4041-8c1f-40c0-55ef" name="Automaton" hidden="false" targetId="7a75-4235-9819-0fe3" type="rule"/>
           </infoLinks>
@@ -1767,6 +1816,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="85ec-2494-ed7f-2be0" name="Hyperios Platform" hidden="false" targetId="c15e-56ed-60d3-1ee7" type="profile"/>
+            <infoLink id="a494-5c18-f107-88e0" name="Hyperios Launcher" hidden="false" targetId="3397-5c30-1a25-49d0" type="profile"/>
             <infoLink id="a076-00ed-6c0c-3d1f" name="Automaton" hidden="false" targetId="7a75-4235-9819-0fe3" type="rule"/>
           </infoLinks>
           <categoryLinks>
@@ -1880,6 +1930,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="545a-ece1-47d0-aadb" name="Minotaur Artillery Tank" hidden="false" targetId="ced4-d0a1-e084-4ed5" type="profile"/>
+            <infoLink id="9340-044c-847e-7549" name="Minotaur Earthshaker Cannons" hidden="false" targetId="1100-fc81-fef9-1b7f" type="profile"/>
             <infoLink id="4c7f-bb08-54de-1a6e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="8e09-0ed6-0c89-2717" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
             <infoLink id="ed7e-8e4b-8630-9c86" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
@@ -2046,6 +2097,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="3053-faae-81c2-ae4d" name="Ordinatus Minoris" hidden="false" targetId="14fa-7852-d562-2f8e" type="profile"/>
+            <infoLink id="8ea6-efee-6260-22a3" name="3 x Volkite Culverins" hidden="false" targetId="f3f9-3d13-9dee-88bf" type="profile"/>
+            <infoLink id="ae04-4609-bfb3-48c6" name="Bellacosa Volcano Cannon OR" hidden="false" targetId="4c6f-9e15-e413-8f29" type="profile"/>
+            <infoLink id="ce06-1dea-206e-02c1" name="Ulator Sonic Destroyer" hidden="false" targetId="2ee1-98c7-f344-622a" type="profile"/>
             <infoLink id="2c80-25f4-2659-2180" name="Ordinatus Minoris notes" hidden="false" targetId="1cfa-777e-72a6-69ec" type="rule"/>
             <infoLink id="e04d-c668-d1bd-a151" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
             <infoLink id="994c-9c8e-68ee-56f6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -2133,6 +2187,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="8814-250e-1a57-ea50" name="Imperial Navy Avenger Strike Fighter" hidden="false" targetId="678c-9b47-5024-6cba" type="profile"/>
+            <infoLink id="73f1-7ca4-de99-24ab" name="Avenger Cannon" hidden="false" targetId="f3b4-856c-1ae7-f9d8" type="profile"/>
+            <infoLink id="663c-9920-0b5e-9378" name="TL Lascannons" hidden="false" targetId="0fbd-f107-fe8d-1844" type="profile"/>
+            <infoLink id="b280-82ac-e82d-9f38" name="Heavy Stubber" hidden="false" targetId="3b5f-8669-c1cd-c9f9" type="profile"/>
             <infoLink id="ffc1-cd5e-c7a5-08c0" name="Imperial Navy Avenger Strike Fighter notes" hidden="false" targetId="93bc-6ab7-ced2-c9ec" type="rule"/>
             <infoLink id="1140-1f61-c5ed-7f3b" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
             <infoLink id="dd06-6712-8c6e-a5dd" name="Rear Fire Arc" hidden="false" targetId="e953-40ea-7719-e17c" type="rule"/>
@@ -2212,6 +2269,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="9803-db00-2ef3-63a2" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" targetId="d448-7dcf-382a-c4d2" type="profile"/>
+            <infoLink id="35a1-1d78-41fe-a38d" name="TL Lascannons" hidden="false" targetId="4e55-a38b-1f1a-878c" type="profile"/>
+            <infoLink id="e670-cd6b-ced0-6cf5" name="TL Autocannons" hidden="false" targetId="f307-563c-ab97-8375" type="profile"/>
+            <infoLink id="12e8-33bf-fbc6-b8e9" name="Kraken Heavy Missiles" hidden="false" targetId="e550-a3a4-1402-4ca2" type="profile"/>
             <infoLink id="3410-b6a9-cc30-d7fe" name="Imperial Navy Primaris-Lightning Strike Fighter notes" hidden="false" targetId="bd74-e7f9-f938-a1ff" type="rule"/>
             <infoLink id="6811-7710-8b43-0662" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
             <infoLink id="4df8-f643-e189-1e09" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
@@ -2291,6 +2351,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="b56d-9f00-696f-91e2" name="Falchion" hidden="false" targetId="3b6d-0fb1-a224-5fb7" type="profile"/>
+            <infoLink id="388a-db57-c566-0bc1" name="TL Volcano Cannon" hidden="false" targetId="2f87-e6e7-3e7a-6601" type="profile"/>
+            <infoLink id="d140-8251-8231-08e2" name="2 x Quad Lascannon" hidden="false" targetId="75fe-768f-00f2-0ce0" type="profile"/>
             <infoLink id="e086-3160-89f6-fb2e" name="Falchion notes" hidden="false" targetId="7af3-608d-eb4d-224c" type="rule"/>
             <infoLink id="b468-243c-2278-ef47" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="ba40-c243-3be2-e027" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
@@ -2377,6 +2439,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="f3a2-7432-9150-2178" name="Ordinatus Majoris" hidden="false" targetId="dc31-d58e-0b73-5d26" type="profile"/>
+            <infoLink id="0b96-bf9b-8a76-9a40" name="3 x Volkite Culverins" hidden="false" targetId="f3f9-3d13-9dee-88bf" type="profile"/>
+            <infoLink id="d81b-d485-4148-bbed" name="2 x Twin Lascannons" hidden="false" targetId="9b70-14c5-3a18-fcc5" type="profile"/>
+            <infoLink id="605b-3642-c37b-5cc6" name="Sonic Disruptor" hidden="false" targetId="bc4f-97e4-0cb2-dcca" type="profile"/>
+            <infoLink id="b45f-9a8f-1a1d-9434" name="6 x Golgothan Missiles" hidden="false" targetId="26f0-2547-bcc1-9247" type="profile"/>
+            <infoLink id="9415-ca72-5534-1fa1" name="Nova Cannon" hidden="false" targetId="668c-e336-4db7-a1af" type="profile"/>
             <infoLink id="7da1-78e1-d93e-c283" name="Ordinatus Majoris notes" hidden="false" targetId="a02f-1934-d9ea-018f" type="rule"/>
             <infoLink id="bbaf-9126-a182-a7be" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
             <infoLink id="31ab-c2e0-82ce-2396" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
@@ -2429,6 +2496,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="52c3-db46-14e0-4221" name="Archmagos Prime" hidden="false" targetId="47ed-7417-95c8-7c8e" type="profile"/>
+                    <infoLink id="3d11-73b5-3bce-0737" name="Power Weapons" hidden="false" targetId="f96c-3f8b-4262-088e" type="profile"/>
                     <infoLink id="3dad-8728-4d1a-0534" name="Archmagos Prime notes" hidden="false" targetId="b2c4-0564-f2ef-90ab" type="rule"/>
                     <infoLink id="c6e0-ecef-4076-7828" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
                     <infoLink id="e248-7aaf-ad94-9ff2" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -2463,6 +2531,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="4cc3-d958-831b-2dfe" name="Magos Prime" hidden="false" targetId="24a2-66d9-fbf5-498c" type="profile"/>
+                    <infoLink id="c138-2e3d-50fd-ef1b" name="Power Weapons" hidden="false" targetId="f96c-3f8b-4262-088e" type="profile"/>
                     <infoLink id="4bdd-9719-dd02-aed6" name="Magos Prime notes" hidden="false" targetId="f09b-6a97-fd7d-d16a" type="rule"/>
                     <infoLink id="10ff-b7b5-b633-65d0" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
                     <infoLink id="c0bf-13c7-4804-eb04" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -2499,6 +2568,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="3dfe-7643-4540-3db9" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
+            <infoLink id="2e05-51d9-e23d-6d69" name="2 x Graviton Guns" hidden="false" targetId="f9d5-b490-85f2-e93b" type="profile"/>
             <infoLink id="4c5c-26dd-5c5b-005a" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="3057-a793-a11f-612a" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
             <infoLink id="c3df-a9e8-b044-8749" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
@@ -2522,6 +2592,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="f002-a935-1022-42ee" name="Krios Battle Tank" hidden="false" targetId="63a6-8246-a3cf-1607" type="profile"/>
+            <infoLink id="0740-cd60-7823-2512" name="Lightning Cannon OR" hidden="false" targetId="31df-001b-909c-02ec" type="profile"/>
+            <infoLink id="5003-0d2b-9ea0-984b" name="Pulsar Fusil" hidden="false" targetId="e969-2202-5984-1b67" type="profile"/>
             <infoLink id="a090-8999-8628-149f" name="Krios Battle Tank notes" hidden="false" targetId="b4d5-88ec-6642-2179" type="rule"/>
             <infoLink id="c11d-02e2-c883-ee55" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="ae43-cf00-a7e8-6433" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -2546,6 +2618,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="03cd-9be2-85e8-703b" name="Karacnos Assault Tank" hidden="false" targetId="02fd-6427-562f-dc1f" type="profile"/>
+            <infoLink id="88d7-dd56-fc19-dba8" name="Karacnos Mortar Battery" hidden="false" targetId="0df6-5327-8025-6372" type="profile"/>
+            <infoLink id="3a60-4761-ee01-cdad" name="Lightning-Blaster Sentinels" hidden="false" targetId="ca10-3263-603f-4761" type="profile"/>
+            <infoLink id="d777-2b4d-d872-dc1a" name="Shock Ram" hidden="false" targetId="f883-8719-c034-dd0f" type="profile"/>
             <infoLink id="f789-fcba-2caa-efd4" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
             <infoLink id="3d28-7c61-dc03-4eb1" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="507c-e431-5c76-db82" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -2573,6 +2648,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="8743-a384-252b-feb1" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile"/>
+            <infoLink id="6a40-21c4-9ea0-349c" name="Hellex Plasma Mortar OR" hidden="false" targetId="653d-c149-bf6d-f852" type="profile"/>
+            <infoLink id="7589-e7ad-43d8-b4de" name="Sollex Heavy Lascannon" hidden="false" targetId="9a96-e8b9-24f6-378e" type="profile"/>
+            <infoLink id="8f3b-da93-20e3-37ac" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
             <infoLink id="c0f9-24d6-9474-0f5a" name="Thanatar Battle-Automata notes" hidden="false" targetId="d21c-cc9e-8dd1-16f5" type="rule"/>
             <infoLink id="f35e-dd51-1d06-a57b" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="9cd4-d920-28bf-b186" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -2601,6 +2679,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="4dfa-b4bc-4334-9297" name="Scyllax Guardian-Automata" hidden="false" targetId="87f8-c2e2-ef01-7a3a" type="profile"/>
+            <infoLink id="d8f0-c4aa-0238-24c2" name="Mechandrite Array" hidden="false" targetId="69a3-3bce-f07f-680e" type="profile"/>
             <infoLink id="5755-64ba-b6c4-95f8" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
             <infoLink id="2423-f57f-b5a0-d136" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="523a-55f8-d3e7-294e" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
@@ -2619,7 +2698,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="b2c4-0564-f2ef-90ab" name="Archmagos Prime notes" hidden="false">
-      <description>Upgrades the unit type to AV.</description>
+      <description>Invulnerable Save, Cortex Controller. Upgrades the unit type to AV.</description>
+    </rule>
+    <rule id="6654-5356-1eb1-30f1" name="Castellax Battle-Automata notes" hidden="false">
+      <description>Invulnerable Save, Walker.</description>
     </rule>
     <rule id="7af3-608d-eb4d-224c" name="Falchion notes" hidden="false">
       <description>Critical Hit: This unit is destroyed and all units within 5cm of the Falchion suffer a standard hit on a 6+.</description>
@@ -2631,13 +2713,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       <description>.</description>
     </rule>
     <rule id="b4d5-88ec-6642-2179" name="Krios Battle Tank notes" hidden="false">
-      <description>A Krios Battle Tank is armed with a Lightning Cannon OR a Pulsar Fusil, choose one weapon before the game.</description>
+      <description>Walker. A Krios Battle Tank is armed with a Lightning Cannon OR a Pulsar Fusil, choose one weapon before the game.</description>
     </rule>
     <rule id="f09b-6a97-fd7d-d16a" name="Magos Prime notes" hidden="false">
-      <description>Upgrades the unit type to AV.</description>
+      <description>Cortex Controller. Upgrades the unit type to AV.</description>
     </rule>
     <rule id="63ee-4636-2c9f-a41b" name="Mechanicum Land Raider notes" hidden="false">
-      <description>Transport: May carry 1 Thallax, Ursarax or Myrmidon unit OR 2 of the following units: Tech Thrall, Tech Priest, Scyllax A Mechanicum Land Raider is armed with Twin Lascannons OR Flamestorm Cannons OR Twin Multi-Meltas, choose which weapon before the game.</description>
+      <description>Thick Rear Armour. Transport: May carry 1 Thallax, Ursarax or Myrmidon unit OR 2 of the following units: Tech Thrall, Tech Priest, Scyllax A Mechanicum Land Raider is armed with Twin Lascannons OR Flamestorm Cannons OR Twin Multi-Meltas, choose which weapon before the game.</description>
     </rule>
     <rule id="a3d0-a476-69e6-8f0b" name="Myrmidon Destructors notes" hidden="false">
       <description>Formations containing units of Myrmidon Destructors may not take a March action.</description>
@@ -2655,13 +2737,76 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       <description>A Tarantula Platform is armed with a TL Lascannon OR a TL Heavy Bolter. Choose one option before the game.</description>
     </rule>
     <rule id="d21c-cc9e-8dd1-16f5" name="Thanatar Battle-Automata notes" hidden="false">
-      <description>Walker A Tanatar Battle-Automata is armed with a Hellex Plasma Mortar OR a Sollex Heavy Lascannon, choose one weapon before the game.</description>
+      <description>Invulnerable Save, Reinforced Armour. Walker A Tanatar Battle-Automata is armed with a Hellex Plasma Mortar OR a Sollex Heavy Lascannon, choose one weapon before the game.</description>
     </rule>
     <rule id="364a-76a7-f176-f6c0" name="Triaros Armoured Conveyor notes" hidden="false">
-      <description>Transport: May carry 2 Thallax, Ursarax or Myrmidon unit OR 4 of the following units: Tech Thrall, Tech Priest, Scyllax.</description>
+      <description>Walker. Transport: May carry 2 Thallax, Ursarax or Myrmidon unit OR 4 of the following units: Tech Thrall, Tech Priest, Scyllax.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
+    <profile id="56da-8f58-3c2c-40eb" name="2 x Flamestorm Cannon OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f9d5-b490-85f2-e93b" name="2 x Graviton Guns" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="75fe-768f-00f2-0ce0" name="2 x Quad Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a516-2894-5108-36ae" name="2 x Setheno Havoc Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a095-dd72-f2ac-e19c" name="2 x Twin Lascannon OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9b70-14c5-3a18-fcc5" name="2 x Twin Lascannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d95d-6461-3ae1-76e5" name="2 x Twin Multimelta" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3f9-3d13-9dee-88bf" name="3 x Volkite Culverins" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="26f0-2547-bcc1-9247" name="6 x Golgothan Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">Unlimited</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP2</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW, Indirect Fire, Single Shot, FxF</characteristic>
+      </characteristics>
+    </profile>
     <profile id="47ed-7417-95c8-7c8e" name="Archmagos Prime" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">CH</characteristic>
@@ -2669,11 +2814,21 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Power Weapons</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">MW</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Supreme Commander,&lt;BR&gt;Reinforced Armour,&lt;BR&gt;Invulnerable Save,&lt;BR&gt;Cortex Controller&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Supreme Commander, Reinforced Armour, See unit notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3b4-856c-1ae7-f9d8" name="Avenger Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP3/AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4c6f-9e15-e413-8f29" name="Bellacosa Volcano Cannon OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">90cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW2+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK(D3), FxF</characteristic>
       </characteristics>
     </profile>
     <profile id="7a2b-4000-d7b7-7768" name="Castellax Battle-Automata" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2683,11 +2838,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Mauler Bolt Cannon&lt;BR&gt;&lt;BR&gt;Power Blade</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP4+/AT6+&lt;BR&gt;&lt;BR&gt;(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;MW</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex,&lt;BR&gt;Fearless,&lt;BR&gt;Invulnerable Save,&lt;BR&gt;Walker</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex, Fearless, See unit notes</characteristic>
       </characteristics>
     </profile>
     <profile id="3b6d-0fb1-a224-5fb7" name="Falchion" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -2697,14 +2848,31 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">6+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">6+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">TL Volcano Cannon&lt;BR&gt;&lt;BR&gt;2 x Quad Lascannon</characteristic>
-        <characteristic name="Range" typeId="3069-85d5-1a17-f28e">90cm&lt;BR&gt;&lt;BR&gt;45cm</characteristic>
-        <characteristic name="Firepower" typeId="8397-b72d-83b9-ce5f">MW3+&lt;BR&gt;&lt;BR&gt;2 x AT4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="a2db-1347-a5a5-688a">TK D3+1, FxF&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour, See unit notes</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">3</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See unit notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3b5f-8669-c1cd-c9f9" name="Heavy Stubber" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AA6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Rear Arc</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="653d-c149-bf6d-f852" name="Hellex Plasma Mortar OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP1</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire, Ignore Cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3397-5c30-1a25-49d0" name="Hyperios Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT6+/AA4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="c15e-56ed-60d3-1ee7" name="Hyperios Platform" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2714,10 +2882,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Hyperios Launcher</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT6+/AA4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Automaton</characteristic>
       </characteristics>
     </profile>
@@ -2728,10 +2892,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Avenger Cannon&lt;BR&gt;&lt;BR&gt;TL Lascannons&lt;BR&gt;&lt;BR&gt;Heavy Stubber</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">2 x AP3/AT5+&lt;BR&gt;&lt;BR&gt;AT5/AA5+&lt;BR&gt;&lt;BR&gt;AA6+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">FxF&lt;BR&gt;&lt;BR&gt;FxF&lt;BR&gt;&lt;BR&gt;Rear Arc</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
       </characteristics>
     </profile>
@@ -2742,10 +2902,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannons&lt;BR&gt;&lt;BR&gt;TL Autocannons&lt;BR&gt;&lt;BR&gt;Kraken Heavy Missiles</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+/AA5+&lt;BR&gt;&lt;BR&gt;AP5+/AT6+/AA5+&lt;BR&gt;&lt;BR&gt;AT4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">FxF&lt;BR&gt;&lt;BR&gt;FxF&lt;BR&gt;&lt;BR&gt;Single Shot, FxF</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
       </characteristics>
     </profile>
@@ -2756,11 +2912,21 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Karacnos Mortar Battery&lt;BR&gt;&lt;BR&gt;Lightning-Blaster&lt;BR&gt;Sentinels&lt;BR&gt;&lt;BR&gt;Shock Ram</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;15cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">BP 1&lt;BR&gt;&lt;BR&gt;AP5+&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;(assault weapons)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Ignore Cover, Fleshbane&lt;BR&gt;&lt;BR&gt;Disrupt&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save,&lt;BR&gt;Reinforced Armour,&lt;BR&gt;Walker</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save, Reinforced Armour, Walker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0df6-5327-8025-6372" name="Karacnos Mortar Battery" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP 1</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Fleshbane</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e550-a3a4-1402-4ca2" name="Kraken Heavy Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Single Shot, FxF</characteristic>
       </characteristics>
     </profile>
     <profile id="63a6-8246-a3cf-1607" name="Krios Battle Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2770,11 +2936,35 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Lightning Cannon OR&lt;BR&gt;&lt;BR&gt;Pulsar Fusil</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">MW5+&lt;BR&gt;&lt;BR&gt;AP5+/AT3+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save,&lt;BR&gt;Reinforced Armour,&lt;BR&gt;Walker&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save, Reinforced Armour, See unit notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bf35-6747-d536-9485" name="Las-Locks" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="31df-001b-909c-02ec" name="Lightning Cannon OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d1f8-e949-7cf7-0ff4" name="Lightning Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ca10-3263-603f-4761" name="Lightning-Blaster Sentinels" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
       </characteristics>
     </profile>
     <profile id="24a2-66d9-fbf5-498c" name="Magos Prime" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2784,11 +2974,21 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Power Weapons</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">MW</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Commander,&lt;BR&gt;Invulnerable Save,&lt;BR&gt;Cortex Controller&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Commander, Invulnerable Save, See unit notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4710-0e15-2eed-a7eb" name="Mauler Bolt Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="69a3-3bce-f07f-680e" name="Mechandrite Array" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) Singularity</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="02c7-21bc-191c-35ec" name="Mechanicum Land Raider" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2798,11 +2998,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+ / 3+ / 4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">2 x Twin Lascannon OR&lt;BR&gt;&lt;BR&gt;2 x Flamestorm Cannon OR&lt;BR&gt;&lt;BR&gt;2 x Twin Multimelta&lt;BR&gt;&lt;BR&gt;Twin Heavy Bolter</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;15cm&lt;BR&gt;&lt;BR&gt;15cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP3+&lt;BR&gt;&lt;BR&gt;MW4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;Ignore Cover&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save,&lt;BR&gt;Reinforced Armour,&lt;BR&gt;Thick Rear Armour&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save, Reinforced Armour, See unit notes</characteristic>
       </characteristics>
     </profile>
     <profile id="ced4-d0a1-e084-4ed5" name="Minotaur Artillery Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2812,11 +3008,21 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Minotaur Earthshaker&lt;BR&gt;Cannons</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">90cm&lt;BR&gt;</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">BP2&lt;BR&gt;</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Indirect Fire&lt;BR&gt;</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour,&lt;BR&gt;Thick Rear Armour</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1100-fc81-fef9-1b7f" name="Minotaur Earthshaker Cannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">90cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP2</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aec3-fc16-c2b8-fca2" name="Multi-Melta" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm AND (15cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW5+ AND (small arms) MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="c2fe-0e03-8fa3-dee5" name="Myrmidon Destructors" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2826,10 +3032,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">3+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Power Fist&lt;BR&gt;&lt;BR&gt;Volkite Culverin</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(base contact)&lt;BR&gt;&lt;BR&gt;(45 cm)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(assault weapons)&lt;BR&gt;&lt;BR&gt;AP4+/AP6+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">MW&lt;BR&gt;&lt;BR&gt;Disrupt</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
       </characteristics>
     </profile>
@@ -2840,11 +3042,14 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Power Axes&lt;BR&gt;&lt;BR&gt;Volkite chargers</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(base contact)&lt;BR&gt;&lt;BR&gt;(15 cm)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(assault weapons) EA(+1)&lt;BR&gt;&lt;BR&gt;(small arms) EA(+1)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="668c-e336-4db7-a1af" name="Nova Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">100cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 x MW3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK (D3), Singularity, FxF</characteristic>
       </characteristics>
     </profile>
     <profile id="dc31-d58e-0b73-5d26" name="Ordinatus Majoris" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -2854,11 +3059,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">5+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">5+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">3 x Volkite Culverins&lt;BR&gt;&lt;BR&gt;2 x Twin Lascannons&lt;BR&gt;&lt;BR&gt;Sonic Disruptor&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;6 x Golgothan Missiles&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;Nova Cannon</characteristic>
-        <characteristic name="Range" typeId="3069-85d5-1a17-f28e">45cm&lt;BR&gt;&lt;BR&gt;45cm&lt;BR&gt;&lt;BR&gt;100cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;Unlimited&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;100cm</characteristic>
-        <characteristic name="Firepower" typeId="8397-b72d-83b9-ce5f">AP4+/AT6+&lt;BR&gt;&lt;BR&gt;AT4+&lt;BR&gt;&lt;BR&gt;BP10&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;BP2&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;3 x MW3+</characteristic>
-        <characteristic name="Weapon Notes" typeId="a2db-1347-a5a5-688a">Disrupt&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;Ignore Cover, Disrupt,&lt;BR&gt;FxF&lt;BR&gt;&lt;BR&gt;MW, Indirect Fire, Single&lt;BR&gt;Shot, FxF&lt;BR&gt;&lt;BR&gt;TK (D3), Singularity, FxF</characteristic>
-        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Inspiring,&lt;BR&gt;Reinforced Armour&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Inspiring, Reinforced Armour, See unit notes</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">4</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">4</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See unit notes</characteristic>
@@ -2871,14 +3072,52 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">5+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">5+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">5+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">3 x Volkite Culverins&lt;BR&gt;&lt;BR&gt;Bellacosa Volcano Cannon&lt;BR&gt;OR&lt;BR&gt;&lt;BR&gt;Ulator Sonic Destroyer</characteristic>
-        <characteristic name="Range" typeId="3069-85d5-1a17-f28e">45cm&lt;BR&gt;&lt;BR&gt;90cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;75cm</characteristic>
-        <characteristic name="Firepower" typeId="8397-b72d-83b9-ce5f">AP4+/AT6+&lt;BR&gt;&lt;BR&gt;MW2+&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;BP3</characteristic>
-        <characteristic name="Weapon Notes" typeId="a2db-1347-a5a5-688a">Disrupt&lt;BR&gt;&lt;BR&gt;TK(D3), FxF&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;Disrupt, Lance, FxF</characteristic>
-        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour, See unit notes</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">1</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See unit notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a9d0-4785-1e0a-3d9f" name="Power Axes" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd39-c92d-2af0-f365" name="Power Blade" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="935d-f3df-4e45-0dad" name="Power Fist" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f96c-3f8b-4262-088e" name="Power Weapons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e969-2202-5984-1b67" name="Pulsar Fusil" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fb6e-fadf-3ba7-7704" name="Rotor Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="87f8-c2e2-ef01-7a3a" name="Scyllax Guardian-Automata" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2888,11 +3127,70 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Mechandrite Array&lt;BR&gt;</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(base contact)&lt;BR&gt;</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(assault weapons)&lt;BR&gt;Singularity</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex,&lt;BR&gt;Fearless</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex, Fearless</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f883-8719-c034-dd0f" name="Shock Ram" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a96-e8b9-24f6-378e" name="Sollex Heavy Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">60cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc4f-97e4-0cb2-dcca" name="Sonic Disruptor" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">100cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP10</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Disrupt, FxF</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f307-563c-ab97-8375" name="TL Autocannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+/AA5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0b5a-1122-15de-26c9" name="TL Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bf98-6b00-cf51-16e2" name="TL Lascannon OR" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0fbd-f107-fe8d-1844" name="TL Lascannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5/AA5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4e55-a38b-1f1a-878c" name="TL Lascannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+/AA5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2f87-e6e7-3e7a-6601" name="TL Volcano Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">90cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK D3+1, FxF</characteristic>
       </characteristics>
     </profile>
     <profile id="8611-9c76-2dc0-31e2" name="Tarantula Platform" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2902,11 +3200,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+ / 5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannon OR&lt;BR&gt;&lt;BR&gt;TL Heavy Bolter</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Automaton&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Automaton, See unit notes</characteristic>
       </characteristics>
     </profile>
     <profile id="9e8e-edeb-ee6f-351e" name="Tech Priests" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2916,11 +3210,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">2 x Graviton Guns</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">15cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP5+/AT5+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Disrupt</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Leader,&lt;BR&gt;Cortex Controller</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Leader, Cortex Controller</characteristic>
       </characteristics>
     </profile>
     <profile id="ca55-2d4a-bd2d-1064" name="Tech Thralls" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2930,10 +3220,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Las-Locks</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(15cm)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(small arms)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Automaton</characteristic>
       </characteristics>
     </profile>
@@ -2944,10 +3230,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Multi-Melta</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">15cm AND (15cm)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">MW5+ AND (small arms) MW</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Jump Packs</characteristic>
       </characteristics>
     </profile>
@@ -2958,11 +3240,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Hellex Plasma Mortar OR&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;Sollex Heavy Lascannon&lt;BR&gt;&lt;BR&gt;Twin Mauler Bolt Cannon</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;60cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">BP1&lt;BR&gt;&lt;BR&gt;&lt;BR&gt;AT4+&lt;BR&gt;&lt;BR&gt;AP3+/AT6+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Indirect Fire, Ignore&lt;BR&gt;Cover&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex,&lt;BR&gt;Fearless,&lt;BR&gt;Invulnerable Save,&lt;BR&gt;Reinforced Armour&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex, Fearless, See unit notes</characteristic>
       </characteristics>
     </profile>
     <profile id="f202-5cd9-859f-1571" name="Triaros Armoured Conveyor" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2972,11 +3250,28 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin Mauler Bolt Cannon&lt;BR&gt;&lt;BR&gt;Shock Ram</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP3+/AT6+&lt;BR&gt;&lt;BR&gt;(assault weapons)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save,&lt;BR&gt;Reinforced Armour,&lt;BR&gt;Walker&lt;BR&gt;See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save, Reinforced Armour, See unit notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f919-22b6-38c7-4778" name="Twin Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c29b-39ae-849e-c029" name="Twin Mauler Bolt Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2ee1-98c7-f344-622a" name="Ulator Sonic Destroyer" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP3</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt, Lance, FxF</characteristic>
       </characteristics>
     </profile>
     <profile id="6f20-6d28-bbe7-aa02" name="Ursarax" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2986,11 +3281,21 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Lightning Claws</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">MW</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Jump Packs</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="456b-5faa-a0f5-8db7" name="Volkite Culverin" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(45 cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AP6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f583-f7a6-1a6c-7875" name="Volkite chargers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15 cm)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms) EA(+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="e63f-9678-efb6-65e3" name="Vorax Battle-Automata" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -3000,11 +3305,14 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Rotor Cannon</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex,&lt;BR&gt;Fearless, Scout, Walker</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Cybernetica Cortex, Fearless, Scout, Walker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a233-4a7f-666c-2ee0" name="Vultarax Arc Blaster" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="829a-bafe-47c4-bdb4" name="Vultarax Stratos-Automata" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -3014,10 +3322,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Vultarax Arc Blaster&lt;BR&gt;&lt;BR&gt;2 x Setheno Havoc&lt;BR&gt;Launcher</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">15cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP3+/AT6+&lt;BR&gt;&lt;BR&gt;AP5+/AT5+&lt;BR&gt;</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;Ignore Cover&lt;BR&gt;</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Skimmer</characteristic>
       </characteristics>
     </profile>

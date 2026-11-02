@@ -35,18 +35,17 @@ GST_ID = gid('gst', GST_NAME)
 PTS = 'points'
 PT_UNIT, PT_WAR_ENGINE, PT_WEAPON = gid('pt', 'Unit'), gid('pt', 'War Engine'), gid('pt', 'Weapon')
 # A unit's profile names its weapons with their counts ('Lascannons x2'), and each weapon's stats are a Weapon profile
-# of its own listed under the unit. War engines get their damage capacity, void shields and critical hit as columns
-# of their own.
-UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Weapons', 'Notes']
+# of its own listed under the unit. Its special rules are rules linked from the unit, not a column. War engines get
+# their damage capacity, void shields and critical hit as columns of their own.
+UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Weapons']
 WAR_ENGINE_CHARS = UNIT_CHARS + ['Damage Capacity', 'Void Shields', 'Critical Hit']
 WEAPON_CHARS = ['Range', 'Firepower', 'Notes']
 # New Recruit moves a column below the table when any of its cells is longer than 80 characters, or 52 in a profile
-# with more than 5 columns (its whole text, <BR> tags included, in a window wider than 500px). Text too long for a
-# cell (weapon options, transport capacity, long critical hits) goes in a '<unit> notes' or '<weapon> notes' rule
-# shown with the unit's rules, and the Notes column lists only the rule names that fit.
+# with more than 5 columns (its whole text, <BR> tags included, in a window wider than 500px). A long critical hit
+# goes in a rule of its own, and a weapon cell too long for the table in a '<weapon> notes' rule.
 CELL_LIMIT = 80
 WIDE_CELL_LIMIT = 52
-SEE_NOTES = 'See unit notes'
+SEE_RULES = 'See rules'
 SEE_WEAPON_NOTES = 'See weapon notes'
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
@@ -493,30 +492,53 @@ def weapon_plan(unit):
     return groups, fixed, bool(after)
 
 
-def split_notes(notes):
-    """Split unit notes into (short rule names for the Notes column, longer text for the unit-notes rule)."""
-    keywords, details = [], []
+def is_rule_name(item):
+    """True if a notes item is just the name of a shared rule (or an alias of one), which the unit links anyway."""
+    return item in RULES or any(re.fullmatch(pat, item) for pat, _ in ALIASES)
+
+
+def notes_rules(notes):
+    """Split a unit's notes into {rule label: text} for the unit's own rules, leaving out the names of shared rules,
+    which the unit links instead. Rule names with a value ('Ion Shield (5+)') go under Special Rules; a sentence
+    labelled 'X: ...' becomes rule X, and the sentences after it that carry no label of their own continue it;
+    weapon-option and transport-counting sentences get rules of their own."""
+    rules, current = {}, None
+
+    def add(label, text):
+        text = text[:1].upper() + text[1:].rstrip('.') + '.'
+        rules[label] = (rules[label] + ' ' if label in rules else '') + text
+
     for sentence in re.split(r'(?<=\.)\s+(?=[A-Z(])', notes.strip()):
-        if not sentence:
-            continue
         items = sentence.rstrip('.').split(', ')
-        for i, item in enumerate(items):
-            if len(item) <= 28 and ':' not in item and len(item.split()) <= 4 and item.strip(' -'):
-                keywords.append(item.strip())
-            else:
-                details.append(', '.join(items[i:]).rstrip('.') + '.')
-                break
-    return keywords, ' '.join(details)
-
-
-def notes_cell(keywords, details):
-    """(Notes column, unit-notes text): the rule names that fit the column, then a pointer to the notes rule, which
-    takes the names that don't fit ahead of the longer text."""
-    for n in range(len(keywords), -1, -1):
-        more = ' '.join(([', '.join(keywords[n:]) + '.'] if keywords[n:] else []) + ([details] if details else []))
-        cell = ', '.join(keywords[:n] + ([SEE_NOTES] if more else []))
-        if len(cell) <= WIDE_CELL_LIMIT:
-            return cell or '-', more
+        while items and len(items[0]) <= 28 and rules_in(items[0]) and ':' not in items[0]:
+            item = items.pop(0).strip()
+            if not is_rule_name(item):
+                add('Special Rules', item)
+            current = None
+        rest = ', '.join(items).strip()
+        lead = next((r for r in RULES if rest.startswith(r + ' ') and rest[len(r) + 1:][:1].isupper()), None)
+        if lead:  # a rule name run into the next sentence ('Inspiring May have wings: ...')
+            rest = rest[len(lead) + 1:]
+        if not rest.strip(' -'):
+            continue
+        label = re.match(r'([A-Z][A-Za-z\- ]{0,30}?)\s*:\s*(.+)$', rest, re.S)
+        if label and not label.group(1).startswith('May ') and len(label.group(1).split()) <= 4:
+            current = ' '.join(w if w in ('and', 'of', 'the') else w[:1].upper() + w[1:]
+                               for w in label.group(1).split())
+            add(current, label.group(2))
+        elif re.search(r'\b(select|choose|armed with|may take|may exchange)', rest, re.I):
+            add('Weapon Options', rest)
+        elif 'transport capacity' in rest:
+            add('Transport Space', rest)
+        elif rest.startswith('May step over'):
+            add('Titan Movement', rest)
+        elif current:
+            add(current, rest)
+        else:
+            add('Special Rules', rest)
+    # drop the brackets some sheets put round a whole rule ('Transport: (May carry ...)')
+    return {k: v[1:].rstrip('.')[:-1].rstrip('.') + '.' if v.startswith('(') and v.rstrip('.').endswith(')') else v
+            for k, v in rules.items()}
 
 
 class Catalogue:
@@ -525,8 +547,8 @@ class Catalogue:
     def __init__(self, scope):
         self.scope = scope
         self.profiles = {}  # pid -> X
-        self.rules = {}  # rid -> X: '<unit> notes' and '<weapon> notes' rules holding text too long for the profile
-        self.notes_rule = {}  # profile id -> (rule id, rule name)
+        self.rules = {}  # rid -> X: a unit's own rules from its notes, and '<weapon> notes' rules
+        self.notes_rule = {}  # profile id -> [(rule id, rule name)] of those rules
 
     def unit_profiles(self, unit):
         """Return ((profile id, name) for the unit and its fixed weapons, rule names, categories) for a unit record,
@@ -542,24 +564,23 @@ class Catalogue:
             stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff'], names]
             if is_war_engine(unit):
                 dc, shields, crit, notes = war_engine_fields(unit['notes'])
-                keywords, details = split_notes(notes if notes != '-' else '')
-                if len(crit) > WIDE_CELL_LIMIT:  # long critical hits go to the unit notes too
-                    details = (details + ' ' if details else '') + f'Critical Hit: {crit}'
-                    crit = SEE_NOTES
-            else:
-                keywords, details = split_notes(unit['notes'] if unit['notes'] != '-' else '')
-            if combined:
-                details = (details + ' ' if details else '') + 'Weapon lines are combined; check the wiki sheet.'
-            notes, details = notes_cell(keywords, details)
-            if is_war_engine(unit):
+                own = notes_rules(notes if notes != '-' else '')
+                if len(crit) > WIDE_CELL_LIMIT:  # long critical hits get a rule of their own
+                    own['Critical Hit'], crit = crit.rstrip('.') + '.', SEE_RULES
                 self.profiles[uid] = profile(uid, display, PT_WAR_ENGINE, 'War Engine', WAR_ENGINE_CHARS,
-                                             stats + [notes, dc, shields, crit])
+                                             stats + [dc, shields, crit])
             else:
-                self.profiles[uid] = profile(uid, display, PT_UNIT, 'Unit', UNIT_CHARS, stats + [notes])
-            if details:
-                rid = gid('rule', self.scope, unit['name'], 'notes')
-                self.rules[rid] = rule_el(rid, f'{display} notes', details)
-                self.notes_rule[uid] = (rid, f'{display} notes')
+                own = notes_rules(unit['notes'] if unit['notes'] != '-' else '')
+                self.profiles[uid] = profile(uid, display, PT_UNIT, 'Unit', UNIT_CHARS, stats)
+            if combined:
+                own['Weapons'] = 'Weapon lines are combined; check the wiki sheet.'
+            self.notes_rule[uid] = []
+            for label, desc in own.items():
+                rid, rname = gid('rule', self.scope, unit['name'], label), f'{label} ({display})'
+                if label == 'Titan Movement':  # the same for every Titan
+                    rid, rname = gid('rule', self.scope, label), label
+                self.rules[rid] = rule_el(rid, rname, desc)
+                self.notes_rule[uid].append((rid, rname))
         text = unit['notes'] + ' ' + ' '.join(w['firepower'] for w in unit['weapons'])
         cats = []
         if unit['type'].startswith('CH'):
@@ -587,16 +608,16 @@ class Catalogue:
                 if details:
                     rid = gid('rule', self.scope, 'weapon', name, *vals, 'notes')
                     self.rules[rid] = rule_el(rid, f'{name} notes', details)
-                    self.notes_rule[wid] = (rid, f'{name} notes')
+                    self.notes_rule[wid] = [(rid, f'{name} notes')]
             ids.append((wid, name))
         return list(dict.fromkeys(ids))
 
     def info_links(self, owner, ids):
-        """infoLinks to these profiles, then to the notes rules of any that have one."""
+        """infoLinks to these profiles, then to the rules holding their notes."""
         return [X('infoLink', {'id': gid('il', owner, pid), 'name': name, 'hidden': 'false', 'targetId': pid,
                                'type': 'profile'}) for pid, name in ids] + \
             [X('infoLink', {'id': gid('il', owner, rid), 'name': rname, 'hidden': 'false', 'targetId': rid,
-                            'type': 'rule'}) for rid, rname in (self.notes_rule[p] for p, _ in ids if p in self.notes_rule)]
+                            'type': 'rule'}) for p, _ in ids for rid, rname in self.notes_rule.get(p, [])]
 
 
 def split_firepower(text):

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="15" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
@@ -19,7 +19,6 @@
         <characteristicType id="cc43-f6de-2798-fb59" name="CC"/>
         <characteristicType id="5376-4e08-3028-9ae5" name="FF"/>
         <characteristicType id="4e39-030c-4e18-12e0" name="Weapons"/>
-        <characteristicType id="072f-7f4a-18eb-925e" name="Notes"/>
       </characteristicTypes>
     </profileType>
     <profileType id="a3a4-6088-7144-07b6" name="War Engine">
@@ -30,7 +29,6 @@
         <characteristicType id="720d-edd1-f5f0-6a73" name="CC"/>
         <characteristicType id="6aea-f6b7-e754-4fea" name="FF"/>
         <characteristicType id="8053-23b9-7271-666e" name="Weapons"/>
-        <characteristicType id="b1b3-f018-48be-a953" name="Notes"/>
         <characteristicType id="4829-b112-1d5a-a2af" name="Damage Capacity"/>
         <characteristicType id="008c-819b-8cb1-5aad" name="Void Shields"/>
         <characteristicType id="1acb-7796-a6da-6469" name="Critical Hit"/>

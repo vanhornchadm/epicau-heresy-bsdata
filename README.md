@@ -51,9 +51,14 @@ These rules are shown as text only, not enforced:
 
 ## Data decisions and gaps
 
-- **A unit's profile names its weapons, and each weapon has its own profile below it.** The Unit profile has Type, Speed, Armour, CC, FF, Weapons and Notes. War engines use a War Engine profile, which adds Damage Capacity, Void Shields and Critical Hit. The Weapons column lists the weapons by name with their counts, such as "Lascannons x2", with repeated weapons combined. Each weapon is a Weapon profile, with Range, Firepower and Notes.
+- **A unit's profile names its weapons, and each weapon has its own profile below it.** The Unit profile has Type, Speed, Armour, CC, FF and Weapons. War engines use a War Engine profile, which adds Damage Capacity, Void Shields and Critical Hit. The Weapons column lists the weapons by name with their counts, such as "Lascannons x2", with repeated weapons combined. Each weapon is a Weapon profile, with Range, Firepower and Notes.
+- **A unit's special rules are in its Rules section, not a profile column.** Rules the sheet names (Walker, Cortex Controller and so on) link to the shared rule. The rest of the sheet's notes become the unit's own rules, named after the unit:
+  - **Labelled text** keeps its label, for example "Transport (Strike Cruiser)", "Dread Aura (Warlord-Sinister Battle Titan*)" or "Slow and Steady (Battle Barge)".
+  - **Weapon Options (<unit>)** holds the sheet's weapon-choice sentences, and **Transport Space (<unit>)** sentences such as "Counts as Tactical Marines for transport capacity purposes".
+  - **Special Rules (<unit>)** holds rule values such as "Invulnerable Save (6+)" or "Ion Shield (5+)", and any other text.
+  - **Critical Hit (<unit>)** holds a critical hit too long for the War Engine's Critical Hit column, which then says "See rules".
+  - **Titan Movement** is one rule shared by all Titans, covering stepping over terrain.
 - **Profile cells are kept short.** New Recruit moves a column below the table when any of its cells is longer than 80 characters, or 52 in a profile with more than 5 columns. It counts the whole cell, line breaks included.
-  - **Notes column:** lists the rule names that fit. The rest goes into a "<unit> notes" rule shown with the unit's rules, and the column says "See unit notes". That rule also holds weapon-option sentences, transport capacities, Titan movement rules and long critical-hit effects.
   - **Weapon cells too long for the table:** the cell goes into a "<weapon> notes" rule, and it says "See weapon notes" instead.
   - **Weapons column:** about 40 units with many or long-named weapons still go over 52 characters, so New Recruit shows that column below their table. These include Titans, super-heavy tanks, Knights and gunships.
   - `tools/check.py` reports any other cell over these limits.

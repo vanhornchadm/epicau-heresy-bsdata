@@ -15,9 +15,9 @@ def heavy_transport(*types):
 CORE_UPGRADES = [
     UP('Armoury Assets', parts=[Swap(1, 2,
         ('Predator', 'Predator Infernus', 20), ('Predator', 'Predator Executioner', 20),
-        ('Predator', 'Whirlwind Scorpius', 20), ('Land Raider Proteus/Phobos', 'Land Raider Achilles', 25),
-        ('Contemptor Dreadnought', 'Deredeo Dreadnought', 40), ('Vindicator', 'Vindicator Laser Destroyer', 20))],
-       desc='Upgrade 1-2 units already in the formation.'),
+        ('Predator', 'Whirlwind Scorpius', 20),
+        (('Land Raider Proteus', 'Land Raider Phobos'), 'Land Raider Achilles', 25),
+        ('Contemptor Dreadnought', 'Deredeo Dreadnought', 40), ('Vindicator', 'Vindicator Laser Destroyer', 20))]),
     UP('Assault Claw', parts=[U((1, None), 'Kharybdis Assault Claw', 75)],
        desc='Add enough Kharybdis Assault Claws to transport the entire formation.'),
     UP('Assault Ram', parts=[U((1, None), 'Caestus Assault Ram', 50)],
@@ -222,8 +222,7 @@ LEGIONS = {
         F('Ebon Keshig', 'low', 300, [U(4, 'Ebon Keshig Squad')], 'Heavy Transport OR Teleport OR Assault Claw', maxn=1),
         primarch('Jaghatai Khan, the Great Khan', 'Jaghatai Khan, the Great Khan', [U(3, 'Terminators')],
                  'Heavy Transport OR Teleport OR Assault Claw'),
-    ], upgrades=[UP('Scythes of the Khan', parts=[Swap(1, 4, ('Scimitar Jetbike', 'Golden Keshig', 50))],
-                    desc='Upgrade a Scimitar Jetbike to a Golden Keshig.')],
+    ], upgrades=[UP('Scythes of the Khan', parts=[Swap(1, 4, ('Scimitar Jetbike', 'Golden Keshig', 50))])],
         cohesive=['Legio Titanicus', 'Solar Auxilia', 'Mechanicum Taghmata', 'Knight Household', 'Legio Custodes'],
         disruptive=['Imperial Militia']),
     'Space Wolves': dict(allegiance='Loyalist', formations=[

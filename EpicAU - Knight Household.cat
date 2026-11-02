@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="2" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="3" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="1897-edf7-b72c-17af" name="Knight Household" hidden="false">
       <rules>
@@ -120,6 +120,58 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <selectionEntries>
                 <selectionEntry id="fbc0-7d84-b9f9-eecb" name="Questorius Knight-Paladin" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="decrement" field="4f51-9fb6-e1f8-6cc0" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ed6-bcfa-d5c9-1f93" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="4f51-9fb6-e1f8-6cc0" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a79c-25dc-6889-9195" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="4f51-9fb6-e1f8-6cc0" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7037-e58e-ffa9-b616" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="4f51-9fb6-e1f8-6cc0" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41a0-0ac7-402a-e3cc" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="4f51-9fb6-e1f8-6cc0" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="23df-2b63-04dc-da49" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="2f35-e53d-6164-8c40" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9ed6-bcfa-d5c9-1f93" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="2f35-e53d-6164-8c40" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a79c-25dc-6889-9195" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="2f35-e53d-6164-8c40" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7037-e58e-ffa9-b616" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="2f35-e53d-6164-8c40" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41a0-0ac7-402a-e3cc" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="2f35-e53d-6164-8c40" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="23df-2b63-04dc-da49" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f51-9fb6-e1f8-6cc0" type="min"/>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f35-e53d-6164-8c40" type="max"/>
@@ -141,6 +193,195 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="9ed6-bcfa-d5c9-1f93" name="Questorius Knight-Warden" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="5f35-598e-2521-a51b" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f35-598e-2521-a51b" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0bda-7cd6-227e-dd65" name="Questorius Knight-Warden" hidden="false" targetId="1177-59bf-af99-29bc" type="profile"/>
+                    <infoLink id="b513-c3e6-8e64-05ff" name="Avenger Gattling Cannon" hidden="false" targetId="ee27-9a9c-80ec-15db" type="profile"/>
+                    <infoLink id="a61d-a9ea-5c7f-6fef" name="Thunderstrike Gauntlet" hidden="false" targetId="11e7-2f43-2f3b-2afc" type="profile"/>
+                    <infoLink id="0bad-248b-3129-2abb" name="Ironstorm Missile Pod" hidden="false" targetId="ac8c-7e82-ae8c-3016" type="profile"/>
+                    <infoLink id="f18a-d45f-8d94-6305" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="9b17-9c60-6bca-cf45" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="3845-2ceb-ee70-cbc8" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="7f24-3019-9b9d-d0b5" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
+                    <infoLink id="9ecc-73e7-5bbe-41cc" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="9a88-4ed9-57c4-6cef" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="5851-a170-d84d-0631" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="b1a6-2ac3-16d7-7ce1" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                    <infoLink id="ee8d-f268-9209-bd70" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="96eb-eb96-4f0b-1ef8" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="c201-6626-46b9-38cf" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a79c-25dc-6889-9195" name="Questorius Knight-Styrix" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="2d33-4cc9-1f62-7fb2" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d33-4cc9-1f62-7fb2" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d1de-3b52-eee7-2bde" name="Questorius Knight-Styrix" hidden="false" targetId="4b68-f11e-e5e3-2aaa" type="profile"/>
+                    <infoLink id="afe1-85ce-0bed-914a" name="Volkite Chieorovile" hidden="false" targetId="200a-870c-27a1-906b" type="profile"/>
+                    <infoLink id="bffe-d12f-a3aa-6a18" name="Twin Linked Rad Cleanser" hidden="false" targetId="8183-d45d-b130-8391" type="profile"/>
+                    <infoLink id="20a0-06aa-127f-659e" name="Hekaton Siege Claw" hidden="false" targetId="f2da-f3b2-9c13-2c3c" type="profile"/>
+                    <infoLink id="e5f1-78e8-44a3-335d" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
+                    <infoLink id="aae1-87c8-a10e-a82e" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="d786-3c01-4464-2321" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="d4ac-dddd-97b5-f9c6" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="2ad7-8a69-7529-6752" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="730e-a9f4-bc3e-9bb9" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                    <infoLink id="96e2-b5a9-d2de-dd14" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="a301-0a72-79fa-6a2a" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="b2a1-f170-df12-ffb2" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="e203-2366-d86d-f851" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="06ce-12c4-7d5c-9be5" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="39c6-f7cb-2f11-af1e" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7037-e58e-ffa9-b616" name="Questorius Knight-Crusader" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="e6a3-4313-e2a2-f230" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a3-4313-e2a2-f230" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="3b9f-b22b-0093-585c" name="Questorius Knight-Crusader" hidden="false" targetId="aadc-48dc-a0ba-946f" type="profile"/>
+                    <infoLink id="dadd-5090-3410-da67" name="Rapid-Fire Battlecannon" hidden="false" targetId="971a-e8af-e74a-97d5" type="profile"/>
+                    <infoLink id="9b8f-f6c5-a059-4cf5" name="Avenger Gatling Cannon" hidden="false" targetId="ee18-339f-7d38-ba86" type="profile"/>
+                    <infoLink id="f283-5f28-1dd0-e3cb" name="Twin Icarus Autocannon" hidden="false" targetId="ea5b-2162-85e6-25da" type="profile"/>
+                    <infoLink id="009f-2f0c-8b07-266a" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="fcb0-c3cd-cb65-d2fd" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="3646-d711-0828-669b" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="eb88-56a1-85c1-0fde" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="c46a-c55b-2fe4-1ee0" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="0abe-532f-2812-f71a" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="41a0-0ac7-402a-e3cc" name="Questorius Knight-Gallant" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="b278-a617-fd15-1adc" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b278-a617-fd15-1adc" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b3e3-837c-4846-6df2" name="Questorius Knight-Gallant" hidden="false" targetId="e0be-c41f-9c98-6460" type="profile"/>
+                    <infoLink id="8bd2-3eda-d5d3-407b" name="Thunderstrike Gauntlet" hidden="false" targetId="e1a6-df31-e0ba-8026" type="profile"/>
+                    <infoLink id="3b2c-050a-42aa-bef2" name="Reaper Chainsword" hidden="false" targetId="bb45-dd32-789c-99cd" type="profile"/>
+                    <infoLink id="d4ab-6478-e5aa-259a" name="Stormspear Rocket Pod" hidden="false" targetId="07ff-6ded-bd96-304b" type="profile"/>
+                    <infoLink id="3399-7a81-74f6-b7ff" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="b290-8e63-cce9-e94d" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="25ff-d395-3069-b4d4" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="d7c8-05c1-49c5-352f" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="6483-7917-cab4-414a" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="def1-7edf-ccd5-2434" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="9c59-f64d-2a4e-072d" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="76af-48ae-0b76-0f15" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="0715-abe1-f80a-b485" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="3830-032f-feb5-0798" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="23df-2b63-04dc-da49" name="Questorius Knight-Magaera" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="7d50-b67b-089f-90c3" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d50-b67b-089f-90c3" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0820-4af1-6a28-1bce" name="Questorius Knight-Magaera" hidden="false" targetId="863f-e14d-f4db-eadb" type="profile"/>
+                    <infoLink id="dd4c-1b31-5467-fb6f" name="Lightning Cannon" hidden="false" targetId="079a-f32d-1731-3b2e" type="profile"/>
+                    <infoLink id="2d50-342e-b51f-10c6" name="Twin Linked Rad Cleanser" hidden="false" targetId="41ef-b582-fa4d-e123" type="profile"/>
+                    <infoLink id="d3ae-85ba-1ffe-d203" name="Hekaton Siege Claw" hidden="false" targetId="8d22-91d3-8b3e-9bce" type="profile"/>
+                    <infoLink id="073d-c60e-82f8-ca05" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
+                    <infoLink id="5046-8f3a-4b2c-1982" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="9e72-3ecb-2e7f-1f50" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="243d-65fd-a174-91cf" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="3d60-8e7a-a814-b749" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="9210-bedf-e88f-f51b" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="9167-4d60-5162-b2ad" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="86e8-69b7-57ae-1558" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="7e99-3c65-15c0-3b32" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="1a0a-b121-1f2b-08b2" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -152,6 +393,58 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <selectionEntries>
                 <selectionEntry id="e3de-4aa4-9d7d-44aa" name="Questorius Knight-Errant" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="decrement" field="94f2-4375-f6e8-fe6c" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2d6-37f5-3940-a44f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="94f2-4375-f6e8-fe6c" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f631-9b7a-c697-6843" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="94f2-4375-f6e8-fe6c" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a589-fe51-7828-4d94" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="94f2-4375-f6e8-fe6c" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a7-3864-d5e9-3cc3" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="94f2-4375-f6e8-fe6c" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3315-ed7a-c1f0-c244" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="fb69-212b-460e-cc34" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2d6-37f5-3940-a44f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="fb69-212b-460e-cc34" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f631-9b7a-c697-6843" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="fb69-212b-460e-cc34" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a589-fe51-7828-4d94" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="fb69-212b-460e-cc34" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6a7-3864-d5e9-3cc3" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="fb69-212b-460e-cc34" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3315-ed7a-c1f0-c244" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94f2-4375-f6e8-fe6c" type="min"/>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb69-212b-460e-cc34" type="max"/>
@@ -173,6 +466,195 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="e2d6-37f5-3940-a44f" name="Questorius Knight-Warden" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="4139-d45f-2e89-3134" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4139-d45f-2e89-3134" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2ab9-61a2-e588-c238" name="Questorius Knight-Warden" hidden="false" targetId="1177-59bf-af99-29bc" type="profile"/>
+                    <infoLink id="2707-0188-7608-f6c6" name="Avenger Gattling Cannon" hidden="false" targetId="ee27-9a9c-80ec-15db" type="profile"/>
+                    <infoLink id="4532-8f81-485a-7b77" name="Thunderstrike Gauntlet" hidden="false" targetId="11e7-2f43-2f3b-2afc" type="profile"/>
+                    <infoLink id="c8ef-dc39-4027-cab2" name="Ironstorm Missile Pod" hidden="false" targetId="ac8c-7e82-ae8c-3016" type="profile"/>
+                    <infoLink id="2ef6-4921-ed89-8c99" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="4041-963e-94d9-c1b6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="bee8-f896-d61e-4525" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="b182-e08f-6582-cf61" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
+                    <infoLink id="7ca0-75d4-e9ac-ed6d" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="5a85-3738-a749-bae8" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="4118-f90c-7cd5-9c93" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="c299-87f9-1cbf-508c" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                    <infoLink id="70b7-4250-1685-66ce" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="e81f-f87b-8cab-f5d1" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="2b80-5305-8325-90ee" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="f631-9b7a-c697-6843" name="Questorius Knight-Styrix" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="75d8-01ed-32c5-0d97" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d8-01ed-32c5-0d97" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ed84-664e-9c8b-8626" name="Questorius Knight-Styrix" hidden="false" targetId="4b68-f11e-e5e3-2aaa" type="profile"/>
+                    <infoLink id="a205-4992-e4ea-2cce" name="Volkite Chieorovile" hidden="false" targetId="200a-870c-27a1-906b" type="profile"/>
+                    <infoLink id="4d3b-9aed-b2e7-9478" name="Twin Linked Rad Cleanser" hidden="false" targetId="8183-d45d-b130-8391" type="profile"/>
+                    <infoLink id="f3cc-8d14-d117-51de" name="Hekaton Siege Claw" hidden="false" targetId="f2da-f3b2-9c13-2c3c" type="profile"/>
+                    <infoLink id="708a-6d27-d861-0240" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
+                    <infoLink id="6da7-2649-e772-e3ac" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="6c37-bad4-c7ec-8fba" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="4232-b30b-acfb-f1d2" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="3f46-5938-a710-d56b" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="598d-2001-9cba-80bb" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                    <infoLink id="30a8-0df4-b2c4-5fc4" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="28a8-2273-8e68-19b2" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="8a3f-a1f1-a49d-4b11" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="9f73-e603-dc73-4845" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="408f-f545-cc7c-16ca" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="b2cf-0d39-c450-7eb8" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a589-fe51-7828-4d94" name="Questorius Knight-Crusader" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="8f87-8bca-e577-d3b1" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f87-8bca-e577-d3b1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="703c-9041-f367-d7f0" name="Questorius Knight-Crusader" hidden="false" targetId="aadc-48dc-a0ba-946f" type="profile"/>
+                    <infoLink id="53fc-948e-ec7e-7adb" name="Rapid-Fire Battlecannon" hidden="false" targetId="971a-e8af-e74a-97d5" type="profile"/>
+                    <infoLink id="1b8b-241c-4bb9-c5e5" name="Avenger Gatling Cannon" hidden="false" targetId="ee18-339f-7d38-ba86" type="profile"/>
+                    <infoLink id="594e-314a-3297-8f12" name="Twin Icarus Autocannon" hidden="false" targetId="ea5b-2162-85e6-25da" type="profile"/>
+                    <infoLink id="f1dd-6b64-b976-4f0a" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="f615-c17d-244d-00cb" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="335a-596a-e9ac-d387" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="0204-7ad8-fa6b-72f0" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="02be-fea0-6393-659a" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="8023-6bc9-a3b7-1813" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="a6a7-3864-d5e9-3cc3" name="Questorius Knight-Gallant" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="81d7-31f4-6f6d-9bdf" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d7-31f4-6f6d-9bdf" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="00ae-96d6-3541-f01e" name="Questorius Knight-Gallant" hidden="false" targetId="e0be-c41f-9c98-6460" type="profile"/>
+                    <infoLink id="9f9a-01c8-c267-889d" name="Thunderstrike Gauntlet" hidden="false" targetId="e1a6-df31-e0ba-8026" type="profile"/>
+                    <infoLink id="a6c0-f5d7-092c-d3f7" name="Reaper Chainsword" hidden="false" targetId="bb45-dd32-789c-99cd" type="profile"/>
+                    <infoLink id="a773-0da4-2fab-4d02" name="Stormspear Rocket Pod" hidden="false" targetId="07ff-6ded-bd96-304b" type="profile"/>
+                    <infoLink id="d509-af7e-bff5-495b" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="28d3-a009-fb2f-34eb" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="67ac-af79-f125-9be4" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="400c-6915-e447-22c9" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="4ce1-29b2-f8ef-e1eb" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="c69b-3c16-77bc-7f14" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="4a6d-d872-c27d-de6a" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="d683-2fa2-605f-d619" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="b2c3-5488-ba52-81cf" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="4f6f-9079-80e6-dbb0" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3315-ed7a-c1f0-c244" name="Questorius Knight-Magaera" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="4b91-2eaa-f242-f4ad" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b91-2eaa-f242-f4ad" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c612-5247-602d-d34a" name="Questorius Knight-Magaera" hidden="false" targetId="863f-e14d-f4db-eadb" type="profile"/>
+                    <infoLink id="a6dd-7874-6dfe-d2ba" name="Lightning Cannon" hidden="false" targetId="079a-f32d-1731-3b2e" type="profile"/>
+                    <infoLink id="6c6a-51c0-9bfe-7079" name="Twin Linked Rad Cleanser" hidden="false" targetId="41ef-b582-fa4d-e123" type="profile"/>
+                    <infoLink id="906e-18f1-8009-0169" name="Hekaton Siege Claw" hidden="false" targetId="8d22-91d3-8b3e-9bce" type="profile"/>
+                    <infoLink id="90b2-c6ef-df58-2a60" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
+                    <infoLink id="b0a9-2c39-db73-f418" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="b2e6-89f2-415b-c885" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="9029-98cb-a266-65c8" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="6e44-6c59-bda8-d6d3" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="d0e6-4f8c-54b5-64c5" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="8434-78c7-4ba0-acbf" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="ba5d-9cf7-9808-c69e" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="22e4-0549-7148-4582" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="3898-582f-0308-02ff" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -181,6 +663,282 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="95d4-854b-b153-0608" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="80e8-ccee-595d-627d" name="Expanded Armoury" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="1bd2-76b4-1374-63d0" value="0">
+                  <conditions>
+                    <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd2-76b4-1374-63d0" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="d711-1093-c8bd-5f1c" name="Expanded Armoury" hidden="false">
+                  <description>Upgrade 1 or more units in this formation: Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Warden (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Styrix (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Crusader (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Gallant (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Magaera (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation and the Raise the Banners upgrade, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8463-0d53-1d35-c32b" name="Raise the Banners" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11aa-b53d-0f44-e5d5" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="0310-47fe-d7ca-de35" name="Raise the Banners" hidden="false">
+                  <description>Add 1-2 Knights of a type already in the formation.</description>
+                </rule>
+              </rules>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="013f-c85c-a84b-f36b" name="Units" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc12-08a5-f770-1169" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e734-a2ed-44d7-8dab" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="6745-0214-6053-9005" name="Questorius Knight-Paladin" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdcd-bf9f-245e-ccca" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="80d2-b4ac-48d6-39c3" name="Questorius Knight-Paladin" hidden="false" targetId="1911-5ff7-c45a-6693" type="profile"/>
+                        <infoLink id="9db5-c415-dbe2-4733" name="Questorius Battle Cannon" hidden="false" targetId="bd28-07ec-d569-61e2" type="profile"/>
+                        <infoLink id="c1b6-dbb5-d077-abba" name="Reaper Chainsword" hidden="false" targetId="8ac8-220e-eae4-9803" type="profile"/>
+                        <infoLink id="e760-f231-aef1-6010" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="dcf6-4e2b-9ca4-f8c8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="3f38-751b-f3fe-2e8b" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="218d-5d51-0138-c69c" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="1893-85d6-8258-be03" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="1040-3484-c2d4-40ef" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="847c-e854-665b-d75e" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="9a9a-2c1e-8e4e-5559" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="100.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="64ad-9cb8-81fd-b79c" name="Questorius Knight-Errant" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd14-26a2-c4e0-36fe" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="661c-7f44-21af-7dc7" name="Questorius Knight-Errant" hidden="false" targetId="69be-90a5-1709-88e9" type="profile"/>
+                        <infoLink id="b855-05cb-1c6a-af15" name="Thermal Cannon / Reaper Chainsword" hidden="false" targetId="8eff-2344-20a7-171a" type="profile"/>
+                        <infoLink id="2e83-5a3c-062b-6cbb" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="1899-dc49-1aba-a2c9" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="f837-4ac8-33eb-dd89" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="bcf8-c8ce-d69e-8659" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="5561-e596-0b18-ebe7" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="8c22-f239-77a5-bf81" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                        <infoLink id="7bab-7ed4-2384-489a" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="8aef-1c84-b182-0eea" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="87b1-f87d-d7c5-b5f6" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="100.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c13f-93b4-b98e-4b9e" name="Questorius Knight-Warden" hidden="true" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="5931-389c-9678-0c69" value="99.0">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5931-389c-9678-0c69" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="42e5-272b-c169-5aaf" name="Questorius Knight-Warden" hidden="false" targetId="1177-59bf-af99-29bc" type="profile"/>
+                        <infoLink id="e54b-9593-b616-9d4b" name="Avenger Gattling Cannon" hidden="false" targetId="ee27-9a9c-80ec-15db" type="profile"/>
+                        <infoLink id="1f8c-2f0d-3ee3-5803" name="Thunderstrike Gauntlet" hidden="false" targetId="11e7-2f43-2f3b-2afc" type="profile"/>
+                        <infoLink id="e734-3692-901c-a880" name="Ironstorm Missile Pod" hidden="false" targetId="ac8c-7e82-ae8c-3016" type="profile"/>
+                        <infoLink id="be2d-9a87-564d-ec52" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="7025-152a-6a39-d22f" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="9a1f-465f-8f9c-361b" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="7025-c646-a67c-15d5" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
+                        <infoLink id="e20e-0bcf-9974-bffb" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                        <infoLink id="98f6-dd40-4164-9cb4" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="e5da-b81d-1ba3-9f0e" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="177c-a841-7e8e-64ba" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                        <infoLink id="5923-e24c-3903-1139" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="7e18-9796-c358-6648" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink id="2f0e-82ff-fc04-dc89" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="125.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="1ca0-c04e-cda3-b87f" name="Questorius Knight-Styrix" hidden="true" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="0fb3-ef46-9462-1bd7" value="99.0">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb3-ef46-9462-1bd7" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="3c9d-2aae-e5e9-11cd" name="Questorius Knight-Styrix" hidden="false" targetId="4b68-f11e-e5e3-2aaa" type="profile"/>
+                        <infoLink id="b5b8-12e5-2ef2-c59c" name="Volkite Chieorovile" hidden="false" targetId="200a-870c-27a1-906b" type="profile"/>
+                        <infoLink id="f5c8-f68f-7d91-0f99" name="Twin Linked Rad Cleanser" hidden="false" targetId="8183-d45d-b130-8391" type="profile"/>
+                        <infoLink id="4f2e-a562-409a-d08d" name="Hekaton Siege Claw" hidden="false" targetId="f2da-f3b2-9c13-2c3c" type="profile"/>
+                        <infoLink id="fa96-70b8-0d6e-4306" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
+                        <infoLink id="a97e-70cf-82ad-cda6" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="46d9-c752-7504-97a4" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="f180-066d-e24c-4bec" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="49c2-e540-2ccf-c061" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                        <infoLink id="d797-6c4d-f578-d765" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                        <infoLink id="7663-48cd-fab8-dbd9" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="1776-327f-86de-35d9" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="165f-bb88-3dd6-4a47" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="7f38-1b5e-8637-6190" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="c5d2-ceaa-2e29-84b4" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink id="b4ef-2d6b-3ed7-c91d" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="125.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="75a2-c91a-5ebc-92d0" name="Questorius Knight-Crusader" hidden="true" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="ddeb-cbcf-7ba1-7c9e" value="99.0">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddeb-cbcf-7ba1-7c9e" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="0205-426b-5879-596b" name="Questorius Knight-Crusader" hidden="false" targetId="aadc-48dc-a0ba-946f" type="profile"/>
+                        <infoLink id="7b64-db2b-3079-5473" name="Rapid-Fire Battlecannon" hidden="false" targetId="971a-e8af-e74a-97d5" type="profile"/>
+                        <infoLink id="ff99-6ca0-83a3-9fff" name="Avenger Gatling Cannon" hidden="false" targetId="ee18-339f-7d38-ba86" type="profile"/>
+                        <infoLink id="597a-a206-c637-bcfd" name="Twin Icarus Autocannon" hidden="false" targetId="ea5b-2162-85e6-25da" type="profile"/>
+                        <infoLink id="84d0-674a-fac6-de22" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="f91c-2fd9-4c90-20f8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="c093-54f6-9f8f-5b4a" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="d3fb-3596-5365-8b4d" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="fd6f-d151-d1e0-aaa3" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink id="77c9-a49a-3d56-a368" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="125.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="009e-fd42-06a4-6068" name="Questorius Knight-Gallant" hidden="true" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="7ec6-dd43-348e-484a" value="99.0">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ec6-dd43-348e-484a" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="19bb-d29f-9e34-a328" name="Questorius Knight-Gallant" hidden="false" targetId="e0be-c41f-9c98-6460" type="profile"/>
+                        <infoLink id="94c2-cec4-c9d0-2bc8" name="Thunderstrike Gauntlet" hidden="false" targetId="e1a6-df31-e0ba-8026" type="profile"/>
+                        <infoLink id="e7df-9dd3-0c13-ed9a" name="Reaper Chainsword" hidden="false" targetId="bb45-dd32-789c-99cd" type="profile"/>
+                        <infoLink id="e5f0-b0cf-cbff-9afa" name="Stormspear Rocket Pod" hidden="false" targetId="07ff-6ded-bd96-304b" type="profile"/>
+                        <infoLink id="b72e-f553-b9c6-d190" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="859c-cdf0-0f90-3ba2" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="346a-029c-12bb-de2d" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="5dd0-8c54-9b34-0acc" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="cc78-0a56-9d0c-31ad" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                        <infoLink id="ef40-6cfd-3209-c0d4" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="9c73-044d-7f2b-cfff" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="d07e-ca88-7bca-2448" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="00f1-dba8-c99b-8cd5" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink id="ea7f-9f34-6e9a-858d" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="125.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="092b-9fb3-be9e-2a94" name="Questorius Knight-Magaera" hidden="true" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="a098-749d-5f6a-eaba" value="99.0">
+                          <conditions>
+                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a098-749d-5f6a-eaba" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="7625-ea09-d1fd-3723" name="Questorius Knight-Magaera" hidden="false" targetId="863f-e14d-f4db-eadb" type="profile"/>
+                        <infoLink id="6c97-7da3-ba4e-0aa7" name="Lightning Cannon" hidden="false" targetId="079a-f32d-1731-3b2e" type="profile"/>
+                        <infoLink id="90c4-8dc5-9fae-2de5" name="Twin Linked Rad Cleanser" hidden="false" targetId="41ef-b582-fa4d-e123" type="profile"/>
+                        <infoLink id="1e30-325a-7eca-a348" name="Hekaton Siege Claw" hidden="false" targetId="8d22-91d3-8b3e-9bce" type="profile"/>
+                        <infoLink id="cff2-8064-9ece-06f2" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
+                        <infoLink id="df4e-3577-1afe-7953" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="6cef-8ef1-a139-a307" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="5ef9-d5f0-08fe-18d4" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="8cab-a06c-c71f-818d" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                        <infoLink id="98b4-ff31-f050-95bf" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="5cf2-0ab5-aa81-45de" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="7147-a862-9d45-b1c8" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="0d13-d5ce-540f-2b94" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink id="16eb-f2ef-8fad-5ecc" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="125.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="fdd7-4fc7-ee65-022a" name="Aspirants" hidden="false" collective="false" import="true" targetId="2a7f-54bc-bdcc-f285" type="selectionEntry">
               <constraints>
@@ -195,16 +953,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <entryLink id="ae53-dc0f-c0fd-973a" name="Seneschal" hidden="false" collective="false" import="true" targetId="85ff-d061-7327-5a69" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e985-a43d-fa9c-ff99" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="94ad-4144-cd40-0dc2" name="Expanded Armoury" hidden="false" collective="false" import="true" targetId="b40b-ffab-238d-e9b0" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4db-2876-37a9-2a18" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="6a6d-d928-e44e-7e28" name="Raise the Banners" hidden="false" collective="false" import="true" targetId="5bb8-749f-12b4-4b42" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2d2-9243-0807-5648" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -238,6 +986,28 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <selectionEntries>
                 <selectionEntry id="70f5-fb61-7983-005c" name="Cerastus Knight-Lancer" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="decrement" field="7972-5fe3-0c1b-fefe" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c37-900b-c840-19b0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="7972-5fe3-0c1b-fefe" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="613b-d268-7609-24c8" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="d7a7-1f82-9752-8932" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3c37-900b-c840-19b0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="d7a7-1f82-9752-8932" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="613b-d268-7609-24c8" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7972-5fe3-0c1b-fefe" type="min"/>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a7-1f82-9752-8932" type="max"/>
@@ -262,6 +1032,82 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="3c37-900b-c840-19b0" name="Cerastus Knight-Acheron" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="b63d-4c97-9e9b-33f3" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63d-4c97-9e9b-33f3" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2d10-9919-2e50-91b4" name="Cerastus Knight-Acheron" hidden="false" targetId="e2d3-517e-cc24-95b1" type="profile"/>
+                    <infoLink id="e565-c296-0e0c-d385" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist" hidden="false" targetId="3f4c-3ef9-5818-660f" type="profile"/>
+                    <infoLink id="f169-3819-59ea-7b86" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="92f1-8bb3-050c-23d8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="d311-5f16-f314-9ad0" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="f618-2a23-b837-2eb1" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="0453-40aa-3b10-5e65" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="4b00-8753-f9d8-a29e" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="4383-bb74-278d-c4db" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="187d-de91-083e-0dcc" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="6304-0d92-30ee-4ad1" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="fb18-dace-3048-3e20" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="70b8-9598-8485-35dd" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="e15d-70b6-d434-fecc" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="613b-d268-7609-24c8" name="Cerastus Knight-Atropos" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="69f1-8761-e813-9cad" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f1-8761-e813-9cad" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="562e-679e-8ef9-c3ef" name="Cerastus Knight-Atropos" hidden="false" targetId="8701-2cdd-5975-8a50" type="profile"/>
+                    <infoLink id="71cb-192b-e3ec-4168" name="Atrapos Lascutter / Graviton Singularity Cannon" hidden="false" targetId="3be8-9aca-ae33-d4c2" type="profile"/>
+                    <infoLink id="224f-d444-54f9-58fd" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
+                    <infoLink id="6127-2796-f641-e68c" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
+                    <infoLink id="c21f-1eac-14cc-e750" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="4d72-8aa0-0ca1-2d61" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="de5b-0251-d542-252d" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="0f3c-ea7b-baf7-23b7" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="aacc-f452-3fe4-d3e2" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="6de4-da54-ea52-d2e6" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="bb00-9b64-83f4-2887" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="a0ed-3cf2-5a78-a0c3" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="47b6-4bce-01c4-8f76" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="3a17-c327-1531-83e5" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -273,6 +1119,28 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <selectionEntries>
                 <selectionEntry id="48e9-ab91-7123-2baa" name="Cerastus Knight-Castigator" hidden="false" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="decrement" field="cc16-9ccf-873c-bfd4" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1cdb-5b29-7101-825f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="cc16-9ccf-873c-bfd4" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4eae-91cf-fe11-ea82" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="1d76-ccc0-45d2-a915" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1cdb-5b29-7101-825f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="decrement" field="1d76-ccc0-45d2-a915" value="1">
+                      <repeats>
+                        <repeat field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4eae-91cf-fe11-ea82" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc16-9ccf-873c-bfd4" type="min"/>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d76-ccc0-45d2-a915" type="max"/>
@@ -294,6 +1162,82 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="1cdb-5b29-7101-825f" name="Cerastus Knight-Acheron" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="a7b4-5e25-7826-9b7a" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b4-5e25-7826-9b7a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="aab0-4b1e-beef-96a4" name="Cerastus Knight-Acheron" hidden="false" targetId="e2d3-517e-cc24-95b1" type="profile"/>
+                    <infoLink id="bc34-cb06-4800-90cf" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist" hidden="false" targetId="3f4c-3ef9-5818-660f" type="profile"/>
+                    <infoLink id="82aa-6e36-81ab-821c" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="3871-e3f7-8413-fd6c" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="70de-f620-ef54-8e38" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="872e-b758-9cc2-85d3" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="31be-21ff-8763-4726" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="cc6b-5468-3361-d940" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="0b59-23fb-ab50-8e8d" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="8941-b951-3aa2-cb77" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="5927-5a45-1576-9971" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="a53f-bb6a-73cc-b09f" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="9d27-7fa7-f7f5-1def" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="4c1b-6375-b902-47a7" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4eae-91cf-fe11-ea82" name="Cerastus Knight-Atropos" hidden="true" collective="false" import="true" type="model">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="d581-8f50-0671-3d47" value="99.0">
+                      <conditions>
+                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d581-8f50-0671-3d47" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2110-85d6-9735-c9c0" name="Cerastus Knight-Atropos" hidden="false" targetId="8701-2cdd-5975-8a50" type="profile"/>
+                    <infoLink id="6f41-0f93-c15a-402f" name="Atrapos Lascutter / Graviton Singularity Cannon" hidden="false" targetId="3be8-9aca-ae33-d4c2" type="profile"/>
+                    <infoLink id="d320-0b04-6a1b-8dba" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
+                    <infoLink id="231e-09bc-451d-2721" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
+                    <infoLink id="cba4-af47-716b-7fac" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="2968-4b9a-3b8b-0699" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="aec7-381e-305c-a2bf" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="c50b-71a0-cb0d-5227" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="770f-2df3-b533-28f9" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="3d0c-67ea-dbb1-f9e1" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                    <infoLink id="db42-4a7e-59f8-7d88" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="6c8e-c024-118f-1332" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                    <infoLink id="3d00-d6c6-b889-4ad3" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                  </infoLinks>
+                  <categoryLinks>
+                    <categoryLink id="7e77-35a0-dc9e-d563" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                  </categoryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="25.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -302,20 +1246,176 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="83bb-5a91-a3bb-1f38" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="93bb-ac0b-cb6b-b7e3" name="Enhanced Forge" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="af74-b1c8-f6d5-ee3e" value="0">
+                  <conditions>
+                    <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af74-b1c8-f6d5-ee3e" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="48aa-5252-c9d0-2b37" name="Enhanced Forge" hidden="false">
+                  <description>Upgrade 1 or more units in this formation: Cerastus Knight-Lancer or Cerastus Knight-Castigator to Cerastus Knight-Acheron (+25 pts each); Cerastus Knight-Lancer or Cerastus Knight-Castigator to Cerastus Knight-Atropos (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation and the Rally the Troops upgrade, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="69bb-7a65-f442-cb8f" name="Rally the Troops" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0e7-7687-7e17-5a89" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="2056-8a69-d6d4-8226" name="Rally the Troops" hidden="false">
+                  <description>Add 1-2 Knights of a type already in the formation.</description>
+                </rule>
+              </rules>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="9162-afc7-1c19-8dba" name="Units" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="629b-171d-40c4-4195" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="546d-55b9-42f8-24dc" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="ffe3-4b1a-a239-ce4f" name="Cerastus Knight-Lancer" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bfa-6123-2398-81eb" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="2fec-7d39-78ac-c759" name="Cerastus Knight-Lancer" hidden="false" targetId="7a18-a4a7-996e-0f83" type="profile"/>
+                        <infoLink id="f47e-d362-5cc0-dc59" name="Cerastus Shock Lance" hidden="false" targetId="e87c-4106-85eb-14a9" type="profile"/>
+                        <infoLink id="895d-ef7a-5202-9b1e" name="Shock Blast" hidden="false" targetId="29af-3be2-c233-39cc" type="profile"/>
+                        <infoLink id="e72f-4388-d38d-4c85" name="Ion Gauntlet" hidden="false" targetId="271b-4070-ab46-9c05" type="rule"/>
+                        <infoLink id="0a62-39b5-b8b5-67a7" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="3784-680c-5189-e801" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="ff58-f6b4-8ccc-6157" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                        <infoLink id="94a2-ef2b-2734-ae69" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="7396-f5e0-d31f-ac28" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                        <infoLink id="b159-d459-23d4-4608" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="20af-9f80-f06c-0b89" name="First Strike" hidden="false" targetId="d859-b0a0-af5c-bb73" type="rule"/>
+                        <infoLink id="02a2-7ec6-bdbe-d9e0" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="d68b-5d2e-f486-1e8f" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="0f87-7add-376f-0536" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="125.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="1939-35cc-2bd1-0aa2" name="Cerastus Knight-Castigator" hidden="false" collective="false" import="true" type="model">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4600-07c7-9941-090d" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="17fe-c4db-cc7c-f442" name="Cerastus Knight-Castigator" hidden="false" targetId="c834-99e7-7a8f-25ef" type="profile"/>
+                        <infoLink id="1ab2-c6ad-9385-799a" name="Castigator Pattern Bolt Cannon" hidden="false" targetId="abd1-ceab-9fb0-cfc7" type="profile"/>
+                        <infoLink id="1ee1-7b80-e488-534b" name="Tempest Warblade" hidden="false" targetId="e474-c165-2699-ee99" type="profile"/>
+                        <infoLink id="b9b0-6c20-f2ce-594e" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="19b7-f32c-e394-9afe" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="b724-fa30-205a-b385" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="634e-0144-bbcc-f211" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="5b31-ed61-62a0-8a63" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="51f1-d1a6-2ec7-5dd2" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="4974-c023-0dfd-7c90" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="a456-ea27-ad55-cff4" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="125.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="8d5c-b64f-eecd-7a9a" name="Cerastus Knight-Acheron" hidden="true" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="aa79-c45b-f459-d3e4" value="99.0">
+                          <conditions>
+                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa79-c45b-f459-d3e4" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="6071-975c-b3bf-c9ba" name="Cerastus Knight-Acheron" hidden="false" targetId="e2d3-517e-cc24-95b1" type="profile"/>
+                        <infoLink id="82fb-32c7-e45b-b522" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist" hidden="false" targetId="3f4c-3ef9-5818-660f" type="profile"/>
+                        <infoLink id="a46a-9225-39e0-5db3" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="4efa-9571-9f94-0782" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="f7f9-6bf8-b138-1f3c" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="63ed-32d0-9693-add5" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="f44b-b593-6988-003f" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                        <infoLink id="fedb-2d19-c5e5-d6f1" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="269c-efa5-0154-1139" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                        <infoLink id="137e-c2a1-79ba-95b0" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                        <infoLink id="67f2-a50d-e179-4277" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="826c-6280-afa3-909d" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="6ef1-95d7-81b0-b2f2" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink id="9738-dd2b-0422-828d" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="150.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="02cd-1479-444a-2277" name="Cerastus Knight-Atropos" hidden="true" collective="false" import="true" type="model">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="8e9a-03ad-b5dc-91cd" value="99.0">
+                          <conditions>
+                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e9a-03ad-b5dc-91cd" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="02a2-ba94-fae5-5ecb" name="Cerastus Knight-Atropos" hidden="false" targetId="8701-2cdd-5975-8a50" type="profile"/>
+                        <infoLink id="d3bc-0b87-05e1-c47f" name="Atrapos Lascutter / Graviton Singularity Cannon" hidden="false" targetId="3be8-9aca-ae33-d4c2" type="profile"/>
+                        <infoLink id="d4c2-e6b0-c748-0060" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
+                        <infoLink id="0513-1764-82ba-8896" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
+                        <infoLink id="9a48-8356-9f26-a96c" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                        <infoLink id="1e33-fbaa-fb69-907f" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="848d-dbd5-bb37-85b9" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                        <infoLink id="a5ea-5103-925b-d736" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                        <infoLink id="ca5a-49fe-22ce-7ce3" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                        <infoLink id="1908-a204-b75b-21f0" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+                        <infoLink id="8f18-e604-5c39-d6ff" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                        <infoLink id="5591-2c08-2357-0380" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+                        <infoLink id="aa16-7624-6931-0bbe" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+                      </infoLinks>
+                      <categoryLinks>
+                        <categoryLink id="5f3b-93d3-72ca-d92d" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="150.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <entryLinks>
             <entryLink id="d97e-0044-1fdd-11bd" name="Noble" hidden="false" collective="false" import="true" targetId="2bc4-ac6d-506b-65b5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbdf-1fff-bd7d-f4d9" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="3035-c869-4c29-9d2f" name="Enhanced Forge" hidden="false" collective="false" import="true" targetId="ad9a-b83b-b1ca-1a4c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31b1-41b1-010c-fdd2" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="51d7-1595-d6f4-e39f" name="Rally the Troops" hidden="false" collective="false" import="true" targetId="56d7-3d5f-d6a4-5d7c" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4325-7342-5cb3-3729" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -678,173 +1778,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="25.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ad9a-b83b-b1ca-1a4c" name="Enhanced Forge" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="9cb4-373b-5eea-75d3" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de77-97a0-da56-a657" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="adbd-0efd-b95e-1573" name="Cerastus Knight-Acheron (replaces Knight)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="680c-162e-9fd9-61ee" name="Cerastus Knight-Acheron" hidden="false" targetId="e2d3-517e-cc24-95b1" type="profile"/>
-                <infoLink id="dc62-1ac8-7c5a-108c" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist" hidden="false" targetId="3f4c-3ef9-5818-660f" type="profile"/>
-                <infoLink id="59f0-b570-a19b-34a6" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                <infoLink id="a983-ea8e-4dbf-5b00" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="44dd-dce2-3911-a853" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="6b25-1593-9fb0-4e54" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="e06c-259a-acd8-f462" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
-                <infoLink id="7823-8465-c937-3c62" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="c243-4d22-63cb-75bb" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-                <infoLink id="ec9a-d7d4-08de-a8a7" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                <infoLink id="8913-89a7-de91-c423" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                <infoLink id="8a9e-8052-9701-76f6" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                <infoLink id="582d-f440-ada9-3900" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e98b-cc94-64a4-6d42" name="Cerastus Knight-Atropos (replaces Knight)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="d866-a4d8-d060-0b6d" name="Cerastus Knight-Atropos" hidden="false" targetId="8701-2cdd-5975-8a50" type="profile"/>
-                <infoLink id="1815-77c0-d4c3-0106" name="Atrapos Lascutter / Graviton Singularity Cannon" hidden="false" targetId="3be8-9aca-ae33-d4c2" type="profile"/>
-                <infoLink id="75f7-0b5d-103d-eec3" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
-                <infoLink id="8e81-e6d9-87b7-eac8" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
-                <infoLink id="9819-1c25-cf80-548b" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                <infoLink id="f952-5b29-1844-684a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="5006-ddb7-622f-132a" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="0ec7-171b-7fb1-e534" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="d3ed-ce36-99b6-0be1" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="fc6a-635f-2ea1-6038" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                <infoLink id="c670-073d-0ce7-34b5" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                <infoLink id="918a-57fd-1b89-9739" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                <infoLink id="347b-cded-d893-b759" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b40b-ffab-238d-e9b0" name="Expanded Armoury" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b24d-2c81-11b7-ae5b" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c97-ba5f-8693-fe1f" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="1697-ec3c-2907-a190" name="Questorius Knight-Warden (replaces Knight)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="9ef1-51fa-a022-8f6c" name="Questorius Knight-Warden" hidden="false" targetId="1177-59bf-af99-29bc" type="profile"/>
-                <infoLink id="860c-f256-dbbb-cd08" name="Avenger Gattling Cannon" hidden="false" targetId="ee27-9a9c-80ec-15db" type="profile"/>
-                <infoLink id="c9e3-eb15-5db3-028a" name="Thunderstrike Gauntlet" hidden="false" targetId="11e7-2f43-2f3b-2afc" type="profile"/>
-                <infoLink id="d9c6-19aa-7587-03f2" name="Ironstorm Missile Pod" hidden="false" targetId="ac8c-7e82-ae8c-3016" type="profile"/>
-                <infoLink id="ab2c-7584-3757-643d" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                <infoLink id="505a-c32a-4a38-09aa" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="fe58-473a-029e-c751" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="369b-0d5e-1f9f-23c1" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-                <infoLink id="5720-53aa-b29d-4512" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
-                <infoLink id="4712-42e9-d719-86f6" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="55c2-9949-50a3-46c4" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                <infoLink id="ab3c-1e04-babd-1836" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
-                <infoLink id="9a5e-914b-571d-3f1f" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                <infoLink id="2cf4-63a1-d9cc-2985" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3541-234f-b123-4afb" name="Questorius Knight-Styrix (replaces Knight)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="b066-5139-9db6-6fd1" name="Questorius Knight-Styrix" hidden="false" targetId="4b68-f11e-e5e3-2aaa" type="profile"/>
-                <infoLink id="3926-9737-7a79-99ec" name="Volkite Chieorovile" hidden="false" targetId="200a-870c-27a1-906b" type="profile"/>
-                <infoLink id="b476-0817-e76e-3afd" name="Twin Linked Rad Cleanser" hidden="false" targetId="8183-d45d-b130-8391" type="profile"/>
-                <infoLink id="d7c0-e0d6-4b1d-3726" name="Hekaton Siege Claw" hidden="false" targetId="f2da-f3b2-9c13-2c3c" type="profile"/>
-                <infoLink id="47d4-7c99-202c-89ba" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
-                <infoLink id="1d47-0409-44ee-92c6" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                <infoLink id="a61e-3906-1450-0529" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="3d6d-a324-482d-9429" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="4d24-7f86-6d16-bb02" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-                <infoLink id="731b-c3db-92e1-e766" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-                <infoLink id="9e18-a95f-9c1c-132d" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="5691-c003-ba84-eae4" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="81b8-d0fd-53a2-ede1" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                <infoLink id="68ff-d77a-06b5-e1a8" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                <infoLink id="ca1b-b54c-dc16-2f79" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="6eb5-a345-e78c-0b05" name="Questorius Knight-Crusader (replaces Knight)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="dc4f-8225-41bd-5945" name="Questorius Knight-Crusader" hidden="false" targetId="aadc-48dc-a0ba-946f" type="profile"/>
-                <infoLink id="789f-38cf-cc0b-fe29" name="Rapid-Fire Battlecannon" hidden="false" targetId="971a-e8af-e74a-97d5" type="profile"/>
-                <infoLink id="ca87-d1b7-03bb-d2e8" name="Avenger Gatling Cannon" hidden="false" targetId="ee18-339f-7d38-ba86" type="profile"/>
-                <infoLink id="b848-485c-30ea-ab01" name="Twin Icarus Autocannon" hidden="false" targetId="ea5b-2162-85e6-25da" type="profile"/>
-                <infoLink id="4a36-8eb1-03ab-b4de" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                <infoLink id="57e8-2d30-97c2-b079" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="89e0-3672-e39e-e665" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="777f-03df-d647-0f88" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                <infoLink id="4557-efea-5edd-f1f6" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="75d3-bb93-ba69-0b6b" name="Questorius Knight-Gallant (replaces Knight)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="0ac9-54c8-b453-c4ae" name="Questorius Knight-Gallant" hidden="false" targetId="e0be-c41f-9c98-6460" type="profile"/>
-                <infoLink id="5e7f-56d1-297a-08f0" name="Thunderstrike Gauntlet" hidden="false" targetId="e1a6-df31-e0ba-8026" type="profile"/>
-                <infoLink id="a83c-5c78-7a71-d244" name="Reaper Chainsword" hidden="false" targetId="bb45-dd32-789c-99cd" type="profile"/>
-                <infoLink id="b10d-b080-61c1-429f" name="Stormspear Rocket Pod" hidden="false" targetId="07ff-6ded-bd96-304b" type="profile"/>
-                <infoLink id="8d6e-257c-495d-e91b" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                <infoLink id="e440-d32d-6612-7921" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="5de6-8b20-055d-d30e" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="0edf-7fb7-0ac2-b0ff" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="c583-1cf2-16a9-c48e" name="Titan Killer" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
-                <infoLink id="ac5a-4629-a17e-b401" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="2e99-3779-34f6-19f9" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                <infoLink id="10e1-aff0-6121-76d5" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                <infoLink id="02ea-38da-26e2-b8e6" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="2e35-c869-0ce0-0761" name="Questorius Knight-Magaera (replaces Knight)" hidden="false" collective="false" import="true" type="upgrade">
-              <infoLinks>
-                <infoLink id="6543-2087-9078-37d0" name="Questorius Knight-Magaera" hidden="false" targetId="863f-e14d-f4db-eadb" type="profile"/>
-                <infoLink id="ce73-0763-f621-62a4" name="Lightning Cannon" hidden="false" targetId="079a-f32d-1731-3b2e" type="profile"/>
-                <infoLink id="8296-eff8-705f-b00d" name="Twin Linked Rad Cleanser" hidden="false" targetId="41ef-b582-fa4d-e123" type="profile"/>
-                <infoLink id="8402-4bc7-50f8-6ce1" name="Hekaton Siege Claw" hidden="false" targetId="8d22-91d3-8b3e-9bce" type="profile"/>
-                <infoLink id="7d1d-24d1-f4bb-3f03" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
-                <infoLink id="c6d2-cc36-bf9e-ebd1" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                <infoLink id="a605-ff31-289a-3ceb" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="ff7a-969c-93ec-4189" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="8657-ac42-89f4-2799" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-                <infoLink id="dee9-e9dc-ef73-1c21" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="82c4-d119-814b-77af" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="e2d9-b2bf-e551-7d83" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                <infoLink id="feb5-ae5c-0725-73f6" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="85ff-d061-7327-5a69" name="Seneschal" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ecb1-ea1a-904c-6dc0" type="max"/>
@@ -1010,17 +1943,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Weapon lines are combined; check the wiki sheet.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f2da-f3b2-9c13-2c3c" name="Hekaton Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1) OR EA(+2), MW versus immobile targets</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="8d22-91d3-8b3e-9bce" name="Hekaton Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">EA(+1) OR MW EA(+2) versus immobile targets</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f2da-f3b2-9c13-2c3c" name="Hekaton Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1) OR EA(+2), MW versus immobile targets</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -1257,14 +2190,14 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="8183-d45d-b130-8391" name="Twin Linked Rad Cleanser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="41ef-b582-fa4d-e123" name="Twin Linked Rad Cleanser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+, Ignore Cover</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="41ef-b582-fa4d-e123" name="Twin Linked Rad Cleanser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="8183-d45d-b130-8391" name="Twin Linked Rad Cleanser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+, Ignore Cover</characteristic>

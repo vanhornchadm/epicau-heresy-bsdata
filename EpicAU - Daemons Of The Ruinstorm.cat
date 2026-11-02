@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5cf7-d880-4af1-62f1" name="EpicAU - Daemons Of The Ruinstorm" revision="2" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5cf7-d880-4af1-62f1" name="EpicAU - Daemons Of The Ruinstorm" revision="3" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="77f9-aab5-0ff4-5947" name="Daemons Of The Ruinstorm" hidden="false">
       <rules>
@@ -214,6 +214,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </costs>
         </selectionEntry>
         <selectionEntry id="db19-9758-638d-b1da" name="Herald of Khorne" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="decrement" field="a03a-1b15-d493-14c3" value="1">
+              <repeats>
+                <repeat field="selections" scope="b324-9a6e-fe0a-710b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68a-c77f-ef79-5381" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="1199-65b8-28c4-655a" value="1">
+              <repeats>
+                <repeat field="selections" scope="b324-9a6e-fe0a-710b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b68a-c77f-ef79-5381" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a03a-1b15-d493-14c3" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1199-65b8-28c4-655a" type="max"/>
@@ -228,6 +240,48 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </infoLinks>
           <categoryLinks>
             <categoryLink id="ff4a-93fc-a7fe-b15a" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b68a-c77f-ef79-5381" name="Daemon Prince of Khorne" hidden="true" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="b324-9a6e-fe0a-710b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d49-4305-e190-ad5e" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="b435-151e-c223-209c" value="1.0">
+              <conditions>
+                <condition field="selections" scope="b324-9a6e-fe0a-710b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d49-4305-e190-ad5e" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="b435-151e-c223-209c" value="0">
+              <conditions>
+                <condition field="selections" scope="b324-9a6e-fe0a-710b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b435-151e-c223-209c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="a5a9-5976-96f0-0ef5" name="Daemon Prince of Khorne" hidden="false" targetId="11e7-a753-1254-8984" type="profile"/>
+            <infoLink id="5570-92b0-20b6-7d3d" name="Daemon Weapon" hidden="false" targetId="bb75-998e-a42b-77de" type="profile"/>
+            <infoLink id="7c29-fbc4-8594-1955" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="ca8a-9378-a6e6-f571" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="8875-98f5-f368-14f5" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
+            <infoLink id="ecb3-cdd8-5265-879d" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
+            <infoLink id="8822-22f9-edd4-efbc" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
+            <infoLink id="d6fb-cae0-0f59-d739" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+            <infoLink id="098e-8e08-5810-9df5" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
+            <infoLink id="03ef-8922-1eed-59d1" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="8b7b-6c1d-220a-59f1" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="41b2-86c1-2aae-d2c7" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="8a43-ce64-befd-6252" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -340,12 +394,29 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="c9ea-b0f2-a576-ba2e" name="Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="1f33-2705-9324-470e" name="Daemon Prince (Khorne)" hidden="false" collective="false" import="true" targetId="e6ac-07e4-606f-c4e4" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="5d49-4305-e190-ad5e" name="Daemon Prince (Khorne)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="7c5f-fb40-4b06-34da" value="0">
+                  <conditions>
+                    <condition field="selections" scope="b324-9a6e-fe0a-710b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7c-8701-6de7-9d73" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c5f-fb40-4b06-34da" type="max"/>
               </constraints>
-            </entryLink>
+              <rules>
+                <rule id="bfed-bdb6-c76d-8b75" name="Daemon Prince (Khorne)" hidden="false">
+                  <description>One Daemon Prince per Chaos faction in the army. Upgrade 1 unit in this formation: Herald of Khorne to Daemon Prince of Khorne. Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
             <entryLink id="0a2a-41b7-f013-57b2" name="Chaos Spawn" hidden="false" collective="false" import="true" targetId="d897-83b3-3853-c441" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ab-9000-9c4b-459e" type="max"/>
@@ -406,6 +477,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </costs>
         </selectionEntry>
         <selectionEntry id="3144-ae09-3313-acd1" name="Herald of Nurgle" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="decrement" field="b3e5-244e-f34e-dea2" value="1">
+              <repeats>
+                <repeat field="selections" scope="599c-e23e-6b17-5438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a245-714e-d397-8305" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="03e8-e22a-3dfd-9f76" value="1">
+              <repeats>
+                <repeat field="selections" scope="599c-e23e-6b17-5438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a245-714e-d397-8305" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3e5-244e-f34e-dea2" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03e8-e22a-3dfd-9f76" type="max"/>
@@ -420,6 +503,50 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </infoLinks>
           <categoryLinks>
             <categoryLink id="f958-e45e-9ebb-ea62" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a245-714e-d397-8305" name="Daemon Prince of Nurgle" hidden="true" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="599c-e23e-6b17-5438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c9a-1b54-ffe3-821f" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="52d6-9ccd-4539-e479" value="1.0">
+              <conditions>
+                <condition field="selections" scope="599c-e23e-6b17-5438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c9a-1b54-ffe3-821f" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="52d6-9ccd-4539-e479" value="0">
+              <conditions>
+                <condition field="selections" scope="599c-e23e-6b17-5438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52d6-9ccd-4539-e479" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7586-1651-7b69-e419" name="Daemon Prince of Nurgle" hidden="false" targetId="a68f-891d-d3d2-1022" type="profile"/>
+            <infoLink id="6db9-8681-5a43-a993" name="Daemon Weapon" hidden="false" targetId="d3be-951e-5a57-f8c7" type="profile"/>
+            <infoLink id="46a8-d493-e3ac-2083" name="Warp Blast" hidden="false" targetId="ee48-e779-3ce8-251c" type="profile"/>
+            <infoLink id="8a5f-e8ad-641b-9849" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="b4e3-7f07-c98a-b461" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="aaf7-373a-78a9-7283" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
+            <infoLink id="45c1-2cfc-81da-0edc" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
+            <infoLink id="c9f6-d53c-8850-6309" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
+            <infoLink id="46c3-7e3a-c21b-1943" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+            <infoLink id="739f-3af8-7a19-4b64" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
+            <infoLink id="74dd-d9ff-938b-f7b3" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="0ce4-c838-f696-8112" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="d3b9-6ade-83d8-c730" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="f18b-70d8-46ba-a908" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="f92a-b1e6-062a-e341" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -534,12 +661,29 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="c2fb-8898-c4f8-b622" name="Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="ee9c-6045-9b48-08db" name="Daemon Prince (Nurgle)" hidden="false" collective="false" import="true" targetId="6bbd-52e3-f5e6-e61d" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="2c9a-1b54-ffe3-821f" name="Daemon Prince (Nurgle)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="f4b4-b3ec-28dc-3e44" value="0">
+                  <conditions>
+                    <condition field="selections" scope="599c-e23e-6b17-5438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1600-de3d-e782-04ac" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4b4-b3ec-28dc-3e44" type="max"/>
               </constraints>
-            </entryLink>
+              <rules>
+                <rule id="9d02-7ee2-dd1e-1d72" name="Daemon Prince (Nurgle)" hidden="false">
+                  <description>One Daemon Prince per Chaos faction in the army. Upgrade 1 unit in this formation: Herald of Nurgle to Daemon Prince of Nurgle. Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
             <entryLink id="451b-6a4a-2493-3010" name="Chaos Spawn" hidden="false" collective="false" import="true" targetId="d897-83b3-3853-c441" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53b1-bcc3-00e3-13ac" type="max"/>
@@ -601,6 +745,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </costs>
         </selectionEntry>
         <selectionEntry id="87ec-a1f7-2f9a-5bf2" name="Herald of Slaanesh" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="decrement" field="0d1f-8b44-c32d-e9c6" value="1">
+              <repeats>
+                <repeat field="selections" scope="f71c-7ff4-8715-e546" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aaee-6563-e49a-6a9f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="c774-015e-6dfe-196b" value="1">
+              <repeats>
+                <repeat field="selections" scope="f71c-7ff4-8715-e546" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aaee-6563-e49a-6a9f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d1f-8b44-c32d-e9c6" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c774-015e-6dfe-196b" type="max"/>
@@ -615,6 +771,51 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </infoLinks>
           <categoryLinks>
             <categoryLink id="800c-2ee0-9575-3626" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aaee-6563-e49a-6a9f" name="Daemon Prince of Slaanesh" hidden="true" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="f71c-7ff4-8715-e546" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d23-3921-5647-5aee" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="59b7-900b-c154-ffb5" value="1.0">
+              <conditions>
+                <condition field="selections" scope="f71c-7ff4-8715-e546" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d23-3921-5647-5aee" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="59b7-900b-c154-ffb5" value="0">
+              <conditions>
+                <condition field="selections" scope="f71c-7ff4-8715-e546" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59b7-900b-c154-ffb5" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="3bb5-3cb8-4c06-f22c" name="Daemon Prince of Slaanesh" hidden="false" targetId="66ea-983d-9e9c-9d9a" type="profile"/>
+            <infoLink id="9922-ba42-f570-8792" name="Crushing Claws" hidden="false" targetId="b361-182f-be4a-1cbb" type="profile"/>
+            <infoLink id="9dd2-11b3-bba8-0fd0" name="Sopoforic Musk" hidden="false" targetId="fc72-f6be-972a-0fde" type="profile"/>
+            <infoLink id="a66a-46ea-99a5-cb45" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="4b5c-2ce5-293f-d1aa" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="c94e-af77-0b44-0256" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
+            <infoLink id="8686-3000-04b2-12cf" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
+            <infoLink id="8da4-d44b-5aa7-3140" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
+            <infoLink id="e858-6414-364c-5c72" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+            <infoLink id="502c-7af0-130e-c28c" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
+            <infoLink id="25ce-f3fa-fb04-a499" name="First Strike" hidden="false" targetId="d859-b0a0-af5c-bb73" type="rule"/>
+            <infoLink id="4e6b-cb37-7392-0c82" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="b87b-4417-c598-09b1" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="f43d-d214-1f17-25e2" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="25b8-9bce-5a6c-128b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="de44-134a-078f-0a64" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -730,12 +931,29 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="171c-4951-bd5f-edfa" name="Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="d884-a42a-f9b4-5e9b" name="Daemon Prince (Slaanesh)" hidden="false" collective="false" import="true" targetId="eb08-df4e-436b-19d3" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="2d23-3921-5647-5aee" name="Daemon Prince (Slaanesh)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="8308-df04-ffb8-bd90" value="0">
+                  <conditions>
+                    <condition field="selections" scope="f71c-7ff4-8715-e546" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d79d-6935-6f53-c3e7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8308-df04-ffb8-bd90" type="max"/>
               </constraints>
-            </entryLink>
+              <rules>
+                <rule id="4710-28c6-bd38-8ee6" name="Daemon Prince (Slaanesh)" hidden="false">
+                  <description>One Daemon Prince per Chaos faction in the army. Upgrade 1 unit in this formation: Herald of Slaanesh to Daemon Prince of Slaanesh. Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
             <entryLink id="086c-c253-28c8-c830" name="Chaos Spawn" hidden="false" collective="false" import="true" targetId="d897-83b3-3853-c441" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a576-db97-a471-0a12" type="max"/>
@@ -796,6 +1014,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </costs>
         </selectionEntry>
         <selectionEntry id="83a3-b1f7-dfa3-4fb6" name="Herald of Tzeentch" hidden="false" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="decrement" field="2c91-f11c-da93-249a" value="1">
+              <repeats>
+                <repeat field="selections" scope="9705-c3d5-947a-98f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9754-54ad-1f15-fddb" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e69c-12e3-8d75-d0df" value="1">
+              <repeats>
+                <repeat field="selections" scope="9705-c3d5-947a-98f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9754-54ad-1f15-fddb" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c91-f11c-da93-249a" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e69c-12e3-8d75-d0df" type="max"/>
@@ -810,6 +1040,48 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </infoLinks>
           <categoryLinks>
             <categoryLink id="ce67-bdb8-35cf-3f1c" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
+          </categoryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9754-54ad-1f15-fddb" name="Daemon Prince of Tzeentch" hidden="true" collective="false" import="true" type="model">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="9705-c3d5-947a-98f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="457b-dc03-31d5-5bbf" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="2231-ab0f-d8c3-7c0f" value="1.0">
+              <conditions>
+                <condition field="selections" scope="9705-c3d5-947a-98f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="457b-dc03-31d5-5bbf" type="atLeast"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="2231-ab0f-d8c3-7c0f" value="0">
+              <conditions>
+                <condition field="selections" scope="9705-c3d5-947a-98f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2231-ab0f-d8c3-7c0f" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="cff7-9371-4cdc-51ac" name="Daemon Prince of Tzeentch" hidden="false" targetId="67c7-bca2-2185-621b" type="profile"/>
+            <infoLink id="f41d-1ad3-4cad-9853" name="Warp Tempest" hidden="false" targetId="a31a-25e1-8086-2e75" type="profile"/>
+            <infoLink id="1bd0-4ea3-534a-0e22" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="542d-7a8f-cf57-b326" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="a5b4-6c26-3165-dca6" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
+            <infoLink id="37da-6dac-196c-38d5" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
+            <infoLink id="064a-4cc3-d39b-1567" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
+            <infoLink id="a93e-b889-7d3f-c61a" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+            <infoLink id="a08c-b31c-cdef-967c" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
+            <infoLink id="750b-b961-8256-843b" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="8333-99ae-9ad7-b870" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="33aa-4403-bee0-215c" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="196f-43a2-54f2-4f99" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
           </categoryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -918,12 +1190,29 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="e76d-8244-a056-3496" name="Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="663a-148b-c7cf-5d1b" name="Daemon Prince (Tzeentch)" hidden="false" collective="false" import="true" targetId="f88b-9a93-0111-2b23" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="457b-dc03-31d5-5bbf" name="Daemon Prince (Tzeentch)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="6316-b206-83db-18d2" value="0">
+                  <conditions>
+                    <condition field="selections" scope="9705-c3d5-947a-98f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3592-4613-830b-bc7d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6316-b206-83db-18d2" type="max"/>
               </constraints>
-            </entryLink>
+              <rules>
+                <rule id="5f25-ee77-5214-ed79" name="Daemon Prince (Tzeentch)" hidden="false">
+                  <description>One Daemon Prince per Chaos faction in the army. Upgrade 1 unit in this formation: Herald of Tzeentch to Daemon Prince of Tzeentch. Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="50.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
             <entryLink id="c7c7-3690-6d79-cf7d" name="Chaos Spawn" hidden="false" collective="false" import="true" targetId="d897-83b3-3853-c441" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee56-f9a6-3b7b-1fab" type="max"/>
@@ -1731,179 +2020,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry id="e6ac-07e4-606f-c4e4" name="Daemon Prince (Khorne)" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="4d5e-30bd-31b9-3c15" name="Daemon Prince (Khorne)" hidden="false">
-          <description>Replace the Herald with a Daemon Prince. One Daemon Prince per Chaos faction in the army.</description>
-        </rule>
-      </rules>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="be0b-77f8-52d2-9de0" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e7f-90e1-90d4-7ea7" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10ce-14d7-0779-f260" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="265c-cffc-05d2-da23" name="Daemon Prince of Khorne (replaces Herald of Khorne)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cebf-59bc-4d90-1692" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="57c4-6468-e8ba-c2ce" name="Daemon Prince of Khorne" hidden="false" targetId="11e7-a753-1254-8984" type="profile"/>
-                <infoLink id="31bc-e4db-f156-0730" name="Daemon Weapon" hidden="false" targetId="bb75-998e-a42b-77de" type="profile"/>
-                <infoLink id="ea38-4159-b8b6-6f53" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="e59d-16e2-09cf-a29b" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="feec-1a28-7d29-d302" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
-                <infoLink id="aa22-512e-26f9-12ae" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-                <infoLink id="be19-e130-c7ad-bbfe" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
-                <infoLink id="911b-1092-fe18-5de4" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
-                <infoLink id="c0c2-3105-ec8d-9bf2" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-                <infoLink id="247c-91c0-b5f5-8b1a" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="c644-a0f8-61fd-38f9" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="6db9-b73d-06ca-7a73" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="6bbd-52e3-f5e6-e61d" name="Daemon Prince (Nurgle)" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="5ebc-46b9-ff8f-c67d" name="Daemon Prince (Nurgle)" hidden="false">
-          <description>Replace the Herald with a Daemon Prince. One Daemon Prince per Chaos faction in the army.</description>
-        </rule>
-      </rules>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4907-bcc4-a93e-6d80" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="470e-7f48-c7fc-1e86" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1874-c627-133f-474b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="0ece-4f69-5edc-0e04" name="Daemon Prince of Nurgle (replaces Herald of Nurgle)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a57c-fc03-2bb4-d8d0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d422-92cb-663b-3211" name="Daemon Prince of Nurgle" hidden="false" targetId="a68f-891d-d3d2-1022" type="profile"/>
-                <infoLink id="b04e-eb50-7bb5-9f0a" name="Daemon Weapon" hidden="false" targetId="d3be-951e-5a57-f8c7" type="profile"/>
-                <infoLink id="5eff-eb80-2fcd-3189" name="Warp Blast" hidden="false" targetId="ee48-e779-3ce8-251c" type="profile"/>
-                <infoLink id="8cb7-b485-8091-9e72" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="1f85-4a94-edd5-73d6" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="8ee1-57d5-4fe5-68ea" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
-                <infoLink id="610a-4bf5-0451-7e32" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-                <infoLink id="4a2d-a1a8-94f6-4667" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
-                <infoLink id="34de-155e-a800-d4db" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
-                <infoLink id="1570-a40d-32e8-cc06" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-                <infoLink id="9b09-6f1e-9bc2-454e" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="d191-bd2f-de05-5e68" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="5d7f-f5b5-c1d2-3f0c" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                <infoLink id="c87a-b5f9-c2e4-a505" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="eb08-df4e-436b-19d3" name="Daemon Prince (Slaanesh)" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="e3e3-0f4a-fca3-f416" name="Daemon Prince (Slaanesh)" hidden="false">
-          <description>Replace the Herald with a Daemon Prince. One Daemon Prince per Chaos faction in the army.</description>
-        </rule>
-      </rules>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7970-7e77-1326-e5a2" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb2e-8b35-8180-f629" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7a3-5427-7fee-7ce8" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="cc90-98ad-bd4b-489b" name="Daemon Prince of Slaanesh (replaces Herald of Slaanesh)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c8-f928-9821-3e8f" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="887a-eda6-a3b8-8472" name="Daemon Prince of Slaanesh" hidden="false" targetId="66ea-983d-9e9c-9d9a" type="profile"/>
-                <infoLink id="606e-3340-16f8-547f" name="Crushing Claws" hidden="false" targetId="b361-182f-be4a-1cbb" type="profile"/>
-                <infoLink id="c1bf-3661-ad05-c6d3" name="Sopoforic Musk" hidden="false" targetId="fc72-f6be-972a-0fde" type="profile"/>
-                <infoLink id="2dbd-1aaf-a4c8-4076" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="4bc5-3fb7-884f-c1d4" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="ba72-85a9-0a34-52e5" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
-                <infoLink id="1f43-50f5-7392-432a" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-                <infoLink id="160a-faa1-b653-d58f" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
-                <infoLink id="ef2a-09ec-26e5-ada7" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
-                <infoLink id="bc70-b0ba-1f6b-2d06" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-                <infoLink id="2f3b-42d0-ae8c-bd66" name="First Strike" hidden="false" targetId="d859-b0a0-af5c-bb73" type="rule"/>
-                <infoLink id="7ff5-6c4d-b05b-4c89" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="0c84-0065-9da4-393a" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="d953-c99b-11ec-1fa4" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                <infoLink id="f75f-466f-833e-19e6" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f88b-9a93-0111-2b23" name="Daemon Prince (Tzeentch)" hidden="false" collective="false" import="true" type="upgrade">
-      <rules>
-        <rule id="7ab2-e870-4997-a7d9" name="Daemon Prince (Tzeentch)" hidden="false">
-          <description>Replace the Herald with a Daemon Prince. One Daemon Prince per Chaos faction in the army.</description>
-        </rule>
-      </rules>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="f29f-a8fb-a044-c89a" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4732-d355-876c-8fb8" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7805-c1ce-8d6e-853b" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2b29-fae6-eec9-fed8" name="Daemon Prince of Tzeentch (replaces Herald of Tzeentch)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de4-de09-3528-729e" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3a45-ac44-80a0-de1f" name="Daemon Prince of Tzeentch" hidden="false" targetId="67c7-bca2-2185-621b" type="profile"/>
-                <infoLink id="ff59-e105-633e-de0a" name="Warp Tempest" hidden="false" targetId="a31a-25e1-8086-2e75" type="profile"/>
-                <infoLink id="c462-dbb7-f359-17e3" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="a230-90bc-6c57-bf1b" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="642d-1ed6-0769-c990" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
-                <infoLink id="cc93-65cb-42a2-0597" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-                <infoLink id="a8a4-b17b-1b2f-8543" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
-                <infoLink id="aa31-7100-cd10-c1c7" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
-                <infoLink id="baf2-c7b3-102a-f4b1" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-                <infoLink id="f8bf-e2e0-6979-47a5" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="1a30-5422-49a8-bd62" name="Extra Attacks" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="4dc4-217b-c5bc-4c9f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="50.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="d897-83b3-3853-c441" name="Chaos Spawn" hidden="false" collective="false" import="true" type="upgrade">
       <selectionEntries>
         <selectionEntry id="132c-9134-4960-b5b9" name="Chaos Spawn" hidden="false" collective="false" import="true" type="model">
@@ -2136,17 +2252,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="9e16-ffb0-1491-b6ae" name="Daemon Blade" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1), MW</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="02dd-36c8-e909-f283" name="Daemon Blade" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW EA (+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9e16-ffb0-1491-b6ae" name="Daemon Blade" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1), MW</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -2235,7 +2351,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Weapon lines are combined; check the wiki sheet.</characteristic>
       </characteristics>
     </profile>
-    <profile id="ff85-b9fc-ada5-0cda" name="Fangs and Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="0f5d-5c8a-3a24-dc4f" name="Fangs and Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons)</characteristic>
@@ -2249,7 +2365,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f5d-5c8a-3a24-dc4f" name="Fangs and Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="ff85-b9fc-ada5-0cda" name="Fangs and Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons)</characteristic>

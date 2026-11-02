@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="3" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="4" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
@@ -41,6 +41,7 @@
     <categoryEntry id="5485-21a2-ac74-b69e" name="Character" hidden="false"/>
     <categoryEntry id="ba14-d0f1-f942-df54" name="Configuration" hidden="true"/>
     <categoryEntry id="dca3-6748-53f0-e4bb" name="Tactical Transport Space" hidden="true"/>
+    <categoryEntry id="1c1a-168c-d3cf-3310" name="Upgraded Unit" hidden="true"/>
   </categoryEntries>
   <sharedRules>
     <rule id="d6db-799f-23f8-2194" name="Allies" hidden="false">

@@ -32,6 +32,7 @@ These rules are enforced:
 - Army-wide caps on upgrades: one Legate, one Captain-General, one Archmagos Prime, one Seneschal. Free Legate Commanders and Discipline Masters are limited to one per 500 points or part thereof.
 - Titan weapon slots: Warhound 2, Warhound pack 4, Reaver 3, Warlord 4, with their costs.
 - Standard Transport (Legion lists) requires exactly enough transports: one per 2 Tactical-sized units in the formation, rounded up. That counts squads added by upgrades such as Support Squads, and a Primarch, who takes his retinue's space. Characters, Dreadnoughts and Rapiers take no space. The transports are Rhino Armoured Carriers, and one of them per formation may be a Damocles Command Rhino instead. Both cost 0 pts. Add Standard Transport last; if units change afterwards, BattleScribe flags the transport count until you fix it.
+- Swap upgrades (Armoury Assets, Scythes of the Khan, Vanquisher, Executioner, Hyperios, Expanded Armoury, Enhanced Forge and the Daemon Prince upgrades) replace units one-for-one. Taking the upgrade reveals the upgraded units next to the units they replace, including units added by other upgrades such as Tank or Heavy Transport. Each upgraded unit takes an original's place and costs the original's price plus the swap cost. The upgrade's own limit (such as 1-2 units for Armoury Assets) is enforced, and only swaps for units the formation can contain are offered. A swap is left out where another upgrade already sells the upgraded unit: the Dreadnought upgrade offers Deredeos directly, so Armoury Assets doesn't swap its Contemptors.
 
 These rules are shown as text only, not enforced:
 
@@ -40,7 +41,6 @@ These rules are shown as text only, not enforced:
 - Daemon god-matching (Followers or Greater Daemons must share their Horde's god), the 3-9 minimum per Followers unit type, and one Daemon Prince per Chaos faction.
 - Militia Provenance: only two types per army, and the Traitor Militia requirement.
 - Mount restrictions on Titan weapons (arm or carapace).
-- Swap upgrades such as Armoury Assets can't check that the unit being replaced is actually in the formation.
 
 ## Data decisions and gaps
 

@@ -37,8 +37,8 @@ UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF', 'Notes']
 WEAPON_CHARS = ['Range', 'Firepower', 'Notes']
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
-        'Primarch', 'Character', 'Configuration', 'Tactical Transport Space']
-HIDDEN_CATS = {'Configuration', 'Tactical Transport Space'}  # internal bookkeeping categories
+        'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit']
+HIDDEN_CATS = {'Configuration', 'Tactical Transport Space', 'Upgraded Unit'}  # internal bookkeeping categories
 CAT = {c: gid('cat', c) for c in CATS}
 SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': 'Lord of War',
             'horde': 'Daemonic Horde', 'greater': 'Greater Daemon Horde', 'followers': 'Followers of Chaos',
@@ -230,11 +230,32 @@ def profile(pid, name, type_id, type_name, chars, vals):
 
 
 # ------------------------------------------------------------------ list -> XML
+def part_units(parts):
+    """Names of every unit a list of DSL parts can contain."""
+    names = []
+    for p in parts:
+        if p['kind'] == 'unit':
+            names.append(p['unit'])
+        elif p['kind'] == 'or':
+            for o in p['opts']:
+                names += part_units(o['parts'])
+        elif p['kind'] in ('mix', 'fill'):
+            names += [u['unit'] for u in p['units']]
+    return names
+
+
+def swap_matches(frm, unit):
+    return unit in frm if isinstance(frm, tuple) else unit == frm
+
+
 class Builder:
     def __init__(self, army, cat_id, profiles, allied_force_id):
         self.army, self.cat_id, self.prof, self.allied_force_id = army, cat_id, profiles, allied_force_id
         self.missing = []
         self.formation_id = None  # set while a formation is being built (scope for transport counts)
+        self.variants = None  # the formation's swap upgrade (e.g. Armoury Assets) while it is being built
+        self.offered = set()  # units offered directly by the parts being built
+        self.context = None  # name of the upgrade whose parts are being built (None = the formation's own units)
 
     def find_unit(self, name):
         for sheet in self.army['sheets']:
@@ -246,24 +267,27 @@ class Builder:
                 'notes': 'Unit not found on the reference sheet.'}
 
     # -- unit entries
-    def unit_entry(self, path, part, name=None):
+    def unit_entry(self, path, part, name=None, mods=(), extra_cons=(), extra_cats=(), hidden=False):
         unit = self.find_unit(part['unit'])
         eid = gid('se', self.cat_id, path)
         ids, rules, cats = self.prof.unit_profiles(unit)
         space = self.army['transport_space']
         if space and (unit['name'] in space or 'Demi-God' in unit['notes']):
             cats = cats + ['Tactical Transport Space']
+        cats = cats + list(extra_cats)
         cons = []
         if part['min'] is not None and part['min'] > 0:
             cons.append(constraint(gid('con', eid, 'min'), 'min', part['min']))
         if part['max'] is not None:
             cons.append(constraint(gid('con', eid, 'max'), 'max', part['max']))
+        cons += list(extra_cons)
         links = [X('infoLink', {'id': gid('il', eid, pid), 'name': pname, 'hidden': 'false', 'targetId': pid,
                                 'type': 'profile'}) for pid, pname in ids]
         links += [info_rule(eid, r) for r in rules]
-        return ordered('selectionEntry', {'id': eid, 'name': name or part['label'] or unit['name'], 'hidden': 'false',
-                                          'collective': 'false', 'import': 'true', 'type': 'model'},
-                       constraints=cons, infoLinks=links,
+        return ordered('selectionEntry', {'id': eid, 'name': name or part['label'] or unit['name'],
+                                          'hidden': str(hidden).lower(), 'collective': 'false', 'import': 'true',
+                                          'type': 'model'},
+                       modifiers=list(mods), constraints=cons, infoLinks=links,
                        categoryLinks=[cat_link(eid, c) for c in cats], costs=cost(part['each']))
 
     def parts(self, path, parts):
@@ -272,7 +296,7 @@ class Builder:
         for i, p in enumerate(parts):
             pp = f'{path}/{i}'
             if p['kind'] == 'unit':
-                ses.append(self.unit_entry(pp, p))
+                ses += self.unit_with_variants(pp, p)
             elif p['kind'] == 'or':
                 gid_ = gid('seg', self.cat_id, pp)
                 opts = []
@@ -297,26 +321,95 @@ class Builder:
                 if p['max'] is not None:
                     cons.append(constraint(gid('con', gid_, 'max'), 'max', p['max']))
                 kids = [self.unit_entry(f'{pp}/{j}', dict(u, min=0)) for j, u in enumerate(p['units'])]
+                # Upgraded units count towards the group's total, so they replace originals one-for-one.
+                seen = set()
+                for j, u in enumerate(p['units']):
+                    for to, each in self.variants_for(u['unit']):
+                        if (to, u['each'] + each) in seen:  # one entry per upgraded unit, whichever unit it replaces
+                            self.variants['made'].append((u['unit'], to, each, self.context))
+                            continue
+                        seen.add((to, u['each'] + each))
+                        kids.append(self.variant_entry(f'{pp}/{j}', u, to, each))
                 grps.append(ordered('selectionEntryGroup', {'id': gid_, 'name': p['label'], 'hidden': 'false',
                                                             'collective': 'false', 'import': 'true'},
                                     constraints=cons, selectionEntries=kids))
             elif p['kind'] == 'fill':
                 grps.append(self.fill_group(pp, p))
-            elif p['kind'] == 'swap':
-                gid_ = gid('seg', self.cat_id, pp)
-                cons = [constraint(gid('con', gid_, 'min'), 'min', p['min'])] if p['min'] else []
-                if p['max'] is not None:
-                    cons.append(constraint(gid('con', gid_, 'max'), 'max', p['max']))
-                kids = []
-                for j, (frm, to, each) in enumerate(p['swaps']):
-                    e = self.unit_entry(f'{pp}/{j}', {'unit': to, 'min': 0, 'max': p['max'], 'each': each, 'label': None},
-                                        name=f'{to} (replaces {frm})')
-                    e.attrs['type'] = 'upgrade'
-                    kids.append(e)
-                grps.append(ordered('selectionEntryGroup', {'id': gid_, 'name': p['label'], 'hidden': 'false',
-                                                            'collective': 'false', 'import': 'true'},
-                                    constraints=cons, selectionEntries=kids))
         return ses, grps
+
+    # -- swap upgrades: upgraded units sit beside the units they replace
+    def variants_for(self, unit):
+        """(to_unit, extra_cost) swaps the formation's swap upgrade allows for `unit` here."""
+        if not self.variants:
+            return []
+        targets = {to for _, to, _ in self.variants['swaps']}
+        return [(to, each) for frm, to, each in self.variants['swaps']
+                if swap_matches(frm, unit) and unit not in targets and to not in self.offered]
+
+    def variant_entry(self, path, base, to, each):
+        """An upgraded copy of `base`, hidden and unavailable until the swap upgrade is taken."""
+        v, fid = self.variants, self.formation_id
+        cmax = gid('con', self.cat_id, path, 'variant-max', to)
+        taken = [X('conditions', children=[condition('atLeast', v['uid'], 1, fid, child=True)])]
+        mods = [X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'false'}, taken),
+                X('modifier', {'type': 'set', 'field': cmax, 'value': fmt(v['hi'] or 99)}, taken)]
+        if v['hi']:
+            mods.append(X('modifier', {'type': 'set', 'field': cmax, 'value': '0'},
+                          [X('conditions', children=[condition('greaterThan', CAT['Upgraded Unit'], v['hi'], fid,
+                                                               child=True)])]))
+        v['made'].append((base['unit'], to, each, self.context))
+        return self.unit_entry(path + '/variant/' + to, {'unit': to, 'min': 0, 'max': None,
+                                                         'each': (base['each'] or 0) + each, 'label': None},
+                               mods=mods, extra_cons=[constraint(cmax, 'max', 0)], extra_cats=['Upgraded Unit'],
+                               hidden=True)
+
+    def unit_with_variants(self, path, part):
+        """A unit entry plus its upgraded versions; each upgrade taken lowers the original's count by one."""
+        vs = self.variants_for(part['unit'])
+        if not vs:
+            return [self.unit_entry(path, part)]
+        variants = [self.variant_entry(path, part, to, each) for to, each in vs]
+        eid = gid('se', self.cat_id, path)
+        mods = []
+        for field, present in (('min', part['min'] is not None and part['min'] > 0), ('max', part['max'] is not None)):
+            if present:
+                mods += [X('modifier', {'type': 'decrement', 'field': gid('con', eid, field), 'value': '1'},
+                           [X('repeats', children=[repeat(e.attrs['id'], 1, self.formation_id, child=True)])])
+                         for e in variants]
+        return [self.unit_entry(path, part, mods=mods)] + variants
+
+    def variant_marker(self, uid, name, u):
+        """The swap upgrade itself: counts towards the upgrade cap and requires lo..hi upgraded units."""
+        v = self.variants
+        cmax = gid('con', uid, 'max')
+        mods = []
+        if v['lo']:
+            mods.append(X('modifier', {'type': 'set', 'field': cmax, 'value': '0'},
+                          [X('conditions', children=[condition('lessThan', CAT['Upgraded Unit'], v['lo'],
+                                                               self.formation_id, child=True)])]))
+        v['desc'] = X('description', text='')
+        return ordered('selectionEntry', {'id': uid, 'name': name, 'hidden': 'false', 'collective': 'false',
+                                          'import': 'true', 'type': 'upgrade'},
+                       modifiers=mods, constraints=[constraint(cmax, 'max', 1)],
+                       rules=[X('rule', {'id': gid('r', uid), 'name': name, 'hidden': 'false'}, [v['desc']])],
+                       infoLinks=[info_rule(uid, r) for r in u['rules']], costs=cost(u['cost']))
+
+    def variant_text(self):
+        v = self.variants
+        n = (str(v['lo']) if v['lo'] == v['hi'] else f"{v['lo']}-{v['hi']}") if v['hi'] else f"{v['lo']} or more"
+        froms = {}
+        for frm, to, each, _ in v['made']:
+            froms.setdefault((to, each), [])
+            if frm not in froms[(to, each)]:
+                froms[(to, each)].append(frm)
+        swaps = [f"{' or '.join(fs)} to {to}" + (f' (+{each:g} pts each)' if each else '')
+                 for (to, each), fs in froms.items()]
+        where = list(dict.fromkeys('the formation' if c is None else f'the {c} upgrade' for *_, c in v['made']))
+        where = where[0] if len(where) == 1 else ', '.join(where[:-1]) + ' and ' + where[-1]
+        noun = 'unit' if n == '1' else 'units'
+        return (v['base_desc'] + ' ' if v['base_desc'] else '') + f'Upgrade {n} {noun} in this formation: ' + \
+            '; '.join(swaps) + f'. Once this upgrade is taken, the upgraded units appear in {where}, next to the ' \
+            'units they replace; pick them there.'
 
     def fill_group(self, path, p):
         """Transports sized to the formation: min = max = ceil(tagged units / per), any mix of types."""
@@ -337,10 +430,28 @@ class Builder:
     @staticmethod
     def formation_bound(u):
         """Upgrades whose contents depend on the formation are built inline rather than shared."""
-        return any(p['kind'] == 'fill' for p in u['parts'])
+        return any(p['kind'] in ('fill', 'swap') for p in u['parts'])
+
+    @staticmethod
+    def swap_part(u):
+        return next((p for p in u['parts'] if p['kind'] == 'swap'), None)
+
+    def carries_variants(self, u):
+        """True if this upgrade adds units the formation's swap upgrade can upgrade."""
+        if not self.variants or self.swap_part(u):
+            return False
+        names = part_units(u['parts'])
+        saved, self.offered = self.offered, set(names)
+        try:
+            return any(self.variants_for(n) for n in names)
+        finally:
+            self.offered = saved
 
     def upgrade_entry(self, uid, name, u, path, extra_cons=()):
+        saved = self.offered, self.context
+        self.offered, self.context = set(part_units(u['parts'])), name
         ses, grps = self.parts(path, u['parts'])
+        self.offered, self.context = saved
         mods, cons = ([], [])
         if u['maxn'] is not None:
             mods, cons = per_points_limit(uid, u['maxn'], u['per'], u['round_up'])
@@ -364,7 +475,11 @@ class Builder:
         if name not in self.army['upgrades']:
             raise KeyError(f'{self.army["name"]}: unknown upgrade {name!r} in {owner}')
         u = self.army['upgrades'][name]
-        if self.formation_bound(u):
+        if self.swap_part(u):
+            if not self.variants or self.variants['name'] != name:
+                raise ValueError(f'{self.army["name"]}: swap upgrade {name!r} must be a single upgrade in {owner}')
+            return self.variant_marker(self.variants['uid'], name, u)
+        if self.formation_bound(u) or self.carries_variants(u):
             uid = gid('upgrade', owner, name)
             return self.upgrade_entry(uid, name, u, f'{owner}/upgrade/{name}',
                                       extra_cons=[constraint(gid('con', uid, 'max'), 'max', 1)])
@@ -454,16 +569,37 @@ class Builder:
             mods.append(X('modifier', {'type': 'set', 'field': cid, 'value': '0'},
                           [X('conditions', children=[condition('instanceOf', self.allied_force_id, 1, 'force')])]))
         rules = [rule_el(gid('r', fid), f['name'], f['note'])] if f['note'] else []
+        self.variants = self.swap_context(fid, f)
+        self.offered = set(part_units(f['units']))
         ses, grps = self.parts(f'formation/{f["slot"]}/{f["name"]}', f['units'])
         tw = self.titan_weapons(fid, f)
         up = self.upgrades_group(fid, f)
         extra = [self.upgrade_link(fid + '/extra', n) for n in f['extra_up']]
+        if self.variants:
+            if not self.variants['made']:
+                raise ValueError(f'{self.army["name"]}: {f["name"]} has nothing {self.variants["name"]} can upgrade')
+            self.variants['desc'].text = self.variant_text()
+        self.variants, self.offered = None, set()
         return ordered('selectionEntry', {'id': fid, 'name': f['name'], 'hidden': 'false', 'collective': 'false',
                                           'import': 'true', 'type': 'unit'},
                        modifiers=mods, constraints=cons, rules=rules,
                        infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
                        selectionEntries=ses, selectionEntryGroups=grps + [g for g in (tw, up) if g],
                        entryLinks=extra, costs=cost(f['cost']))
+
+    def swap_context(self, fid, f):
+        """Set up the formation's swap upgrade, if it has one (at most one, never inside an OR choice)."""
+        found = []
+        for chunk in [c.strip() for c in f['up'].split(',') if c.strip()]:
+            for n in [n.strip() for n in chunk.split(' OR ')]:
+                sp = self.swap_part(self.army['upgrades'][n]) if n in self.army['upgrades'] else None
+                if sp:
+                    if ' OR ' in chunk or found:
+                        raise ValueError(f'{self.army["name"]}: unsupported swap upgrade layout in {f["name"]}')
+                    found.append({'name': n, 'uid': gid('upgrade', fid, n), 'swaps': sp['swaps'], 'lo': sp['min'],
+                                  'hi': sp['max'], 'made': [], 'desc': None,
+                                  'base_desc': self.army['upgrades'][n]['desc']})
+        return found[0] if found else None
 
     # -- forces
     def force(self, allied):
@@ -608,7 +744,7 @@ def build_catalogue(army, library=None):
                                      'type': 'catalogue', 'importRootEntries': 'false'})]
     root = ordered('catalogue', header(cid, f'EpicAU - {army["name"]}'), forceEntries=forces,
                    selectionEntries=formations, sharedSelectionEntries=upgrades,
-                   sharedProfiles=None if library else sorted(profiles.profiles.values(), key=lambda p: p.attrs['name']),
+                   sharedProfiles=None if library else sorted(profiles.profiles.values(), key=lambda p: (p.attrs['name'], p.attrs['id'])),
                    catalogueLinks=links)
     write(os.path.join(OUT, f'EpicAU - {army["name"]}.cat'), root, CAT_NS)
     return b.missing
@@ -629,7 +765,7 @@ def main():
         if m:
             missing[a['name']] = sorted(set(m))
     root = ordered('catalogue', header(LIB_ID, LIB_NAME, library=True),
-                   sharedProfiles=sorted(lib.profiles.values(), key=lambda p: p.attrs['name']))
+                   sharedProfiles=sorted(lib.profiles.values(), key=lambda p: (p.attrs['name'], p.attrs['id'])))
     write(os.path.join(OUT, f'{LIB_NAME}.cat'), root, CAT_NS)
     for a in OTHER_ARMIES:
         m = build_catalogue(a)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="2" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="3" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
       <rules>
@@ -230,19 +230,68 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="891f-eecd-810b-0d22" name="Leman Russ Vanquisher" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b258-da7f-3ce7-7b1b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="63d8-2e05-55d8-f514" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b258-da7f-3ce7-7b1b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="63d8-2e05-55d8-f514" value="0">
+                  <conditions>
+                    <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63d8-2e05-55d8-f514" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0e51-1d3e-4009-dac2" name="Leman Russ Vanquisher" hidden="false" targetId="8254-a3b9-a3fd-93f5" type="profile"/>
+                <infoLink id="1157-e8bb-71dd-d928" name="Vanquisher Cannon" hidden="false" targetId="bea1-9dc2-5d06-be2a" type="profile"/>
+                <infoLink id="ab64-0c18-ed28-d43d" name="Lascannon" hidden="false" targetId="10d6-f78d-4fc4-c32b" type="profile"/>
+                <infoLink id="406d-c969-52f2-8f78" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="f861-7415-bc78-def5" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="9386-7ed6-15bb-f34d" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd6-31ff-f312-2e96" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="5c43-1d14-e89a-3444" name="Vanquisher" hidden="false" collective="false" import="true" targetId="0ef3-1fcf-104a-f51e" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="b258-da7f-3ce7-7b1b" name="Vanquisher" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="e9af-b130-9f47-dbc2" value="0">
+                  <conditions>
+                    <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b27-ff4c-929a-e05b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9af-b130-9f47-dbc2" type="max"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
+              <rules>
+                <rule id="76ec-4e06-c8f7-3891" name="Vanquisher" hidden="false">
+                  <description>Upgrade 1 unit in this formation: Leman Russ Battle Tank or Leman Russ Exterminator to Leman Russ Vanquisher (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1109,19 +1158,70 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="514a-4cd7-bcc8-364e" name="Leman Russ Executioner" hidden="true" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bee4-c898-6d1f-457c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9805-c493-90d1-a921" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bee4-c898-6d1f-457c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="9805-c493-90d1-a921" value="0">
+                  <conditions>
+                    <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9805-c493-90d1-a921" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="22ec-e15c-e3fb-1293" name="Leman Russ Executioner" hidden="false" targetId="f743-4acc-8fce-3bb6" type="profile"/>
+                <infoLink id="4311-b30b-35cf-7038" name="Plasma Cannon" hidden="false" targetId="73dd-4390-643c-5527" type="profile"/>
+                <infoLink id="ad36-1606-6099-3b41" name="Lascannon" hidden="false" targetId="ac7a-3c8d-06a8-3f0f" type="profile"/>
+                <infoLink id="b2b8-54a6-7dfc-ac81" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="816e-2e03-2295-ccc2" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+                <infoLink id="eb18-d402-4fa9-acc9" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="34ba-8379-465a-fe42" name="Upgraded Unit" hidden="false" targetId="1c1a-168c-d3cf-3310" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="8569-391e-75c2-3ef1" name="Upgrades" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee1-f93a-b87d-a869" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="bb5a-0a84-9004-1052" name="Executioner" hidden="false" collective="false" import="true" targetId="0848-2211-d849-99ac" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="bee4-c898-6d1f-457c" name="Executioner" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="0e1f-bb82-3937-bcdb" value="0">
+                  <conditions>
+                    <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e1a-335b-54f4-a963" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e1f-bb82-3937-bcdb" type="max"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
+              <rules>
+                <rule id="8c8c-78cb-15b8-20b8" name="Executioner" hidden="false">
+                  <description>Upgrade 1 unit in this formation: Leman Russ Demolisher or Leman Russ Incinerator to Leman Russ Executioner (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1294,37 +1394,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="75.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0848-2211-d849-99ac" name="Executioner" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="d936-591d-b69d-8b15" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1116-6822-4e32-3d30" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b553-cc3f-1eb9-f12e" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="ce77-c487-f8c0-8d2a" name="Leman Russ Executioner (replaces Leman Russ)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1971-f82d-99ba-e46d" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="16da-6ed2-b7bc-6b75" name="Leman Russ Executioner" hidden="false" targetId="f743-4acc-8fce-3bb6" type="profile"/>
-                <infoLink id="9674-cb67-8660-3377" name="Plasma Cannon" hidden="false" targetId="73dd-4390-643c-5527" type="profile"/>
-                <infoLink id="3f1e-b058-d039-4015" name="Lascannon" hidden="false" targetId="ac7a-3c8d-06a8-3f0f" type="profile"/>
-                <infoLink id="2345-7181-d272-4ea3" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="4052-2df4-7875-6f1f" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
-                <infoLink id="4b85-f773-a563-d108" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d70-d250-6587-64ff" name="Infantry Support Tank" hidden="false" collective="false" import="true" type="upgrade">
@@ -1525,35 +1594,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0ef3-1fcf-104a-f51e" name="Vanquisher" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8bef-7365-6569-b64e" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5a1-2488-087e-07ed" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a4a-060b-5c79-9d26" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="c590-ab32-39bf-bf62" name="Leman Russ Vanquisher (replaces Leman Russ)" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fda-2f99-7d7a-c575" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e4a7-18d0-272b-3193" name="Leman Russ Vanquisher" hidden="false" targetId="8254-a3b9-a3fd-93f5" type="profile"/>
-                <infoLink id="9ac0-43cb-f1b0-aa7d" name="Vanquisher Cannon" hidden="false" targetId="bea1-9dc2-5d06-be2a" type="profile"/>
-                <infoLink id="c0a4-fc50-1492-ba76" name="Lascannon" hidden="false" targetId="10d6-f78d-4fc4-c32b" type="profile"/>
-                <infoLink id="b6b7-3aa1-def5-0341" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="982e-f1a4-74bf-ba12" name="Legate Commander" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="increment" field="1654-bba0-0d32-76a2" value="1.0">
@@ -1625,13 +1665,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="77e1-e7ab-80a3-9378" name="2 x Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="2b38-45d1-328d-e156" name="2 x Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
@@ -1643,6 +1676,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="77e1-e7ab-80a3-9378" name="2 x Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -1739,16 +1779,16 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="81d8-e3de-0ee4-8b05" name="Battlecannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="7274-d214-4176-46dc" name="Battlecannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75 cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT4+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="7274-d214-4176-46dc" name="Battlecannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="81d8-e3de-0ee4-8b05" name="Battlecannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75 cm</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT4+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
@@ -1835,7 +1875,14 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Weapon lines are combined; check the wiki sheet.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b085-6db5-99a4-04ad" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="183a-2d2a-e7ed-6f80" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="33a1-5c34-50b3-5f87" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
@@ -1856,24 +1903,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="183a-2d2a-e7ed-6f80" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="33a1-5c34-50b3-5f87" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="8ccb-5326-d9d3-8208" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+, FxF</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b085-6db5-99a4-04ad" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -1932,10 +1972,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="e3ab-974e-0877-6743" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="10d6-f78d-4fc4-c32b" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+, FxF</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac7a-3c8d-06a8-3f0f" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -1953,17 +2000,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="ac7a-3c8d-06a8-3f0f" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="e3ab-974e-0877-6743" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="10d6-f78d-4fc4-c32b" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+, FxF</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>

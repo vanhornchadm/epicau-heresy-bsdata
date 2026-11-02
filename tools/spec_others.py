@@ -81,12 +81,14 @@ SOLAR_AUXILIA = ARMY(
         UP('Solar Auxilia Support', 75,
            parts=[Mix(4, 4, ('Solar Auxilia Close Support Section', 0), ('Veletaris Storm Section', 0))],
            desc='Add 4 Auxilia Flamer Section (Close Support Section) or Veletaris Storm units in any combination.'),
-        UP('Executioner', parts=[Swap(1, 1, ('Leman Russ', 'Leman Russ Executioner', 25))]),
+        UP('Executioner', parts=[Swap(1, 1, (('Leman Russ Demolisher', 'Leman Russ Incinerator'),
+                                             'Leman Russ Executioner', 25))]),
         UP('Infantry Support Tank', parts=[Mix(1, 2, ('Leman Russ Demolisher', 50), ('Malcador Infernus Special Weapons Tank', 50))]),
         UP('Ogryn Charonite Squad', 75, parts=[U(2, 'Ogryn Charonite Squad')]),
         UP('Rapier Battery', 100, parts=[U(4, 'Solar Auxilia Rapier Platform')]),
         UP('Transport', parts=[SA_TRANSPORT], desc='Add enough transports to carry the entire detachment.'),
-        UP('Vanquisher', parts=[Swap(1, 1, ('Leman Russ', 'Leman Russ Vanquisher', 25))]),
+        UP('Vanquisher', parts=[Swap(1, 1, (('Leman Russ Battle Tank', 'Leman Russ Exterminator'),
+                                            'Leman Russ Vanquisher', 25))]),
         UP('Legate Commander', 0, parts=[U(1, 'Legate Commander')], rules=['Legate Commander'], maxn=1, per=500,
            round_up=True),
     ],
@@ -202,8 +204,9 @@ KNIGHTS = ARMY(
         UP('Rally the Troops', parts=[Mix(1, 2, *[(k, 125) for k in CERASTUS])],
            desc='Add 1-2 Knights of a type already in the formation.'),
         UP('Noble', 25, parts=[Or(Opt('Lord Scion', U(1, 'Lord Scion')), Opt('Preceptor', U(1, 'Preceptor')), label='Noble')]),
-        UP('Enhanced Forge', parts=[Swap(1, None, ('Knight', 'Cerastus Knight-Acheron', 25), ('Knight', 'Cerastus Knight-Atropos', 25))]),
-        UP('Expanded Armoury', parts=[Swap(1, None, *[('Knight', k, 25) for k in (
+        UP('Enhanced Forge', parts=[Swap(1, None, *[(tuple(CERASTUS), k, 25) for k in (
+            'Cerastus Knight-Acheron', 'Cerastus Knight-Atropos')])]),
+        UP('Expanded Armoury', parts=[Swap(1, None, *[(tuple(QUESTORIS), k, 25) for k in (
             'Questorius Knight-Warden', 'Questorius Knight-Styrix', 'Questorius Knight-Crusader',
             'Questorius Knight-Gallant', 'Questorius Knight-Magaera')])]),
         UP('Seneschal', 75, parts=[U(1, 'Seneschal')], maxn=1),
@@ -266,7 +269,8 @@ MILITIA = ARMY(
         UP('Sniper', 75, parts=[U(4, 'Recon Auxiliary')]),
         UP('Transport', parts=[IM_TRANSPORT],
            desc='Add enough transports to carry the entire formation (Arvus 25 pts each, Rhinos 25 pts per 2, Land Raider 50 pts each).'),
-        UP('Vanquisher', parts=[Swap(1, 1, ('Leman Russ', 'Auxilia Leman Russ Vanquisher', 25))]),
+        UP('Vanquisher', parts=[Swap(1, 1, (('Leman Russ Battle Tank', 'Auxilia Leman Russ Exterminator',
+                                             'Leman Russ Demolisher'), 'Auxilia Leman Russ Vanquisher', 25))]),
         UP('Discipline Master', 0, parts=[Or(Opt('Discipline Master', U(1, 'Discipline Master')),
                                              Opt('Rogue Psyker', U(1, 'Rogue Psyker')), label='Character')],
            rules=['Discipline Masters / Rogue Psykers'], maxn=1, per=500, round_up=True),
@@ -332,7 +336,7 @@ DAEMONS = ARMY(
     ],
     upgrades=[
         *[UP(f'Daemon Prince ({god})', 50, parts=[Swap(1, 1, (g['herald'], g['prince'], 0))],
-             desc='Replace the Herald with a Daemon Prince. One Daemon Prince per Chaos faction in the army.')
+             desc='One Daemon Prince per Chaos faction in the army.')
           for god, g in GODS.items()],
         UP('Chaos Spawn', parts=[U((1, 3), 'Chaos Spawn', 50)]),
         UP('Chaos Altar', 100, parts=[U(1, 'Chaos Altar')]),

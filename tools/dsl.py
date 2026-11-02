@@ -36,7 +36,11 @@ def Fill(per, *units, space='Tactical Transport Space', label='Transports'):
 
 
 def Swap(lo, hi, *swaps, label='Upgrades'):
-    """Replace existing units: swaps are (from_name, to_unit, each_cost)."""
+    """Upgrade lo..hi units already in the formation: swaps are (from, to_unit, each_cost).
+
+    `from` is a unit name or a tuple of unit names.
+    The upgraded unit replaces the original one-for-one, at the original's cost plus each_cost.
+    """
     return {'kind': 'swap', 'min': lo, 'max': hi, 'swaps': list(swaps), 'label': label}
 
 

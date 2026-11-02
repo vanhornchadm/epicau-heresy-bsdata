@@ -5,8 +5,8 @@ from dsl import U, Opt, Or, Mix, Swap, Fill, F, UP, ARMY
 
 LEGION_SHEETS = ['Legion Astartes', 'Loyalist Legions', 'Traitor Legions']
 
-SICARANS = [('Sicaran Battle Tank', 75), ('Sicaran Venator', 75), ('Sicaran Omega Tank Destroyer', 75),
-            ('Sicaran Punisher', 75), ('Sicaran Arcus', 75)]  # Punisher and Arcus are fan-made
+SICARANS = [('Sicaran Battle Tank', 75), ('Sicaran Venator', 75), ('Sicaran Omega Tank Destroyer', 75)]
+NEW_SICARANS = [U((0, 6), 'Sicaran Punisher', 75, new=True), U((0, 6), 'Sicaran Arcus', 75, new=True)]  # fan-made
 
 
 def heavy_transport(*types):
@@ -85,10 +85,11 @@ CORE_FORMATIONS = [
     F('Legion Rapier Weapons Battery', 'support', 240, [U(6, 'Rapier')], 'Drop Assault'),
     F('Legion Reconnaissance Squad', 'support', 150, [U(4, 'Reconnaissance Squad')],
       'Standard Transport OR Drop Assault OR Assault Claw, Centurion'),
-    F('Legion Sicaran Battle Squadron', 'support', 0, [Mix(4, 6, *SICARANS)], 'Centurion, Hyperios'),
+    F('Legion Sicaran Battle Squadron', 'support', 0, [Mix(4, 6, *SICARANS, *NEW_SICARANS)], 'Centurion, Hyperios'),
     F('Legion Sabre Strike Squadron', 'support', 275, [U(4, 'Sabre Strike Tank')], 'Centurion',
       note='Sabre Strike Tank stats are not on the wiki reference sheet; taken from Departmento Munitorum.'),
     F('Legion Kratos Heavy Tank Squadron', 'support', 0, [U((2, 4), 'Kratos Heavy Tank', 100)], 'Centurion, Hyperios',
+      new=True,
       note='Fan rules, not part of EpicAU: proposed on Dakka Dakka (November 2024) as 2 Kratos for 200 pts plus up to '
            '2 more at 100 pts each. The upgrades follow the other Legion tank squadrons.'),
     F('Legion Sky Hunter Attack Squadron', 'support', 175, [U(5, 'Scimitar Jetbike')], 'Centurion'),

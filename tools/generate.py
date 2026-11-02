@@ -42,13 +42,15 @@ LINE_BREAK = '<BR><BR>'  # separates weapon lines, as in the Epic Armageddon BSD
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
         'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit',
-        'Not available for the chosen Legion']
+        'Not available with the chosen Configuration']
 HIDDEN_CATS = {'Tactical Transport Space', 'Upgraded Unit'}  # internal bookkeeping categories
 CAT = {c: gid('cat', c) for c in CATS}
 SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': 'Lord of War',
             'horde': 'Daemonic Horde', 'greater': 'Greater Daemon Horde', 'followers': 'Followers of Chaos',
             'special': 'Special Selection'}
 RULE_ID = {name: gid('rule', name) for name in RULES}
+NA_CAT = 'Not available with the chosen Configuration'  # flags selections a Configuration choice has ruled out
+NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that shows fan-made units roster-wide
 
 # Units not present on the wiki reference sheet: the Sabre from Departmento Munitorum, the Kratos from fan rules
 # posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09), and
@@ -375,6 +377,26 @@ def part_units(parts):
     return names
 
 
+def has_new(army):
+    """True if the army list has fan-made formations or options behind the 'Allow fan-made units' toggle."""
+    def parts_new(parts):
+        for p in parts:
+            if p.get('new') or (p['kind'] in ('mix', 'fill') and any(u.get('new') for u in p['units'])) or \
+                    (p['kind'] == 'or' and any(parts_new(o['parts']) for o in p['opts'])):
+                return True
+        return False
+    return any(f.get('new') or parts_new(f['units']) for f in army['formations'])
+
+
+def new_unit_names(army):
+    names = [f['name'] for f in army['formations'] if f.get('new')]
+    for f in army['formations']:
+        for p in f['units']:
+            if p['kind'] == 'mix':
+                names += [u['unit'] for u in p['units'] if u.get('new')]
+    return list(dict.fromkeys(names))
+
+
 def swap_matches(frm, unit):
     return unit in frm if isinstance(frm, tuple) else unit == frm
 
@@ -452,6 +474,10 @@ class Builder:
                 if p['max'] is not None:
                     cons.append(constraint(gid('con', gid_, 'max'), 'max', p['max']))
                 kids = [self.unit_entry(f'{pp}/{j}', dict(u, min=0)) for j, u in enumerate(p['units'])]
+                for kid, u in zip(kids, p['units']):  # fan-made options appear with 'Allow fan-made units'
+                    if u.get('new'):
+                        self.gate(kid, show=self.new_show(), cmax=gid('con', kid.attrs['id'], 'max'),
+                                  allowed=u['max'] if u['max'] is not None else p['max'])
                 # Upgraded units count towards the group's total, so they replace originals one-for-one.
                 seen = set()
                 for j, u in enumerate(p['units']):
@@ -617,7 +643,8 @@ class Builder:
         """An entryLink to the shared upgrade, or an inline copy for formation-bound upgrades."""
         el = self.upgrade_link_el(owner + (f'/{key}' if key else ''), name, u, key)
         if show_for or hide_for:
-            self.gate(el, show_for, hide_for, gid('con', el.attrs['id'], 'max'))
+            self.gate(el, show=self.legion_show(show_for), hide=self.legion_hide(hide_for),
+                      cmax=gid('con', el.attrs['id'], 'max'))
         return el
 
     def upgrade_link_el(self, owner, name, u, key):
@@ -735,8 +762,11 @@ class Builder:
                      infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
                      selectionEntries=ses, selectionEntryGroups=grps + tw + ([up] if up else []),
                      entryLinks=extra, costs=cost(f['cost']))
-        if f.get('show_for') or f.get('hide_for'):
-            self.gate(el, f.get('show_for'), f.get('hide_for'))
+        if f.get('show_for') and f.get('new'):
+            raise ValueError(f'{f["name"]}: a fan-made Legion formation would need both conditions together')
+        show = self.new_show() if f.get('new') else self.legion_show(f.get('show_for'))
+        if show or f.get('hide_for'):
+            self.gate(el, show=show, hide=self.legion_hide(f.get('hide_for')))
         return el
 
     # -- Legion choice
@@ -752,30 +782,43 @@ class Builder:
         return X('conditionGroups', children=[X('conditionGroup', {'type': 'or' if chosen else 'and'},
                                                 [X('conditions', children=conds)])])
 
-    def gate(self, el, show_for, hide_for, cmax=None):
-        """Show `el` only for the Legions in show_for, or hide it for those in hide_for.
+    def legion_show(self, legions):
+        return (self.legion_conditions(legions), self.legion_conditions(legions, chosen=False)) if legions else None
 
-        Hiding stops new selections. A selection left over from another Legion choice is flagged by dropping
-        cmax (el's max constraint, for upgrades) to 0, or for formations, which have no limit to lower, by adding
-        the 'Not available for the chosen Legion' category, which the force allows none of."""
+    def legion_hide(self, legions):
+        return self.legion_conditions(legions) if legions else None
+
+    @staticmethod
+    def new_show():
+        """Conditions for fan-made entries: (toggle on anywhere in the roster, toggle off)."""
+        return tuple(X('conditions', children=[condition(t, NEW_UNITS_ID, v, 'roster', child=True, forces=True)])
+                     for t, v in (('atLeast', 1), ('equalTo', 0)))
+
+    def gate(self, el, show=None, hide=None, cmax=None, allowed=1):
+        """Show `el` only while `show` holds, and hide it while `hide` holds.
+
+        show is a (conditions when available, conditions when not) pair; hide is the conditions under which el is
+        unavailable. Hiding stops new selections. A selection left over from an earlier Configuration choice is
+        flagged by dropping cmax (el's max constraint, when it has one) to 0, or otherwise by adding the NA_CAT
+        category, which the force allows none of. allowed is cmax's value while el is available."""
         mods = el.list_child('modifiers', first=True)
-        if show_for:
+        offs = []
+        if show:
+            on, off = show
             el.attrs['hidden'] = 'true'
-            mods.add(X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'false'},
-                       [self.legion_conditions(show_for)]))
-            off = self.legion_conditions(show_for, chosen=False)
+            mods.add(X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'false'}, [on]))
             if cmax:
                 next(c for c in el.iter_tag('constraint') if c.attrs['id'] == cmax).attrs['value'] = '0'
-                mods.add(X('modifier', {'type': 'set', 'field': cmax, 'value': '1'}, [self.legion_conditions(show_for)]))
-        if hide_for:
-            mods.add(X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'true'},
-                       [self.legion_conditions(hide_for)]))
-            off = self.legion_conditions(hide_for)
+                mods.add(X('modifier', {'type': 'set', 'field': cmax, 'value': fmt(allowed)}, [on]))
+            offs.append(off)
+        if hide:
+            mods.add(X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'true'}, [hide]))
             if cmax:
-                mods.add(X('modifier', {'type': 'set', 'field': cmax, 'value': '0'}, [off]))
+                mods.add(X('modifier', {'type': 'set', 'field': cmax, 'value': '0'}, [hide]))
+            offs.append(hide)
         if not cmax:
-            mods.add(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT['Not available for the chosen Legion']},
-                       [off]))
+            for off in offs:
+                mods.add(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[NA_CAT]}, [off]))
 
     def legion_entry(self):
         """The required Legion choice: 'None' keeps the core list; a Legion adds and replaces formations."""
@@ -870,13 +913,12 @@ class Builder:
                                               'targetId': CAT['Supreme Commander'], 'primary': 'false'},
                              constraints=sc))
         links += extra
-        if a.get('legions'):
-            # BattleScribe lists categories in this order; the Legion choice goes first.
+        if a.get('legions') or has_new(a):
+            # BattleScribe lists categories in this order; Configuration (Legion choice, Allow fan-made units) goes first.
             links.insert(0, X('categoryLink', {'id': gid('cl', fid, 'Configuration'), 'name': 'Configuration',
                                                'hidden': 'false', 'targetId': CAT['Configuration'], 'primary': 'false'}))
-            na = gid('cl', fid, 'Not available for the chosen Legion')
-            links.append(ordered('categoryLink', {'id': na, 'name': 'Not available for the chosen Legion',
-                                                  'hidden': 'false', 'targetId': CAT['Not available for the chosen Legion'],
+            na = gid('cl', fid, NA_CAT)
+            links.append(ordered('categoryLink', {'id': na, 'name': NA_CAT, 'hidden': 'false', 'targetId': CAT[NA_CAT],
                                                   'primary': 'false'},
                                  constraints=[constraint(gid('con', na, 'max'), 'max', 0)]))
         desc = self.army_summary(allied)
@@ -944,6 +986,19 @@ def header(cid, name):
             'gameSystemRevision': GST_REVISION[0]}
 
 
+def new_units_toggle():
+    """'Allow fan-made units': a Configuration entry that shows the fan-made units and options in every force."""
+    lists = [(a['name'], new_unit_names(a)) for a in [legion_catalogue()] + OTHER_ARMIES]
+    desc = ('Shows fan-made units and options that are not part of EpicAU (see the README for their sources). '
+            'Taking it in any force shows them in every force of the roster; removing it flags any that were taken. '
+            + ' '.join(f'{name}: {", ".join(units)}.' for name, units in lists if units))
+    return ordered('selectionEntry', {'id': NEW_UNITS_ID, 'name': 'Allow fan-made units', 'hidden': 'false',
+                                      'collective': 'false', 'import': 'true', 'type': 'upgrade'},
+                   constraints=[constraint(gid('con', NEW_UNITS_ID, 'max'), 'max', 1)],
+                   rules=[rule_el(gid('r', NEW_UNITS_ID), 'Allow fan-made units', desc)],
+                   categoryLinks=[cat_link(NEW_UNITS_ID, 'Configuration', True)])
+
+
 def build_gst():
     readme = ('Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the '
               f'archived EpicAU wiki ({SOURCE_URL}). Rules text is summarised; see the wiki and the NetEA rulebook '
@@ -966,6 +1021,7 @@ def build_gst():
                            X('characteristicType', {'id': gid('ct', 'Weapon', c), 'name': c}) for c in WEAPON_CHARS])])]),
                    categoryEntries=[X('categoryEntry', {'id': CAT[c], 'name': c, 'hidden': str(c in HIDDEN_CATS).lower()})
                                     for c in CATS],
+                   selectionEntries=[new_units_toggle()],
                    sharedRules=[rule_el(RULE_ID[n], n, d) for n, d in RULES.items()])
     GST_REVISION[0] = write(os.path.join(OUT, GST_FILE), root, GST_NS)
 

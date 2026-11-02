@@ -4,10 +4,13 @@ Unit references are reference-sheet unit names (see source/units.json).
 """
 
 
-def U(n, unit, each=0, label=None):
-    """n units of `unit`. n is an int or (min, max); max None = unlimited."""
+def U(n, unit, each=0, label=None, new=False):
+    """n units of `unit`. n is an int or (min, max); max None = unlimited.
+
+    new: a fan-made option shown only when the roster's 'Allow fan-made units' toggle is on.
+    """
     lo, hi = (n, n) if isinstance(n, int) else n
-    return {'kind': 'unit', 'unit': unit, 'min': lo, 'max': hi, 'each': each, 'label': label}
+    return {'kind': 'unit', 'unit': unit, 'min': lo, 'max': hi, 'each': each, 'label': label, 'new': new}
 
 
 def Opt(label, *parts, cost=0):
@@ -45,17 +48,18 @@ def Swap(lo, hi, *swaps, label='Upgrades'):
 
 
 def F(name, slot, cost=0, units=(), up='', maxn=None, per=None, round_up=False, rules=(), note=None,
-      extra_up=(), weapons=None):
+      extra_up=(), weapons=None, new=False):
     """A formation.
 
     slot: line | support | low | horde | greater | followers | special
     up: upgrade names, comma separated; 'A OR B' means only one of A/B.
     maxn/per: '0-maxn per full `per` points' (per None = per army).
     extra_up: upgrades outside the formation's upgrade cap (e.g. free characters).
+    new: a fan-made formation shown only when the roster's 'Allow fan-made units' toggle is on.
     """
     return {'name': name, 'slot': slot, 'cost': cost, 'units': list(units), 'up': up, 'maxn': maxn,
             'per': per, 'round_up': round_up, 'rules': list(rules), 'note': note,
-            'extra_up': list(extra_up)}
+            'extra_up': list(extra_up), 'new': new}
 
 
 def UP(name, cost=0, parts=(), rules=(), desc=None, maxn=None, per=None, round_up=False):

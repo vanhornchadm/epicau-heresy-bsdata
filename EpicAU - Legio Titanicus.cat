@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="8" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5a43-d432-849f-519a" name="Legio Titanicus" hidden="false">
       <rules>
@@ -18,6 +18,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Daemons Of The Ruinstorm.</d
         <infoLink id="ddcd-187d-4d75-00aa" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="05be-bee1-da86-4a33" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
         <categoryLink id="427a-4938-e446-6f72" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
         <categoryLink id="befd-d1d4-f48d-ecb2" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="false"/>
         <categoryLink id="f937-c50f-3faf-dd0c" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false">
@@ -28,6 +29,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Daemons Of The Ruinstorm.</d
         <categoryLink id="78e9-4d6b-8026-bff6" name="Spacecraft" hidden="false" targetId="5568-d0c7-8d10-dce0" primary="false">
           <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ef57-49ff-5798-9b6b" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1812-ceed-5f46-da60" name="Not available with the chosen Configuration" hidden="false" targetId="592b-0da0-9d99-08ca" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c9c-7b1f-6fda-a03f" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -50,11 +56,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <infoLink id="2df7-a457-60b0-33e4" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="ed2e-e527-0d08-1f7a" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
         <categoryLink id="4a15-d5f3-7949-8472" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
         <categoryLink id="efd6-2259-2b27-5e57" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="false"/>
         <categoryLink id="cdc4-3ca8-449c-0bdc" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1e61-c4a8-7e28-0e7a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="41f8-7e29-c72e-7083" name="Not available with the chosen Configuration" hidden="false" targetId="592b-0da0-9d99-08ca" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16ce-31b9-9f55-d57a" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -921,11 +933,21 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="725.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e859-7cf7-ccd7-b82e" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e859-7cf7-ccd7-b82e" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b2-a87d-e68e-0b8c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="592b-0da0-9d99-08ca">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1255,11 +1277,21 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="675.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="61e5-242d-a009-5b50" name="Warmaster Titan" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="61e5-242d-a009-5b50" name="Warmaster Titan" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="10b2-a87d-e68e-0b8c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="592b-0da0-9d99-08ca">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="7" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="8" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
@@ -63,8 +63,23 @@
     <categoryEntry id="ba14-d0f1-f942-df54" name="Configuration" hidden="false"/>
     <categoryEntry id="dca3-6748-53f0-e4bb" name="Tactical Transport Space" hidden="true"/>
     <categoryEntry id="1c1a-168c-d3cf-3310" name="Upgraded Unit" hidden="true"/>
-    <categoryEntry id="3832-ec3b-e9b9-5b1f" name="Not available for the chosen Legion" hidden="false"/>
+    <categoryEntry id="592b-0da0-9d99-08ca" name="Not available with the chosen Configuration" hidden="false"/>
   </categoryEntries>
+  <selectionEntries>
+    <selectionEntry id="a361-b07f-1b9c-872c" name="Allow fan-made units" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2848-b95e-0e3b-bb33" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="b85c-31ef-bd96-d0b9" name="Allow fan-made units" hidden="false">
+          <description>Shows fan-made units and options that are not part of EpicAU (see the README for their sources). Taking it in any force shows them in every force of the roster; removing it flags any that were taken. Legion Astartes: Legion Kratos Heavy Tank Squadron, Sicaran Punisher, Sicaran Arcus. Legio Titanicus: Warbringer Nemesis Titan, Warmaster Titan.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="0c5b-2a27-0bea-2968" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
   <sharedRules>
     <rule id="d6db-799f-23f8-2194" name="Allies" hidden="false">
       <description>Formations from a Disruptive ally reduce the army's strategy rating by 1, and Supreme Commander re-rolls cannot be used on them. Allied formations follow their own list's restrictions (an allied Line Detachment is needed before an allied Support Detachment). Spacecraft and Supreme Commander limits apply across the whole army; only one Supreme Commander may be taken and it must come from the primary list.</description>

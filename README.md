@@ -22,6 +22,8 @@ Each catalogue provides two forces:
 
 In either Legion Astartes force, the required **Legion** entry picks the Legion, or "None (core list)". The choice shows that Legion's own formations and hides the core formations it replaces or removes. Space Wolves also get their own Centurion upgrade. The description on each Legion option lists what it adds and replaces, plus its allies. If you change the Legion after adding formations, formations that no longer belong are flagged.
 
+**Allow fan-made units** is a Configuration entry in the Legion Astartes and Legio Titanicus forces. It shows the fan-made units and options that aren't part of EpicAU: the Legion Kratos Heavy Tank Squadron, the Sicaran Punisher and Arcus, and the Warbringer Nemesis and Warmaster Titans. They stay hidden until it's taken. Taking it in any force turns them on for the whole roster. If you remove it, or change a Legion, anything that no longer fits is flagged under "Not available with the chosen Configuration".
+
 These rules are enforced:
 
 - Support Detachments: up to the list's number per Line Detachment (3 for Legion, Custodes and Mechanicum; 2 for Solar Auxilia, Militia and Knights). Daemons get 1 Followers of Chaos and 1 Greater Daemon Horde per Daemonic Horde.

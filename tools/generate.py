@@ -33,19 +33,20 @@ def gid(*key):
 
 GST_ID = gid('gst', GST_NAME)
 PTS = 'points'
-PT_UNIT, PT_WAR_ENGINE, PT_WEAPON = gid('pt', 'Unit'), gid('pt', 'War Engine'), gid('pt', 'Weapon')
+PT_UNIT, PT_WAR_ENGINE = gid('pt', 'Unit'), gid('pt', 'War Engine')
 # A unit's weapons sit in its own profile, one line per weapon, as in the Epic Armageddon BSData, so each unit's row
-# lists its guns. War engines get their damage capacity, void shields and critical hit as columns of their own.
+# lists its guns, chosen weapons and Titan weapons included. War engines get their damage capacity, void shields and
+# critical hit as columns of their own.
 WEAPON_COLUMNS = ['Weapons', 'Range', 'Firepower', 'Weapon Notes']
 UNIT_CHARS = ['Type', 'Speed', 'Armour', 'CC', 'FF'] + WEAPON_COLUMNS + ['Notes']
 WAR_ENGINE_CHARS = UNIT_CHARS + ['Damage Capacity', 'Void Shields', 'Critical Hit']
-WEAPON_CHARS = ['Range', 'Firepower', 'Notes']  # chosen Titan weapons
 LINE_BREAK = '<BR><BR>'  # separates weapon lines, as in the Epic Armageddon BSData
 # Roster viewers move a column below the table when its text is too wide, so profile cells are kept narrow: long
 # lines wrap, the Notes column lists only short rule names, and longer notes (weapon options, transport capacity,
 # long critical hits) go in a '<unit> notes' rule shown with the unit's rules.
 COLUMN_WIDTH = 25
 SEE_NOTES = 'See unit notes'
+SEE_WEAPON_NOTES = 'See weapon notes'
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
         'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit',
@@ -452,13 +453,41 @@ def unit_options(unit):
                 rows.append(weapon_row(r, option=True))
             options.append(dict(o, rows=rows))
         resolved.append(dict(g, options=options, at=min(at, default=len(order))))
+    at = min((order.index(n) for n in replaced), default=len(order))
+    for mount, count, weapons in TITAN_WEAPON_SLOTS.get(unit['name'], []):
+        options = [titan_option(name, each, mount) for name, each in weapons
+                   if TITAN_MOUNT.get(name, mount) == mount]
+        resolved += [{'label': f'{mount} weapon' + (f' {i}' if count > 1 else ''), 'optional': False,
+                      'options': options, 'at': at} for i in range(1, count + 1)]
     return resolved, used
+
+
+TITAN_ARC = {'Arm': 'Fwd', 'Carapace': 'FxF'}  # arm weapons fire in the forward arc, carapace weapons fixed forward
+# Titan weapons whose notes restrict them to one mount ('Arm mount only', 'carapace only')
+TITAN_MOUNT = {name: m.group(1).capitalize() for name, w in TITAN_WEAPONS.items()
+               for m in [re.search(r'\b(arm|carapace)(?: mount)? only', w['notes'], re.I)] if m}
+
+
+def titan_option(name, each, mount):
+    """A Titan weapon as a weapon-choice option: its line gets the mount's arc, and its notes (with firepower notes
+    too long for the line) go to a '<weapon> notes' rule."""
+    w = TITAN_WEAPONS[name]
+    fp, traits = split_firepower(w['firepower'])
+    notes = [w['notes']] if w['notes'] else []
+    if len(traits) > 2 * COLUMN_WIDTH:
+        notes, traits = [traits] + notes, ''
+    traits = ', '.join(t for t in (traits, TITAN_ARC[mount], SEE_WEAPON_NOTES if notes else '') if t)
+    return {'label': star(name, name in FAN_TITAN_WEAPONS), 'rows': [[name, w['range'] or '-', fp or '-', traits]],
+            'cost': each, 'ff': None, 'notes': ' '.join(n.rstrip('.') + '.' for n in notes),
+            'rules': rules_in(w['firepower'] + ' ' + w['notes'])}
 
 
 def split_notes(notes):
     """Split unit notes into (short rule names for the Notes column, longer text for the unit-notes rule)."""
     keywords, details = [], []
     for sentence in re.split(r'(?<=\.)\s+(?=[A-Z(])', notes.strip()):
+        if not sentence:
+            continue
         items = sentence.rstrip('.').split(', ')
         for i, item in enumerate(items):
             if len(item) <= 28 and ':' not in item and len(item.split()) <= 4 and item.strip(' -'):
@@ -535,13 +564,6 @@ class Catalogue:
         if 'Demi-God' in unit['notes']:
             cats.append('Primarch')
         return [(uid, star(unit['name'], unit['name'] in FAN_UNITS))], rules_in(text), cats
-
-    def weapon_profile(self, w):
-        wid = gid('prof', self.scope, 'titan-weapon', w['name'])
-        if wid not in self.profiles:
-            self.profiles[wid] = profile(wid, w['name'], PT_WEAPON, 'Weapon', WEAPON_CHARS,
-                                         [w['range'], w['firepower'], w['notes']])
-        return wid
 
 
 def split_firepower(text):
@@ -718,9 +740,16 @@ class Builder:
             kids = []
             for j, o in enumerate(g['options']):
                 oid = gid('se', eid, 'weapons', i, j)
+                links = [info_rule(oid, r) for r in o.get('rules', [])]
+                if o.get('notes'):
+                    rid = gid('rule', self.cat_id, 'weapon', o['label'], 'notes')
+                    self.prof.rules[rid] = rule_el(rid, f'{o["label"]} notes', o['notes'])
+                    links.insert(0, X('infoLink', {'id': gid('il', oid, rid), 'name': f'{o["label"]} notes',
+                                                   'hidden': 'false', 'targetId': rid, 'type': 'rule'}))
                 kids.append(ordered('selectionEntry', {'id': oid, 'name': o['label'], 'hidden': 'false',
                                                        'collective': 'false', 'import': 'true', 'type': 'upgrade'},
-                                    constraints=[constraint(gid('con', oid, 'max'), 'max', 1)], costs=cost(o['cost'])))
+                                    constraints=[constraint(gid('con', oid, 'max'), 'max', 1)], infoLinks=links,
+                                    costs=cost(o['cost'])))
                 taken = [X('conditions', children=[condition('atLeast', oid, 1, eid, child=True)])]
                 for c, v in zip(WEAPON_COLUMNS, weapon_columns(o['rows']) if o['rows'] else []):
                     v = v + LINE_BREAK if first else v if blank and i == 0 else LINE_BREAK + v
@@ -731,9 +760,10 @@ class Builder:
                                   taken))
             cons = [constraint(gid('con', g_id, 'max'), 'max', 1)]
             attrs = {'id': g_id, 'name': g['label'], 'hidden': 'false', 'collective': 'false', 'import': 'true'}
-            if not g['optional']:
+            if not g['optional']:  # starts on the cheapest option
                 cons.insert(0, constraint(gid('con', g_id, 'min'), 'min', 1))
-                attrs['defaultSelectionEntryId'] = kids[0].attrs['id']
+                cheapest = min(range(len(kids)), key=lambda j: g['options'][j]['cost'])
+                attrs['defaultSelectionEntryId'] = kids[cheapest].attrs['id']
             grps.append(ordered('selectionEntryGroup', attrs, constraints=cons, selectionEntries=kids))
         # prepends go on in reverse, so the groups before the fixed weapons keep their sheet order
         return [m for mods in before[::-1] + after for m in mods], grps
@@ -1003,37 +1033,6 @@ class Builder:
                                                'import': 'true'},
                        constraints=cons, selectionEntries=ses, selectionEntryGroups=groups, entryLinks=els)
 
-    def titan_weapons(self, fid, f):
-        """Titan weapon choices: one group per slot type (e.g. 'Titan Weapons', 'Carapace Weapon')."""
-        slots = {}  # label -> [count, weapons]
-        for p in f['units']:
-            if p['kind'] == 'unit' and p['unit'] in TITAN_WEAPON_SLOTS:
-                spec = TITAN_WEAPON_SLOTS[p['unit']]
-                for label, n, weapons in ([('Titan Weapons',) + spec] if isinstance(spec, tuple) else spec):
-                    slots.setdefault(label, [0, weapons])[0] += n * p['min']
-        groups = []
-        for label, (count, weapons) in slots.items():
-            key = [] if label == 'Titan Weapons' else [label]  # ids of the original single group are unchanged
-            g = gid('seg', fid, 'titan-weapons', *key)
-            kids = []
-            for name, each in weapons:
-                w = TITAN_WEAPONS[name]
-                eid = gid('se', fid, 'tw', *key, name)
-                pid = self.prof.weapon_profile(w)
-                kids.append(ordered('selectionEntry', {'id': eid, 'name': star(name, name in FAN_TITAN_WEAPONS),
-                                                       'hidden': 'false', 'collective': 'false',
-                                                       'import': 'true', 'type': 'upgrade'},
-                                    constraints=[constraint(gid('con', eid, 'max'), 'max', count)],
-                                    infoLinks=[X('infoLink', {'id': gid('il', eid), 'name': name, 'hidden': 'false',
-                                                              'targetId': pid, 'type': 'profile'})]
-                                    + [info_rule(eid, r) for r in rules_in(w['firepower'] + ' ' + w['notes'])],
-                                    costs=cost(each)))
-            groups.append(ordered('selectionEntryGroup', {'id': g, 'name': label, 'hidden': 'false',
-                                                          'collective': 'false', 'import': 'true'},
-                                  constraints=[constraint(gid('con', g, 'min'), 'min', count),
-                                               constraint(gid('con', g, 'max'), 'max', count)], selectionEntries=kids))
-        return groups
-
     # -- formations
     def formation(self, f):
         key = [f['key']] if f.get('key') else []  # Legion versions share names with core formations
@@ -1068,7 +1067,6 @@ class Builder:
         self.retinue = {scheme: max([transport_space(r, scheme) for r in retinue if 'Demi-God' not in r['notes']] or [1])
                         for scheme in self.schemes}
         ses, grps = self.parts('/'.join(['formation', f['slot'], f['name']] + key), f['units'])
-        tw = self.titan_weapons(fid, f)
         up = self.upgrades_group(fid, f)
         extra = [el for n in f['extra_up'] for el in self.upgrade_link(fid + '/extra', n)]
         if self.variants:
@@ -1081,7 +1079,7 @@ class Builder:
                                         'import': 'true', 'type': 'unit'},
                      modifiers=mods, constraints=cons, rules=rules,
                      infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
-                     selectionEntries=ses, selectionEntryGroups=grps + tw + ([up] if up else []),
+                     selectionEntries=ses, selectionEntryGroups=grps + ([up] if up else []),
                      entryLinks=extra, costs=cost(f['cost']))
         if f.get('show_for') and f.get('new'):
             raise ValueError(f'{f["name"]}: a fan-made Legion formation would need both conditions together')
@@ -1374,9 +1372,7 @@ def build_gst():
                            X('characteristicType', {'id': gid('ct', 'Unit', c), 'name': c}) for c in UNIT_CHARS])]),
                        X('profileType', {'id': PT_WAR_ENGINE, 'name': 'War Engine'}, [X('characteristicTypes', children=[
                            X('characteristicType', {'id': gid('ct', 'War Engine', c), 'name': c})
-                           for c in WAR_ENGINE_CHARS])]),
-                       X('profileType', {'id': PT_WEAPON, 'name': 'Weapon'}, [X('characteristicTypes', children=[
-                           X('characteristicType', {'id': gid('ct', 'Weapon', c), 'name': c}) for c in WEAPON_CHARS])])]),
+                           for c in WAR_ENGINE_CHARS])])]),
                    categoryEntries=[X('categoryEntry', {'id': CAT[c], 'name': c, 'hidden': str(c in HIDDEN_CATS).lower()})
                                     for c in CATS],
                    selectionEntries=[new_units_toggle()],

@@ -6,7 +6,7 @@ BattleScribe (v2.03 schema) data for the EpicAU community's Horus Heresy supplem
 
 | File | What it is |
 |---|---|
-| `Epic Armageddon - EpicAU Horus Heresy.gst` | Game system: costs, Unit, War Engine and Weapon profile types, categories, shared special rules |
+| `Epic Armageddon - EpicAU Horus Heresy.gst` | Game system: costs, Unit and War Engine profile types, categories, shared special rules |
 | `EpicAU - Legion Astartes.cat` | The Legion list: the core formations plus all 18 Legions' formations, Primarchs, allies and restrictions, chosen with a Legion selection |
 | `EpicAU - Legio Custodes / Solar Auxilia / Mechanicum Taghmata / Legio Titanicus / Knight Household / Imperial Militia / Daemons Of The Ruinstorm.cat` | The other army lists |
 | `tools/` | The scraper, list specs and generator used to build the files |
@@ -32,7 +32,7 @@ These rules are enforced:
 - Formation limits such as "0-1" and "0-1 per full 2000 pts". These count the roster's current points total. When a roster is too small for what it contains, the entry's name gains the reason, for example "Warhound Titan (not enough points: 0-1 per full 4000 pts)". BattleScribe's error then names the limit. This labelling covers rosters up to 20,000 pts.
 - Per-formation upgrade caps (four for Legion, Mechanicum and Militia; three for Solar Auxilia; uncapped elsewhere), each upgrade once, and OR-groups such as one transport option.
 - Army-wide caps on upgrades: one Legate, one Captain-General, one Archmagos Prime, one Seneschal. Free Legate Commanders and Discipline Masters are limited to one per 500 points or part thereof.
-- Titan weapon slots: Warhound 2, Warhound pack 4, Reaver 3, Warlord 4, with their costs.
+- Titan weapon slots, picked on each Titan with their costs: Warhound 2 arm; Reaver 2 arm and 1 carapace; Warlord 2 arm and 2 carapace. Arm-only weapons (Close Combat Weapon) and carapace-only weapons (Carapace Landing Pad, Support Missile) are offered only in those slots.
 - Standard Transport (Legion lists) requires exactly enough transports: one per 2 Tactical-sized units in the formation, rounded up. That counts squads added by upgrades such as Support Squads, and a Primarch, who takes his retinue's space. Characters, Dreadnoughts and Rapiers take no space. The transports are Rhino Armoured Carriers, and one of them per formation may be a Damocles Command Rhino instead. Both cost 0 pts. Add Standard Transport last; if units change afterwards, BattleScribe flags the transport count until you fix it.
 - Every other transport upgrade also requires exactly enough transports for the formation. This covers Heavy Transport, Assault Claw and Assault Ram (Legion), Carrier (Custodes), Transport (Solar Auxilia, Mechanicum, Militia) and Heavy Transport (Militia). Units take transport space according to each transport's capacity on the reference sheets.
   - **Space per unit:** infantry take 1 space. Bulky units take 2: Terminators, Dreadnoughts, Ogryns, Thallax, Ursarax, Myrmidons and Aquilon Terminators. A Primarch takes his retinue's space, and characters and other vehicles take none.
@@ -48,11 +48,10 @@ These rules are shown as text only, not enforced:
 - Which units each transport may carry (for example, Rhinos can't carry Terminators): only the amount of space is checked.
 - Daemon god-matching (Followers or Greater Daemons must share their Horde's god), the 3-9 minimum per Followers unit type, and one Daemon Prince per Chaos faction.
 - Militia Provenance: only two types per army, and the Traitor Militia requirement.
-- Mount restrictions on Titan weapons (arm or carapace).
 
 ## Data decisions and gaps
 
-- **Profiles follow the layout of the [Epic Armageddon BSData](https://github.com/BSData/wh40k-epic-armageddon).** Each unit's weapons are in its own profile, one line per weapon, in Weapons, Range, Firepower and Weapon Notes columns. That way every unit's row in a roster lists its own guns. War engines use a War Engine profile with Damage Capacity, Void Shields and Critical Hit columns. Chosen Titan weapons stay separate Weapon profiles, listed under the Titan that carries them.
+- **Profiles follow the layout of the [Epic Armageddon BSData](https://github.com/BSData/wh40k-epic-armageddon).** Each unit's weapons are in its own profile, one line per weapon, in Weapons, Range, Firepower and Weapon Notes columns. That way every unit's row in a roster lists its own guns. War engines use a War Engine profile with Damage Capacity, Void Shields and Critical Hit columns.
 - **Profile cells are kept narrow** (25 characters per line). Roster viewers move a column below the table when its text is too wide.
   - **Long cells:** they wrap onto extra lines, and each weapon's lines stay level across the weapon columns.
   - **Notes column:** lists only the short rule names. Longer text goes into a "<unit> notes" rule shown with the unit's rules, and the column says "See unit notes". That text covers weapon-option sentences, transport capacities, Titan movement rules and long critical-hit effects.
@@ -60,7 +59,7 @@ These rules are shown as text only, not enforced:
   - Some units pick twice: the Contemptor and Leviathan Dreadnoughts' two arm weapons, and the Saturnine Terminators' two weapons. Each pick may take the same weapon. The Contemptor's Havoc Launcher is an optional +5 pts pick.
   - Where the sheet gives one FF per option (Predator sponsons, Dreadnought, Veletaris, Mechanicum Tarantula and Land Raider, Militia Auxiliary), the choice sets the unit's FF.
   - The choices are listed in `tools/weapon_options.py`. Rules that every unit in a formation must choose the same weapon (Solar Auxilia Rapiers, Veletaris, Militia Auxiliary) are not enforced.
-  - Titan weapon slots are chosen on the formation, as before.
+  - Titans work the same way, with one pick per weapon slot (for example Arm weapon 1, Carapace weapon 1). Each pick starts on the cheapest weapon. A chosen weapon's line ends with its arc: Fwd for arm weapons and FxF for carapace weapons, as the sheets give for each mount. Weapon notes too long for the line (mount restrictions, the Corvus Assault Pod's capacity, the Support Missile's warheads) go into a "<weapon> notes" rule, and the line says "See weapon notes".
 - **Orks of Telon Reach is not included.** The Internet Archive never captured the army list page, only its unit reference sheet, so there are no formations to build from.
 - **Sabre Strike Tank** is in the Legion list but missing from the wiki reference sheet. Its stats come from Departmento Munitorum.
 - **Solar Auxilia Tank Hunter Squadron** (3 Valdor Tank Hunters, 250 pts, support) comes from Departmento Munitorum. The Valdor is on the wiki reference sheet, but the archived army list has no formation for it.

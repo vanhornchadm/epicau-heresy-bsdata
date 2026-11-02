@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="8" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="8149-95da-d7f3-bbe3" name="Imperial Militia" hidden="false">
       <rules>
@@ -688,7 +688,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="3d32-9dc5-f5db-26ff" name="Levy Auxiliaries" hidden="false" targetId="c544-0cb9-6d98-e8ad" type="profile"/>
-            <infoLink id="bea1-9e60-cdec-03fb" name="Levy Auxiliaries notes" hidden="false" targetId="a22b-2652-ec67-7088" type="rule"/>
             <infoLink id="217f-ec03-22fc-062b" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
@@ -923,7 +922,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="eb64-7fe9-9367-dc67" name="Militia Grenadier Squad" hidden="false" targetId="ebc0-868b-9c08-6761" type="profile"/>
-            <infoLink id="1f1a-841c-8252-e1bd" name="Militia Grenadier Squad notes" hidden="false" targetId="c64c-0f69-c64b-9faf" type="rule"/>
             <infoLink id="cae0-989c-1661-f515" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
@@ -2067,7 +2065,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="ae29-81ae-3fc8-8553" name="Basilisk Artillery Carriage" hidden="false" targetId="d654-bfc0-8153-1774" type="profile"/>
-                    <infoLink id="407e-acee-fac8-3135" name="Basilisk Artillery Carriage notes" hidden="false" targetId="921e-ef41-8d87-8fc7" type="rule"/>
                     <infoLink id="5583-5c67-80ca-c327" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
                     <infoLink id="6b23-b2a6-fddd-4970" name="Barrage" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                   </infoLinks>
@@ -2092,7 +2089,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="195d-2ad9-8609-71b9" name="Medusa Artillery Carriage" hidden="false" targetId="9ce0-5360-4840-ddba" type="profile"/>
-                    <infoLink id="918b-b64e-0a9a-14df" name="Medusa Artillery Carriage notes" hidden="false" targetId="d539-2bb6-443c-a68d" type="rule"/>
                     <infoLink id="e21e-1cc5-58d2-25bf" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="daed-ae62-44e9-e8a2" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                   </infoLinks>
@@ -3022,7 +3018,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="b624-a36d-1ce3-4165" name="Imperial Navy Avenger Strike Fighter" hidden="false" targetId="0e7d-1fd1-4041-1be7" type="profile"/>
-            <infoLink id="5a17-f230-6d97-c66e" name="Imperial Navy Avenger Strike Fighter notes" hidden="false" targetId="1615-8066-a566-05e9" type="rule"/>
             <infoLink id="01bd-7f44-6ee6-ba2a" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
             <infoLink id="2bd4-640a-8171-fab8" name="Rear Fire Arc" hidden="false" targetId="e953-40ea-7719-e17c" type="rule"/>
           </infoLinks>
@@ -3104,7 +3099,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="2ac9-5f36-2a5e-2ad3" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" targetId="d892-7f1e-48ff-3b64" type="profile"/>
-            <infoLink id="db82-2ef6-4850-0bda" name="Imperial Navy Primaris-Lightning Strike Fighter notes" hidden="false" targetId="0510-9145-81ec-54d3" type="rule"/>
             <infoLink id="d565-477c-6445-f6dd" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
             <infoLink id="5e72-0062-9fe1-dcb2" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
           </infoLinks>
@@ -3757,20 +3751,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="d586-1868-3ccb-fdef" name="Auxilia Stormhammer notes" hidden="false">
       <description>Critical Hit: Destroyed. any units within 5cm of the model suffer a hit on a roll of 6+.</description>
     </rule>
-    <rule id="921e-ef41-8d87-8fc7" name="Basilisk Artillery Carriage notes" hidden="false">
-      <description>.</description>
-    </rule>
     <rule id="9ed3-d901-7b3f-b21c" name="Dauntless Class Light Cruiser notes" hidden="false">
       <description>Transport: May carry up to 20 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Force Commander, Militia Auxiliaries, Levy Auxiliaries, Militia Grenadiers, Miltia Fire Support Squads, Ogryn Brute Squad or Auxilia Rapier Platforms. Weapon lines are combined; check the wiki sheet.</description>
     </rule>
     <rule id="abc2-2639-d19a-3607" name="Emperor Class Battleship notes" hidden="false">
       <description>Slow and steady: may not be used on the first two turns of a battle unless the scenario specifically says otherwise. Transport: May carry up to 60 of the following units and as many Arvus Lighter Orbital Shuttles required to transport them: Force Commander, Militia Auxiliaries, Levy Auxiliaries, Militia Grenadiers, Miltia Fire Support Squads, Ogryn Brute Squad or Auxilia Rapier Platforms. Weapon lines are combined; check the wiki sheet.</description>
-    </rule>
-    <rule id="1615-8066-a566-05e9" name="Imperial Navy Avenger Strike Fighter notes" hidden="false">
-      <description>.</description>
-    </rule>
-    <rule id="0510-9145-81ec-54d3" name="Imperial Navy Primaris-Lightning Strike Fighter notes" hidden="false">
-      <description>.</description>
     </rule>
     <rule id="9e37-8af0-959e-1323" name="Land Raider Proteus notes" hidden="false">
       <description>Transport: (May carry 2 INF units. Ogryn Brute Squads count as 2 units.).</description>
@@ -3778,20 +3763,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="e4b8-c390-39bd-6327" name="Leman Russ Demolisher notes" hidden="false">
       <description>Weapon lines are combined; check the wiki sheet.</description>
     </rule>
-    <rule id="a22b-2652-ec67-7088" name="Levy Auxiliaries notes" hidden="false">
-      <description>.</description>
-    </rule>
-    <rule id="d539-2bb6-443c-a68d" name="Medusa Artillery Carriage notes" hidden="false">
-      <description>.</description>
-    </rule>
     <rule id="3374-d307-5559-8d2e" name="Militia Auxiliary notes" hidden="false">
       <description>Militia Auxiliary units in a formation can only use either Rifles OR Pistol and Close Combat Weapon, this must be selected prior to the start of the game. Additional Militia Auxiliary units added to a formation must use the same weapon type.</description>
     </rule>
     <rule id="23e4-0e82-50e6-ace8" name="Militia Fire Support Squad notes" hidden="false">
-      <description>. Weapon lines are combined; check the wiki sheet.</description>
-    </rule>
-    <rule id="c64c-0f69-c64b-9faf" name="Militia Grenadier Squad notes" hidden="false">
-      <description>.</description>
+      <description>Weapon lines are combined; check the wiki sheet.</description>
     </rule>
     <rule id="321a-9062-9b97-f46a" name="Ogryn Brute Squad notes" hidden="false">
       <description>Ogryn Brute Squads are all armed with Power weapons OR Ripper Guns Or Chaos Spawn Mutations- choose one option before the game. Chaos Spawn Mutations may only be selected by a detachment with the Traitors Provenance upgrade.</description>
@@ -3975,7 +3951,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">120cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP4+/AT4+ OR 1BP</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Indirect fire</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="acf3-7ca5-d218-bd2f" name="Cavalry Auxiliary" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4059,7 +4035,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">2 x AP3/AT5+&lt;BR&gt;&lt;BR&gt;AT5/AA5+&lt;BR&gt;&lt;BR&gt;AA6+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">FxF&lt;BR&gt;&lt;BR&gt;FxF&lt;BR&gt;&lt;BR&gt;Rear Arc</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="d892-7f1e-48ff-3b64" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4073,7 +4049,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+/AA5+&lt;BR&gt;&lt;BR&gt;AP5+/AT6+/AA5+&lt;BR&gt;&lt;BR&gt;AT4+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">FxF&lt;BR&gt;&lt;BR&gt;FxF&lt;BR&gt;&lt;BR&gt;Single Shot, FxF</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="2d90-5d73-e9df-06d7" name="Land Raider Proteus" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4129,7 +4105,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(15 cm)</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(small arms)</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="9ce0-5360-4840-ddba" name="Medusa Artillery Carriage" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4143,7 +4119,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">MW4+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Ignores Cover</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="53a5-1b6b-eb09-b1a8" name="Militia Auxiliary" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4199,7 +4175,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(15cm)&lt;BR&gt;&lt;BR&gt;15cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(small arms)&lt;BR&gt;&lt;BR&gt;AP5+/AT5+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3036-dac1-f4f5-b29a" name="Motorcycle Commander" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

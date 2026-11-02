@@ -212,21 +212,23 @@ TITANICUS = ARMY(
            'Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. '
            'The fan-made Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf '
            '1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder. '
-           'Arm/carapace mount restrictions are noted on each weapon.',
+           'Weapons for one mount only (arm or carapace) are offered only in those slots.',
            'The wiki sets no Allies/Lords of War points limit for Legio Titanicus.'])
-TITAN_WEAPON_SLOTS = {'Warhound Scout Titan': (2, SCOUT_WEAPONS),
-                      'Reaver Battle Titan': (3, SCOUT_WEAPONS + BATTLE_WEAPONS),
-                      'Warlord Battle Titan': (4, SCOUT_WEAPONS + BATTLE_WEAPONS),
+# Each Titan's weapon slots as (mount, count, weapons): one pick per slot on the Titan, Arm slots before Carapace as
+# on the reference sheets ('2 x Arm, Forward Arc, 2 x Carapace, Fixed Forward').
+SCOUT_OR_BATTLE = SCOUT_WEAPONS + BATTLE_WEAPONS
+TITAN_WEAPON_SLOTS = {'Warhound Scout Titan': [('Arm', 2, SCOUT_WEAPONS)],
+                      'Reaver Battle Titan': [('Arm', 2, SCOUT_OR_BATTLE), ('Carapace', 1, SCOUT_OR_BATTLE)],
+                      'Warlord Battle Titan': [('Arm', 2, SCOUT_OR_BATTLE), ('Carapace', 2, SCOUT_OR_BATTLE)],
                       # Fan-made, adapted from Epic-UK: the Warbringer's carapace must take a Quake or Volcano Cannon.
-                      'Warbringer Nemesis Titan': [('Carapace Weapon', 1, [('Quake Cannon', 75), ('Volcano Cannon', 50)]),
-                                                   ('Titan Weapons', 2, SCOUT_WEAPONS + BATTLE_WEAPONS)],
-                      'Warmaster Heavy Battle Titan': (1, SCOUT_WEAPONS + BATTLE_WEAPONS),
+                      'Warbringer Nemesis Titan': [('Carapace', 1, [('Quake Cannon', 75), ('Volcano Cannon', 50)]),
+                                                   ('Arm', 2, SCOUT_OR_BATTLE)],
+                      'Warmaster Heavy Battle Titan': [('Carapace', 1, SCOUT_OR_BATTLE)],
                       # Fan-made, converted from Legions Imperialis; Neutron Laser, Conversion Beam Dissipator and the
                       # Kirus weapons are fan-made Titan weapons (FAN_TITAN_WEAPONS in generate.py).
-                      'Dire Wolf Heavy Scout Titan': [('Titan Weapons', 1, [('Volcano Cannon', 50), ('Neutron Laser', 25),
-                                                                             ('Conversion Beam Dissipator', 50)])],
-                      'Warmaster Iconoclast Titan': [('Kirus Weapon', 1, [('Kirus Siege Drill', 0),
-                                                                          ('Kirus Grav Imploder', 0)])]}
+                      'Dire Wolf Heavy Scout Titan': [('Carapace', 1, [('Volcano Cannon', 50), ('Neutron Laser', 25),
+                                                                       ('Conversion Beam Dissipator', 50)])],
+                      'Warmaster Iconoclast Titan': [('Arm', 1, [('Kirus Siege Drill', 0), ('Kirus Grav Imploder', 0)])]}
 
 # ---------------------------------------------------------------- Knight Household
 QUESTORIS = ['Questorius Knight-Paladin', 'Questorius Knight-Errant']

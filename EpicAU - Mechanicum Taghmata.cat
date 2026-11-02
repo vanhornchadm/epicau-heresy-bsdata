@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="9" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="10" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -2867,7 +2867,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="8814-250e-1a57-ea50" name="Imperial Navy Avenger Strike Fighter" hidden="false" targetId="678c-9b47-5024-6cba" type="profile"/>
-            <infoLink id="ffc1-cd5e-c7a5-08c0" name="Imperial Navy Avenger Strike Fighter notes" hidden="false" targetId="93bc-6ab7-ced2-c9ec" type="rule"/>
             <infoLink id="1140-1f61-c5ed-7f3b" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
             <infoLink id="dd06-6712-8c6e-a5dd" name="Rear Fire Arc" hidden="false" targetId="e953-40ea-7719-e17c" type="rule"/>
           </infoLinks>
@@ -2946,7 +2945,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="9803-db00-2ef3-63a2" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" targetId="d448-7dcf-382a-c4d2" type="profile"/>
-            <infoLink id="3410-b6a9-cc30-d7fe" name="Imperial Navy Primaris-Lightning Strike Fighter notes" hidden="false" targetId="bd74-e7f9-f938-a1ff" type="rule"/>
             <infoLink id="6811-7710-8b43-0662" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
             <infoLink id="4df8-f643-e189-1e09" name="Fixed Forward Fire Arc" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
           </infoLinks>
@@ -3496,12 +3494,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="7af3-608d-eb4d-224c" name="Falchion notes" hidden="false">
       <description>Critical Hit: This unit is destroyed and all units within 5cm of the Falchion suffer a standard hit on a 6+.</description>
     </rule>
-    <rule id="93bc-6ab7-ced2-c9ec" name="Imperial Navy Avenger Strike Fighter notes" hidden="false">
-      <description>.</description>
-    </rule>
-    <rule id="bd74-e7f9-f938-a1ff" name="Imperial Navy Primaris-Lightning Strike Fighter notes" hidden="false">
-      <description>.</description>
-    </rule>
     <rule id="b4d5-88ec-6642-2179" name="Krios Battle Tank notes" hidden="false">
       <description>A Krios Battle Tank is armed with a Lightning Cannon OR a Pulsar Fusil, choose one weapon before the game.</description>
     </rule>
@@ -3604,7 +3596,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">2 x AP3/AT5+&lt;BR&gt;&lt;BR&gt;AT5/AA5+&lt;BR&gt;&lt;BR&gt;AA6+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">FxF&lt;BR&gt;&lt;BR&gt;FxF&lt;BR&gt;&lt;BR&gt;Rear Arc</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="d448-7dcf-382a-c4d2" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -3618,7 +3610,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+/AA5+&lt;BR&gt;&lt;BR&gt;AP5+/AT6+/AA5+&lt;BR&gt;&lt;BR&gt;AT4+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">FxF&lt;BR&gt;&lt;BR&gt;FxF&lt;BR&gt;&lt;BR&gt;Single Shot, FxF</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">See unit notes</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="02fd-6427-562f-dc1f" name="Karacnos Assault Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

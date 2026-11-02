@@ -4,7 +4,7 @@ Each unit's choices are groups picked on the unit: a required group takes exactl
 default), an optional group takes at most one. An option names the sheet rows it adds to the unit's profile (trailing
 "OR" dropped), or gives rows of its own with R() where the sheet runs several weapons into one row; those combined
 sheet rows are listed in REPLACED_ROWS. `ff` sets the unit's FF when the sheet gives one value per option.
-Titan weapon slots are chosen separately (TITAN_WEAPON_SLOTS in spec_others.py).
+Titans pick their weapons the same way, one pick per slot, from TITAN_WEAPON_SLOTS in spec_others.py.
 """
 
 
@@ -78,4 +78,12 @@ WEAPON_OPTIONS = {
 REPLACED_ROWS = {
     'Land Speeder': ['Multi-Melta OR Plasma Cannon / Heavy Bolter'],
     'Javelin Attack Speeder': ['TL Lascannon OR TL Cyclone Missile Launcher'],
+    # Titans: the rows naming their weapon slots
+    'Warhound Scout Titan': ['2 Scout Titan Weapon Variants'],
+    'Reaver Battle Titan': ['3 x Scout or Battle Titan Weapon Variants'],
+    'Warlord Battle Titan': ['4 x Scout or Battle Titan Weapon Variants'],
+    'Warbringer Nemesis Titan': ['Quake Cannon OR Volcano Cannon', '2 x Scout or Battle Titan Weapon Variants'],
+    'Warmaster Heavy Battle Titan': ['1 x Scout or Battle Titan Weapon Variant'],
+    'Dire Wolf Heavy Scout Titan': ['Volcano Cannon OR Neutron Laser OR Conversion Beam Dissipator'],
+    'Warmaster Iconoclast Titan': ['Kirus Siege Drill OR Kirus Grav Imploder'],
 }

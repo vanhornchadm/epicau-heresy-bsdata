@@ -72,6 +72,7 @@ WEAPON_OPTIONS = {
     'Thanatar Battle-Automata': [G('Weapon', 'Hellex Plasma Mortar', 'Sollex Heavy Lascannon')],
     'Ordinatus Majoris': [G('Main gun', 'Sonic Disruptor', '6 x Golgothan Missiles', 'Nova Cannon')],
     'Ordinatus Minoris': [G('Main gun', 'Bellacosa Volcano Cannon', 'Ulator Sonic Destroyer')],
+    'Arlatax Battle-Automata': [G('Weapon', 'Autocannon', 'Plasma Cannon')],
     'Scintillax': [G('Weapon', 'Exo-planar Cannon', 'Storm Laser')],
     'Errax': [G('Weapon', 'Errax Lascutters', 'Errax Meltagun')],
     'Tenebrax': [G('Weapon', 'Stalker Volkite Culverins', 'Exo-planar Cannon', 'Stalker Maxima Bolters')],

@@ -99,8 +99,9 @@ LEGION_CHOICE = dict(label='Legion', none='None (core list)', none_rule='Core li
 # Solar Auxilia: the Marauder Bomber and Thunderbolt come from the NetEA Imperial Guard lists, the Marauder Destroyer
 # from the Epic-UK Imperial Guard codex (version 011026), and the Malcador Annihilator from the EpicAU Imperial Militia
 # sheet on the Solar Auxilia Malcador's hull; the rest convert their Legions Imperialis rules against EpicAU units.
-# The Dark Mechanicum Stalkers and Harpax convert the Legions Imperialis profiles in the BSData Dark Mechanicum
-# catalogue (https://github.com/BSData/Horus-Heresy-Legions-Imperialis) against the EpicAU Mechanicum automata.
+# The Dark Mechanicum Stalkers and Harpax, and the Arlatax, Domitar, Krios Venator and Archmagos Prime on Abeyant,
+# convert the Legions Imperialis profiles in the BSData Legions Imperialis data
+# (https://github.com/BSData/Horus-Heresy-Legions-Imperialis) against the EpicAU Mechanicum automata.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -235,6 +236,26 @@ EXTRA_UNITS = {
                  'Commander or Supreme Commander, and is destroyed once it has fired. A Cyclops must select either a '
                  'Demolition Charge OR Incineration Charge before the start of the game.'}],
     'Mechanicum Taghmata': [{
+        'name': 'Arlatax Battle-Automata', 'type': 'AV', 'speed': '20cm', 'armour': '3+', 'cc': '3+', 'ff': '5+',
+        'weapons': [{'name': 'Autocannon OR', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
+                    {'name': 'Plasma Cannon', 'range': '30cm', 'firepower': 'AP4+/AT5+'},
+                    {'name': 'Power Claws', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'}],
+        'notes': 'Cybernetica Cortex, Fearless, Invulnerable Save, Jump Packs. Dread Aura: enemy formations within '
+                 '15cm subtract 1 from their rally tests. An Arlatax must select either an Autocannon OR a Plasma '
+                 'Cannon before the start of the game.'}, {
+        'name': 'Domitar Battle-Automata', 'type': 'AV', 'speed': '15cm', 'armour': '3+', 'cc': '4+', 'ff': '5+',
+        'weapons': [{'name': 'Domitar Missile Launcher', 'range': '45cm', 'firepower': 'AP5+/AT5+'},
+                    {'name': 'Graviton Hammers', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'}],
+        'notes': 'Cybernetica Cortex, Fearless, Invulnerable Save, Walker. Dread Aura: enemy formations within 15cm '
+                 'subtract 1 from their rally tests.'}, {
+        'name': 'Krios Venator', 'type': 'AV', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '4+',
+        'weapons': [{'name': 'Pulsar Fusil', 'range': '30cm', 'firepower': 'AP5+/AT3+'},
+                    {'name': 'Volkite Caliver Sponsons', 'range': '15cm', 'firepower': 'AP5+, Disrupt'}],
+        'notes': 'Invulnerable Save, Reinforced Armour, Walker.'}, {
+        'name': 'Archmagos Prime on Abeyant', 'type': 'AV', 'speed': '15cm', 'armour': '4+', 'cc': '4+', 'ff': '5+',
+        'weapons': [{'name': 'Meltagun', 'range': '15cm', 'firepower': 'MW5+'},
+                    {'name': 'Power Weapons', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'}],
+        'notes': 'Supreme Commander, Reinforced Armour, Invulnerable Save, Cortex Controller.'}, {
         'name': 'Scintillax', 'type': 'AV', 'speed': '20cm', 'armour': '4+', 'cc': '4+', 'ff': '5+',
         'weapons': [{'name': 'Scintillax Lascutter', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'},
                     {'name': 'Exo-planar Cannon OR', 'range': '15cm', 'firepower': 'AP4+, Ignore Cover'},
@@ -325,7 +346,8 @@ FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion T
              'Imperial Navy Marauder Bomber', 'Imperial Navy Thunderbolt Fighter', 'Imperial Navy Marauder Destroyer',
              'Imperial Navy Marauder Colossus', 'Imperial Navy Marauder Pathfinder', 'Malcador Annihilator',
              'Malcador Vanquisher', 'Leman Russ Annihilator', 'Hellhammer', 'Aethon Heavy Sentinel',
-             'Cyclops Demolition Vehicle', 'Scintillax', 'Errax', 'Tenebrax', 'Serperos', 'Harpax'}
+             'Cyclops Demolition Vehicle', 'Scintillax', 'Errax', 'Tenebrax', 'Serperos', 'Harpax',
+             'Arlatax Battle-Automata', 'Domitar Battle-Automata', 'Krios Venator', 'Archmagos Prime on Abeyant'}
 
 
 def star(name, fan):

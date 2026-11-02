@@ -72,6 +72,10 @@ SOLAR_AUXILIA = ARMY(
           extra_up=LEGATE),
         F('Solar Auxilia Close Support Squadron', 'support', 200,
           [Mix(3, 3, ('Leman Russ Demolisher', 0), ('Leman Russ Incinerator', 0))], 'Executioner', extra_up=LEGATE),
+        F('Solar Auxilia Tank Hunter Squadron', 'support', 250,
+          [U(3, 'Valdor Tank hunter', label='Valdor Tank Hunter')], extra_up=LEGATE,
+          note='The Valdor is on the wiki reference sheet, but the archived army list has no formation for it; '
+               'this formation is taken from Departmento Munitorum.'),
         F('Solar Auxilia Tarantula Battery', 'support', 125, [U(4, 'Tarantula'), U(1, 'Tarantula Hyperios')],
           extra_up=LEGATE),
         F('Solar Auxilia Avenger Wing', 'low', 250, [U(2, 'Imperial Navy Avenger Strike Fighter')]),

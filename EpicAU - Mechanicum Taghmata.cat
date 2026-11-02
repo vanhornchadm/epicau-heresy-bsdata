@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="14" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -1420,7 +1420,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </modifiers>
             </infoLink>
             <infoLink id="2651-3eeb-0976-29e7" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
-            <infoLink id="fd89-f66e-34d9-3b5d" name="Weapon Options (Thanatar Battle-Automata)" hidden="false" targetId="77f1-0f17-c796-ce9f" type="rule"/>
             <infoLink id="bd25-84a0-98c3-684a" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="a275-8ebd-d051-97df" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="94d8-0c03-ccb9-839c" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -1578,7 +1577,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="5eb8-519f-2a68-58de" name="Weapon Options (Krios Battle Tank)" hidden="false" targetId="0034-2198-7564-5250" type="rule"/>
             <infoLink id="b770-7979-b7d0-5f53" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="f130-4fd8-a2cc-1753" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="7db6-114c-665a-1619" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
@@ -2184,7 +2182,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="a9cc-3263-f0c9-accf" name="Weapon Options (Tarantula Platform)" hidden="false" targetId="1a7d-c283-e161-a36c" type="rule"/>
             <infoLink id="4041-8c1f-40c0-55ef" name="Automaton" hidden="false" targetId="7a75-4235-9819-0fe3" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
@@ -2909,13 +2906,27 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ca2-0a90-0cca-bfdc" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="f3a2-7432-9150-2178" name="Ordinatus Majoris" hidden="false" targetId="dc31-d58e-0b73-5d26" type="profile"/>
+            <infoLink id="f3a2-7432-9150-2178" name="Ordinatus Majoris" hidden="false" targetId="dc31-d58e-0b73-5d26" type="profile">
+              <modifiers>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Sonic Disruptor">
+                  <conditions>
+                    <condition field="selections" scope="25d6-e125-5e3e-d3b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3560-6a79-9e89-e304" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Golgothan Missiles x6">
+                  <conditions>
+                    <condition field="selections" scope="25d6-e125-5e3e-d3b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="288b-dee2-5893-07cb" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Nova Cannon">
+                  <conditions>
+                    <condition field="selections" scope="25d6-e125-5e3e-d3b6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4d24-0501-b2f0-77b5" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="b282-f539-644b-5b0e" name="Volkite Culverins" hidden="false" targetId="b413-0086-7889-ee2a" type="profile"/>
             <infoLink id="2756-a523-df84-e7aa" name="Twin Lascannons" hidden="false" targetId="5ab9-0384-ef6e-89fe" type="profile"/>
-            <infoLink id="605b-3642-c37b-5cc6" name="Sonic Disruptor" hidden="false" targetId="bc4f-97e4-0cb2-dcca" type="profile"/>
-            <infoLink id="628a-ba9e-176d-1f26" name="Golgothan Missiles" hidden="false" targetId="f357-5c1c-a36e-2718" type="profile"/>
-            <infoLink id="9415-ca72-5534-1fa1" name="Nova Cannon" hidden="false" targetId="668c-e336-4db7-a1af" type="profile"/>
-            <infoLink id="07ba-17ad-4085-2b64" name="Weapon Options (Ordinatus Majoris)" hidden="false" targetId="df4d-7efb-9c0b-7c1c" type="rule"/>
             <infoLink id="9bec-480c-ea03-fdab" name="Critical Hit (Ordinatus Majoris)" hidden="false" targetId="11b4-7293-cd5f-c812" type="rule"/>
             <infoLink id="bbaf-9126-a182-a7be" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
             <infoLink id="31ab-c2e0-82ce-2396" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
@@ -2932,6 +2943,49 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="6a39-ec4b-ff0c-3ca8" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
             <infoLink id="9f08-85e6-f0af-3cdb" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e038-c896-1d95-8bde" name="Main gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="3560-6a79-9e89-e304">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76bc-4568-132e-b8cb" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bb7-ea40-6a25-e2ee" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3560-6a79-9e89-e304" name="Sonic Disruptor" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2dfd-1770-21c4-878c" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="aaac-e9c8-705e-fef4" name="Sonic Disruptor" hidden="false" targetId="bc4f-97e4-0cb2-dcca" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="288b-dee2-5893-07cb" name="6 x Golgothan Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74c8-e8e4-af88-4da1" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d48f-67d5-06c5-69f2" name="Golgothan Missiles" hidden="false" targetId="f357-5c1c-a36e-2718" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="4d24-0501-b2f0-77b5" name="Nova Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a8c-1254-a9bd-9787" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6151-12f5-74a4-a132" name="Nova Cannon" hidden="false" targetId="668c-e336-4db7-a1af" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -3077,7 +3131,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="b2e8-b2c2-5e4e-f8e8" name="Weapon Options (Krios Battle Tank)" hidden="false" targetId="0034-2198-7564-5250" type="rule"/>
             <infoLink id="c11d-02e2-c883-ee55" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="ae43-cf00-a7e8-6433" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="c877-d80e-d158-d96b" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
@@ -3177,7 +3230,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </modifiers>
             </infoLink>
             <infoLink id="8f3b-da93-20e3-37ac" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
-            <infoLink id="6f1f-4b2f-6eb8-5454" name="Weapon Options (Thanatar Battle-Automata)" hidden="false" targetId="77f1-0f17-c796-ce9f" type="rule"/>
             <infoLink id="f35e-dd51-1d06-a57b" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
             <infoLink id="9cd4-d920-28bf-b186" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="2c03-ea6d-a32b-a440" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
@@ -3281,18 +3333,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     </rule>
     <rule id="adf8-ebb6-3b80-1887" name="Transport (Triaros Armoured Conveyor)" hidden="false">
       <description>May carry 2 Thallax, Ursarax or Myrmidon unit OR 4 of the following units: Tech Thrall, Tech Priest, Scyllax.</description>
-    </rule>
-    <rule id="0034-2198-7564-5250" name="Weapon Options (Krios Battle Tank)" hidden="false">
-      <description>A Krios Battle Tank is armed with a Lightning Cannon OR a Pulsar Fusil, choose one weapon before the game.</description>
-    </rule>
-    <rule id="df4d-7efb-9c0b-7c1c" name="Weapon Options (Ordinatus Majoris)" hidden="false">
-      <description>An Ordinatus Majoris is armed with a Sonic Disruptor OR Golgothan Missiles OR a Nova cannon; choose one option before the game.</description>
-    </rule>
-    <rule id="1a7d-c283-e161-a36c" name="Weapon Options (Tarantula Platform)" hidden="false">
-      <description>A Tarantula Platform is armed with a TL Lascannon OR a TL Heavy Bolter. Choose one option before the game.</description>
-    </rule>
-    <rule id="77f1-0f17-c796-ce9f" name="Weapon Options (Thanatar Battle-Automata)" hidden="false">
-      <description>A Tanatar Battle-Automata is armed with a Hellex Plasma Mortar OR a Sollex Heavy Lascannon, choose one weapon before the game.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -3569,7 +3609,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">5+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">5+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Volkite Culverins x3, Twin Lascannons x2, Sonic Disruptor, Golgothan Missiles x6, Nova Cannon</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Volkite Culverins x3, Twin Lascannons x2,</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">4</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">4</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>

@@ -3,7 +3,8 @@
 Each unit's choices are groups picked on the unit: a required group takes exactly one option (the first is the
 default), an optional group takes at most one. An option names the sheet rows it adds to the unit's profile (trailing
 "OR" dropped), or gives rows of its own with R() where the sheet runs several weapons into one row; those combined
-sheet rows are listed in REPLACED_ROWS. `ff` sets the unit's FF when the sheet gives one value per option.
+sheet rows are listed in REPLACED_ROWS. `ff`, `armour` and `cc` set the unit's stat when the sheet gives one value per
+option. `requires` (upgrade, option) offers the option only in formations that took that option of that upgrade.
 Titans pick their weapons the same way, one pick per slot, from TITAN_WEAPON_SLOTS in spec_others.py.
 """
 
@@ -12,8 +13,9 @@ def R(name, rng, firepower):
     return {'name': name, 'range': rng, 'firepower': firepower}
 
 
-def O(label, rows=None, cost=0, ff=None):
-    return {'label': label, 'rows': [label] if rows is None else rows, 'cost': cost, 'ff': ff}
+def O(label, rows=None, cost=0, ff=None, armour=None, cc=None, requires=None):
+    return {'label': label, 'rows': [label] if rows is None else rows, 'cost': cost, 'ff': ff, 'armour': armour,
+            'cc': cc, 'requires': requires}
 
 
 def G(label, *options, optional=False):
@@ -67,11 +69,14 @@ WEAPON_OPTIONS = {
     'Mechanicum Land Raider': [G('Weapons', O('2 x Twin Lascannon', ff='4+'), O('2 x Flamestorm Cannon', ff='3+'),
                                  O('2 x Twin Multimelta', ff='4+'))],
     'Thanatar Battle-Automata': [G('Weapon', 'Hellex Plasma Mortar', 'Sollex Heavy Lascannon')],
+    'Ordinatus Majoris': [G('Main gun', 'Sonic Disruptor', '6 x Golgothan Missiles', 'Nova Cannon')],
     'Ordinatus Minoris': [G('Main gun', 'Bellacosa Volcano Cannon', 'Ulator Sonic Destroyer')],
     # Imperial Militia
     'Auxilia Rapier Platform': [G('Weapon', *RAPIER)],
     'Militia Auxiliary': [G('Weapons', O('Rifles', ff='5+'), O('Pistol and Combat Weapon', ff='6+'))],
     'Auxilia Gorgon': [G('Weapons', 'Gorgon Mortars', '2 x TL Heavy Bolters')],
+    'Ogryn Brute Squad': [G('Weapons', O('Power weapons', armour='4+', cc='4+'), O('Ripper Guns', armour='4+', cc='5+'),
+                            O('Chaos Spawn Mutations', armour='3+', cc='3+', requires=('Provenance', 'Traitors')))],
 }
 
 # Sheet rows that run several weapons together; the options above give their weapons as rows of their own.

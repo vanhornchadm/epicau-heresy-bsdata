@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="15" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="17" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="8149-95da-d7f3-bbe3" name="Imperial Militia" hidden="false">
       <rules>
@@ -225,7 +225,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="a0fe-d417-d5e0-c79c" name="Weapon Options (Militia Auxiliary)" hidden="false" targetId="3678-5ec0-af0a-5800" type="rule"/>
             <infoLink id="03da-79ac-3f9f-219a" name="Special Rules (Militia Auxiliary)" hidden="false" targetId="669f-3540-09dc-f8b5" type="rule"/>
             <infoLink id="e5d0-23bb-672d-5c87" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
             <infoLink id="4576-f3d5-739c-10e0" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
@@ -1293,7 +1292,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="07d2-644a-bff1-fe9d" name="Weapon Options (Militia Auxiliary)" hidden="false" targetId="3678-5ec0-af0a-5800" type="rule"/>
             <infoLink id="c056-94bb-20b2-b93e" name="Special Rules (Militia Auxiliary)" hidden="false" targetId="669f-3540-09dc-f8b5" type="rule"/>
             <infoLink id="463c-3fc4-6c99-dbdc" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
             <infoLink id="044a-26b4-ac86-1aec" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
@@ -2233,7 +2231,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="b7cf-8be9-a831-ecd9" name="Weapon Options (Auxilia Rapier Platform)" hidden="false" targetId="775b-a3aa-e6be-b964" type="rule"/>
             <infoLink id="16a8-6369-8cbc-ca82" name="Mounted" hidden="false" targetId="4357-7618-ea64-6347" type="rule"/>
             <infoLink id="76a5-df9e-4f05-8fab" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
           </infoLinks>
@@ -3069,7 +3066,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="a092-5e1e-078f-0a48" name="Weapon Options (Militia Auxiliary)" hidden="false" targetId="3678-5ec0-af0a-5800" type="rule"/>
             <infoLink id="7a82-f611-8fcf-3c70" name="Special Rules (Militia Auxiliary)" hidden="false" targetId="669f-3540-09dc-f8b5" type="rule"/>
             <infoLink id="799a-9ca4-b2d6-d120" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
             <infoLink id="7643-3c7b-7874-b1e0" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
@@ -3124,17 +3120,130 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ae1-9925-8dc4-7f94" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="a15b-ae4d-3073-5b9d" name="Ogryn Brute Squad" hidden="false" targetId="71b9-48de-4b3c-86c6" type="profile"/>
-            <infoLink id="7978-cf0d-4f43-0177" name="Power weapons" hidden="false" targetId="de50-0dfd-1783-54c8" type="profile"/>
-            <infoLink id="b216-7bbd-778d-e110" name="Ripper Guns" hidden="false" targetId="500b-97c9-3ecc-bf60" type="profile"/>
-            <infoLink id="fa05-857d-1119-576c" name="Chaos Spawn Mutations" hidden="false" targetId="86e1-a4f0-427e-eec5" type="profile"/>
-            <infoLink id="a1ac-8c48-6ce3-aa03" name="Weapon Options (Ogryn Brute Squad)" hidden="false" targetId="bfdd-54e2-e610-2a39" type="rule"/>
+            <infoLink id="a15b-ae4d-3073-5b9d" name="Ogryn Brute Squad" hidden="false" targetId="71b9-48de-4b3c-86c6" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Power weapons">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d70-dc74-4593-1716" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="462a-a0d1-1868-59af" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d70-dc74-4593-1716" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cc43-f6de-2798-fb59" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d70-dc74-4593-1716" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Ripper Guns">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="308e-c22c-285d-3eb9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="462a-a0d1-1868-59af" value="4+">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="308e-c22c-285d-3eb9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cc43-f6de-2798-fb59" value="5+">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="308e-c22c-285d-3eb9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Chaos Spawn Mutations">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a8a-fd7e-20df-e028" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="462a-a0d1-1868-59af" value="3+">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a8a-fd7e-20df-e028" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cc43-f6de-2798-fb59" value="3+">
+                  <conditions>
+                    <condition field="selections" scope="7ca1-27ba-ad4b-c519" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a8a-fd7e-20df-e028" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink id="1aa2-662e-94f1-95b6" name="Provenance" hidden="false" targetId="b4b1-8c7e-039b-d41d" type="rule"/>
             <infoLink id="07c6-485f-667d-acc3" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="67cc-792f-0ecf-ceeb" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
             <infoLink id="afb5-592c-03d6-bff9" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
             <infoLink id="6b9b-c4b7-4ee1-5bcd" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="573e-1284-83ce-3609" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="7d70-dc74-4593-1716">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87df-2cc3-6031-cc6e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57df-e424-81de-5f34" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="7d70-dc74-4593-1716" name="Power weapons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04c8-76cd-bf8b-cf0d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2383-625f-4b3b-7bdc" name="Power weapons" hidden="false" targetId="de50-0dfd-1783-54c8" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="308e-c22c-285d-3eb9" name="Ripper Guns" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62be-579e-8b5e-661f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="8289-c28e-38b7-de25" name="Ripper Guns" hidden="false" targetId="500b-97c9-3ecc-bf60" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3a8a-fd7e-20df-e028" name="Chaos Spawn Mutations" hidden="true" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="95b2-28b4-892f-da55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                            <condition field="selections" scope="5b4d-3e6e-8471-0312" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                            <condition field="selections" scope="b7e9-67ef-58d1-e464" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                            <condition field="selections" scope="14c0-5345-8e25-0a11" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" field="811d-e644-bf8d-a72f" value="1.0">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="95b2-28b4-892f-da55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                            <condition field="selections" scope="5b4d-3e6e-8471-0312" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                            <condition field="selections" scope="b7e9-67ef-58d1-e464" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                            <condition field="selections" scope="14c0-5345-8e25-0a11" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fe5-8270-e739-64f0" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="811d-e644-bf8d-a72f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bab6-0bd9-59b4-acc8" name="Chaos Spawn Mutations" hidden="false" targetId="86e1-a4f0-427e-eec5" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
@@ -3649,15 +3758,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="3d72-7cfe-f2fe-1488" name="Transport (Land Raider Proteus)" hidden="false">
       <description>May carry 2 INF units. Ogryn Brute Squads count as 2 units.</description>
     </rule>
-    <rule id="775b-a3aa-e6be-b964" name="Weapon Options (Auxilia Rapier Platform)" hidden="false">
-      <description>An Auxilia Rapier Platform must select one weapon system before the start of a game.</description>
-    </rule>
-    <rule id="3678-5ec0-af0a-5800" name="Weapon Options (Militia Auxiliary)" hidden="false">
-      <description>Militia Auxiliary units in a formation can only use either Rifles OR Pistol and Close Combat Weapon, this must be selected prior to the start of the game.</description>
-    </rule>
-    <rule id="bfdd-54e2-e610-2a39" name="Weapon Options (Ogryn Brute Squad)" hidden="false">
-      <description>Ogryn Brute Squads are all armed with Power weapons OR Ripper Guns Or Chaos Spawn Mutations- choose one option before the game. Chaos Spawn Mutations may only be selected by a detachment with the Traitors Provenance upgrade.</description>
-    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="8ee9-b3d2-5f3e-66ac" name="Archaeotech Pistol" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4141,7 +4241,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+ / 4+ / 3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+ / 5+ / 3+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Power weapons, Ripper Guns, Chaos Spawn Mutations</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="eb7e-a9d4-5198-8e48" name="Orbital Bombardment" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

@@ -571,6 +571,8 @@ class Catalogue:
             else:
                 own = notes_rules(unit['notes'] if unit['notes'] != '-' else '')
                 self.profiles[uid] = profile(uid, display, PT_UNIT, 'Unit', UNIT_CHARS, stats)
+            if unit['name'] in WEAPON_OPTIONS:  # the unit's weapon choices are picked on it instead
+                own.pop('Weapon Options', None)
             self.notes_rule[uid] = []
             for label, desc in own.items():
                 rid, rname = gid('rule', self.scope, unit['name'], label), f'{label} ({display})'
@@ -760,7 +762,7 @@ class Builder:
     def weapon_choices(self, eid, unit):
         """(modifiers for the unit's profile link, choice groups) for a unit's weapon options: a chosen option adds
         its weapons' names to the Weapons column, where the sheet lists them, and its Weapon profiles show with the
-        option; it may also set the unit's FF. Names are joined by commas: New Recruit adds a space when it adds
+        option; it may also set the unit's FF, armour and CC, or need an upgrade option in the formation. Names are joined by commas: New Recruit adds a space when it adds
         text, so each name but the column's last carries the comma that follows it."""
         groups, _, _ = weapon_plan(unit)
         type_name = 'War Engine' if is_war_engine(unit) else 'Unit'
@@ -778,14 +780,17 @@ class Builder:
                                                        'collective': 'false', 'import': 'true', 'type': 'upgrade'},
                                     constraints=[constraint(gid('con', oid, 'max'), 'max', 1)], infoLinks=links,
                                     costs=cost(o['cost'])))
+                if o.get('requires'):
+                    self.gate(kids[-1], show=self.upgrade_option_taken(*o['requires']), cmax=gid('con', oid, 'max'))
                 taken = [X('conditions', children=[condition('atLeast', oid, 1, eid, child=True)])]
                 text = weapons_text([row[0] for row in o['rows']]) or o['label']  # e.g. a Command Relay
                 mods.append(X('modifier', {'type': 'append' if g['place'] == 'after' else 'prepend',
                                            'field': gid('ct', type_name, 'Weapons'),
                                            'value': text + ('' if g['last'] else ',')}, taken))
-                if o['ff']:
-                    mods.append(X('modifier', {'type': 'set', 'field': gid('ct', type_name, 'FF'), 'value': o['ff']},
-                                  taken))
+                for stat, char in (('ff', 'FF'), ('armour', 'Armour'), ('cc', 'CC')):
+                    if o.get(stat):
+                        mods.append(X('modifier', {'type': 'set', 'field': gid('ct', type_name, char),
+                                                   'value': o[stat]}, taken))
             cons = [constraint(gid('con', g_id, 'max'), 'max', 1)]
             attrs = {'id': g_id, 'name': g['label'], 'hidden': 'false', 'collective': 'false', 'import': 'true'}
             if not g['optional']:  # starts on the cheapest option
@@ -796,6 +801,18 @@ class Builder:
         # prepends go on in reverse so they keep their order: groups before the fixed weapons, then optional ones
         mods = placed['before'][::-1] + placed['front'][::-1] + placed['after']
         return [m for group in mods for m in group], grps
+
+    def upgrade_option_taken(self, upgrade, option):
+        """(conditions when `option` of the shared `upgrade` is taken in the formation, conditions when it isn't),
+        for a selection inside a formation that may take the upgrade."""
+        choice = next(p for p in self.army['upgrades'][upgrade]['parts'] if p['kind'] == 'or')
+        oid = gid('se', self.cat_id, f'upgrade/{upgrade}/0', [o['label'] for o in choice['opts']].index(option))
+        fids = [gid('formation', self.cat_id, f['slot'], f['name'], *([f['key']] if f.get('key') else []))
+                for f in self.army['formations']
+                if upgrade in [n.strip() for c in f['up'].split(',') for n in c.split(' OR ')]]
+        return tuple(X('conditionGroups', children=[X('conditionGroup', {'type': t}, [X('conditions', children=[
+                         condition(c, oid, 1, fid, child=True) for fid in fids])])])
+                     for t, c in (('or', 'atLeast'), ('and', 'lessThan')))
 
     def unit_costs(self, unit, each):
         """Points plus the transport space the unit takes under each scheme this list uses."""

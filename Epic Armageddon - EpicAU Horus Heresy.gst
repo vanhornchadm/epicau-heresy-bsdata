@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="17" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the archived EpicAU wiki (https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page). Rules text is summarised; see the wiki and the NetEA rulebook for full wording. Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="18" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
   </publications>
@@ -91,11 +91,6 @@
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2848-b95e-0e3b-bb33" type="max"/>
       </constraints>
-      <rules>
-        <rule id="b85c-31ef-bd96-d0b9" name="Allow fan-made units" hidden="false">
-          <description>Shows fan-made units and options, marked *, that are not part of EpicAU (see the README for their sources). Taking it in any force shows them in every force of the roster; removing it flags any that were taken. Legion Astartes: Legion Arquitor Bombard Squadron*, Legion Ascalon Squadron*, Legion Araknae Weapons Battery*, Legion Saturnine Terminator Detachment*, Legion Saturnine Dreadnought Talon*, Legion Tarantula Battery*, Legion Kratos Heavy Tank Squadron*, Sicaran Punisher*, Sicaran Arcus*, Termite Assault* upgrade, Palisade Drop Pod* upgrade. Legio Titanicus: Warbringer Nemesis Titan*, Warmaster Titan*, Dire Wolf Titan*, Warlord-Sinister Titan*, Warmaster Iconoclast Titan*.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="0c5b-2a27-0bea-2968" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="true"/>
       </categoryLinks>
@@ -202,121 +197,118 @@
       <description>The formation is transported in Drop Pods (Planetfall) at no cost.</description>
     </rule>
     <rule id="f8ed-bf3a-efe7-098f" name="Teleport" hidden="false">
-      <description>Core Epic Armageddon rule: the unit may deploy by teleporting onto the battlefield, rolling for Blast markers on arrival.</description>
+      <description>The unit may deploy by teleporting onto the battlefield, rolling for Blast markers on arrival.</description>
     </rule>
     <rule id="2daa-1b22-93f8-fbec" name="Knight Household" hidden="false">
       <description>Formations get +1 to action tests when taking an Engage action and +1 to rally tests.</description>
     </rule>
     <rule id="4927-be7a-ebf9-a1cf" name="Reinforced Armour" hidden="false">
-      <description>Core rule: may re-roll a failed save, except against Macro-Weapons, Titan Killers or in a crossfire.</description>
+      <description>May re-roll a failed save, except against Macro-Weapons, Titan Killers or in a crossfire.</description>
     </rule>
     <rule id="c562-9990-f721-32fb" name="Thick Rear Armour" hidden="false">
-      <description>Core rule: crossfire does not reduce this unit's save.</description>
+      <description>Crossfire does not reduce this unit's save.</description>
     </rule>
     <rule id="3826-e379-3e86-c292" name="Invulnerable Save" hidden="false">
-      <description>Core rule: gets a 6+ save (or the value listed) even when no save would normally be allowed.</description>
+      <description>Gets a 6+ save (or the value listed) even when no save would normally be allowed.</description>
     </rule>
     <rule id="f378-6c2c-d474-1f3d" name="Walker" hidden="false">
-      <description>Core rule: may re-roll failed dangerous terrain tests.</description>
+      <description>May re-roll failed dangerous terrain tests.</description>
     </rule>
     <rule id="27df-3871-dea6-a839" name="Skimmer" hidden="false">
-      <description>Core rule: may hover over terrain and pop up; can only be hit in assault by units able to engage skimmers.</description>
+      <description>May hover over terrain and pop up; can only be hit in assault by units able to engage skimmers.</description>
     </rule>
     <rule id="1409-373f-7ba8-c148" name="Scout" hidden="false">
-      <description>Core rule: may deploy forward and has a wider zone of control and coherency spacing.</description>
+      <description>May deploy forward and has a wider zone of control and coherency spacing.</description>
     </rule>
     <rule id="f14b-f1e8-683e-cd73" name="Infiltrator" hidden="false">
-      <description>Core rule: may double its move when taking an Engage action and ignores enemy zones of control when doing so.</description>
+      <description>May double its move when taking an Engage action and ignores enemy zones of control when doing so.</description>
     </rule>
     <rule id="2971-9d24-65e8-a53e" name="Jump Packs" hidden="false">
-      <description>Core rule: may move over terrain and other units as if skimming.</description>
+      <description>May move over terrain and other units as if skimming.</description>
     </rule>
     <rule id="4357-7618-ea64-6347" name="Mounted" hidden="false">
-      <description>Core rule: counts as a vehicle for terrain purposes while remaining INF.</description>
+      <description>Counts as a vehicle for terrain purposes while remaining INF.</description>
     </rule>
     <rule id="aba9-b846-28f1-57e0" name="Fearless" hidden="false">
-      <description>Core rule: not destroyed by Blast markers when broken and not killed by hack-downs.</description>
+      <description>Not destroyed by Blast markers when broken and not killed by hack-downs.</description>
     </rule>
     <rule id="5455-b041-3489-bee6" name="Leader" hidden="false">
-      <description>Core rule: removes an extra Blast marker when the formation rallies or marshals.</description>
+      <description>Removes an extra Blast marker when the formation rallies or marshals.</description>
     </rule>
     <rule id="4c56-05fb-87be-3e8a" name="Commander" hidden="false">
-      <description>Core rule: may bring in up to three formations within 5cm when it takes an Engage action.</description>
+      <description>May bring in up to three formations within 5cm when it takes an Engage action.</description>
     </rule>
     <rule id="d94c-8ff7-0b2a-e614" name="Supreme Commander" hidden="false">
-      <description>Core rule: as Commander, plus one re-roll per turn for a failed initiative test.</description>
+      <description>As Commander, plus one re-roll per turn for a failed initiative test.</description>
     </rule>
     <rule id="7308-eebe-f5c9-137b" name="Inspiring" hidden="false">
-      <description>Core rule: each unit counts as an extra unit when working out assault resolution modifiers.</description>
+      <description>Each unit counts as an extra unit when working out assault resolution modifiers.</description>
     </rule>
     <rule id="6a98-a141-f09e-3c89" name="Planetfall" hidden="false">
-      <description>Core rule: may enter play from orbit using a planetfall move.</description>
+      <description>May enter play from orbit using a planetfall move.</description>
     </rule>
     <rule id="3f9e-9cb4-20b7-6736" name="Transport" hidden="false">
-      <description>Core rule: carries the listed units.</description>
+      <description>Carries the listed units.</description>
     </rule>
     <rule id="392f-db6b-487f-fe1a" name="Indirect Fire" hidden="false">
-      <description>Core rule: may fire at targets out of line of fire at reduced range and without sustained-fire bonuses.</description>
+      <description>May fire at targets out of line of fire at reduced range and without sustained-fire bonuses.</description>
     </rule>
     <rule id="0c8c-0dee-e0e3-4837" name="Ignore Cover" hidden="false">
-      <description>Core rule: targets get no cover save modifiers.</description>
+      <description>Targets get no cover save modifiers.</description>
     </rule>
     <rule id="e9e3-ad45-1546-7db4" name="Disrupt" hidden="false">
-      <description>Core rule: every hit places a Blast marker even if saved.</description>
+      <description>Every hit places a Blast marker even if saved.</description>
     </rule>
     <rule id="c8b5-a2a9-69b5-d152" name="Single Shot" hidden="false">
-      <description>Core rule: may only be fired once per battle.</description>
+      <description>May only be fired once per battle.</description>
     </rule>
     <rule id="fe36-0a82-a4ee-3f54" name="Slow Firing" hidden="false">
-      <description>Core rule: may only fire every other turn.</description>
+      <description>May only fire every other turn.</description>
     </rule>
     <rule id="ed59-9ced-a699-b761" name="TK" hidden="false">
-      <description>Core rule (Titan Killer): each hit causes the listed number of damage points to a war engine.</description>
+      <description>Titan Killer: each hit causes the listed number of damage points to a war engine.</description>
     </rule>
     <rule id="4b49-c4e2-b896-4689" name="EA" hidden="false">
-      <description>Core rule (Extra Attacks): grants the listed number of additional close combat or firefight attacks.</description>
+      <description>Extra Attacks: grants the listed number of additional close combat or firefight attacks.</description>
     </rule>
     <rule id="d859-b0a0-af5c-bb73" name="First Strike" hidden="false">
       <description>The unit strikes first in an assault: its attacks are resolved, and casualties removed, before the enemy's.</description>
     </rule>
     <rule id="b2c9-ae47-ce23-0fa6" name="Small Arms" hidden="false">
-      <description>Core rule: a weapon shown in brackets with (small arms) is only used in firefights, adding its listed abilities and Extra Attacks to the unit's FF attacks. It cannot shoot in the shooting phase.</description>
+      <description>A weapon shown in brackets with (small arms) is only used in firefights, adding its listed abilities and Extra Attacks to the unit's FF attacks. It cannot shoot in the shooting phase.</description>
     </rule>
     <rule id="5d5a-3534-a8bf-4935" name="Assault Weapons" hidden="false">
-      <description>Core rule: a weapon marked (assault weapons) is used in close combat, adding its listed abilities and Extra Attacks to the unit's CC attacks.</description>
+      <description>A weapon marked (assault weapons) is used in close combat, adding its listed abilities and Extra Attacks to the unit's CC attacks.</description>
     </rule>
     <rule id="f379-0377-5661-ed26" name="BP" hidden="false">
-      <description>Core rule (Barrage): BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.</description>
+      <description>Barrage: BP weapons place Barrage templates instead of rolling to hit normally. The number of Barrage Points sets how many templates are placed and what is needed to hit the units under them.</description>
     </rule>
     <rule id="8f11-c190-ff78-a7d6" name="FxF" hidden="false">
-      <description>Core rule (Fixed Forward Fire Arc): the weapon may only target units in a 90-degree arc straight ahead of the unit.</description>
+      <description>Fixed Forward Fire Arc: the weapon may only target units in a 90-degree arc straight ahead of the unit.</description>
     </rule>
     <rule id="e787-7eab-2cba-d6f0" name="Fwd" hidden="false">
-      <description>Core rule (Forward Fire Arc): the weapon may only target units in the 180-degree arc to the unit's front.</description>
+      <description>Forward Fire Arc: the weapon may only target units in the 180-degree arc to the unit's front.</description>
     </rule>
     <rule id="e953-40ea-7719-e17c" name="Rear Fire Arc" hidden="false">
-      <description>Core rule: the weapon may only target units in the 180-degree arc to the unit's rear.</description>
+      <description>The weapon may only target units in the 180-degree arc to the unit's rear.</description>
     </rule>
     <rule id="8fd7-7a53-db8a-8526" name="LF" hidden="false">
-      <description>Core rule (Left Fire Arc): the weapon may only target units in the arc to the unit's left side.</description>
+      <description>Left Fire Arc: the weapon may only target units in the arc to the unit's left side.</description>
     </rule>
     <rule id="24b1-8727-a5a1-0b4b" name="RF" hidden="false">
-      <description>Core rule (Right Fire Arc): the weapon may only target units in the arc to the unit's right side.</description>
+      <description>Right Fire Arc: the weapon may only target units in the arc to the unit's right side.</description>
     </rule>
     <rule id="b2d2-de55-191a-358d" name="Damage Capacity" hidden="false">
-      <description>Core rule (DC): a war engine has this many damage points. Each unsaved hit removes one and it is destroyed at zero. War engines can also take critical hits.</description>
+      <description>A war engine has this many damage points. Each unsaved hit removes one and it is destroyed at zero. War engines can also take critical hits.</description>
     </rule>
     <rule id="f048-04fb-786f-b4e5" name="Critical Hits" hidden="false">
-      <description>Core rule: some damage against a war engine causes a critical hit. The effect for each unit is given in its notes.</description>
+      <description>Some damage against a war engine causes a critical hit. The effect for each unit is given in its notes.</description>
     </rule>
     <rule id="931d-35b7-00f9-bfd2" name="Slow and Steady" hidden="false">
       <description>Spacecraft with this rule may not be used in the opening turn(s) of a battle stated in their notes, unless the scenario says otherwise.</description>
     </rule>
     <rule id="589c-8651-5655-a06b" name="Fortifications" hidden="false">
-      <description>Static defences with 0cm speed; Siege weapons count as Macro-Weapons against them. The EpicAU fortifications page was not archived.</description>
-    </rule>
-    <rule id="b2b1-6882-acb7-9daa" name="Secondary Targeting Protocols" hidden="false">
-      <description>Listed on the experimental Emperor-class Titans but not defined on the archived EpicAU wiki.</description>
+      <description>Static defences with 0cm speed; Siege weapons count as Macro-Weapons against them.</description>
     </rule>
   </sharedRules>
 </gameSystem>

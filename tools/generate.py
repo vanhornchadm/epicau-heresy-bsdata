@@ -104,7 +104,7 @@ EXTRA_UNITS = {
         'name': 'Sabre Strike Tank', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Volkite Saker', 'range': '15cm', 'firepower': '2 x AP3+, Fleshbane, FxF'},
                     {'name': 'Sabre Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'}],
-        'notes': 'Reinforced Armour. (Not on the wiki reference sheet; stats from Departmento Munitorum.)'}, {
+        'notes': 'Reinforced Armour.'}, {
         'name': 'Kratos Heavy Tank', 'type': 'WE', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Kratos Battlecannon OR', 'range': '45cm', 'firepower': '2 x AP3+/AT3+, Armourbane'},
                     {'name': 'Melta Cannon', 'range': '30cm',
@@ -558,7 +558,6 @@ class Catalogue:
         groups, fixed, followed = weapon_plan(unit)
         weapons = self.weapon_profiles([weapon_row(w) for w in fixed])
         if uid not in self.profiles:
-            combined = any(w.get('misaligned') for w in fixed)
             names = weapons_text([w['name'] or 'Weapons' for w in fixed])
             names = names + (',' if followed else '') if names else None if groups else '-'
             stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff'], names]
@@ -572,8 +571,6 @@ class Catalogue:
             else:
                 own = notes_rules(unit['notes'] if unit['notes'] != '-' else '')
                 self.profiles[uid] = profile(uid, display, PT_UNIT, 'Unit', UNIT_CHARS, stats)
-            if combined:
-                own['Weapons'] = 'Weapon lines are combined; check the wiki sheet.'
             self.notes_rule[uid] = []
             for label, desc in own.items():
                 rid, rname = gid('rule', self.scope, unit['name'], label), f'{label} ({display})'
@@ -705,16 +702,6 @@ def has_new(army):
                 return True
         return False
     return any(f.get('new') or parts_new(f['units']) for f in army['formations'])
-
-
-def new_unit_names(army):
-    names = [f'{f["name"]}*' for f in army['formations'] if f.get('new')]
-    for f in army['formations']:
-        for p in f['units']:
-            if p['kind'] == 'mix':
-                names += [f'{u["unit"]}*' for u in p['units'] if u.get('new')]
-    names += [f'{n}* upgrade' for n, u in army['upgrades'].items() if u.get('new')]
-    return list(dict.fromkeys(names))
 
 
 def swap_matches(frm, unit):
@@ -1384,22 +1371,14 @@ def header(cid, name):
 
 def new_units_toggle():
     """'Allow fan-made units': a Configuration entry that shows the fan-made units and options in every force."""
-    lists = [(a['name'], new_unit_names(a)) for a in [legion_catalogue()] + OTHER_ARMIES]
-    desc = ('Shows fan-made units and options, marked *, that are not part of EpicAU (see the README for their sources). '
-            'Taking it in any force shows them in every force of the roster; removing it flags any that were taken. '
-            + ' '.join(f'{name}: {", ".join(units)}.' for name, units in lists if units))
     return ordered('selectionEntry', {'id': NEW_UNITS_ID, 'name': 'Allow fan-made units', 'hidden': 'false',
                                       'collective': 'false', 'import': 'true', 'type': 'upgrade'},
                    constraints=[constraint(gid('con', NEW_UNITS_ID, 'max'), 'max', 1)],
-                   rules=[rule_el(gid('r', NEW_UNITS_ID), 'Allow fan-made units', desc)],
                    categoryLinks=[cat_link(NEW_UNITS_ID, 'Configuration', True)])
 
 
 def build_gst():
-    readme = ('Horus Heresy supplement for Net Epic Armageddon developed by the EpicAU community. Converted from the '
-              f'archived EpicAU wiki ({SOURCE_URL}). Rules text is summarised; see the wiki and the NetEA rulebook '
-              'for full wording. Add a primary army force, then optionally an Allied Contingent force from another '
-              'catalogue.')
+    readme = 'Add a primary army force, then optionally an Allied Contingent force from another catalogue.'
     root = ordered('gameSystem', {'id': GST_ID, 'name': GST_NAME, 'revision': 1, 'battleScribeVersion': BS_VERSION,
                                   'authorName': AUTHOR, 'authorContact': '', 'authorUrl': SOURCE_URL},
                    readme=readme,

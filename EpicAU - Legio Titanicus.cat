@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="21" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="22" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5a43-d432-849f-519a" name="Legio Titanicus" hidden="false">
       <rules>
@@ -7,8 +7,7 @@
           <description>Strategy Rating 3. Formation initiative 1+.
 Each upgrade may only be taken once per formation.
 Legio Titanicus has no Support Detachments.
-Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. The fan-made Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf 1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder. Weapons for one mount only (arm or carapace) are offered only in those slots.
-The wiki sets no Allies/Lords of War points limit for Legio Titanicus.
+Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. The Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf 1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder.
 Cohesive allies: Legion Astartes, Knight Household, Mechanicum Taghmata.
 Disruptive allies: Imperial Militia, Solar Auxilia, Daemons Of The Ruinstorm.</description>
         </rule>
@@ -44,8 +43,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Daemons Of The Ruinstorm.</d
           <description>Strategy Rating 3. Formation initiative 1+.
 Each upgrade may only be taken once per formation.
 Legio Titanicus has no Support Detachments.
-Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. The fan-made Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf 1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder. Weapons for one mount only (arm or carapace) are offered only in those slots.
-The wiki sets no Allies/Lords of War points limit for Legio Titanicus.
+Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. The Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf 1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder.
 Cohesive allies: Legion Astartes, Knight Household, Mechanicum Taghmata.
 Disruptive allies: Imperial Militia, Solar Auxilia, Daemons Of The Ruinstorm.
 Allied Contingent: formations here count towards the primary army's Allies &amp; Lords of War allowance. Supreme Commanders must come from the primary army.</description>
@@ -2898,11 +2896,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="21ef-6f43-0802-ab5a" name="Warbringer Nemesis Titan" hidden="false">
-          <description>Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it costs 750 pts with weapons. Here it takes a Quake or Volcano Cannon on the carapace and 2 arm weapons at EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. Priced, as in Epic-UK, a little above a Reaver with Air Defence carrying the same weapons.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="1f54-dc87-fd93-b5db" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -3615,11 +3608,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="be94-b996-83ca-d079" name="Warmaster Titan" hidden="false">
-          <description>Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it is a 0-1 Support Titan costing 1500 pts with weapons and is meant mainly for friendly games. Here its carapace weapon is chosen at EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. Priced between a fully armed Warlord and the 1350 pt Emperor-class Titans, which are tougher and better armed. Like them it is a Lord of War with no limit.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="c36a-de8d-b9ee-7945" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
         <categoryLink id="c46d-c5ab-066f-1f9a" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
@@ -4047,11 +4035,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="425d-9ebf-4eb3-0116" name="Dire Wolf Titan" hidden="false">
-          <description>Fan-made, not part of EpicAU: a heavy scout Titan from Legions Imperialis on the Warhound chassis, with Infiltrator, built-in Ardex mega-bolters and one heavy weapon. It costs about 1/6 more than a Warhound with weapons, as in Legions Imperialis.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="a67b-4ec8-6244-77de" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -4219,11 +4202,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="ec12-b682-720d-3d22" name="Warlord-Sinister Titan" hidden="false">
-          <description>Fan-made, not part of EpicAU: a Psi-Titan from Legions Imperialis on the Warlord chassis, with fixed psi weapons and a Dread Aura. It costs about 1/8 more than a fully armed Warlord, as in Legions Imperialis.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="522c-c552-b753-c36a" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
@@ -4353,11 +4331,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </conditions>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="1c6e-d3c8-6248-1de3" name="Warmaster Iconoclast Titan" hidden="false">
-          <description>Fan-made, not part of EpicAU: the close-assault Warmaster from Legions Imperialis, faster than the Warmaster, with a chainsword, a gatling array and a Kirus siege drill or grav imploder. Legions Imperialis prices it the same as the Warmaster; here it matches the Warmaster with a weapon. Like the Warmaster and the Emperor-class Titans it is a Lord of War with no limit.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="0097-7b93-d5f9-ed60" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
         <categoryLink id="9134-3b41-32aa-42a1" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
@@ -4567,7 +4540,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="41ff-133f-ec5f-905c" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
                     <infoLink id="02dc-5add-3823-81e7" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
                     <infoLink id="ae23-94de-5ba8-740b" name="Slow Firing" hidden="false" targetId="fe36-0a82-a4ee-3f54" type="rule"/>
-                    <infoLink id="8202-a5b8-c3f5-067b" name="Secondary Targeting Protocols" hidden="false" targetId="b2b1-6882-acb7-9daa" type="rule"/>
                     <infoLink id="1fd6-694a-81f1-75d2" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="a0a2-cb4b-baff-6413" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                     <infoLink id="a09a-ce91-525c-ea27" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
@@ -4615,7 +4587,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="0dbf-d574-44be-d1fc" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
                     <infoLink id="0dfd-b22f-fa25-2b06" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
                     <infoLink id="ffe7-d0b6-25d9-f8ce" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-                    <infoLink id="e6ff-d334-2eb6-8c39" name="Secondary Targeting Protocols" hidden="false" targetId="b2b1-6882-acb7-9daa" type="rule"/>
                     <infoLink id="792d-07f8-8cb0-94c2" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="1f32-2714-d4e6-26ef" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                     <infoLink id="9b72-f877-f84c-4c15" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>

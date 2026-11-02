@@ -36,9 +36,7 @@ CUSTODES = ARMY(
     cohesive=[], disruptive=[],
     rules=["The Emperor's Chosen", 'Allies'],
     notes=['Each upgrade may only be taken once per detachment.',
-           'Up to 1/2 of the army\'s points may be spent on Allies and/or Lords of War.',
-           'The wiki gives the strategy rating as "1+", which appears to be a typo; Departmento Munitorum uses 5.',
-           'The wiki does not list which armies are cohesive or disruptive allies for Legio Custodes.'])
+           'Up to 1/2 of the army\'s points may be spent on Allies and/or Lords of War.'])
 
 # ---------------------------------------------------------------- Solar Auxilia
 SA_TRANSPORT = Or(Opt('Dracosan Armoured Transport', Carry(4, 'Dracosan Armoured Transport', 75)),
@@ -74,9 +72,7 @@ SOLAR_AUXILIA = ARMY(
         F('Solar Auxilia Close Support Squadron', 'support', 200,
           [Mix(3, 3, ('Leman Russ Demolisher', 0), ('Leman Russ Incinerator', 0))], 'Executioner', extra_up=LEGATE),
         F('Solar Auxilia Tank Hunter Squadron', 'support', 250,
-          [U(3, 'Valdor Tank hunter', label='Valdor Tank Hunter')], extra_up=LEGATE,
-          note='The Valdor is on the wiki reference sheet, but the archived army list has no formation for it; '
-               'this formation is taken from Departmento Munitorum.'),
+          [U(3, 'Valdor Tank hunter', label='Valdor Tank Hunter')], extra_up=LEGATE),
         F('Solar Auxilia Tarantula Battery', 'support', 125, [U(4, 'Tarantula'), U(1, 'Tarantula Hyperios')],
           extra_up=LEGATE),
         F('Solar Auxilia Avenger Wing', 'low', 250, [U(2, 'Imperial Navy Avenger Strike Fighter')]),
@@ -168,32 +164,14 @@ TITANICUS = ARMY(
         F('Reaver Titan', 'line', 575, [U(1, 'Reaver Battle Titan')], 'Legate OR Veteran Princeps, Air Defence, Sacred Icon'),
         F('Warlord Titan', 'line', 725, [U(1, 'Warlord Battle Titan')], 'Legate OR Veteran Princeps, Air Defence, Sacred Icon'),
         F('Warbringer Nemesis Titan', 'line', 675, [U(1, 'Warbringer Nemesis Titan')],
-          'Legate OR Veteran Princeps, Sacred Icon', new=True,
-          note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
-               'costs 750 pts with weapons. Here it takes a Quake or Volcano Cannon on the carapace and 2 arm weapons at '
-               'EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. Priced, as in Epic-UK, a little '
-               'above a Reaver with Air Defence carrying the same weapons.'),
+          'Legate OR Veteran Princeps, Sacred Icon', new=True),
         F('Warmaster Titan', 'low', 1050, [U(1, 'Warmaster Heavy Battle Titan')],
-          'Legate OR Veteran Princeps, Sacred Icon', new=True,
-          note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
-               'is a 0-1 Support Titan costing 1500 pts with weapons and is meant mainly for friendly games. Here its '
-               'carapace weapon is chosen at EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. '
-               'Priced between a fully armed Warlord and the 1350 pt Emperor-class Titans, which are tougher and better '
-               'armed. Like them it is a Lord of War with no limit.'),
-        F('Dire Wolf Titan', 'line', 300, [U(1, 'Dire Wolf Heavy Scout Titan')], 'Veteran Princeps', new=True,
-          note='Fan-made, not part of EpicAU: a heavy scout Titan from Legions Imperialis on the Warhound chassis, with '
-               'Infiltrator, built-in Ardex mega-bolters and one heavy weapon. It costs about 1/6 more than a Warhound '
-               'with weapons, as in Legions Imperialis.'),
+          'Legate OR Veteran Princeps, Sacred Icon', new=True),
+        F('Dire Wolf Titan', 'line', 300, [U(1, 'Dire Wolf Heavy Scout Titan')], 'Veteran Princeps', new=True),
         F('Warlord-Sinister Titan', 'line', 950, [U(1, 'Warlord-Sinister Battle Titan')],
-          'Legate OR Veteran Princeps, Air Defence, Sacred Icon', new=True,
-          note='Fan-made, not part of EpicAU: a Psi-Titan from Legions Imperialis on the Warlord chassis, with fixed psi '
-               'weapons and a Dread Aura. It costs about 1/8 more than a fully armed Warlord, as in Legions Imperialis.'),
+          'Legate OR Veteran Princeps, Air Defence, Sacred Icon', new=True),
         F('Warmaster Iconoclast Titan', 'low', 1100, [U(1, 'Warmaster Iconoclast Titan')],
-          'Legate OR Veteran Princeps, Air Defence, Sacred Icon', new=True,
-          note='Fan-made, not part of EpicAU: the close-assault Warmaster from Legions Imperialis, faster than the '
-               'Warmaster, with a chainsword, a gatling array and a Kirus siege drill or grav imploder. Legions '
-               'Imperialis prices it the same as the Warmaster; here it matches the Warmaster with a weapon. Like the '
-               'Warmaster and the Emperor-class Titans it is a Lord of War with no limit.'),
+          'Legate OR Veteran Princeps, Air Defence, Sacred Icon', new=True),
         F('Emperor Class Titan', 'low', 1350,
           [Or(Opt('Imperator', U(1, 'Imperator Support Titan (experimental)')),
               Opt('Warmonger', U(1, 'Warmonger Support Titan (experimental)')))], 'Legate OR Veteran Princeps'),
@@ -210,10 +188,8 @@ TITANICUS = ARMY(
     notes=['Each upgrade may only be taken once per formation.',
            'Legio Titanicus has no Support Detachments.',
            'Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. '
-           'The fan-made Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf '
-           '1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder. '
-           'Weapons for one mount only (arm or carapace) are offered only in those slots.',
-           'The wiki sets no Allies/Lords of War points limit for Legio Titanicus.'])
+           'The Warbringer carries a Quake or Volcano Cannon plus 2 weapons, the Warmaster 1, the Dire Wolf '
+           '1 heavy weapon and the Iconoclast a Kirus siege drill or grav imploder.'])
 # Each Titan's weapon slots as (mount, count, weapons): one pick per slot on the Titan, Arm slots before Carapace as
 # on the reference sheets ('2 x Arm, Forward Arc, 2 x Carapace, Fixed Forward').
 SCOUT_OR_BATTLE = SCOUT_WEAPONS + BATTLE_WEAPONS
@@ -264,8 +240,7 @@ KNIGHTS = ARMY(
     cohesive=['Legio Titanicus', 'Mechanicum Taghmata'],
     disruptive=['Imperial Militia', 'Legion Astartes', 'Solar Auxilia'],
     rules=['Allies', 'Knight Household', 'Ion Gauntlet', 'Ion Shield', 'Lance', 'Singularity'],
-    notes=['Detachments may choose any number of upgrades, each only once.',
-           'The wiki sets no Allies/Lords of War limit for Knight Household; 1/3 is used, matching Departmento Munitorum.'])
+    notes=['Detachments may choose any number of upgrades, each only once.'])
 
 # ---------------------------------------------------------------- Imperial Militia
 IM_TRANSPORT = Or(Opt('Arvus Lighter', Carry(2, 'Arvus Lighter Orbital Shuttle', 25)),

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="13" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="14" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
       <rules>
@@ -1395,7 +1395,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="2739-cd71-c924-748c" name="Dauntless Class Light Cruiser" hidden="false" targetId="fe70-74d3-f0af-fe9d" type="profile"/>
                     <infoLink id="6515-a379-975f-bb86" name="Orbital Bombardment / Lance Battery" hidden="false" targetId="ba30-37c2-d0be-99fc" type="profile"/>
                     <infoLink id="9960-d2bc-0c31-1d83" name="Transport (Dauntless Class Light Cruiser)" hidden="false" targetId="dd1c-f5bb-820d-ce22" type="rule"/>
-                    <infoLink id="71f1-114b-5860-41aa" name="Weapons (Dauntless Class Light Cruiser)" hidden="false" targetId="5fd5-93e1-2791-3878" type="rule"/>
                     <infoLink id="048b-a8a0-3054-6357" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                     <infoLink id="f48d-be97-0cc7-5f52" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="05ac-abac-aee5-a0d7" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
@@ -2427,11 +2426,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </conditionGroups>
         </modifier>
       </modifiers>
-      <rules>
-        <rule id="94bf-de12-6d04-64b3" name="Solar Auxilia Tank Hunter Squadron" hidden="false">
-          <description>The Valdor is on the wiki reference sheet, but the archived army list has no formation for it; this formation is taken from Departmento Munitorum.</description>
-        </rule>
-      </rules>
       <categoryLinks>
         <categoryLink id="4e75-3ba5-01cf-a58c" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
@@ -2757,7 +2751,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <infoLinks>
                 <infoLink id="ca57-d255-1e72-0fb6" name="Solar Auxilia Close Support Section" hidden="false" targetId="07e4-f6e0-ab2f-54e2" type="profile"/>
                 <infoLink id="341c-4d20-b8be-4908" name="Flamers" hidden="false" targetId="680d-c3d6-b202-4994" type="profile"/>
-                <infoLink id="9c1c-bb26-c59e-f189" name="Weapons (Solar Auxilia Close Support Section)" hidden="false" targetId="d44c-e9a6-768c-592a" type="rule"/>
                 <infoLink id="cd3f-8b5f-b5a7-d7c7" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
                 <infoLink id="e8c2-ba18-ad0e-fa67" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
               </infoLinks>
@@ -3336,12 +3329,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     </rule>
     <rule id="572a-a391-077c-304a" name="Weapon Options (Veletaris Storm Section)" hidden="false">
       <description>Veletaris Storm Sections are all armed with either Volkite Chargers OR Power Axes, choose one option before the game.</description>
-    </rule>
-    <rule id="5fd5-93e1-2791-3878" name="Weapons (Dauntless Class Light Cruiser)" hidden="false">
-      <description>Weapon lines are combined; check the wiki sheet.</description>
-    </rule>
-    <rule id="d44c-e9a6-768c-592a" name="Weapons (Solar Auxilia Close Support Section)" hidden="false">
-      <description>Weapon lines are combined; check the wiki sheet.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

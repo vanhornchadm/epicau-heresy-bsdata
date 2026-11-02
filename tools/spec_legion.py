@@ -97,37 +97,21 @@ CORE_FORMATIONS = [
     F('Legion Predator Strike Squadron', 'support', 0, [U((4, 6), 'Predator', 60)], 'Centurion, Armoury Assets, Hyperios'),
     F('Legion Rapier Weapons Battery', 'support', 240, [U(6, 'Rapier')], 'Drop Assault'),
     F('Legion Arquitor Bombard Squadron', 'support', 0, [U((4, 6), 'Arquitor Bombard', 55)], 'Centurion, Hyperios',
-      new=True,
-      note='Fan-made formation, not part of EpicAU: the Arquitor Bombard is on the wiki reference sheet, but neither the '
-           'wiki nor Departmento Munitorum gives it a formation. It is priced against the Predator (60 pts): similar '
-           'firepower at shorter range, faster, with a 5+ save.'),
-    F('Legion Ascalon Squadron', 'low', 0, [U((1, 3), 'Ascalon', 125)], new=True,
-      note='Fan-made, not part of EpicAU: a heavy flame tank from Legions Imperialis, converted against the Spartan. '
-           'Legions Imperialis lists it as Heavy Armour, like the Fellblade, Typhon and Cerberus, which EpicAU makes '
-           'Lords of War.'),
-    F('Legion Araknae Weapons Battery', 'support', 0, [U((2, 4), 'Araknae Weapons Platform', 45)], new=True,
-      note='Fan-made, not part of EpicAU: immobile weapons platforms from Legions Imperialis, converted against the '
-           'Tarantula and Sicaran.'),
+      new=True),
+    F('Legion Ascalon Squadron', 'low', 0, [U((1, 3), 'Ascalon', 125)], new=True),
+    F('Legion Araknae Weapons Battery', 'support', 0, [U((2, 4), 'Araknae Weapons Platform', 45)], new=True),
     F('Legion Saturnine Terminator Detachment', 'support', 0, [U((4, 6), 'Saturnine Terminators', 85)],
-      'Heavy Transport OR Teleport OR Assault Ram, Centurion', new=True,
-      note='Fan-made, not part of EpicAU: from Legions Imperialis, converted against Legion Terminators (75 pts).'),
+      'Heavy Transport OR Teleport OR Assault Ram, Centurion', new=True),
     F('Legion Saturnine Dreadnought Talon', 'support', 0, [U((3, 6), 'Saturnine Dreadnought', 90)],
-      'Drop Assault, Centurion', new=True,
-      note='Fan-made, not part of EpicAU: from Legions Imperialis, converted against the Deredeo (100 pts) and '
-           'Leviathan (75 pts) Dreadnoughts.'),
+      'Drop Assault, Centurion', new=True),
     F('Legion Tarantula Battery', 'support', 125, [U(4, 'Legion Tarantula'), U(1, 'Legion Tarantula Hyperios')],
-      new=True,
-      note='Fan-made formation, not part of EpicAU: mirrors the Solar Auxilia Tarantula Battery (125 pts), with the '
-           'Mechanicum Tarantula\'s choice of twin lascannons or heavy bolters.'),
+      new=True),
     F('Legion Reconnaissance Squad', 'support', 150, [U(4, 'Reconnaissance Squad')],
       'Standard Transport OR Drop Assault OR Assault Claw, Centurion'),
     F('Legion Sicaran Battle Squadron', 'support', 0, [Mix(4, 6, *SICARANS, *NEW_SICARANS)], 'Centurion, Hyperios'),
-    F('Legion Sabre Strike Squadron', 'support', 275, [U(4, 'Sabre Strike Tank')], 'Centurion',
-      note='Sabre Strike Tank stats are not on the wiki reference sheet; taken from Departmento Munitorum.'),
+    F('Legion Sabre Strike Squadron', 'support', 275, [U(4, 'Sabre Strike Tank')], 'Centurion'),
     F('Legion Kratos Heavy Tank Squadron', 'support', 0, [U((2, 4), 'Kratos Heavy Tank', 100)], 'Centurion, Hyperios',
-      new=True,
-      note='Fan rules, not part of EpicAU: proposed on Dakka Dakka (November 2024) as 2 Kratos for 200 pts plus up to '
-           '2 more at 100 pts each. The upgrades follow the other Legion tank squadrons.'),
+      new=True),
     F('Legion Sky Hunter Attack Squadron', 'support', 175, [U(5, 'Scimitar Jetbike')], 'Centurion'),
     F('Legion Storm Eagle Attack Wing', 'support', 0, [U((1, 3), 'Storm Eagle Attack Ship', 125)]),
     F('Legion Spacecraft', 'support', 0,
@@ -431,8 +415,7 @@ def legion_catalogue():
     """One Legion list where the Legion is a choice: core formations plus every Legion's, each shown only for
     the Legions it belongs to. Core formations a Legion replaces or removes are hidden for that Legion."""
     a = legion_army()
-    a['notes'] = a['notes'][:2] + ['Choose the Legion in the Legion entry; its allies and special formations '
-                                   'are listed there. "None" uses the core list only.']
+    a['notes'] = a['notes'][:2]
     core = {norm(f['name']): dict(f, show_for=None, hide_for=[]) for f in CORE_FORMATIONS}
     extra = {}  # spec json -> formation shown for the Legions that share it
     core_up = {u['name'] for u in CORE_UPGRADES}

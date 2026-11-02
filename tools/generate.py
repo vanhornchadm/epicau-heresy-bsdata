@@ -549,7 +549,8 @@ def weapon_plan(unit):
 
     Each group gets a 'place' in the Weapons column: 'front' for optional picks, 'before' or 'after' the fixed
     weapons as on the sheet for required ones (always 'after' when there are no fixed weapons), and 'last' marks
-    the group whose name ends the column."""
+    the group whose name ends the column. The schema has no prepend modifier, so a unit with picks in front of its
+    fixed weapons leaves its Weapons cell empty and has every name appended in order."""
     groups, chosen = unit_options(unit)
     fixed = [w for w in shown_weapons(unit) if w['name'] not in chosen]  # chosen weapons are added on the unit
     start = unit['weapons'].index(fixed[0]) if fixed else None
@@ -630,6 +631,8 @@ class Catalogue:
         if uid not in self.profiles:
             names = weapons_text([w['name'] or 'Weapons' for w in fixed])
             names = names + (',' if followed else '') if names else None if groups else '-'
+            if any(g['place'] != 'after' for g in groups):  # appended after the picks in front of them instead
+                names = None
             stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff'], names]
             if is_war_engine(unit):
                 dc, shields, crit, notes = war_engine_fields(unit['notes'])
@@ -834,7 +837,7 @@ class Builder:
         its weapons' names to the Weapons column, where the sheet lists them, and its Weapon profiles show with the
         option; it may also set the unit's FF, armour and CC, or need an upgrade option in the formation. Names are joined by commas: New Recruit adds a space when it adds
         text, so each name but the column's last carries the comma that follows it."""
-        groups, _, _ = weapon_plan(unit)
+        groups, fixed, followed = weapon_plan(unit)
         type_name = 'War Engine' if is_war_engine(unit) else 'Unit'
         placed, grps = {'before': [], 'front': [], 'after': []}, []
         for i, g in enumerate(groups):
@@ -854,8 +857,7 @@ class Builder:
                     self.gate(kids[-1], show=self.upgrade_option_taken(*o['requires']), cmax=gid('con', oid, 'max'))
                 taken = [X('conditions', children=[condition('atLeast', oid, 1, eid, child=True)])]
                 text = weapons_text([row[0] for row in o['rows']]) or o['label']  # e.g. a Command Relay
-                mods.append(X('modifier', {'type': 'append' if g['place'] == 'after' else 'prepend',
-                                           'field': gid('ct', type_name, 'Weapons'),
+                mods.append(X('modifier', {'type': 'append', 'field': gid('ct', type_name, 'Weapons'),
                                            'value': text + ('' if g['last'] else ',')}, taken))
                 for stat, char in (('ff', 'FF'), ('armour', 'Armour'), ('cc', 'CC')):
                     if o.get(stat):
@@ -868,8 +870,12 @@ class Builder:
                 cheapest = min(range(len(kids)), key=lambda j: g['options'][j]['cost'])
                 attrs['defaultSelectionEntryId'] = kids[cheapest].attrs['id']
             grps.append(ordered('selectionEntryGroup', attrs, constraints=cons, selectionEntries=kids))
-        # prepends go on in reverse so they keep their order: groups before the fixed weapons, then optional ones
-        mods = placed['before'][::-1] + placed['front'][::-1] + placed['after']
+        # Appended in column order: optional picks, picks before the fixed weapons, the fixed weapons, the rest.
+        names = weapons_text([w['name'] or 'Weapons' for w in fixed])
+        if (placed['front'] or placed['before']) and names:
+            placed['before'].append([X('modifier', {'type': 'append', 'field': gid('ct', type_name, 'Weapons'),
+                                                    'value': names + (',' if followed else '')})])
+        mods = placed['front'] + placed['before'] + placed['after']
         return [m for group in mods for m in group], grps
 
     def upgrade_option_taken(self, upgrade, option):

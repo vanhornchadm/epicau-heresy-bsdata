@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="17" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -297,7 +297,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                               <infoLinks>
                                 <infoLink id="b916-8a25-9d10-146e" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
                                   <modifiers>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7a5-018a-a181-3400" type="atLeast"/>
                                       </conditions>
@@ -307,7 +307,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7a5-018a-a181-3400" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a1-6cb0-26ae-bb71" type="atLeast"/>
                                       </conditions>
@@ -317,7 +317,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75a1-6cb0-26ae-bb71" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
                                       <conditions>
                                         <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8c-d287-c6e1-2f66" type="atLeast"/>
                                       </conditions>
@@ -327,6 +327,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="fbdf-fa1e-8b74-9bdd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d8c-d287-c6e1-2f66" type="atLeast"/>
                                       </conditions>
                                     </modifier>
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Heavy Bolter"/>
                                   </modifiers>
                                 </infoLink>
                                 <infoLink id="d40c-857e-ae2a-4d2b" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
@@ -599,7 +600,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                               <infoLinks>
                                 <infoLink id="fc33-536b-0ecf-d010" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
                                   <modifiers>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a81a-03f1-3193-4ffc" type="atLeast"/>
                                       </conditions>
@@ -609,7 +610,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a81a-03f1-3193-4ffc" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5613-caec-7c32-42f1" type="atLeast"/>
                                       </conditions>
@@ -619,7 +620,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5613-caec-7c32-42f1" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
                                       <conditions>
                                         <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="019a-e689-c582-b766" type="atLeast"/>
                                       </conditions>
@@ -629,6 +630,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="d8c1-4391-b48c-1b18" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="019a-e689-c582-b766" type="atLeast"/>
                                       </conditions>
                                     </modifier>
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Heavy Bolter"/>
                                   </modifiers>
                                 </infoLink>
                                 <infoLink id="359c-090b-427e-f020" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
@@ -907,7 +909,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                               <infoLinks>
                                 <infoLink id="c44c-14bd-d41a-b5f1" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
                                   <modifiers>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9296-6df6-5600-bfe3" type="atLeast"/>
                                       </conditions>
@@ -917,7 +919,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9296-6df6-5600-bfe3" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d90-b1a1-6093-9022" type="atLeast"/>
                                       </conditions>
@@ -927,7 +929,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d90-b1a1-6093-9022" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
                                       <conditions>
                                         <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-d611-e1d6-ab6a" type="atLeast"/>
                                       </conditions>
@@ -937,6 +939,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="b3c1-82d5-7ba5-f5c0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc40-d611-e1d6-ab6a" type="atLeast"/>
                                       </conditions>
                                     </modifier>
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Heavy Bolter"/>
                                   </modifiers>
                                 </infoLink>
                                 <infoLink id="65f0-498d-030f-3b2c" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
@@ -1407,16 +1410,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <infoLinks>
             <infoLink id="616e-f656-003c-4bd7" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile">
               <modifiers>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Hellex Plasma Mortar,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Hellex Plasma Mortar,">
                   <conditions>
                     <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab17-cad3-91b2-f6a3" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Sollex Heavy Lascannon,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Sollex Heavy Lascannon,">
                   <conditions>
                     <condition field="selections" scope="5778-fcb7-02ff-0165" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9602-370d-34e1-4f47" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Mauler Bolt Cannon"/>
               </modifiers>
             </infoLink>
             <infoLink id="2651-3eeb-0976-29e7" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
@@ -1951,7 +1955,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                               <infoLinks>
                                 <infoLink id="e8af-b235-b67e-d0ea" name="Mechanicum Land Raider" hidden="false" targetId="02c7-21bc-191c-35ec" type="profile">
                                   <modifiers>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Lascannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1173-6327-d21b-4da6" type="atLeast"/>
                                       </conditions>
@@ -1961,7 +1965,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1173-6327-d21b-4da6" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Flamestorm Cannon x2,">
                                       <conditions>
                                         <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d4-eaa1-3a05-e2a5" type="atLeast"/>
                                       </conditions>
@@ -1971,7 +1975,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="75d4-eaa1-3a05-e2a5" type="atLeast"/>
                                       </conditions>
                                     </modifier>
-                                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Multimelta x2,">
                                       <conditions>
                                         <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd3-8d8e-40bf-e5af" type="atLeast"/>
                                       </conditions>
@@ -1981,6 +1985,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                         <condition field="selections" scope="a78e-cb1a-dce2-acf3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5fd3-8d8e-40bf-e5af" type="atLeast"/>
                                       </conditions>
                                     </modifier>
+                                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Heavy Bolter"/>
                                   </modifiers>
                                 </infoLink>
                                 <infoLink id="547c-f26d-a1e7-f4eb" name="Twin Heavy Bolter" hidden="false" targetId="f919-22b6-38c7-4778" type="profile"/>
@@ -3217,16 +3222,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <infoLinks>
             <infoLink id="8743-a384-252b-feb1" name="Thanatar Battle-Automata" hidden="false" targetId="a33c-89bc-a26d-d5f9" type="profile">
               <modifiers>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Hellex Plasma Mortar,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Hellex Plasma Mortar,">
                   <conditions>
                     <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="915c-e661-c3a1-e626" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Sollex Heavy Lascannon,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Sollex Heavy Lascannon,">
                   <conditions>
                     <condition field="selections" scope="7de5-56a6-9793-58a6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfd6-b254-12ea-737a" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Twin Mauler Bolt Cannon"/>
               </modifiers>
             </infoLink>
             <infoLink id="8f3b-da93-20e3-37ac" name="Twin Mauler Bolt Cannon" hidden="false" targetId="c29b-39ae-849e-c029" type="profile"/>
@@ -3548,7 +3554,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+ / 3+ / 4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin Heavy Bolter</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="ced4-d0a1-e084-4ed5" name="Minotaur Artillery Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -3804,7 +3810,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin Mauler Bolt Cannon</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="f202-5cd9-859f-1571" name="Triaros Armoured Conveyor" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

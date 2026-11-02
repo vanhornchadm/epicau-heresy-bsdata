@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="22" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="23" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5a43-d432-849f-519a" name="Legio Titanicus" hidden="false">
       <rules>
@@ -2908,166 +2908,167 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <infoLinks>
             <infoLink id="2065-7808-7cf2-4570" name="Warbringer Nemesis Titan*" hidden="false" targetId="794f-de8e-b77d-0a91" type="profile">
               <modifiers>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Inferno Gun,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c15c-1de7-e652-1b76" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Vulcan Mega Bolter,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ab-12f0-5973-ac98" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Plasma Blastgun,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3d-71c5-af34-007d" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Turbo Laser Destructor,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c60-9dc6-064c-f016" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Laser Burner,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4192-c803-1f65-6187" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Corvus Assault Pod,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c99-dde9-b02a-2c32" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Plasma Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89a6-3cc5-8b2f-49e9" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Gatling Blaster,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="346b-df56-7ddf-6f79" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Apocalypse Missile Launcher,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="754f-9a0a-5530-677b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Close Combat Weapon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="238c-a6e8-4d8f-6f41" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Melta Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3e6-3ddc-ea90-2ecc" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Laser Blaster,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f9f-761a-1538-7131" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Volcano Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6ed-0a06-2fac-9662" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Plasma Destructor,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a2a-b7ea-b7bb-d767" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Quake Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b05-0b07-d98a-54d2" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Inferno Gun,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ad3-3902-7dbc-5ef6" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Vulcan Mega Bolter,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3597-6911-7e90-5a9f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Plasma Blastgun,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2efa-a1eb-1f3c-2fe7" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Turbo Laser Destructor,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee4c-663e-cd31-d874" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Laser Burner,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8fe-24a9-c952-8b71" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Corvus Assault Pod,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c919-f709-f79b-b360" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Plasma Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89c7-ad06-2b36-8dd0" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Gatling Blaster,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31e6-a65f-2806-e519" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Apocalypse Missile Launcher,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170e-dc38-2e1b-baf8" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Close Combat Weapon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="966f-8859-5b3d-683f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Melta Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcaf-55c6-d46f-8938" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Laser Blaster,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2f8-5c4b-afd4-d702" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Volcano Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c11-37da-6abe-0728" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Plasma Destructor,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7833-491b-5e64-5aa3" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Quake Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f91d-237c-9be2-e66a" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Quake Cannon,">
+                <modifier type="append" field="8053-23b9-7271-666e" value="Quake Cannon,">
                   <conditions>
                     <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0ff-2787-9bef-e57c" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Volcano Cannon,">
+                <modifier type="append" field="8053-23b9-7271-666e" value="Volcano Cannon,">
                   <conditions>
                     <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="15a6-cdcc-bbc7-de91" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Inferno Gun,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ad3-3902-7dbc-5ef6" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Vulcan Mega Bolter,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3597-6911-7e90-5a9f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Plasma Blastgun,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2efa-a1eb-1f3c-2fe7" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Turbo Laser Destructor,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee4c-663e-cd31-d874" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Laser Burner,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8fe-24a9-c952-8b71" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Corvus Assault Pod,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c919-f709-f79b-b360" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Plasma Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89c7-ad06-2b36-8dd0" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Gatling Blaster,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="31e6-a65f-2806-e519" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Apocalypse Missile Launcher,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170e-dc38-2e1b-baf8" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Close Combat Weapon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="966f-8859-5b3d-683f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Melta Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fcaf-55c6-d46f-8938" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Laser Blaster,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c2f8-5c4b-afd4-d702" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Volcano Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4c11-37da-6abe-0728" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Plasma Destructor,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7833-491b-5e64-5aa3" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Quake Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f91d-237c-9be2-e66a" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Inferno Gun,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c15c-1de7-e652-1b76" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Vulcan Mega Bolter,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0ab-12f0-5973-ac98" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Plasma Blastgun,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ce3d-71c5-af34-007d" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Turbo Laser Destructor,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c60-9dc6-064c-f016" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Laser Burner,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4192-c803-1f65-6187" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Corvus Assault Pod,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c99-dde9-b02a-2c32" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Plasma Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89a6-3cc5-8b2f-49e9" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Gatling Blaster,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="346b-df56-7ddf-6f79" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Apocalypse Missile Launcher,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="754f-9a0a-5530-677b" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Close Combat Weapon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="238c-a6e8-4d8f-6f41" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Melta Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3e6-3ddc-ea90-2ecc" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Laser Blaster,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3f9f-761a-1538-7131" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Volcano Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6ed-0a06-2fac-9662" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Plasma Destructor,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4a2a-b7ea-b7bb-d767" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Quake Cannon,">
+                  <conditions>
+                    <condition field="selections" scope="1a90-fdc0-01e5-723a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b05-0b07-d98a-54d2" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Carapace AA Guns"/>
               </modifiers>
             </infoLink>
             <infoLink id="08b5-25ff-fc05-65a1" name="Carapace AA Guns" hidden="false" targetId="5409-0db0-b6df-93d9" type="profile"/>
@@ -5277,7 +5278,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">3+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">3+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Carapace AA Guns</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e"></characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">6</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">6</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>

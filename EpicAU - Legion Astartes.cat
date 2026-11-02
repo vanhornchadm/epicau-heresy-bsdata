@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="28" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="29" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -1000,16 +1000,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="21ee-86f5-9f49-4974" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="58cb-c973-e64f-1afd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="203f-734c-4483-7615" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="58cb-c973-e64f-1afd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afca-7ca4-3f72-4497" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="d744-d4aa-319d-81f4" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -2257,16 +2258,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="357f-52dc-ef8a-6e57" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="d490-b450-7c46-08b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1255-d76a-02b5-c5bd" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="d490-b450-7c46-08b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1fde-da40-c43f-0bad" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="fe07-7a78-3ba6-a109" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -3625,16 +3627,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="420a-b3a8-21d2-df28" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="687f-5afc-fb88-d0c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a062-cfb4-2284-a07f" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="687f-5afc-fb88-d0c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7897-4c70-b8e6-aeb4" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="61f9-8650-96ac-f776" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -6284,7 +6287,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <infoLinks>
             <infoLink id="7f1d-ad90-bfbd-bc1b" name="Contemptor Dreadnought" hidden="false" targetId="376c-ea76-ed63-ba9c" type="profile">
               <modifiers>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Havoc Launcher,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Havoc Launcher,">
                   <conditions>
                     <condition field="selections" scope="1c57-ef9c-0340-af5d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b74b-8df8-826b-c65d" type="atLeast"/>
                   </conditions>
@@ -6857,16 +6860,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <infoLinks>
             <infoLink id="6f31-1c48-f6ef-d974" name="Javelin Attack Speeder" hidden="false" targetId="a691-d4a0-7767-32af" type="profile">
               <modifiers>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="TL Lascannon,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="TL Lascannon,">
                   <conditions>
                     <condition field="selections" scope="69ab-6f7f-16a0-16a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b365-ea48-bf8d-287e" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="TL Cyclone Missile Launcher,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="TL Cyclone Missile Launcher,">
                   <conditions>
                     <condition field="selections" scope="69ab-6f7f-16a0-16a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4100-0583-4520-2cb8" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Bolter"/>
               </modifiers>
             </infoLink>
             <infoLink id="d375-5a75-cc99-0260" name="Heavy Bolter" hidden="false" targetId="fdb4-43ee-e303-ca56" type="profile"/>
@@ -7989,16 +7993,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <infoLinks>
             <infoLink id="3133-6d44-d1f8-e1c3" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
               <modifiers>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                   <conditions>
                     <condition field="selections" scope="dc15-f26a-86da-737f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="172b-9b63-7b1e-9f5b" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                   <conditions>
                     <condition field="selections" scope="dc15-f26a-86da-737f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="12eb-5278-4776-aa3d" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
               </modifiers>
             </infoLink>
             <infoLink id="6ef1-8528-6fa4-dbab" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -9393,16 +9398,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <infoLinks>
             <infoLink id="37d8-5544-ead2-59bd" name="Saturnine Dreadnought*" hidden="false" targetId="b6b0-f0bb-1c97-a28c" type="profile">
               <modifiers>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Plasma Bombard,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Plasma Bombard,">
                   <conditions>
                     <condition field="selections" scope="cb41-1912-83ac-2ac0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b3bc-17a7-9c92-e9fa" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Graviton Pulveriser,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Graviton Pulveriser,">
                   <conditions>
                     <condition field="selections" scope="cb41-1912-83ac-2ac0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="43a0-9222-5640-01c0" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Inversion Beamer"/>
               </modifiers>
             </infoLink>
             <infoLink id="f11b-d161-3f89-8280" name="Inversion Beamer" hidden="false" targetId="a0a0-e893-2628-7854" type="profile"/>
@@ -10447,16 +10453,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <infoLinks>
             <infoLink id="208c-675c-f78d-cbe0" name="Kratos Heavy Tank*" hidden="false" targetId="d30f-dbb7-b667-52f1" type="profile">
               <modifiers>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Kratos Battlecannon,">
+                <modifier type="append" field="8053-23b9-7271-666e" value="Kratos Battlecannon,">
                   <conditions>
                     <condition field="selections" scope="8a37-bd2a-7ee2-a631" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29fd-1bf9-66de-d767" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Melta Cannon,">
+                <modifier type="append" field="8053-23b9-7271-666e" value="Melta Cannon,">
                   <conditions>
                     <condition field="selections" scope="8a37-bd2a-7ee2-a631" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f79-a5bf-7a99-62c9" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="Co-axial Autocannon,"/>
                 <modifier type="append" field="8053-23b9-7271-666e" value="Hull Heavy Bolters x2,">
                   <conditions>
                     <condition field="selections" scope="8a37-bd2a-7ee2-a631" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="19d4-32f3-4eb6-ed20" type="atLeast"/>
@@ -11072,16 +11079,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <infoLinks>
             <infoLink id="44e7-1c7c-ac48-6a20" name="Thunderhawk Gunship" hidden="false" targetId="ad58-b2c7-a97f-8a55" type="profile">
               <modifiers>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Thunderhawk Cannon,">
+                <modifier type="append" field="8053-23b9-7271-666e" value="Thunderhawk Cannon,">
                   <conditions>
                     <condition field="selections" scope="dff2-0c36-33bf-b2ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d81a-202e-70ed-3bcb" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="8053-23b9-7271-666e" value="Thunderhawk Laser Destroyer,">
+                <modifier type="append" field="8053-23b9-7271-666e" value="Thunderhawk Laser Destroyer,">
                   <conditions>
                     <condition field="selections" scope="dff2-0c36-33bf-b2ed" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3e4-0a55-d155-df67" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="8053-23b9-7271-666e" value="TL Lascannon, TL Heavy Bolter x4"/>
               </modifiers>
             </infoLink>
             <infoLink id="0e7b-0e9f-591b-c570" name="TL Lascannon" hidden="false" targetId="627b-7e50-f007-d6e1" type="profile"/>
@@ -12370,16 +12378,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <infoLinks>
             <infoLink id="18d3-7a40-9509-bc20" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
               <modifiers>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                   <conditions>
                     <condition field="selections" scope="0886-c69d-8170-b9b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d88a-4311-4aca-5f92" type="atLeast"/>
                   </conditions>
                 </modifier>
-                <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                   <conditions>
                     <condition field="selections" scope="0886-c69d-8170-b9b4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ab92-042f-6bfc-8488" type="atLeast"/>
                   </conditions>
                 </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
               </modifiers>
             </infoLink>
             <infoLink id="3546-2f16-ad79-c6b8" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -14575,16 +14584,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="4ae8-586b-52dc-f16c" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="08f4-578b-e12c-8b7a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24f3-60ee-3257-ce07" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="08f4-578b-e12c-8b7a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b64e-6259-58f6-251a" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="0b7c-6a17-6cfb-77df" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -17556,16 +17566,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="5632-8be4-9d60-4435" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="a2c9-9d9e-12e0-8947" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46b1-c7a8-a20b-0d92" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="a2c9-9d9e-12e0-8947" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2890-2285-ca68-1b16" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="d9db-d8a8-bb8f-1b7e" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -19725,16 +19736,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="d4e0-ac53-c2ab-2fcf" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="aae5-67fb-5ace-e5e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea20-ce84-7818-81f9" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="aae5-67fb-5ace-e5e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f10e-17cf-4dbc-b6c6" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="7a2e-7be4-baaa-a7d3" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -20740,16 +20752,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="be93-a580-f23e-3209" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="5dc5-ef11-e1ee-56ec" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95d4-4a94-659c-2345" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="5dc5-ef11-e1ee-56ec" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f83-c0f9-7a7a-f397" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="067a-50a9-bf5f-bdf1" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -21883,16 +21896,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="c2db-dc66-cbda-5bb2" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="52bc-f5e3-2eb5-12ef" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="979d-40b7-b227-9306" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="52bc-f5e3-2eb5-12ef" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24e4-945d-5114-9bc7" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="5a96-29c2-db8d-2c4b" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -23991,16 +24005,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="6bf3-bc3f-6b07-d961" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="c8e4-4c59-f0fb-fbce" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f00-6a10-5815-24da" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="c8e4-4c59-f0fb-fbce" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9394-1b14-07f9-0577" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="c0a6-7e37-8030-5b5c" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -26807,16 +26822,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="e6f3-e08f-21db-ba14" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="0e65-1c02-dcf2-bafa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f33c-2551-c7ac-c2a5" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="0e65-1c02-dcf2-bafa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f459-ce8e-6f53-ded2" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="b9c7-a9e3-6164-0944" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -27720,16 +27736,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
               <infoLinks>
                 <infoLink id="5c21-dd97-bc8e-e437" name="Javelin Attack Speeder" hidden="false" targetId="a691-d4a0-7767-32af" type="profile">
                   <modifiers>
-                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="TL Lascannon,">
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="TL Lascannon,">
                       <conditions>
                         <condition field="selections" scope="475a-2604-c101-0166" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3d00-e4cf-748e-e361" type="atLeast"/>
                       </conditions>
                     </modifier>
-                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="TL Cyclone Missile Launcher,">
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="TL Cyclone Missile Launcher,">
                       <conditions>
                         <condition field="selections" scope="475a-2604-c101-0166" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8fe7-e52c-fa35-9e7b" type="atLeast"/>
                       </conditions>
                     </modifier>
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Bolter"/>
                   </modifiers>
                 </infoLink>
                 <infoLink id="7108-8b29-f863-9677" name="Heavy Bolter" hidden="false" targetId="fdb4-43ee-e303-ca56" type="profile"/>
@@ -29277,16 +29294,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="165d-315b-e48a-9303" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="25b2-0baa-83c8-fb80" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afd4-8faa-c9f0-bdca" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="25b2-0baa-83c8-fb80" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4a5-4002-d9a8-f16c" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="c867-546e-a625-f1e1" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -33160,16 +33178,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="290c-f803-12ba-9260" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="6617-0273-7b22-42c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="340e-2a72-2ea6-e1d0" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="6617-0273-7b22-42c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5582-b0eb-8a9b-fccf" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="deb5-fef0-e6dc-eece" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -36580,16 +36599,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="34d9-5503-d948-e781" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="78f0-baf0-4b21-6794" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f96-5428-ff32-9798" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="78f0-baf0-4b21-6794" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bf8-544a-2f15-89a6" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="b159-3c51-0ba7-9a03" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -38888,16 +38908,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="8661-81a0-dda4-45eb" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="7935-1f87-c04a-b562" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3832-145d-d757-5cd3" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="7935-1f87-c04a-b562" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0a1f-2956-6918-230b" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="e573-de5b-a427-4900" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -39986,16 +40007,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="24db-e5ef-bdf3-8744" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="cd8f-cd36-0607-e9d3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd5d-90f1-d1f4-f10c" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="cd8f-cd36-0607-e9d3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6bed-7781-94c9-6dac" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="06aa-d07d-0d92-364b" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -43418,16 +43440,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="3989-5e0d-186a-204f" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="3798-e5db-ec1c-303e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8c1-37ba-a1ce-9011" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="3798-e5db-ec1c-303e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c698-1a8c-b84b-bbd5" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="9fb9-566d-801e-d026" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -45020,7 +45043,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
               <infoLinks>
                 <infoLink id="3ede-06ff-2d89-071e" name="Contemptor Dreadnought" hidden="false" targetId="376c-ea76-ed63-ba9c" type="profile">
                   <modifiers>
-                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Havoc Launcher,">
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Havoc Launcher,">
                       <conditions>
                         <condition field="selections" scope="597c-81d4-6d0b-a5d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8efc-170b-6c8a-75da" type="atLeast"/>
                       </conditions>
@@ -45993,16 +46016,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="f99f-7541-9313-c96f" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="4b2c-b7f9-e61e-3d6f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f89-59ce-9625-e356" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="4b2c-b7f9-e61e-3d6f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="77bf-6617-6d79-b62b" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="8ab6-488f-75cb-3efb" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -48368,16 +48392,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="f16e-b2e5-5836-27c5" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="32e2-4446-0c46-8a49" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5398-6cf2-1b18-5d25" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="32e2-4446-0c46-8a49" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="448f-741f-a20b-5ade" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="59a5-f8b8-bf30-b8b6" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -50490,16 +50515,17 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                       <infoLinks>
                         <infoLink id="3fe5-7e07-b404-784a" name="Predator Executioner" hidden="false" targetId="a4e4-4fbe-1dfa-e2de" type="profile">
                           <modifiers>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Destroyer,">
                               <conditions>
                                 <condition field="selections" scope="231c-fd68-90fb-eb5a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ad6-5b91-0e4b-3fa0" type="atLeast"/>
                               </conditions>
                             </modifier>
-                            <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Heavy Conversion Beamer,">
                               <conditions>
                                 <condition field="selections" scope="231c-fd68-90fb-eb5a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a0-a2e0-72b4-9b62" type="atLeast"/>
                               </conditions>
                             </modifier>
+                            <modifier type="append" field="4e39-030c-4e18-12e0" value="Lascannons x2"/>
                           </modifiers>
                         </infoLink>
                         <infoLink id="bb65-1f80-2d89-a0f1" name="Lascannons" hidden="false" targetId="b673-d9f3-ea28-6158" type="profile"/>
@@ -52875,7 +52901,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
               <infoLinks>
                 <infoLink id="7d66-610c-6a2d-342d" name="Contemptor Dreadnought" hidden="false" targetId="376c-ea76-ed63-ba9c" type="profile">
                   <modifiers>
-                    <modifier type="prepend" field="4e39-030c-4e18-12e0" value="Havoc Launcher,">
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Havoc Launcher,">
                       <conditions>
                         <condition field="selections" scope="dbb0-ad00-4f50-4c21" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6168-1d60-5243-7715" type="atLeast"/>
                       </conditions>
@@ -55502,7 +55528,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Heavy Bolter</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="5d68-39cd-7637-0e99" name="Justaerin Terminator Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -55590,7 +55616,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">6+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">5+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Co-axial Autocannon,</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e"></characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Unit is destroyed.</characteristic>
@@ -56256,7 +56282,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Lascannons x2</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="2aec-7cdb-61c9-353e" name="Predator Infernus" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -56497,7 +56523,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Inversion Beamer</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="d473-d806-8dae-5a90" name="Saturnine Terminators*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -57059,7 +57085,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">6+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">TL Lascannon, TL Heavy Bolter x4</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e"></characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>

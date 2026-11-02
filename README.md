@@ -48,6 +48,13 @@ These rules are shown as text only, not enforced:
 - **Sabre Strike Tank** is in the Legion list but missing from the wiki reference sheet. Its stats come from Departmento Munitorum.
 - **Solar Auxilia Tank Hunter Squadron** (3 Valdor Tank Hunters, 250 pts, support) comes from Departmento Munitorum. The Valdor is on the wiki reference sheet, but the archived army list has no formation for it.
 - **Legion Kratos Heavy Tank Squadron** is fan-made, not part of EpicAU. It's a support detachment of 2 Kratos for 200 pts, plus up to 2 more at 100 pts each, taken from a [Dakka Dakka proposal](https://www.dakkadakka.com/dakkaforum/posts/list/812078.page) last edited in November 2024. The proposal gives no critical-hit effect or upgrades. The data uses "destroyed" for the critical hit, and Centurion and Hyperios for upgrades, as on the other Legion tank squadrons. Weapon choices (battlecannon or melta cannon, and heavy bolters or lascannons on the hull and sponsons) are shown on the unit profile rather than picked as options.
+- **Warbringer Nemesis Titan and Warmaster Titan** are fan-made, not part of EpicAU. Both are adapted from the [Epic-UK](http://epic-uk.co.uk/wp/army-lists/) Adeptus Titanicus codex (version 080925).
+  - **What's kept:** the Epic-UK stat lines and fixed weapons.
+  - **What's changed to fit EpicAU:** Cortex Controller, EpicAU's reactor critical-hit wording, and EpicAU's priced Titan weapon slots in place of Epic-UK's weapon tables.
+  - **Warbringer (650 pts):** a Quake or Volcano Cannon on the carapace, plus 2 weapons.
+  - **Warmaster (0-1, 1275 pts):** 1 carapace weapon.
+  - **Points:** Epic-UK's prices, which include weapons (750 and 1500), scaled down by about the same ratio as EpicAU's Reaver and Warlord prices.
+  - **Upgrades:** both have built-in AA guns, so neither takes Air Defence.
 - **Not included:** the Arquitor Bombard (Legion) and the Dominus Knight-Castellan and Knight-Valiant have stats on the wiki reference sheets, but neither the wiki nor Departmento Munitorum gives them a formation.
 - **Legio Custodes strategy rating:** the wiki says "1+", which looks like a typo for the initiative value. The data uses 5, matching Departmento Munitorum. The wiki also lists no Custodes allies.
 - **Knight Household Allies/LoW allowance:** the wiki doesn't state one. The data uses 1/3, matching Departmento Munitorum.

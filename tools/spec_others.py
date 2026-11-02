@@ -162,6 +162,16 @@ TITANICUS = ARMY(
         F('Warhound Scout Pack', 'line', 500, [U(2, 'Warhound Scout Titan')], 'Veteran Princeps'),
         F('Reaver Titan', 'line', 575, [U(1, 'Reaver Battle Titan')], 'Legate OR Veteran Princeps, Air Defence, Sacred Icon'),
         F('Warlord Titan', 'line', 725, [U(1, 'Warlord Battle Titan')], 'Legate OR Veteran Princeps, Air Defence, Sacred Icon'),
+        F('Warbringer Nemesis Titan', 'line', 650, [U(1, 'Warbringer Nemesis Titan')],
+          'Legate OR Veteran Princeps, Sacred Icon',
+          note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
+               'costs 750 pts with weapons. Here it takes a Quake or Volcano Cannon on the carapace and 2 arm weapons at '
+               'EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade.'),
+        F('Warmaster Titan', 'line', 1275, [U(1, 'Warmaster Heavy Battle Titan')],
+          'Legate OR Veteran Princeps, Sacred Icon', maxn=1,
+          note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
+               'is a 0-1 Support Titan costing 1500 pts with weapons and is meant mainly for friendly games. Here its '
+               'carapace weapon is chosen at EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade.'),
         F('Emperor Class Titan', 'low', 1350,
           [Or(Opt('Imperator', U(1, 'Imperator Support Titan (experimental)')),
               Opt('Warmonger', U(1, 'Warmonger Support Titan (experimental)')))], 'Legate OR Veteran Princeps'),
@@ -178,11 +188,16 @@ TITANICUS = ARMY(
     notes=['Each upgrade may only be taken once per formation.',
            'Legio Titanicus has no Support Detachments.',
            'Warhounds carry 2 Scout Titan weapons; Reavers 3 and Warlords 4 Scout or Battle Titan weapons. '
+           'The fan-made Warbringer carries a Quake or Volcano Cannon plus 2 weapons, and the Warmaster 1. '
            'Arm/carapace mount restrictions are noted on each weapon.',
            'The wiki sets no Allies/Lords of War points limit for Legio Titanicus.'])
 TITAN_WEAPON_SLOTS = {'Warhound Scout Titan': (2, SCOUT_WEAPONS),
                       'Reaver Battle Titan': (3, SCOUT_WEAPONS + BATTLE_WEAPONS),
-                      'Warlord Battle Titan': (4, SCOUT_WEAPONS + BATTLE_WEAPONS)}
+                      'Warlord Battle Titan': (4, SCOUT_WEAPONS + BATTLE_WEAPONS),
+                      # Fan-made, adapted from Epic-UK: the Warbringer's carapace must take a Quake or Volcano Cannon.
+                      'Warbringer Nemesis Titan': [('Carapace Weapon', 1, [('Quake Cannon', 75), ('Volcano Cannon', 50)]),
+                                                   ('Titan Weapons', 2, SCOUT_WEAPONS + BATTLE_WEAPONS)],
+                      'Warmaster Heavy Battle Titan': (1, SCOUT_WEAPONS + BATTLE_WEAPONS)}
 
 # ---------------------------------------------------------------- Knight Household
 QUESTORIS = ['Questorius Knight-Paladin', 'Questorius Knight-Errant']

@@ -47,7 +47,14 @@ SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': '
 RULE_ID = {name: gid('rule', name) for name in RULES}
 
 # Units not present on the wiki reference sheet: the Sabre from Departmento Munitorum, the Kratos from fan rules
-# posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09).
+# posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09), and
+# the Warbringer and Warmaster adapted from the Epic-UK Adeptus Titanicus codex (version 080925).
+TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
+              "than 2cm wide.")
+TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
+              "destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan "
+              "loses a point of DC, 4-6 the reactor is repaired.")
+EPIC_UK = '(Fan rules adapted from the Epic-UK Adeptus Titanicus codex, version 080925; not part of EpicAU.)'
 EXTRA_UNITS = {
     'Legion Astartes': [{
         'name': 'Sabre Strike Tank', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
@@ -68,6 +75,22 @@ EXTRA_UNITS = {
         'notes': 'DC2, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed. Each Kratos takes either '
                  'the Kratos Battlecannon or the Melta Cannon, and heavy bolters or lascannons on both the hull and '
                  'the sponsons. (Fan rules, not on the EpicAU wiki: Dakka Dakka proposal, November 2024.)'}],
+    'Legio Titanicus': [{
+        'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
+        'weapons': [{'name': 'Quake Cannon or Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
+                    {'name': '2 x Scout or Battle Titan Weapon Variants', 'range': '-', 'firepower': '2 x Arm, Forward Arc'},
+                    {'name': 'Carapace AA Guns', 'range': '45cm', 'firepower': '4 x AA5+'}],
+        'notes': f'DC 6, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
+                 f'{TITAN_CRIT} {EPIC_UK}'}, {
+        'name': 'Warmaster Heavy Battle Titan', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
+        'weapons': [{'name': '4 x Revelator Missile', 'range': '60cm', 'firepower': '1 BP, Single Shot, Fixed Forward'},
+                    {'name': '2 x Suzerain Plasma Destructor', 'range': '60cm',
+                     'firepower': '4 x MW3+, Slow Firing, Forward Arc'},
+                    {'name': 'Carapace AA Guns', 'range': '45cm', 'firepower': '4 x AA5+'},
+                    {'name': '1 x Scout or Battle Titan Weapon Variant', 'range': '-',
+                     'firepower': '1 x Carapace, Fixed Forward'}],
+        'notes': f'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
+                 f'{TITAN_CRIT} {EPIC_UK}'}],
 }
 
 
@@ -563,32 +586,34 @@ class Builder:
                        constraints=cons, selectionEntries=ses, selectionEntryGroups=groups, entryLinks=els)
 
     def titan_weapons(self, fid, f):
-        count = 0
-        slots = None
+        """Titan weapon choices: one group per slot type (e.g. 'Titan Weapons', 'Carapace Weapon')."""
+        slots = {}  # label -> [count, weapons]
         for p in f['units']:
             if p['kind'] == 'unit' and p['unit'] in TITAN_WEAPON_SLOTS:
-                n, weapons = TITAN_WEAPON_SLOTS[p['unit']]
-                count += n * p['min']
-                slots = weapons
-        if not count:
-            return None
-        g = gid('seg', fid, 'titan-weapons')
-        kids = []
-        for name, each in slots:
-            w = TITAN_WEAPONS[name]
-            eid = gid('se', fid, 'tw', name)
-            pid = self.prof.weapon_profile(w)
-            kids.append(ordered('selectionEntry', {'id': eid, 'name': name, 'hidden': 'false', 'collective': 'false',
-                                                   'import': 'true', 'type': 'upgrade'},
-                                constraints=[constraint(gid('con', eid, 'max'), 'max', count)],
-                                infoLinks=[X('infoLink', {'id': gid('il', eid), 'name': name, 'hidden': 'false',
-                                                          'targetId': pid, 'type': 'profile'})]
-                                + [info_rule(eid, r) for r in rules_in(w['firepower'] + ' ' + w['notes'])],
-                                costs=cost(each)))
-        return ordered('selectionEntryGroup', {'id': g, 'name': 'Titan Weapons', 'hidden': 'false',
-                                               'collective': 'false', 'import': 'true'},
-                       constraints=[constraint(gid('con', g, 'min'), 'min', count),
-                                    constraint(gid('con', g, 'max'), 'max', count)], selectionEntries=kids)
+                spec = TITAN_WEAPON_SLOTS[p['unit']]
+                for label, n, weapons in ([('Titan Weapons',) + spec] if isinstance(spec, tuple) else spec):
+                    slots.setdefault(label, [0, weapons])[0] += n * p['min']
+        groups = []
+        for label, (count, weapons) in slots.items():
+            key = [] if label == 'Titan Weapons' else [label]  # ids of the original single group are unchanged
+            g = gid('seg', fid, 'titan-weapons', *key)
+            kids = []
+            for name, each in weapons:
+                w = TITAN_WEAPONS[name]
+                eid = gid('se', fid, 'tw', *key, name)
+                pid = self.prof.weapon_profile(w)
+                kids.append(ordered('selectionEntry', {'id': eid, 'name': name, 'hidden': 'false', 'collective': 'false',
+                                                       'import': 'true', 'type': 'upgrade'},
+                                    constraints=[constraint(gid('con', eid, 'max'), 'max', count)],
+                                    infoLinks=[X('infoLink', {'id': gid('il', eid), 'name': name, 'hidden': 'false',
+                                                              'targetId': pid, 'type': 'profile'})]
+                                    + [info_rule(eid, r) for r in rules_in(w['firepower'] + ' ' + w['notes'])],
+                                    costs=cost(each)))
+            groups.append(ordered('selectionEntryGroup', {'id': g, 'name': label, 'hidden': 'false',
+                                                          'collective': 'false', 'import': 'true'},
+                                  constraints=[constraint(gid('con', g, 'min'), 'min', count),
+                                               constraint(gid('con', g, 'max'), 'max', count)], selectionEntries=kids))
+        return groups
 
     # -- formations
     def formation(self, f):
@@ -632,7 +657,7 @@ class Builder:
                                         'import': 'true', 'type': 'unit'},
                      modifiers=mods, constraints=cons, rules=rules,
                      infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
-                     selectionEntries=ses, selectionEntryGroups=grps + [g for g in (tw, up) if g],
+                     selectionEntries=ses, selectionEntryGroups=grps + tw + ([up] if up else []),
                      entryLinks=extra, costs=cost(f['cost']))
         if f.get('show_for') or f.get('hide_for'):
             self.gate(el, f.get('show_for'), f.get('hide_for'))

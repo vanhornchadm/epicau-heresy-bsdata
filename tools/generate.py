@@ -89,8 +89,6 @@ TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is low
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
               "destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan "
               "loses a point of DC, 4-6 the reactor is repaired.")
-EPIC_UK = '(Fan rules adapted from the Epic-UK Adeptus Titanicus codex, version 080925; not part of EpicAU.)'
-LI_TITAN = '(Fan-made, not part of EpicAU: converted from Legions Imperialis against the EpicAU {base}.)'
 WARHOUND_CRIT = ('Critical Hit: The Titan staggers D6cm in a random direction taking an additional DC, any units that come '
                  'into base contact with it as it staggers take a standard hit on a 6+.')
 EXTRA_UNITS = {
@@ -100,83 +98,68 @@ EXTRA_UNITS = {
                     {'name': 'Sabre Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'}],
         'notes': 'Reinforced Armour. (Not on the wiki reference sheet; stats from Departmento Munitorum.)'}, {
         'name': 'Kratos Heavy Tank', 'type': 'WE', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Kratos Battlecannon', 'range': '45cm', 'firepower': '2 x AP3+/AT3+, Armourbane'},
-                    {'name': 'Melta Cannon (instead of Kratos Battlecannon)', 'range': '30cm',
+        'weapons': [{'name': 'Kratos Battlecannon OR', 'range': '45cm', 'firepower': '2 x AP3+/AT3+, Armourbane'},
+                    {'name': 'Melta Cannon', 'range': '30cm',
                      'firepower': '4 x MW5+, Armourbane'},
                     {'name': 'Co-axial Autocannon', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
-                    {'name': '2 x Hull Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+, Fwd'},
-                    {'name': '2 x Hull Lascannon (instead of Hull Heavy Bolters)', 'range': '45cm',
+                    {'name': '2 x Hull Heavy Bolters OR', 'range': '30cm', 'firepower': 'AP5+, Fwd'},
+                    {'name': '2 x Hull Lascannons', 'range': '45cm',
                      'firepower': 'AT5+, Fwd'},
-                    {'name': '2 x Sponson Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'},
-                    {'name': '2 x Sponson Lascannon (instead of Sponson Heavy Bolters)', 'range': '45cm',
+                    {'name': '2 x Sponson Heavy Bolters OR', 'range': '30cm', 'firepower': 'AP5+'},
+                    {'name': '2 x Sponson Lascannons', 'range': '45cm',
                      'firepower': 'AT5+'}],
-        'notes': 'DC2, Reinforced Armour, Thick Rear Armour. Each Kratos takes either the Kratos Battlecannon or the '
-                 'Melta Cannon, and heavy bolters or lascannons on both the hull and the sponsons. (Fan rules, not on '
-                 'the EpicAU wiki: Dakka Dakka proposal, November 2024.) Critical Hit: Unit is destroyed.'}, {
+        'notes': 'DC2, Reinforced Armour, Thick Rear Armour. A Kratos must select either a Kratos Battlecannon OR Melta '
+                 'Cannon, and either Heavy Bolters OR Lascannons for its hull and for its sponsons, before the start of '
+                 'the game. Critical Hit: Unit is destroyed.'}, {
         'name': 'Sicaran Punisher', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '3+',
         'weapons': [{'name': 'Punisher Rotary Cannon', 'range': '30cm', 'firepower': '3 x AP3+/AT6+'},
                     {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
-        'notes': 'Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with a Punisher Rotary '
-                 'Cannon matching the Knight Avenger Gatling Cannon against infantry, as in Legions Imperialis, and one '
-                 'step weaker against armour.)'}, {
+        'notes': 'Reinforced Armour'}, {
         'name': 'Sicaran Arcus', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '3+',
         'weapons': [{'name': 'Arcus Missile Launcher', 'range': '45cm', 'firepower': '2 x AT4+/AA5+'},
                     {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
-        'notes': 'Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with an Arcus Missile '
-                 'Launcher built from the Whirlwind Scorpius launcher and the Hellstrike Missile Pod, firing direct '
-                 'anti-tank or Skyspear anti-aircraft missiles.)'}, {
+        'notes': 'Reinforced Armour'}, {
         'name': 'Legion Tarantula', 'type': 'LV', 'speed': 'Immobile', 'armour': '6+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'TL Lascannon OR', 'range': '45cm', 'firepower': 'AT4+'},
                     {'name': 'TL Heavy Bolter', 'range': '30cm', 'firepower': 'AP4+'}],
-        'notes': 'Teleport, Scout. A Legion Tarantula is armed with a TL Lascannon OR a TL Heavy Bolter; choose one '
-                 'option before the game. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula with the '
-                 'Mechanicum Tarantula Platform\'s weapon choice, as in Legions Imperialis.)'}, {
+        'notes': 'Teleport, Scout. A Legion Tarantula must select either a TL Lascannon OR TL Heavy Bolter before the '
+                 'start of the game.'}, {
         'name': 'Legion Tarantula Hyperios', 'type': 'LV', 'speed': 'Immobile', 'armour': '6+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Missile Rack', 'range': '30cm', 'firepower': 'AA4+'}],
-        'notes': 'Teleport, Scout. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula Hyperios.)'}, {
+        'notes': 'Teleport, Scout.'}, {
         'name': 'Ascalon', 'type': 'WE', 'speed': '25cm', 'armour': '4+', 'cc': '5+', 'ff': '4+',
         'weapons': [{'name': 'Ascalon Inferno Gun', 'range': '30cm AND (15cm)',
                      'firepower': '2 x AP3+/AT6+, Ignore Cover AND (small arms) Ignore Cover'}],
-        'notes': 'DC3, Reinforced Armour, Thick Rear Armour. (Fan-made, not on the EpicAU wiki: the Spartan\'s hull with '
-                 'a third damage point and better close combat, as in Legions Imperialis, and the Knight-Acheron\'s '
-                 'flame cannon.) Critical Hit: Unit is destroyed and all units within 5cm suffer a standard hit on '
-                 'a 6+.'}, {
+        'notes': 'DC3, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed and all units within 5cm '
+                 'suffer a standard hit on a 6+'}, {
         'name': 'Araknae Weapons Platform', 'type': 'LV', 'speed': 'Immobile', 'armour': '5+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Quad Accelerator Autocannon OR', 'range': '45cm', 'firepower': '3 x AP4+/AT5+'},
                     {'name': 'Twin Punisher Cannon OR', 'range': '30cm', 'firepower': '4 x AP3+/AT6+/AA5+'},
                     {'name': 'Orias Heavy Frag Missiles', 'range': '45cm', 'firepower': '2 BP, Indirect Fire, Single Shot'}],
-        'notes': 'Invulnerable Save. An Araknae carries one of the listed weapons; choose before the game. (Fan-made, not '
-                 'on the EpicAU wiki: a sturdier Tarantula with weapons scaled from the Sicaran\'s accelerator cannon, '
-                 'the Sicaran Punisher and the Whirlwind, as in Legions Imperialis.)'}, {
+        'notes': 'Invulnerable Save. An Araknae Weapons Platform must select one weapon system before the start of '
+                 'the game.'}, {
         'name': 'Saturnine Terminators', 'type': 'INF', 'speed': '15cm', 'armour': '4+', 'cc': '4+', 'ff': '3+',
-        'weapons': [{'name': 'Plasma Bombards', 'range': '30cm', 'firepower': 'AP4+/AT5+, Indirect Fire'},
-                    {'name': 'Twin Heavy Disintegrators', 'range': '15cm', 'firepower': 'AP4+/AT4+, MW'},
+        'weapons': [{'name': 'Plasma Bombards OR', 'range': '30cm', 'firepower': 'AP4+/AT5+, Indirect Fire'},
+                    {'name': 'Twin Heavy Disintegrators OR', 'range': '15cm', 'firepower': 'AP4+/AT4+, MW'},
                     {'name': 'Disruption Fists', 'range': '(base contact)', 'firepower': '(assault weapons) MW, EA(+1)'}],
-        'notes': 'Reinforced Armour, Thick Rear Armour, Invulnerable Save. Each unit carries two of the listed weapons '
-                 '(a pair of one, or one each of two); choose before the game. (Fan-made, not on the EpicAU wiki: '
-                 'Terminators with two wounds\' worth of protection and less close combat punch, as in Legions '
-                 'Imperialis.)'}, {
+        'notes': 'Reinforced Armour, Thick Rear Armour, Invulnerable Save. A Saturnine Terminator unit must select two '
+                 'weapons (the same one twice, or two different ones) before the start of the game.'}, {
         'name': 'Saturnine Dreadnought', 'type': 'AV', 'speed': '15cm', 'armour': '3+', 'cc': '5+', 'ff': '4+',
         'weapons': [{'name': 'Heavy Plasma Bombard OR', 'range': '30cm', 'firepower': '2 x AP4+/AT5+, Indirect Fire'},
                     {'name': 'Graviton Pulveriser', 'range': '15cm', 'firepower': 'AP3+/AT4+, Disrupt'},
                     {'name': 'Inversion Beamer', 'range': '30cm', 'firepower': 'AP5+/AT4+'}],
-        'notes': 'Walker, Reinforced Armour, Invulnerable Save. A Saturnine Dreadnought carries a Heavy Plasma Bombard OR '
-                 'a Graviton Pulveriser, plus an Inversion Beamer; choose before the game. (Fan-made, not on the EpicAU '
-                 'wiki: the Deredeo\'s profile with two wounds\' worth of protection, and weapons scaled from the '
-                 'Leviathan\'s grav-flux bombard, as in Legions Imperialis.)'}, {
+        'notes': 'Invulnerable Save, Walker, Reinforced Armour. A Saturnine Dreadnought must select either a Heavy '
+                 'Plasma Bombard OR Graviton Pulveriser before the start of the game.'}, {
         'name': 'Termite Assault Drill', 'type': 'AV', 'speed': '15cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Twin-linked Bolters', 'range': '(15cm)', 'firepower': '(small arms)'}],
-        'notes': 'Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. Tunnels to '
-                 'battle: a formation carried entirely in Termites may be held off the table and arrive as if it had '
-                 'the Teleport rule. (Fan-made, not on the EpicAU wiki: a Land Raider\'s capacity, as in Legions '
-                 'Imperialis.)'}],
+        'notes': 'Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. A '
+                 'formation transported entirely in Termites may deploy as if it had the Teleport special rule.'}],
     'Legio Titanicus': [{
         'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
-        'weapons': [{'name': 'Quake Cannon or Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
+        'weapons': [{'name': 'Quake Cannon OR Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
                     {'name': '2 x Scout or Battle Titan Weapon Variants', 'range': '-', 'firepower': '2 x Arm, Forward Arc'},
                     {'name': 'Carapace AA Guns', 'range': '45cm', 'firepower': '4 x AA5+'}],
-        'notes': f'DC 6, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
-                 f'{EPIC_UK} {TITAN_CRIT}'}, {
+        'notes': f'DC 6, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} {TITAN_CRIT}'}, {
         'name': 'Warmaster Heavy Battle Titan', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': '4 x Revelator Missile', 'range': '60cm', 'firepower': '1 BP, Single Shot, Fixed Forward'},
                     {'name': '2 x Suzerain Plasma Destructor', 'range': '60cm',
@@ -185,26 +168,26 @@ EXTRA_UNITS = {
                     {'name': '1 x Scout or Battle Titan Weapon Variant', 'range': '-',
                      'firepower': '1 x Carapace, Fixed Forward'}],
         'notes': f'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
-                 f'{EPIC_UK} {TITAN_CRIT}'}, {
+                 f'{TITAN_CRIT}'}, {
         'name': 'Dire Wolf Heavy Scout Titan', 'type': 'WE', 'speed': '30cm', 'armour': '5+', 'cc': '4+', 'ff': '4+',
         'weapons': [{'name': 'Ardex Mega-Bolters', 'range': '30cm', 'firepower': '4 x AP4+/AT6+'},
-                    {'name': '1 x Dire Wolf Weapon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'}],
+                    {'name': 'Volcano Cannon OR Neutron Laser OR Conversion Beam Dissipator', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'}],
         'notes': 'DC 3, 2 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller, Infiltrator. '
-                 f'{TITAN_STEP} {LI_TITAN.format(base="Warhound")} {WARHOUND_CRIT}'}, {
+                 f'{TITAN_STEP} {WARHOUND_CRIT}'}, {
         'name': 'Warlord-Sinister Battle Titan', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '2+', 'ff': '3+',
         'weapons': [{'name': 'Sinistramanus Tenebrae', 'range': '75cm', 'firepower': '3 x MW3+, TK(1), Fwd'},
                     {'name': 'Antipathic Tempest', 'range': '45cm', 'firepower': '2 BP, Ignore Cover, Disrupt'},
                     {'name': 'Death Pulse', 'range': '(15cm)', 'firepower': '(small arms), EA(+2)'}],
         'notes': 'DC 8, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. Dread Aura: enemy '
                  'formations within 15cm subtract 1 from their rally tests. A Psi-Titan for Loyalist Legions only. '
-                 f'{TITAN_STEP} {LI_TITAN.format(base="Warlord")} {TITAN_CRIT}'}, {
+                 f'{TITAN_STEP} {TITAN_CRIT}'}, {
         'name': 'Warmaster Iconoclast Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': 'Desolator Chainsword', 'range': '(base contact)',
                      'firepower': '(assault weapons) EA(+3), TK(D3)'},
                     {'name': 'Cruciator Gatling Array', 'range': '45cm', 'firepower': '6 x AP4+/AT5+, Fwd'},
-                    {'name': '1 x Kirus Siege Drill or Grav Imploder', 'range': '-', 'firepower': '1 x Arm'}],
+                    {'name': 'Kirus Siege Drill OR Kirus Grav Imploder', 'range': '-', 'firepower': '1 x Arm'}],
         'notes': 'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. '
-                 f'{TITAN_STEP} {LI_TITAN.format(base="Warmaster")} {TITAN_CRIT}'}],
+                 f'{TITAN_STEP} {TITAN_CRIT}'}],
 }
 # Fan-made Titan weapons for the Titans above, converted from Legions Imperialis against EpicAU's Titan weapons.
 FAN_TITAN_WEAPONS = {

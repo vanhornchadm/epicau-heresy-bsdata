@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="17" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -42427,7 +42427,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;45cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">3 x AP4+/AT5+&lt;BR&gt;&lt;BR&gt;4 x AP3+/AT6+/AA5+&lt;BR&gt;&lt;BR&gt;2 BP</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;Indirect Fire, Single Shot</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save. An Araknae carries one of the listed weapons; choose before the game. (Fan-made, not on the EpicAU wiki: a sturdier Tarantula with weapons scaled from the Sicaran's accelerator cannon, the Sicaran Punisher and the Whirlwind, as in Legions Imperialis.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save. An Araknae Weapons Platform must select one weapon system before the start of the game.</characteristic>
       </characteristics>
     </profile>
     <profile id="dc8c-9d81-e711-f74d" name="Arquitor Bombard" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -42455,10 +42455,10 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="3069-85d5-1a17-f28e">30cm AND (15cm)</characteristic>
         <characteristic name="Firepower" typeId="8397-b72d-83b9-ce5f">2 x AP3+/AT6+</characteristic>
         <characteristic name="Weapon Notes" typeId="a2db-1347-a5a5-688a">Ignore Cover AND (small arms) Ignore Cover</characteristic>
-        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour, Thick Rear Armour. (Fan-made, not on the EpicAU wiki: the Spartan's hull with a third damage point and better close combat, as in Legions Imperialis, and the Knight-Acheron's flame cannon.)</characteristic>
+        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour, Thick Rear Armour.</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">3</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Unit is destroyed and all units within 5cm suffer a standard hit on a 6+.</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Unit is destroyed and all units within 5cm suffer a standard hit on a 6+</characteristic>
       </characteristics>
     </profile>
     <profile id="0c85-3c76-58c2-e497" name="Assault Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43225,11 +43225,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">6+</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">5+</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Kratos Battlecannon&lt;BR&gt;&lt;BR&gt;Melta Cannon (instead of Kratos Battlecannon)&lt;BR&gt;&lt;BR&gt;Co-axial Autocannon&lt;BR&gt;&lt;BR&gt;2 x Hull Heavy Bolter&lt;BR&gt;&lt;BR&gt;2 x Hull Lascannon (instead of Hull Heavy Bolters)&lt;BR&gt;&lt;BR&gt;2 x Sponson Heavy Bolter&lt;BR&gt;&lt;BR&gt;2 x Sponson Lascannon (instead of Sponson Heavy Bolters)</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Kratos Battlecannon OR&lt;BR&gt;&lt;BR&gt;Melta Cannon&lt;BR&gt;&lt;BR&gt;Co-axial Autocannon&lt;BR&gt;&lt;BR&gt;2 x Hull Heavy Bolters OR&lt;BR&gt;&lt;BR&gt;2 x Hull Lascannons&lt;BR&gt;&lt;BR&gt;2 x Sponson Heavy Bolters OR&lt;BR&gt;&lt;BR&gt;2 x Sponson Lascannons</characteristic>
         <characteristic name="Range" typeId="3069-85d5-1a17-f28e">45cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;45cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;45cm&lt;BR&gt;&lt;BR&gt;30cm&lt;BR&gt;&lt;BR&gt;45cm</characteristic>
         <characteristic name="Firepower" typeId="8397-b72d-83b9-ce5f">2 x AP3+/AT3+&lt;BR&gt;&lt;BR&gt;4 x MW5+&lt;BR&gt;&lt;BR&gt;AP5+/AT6+&lt;BR&gt;&lt;BR&gt;AP5+&lt;BR&gt;&lt;BR&gt;AT5+&lt;BR&gt;&lt;BR&gt;AP5+&lt;BR&gt;&lt;BR&gt;AT5+</characteristic>
         <characteristic name="Weapon Notes" typeId="a2db-1347-a5a5-688a">Armourbane&lt;BR&gt;&lt;BR&gt;Armourbane&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;Fwd&lt;BR&gt;&lt;BR&gt;Fwd&lt;BR&gt;&lt;BR&gt;-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour, Thick Rear Armour. Each Kratos takes either the Kratos Battlecannon or the Melta Cannon, and heavy bolters or lascannons on both the hull and the sponsons. (Fan rules, not on the EpicAU wiki: Dakka Dakka proposal, November 2024.)</characteristic>
+        <characteristic name="Notes" typeId="b1b3-f018-48be-a953">Reinforced Armour, Thick Rear Armour. A Kratos must select either a Kratos Battlecannon OR Melta Cannon, and either Heavy Bolters OR Lascannons for its hull and for its sponsons, before the start of the game.</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Unit is destroyed.</characteristic>
@@ -43330,7 +43330,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AA4+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula Hyperios.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout.</characteristic>
       </characteristics>
     </profile>
     <profile id="2fe7-2c08-8748-f3d8" name="Legion Tarantula*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43344,7 +43344,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. A Legion Tarantula is armed with a TL Lascannon OR a TL Heavy Bolter; choose one option before the game. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula with the Mechanicum Tarantula Platform's weapon choice, as in Legions Imperialis.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. A Legion Tarantula must select either a TL Lascannon OR TL Heavy Bolter before the start of the game.</characteristic>
       </characteristics>
     </profile>
     <profile id="3e8f-538a-1969-e64f" name="Leman Russ, the Wolf King" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43868,7 +43868,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;15cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">2 x AP4+/AT5+&lt;BR&gt;&lt;BR&gt;AP3+/AT4+&lt;BR&gt;&lt;BR&gt;AP5+/AT4+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Indirect Fire&lt;BR&gt;&lt;BR&gt;Disrupt&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Walker, Reinforced Armour, Invulnerable Save. A Saturnine Dreadnought carries a Heavy Plasma Bombard OR a Graviton Pulveriser, plus an Inversion Beamer; choose before the game. (Fan-made, not on the EpicAU wiki: the Deredeo's profile with two wounds' worth of protection, and weapons scaled from the Leviathan's grav-flux bombard, as in Legions Imperialis.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Invulnerable Save, Walker, Reinforced Armour. A Saturnine Dreadnought must select either a Heavy Plasma Bombard OR Graviton Pulveriser before the start of the game.</characteristic>
       </characteristics>
     </profile>
     <profile id="d473-d806-8dae-5a90" name="Saturnine Terminators*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43878,11 +43878,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">3+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Plasma Bombards&lt;BR&gt;&lt;BR&gt;Twin Heavy Disintegrators&lt;BR&gt;&lt;BR&gt;Disruption Fists</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Plasma Bombards OR&lt;BR&gt;&lt;BR&gt;Twin Heavy Disintegrators OR&lt;BR&gt;&lt;BR&gt;Disruption Fists</characteristic>
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;15cm&lt;BR&gt;&lt;BR&gt;(base contact)</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AP4+/AT5+&lt;BR&gt;&lt;BR&gt;AP4+/AT4+&lt;BR&gt;&lt;BR&gt;(assault weapons) MW</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">Indirect Fire&lt;BR&gt;&lt;BR&gt;MW&lt;BR&gt;&lt;BR&gt;EA(+1)</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour, Invulnerable Save. Each unit carries two of the listed weapons (a pair of one, or one each of two); choose before the game. (Fan-made, not on the EpicAU wiki: Terminators with two wounds' worth of protection and less close combat punch, as in Legions Imperialis.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour, Invulnerable Save. A Saturnine Terminator unit must select two weapons (the same one twice, or two different ones) before the start of the game.</characteristic>
       </characteristics>
     </profile>
     <profile id="b80f-d78f-922d-f973" name="Scimitar Jetbike" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43924,7 +43924,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">2 x AT4+/AA5+&lt;BR&gt;&lt;BR&gt;AP5+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with an Arcus Missile Launcher built from the Whirlwind Scorpius launcher and the Hellstrike Missile Pod, firing direct anti-tank or Skyspear anti-aircraft missiles.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour</characteristic>
       </characteristics>
     </profile>
     <profile id="967e-9469-a22f-7b42" name="Sicaran Battle Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43966,7 +43966,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">30cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">3 x AP3+/AT6+&lt;BR&gt;&lt;BR&gt;AP5+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour. (Fan-made, not on the EpicAU wiki: the Sicaran Battle Tank with a Punisher Rotary Cannon matching the Knight Avenger Gatling Cannon against infantry, as in Legions Imperialis, and one step weaker against armour.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour</characteristic>
       </characteristics>
     </profile>
     <profile id="a96a-96f6-1f27-b59e" name="Sicaran Venator" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -44132,7 +44132,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">(15cm)</characteristic>
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">(small arms)</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. Tunnels to battle: a formation carried entirely in Termites may be held off the table and arrive as if it had the Teleport rule. (Fan-made, not on the EpicAU wiki: a Land Raider's capacity, as in Legions Imperialis.)</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. A formation transported entirely in Termites may deploy as if it had the Teleport special rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="5feb-0b68-d4b7-4882" name="Terror Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">

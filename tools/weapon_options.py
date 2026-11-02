@@ -63,6 +63,7 @@ WEAPON_OPTIONS = {
     # Solar Auxilia
     'Solar Auxilia Rapier Platform': [G('Weapon', *RAPIER)],
     'Veletaris Storm Section': [G('Weapons', O('Volkite Chargers', ff='4+'), O('Power Axes', ff='6+'))],
+    'Cyclops Demolition Vehicle': [G('Charge', 'Demolition Charge', 'Incineration Charge')],
     # Mechanicum Taghmata
     'Tarantula Platform': [G('Weapon', O('TL Lascannon', ff='6+'), O('TL Heavy Bolter', ff='5+'))],
     'Krios Battle Tank': [G('Weapon', 'Lightning Cannon', 'Pulsar Fusil')],

@@ -92,6 +92,9 @@ NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that 
 # Punisher and Arcus: the Sicaran Battle Tank's hull with main guns derived from existing EpicAU weapons. The Legion
 # Tarantulas use the Solar Auxilia Tarantula hulls with the Mechanicum Tarantula's weapon choice. The Ascalon, Araknae,
 # Saturnine Terminators and Dreadnought and the Termite convert their Legions Imperialis rules against EpicAU units.
+# Solar Auxilia: the Marauder Bomber and Thunderbolt come from the NetEA Imperial Guard lists, the Marauder Destroyer
+# from the Epic-UK Imperial Guard codex (version 011026), and the Malcador Annihilator from the EpicAU Imperial Militia
+# sheet on the Solar Auxilia Malcador's hull; the rest convert their Legions Imperialis rules against EpicAU units.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -162,6 +165,69 @@ EXTRA_UNITS = {
         'weapons': [{'name': 'Twin-linked Bolters', 'range': '(15cm)', 'firepower': '(small arms)'}],
         'notes': 'Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. A '
                  'formation transported entirely in Termites may deploy as if it had the Teleport special rule.'}],
+    'Solar Auxilia': [{
+        'name': 'Imperial Navy Marauder Bomber', 'type': 'AC', 'speed': 'Bomber', 'armour': '4+', 'cc': '', 'ff': '',
+        'weapons': [{'name': 'Twin Lascannon', 'range': '45cm', 'firepower': 'AT4+/AA4+, FxF'},
+                    {'name': 'Bomb Racks', 'range': '15cm', 'firepower': '3 BP, FxF'},
+                    {'name': '2 x Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'}],
+        'notes': ''}, {
+        'name': 'Imperial Navy Thunderbolt Fighter', 'type': 'AC', 'speed': 'Fighter-Bomber', 'armour': '6+',
+        'cc': '', 'ff': '',
+        'weapons': [{'name': 'Multilaser', 'range': '30cm', 'firepower': 'AP5+/AT6+/AA5+, FxF'},
+                    {'name': 'Underwing Rockets', 'range': '30cm', 'firepower': 'AT4+, FxF'},
+                    {'name': 'Storm Bolters', 'range': '15cm', 'firepower': 'AP4+/AA5+, FxF'}],
+        'notes': ''}, {
+        'name': 'Imperial Navy Marauder Destroyer', 'type': 'AC', 'speed': 'Bomber', 'armour': '3+', 'cc': '', 'ff': '',
+        'weapons': [{'name': 'Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'},
+                    {'name': 'Twin Assault Cannon', 'range': '15cm', 'firepower': 'AA4+, Rear Arc'},
+                    {'name': '3 x Twin Autocannon', 'range': '45cm', 'firepower': 'AP4+/AT5+, FxF'},
+                    {'name': '2 x Underwing Rockets', 'range': '30cm', 'firepower': 'AT4+, FxF'}],
+        'notes': ''}, {
+        'name': 'Imperial Navy Marauder Colossus', 'type': 'AC', 'speed': 'Bomber', 'armour': '4+', 'cc': '', 'ff': '',
+        'weapons': [{'name': 'Colossus Bomb', 'range': '15cm', 'firepower': '3 BP, MW, Single Shot, FxF'},
+                    {'name': 'Hellstrike Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'},
+                    {'name': '2 x Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'}],
+        'notes': ''}, {
+        'name': 'Imperial Navy Marauder Pathfinder', 'type': 'AC', 'speed': 'Bomber', 'armour': '4+', 'cc': '',
+        'ff': '',
+        'weapons': [{'name': '2 x Hellstrike Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'},
+                    {'name': '2 x Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'}],
+        'notes': 'Auger Array: friendly formations making Indirect Fire attacks against an enemy formation within '
+                 '30cm of a Marauder Pathfinder on the table get the +1 to hit for Sustained Fire.'}, {
+        'name': 'Malcador Annihilator', 'type': 'AV', 'speed': '15cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Twin Lascannon', 'range': '45cm', 'firepower': 'AT4+'},
+                    {'name': '2 x Lascannon', 'range': '45cm', 'firepower': 'AT5+'},
+                    {'name': 'Demolisher Cannon', 'range': '30cm AND (15cm)',
+                     'firepower': 'AP3+/AT4+, Disrupt, Ignore Cover AND (small arms) Ignore Cover'}],
+        'notes': 'Reinforced Armour, Thick Rear Armour.'}, {
+        'name': 'Malcador Vanquisher', 'type': 'AV', 'speed': '15cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Vanquisher Cannon', 'range': '75cm', 'firepower': 'AP4+/AT2+'},
+                    {'name': '2 x Autocannons', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
+                    {'name': 'Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
+        'notes': 'Reinforced Armour, Thick Rear Armour.'}, {
+        'name': 'Leman Russ Annihilator', 'type': 'AV', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Annihilator Twin Lascannon', 'range': '45cm', 'firepower': 'AT3+'},
+                    {'name': 'Lascannon', 'range': '45cm', 'firepower': 'AT5+'}],
+        'notes': 'Reinforced Armour.'}, {
+        'name': 'Hellhammer', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '6+', 'ff': '4+',
+        'weapons': [{'name': '3 x TL Heavy Bolters', 'range': '30cm', 'firepower': 'AP4+'},
+                    {'name': 'Autocannon', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
+                    {'name': '2 x Lascannon', 'range': '45cm', 'firepower': 'AT5+'},
+                    {'name': 'Hellhammer Cannon', 'range': '45cm', 'firepower': 'AP3+/AT3+, Ignore Cover'},
+                    {'name': 'Demolisher Cannon', 'range': '30cm',
+                     'firepower': 'AP3+/AT4+ Ignore Cover AND (small arms) Ignore Cover, FxF'}],
+        'notes': 'DC 3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard '
+                 'hit on a 6+.'}, {
+        'name': 'Aethon Heavy Sentinel', 'type': 'LV', 'speed': '20cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Multilaser', 'range': '30cm', 'firepower': 'AP5+/AT6+'},
+                    {'name': 'Sentinel Missile Launcher', 'range': '45cm', 'firepower': 'AP5+/AT6+'}],
+        'notes': 'Scout, Walker.'}, {
+        'name': 'Cyclops Demolition Vehicle', 'type': 'LV', 'speed': '25cm', 'armour': '6+', 'cc': '6+', 'ff': '-',
+        'weapons': [{'name': 'Demolition Charge OR', 'range': '5cm', 'firepower': '1 BP, MW, Single Shot'},
+                    {'name': 'Incineration Charge', 'range': '5cm', 'firepower': '1 BP, Ignore Cover, Single Shot'}],
+        'notes': 'Remote Detonation: a Cyclops may only fire its charge while within 30cm of a friendly Leader, '
+                 'Commander or Supreme Commander, and is destroyed once it has fired. A Cyclops must select either a '
+                 'Demolition Charge OR Incineration Charge before the start of the game.'}],
     'Legio Titanicus': [{
         'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': 'Quake Cannon OR Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
@@ -214,7 +280,11 @@ FAN_TITAN_WEAPONS = {
 FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion Tarantula', 'Legion Tarantula Hyperios',
              'Ascalon', 'Araknae Weapons Platform', 'Saturnine Terminators', 'Saturnine Dreadnought',
              'Termite Assault Drill', 'Warbringer Nemesis Titan', 'Warmaster Heavy Battle Titan',
-             'Dire Wolf Heavy Scout Titan', 'Warlord-Sinister Battle Titan', 'Warmaster Iconoclast Titan'}
+             'Dire Wolf Heavy Scout Titan', 'Warlord-Sinister Battle Titan', 'Warmaster Iconoclast Titan',
+             'Imperial Navy Marauder Bomber', 'Imperial Navy Thunderbolt Fighter', 'Imperial Navy Marauder Destroyer',
+             'Imperial Navy Marauder Colossus', 'Imperial Navy Marauder Pathfinder', 'Malcador Annihilator',
+             'Malcador Vanquisher', 'Leman Russ Annihilator', 'Hellhammer', 'Aethon Heavy Sentinel',
+             'Cyclops Demolition Vehicle'}
 
 
 def star(name, fan):
@@ -836,10 +906,13 @@ class Builder:
                 for j, o in enumerate(p['opts']):
                     oid = gid('se', self.cat_id, pp, j)
                     s2, g2 = self.parts(f'{pp}/{j}', o['parts'])
-                    opts.append(ordered('selectionEntry', {'id': oid, 'name': o['label'], 'hidden': 'false',
+                    fan = any(q.get('new') for q in o['parts'])
+                    opts.append(ordered('selectionEntry', {'id': oid, 'name': star(o['label'], fan), 'hidden': 'false',
                                                            'collective': 'false', 'import': 'true', 'type': 'upgrade'},
                                         constraints=[constraint(gid('con', oid, 'max'), 'max', 1)],
                                         selectionEntries=s2, selectionEntryGroups=g2, costs=cost(o['cost'])))
+                    if fan:  # fan-made options appear with 'Allow fan-made units'
+                        self.gate(opts[-1], show=self.new_show(), cmax=gid('con', oid, 'max'))
                 grps.append(ordered('selectionEntryGroup',
                                     {'id': gid_, 'name': p['label'], 'hidden': 'false', 'collective': 'false',
                                      'import': 'true', 'defaultSelectionEntryId': opts[0].attrs['id']},

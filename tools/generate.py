@@ -85,6 +85,10 @@ COST_ID = {s: gid('cost', s) for s in TRANSPORT_SCHEMES}
 BULKY = re.compile(r'Terminator|Dreadnought|Ogryn|Thallax|Ursarax|Myrmidon|Aquilon')
 NA_CAT = 'Not available with the chosen Configuration'  # flags selections a Configuration choice has ruled out
 NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that shows fan-made units roster-wide
+# How a list's Configuration choice reads (an army may give its own as 'choice'). tag: each option names the primary
+# army for ally checks, as the Legion choice sets the allies.
+LEGION_CHOICE = dict(label='Legion', none='None (core list)', none_rule='Core list',
+                     none_text='The core Legion list, with no unique Legion.', allegiance_text='{} Legion.', tag=True)
 
 # Units not present on the wiki reference sheet: the Sabre from Departmento Munitorum, the Kratos from fan rules
 # posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09), and
@@ -95,6 +99,8 @@ NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that 
 # Solar Auxilia: the Marauder Bomber and Thunderbolt come from the NetEA Imperial Guard lists, the Marauder Destroyer
 # from the Epic-UK Imperial Guard codex (version 011026), and the Malcador Annihilator from the EpicAU Imperial Militia
 # sheet on the Solar Auxilia Malcador's hull; the rest convert their Legions Imperialis rules against EpicAU units.
+# The Dark Mechanicum Stalkers and Harpax convert the Legions Imperialis profiles in the BSData Dark Mechanicum
+# catalogue (https://github.com/BSData/Horus-Heresy-Legions-Imperialis) against the EpicAU Mechanicum automata.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -228,6 +234,41 @@ EXTRA_UNITS = {
         'notes': 'Remote Detonation: a Cyclops may only fire its charge while within 30cm of a friendly Leader, '
                  'Commander or Supreme Commander, and is destroyed once it has fired. A Cyclops must select either a '
                  'Demolition Charge OR Incineration Charge before the start of the game.'}],
+    'Mechanicum Taghmata': [{
+        'name': 'Scintillax', 'type': 'AV', 'speed': '20cm', 'armour': '4+', 'cc': '4+', 'ff': '5+',
+        'weapons': [{'name': 'Scintillax Lascutter', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'},
+                    {'name': 'Exo-planar Cannon OR', 'range': '15cm', 'firepower': 'AP4+, Ignore Cover'},
+                    {'name': 'Storm Laser', 'range': '30cm', 'firepower': 'AP5+/AT5+'}],
+        'notes': 'Invulnerable Save, Walker, Cortex Controller, Leader. A Scintillax must select either an Exo-planar '
+                 'Cannon OR a Storm Laser before the start of the game.'}, {
+        'name': 'Errax', 'type': 'AV', 'speed': '25cm', 'armour': '4+', 'cc': '3+', 'ff': '5+',
+        'weapons': [{'name': 'Errax Lascutters OR', 'range': '(base contact)', 'firepower': '(assault weapons) MW'},
+                    {'name': 'Errax Meltagun', 'range': '15cm', 'firepower': 'MW5+'},
+                    {'name': 'Stalker Maxima Bolters', 'range': '15cm', 'firepower': 'AP4+'}],
+        'notes': 'Cybernetica Cortex, Fearless, Invulnerable Save, Walker. An Errax must select either Errax '
+                 'Lascutters OR an Errax Meltagun before the start of the game.'}, {
+        'name': 'Tenebrax', 'type': 'LV', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Storm Laser Flenser', 'range': '45cm', 'firepower': 'AP4+/AT5+'},
+                    {'name': 'Stalker Volkite Culverins OR', 'range': '30cm', 'firepower': 'AP4+, Disrupt'},
+                    {'name': 'Exo-planar Cannon OR', 'range': '15cm', 'firepower': 'AP4+, Ignore Cover'},
+                    {'name': 'Stalker Maxima Bolters', 'range': '15cm', 'firepower': 'AP4+'}],
+        'notes': 'Cybernetica Cortex, Fearless, Walker. A Tenebrax must select Stalker Volkite Culverins OR an Exo-planar '
+                 'Cannon OR Stalker Maxima Bolters before the start of the game.'}, {
+        'name': 'Serperos', 'type': 'WE', 'speed': '20cm', 'armour': '3+', 'cc': '4+', 'ff': '4+',
+        'weapons': [{'name': 'Storm Laser Array OR', 'range': '30cm', 'firepower': '2 x AP4+/AT5+'},
+                    {'name': 'Exo-planar Bombard', 'range': '30cm', 'firepower': '2 x AP4+, Ignore Cover'},
+                    {'name': 'Serperos Lascutters OR', 'range': '(base contact)',
+                     'firepower': '(assault weapons) EA(+1), MW'},
+                    {'name': 'Irradiation Engine', 'range': '15cm', 'firepower': 'MW4+, Ignore Cover'}],
+        'notes': 'DC2, 1 Void Shield, Cybernetica Cortex, Fearless, Reinforced Armour, Walker. Construct Shield: its '
+                 'Void Shield is never repaired, in the end phase or by a regroup. A Serperos must select a Storm Laser '
+                 'Array OR an Exo-planar Bombard, and Serperos Lascutters OR an Irradiation Engine, before the start '
+                 'of the game. Critical Hit: Unit is destroyed.'}, {
+        'name': 'Harpax', 'type': 'INF', 'speed': '30cm', 'armour': '6+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Exo-planar Repeaters OR', 'range': '15cm', 'firepower': 'AP5+, Ignore Cover'},
+                    {'name': 'Harpax Lascutters', 'range': '(base contact)', 'firepower': '(assault weapons) MW'}],
+        'notes': 'Jump Packs, Scout. A Harpax unit must select either Exo-planar Repeaters OR Harpax Lascutters '
+                 'before the start of the game.'}],
     'Legio Titanicus': [{
         'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': 'Quake Cannon OR Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
@@ -284,7 +325,7 @@ FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion T
              'Imperial Navy Marauder Bomber', 'Imperial Navy Thunderbolt Fighter', 'Imperial Navy Marauder Destroyer',
              'Imperial Navy Marauder Colossus', 'Imperial Navy Marauder Pathfinder', 'Malcador Annihilator',
              'Malcador Vanquisher', 'Leman Russ Annihilator', 'Hellhammer', 'Aethon Heavy Sentinel',
-             'Cyclops Demolition Vehicle'}
+             'Cyclops Demolition Vehicle', 'Scintillax', 'Errax', 'Tenebrax', 'Serperos', 'Harpax'}
 
 
 def star(name, fan):
@@ -783,6 +824,19 @@ def swap_matches(frm, unit):
     return unit in frm if isinstance(frm, tuple) else unit == frm
 
 
+def joined(kind, *parts):
+    """One condition group of `kind` ('and'/'or') over several conditions/conditionGroups elements."""
+    conds = [c for p in parts if p.tag == 'conditions' for c in p.children]
+    groups = [g for p in parts if p.tag == 'conditionGroups' for g in p.children]
+    kids = ([X('conditions', children=conds)] if conds else []) + ([X('conditionGroups', children=groups)] if groups else [])
+    return X('conditionGroups', children=[X('conditionGroup', {'type': kind}, kids)])
+
+
+def both(a, b):
+    """Show pair (on, off) true only while both (on, off) pairs are on."""
+    return joined('and', a[0], b[0]), joined('or', a[1], b[1])
+
+
 class Builder:
     def __init__(self, army, cat_id, profiles, allied_force_id):
         self.army, self.cat_id, self.prof, self.allied_force_id = army, cat_id, profiles, allied_force_id
@@ -1206,9 +1260,9 @@ class Builder:
                      infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
                      selectionEntries=ses, selectionEntryGroups=grps + ([up] if up else []),
                      entryLinks=extra, costs=cost(f['cost']))
-        if f.get('show_for') and f.get('new'):
-            raise ValueError(f'{f["name"]}: a fan-made Legion formation would need both conditions together')
-        show = self.new_show() if f.get('new') else self.legion_show(f.get('show_for'))
+        show = self.new_show() if f.get('new') else None
+        if f.get('show_for'):
+            show = both(show, self.legion_show(f['show_for'])) if show else self.legion_show(f['show_for'])
         if show or f.get('hide_for'):
             self.gate(el, show=show, hide=self.legion_hide(f.get('hide_for')))
         return el
@@ -1227,7 +1281,7 @@ class Builder:
         name = self.army['name']
         mods = []
         key = f'Primary army: {name}'
-        if key in CAT and not self.army.get('legions'):
+        if key in CAT and not (self.army.get('legions') and self.choice()['tag']):
             mods.append(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[key]}, [self.in_primary()]))
         not_allowed = [k for k, (c, d) in ALLY_RULES.items() if name not in c | d]
         disruptive = [k for k, (c, d) in ALLY_RULES.items() if name in d]
@@ -1294,8 +1348,14 @@ class Builder:
             for off in offs:
                 mods.add(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[NA_CAT]}, [off]))
 
+    def choice(self):
+        """How the list's Configuration choice reads: the Legion, or another list's allegiance."""
+        return self.army.get('choice', LEGION_CHOICE)
+
     def legion_entry(self):
-        """The required Legion choice: 'None' keeps the core list; a Legion adds and replaces formations."""
+        """The required Configuration choice: the first option keeps the core list; the others add and replace
+        formations. For Legion Astartes it picks the Legion, which also sets the army's allies."""
+        c = self.choice()
         eid = gid('legion-choice', self.cat_id)
         g = gid('seg', eid, 'legion')
         core_c, core_d = self.army['core_allies']
@@ -1303,9 +1363,10 @@ class Builder:
         opts = []
         for L in choices:
             oid = self.legion_option_id(L['name'])
-            lines = [f'{L["allegiance"]} Legion.'] if L['allegiance'] else ['The core Legion list, with no unique Legion.']
+            lines = [c['allegiance_text'].format(L['allegiance'])] if L['allegiance'] else [c['none_text']]
             if L['name']:
-                adds = [f['name'] for f in self.army['formations'] if L['name'] in (f.get('show_for') or [])]
+                adds = [star(f['name'], f.get('new')) for f in self.army['formations']
+                        if L['name'] in (f.get('show_for') or [])]
                 drops = [f['name'] for f in self.army['formations'] if L['name'] in f.get('hide_for', [])]
                 lines.append('Adds: ' + '; '.join(adds) + '.')
                 if drops:
@@ -1315,19 +1376,21 @@ class Builder:
                 if ups:
                     lines.append('Uses its own version of the ' + ', '.join(ups) + ' upgrade.')
             lines += L['notes']
-            lines.append('Cohesive allies: ' + (', '.join(L['cohesive']) or 'none') + '.')
-            lines.append('Disruptive allies: ' + (', '.join(L['disruptive']) or 'none') + '.')
-            key = f'Primary army: Legion Astartes ({L["name"] or "core list"})'
-            tag = [X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[key]}, [self.in_primary()])]
-            opts.append(ordered('selectionEntry', {'id': oid, 'name': L['name'] or 'None (core list)', 'hidden': 'false',
+            tag = []
+            if c['tag']:
+                lines.append('Cohesive allies: ' + (', '.join(L['cohesive']) or 'none') + '.')
+                lines.append('Disruptive allies: ' + (', '.join(L['disruptive']) or 'none') + '.')
+                key = f'Primary army: {self.army["name"]} ({L["name"] or "core list"})'
+                tag = [X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[key]}, [self.in_primary()])]
+            opts.append(ordered('selectionEntry', {'id': oid, 'name': L['name'] or c['none'], 'hidden': 'false',
                                                    'collective': 'false', 'import': 'true', 'type': 'upgrade'},
                                 modifiers=tag, constraints=[constraint(gid('con', oid, 'max'), 'max', 1)],
-                                rules=[rule_el(gid('r', oid), L['name'] or 'Core list', '\n'.join(lines))]))
-        group = ordered('selectionEntryGroup', {'id': g, 'name': 'Legion', 'hidden': 'false', 'collective': 'false',
+                                rules=[rule_el(gid('r', oid), L['name'] or c['none_rule'], '\n'.join(lines))]))
+        group = ordered('selectionEntryGroup', {'id': g, 'name': c['label'], 'hidden': 'false', 'collective': 'false',
                                                 'import': 'true', 'defaultSelectionEntryId': opts[0].attrs['id']},
                         constraints=[constraint(gid('con', g, 'min'), 'min', 1),
                                      constraint(gid('con', g, 'max'), 'max', 1)], selectionEntries=opts)
-        return ordered('selectionEntry', {'id': eid, 'name': 'Legion', 'hidden': 'false', 'collective': 'false',
+        return ordered('selectionEntry', {'id': eid, 'name': c['label'], 'hidden': 'false', 'collective': 'false',
                                           'import': 'true', 'type': 'upgrade'},
                        constraints=[constraint(gid('con', eid, 'min'), 'min', 1),
                                     constraint(gid('con', eid, 'max'), 'max', 1)],
@@ -1393,7 +1456,8 @@ class Builder:
                              constraints=sc))
         links += extra
         if a.get('legions') or has_new(a):
-            # BattleScribe lists categories in this order; Configuration (Legion choice, Allow fan-made units) goes first.
+            # BattleScribe lists categories in this order; Configuration (Legion or allegiance choice, Allow fan-made
+            # units) goes first.
             links.insert(0, X('categoryLink', {'id': gid('cl', fid, 'Configuration'), 'name': 'Configuration',
                                                'hidden': 'false', 'targetId': CAT['Configuration'], 'primary': 'false'}))
             na = gid('cl', fid, NA_CAT)
@@ -1411,7 +1475,7 @@ class Builder:
         if a['supports_per_line']:
             lines.append(f'{a["supports_per_line"]} Support Detachments may be taken per Line Detachment.')
         lines += a['notes']
-        if (a['cohesive'] or a['disruptive']) and not a.get('legions'):
+        if (a['cohesive'] or a['disruptive']) and not (a.get('legions') and self.choice()['tag']):
             lines.append('Cohesive allies: ' + (', '.join(a['cohesive']) or 'none') + '.')
             lines.append('Disruptive allies: ' + (', '.join(a['disruptive']) or 'none') + '.')
         if allied:

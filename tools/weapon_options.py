@@ -72,6 +72,12 @@ WEAPON_OPTIONS = {
     'Thanatar Battle-Automata': [G('Weapon', 'Hellex Plasma Mortar', 'Sollex Heavy Lascannon')],
     'Ordinatus Majoris': [G('Main gun', 'Sonic Disruptor', '6 x Golgothan Missiles', 'Nova Cannon')],
     'Ordinatus Minoris': [G('Main gun', 'Bellacosa Volcano Cannon', 'Ulator Sonic Destroyer')],
+    'Scintillax': [G('Weapon', 'Exo-planar Cannon', 'Storm Laser')],
+    'Errax': [G('Weapon', 'Errax Lascutters', 'Errax Meltagun')],
+    'Tenebrax': [G('Weapon', 'Stalker Volkite Culverins', 'Exo-planar Cannon', 'Stalker Maxima Bolters')],
+    'Serperos': [G('Weapon 1', 'Storm Laser Array', 'Exo-planar Bombard'),
+                 G('Weapon 2', 'Serperos Lascutters', 'Irradiation Engine')],
+    'Harpax': [G('Weapons', 'Exo-planar Repeaters', 'Harpax Lascutters')],
     # Imperial Militia
     'Auxilia Rapier Platform': [G('Weapon', *RAPIER)],
     'Militia Auxiliary': [G('Weapons', O('Rifles', ff='5+'), O('Pistol and Combat Weapon', ff='6+'))],

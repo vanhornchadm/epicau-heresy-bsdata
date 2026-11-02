@@ -119,6 +119,7 @@ SOLAR_AUXILIA = ARMY(
 # ---------------------------------------------------------------- Mechanicum Taghmata
 MECH_TRANSPORT = Or(Opt('Triaros Armoured Conveyor', Carry(4, 'Triaros Armoured Conveyor', 75)),
                     Opt('Mechanicum Land Raider', Carry(2, 'Mechanicum Land Raider', 75)), label='Transport')
+DARK_MECHANICUM = ['Dark Mechanicum']
 MECHANICUM = ARMY(
     'Mechanicum Taghmata', ['Mechanicum Taghmata', NAVY_SHEET], 3, '2+', 3, 4, 1 / 3,
     formations=[
@@ -143,6 +144,14 @@ MECHANICUM = ARMY(
         F('Imperial Navy Primaris-Lightning Wing', 'low', 225, [U(2, 'Imperial Navy Primaris-Lightning Strike Fighter')]),
         F('Super Heavy Tank Destroyer', 'low', 250, [U(1, 'Falchion')]),
         F('Ordinatus Majoris', 'low', 450, [U(1, 'Ordinatus Majoris')], maxn=1),
+        # Fan-made Dark Mechanicum formations, shown when the Dark Mechanicum allegiance is chosen.
+        dict(F('Errax Assault Stalker Cohort', 'line', 250, [U(5, 'Errax')], 'Errax, Scintillax', new=True),
+             show_for=DARK_MECHANICUM),
+        dict(F('Tenebrax Battle Stalker Cohort', 'support', 200, [U(5, 'Tenebrax')], 'Scintillax', new=True),
+             show_for=DARK_MECHANICUM),
+        dict(F('Harpax Scout Host', 'support', 100, [U(6, 'Harpax')], new=True), show_for=DARK_MECHANICUM),
+        dict(F('Serperos Heavy Stalker Maniple', 'low', 0, [U((2, 4), 'Serperos', 125)], 'Scintillax', new=True),
+             show_for=DARK_MECHANICUM),
     ],
     upgrades=[
         UP('Magos', parts=[Or(Opt('Archmagos Prime', U(1, 'Archmagos Prime'), cost=100),
@@ -157,6 +166,9 @@ MECHANICUM = ARMY(
         UP('Thanatar', parts=[U((1, 3), 'Thanatar Battle-Automata', 75)]),
         UP('Hyperios', parts=[Swap(1, 3, ('Tarantula Platform', 'Hyperios Platform', 50))]),
         UP('Scyllax', parts=[U((1, 4), 'Scyllax Guardian-Automata', 50)]),
+        UP('Errax', parts=[U((1, 4), 'Errax', 50)], new=True),
+        UP('Scintillax', 75, parts=[U(1, 'Scintillax')], new=True,
+           desc='Add 1 Scintillax, the Cortex Controller for the formation\'s Stalkers.'),
     ],
     cohesive=['Legion Astartes', 'Knight Household', 'Legio Titanicus'],
     disruptive=['Imperial Militia', 'Solar Auxilia'],
@@ -164,6 +176,15 @@ MECHANICUM = ARMY(
     notes=['A detachment may choose up to four upgrades, each only once, and only one transport option.',
            'Up to 1/3 of the army\'s points may be spent on Allies or Lords of War.',
            'Only one Archmagos Prime may be included in the army.'])
+# The required Allegiance choice: Loyalist keeps the list as it is; Dark Mechanicum adds its formations. Allies are
+# unchanged, so the army itself, not the choice, is checked as an ally.
+MECHANICUM['choice'] = dict(label='Allegiance', none='Loyalist', none_rule='Loyalist',
+                            none_text='The Mechanicum Taghmata, loyal to the Emperor.',
+                            allegiance_text='{} Mechanicum, sworn to Horus.', tag=False)
+MECHANICUM['core_allies'] = (MECHANICUM['cohesive'], MECHANICUM['disruptive'])
+MECHANICUM['legions'] = [dict(name=DARK_MECHANICUM[0], allegiance='Traitor', cohesive=MECHANICUM['cohesive'],
+                              disruptive=MECHANICUM['disruptive'],
+                              notes=['Its formations are fan-made: take "Allow fan-made units" to see them.'])]
 
 # ---------------------------------------------------------------- Legio Titanicus
 SCOUT_WEAPONS = [('Inferno Gun', 0), ('Vulcan Mega Bolter', 0), ('Plasma Blastgun', 0), ('Turbo Laser Destructor', 25)]

@@ -14,7 +14,7 @@ from xml.sax.saxutils import escape, quoteattr
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 from rules import RULES, ALIASES  # noqa: E402
-from spec_legion import legion_army, LEGIONS  # noqa: E402
+from spec_legion import legion_catalogue  # noqa: E402
 from spec_others import OTHER_ARMIES, TITAN_WEAPON_SLOTS  # noqa: E402
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(HERE)
@@ -38,12 +38,13 @@ WEAPON_CHARS = ['Range', 'Firepower', 'Notes']
 CATS = ['Line Detachment', 'Support Detachment', 'Lord of War', 'Daemonic Horde', 'Greater Daemon Horde',
         'Followers of Chaos', 'Special Selection', 'Allies & Lords of War', 'Supreme Commander', 'Spacecraft',
         'Primarch', 'Character', 'Configuration', 'Tactical Transport Space', 'Upgraded Unit']
-HIDDEN_CATS = {'Configuration', 'Tactical Transport Space', 'Upgraded Unit'}  # internal bookkeeping categories
+HIDDEN_CATS = {'Tactical Transport Space', 'Upgraded Unit'}  # internal bookkeeping categories
 CAT = {c: gid('cat', c) for c in CATS}
 SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': 'Lord of War',
             'horde': 'Daemonic Horde', 'greater': 'Greater Daemon Horde', 'followers': 'Followers of Chaos',
             'special': 'Special Selection'}
 RULE_ID = {name: gid('rule', name) for name in RULES}
+ANY = 1000  # constraint value standing in for "no limit" where a limit is switched on and off
 
 # Unit not present on the wiki reference sheet (stats from Departmento Munitorum).
 EXTRA_UNITS = {
@@ -76,6 +77,22 @@ class X:
             return f'{sp}<{self.tag}{attrs}/>'
         inner = '\n'.join(c.render(ind + 1) for c in kids)
         return f'{sp}<{self.tag}{attrs}>\n{inner}\n{sp}</{self.tag}>'
+
+    def iter_tag(self, tag):
+        for c in self.children:
+            if isinstance(c, X):
+                if c.tag == tag:
+                    yield c
+                yield from c.iter_tag(tag)
+
+    def list_child(self, tag, first=False):
+        """The child list element `tag`, created (first, or last) if missing."""
+        for c in self.children:
+            if isinstance(c, X) and c.tag == tag:
+                return c
+        el = X(tag)
+        self.children.insert(0, el) if first else self.children.append(el)
+        return el
 
     def empty_list(self):
         return self.tag.endswith('s') and self.tag not in ('characteristics',) and not self.children and \
@@ -181,7 +198,7 @@ def rules_in(text):
 
 
 class Catalogue:
-    """Collects shared profiles for one catalogue (or library)."""
+    """Collects shared profiles for one catalogue."""
 
     def __init__(self, scope):
         self.scope = scope
@@ -464,17 +481,32 @@ class Builder:
                        selectionEntries=ses, selectionEntryGroups=grps, costs=cost(u['cost']))
 
     def shared_upgrades(self):
-        return [self.upgrade_entry(self.upgrade_id(name), name, u, f'upgrade/{name}')
-                for name, u in self.army['upgrades'].items() if not self.formation_bound(u)]
+        specs = [(name, None, u) for name, u in self.army['upgrades'].items()]
+        specs += [(name, legions[0], u) for name, vs in self.army.get('upgrade_variants', {}).items()
+                  for legions, u in vs]
+        return [self.upgrade_entry(self.upgrade_id(name, key), name, u, f'upgrade/{name}' + (f'/{key}' if key else ''))
+                for name, key, u in specs if not self.formation_bound(u)]
 
-    def upgrade_id(self, name):
-        return gid('upgrade', self.cat_id, name)
+    def upgrade_id(self, name, key=None):
+        return gid('upgrade', self.cat_id, name, *([key] if key else []))
 
     def upgrade_link(self, owner, name):
-        """An entryLink to the shared upgrade, or an inline copy for formation-bound upgrades."""
+        """Links for an upgrade: the core version, plus any Legion versions shown only for their Legions."""
         if name not in self.army['upgrades']:
             raise KeyError(f'{self.army["name"]}: unknown upgrade {name!r} in {owner}')
-        u = self.army['upgrades'][name]
+        variants = self.army.get('upgrade_variants', {}).get(name, [])
+        hide = [legion for legions, _ in variants for legion in legions]
+        return [self.upgrade_link_one(owner, name, self.army['upgrades'][name], hide_for=hide)] + \
+            [self.upgrade_link_one(owner, name, u, key=legions[0], show_for=legions) for legions, u in variants]
+
+    def upgrade_link_one(self, owner, name, u, key=None, show_for=(), hide_for=()):
+        """An entryLink to the shared upgrade, or an inline copy for formation-bound upgrades."""
+        el = self.upgrade_link_el(owner + (f'/{key}' if key else ''), name, u, key)
+        if show_for or hide_for:
+            self.gate(el, show_for, hide_for, gid('con', el.attrs['id'], 'max'), 1)
+        return el
+
+    def upgrade_link_el(self, owner, name, u, key):
         if self.swap_part(u):
             if not self.variants or self.variants['name'] != name:
                 raise ValueError(f'{self.army["name"]}: swap upgrade {name!r} must be a single upgrade in {owner}')
@@ -485,7 +517,7 @@ class Builder:
                                       extra_cons=[constraint(gid('con', uid, 'max'), 'max', 1)])
         lid = gid('el', owner, name)
         return X('entryLink', {'id': lid, 'name': name, 'hidden': 'false', 'collective': 'false', 'import': 'true',
-                               'targetId': self.upgrade_id(name), 'type': 'selectionEntry'},
+                               'targetId': self.upgrade_id(name, key), 'type': 'selectionEntry'},
                  [X('constraints', children=[constraint(gid('con', lid, 'max'), 'max', 1)])])
 
     @staticmethod
@@ -498,10 +530,10 @@ class Builder:
         for chunk in [c.strip() for c in f['up'].split(',') if c.strip()]:
             names = [n.strip() for n in chunk.split(' OR ')]
             if len(names) == 1:
-                links.append(self.upgrade_link(fid, names[0]))
+                links += self.upgrade_link(fid, names[0])
             else:
                 sg = gid('seg', fid, chunk)
-                ses, els = self.split([self.upgrade_link(sg, n) for n in names])
+                ses, els = self.split([el for n in names for el in self.upgrade_link(sg, n)])
                 groups.append(ordered('selectionEntryGroup', {'id': sg, 'name': ' / '.join(names), 'hidden': 'false',
                                                               'collective': 'false', 'import': 'true'},
                                       constraints=[constraint(gid('con', sg, 'max'), 'max', 1)],
@@ -545,7 +577,8 @@ class Builder:
 
     # -- formations
     def formation(self, f):
-        fid = gid('formation', self.cat_id, f['slot'], f['name'])
+        key = [f['key']] if f.get('key') else []  # Legion versions share names with core formations
+        fid = gid('formation', self.cat_id, f['slot'], f['name'], *key)
         self.formation_id = fid
         primary = SLOT_CAT[f['slot']]
         cats = [cat_link(fid, primary, True)]
@@ -571,21 +604,90 @@ class Builder:
         rules = [rule_el(gid('r', fid), f['name'], f['note'])] if f['note'] else []
         self.variants = self.swap_context(fid, f)
         self.offered = set(part_units(f['units']))
-        ses, grps = self.parts(f'formation/{f["slot"]}/{f["name"]}', f['units'])
+        ses, grps = self.parts('/'.join(['formation', f['slot'], f['name']] + key), f['units'])
         tw = self.titan_weapons(fid, f)
         up = self.upgrades_group(fid, f)
-        extra = [self.upgrade_link(fid + '/extra', n) for n in f['extra_up']]
+        extra = [el for n in f['extra_up'] for el in self.upgrade_link(fid + '/extra', n)]
         if self.variants:
             if not self.variants['made']:
                 raise ValueError(f'{self.army["name"]}: {f["name"]} has nothing {self.variants["name"]} can upgrade')
             self.variants['desc'].text = self.variant_text()
         self.variants, self.offered = None, set()
-        return ordered('selectionEntry', {'id': fid, 'name': f['name'], 'hidden': 'false', 'collective': 'false',
-                                          'import': 'true', 'type': 'unit'},
-                       modifiers=mods, constraints=cons, rules=rules,
-                       infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
-                       selectionEntries=ses, selectionEntryGroups=grps + [g for g in (tw, up) if g],
-                       entryLinks=extra, costs=cost(f['cost']))
+        el = ordered('selectionEntry', {'id': fid, 'name': f['name'], 'hidden': 'false', 'collective': 'false',
+                                        'import': 'true', 'type': 'unit'},
+                     modifiers=mods, constraints=cons, rules=rules,
+                     infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
+                     selectionEntries=ses, selectionEntryGroups=grps + [g for g in (tw, up) if g],
+                     entryLinks=extra, costs=cost(f['cost']))
+        if f.get('show_for') or f.get('hide_for'):
+            cid = gid('con', fid, 'legion')
+            el.list_child('constraints').add(constraint(cid, 'max', ANY))
+            self.gate(el, f.get('show_for'), f.get('hide_for'), cid, ANY)
+        return el
+
+    # -- Legion choice
+    def legion_option_id(self, legion):
+        return gid('legion', self.cat_id, legion or 'None')
+
+    def legion_conditions(self, legions):
+        conds = [condition('atLeast', self.legion_option_id(l), 1, 'force', child=True) for l in legions]
+        if len(conds) == 1:
+            return X('conditions', children=conds)
+        return X('conditionGroups', children=[X('conditionGroup', {'type': 'or'}, [X('conditions', children=conds)])])
+
+    def gate(self, el, show_for, hide_for, cmax, allowed):
+        """Show `el` only for the Legions in show_for, or hide it for those in hide_for.
+
+        Hiding stops new selections; cmax (a max constraint on el) is also dropped to 0 so a selection left over
+        from another Legion choice is flagged. allowed is cmax's value while el is available."""
+        mods = el.list_child('modifiers', first=True)
+        if show_for:
+            el.attrs['hidden'] = 'true'
+            next(c for c in el.iter_tag('constraint') if c.attrs['id'] == cmax).attrs['value'] = '0'
+            for field, value in (('hidden', 'false'), (cmax, fmt(allowed))):
+                mods.add(X('modifier', {'type': 'set', 'field': field, 'value': value},
+                           [self.legion_conditions(show_for)]))
+        if hide_for:
+            for field, value in (('hidden', 'true'), (cmax, '0')):
+                mods.add(X('modifier', {'type': 'set', 'field': field, 'value': value},
+                           [self.legion_conditions(hide_for)]))
+
+    def legion_entry(self):
+        """The required Legion choice: 'None' keeps the core list; a Legion adds and replaces formations."""
+        eid = gid('legion-choice', self.cat_id)
+        g = gid('seg', eid, 'legion')
+        core_c, core_d = self.army['core_allies']
+        choices = [dict(name=None, allegiance=None, cohesive=core_c, disruptive=core_d, notes=[])] + self.army['legions']
+        opts = []
+        for L in choices:
+            oid = self.legion_option_id(L['name'])
+            lines = [f'{L["allegiance"]} Legion.'] if L['allegiance'] else ['The core Legion list, with no unique Legion.']
+            if L['name']:
+                adds = [f['name'] for f in self.army['formations'] if L['name'] in (f.get('show_for') or [])]
+                drops = [f['name'] for f in self.army['formations'] if L['name'] in f.get('hide_for', [])]
+                lines.append('Adds: ' + '; '.join(adds) + '.')
+                if drops:
+                    lines.append('Replaces or removes the core ' + '; '.join(drops) + '.')
+                ups = [n for n, vs in self.army.get('upgrade_variants', {}).items()
+                       for legions, _ in vs if L['name'] in legions]
+                if ups:
+                    lines.append('Uses its own version of the ' + ', '.join(ups) + ' upgrade.')
+            lines += L['notes']
+            lines.append('Cohesive allies: ' + (', '.join(L['cohesive']) or 'none') + '.')
+            lines.append('Disruptive allies: ' + (', '.join(L['disruptive']) or 'none') + '.')
+            opts.append(ordered('selectionEntry', {'id': oid, 'name': L['name'] or 'None (core list)', 'hidden': 'false',
+                                                   'collective': 'false', 'import': 'true', 'type': 'upgrade'},
+                                constraints=[constraint(gid('con', oid, 'max'), 'max', 1)],
+                                rules=[rule_el(gid('r', oid), L['name'] or 'Core list', '\n'.join(lines))]))
+        group = ordered('selectionEntryGroup', {'id': g, 'name': 'Legion', 'hidden': 'false', 'collective': 'false',
+                                                'import': 'true', 'defaultSelectionEntryId': opts[0].attrs['id']},
+                        constraints=[constraint(gid('con', g, 'min'), 'min', 1),
+                                     constraint(gid('con', g, 'max'), 'max', 1)], selectionEntries=opts)
+        return ordered('selectionEntry', {'id': eid, 'name': 'Legion', 'hidden': 'false', 'collective': 'false',
+                                          'import': 'true', 'type': 'upgrade'},
+                       constraints=[constraint(gid('con', eid, 'min'), 'min', 1),
+                                    constraint(gid('con', eid, 'max'), 'max', 1)],
+                       categoryLinks=[cat_link(eid, 'Configuration', True)], selectionEntryGroups=[group])
 
     def swap_context(self, fid, f):
         """Set up the formation's swap upgrade, if it has one (at most one, never inside an OR choice)."""
@@ -643,6 +745,9 @@ class Builder:
                                               'targetId': CAT['Supreme Commander'], 'primary': 'false'},
                              constraints=sc))
         links += extra
+        if a.get('legions'):
+            links.append(X('categoryLink', {'id': gid('cl', fid, 'Configuration'), 'name': 'Configuration',
+                                            'hidden': 'false', 'targetId': CAT['Configuration'], 'primary': 'false'}))
         desc = self.army_summary(allied)
         return ordered('forceEntry', {'id': fid, 'name': name, 'hidden': 'false'},
                        rules=[rule_el(gid('r', fid), 'Army List', desc)],
@@ -654,7 +759,7 @@ class Builder:
         if a['supports_per_line']:
             lines.append(f'{a["supports_per_line"]} Support Detachments may be taken per Line Detachment.')
         lines += a['notes']
-        if a['cohesive'] or a['disruptive']:
+        if (a['cohesive'] or a['disruptive']) and not a.get('legions'):
             lines.append('Cohesive allies: ' + (', '.join(a['cohesive']) or 'none') + '.')
             lines.append('Disruptive allies: ' + (', '.join(a['disruptive']) or 'none') + '.')
         if allied:
@@ -702,9 +807,9 @@ CAT_NS = 'http://www.battlescribe.net/schema/catalogueSchema'
 GST_NS = 'http://www.battlescribe.net/schema/gameSystemSchema'
 
 
-def header(cid, name, library=False):
+def header(cid, name):
     return {'id': cid, 'name': name, 'revision': 1, 'battleScribeVersion': BS_VERSION, 'authorName': AUTHOR,
-            'authorContact': '', 'authorUrl': SOURCE_URL, 'library': str(library).lower(), 'gameSystemId': GST_ID,
+            'authorContact': '', 'authorUrl': SOURCE_URL, 'library': 'false', 'gameSystemId': GST_ID,
             'gameSystemRevision': GST_REVISION[0]}
 
 
@@ -731,49 +836,34 @@ def build_gst():
     GST_REVISION[0] = write(os.path.join(OUT, GST_FILE), root, GST_NS)
 
 
-def build_catalogue(army, library=None):
+def build_catalogue(army):
     cid = gid('cat', army['name'])
-    profiles = library or Catalogue(army['name'])
+    profiles = Catalogue(army['name'])
     b = Builder(army, cid, profiles, gid('force', cid, 'allied'))
     formations = [b.formation(f) for f in army['formations']]
+    if army.get('legions'):
+        formations.insert(0, b.legion_entry())
     upgrades = b.shared_upgrades()
     forces = [b.force(False), b.force(True)]
-    links = None
-    if library:
-        links = [X('catalogueLink', {'id': gid('catlink', cid, 'lib'), 'name': LIB_NAME, 'targetId': LIB_ID,
-                                     'type': 'catalogue', 'importRootEntries': 'false'})]
     root = ordered('catalogue', header(cid, f'EpicAU - {army["name"]}'), forceEntries=forces,
                    selectionEntries=formations, sharedSelectionEntries=upgrades,
-                   sharedProfiles=None if library else sorted(profiles.profiles.values(), key=lambda p: (p.attrs['name'], p.attrs['id'])),
-                   catalogueLinks=links)
+                   sharedProfiles=sorted(profiles.profiles.values(), key=lambda p: (p.attrs['name'], p.attrs['id'])))
     write(os.path.join(OUT, f'EpicAU - {army["name"]}.cat'), root, CAT_NS)
     return b.missing
-
-
-LIB_NAME = 'EpicAU - Legion Astartes Library'
-LIB_ID = gid('cat', LIB_NAME)
 
 
 def main():
     os.makedirs(OUT, exist_ok=True)
     build_gst()
     missing = {}
-    lib = Catalogue('Legion Astartes Library')
-    armies = [legion_army()] + [legion_army(l) for l in LEGIONS]
+    armies = [legion_catalogue()] + OTHER_ARMIES
     for a in armies:
-        m = build_catalogue(a, lib)
-        if m:
-            missing[a['name']] = sorted(set(m))
-    root = ordered('catalogue', header(LIB_ID, LIB_NAME, library=True),
-                   sharedProfiles=sorted(lib.profiles.values(), key=lambda p: (p.attrs['name'], p.attrs['id'])))
-    write(os.path.join(OUT, f'{LIB_NAME}.cat'), root, CAT_NS)
-    for a in OTHER_ARMIES:
         m = build_catalogue(a)
         if m:
             missing[a['name']] = sorted(set(m))
     for k, v in missing.items():
         print(f'MISSING units in {k}: {v}')
-    print(f'Wrote {len(armies) + len(OTHER_ARMIES) + 1} catalogues and 1 game system to {OUT}')
+    print(f'Wrote {len(armies)} catalogues and 1 game system to {OUT}')
     return 1 if missing else 0
 
 

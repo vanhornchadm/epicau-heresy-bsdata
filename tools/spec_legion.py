@@ -1,4 +1,6 @@
 """Legion Astartes core list and the 18 unique Legion variations (EpicAU wiki)."""
+import json
+
 from dsl import U, Opt, Or, Mix, Swap, Fill, F, UP, ARMY
 
 LEGION_SHEETS = ['Legion Astartes', 'Loyalist Legions', 'Traitor Legions']
@@ -382,3 +384,33 @@ def legion_army(legion=None):
                 cohesive=cohesive, disruptive=disruptive, rules=LEGION_RULES, transport_space=TACTICAL_SPACE,
                 notes=['A line or support detachment may choose up to four upgrades; each upgrade only once and only one transport option.',
                        'Up to 1/3 of the army\'s points may be spent on Allies and/or Lords of War.'] + notes)
+
+
+def legion_catalogue():
+    """One Legion list where the Legion is a choice: core formations plus every Legion's, each shown only for
+    the Legions it belongs to. Core formations a Legion replaces or removes are hidden for that Legion."""
+    a = legion_army()
+    a['notes'] = a['notes'][:2] + ['Choose the Legion in the Legion entry; its allies and special formations '
+                                   'are listed there. "None" uses the core list only.']
+    core = {norm(f['name']): dict(f, show_for=None, hide_for=[]) for f in CORE_FORMATIONS}
+    extra = {}  # spec json -> formation shown for the Legions that share it
+    core_up = {u['name'] for u in CORE_UPGRADES}
+    a['upgrade_variants'] = {}
+    for legion, L in LEGIONS.items():
+        for r in L.get('remove', []):
+            core[norm(r)]['hide_for'].append(legion)
+        for f in L['formations']:
+            if norm(f['name']) in core:
+                core[norm(f['name'])]['hide_for'].append(legion)
+            key = json.dumps(f, sort_keys=True, default=str)
+            extra.setdefault(key, dict(f, show_for=[], hide_for=[], key=legion))['show_for'].append(legion)
+        for u in L.get('upgrades', []):
+            if u['name'] in core_up:
+                a['upgrade_variants'].setdefault(u['name'], []).append(([legion], u))
+            else:
+                a['upgrades'][u['name']] = u
+    a['formations'] = list(core.values()) + list(extra.values())
+    a['legions'] = [dict(name=legion, allegiance=L['allegiance'], cohesive=L['cohesive'], disruptive=L['disruptive'],
+                         notes=L.get('notes', [])) for legion, L in LEGIONS.items()]
+    a['core_allies'] = (CORE_COHESIVE, CORE_DISRUPTIVE)
+    return a

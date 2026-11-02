@@ -7,9 +7,7 @@ BattleScribe (v2.03 schema) data for the EpicAU community's Horus Heresy supplem
 | File | What it is |
 |---|---|
 | `Epic Armageddon - EpicAU Horus Heresy.gst` | Game system: costs, Unit/Weapon profile types, categories, shared special rules |
-| `EpicAU - Legion Astartes.cat` | Core Legion list (no unique Legion) |
-| `EpicAU - Legion Astartes - <Legion>.cat` ×18 | Core list overlaid with that Legion's formations, Primarch, allies and restrictions |
-| `EpicAU - Legion Astartes Library.cat` | Library of Legion unit profiles shared by the 19 Legion catalogues |
+| `EpicAU - Legion Astartes.cat` | The Legion list: the core formations plus all 18 Legions' formations, Primarchs, allies and restrictions, chosen with a Legion selection |
 | `EpicAU - Legio Custodes / Solar Auxilia / Mechanicum Taghmata / Legio Titanicus / Knight Household / Imperial Militia / Daemons Of The Ruinstorm.cat` | The other army lists |
 | `tools/` | The scraper, list specs and generator used to build the files |
 
@@ -21,6 +19,8 @@ Each catalogue provides two forces:
 
 - **`<Army>`**: the primary army.
 - **`<Army> (Allied Contingent)`**: add one of these from another catalogue for allies.
+
+In either Legion Astartes force, the required **Legion** entry picks the Legion, or "None (core list)". The choice shows that Legion's own formations and hides the core formations it replaces or removes. Space Wolves also get their own Centurion upgrade. The description on each Legion option lists what it adds and replaces, plus its allies. If you change the Legion after adding formations, formations that no longer belong are flagged.
 
 These rules are enforced:
 

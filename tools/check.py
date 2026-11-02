@@ -17,14 +17,12 @@ def ids_and_refs(path):
     return root, ids, refs
 gst = glob.glob(os.path.join(D, '*.gst'))[0]
 _, gids, grefs = ids_and_refs(gst)
-lib = [p for p in glob.glob(os.path.join(D, '*.cat')) if 'Library' in p][0]
-_, lids, _ = ids_and_refs(lib)
 problems = 0
 for p in sorted(glob.glob(os.path.join(D, '*.cat'))):
     root, ids, refs = ids_and_refs(p)
     dup = [i for i, n in ids.items() if n > 1]
     clash = [i for i in ids if i in gids]
-    pool = set(ids) | set(gids) | (set(lids) if 'Legion Astartes' in p else set())
+    pool = set(ids) | set(gids)
     for k in ids:  # characteristic types live in gst
         pass
     unresolved = sorted({(t, a, r) for t, a, r in refs if r not in pool})

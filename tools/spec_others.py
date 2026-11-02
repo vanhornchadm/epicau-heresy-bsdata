@@ -167,11 +167,13 @@ TITANICUS = ARMY(
           note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
                'costs 750 pts with weapons. Here it takes a Quake or Volcano Cannon on the carapace and 2 arm weapons at '
                'EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade.'),
-        F('Warmaster Titan', 'line', 1275, [U(1, 'Warmaster Heavy Battle Titan')],
+        F('Warmaster Titan', 'line', 1050, [U(1, 'Warmaster Heavy Battle Titan')],
           'Legate OR Veteran Princeps, Sacred Icon', maxn=1,
           note='Fan rules, not part of EpicAU: adapted from the Epic-UK Adeptus Titanicus codex (version 080925), where it '
                'is a 0-1 Support Titan costing 1500 pts with weapons and is meant mainly for friendly games. Here its '
-               'carapace weapon is chosen at EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade.'),
+               'carapace weapon is chosen at EpicAU weapon costs. It has built-in AA guns, so no Air Defence upgrade. '
+               'Priced between a fully armed Warlord and the 1350 pt Emperor-class Titans, which are tougher and better '
+               'armed.'),
         F('Emperor Class Titan', 'low', 1350,
           [Or(Opt('Imperator', U(1, 'Imperator Support Titan (experimental)')),
               Opt('Warmonger', U(1, 'Warmonger Support Titan (experimental)')))], 'Legate OR Veteran Princeps'),

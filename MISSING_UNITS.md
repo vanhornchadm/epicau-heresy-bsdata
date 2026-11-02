@@ -1,32 +1,9 @@
 # Legions Imperialis units still to port
 
-2 Legions Imperialis units are not yet in the catalogues. Every Legion Astartes, Solar Auxilia, Mechanicum and Titan unit is covered.
-
-## Solar Auxilia
-
-None left.
-
-## Mechanicum
-
-None left.
-
-## Dark Mechanicum
-
-None left. They're an allegiance of the Mechanicum Taghmata list.
-
-## Knights (2)
-
-No Epic rules found.
-
-- [ ] Acastus Knight Asterius
-- [ ] Knight Moirax
-
-## Titans
-
-None left.
+Every Legions Imperialis Legion Astartes, Solar Auxilia, Mechanicum, Dark Mechanicum, Knight and Titan unit is now in the catalogues.
 
 ## Related notes
 
 - **Part of EpicAU but missing here:** the Dominus Knight-Castellan and Knight-Valiant. Their stats are on the wiki reference sheets, but neither the wiki nor Departmento Munitorum gives them a formation. The README lists them as not included.
 - **Covered another way:** the Dreadnought Drop Pod and Deathstorm Drop Pod. EpicAU's Drop Pod already carries Dreadnoughts and has a Deathstorm Bombardment.
-- Every remaining unit needs stats converted from Legions Imperialis, as was done for the fan-made Legion and Solar Auxilia units. Their Legions Imperialis profiles are in the [BSData Legions Imperialis](https://github.com/BSData/Horus-Heresy-Legions-Imperialis) data: the Knights library catalogue.
+- The fan-made units are converted from the [BSData Legions Imperialis](https://github.com/BSData/Horus-Heresy-Legions-Imperialis) data. The README lists each conversion.

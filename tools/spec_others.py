@@ -264,8 +264,10 @@ KNIGHTS = ARMY(
           'Noble, Enhanced Forge, Rally the Troops'),
         F('Armiger Knights', 'support', 200,
           [Or(Opt('Armiger Knight-Warglaives', U(5, 'Armiger Knight-Warglaive')),
-              Opt('Armiger Knight-Helverins', U(5, 'Armiger Knight-Helverin')))], 'Aspirants', maxn=1, per=2000),
+              Opt('Armiger Knight-Helverins', U(5, 'Armiger Knight-Helverin')),
+              Opt('Knight Moiraxes', U(5, 'Knight Moirax', new=True), cost=25))], 'Aspirants', maxn=1, per=2000),
         F('Acastus Knight Porphyrion', 'low', 0, [U((1, 2), 'Acastus Knight Porpyhrion', 250)], 'Noble'),
+        F('Acastus Knight Asterius', 'low', 0, [U((1, 2), 'Acastus Knight Asterius', 260)], 'Noble', new=True),
     ],
     upgrades=[
         UP('Aspirants', -50, desc='The formation suffers -1 to Advance, Overwatch, March, Marshal and Sustained Fire action rolls.'),

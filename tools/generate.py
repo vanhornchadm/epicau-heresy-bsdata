@@ -101,7 +101,8 @@ LEGION_CHOICE = dict(label='Legion', none='None (core list)', none_rule='Core li
 # sheet on the Solar Auxilia Malcador's hull; the rest convert their Legions Imperialis rules against EpicAU units.
 # The Dark Mechanicum Stalkers and Harpax, and the Arlatax, Domitar, Krios Venator and Archmagos Prime on Abeyant,
 # convert the Legions Imperialis profiles in the BSData Legions Imperialis data
-# (https://github.com/BSData/Horus-Heresy-Legions-Imperialis) against the EpicAU Mechanicum automata.
+# (https://github.com/BSData/Horus-Heresy-Legions-Imperialis) against the EpicAU Mechanicum automata. The Acastus
+# Knight Asterius and Knight Moirax convert the same data's Knights library against the EpicAU Porphyrion and Armigers.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -290,6 +291,21 @@ EXTRA_UNITS = {
                     {'name': 'Harpax Lascutters', 'range': '(base contact)', 'firepower': '(assault weapons) MW'}],
         'notes': 'Jump Packs, Scout. A Harpax unit must select either Exo-planar Repeaters OR Harpax Lascutters '
                  'before the start of the game.'}],
+    'Knight Household': [{
+        'name': 'Acastus Knight Asterius', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '6+', 'ff': '4+',
+        'weapons': [{'name': '2 x Conversion Beam Cannon', 'range': '75cm', 'firepower': 'MW3+'},
+                    {'name': 'Volkite Culverin', 'range': '45cm', 'firepower': 'AP4+, Disrupt'},
+                    {'name': 'Karacnos Mortar Battery', 'range': '45cm', 'firepower': 'BP 1, Ignore Cover, Fleshbane'}],
+        'notes': 'DC3, Ion Shield, Reinforced Armour, Walker. Ionic Flare Shield: its Ion Shield saves are 1 better '
+                 'against Barrage hits, to a maximum of 2+. Critical hit effect: Destroyed.'}, {
+        'name': 'Knight Moirax', 'type': 'LV', 'speed': '30cm', 'armour': '5+', 'cc': '4+ / 5+', 'ff': '5+',
+        'weapons': [{'name': 'Volkite Veuglair', 'range': '30cm', 'firepower': 'AP4+/AT6+, Disrupt'},
+                    {'name': 'Gyges Siege Claw OR', 'range': '(base contact)',
+                     'firepower': '(assault weapons) MW, EA(+1), TK(1)'},
+                    {'name': 'Armiger Lightning Locks', 'range': '30cm', 'firepower': '2 x AP4+/AT5+'}],
+        'notes': 'Ion Shield (5+), Scout, Walker. Ionic Flare Shield: its Ion Shield saves are 1 better against '
+                 'Barrage hits, to a maximum of 2+. A Knight Moirax must select either a Volkite Veuglair and Gyges '
+                 'Siege Claw OR Armiger Lightning Locks before the start of the game.'}],
     'Legio Titanicus': [{
         'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
         'weapons': [{'name': 'Quake Cannon OR Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
@@ -347,7 +363,8 @@ FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion T
              'Imperial Navy Marauder Colossus', 'Imperial Navy Marauder Pathfinder', 'Malcador Annihilator',
              'Malcador Vanquisher', 'Leman Russ Annihilator', 'Hellhammer', 'Aethon Heavy Sentinel',
              'Cyclops Demolition Vehicle', 'Scintillax', 'Errax', 'Tenebrax', 'Serperos', 'Harpax',
-             'Arlatax Battle-Automata', 'Domitar Battle-Automata', 'Krios Venator', 'Archmagos Prime on Abeyant'}
+             'Arlatax Battle-Automata', 'Domitar Battle-Automata', 'Krios Venator', 'Archmagos Prime on Abeyant',
+             'Acastus Knight Asterius', 'Knight Moirax'}
 
 
 def star(name, fan):

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="11" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="12" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="1897-edf7-b72c-17af" name="Knight Household" hidden="false">
       <rules>
@@ -20,6 +20,7 @@ Disruptive allies: Imperial Militia, Legion Astartes, Solar Auxilia.</descriptio
         <infoLink id="ea1a-68e8-42aa-7f8e" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="3dae-8f51-e042-1ff4" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
         <categoryLink id="f68a-8a80-fd4c-7e54" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
         <categoryLink id="a17a-353e-7bf5-e7e6" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="false">
           <modifiers>
@@ -49,6 +50,11 @@ Disruptive allies: Imperial Militia, Legion Astartes, Solar Auxilia.</descriptio
             <constraint field="points" scope="roster" value="33.33" percentValue="true" shared="true" includeChildSelections="true" includeChildForces="true" id="1797-a8ae-382e-ddd0" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="869a-20ed-4980-0ef9" name="Not available with the chosen Configuration" hidden="false" targetId="592b-0da0-9d99-08ca" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44d8-6c2f-eab2-c9bb" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="5521-9b5d-234d-12f8" name="Knight Household (Allied Contingent)" hidden="false">
@@ -71,6 +77,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <infoLink id="7139-0fbd-000c-1cdf" name="Singularity" hidden="false" targetId="9d1d-6151-5a53-1044" type="rule"/>
       </infoLinks>
       <categoryLinks>
+        <categoryLink id="02f9-12db-cda1-f530" name="Configuration" hidden="false" targetId="ba14-d0f1-f942-df54" primary="false"/>
         <categoryLink id="858c-570c-bc5d-d1cc" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="false"/>
         <categoryLink id="1345-e730-5234-162f" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="false">
           <modifiers>
@@ -93,6 +100,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <categoryLink id="2713-d20e-0c50-ecd2" name="Not an allowed ally of the primary army" hidden="false" targetId="813c-67a8-ed81-24f9" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1456-2318-95d6-2976" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8940-049b-5276-996f" name="Not available with the chosen Configuration" hidden="false" targetId="592b-0da0-9d99-08ca" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e98-7aa6-4ea8-497a" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1743,6 +1755,108 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="6270-bae7-9a9b-af15" name="Knight Moiraxes*" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="3bf2-2e17-83af-cb8c" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf2-2e17-83af-cb8c" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="a2e7-c9f1-3e92-f281" name="Knight Moirax*" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b9d-3732-7803-e886" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d04d-f0f1-2fac-bbf0" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="ca05-49c4-6ad7-70a3" name="Knight Moirax*" hidden="false" targetId="fcc4-6eae-cd3f-c7f6" type="profile">
+                      <modifiers>
+                        <modifier type="append" field="4e39-030c-4e18-12e0" value="Volkite Veuglair, Gyges Siege Claw">
+                          <conditions>
+                            <condition field="selections" scope="a2e7-c9f1-3e92-f281" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f96-4992-8f7b-0f82" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="cc43-f6de-2798-fb59" value="4+">
+                          <conditions>
+                            <condition field="selections" scope="a2e7-c9f1-3e92-f281" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6f96-4992-8f7b-0f82" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="append" field="4e39-030c-4e18-12e0" value="Armiger Lightning Locks">
+                          <conditions>
+                            <condition field="selections" scope="a2e7-c9f1-3e92-f281" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e439-1528-f500-58fa" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="set" field="cc43-f6de-2798-fb59" value="5+">
+                          <conditions>
+                            <condition field="selections" scope="a2e7-c9f1-3e92-f281" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e439-1528-f500-58fa" type="atLeast"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="30aa-0f44-94ac-c27b" name="Special Rules (Knight Moirax*)" hidden="false" targetId="4394-21a0-2f90-d5de" type="rule"/>
+                    <infoLink id="7019-22d1-76ee-a55e" name="Ionic Flare Shield (Knight Moirax*)" hidden="false" targetId="7bdd-cc62-a563-f178" type="rule"/>
+                    <infoLink id="35cf-0366-4426-c16f" name="Siege" hidden="false" targetId="d4c1-724d-bbcb-8056" type="rule"/>
+                    <infoLink id="0968-e05b-9879-2ed2" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+                    <infoLink id="02d6-f5e4-a0ec-425f" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                    <infoLink id="3576-f24b-7393-1dc6" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
+                    <infoLink id="858b-df70-bfe1-f52c" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+                    <infoLink id="3af2-7e06-9432-9728" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+                    <infoLink id="18aa-b209-cb0d-cd2a" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="28d2-8f21-182c-2a12" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="f89f-4ada-5f6d-eab6" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                    <infoLink id="03bf-1f48-ab5f-0640" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup id="46bf-42ef-540d-fbd4" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6f96-4992-8f7b-0f82">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f37-966d-c2a1-039b" type="min"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1039-bd94-3b67-0f06" type="max"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry id="6f96-4992-8f7b-0f82" name="Volkite Veuglair &amp; Gyges Siege Claw" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c5-27fb-425e-5aba" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="8827-54d4-c2f7-320d" name="Volkite Veuglair" hidden="false" targetId="b522-03c4-f974-17ef" type="profile"/>
+                            <infoLink id="5b31-c314-4668-bc7b" name="Gyges Siege Claw" hidden="false" targetId="2b4e-8971-8bb8-5f36" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry id="e439-1528-f500-58fa" name="Armiger Lightning Locks" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="189e-477f-61d8-baef" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="9feb-8467-6f19-7014" name="Armiger Lightning Locks" hidden="false" targetId="b7ce-b759-f805-8249" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="25.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="2c9a-4645-79b8-b4bc" name="Upgrades" hidden="false" collective="false" import="true">
@@ -1848,6 +1962,117 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <entryLink id="d1e4-1605-af20-4bda" name="Noble" hidden="false" collective="false" import="true" targetId="2bc4-ac6d-506b-65b5" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f453-1874-366e-cb4b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="54b9-aa4b-2533-7e87" name="Acastus Knight Asterius*" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="26a2-ea6d-4d79-445f">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1897-edf7-b72c-17af" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5521-9b5d-234d-12f8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value=" (disruptive ally: -1 strategy rating)">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5521-9b5d-234d-12f8" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cdb7-8175-d8f5-e789" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0e75-595f-c943-9de7" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d300-75be-c303-5ebb" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3162-8794-c22f-7807" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2fc6-7090-5156-e67b" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="592b-0da0-9d99-08ca">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="5dd9-7692-7bba-cdb3" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
+        <categoryLink id="8f49-cb3c-775b-7aaf" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a144-7d1d-e805-deaf" name="Acastus Knight Asterius*" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b676-c086-d4fc-aa9d" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d37-04db-8465-7c6d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="db9d-d1a8-8a94-f311" name="Acastus Knight Asterius*" hidden="false" targetId="fa69-738d-7560-67fe" type="profile"/>
+            <infoLink id="5927-ff85-248c-4e85" name="Conversion Beam Cannon" hidden="false" targetId="4abb-dd31-9a53-3a9a" type="profile"/>
+            <infoLink id="3357-6336-a262-695f" name="Volkite Culverin" hidden="false" targetId="923e-3d43-70da-0e33" type="profile"/>
+            <infoLink id="317d-e9d2-99a3-0a43" name="Karacnos Mortar Battery" hidden="false" targetId="0a1a-60bb-d060-2fdb" type="profile"/>
+            <infoLink id="5f1c-3a2a-a778-2eba" name="Ionic Flare Shield (Acastus Knight Asterius*)" hidden="false" targetId="c656-8846-ac95-630d" type="rule"/>
+            <infoLink id="140d-f4b2-c4c9-2821" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
+            <infoLink id="24a0-0960-b681-339d" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
+            <infoLink id="43ee-3716-a1e3-e4cd" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="dd46-dfc8-30d1-ef93" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+            <infoLink id="81a9-d54e-6415-ec3f" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+            <infoLink id="183b-ee46-5901-e40c" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+            <infoLink id="9818-ea4f-51dc-0c9d" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+            <infoLink id="f058-9387-b46c-a831" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="77a2-9ce4-4ec8-b51c" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+            <infoLink id="bd23-5339-5950-705b" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="260.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f544-82e8-fe9e-2005" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="6ca5-0fff-0448-f461" name="Noble" hidden="false" collective="false" import="true" targetId="2bc4-ac6d-506b-65b5" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ed0-f82a-12ce-7916" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -2101,14 +2326,36 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="54e0-a935-b9c2-19bd" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist notes" hidden="false">
       <description>Notes: Ignores Cover AND / (small arms) Ignores Cover / AP4+ / (assault weapons) MW, EA(+1), TK(1)</description>
     </rule>
+    <rule id="c656-8846-ac95-630d" name="Ionic Flare Shield (Acastus Knight Asterius*)" hidden="false">
+      <description>Its Ion Shield saves are 1 better against Barrage hits, to a maximum of 2+.</description>
+    </rule>
+    <rule id="7bdd-cc62-a563-f178" name="Ionic Flare Shield (Knight Moirax*)" hidden="false">
+      <description>Its Ion Shield saves are 1 better against Barrage hits, to a maximum of 2+.</description>
+    </rule>
     <rule id="1509-bfb3-06b5-ec91" name="Special Rules (Armiger Knight-Helverin)" hidden="false">
       <description>Ion Shield (5+).</description>
     </rule>
     <rule id="6508-de87-9a4b-8fc7" name="Special Rules (Armiger Knight-Warglaive)" hidden="false">
       <description>Ion Shield (5+).</description>
     </rule>
+    <rule id="4394-21a0-2f90-d5de" name="Special Rules (Knight Moirax*)" hidden="false">
+      <description>Ion Shield (5+).</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
+    <profile id="fa69-738d-7560-67fe" name="Acastus Knight Asterius*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
+      <characteristics>
+        <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
+        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">20cm</characteristic>
+        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
+        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">6+</characteristic>
+        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Conversion Beam Cannon x2, Volkite Culverin, Karacnos Mortar Battery</characteristic>
+        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">3</characteristic>
+        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Destroyed.</characteristic>
+      </characteristics>
+    </profile>
     <profile id="f782-b8b4-cf1f-fc4f" name="Acastus Knight Porpyhrion" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
@@ -2147,6 +2394,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Reaper Chain-cleaver, Thermal Spear</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b7ce-b759-f805-8249" name="Armiger Lightning Locks" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP4+/AT5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="388d-f341-71d4-29da" name="Atrapos Lascutter / Graviton Singularity Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2243,11 +2497,25 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">EA(+1), First strike, TK(1)</characteristic>
       </characteristics>
     </profile>
+    <profile id="4abb-dd31-9a53-3a9a" name="Conversion Beam Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW3+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
     <profile id="b8c7-a8e6-58e6-d548" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm AND / (15cm) / 30cm / (base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP3+/AT6+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">See weapon notes</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2b4e-8971-8bb8-5f36" name="Gyges Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">EA(+1), TK(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="660f-9a4b-697a-6eaa" name="Hekaton Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2276,6 +2544,23 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">60cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP1</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0a1a-60bb-d060-2fdb" name="Karacnos Mortar Battery" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP 1</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Fleshbane</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fcc4-6eae-cd3f-c7f6" name="Knight Moirax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">30cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+ / 5+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="e0fd-9129-80ff-9155" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2529,6 +2814,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP3+/AT6+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="923e-3d43-70da-0e33" name="Volkite Culverin" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b522-03c4-f974-17ef" name="Volkite Veuglair" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT6+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
       </characteristics>
     </profile>

@@ -79,6 +79,9 @@ WEAPON_OPTIONS = {
     'Serperos': [G('Weapon 1', 'Storm Laser Array', 'Exo-planar Bombard'),
                  G('Weapon 2', 'Serperos Lascutters', 'Irradiation Engine')],
     'Harpax': [G('Weapons', 'Exo-planar Repeaters', 'Harpax Lascutters')],
+    # Knight Household
+    'Knight Moirax': [G('Weapons', O('Volkite Veuglair & Gyges Siege Claw', ['Volkite Veuglair', 'Gyges Siege Claw'], cc='4+'),
+                        O('Armiger Lightning Locks', cc='5+'))],
     # Imperial Militia
     'Auxilia Rapier Platform': [G('Weapon', *RAPIER)],
     'Militia Auxiliary': [G('Weapons', O('Rifles', ff='5+'), O('Pistol and Combat Weapon', ff='6+'))],

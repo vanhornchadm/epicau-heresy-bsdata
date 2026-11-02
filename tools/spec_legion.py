@@ -87,6 +87,9 @@ CORE_FORMATIONS = [
     F('Legion Sicaran Battle Squadron', 'support', 0, [Mix(4, 6, *SICARANS)], 'Centurion, Hyperios'),
     F('Legion Sabre Strike Squadron', 'support', 275, [U(4, 'Sabre Strike Tank')], 'Centurion',
       note='Sabre Strike Tank stats are not on the wiki reference sheet; taken from Departmento Munitorum.'),
+    F('Legion Kratos Heavy Tank Squadron', 'support', 0, [U((2, 4), 'Kratos Heavy Tank', 100)], 'Centurion, Hyperios',
+      note='Fan rules, not part of EpicAU: proposed on Dakka Dakka (November 2024) as 2 Kratos for 200 pts plus up to '
+           '2 more at 100 pts each. The upgrades follow the other Legion tank squadrons.'),
     F('Legion Sky Hunter Attack Squadron', 'support', 175, [U(5, 'Scimitar Jetbike')], 'Centurion'),
     F('Legion Storm Eagle Attack Wing', 'support', 0, [U((1, 3), 'Storm Eagle Attack Ship', 125)]),
     F('Legion Spacecraft', 'support', 0,

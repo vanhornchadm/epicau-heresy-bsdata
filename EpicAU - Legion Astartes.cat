@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="6" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="7" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -4480,6 +4480,102 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="275.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b2c1-8d1f-9928-09b1" name="Legion Kratos Heavy Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="ed9b-221e-a802-8105" name="Legion Kratos Heavy Tank Squadron" hidden="false">
+          <description>Fan rules, not part of EpicAU: proposed on Dakka Dakka (November 2024) as 2 Kratos for 200 pts plus up to 2 more at 100 pts each. The upgrades follow the other Legion tank squadrons.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="2fa3-919b-23ca-535a" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8a37-bd2a-7ee2-a631" name="Kratos Heavy Tank" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9753-f4f9-f96e-1fd1" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c80-f275-2add-86bc" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="208c-675c-f78d-cbe0" name="Kratos Heavy Tank" hidden="false" targetId="d30f-dbb7-b667-52f1" type="profile"/>
+            <infoLink id="63d0-fca6-27f9-64eb" name="Kratos Battlecannon" hidden="false" targetId="8a0b-3d50-f35b-af4e" type="profile"/>
+            <infoLink id="9251-e84e-13c2-0c77" name="Melta Cannon (instead of Kratos Battlecannon)" hidden="false" targetId="9481-0151-7dcc-f4a8" type="profile"/>
+            <infoLink id="75ff-ff5a-0082-087b" name="Co-axial Autocannon" hidden="false" targetId="6657-4ade-156b-542b" type="profile"/>
+            <infoLink id="d9a1-9682-1c4f-997e" name="2 x Hull Heavy Bolter" hidden="false" targetId="8ad0-88df-924a-a2e2" type="profile"/>
+            <infoLink id="b6db-746c-edf2-6db5" name="2 x Hull Lascannon (instead of Hull Heavy Bolters)" hidden="false" targetId="060f-f929-e066-6cbe" type="profile"/>
+            <infoLink id="4aa5-9f81-5df6-48dc" name="2 x Sponson Heavy Bolter" hidden="false" targetId="9c3e-818d-9add-3a80" type="profile"/>
+            <infoLink id="cf45-2be2-24d4-c834" name="2 x Sponson Lascannon (instead of Sponson Heavy Bolters)" hidden="false" targetId="e873-5275-719e-b618" type="profile"/>
+            <infoLink id="2c33-1d06-3a26-cda6" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="4624-0d93-cf2c-c081" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+            <infoLink id="f6e3-5529-0cc3-f238" name="Macro-Weapon" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="5b10-1476-f05f-4b86" name="Armorbane" hidden="false" targetId="0be9-a6dd-0220-503a" type="rule"/>
+            <infoLink id="5d1f-0167-af65-2113" name="Forward Fire Arc" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
+            <infoLink id="e1bf-e572-8df0-cd47" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+            <infoLink id="4bda-6434-59f7-e6bd" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="100.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="071e-1248-4c03-638b" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cbd-4a6f-f188-9997" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a48b-714e-df95-feab" name="Centurion" hidden="false" collective="false" import="true" targetId="839d-c809-7edd-2efd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="212c-5bec-0a5e-58b0" value="0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="212c-5bec-0a5e-58b0" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ca30-b465-7fad-0156" name="Centurion" hidden="true" collective="false" import="true" targetId="6cd5-1fc8-ad5b-8711" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="4f88-ec2a-328a-2383" value="1">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f88-ec2a-328a-2383" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b5ec-97ac-0cdd-3c46" name="Hyperios" hidden="false" collective="false" import="true" targetId="b7c4-f844-14b7-809b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4630-6a89-2e9f-e4e1" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="afa4-9f2c-90d1-354e" name="Legion Sky Hunter Attack Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -24060,6 +24156,20 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
+    <profile id="8ad0-88df-924a-a2e2" name="2 x Hull Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+, Fwd</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="060f-f929-e066-6cbe" name="2 x Hull Lascannon (instead of Hull Heavy Bolters)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+, Fwd</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
     <profile id="38c3-e0af-4826-b3c3" name="2 x Hyperios Battery" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
@@ -24169,6 +24279,20 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+ (1 R, 1 L)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9c3e-818d-9add-3a80" name="2 x Sponson Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e873-5275-719e-b618" name="2 x Sponson Lascannon (instead of Sponson Heavy Bolters)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT5+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -24582,6 +24706,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW, EA(+1)</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6657-4ade-156b-542b" name="Co-axial Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -25435,6 +25566,23 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
+    <profile id="8a0b-3d50-f35b-af4e" name="Kratos Battlecannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP3+/AT3+, Armourbane</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d30f-dbb7-b667-52f1" name="Kratos Heavy Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">WE</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">25cm</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">DC2, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed. Each Kratos takes either the Kratos Battlecannon or the Melta Cannon, and heavy bolters or lascannons on both the hull and the sponsons. (Fan rules, not on the EpicAU wiki: Dakka Dakka proposal, November 2024.)</characteristic>
+      </characteristics>
+    </profile>
     <profile id="724f-45cb-0d03-92d4" name="Kyzagan Assault Speeder" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
@@ -25693,6 +25841,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Fearless. Count as Breacher Marines for transport capacity purposes.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9481-0151-7dcc-f4a8" name="Melta Cannon (instead of Kratos Battlecannon)" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">4 x MW5+, Armourbane</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="eba6-a093-ed15-f593" name="Melta Ram" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

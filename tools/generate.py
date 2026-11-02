@@ -46,13 +46,28 @@ SLOT_CAT = {'line': 'Line Detachment', 'support': 'Support Detachment', 'low': '
             'special': 'Special Selection'}
 RULE_ID = {name: gid('rule', name) for name in RULES}
 
-# Unit not present on the wiki reference sheet (stats from Departmento Munitorum).
+# Units not present on the wiki reference sheet: the Sabre from Departmento Munitorum, the Kratos from fan rules
+# posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09).
 EXTRA_UNITS = {
     'Legion Astartes': [{
         'name': 'Sabre Strike Tank', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Volkite Saker', 'range': '15cm', 'firepower': '2 x AP3+, Fleshbane, FxF'},
                     {'name': 'Sabre Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'}],
-        'notes': 'Reinforced Armour. (Not on the wiki reference sheet; stats from Departmento Munitorum.)'}],
+        'notes': 'Reinforced Armour. (Not on the wiki reference sheet; stats from Departmento Munitorum.)'}, {
+        'name': 'Kratos Heavy Tank', 'type': 'WE', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': 'Kratos Battlecannon', 'range': '45cm', 'firepower': '2 x AP3+/AT3+, Armourbane'},
+                    {'name': 'Melta Cannon (instead of Kratos Battlecannon)', 'range': '30cm',
+                     'firepower': '4 x MW5+, Armourbane'},
+                    {'name': 'Co-axial Autocannon', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
+                    {'name': '2 x Hull Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+, Fwd'},
+                    {'name': '2 x Hull Lascannon (instead of Hull Heavy Bolters)', 'range': '45cm',
+                     'firepower': 'AT5+, Fwd'},
+                    {'name': '2 x Sponson Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'},
+                    {'name': '2 x Sponson Lascannon (instead of Sponson Heavy Bolters)', 'range': '45cm',
+                     'firepower': 'AT5+'}],
+        'notes': 'DC2, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed. Each Kratos takes either '
+                 'the Kratos Battlecannon or the Melta Cannon, and heavy bolters or lascannons on both the hull and '
+                 'the sponsons. (Fan rules, not on the EpicAU wiki: Dakka Dakka proposal, November 2024.)'}],
 }
 
 

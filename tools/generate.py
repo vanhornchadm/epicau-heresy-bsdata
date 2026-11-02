@@ -420,7 +420,7 @@ class Catalogue:
             cats.append('Supreme Commander')
         if 'Demi-God' in unit['notes']:
             cats.append('Primarch')
-        return [(uid, unit['name'])], rules_in(text), cats
+        return [(uid, star(unit['name'], unit['name'] in FAN_UNITS))], rules_in(text), cats
 
     def weapon_profile(self, w):
         wid = gid('prof', self.scope, 'titan-weapon', w['name'])

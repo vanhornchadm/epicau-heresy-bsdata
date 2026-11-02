@@ -186,6 +186,17 @@ EXTRA_UNITS = {
 }
 
 
+# Fan-made units (not on the EpicAU wiki or Departmento Munitorum). They, and fan-made formations and upgrades, show
+# an asterisk after their names.
+FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion Tarantula', 'Legion Tarantula Hyperios',
+             'Ascalon', 'Araknae Weapons Platform', 'Saturnine Terminators', 'Saturnine Dreadnought',
+             'Termite Assault Drill', 'Warbringer Nemesis Titan', 'Warmaster Heavy Battle Titan'}
+
+
+def star(name, fan):
+    return f'{name}*' if fan and not name.endswith('*') else name
+
+
 # ------------------------------------------------------------------ XML helpers
 class X:
     """Tiny XML element builder."""
@@ -375,10 +386,12 @@ class Catalogue:
             stats = [unit['type'], unit['speed'], unit['armour'], unit['cc'], unit['ff']]
             if is_war_engine(unit):
                 dc, shields, crit, notes = war_engine_fields(unit['notes'])
-                self.profiles[uid] = profile(uid, unit['name'], PT_WAR_ENGINE, 'War Engine', WAR_ENGINE_CHARS,
+                self.profiles[uid] = profile(uid, star(unit['name'], unit['name'] in FAN_UNITS), PT_WAR_ENGINE,
+                                             'War Engine', WAR_ENGINE_CHARS,
                                              stats + weapons + [notes, dc, shields, crit])
             else:
-                self.profiles[uid] = profile(uid, unit['name'], PT_UNIT, 'Unit', UNIT_CHARS,
+                self.profiles[uid] = profile(uid, star(unit['name'], unit['name'] in FAN_UNITS), PT_UNIT, 'Unit',
+                                             UNIT_CHARS,
                                              stats + weapons + [unit['notes']])
         text = unit['notes'] + ' ' + ' '.join(w['firepower'] for w in unit['weapons'])
         cats = []
@@ -487,12 +500,12 @@ def has_new(army):
 
 
 def new_unit_names(army):
-    names = [f['name'] for f in army['formations'] if f.get('new')]
+    names = [f'{f["name"]}*' for f in army['formations'] if f.get('new')]
     for f in army['formations']:
         for p in f['units']:
             if p['kind'] == 'mix':
-                names += [u['unit'] for u in p['units'] if u.get('new')]
-    names += [f'{n} upgrade' for n, u in army['upgrades'].items() if u.get('new')]
+                names += [f'{u["unit"]}*' for u in p['units'] if u.get('new')]
+    names += [f'{n}* upgrade' for n, u in army['upgrades'].items() if u.get('new')]
     return list(dict.fromkeys(names))
 
 
@@ -539,7 +552,8 @@ class Builder:
         links = [X('infoLink', {'id': gid('il', eid, pid), 'name': pname, 'hidden': 'false', 'targetId': pid,
                                 'type': 'profile'}) for pid, pname in ids]
         links += [info_rule(eid, r) for r in rules]
-        return ordered('selectionEntry', {'id': eid, 'name': name or part['label'] or unit['name'],
+        return ordered('selectionEntry', {'id': eid, 'name': star(name or part['label'] or unit['name'],
+                                                                   unit['name'] in FAN_UNITS),
                                           'hidden': str(hidden).lower(), 'collective': 'false', 'import': 'true',
                                           'type': 'model'},
                        modifiers=list(mods), constraints=cons, infoLinks=links,
@@ -730,6 +744,7 @@ class Builder:
         if u['maxn'] is not None:
             mods, cons = per_points_limit(uid, u['maxn'], u['per'], u['round_up'])
         cons = cons + list(extra_cons)
+        name = star(name, u.get('new'))
         rules = [rule_el(gid('r', uid), name, u['desc'])] if u['desc'] else []
         return ordered('selectionEntry', {'id': uid, 'name': name, 'hidden': 'false', 'collective': 'false',
                                           'import': 'true', 'type': 'upgrade'},
@@ -776,7 +791,8 @@ class Builder:
             return self.upgrade_entry(uid, name, u, f'{owner}/upgrade/{name}',
                                       extra_cons=[constraint(gid('con', uid, 'max'), 'max', 1)])
         lid = gid('el', owner, name)
-        return X('entryLink', {'id': lid, 'name': name, 'hidden': 'false', 'collective': 'false', 'import': 'true',
+        return X('entryLink', {'id': lid, 'name': star(name, u.get('new')), 'hidden': 'false', 'collective': 'false',
+                               'import': 'true',
                                'targetId': self.upgrade_id(name, key), 'type': 'selectionEntry'},
                  [X('constraints', children=[constraint(gid('con', lid, 'max'), 'max', 1)])])
 
@@ -880,7 +896,8 @@ class Builder:
                 raise ValueError(f'{self.army["name"]}: {f["name"]} has nothing {self.variants["name"]} can upgrade')
             self.variants['desc'].text = self.variant_text()
         self.variants, self.offered = None, set()
-        el = ordered('selectionEntry', {'id': fid, 'name': f['name'], 'hidden': 'false', 'collective': 'false',
+        el = ordered('selectionEntry', {'id': fid, 'name': star(f['name'], f.get('new')), 'hidden': 'false',
+                                        'collective': 'false',
                                         'import': 'true', 'type': 'unit'},
                      modifiers=mods, constraints=cons, rules=rules,
                      infoLinks=[info_rule(fid, r) for r in f['rules']], categoryLinks=cats,
@@ -1148,7 +1165,7 @@ def header(cid, name):
 def new_units_toggle():
     """'Allow fan-made units': a Configuration entry that shows the fan-made units and options in every force."""
     lists = [(a['name'], new_unit_names(a)) for a in [legion_catalogue()] + OTHER_ARMIES]
-    desc = ('Shows fan-made units and options that are not part of EpicAU (see the README for their sources). '
+    desc = ('Shows fan-made units and options, marked *, that are not part of EpicAU (see the README for their sources). '
             'Taking it in any force shows them in every force of the roster; removing it flags any that were taken. '
             + ' '.join(f'{name}: {", ".join(units)}.' for name, units in lists if units))
     return ordered('selectionEntry', {'id': NEW_UNITS_ID, 'name': 'Allow fan-made units', 'hidden': 'false',

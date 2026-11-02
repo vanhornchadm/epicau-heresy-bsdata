@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="15" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -1020,7 +1020,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="48a1-70ef-6bd6-b6ef" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="48a1-70ef-6bd6-b6ef" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -1037,7 +1037,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f7a-c673-8dba-1ca5" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="c701-087e-7cda-dbcd" name="Termite Assault" hidden="false">
+                    <rule id="c701-087e-7cda-dbcd" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -1063,7 +1063,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b70-77d2-faa9-42a0" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="4ccb-7927-d43d-afac" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="4ccb-7927-d43d-afac" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="0615-4640-607d-1867" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="9a9a-68a9-1baa-fa47" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -1430,7 +1430,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9fd-f72b-d5c7-c9f0" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="43e0-9a34-a7c8-2020" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="43e0-9a34-a7c8-2020" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -1867,7 +1867,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f4dc-cf72-38c1-9ffd" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f4dc-cf72-38c1-9ffd" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -1884,7 +1884,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51cd-c0e2-1066-eb0f" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="ffc3-c536-f658-9b9f" name="Termite Assault" hidden="false">
+                    <rule id="ffc3-c536-f658-9b9f" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -1910,7 +1910,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f326-0423-d6e7-854c" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="4e8e-91fe-ef38-e6c4" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="4e8e-91fe-ef38-e6c4" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="d8ed-e262-dae4-ce33" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="cadc-009b-f36a-4e0f" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -2474,7 +2474,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98dc-3a2f-4fbd-c8e8" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="bb19-70ec-84a4-d21a" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="bb19-70ec-84a4-d21a" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -2885,7 +2885,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="894c-bf8a-d452-16ed" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="894c-bf8a-d452-16ed" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -2902,7 +2902,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ceb-5cb6-1b4d-cfee" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="d27c-9421-c594-b8ea" name="Termite Assault" hidden="false">
+                    <rule id="d27c-9421-c594-b8ea" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -2928,7 +2928,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b814-a9cf-cfea-6187" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="693c-52d4-7af3-f7c1" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="693c-52d4-7af3-f7c1" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="8c64-c4a6-7fc4-5e43" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="4f04-69fc-f842-081e" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -3336,7 +3336,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caee-1688-49bc-7a8c" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="983e-a1ae-d98a-f19b" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="983e-a1ae-d98a-f19b" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -3738,7 +3738,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de66-bec8-a96a-e3a3" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="c3fb-a2c1-5171-ef48" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="c3fb-a2c1-5171-ef48" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -3905,7 +3905,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="644a-df37-e930-0aa3" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="644a-df37-e930-0aa3" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -3922,7 +3922,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db07-7343-36cd-73aa" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="1990-6347-c7e2-26eb" name="Termite Assault" hidden="false">
+                    <rule id="1990-6347-c7e2-26eb" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -3948,7 +3948,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22f6-f40b-046e-786f" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="7006-a381-af76-51cd" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="7006-a381-af76-51cd" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="7f5b-a91a-2910-da25" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="d96d-63c5-4c49-a353" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -4260,7 +4260,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d366-f9a9-329f-64ef" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="4fd8-4301-f349-8d20" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="4fd8-4301-f349-8d20" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -4411,7 +4411,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31e1-0f41-034a-afa8" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="90c0-6ed2-8501-fb5a" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="90c0-6ed2-8501-fb5a" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -4568,7 +4568,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfc7-0929-9645-1911" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="ca95-5c41-d711-5a69" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="ca95-5c41-d711-5a69" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -4807,7 +4807,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0942-8d96-0ea0-a29f" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="a526-6daf-387f-d09c" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="a526-6daf-387f-d09c" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -5044,7 +5044,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7412-c210-3bec-166d" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="a03b-2798-5a2b-2d25" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="a03b-2798-5a2b-2d25" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -6159,7 +6159,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9541-3583-4874-bca7" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="d092-0743-07f7-6eeb" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="d092-0743-07f7-6eeb" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -6183,7 +6183,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="240.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d118-ca39-39af-0bd0" name="Legion Arquitor Bombard Squadron" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="d118-ca39-39af-0bd0" name="Legion Arquitor Bombard Squadron*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -6326,7 +6326,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="37a3-3910-3069-0fcd" name="Legion Ascalon Squadron" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="37a3-3910-3069-0fcd" name="Legion Ascalon Squadron*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
           <conditionGroups>
@@ -6399,7 +6399,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <categoryLink id="8f69-8b74-7227-4938" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="989b-a698-d541-81dd" name="Ascalon" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="989b-a698-d541-81dd" name="Ascalon*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb8-5cce-a88d-da89" type="min"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bff9-73bd-a40f-a0e2" type="max"/>
@@ -6422,7 +6422,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="73af-c872-10e4-3b9c" name="Legion Araknae Weapons Battery" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="73af-c872-10e4-3b9c" name="Legion Araknae Weapons Battery*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -6499,7 +6499,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <categoryLink id="0137-0883-27fe-96d3" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="ebec-6731-68fb-16bc" name="Araknae Weapons Platform" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="ebec-6731-68fb-16bc" name="Araknae Weapons Platform*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b415-adc7-24d3-a9c4" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3e0-6ae0-d28d-e820" type="max"/>
@@ -6520,7 +6520,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="271a-1fd2-494a-d4de" name="Legion Saturnine Terminator Detachment" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="271a-1fd2-494a-d4de" name="Legion Saturnine Terminator Detachment*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -6597,7 +6597,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <categoryLink id="f85b-dfbd-3165-cfa5" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="eb6f-ea64-2f19-77ea" name="Saturnine Terminators" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="eb6f-ea64-2f19-77ea" name="Saturnine Terminators*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dbd-f29b-df7c-f7a7" type="min"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16ff-d4ae-20fa-5911" type="max"/>
@@ -6932,7 +6932,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b621-bda1-c044-1bfc" name="Legion Saturnine Dreadnought Talon" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b621-bda1-c044-1bfc" name="Legion Saturnine Dreadnought Talon*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -7009,7 +7009,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <categoryLink id="4cce-02fb-c276-afd4" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="cb41-1912-83ac-2ac0" name="Saturnine Dreadnought" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="cb41-1912-83ac-2ac0" name="Saturnine Dreadnought*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f2-1ae4-e81d-4b3c" type="min"/>
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe8b-ecf1-71a9-8c5a" type="max"/>
@@ -7075,7 +7075,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f74-ad0a-ecb3-a100" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="52b8-1015-146f-858a" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="52b8-1015-146f-858a" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -7099,7 +7099,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="75c0-74ea-4858-37ec" name="Legion Tarantula Battery" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="75c0-74ea-4858-37ec" name="Legion Tarantula Battery*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -7176,7 +7176,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <categoryLink id="5809-8c7e-4d46-99e0" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="75e1-e653-c86c-bb4f" name="Legion Tarantula" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="75e1-e653-c86c-bb4f" name="Legion Tarantula*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71d3-85c8-036a-91be" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7ba-e2c2-7f53-8b19" type="max"/>
@@ -7190,7 +7190,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="b32d-4942-387e-b194" name="Legion Tarantula Hyperios" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="b32d-4942-387e-b194" name="Legion Tarantula Hyperios*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23e9-9485-7f04-4f69" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d8dd-63b0-5c69-91fb" type="max"/>
@@ -7415,7 +7415,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2e86-2a18-96de-f681" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2e86-2a18-96de-f681" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -7432,7 +7432,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91bf-1f3f-862d-64be" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="0c01-1fcf-e6e6-e5a9" name="Termite Assault" hidden="false">
+                    <rule id="0c01-1fcf-e6e6-e5a9" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -7458,7 +7458,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="322d-277d-4edb-2d75" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="e7c5-bca2-8e9f-697a" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="e7c5-bca2-8e9f-697a" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="2479-559a-0a79-52c7" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="2591-0176-c091-65b7" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -7521,7 +7521,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c4f-a38c-8fc3-58b9" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="7128-8948-93a8-37f4" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="7128-8948-93a8-37f4" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -7654,7 +7654,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <cost name="pts" typeId="points" value="75.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2721-a2c0-af9d-a659" name="Sicaran Punisher" hidden="true" collective="false" import="true" type="model">
+            <selectionEntry id="2721-a2c0-af9d-a659" name="Sicaran Punisher*" hidden="true" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -7678,7 +7678,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <cost name="pts" typeId="points" value="75.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="4ef7-d221-55be-6e01" name="Sicaran Arcus" hidden="true" collective="false" import="true" type="model">
+            <selectionEntry id="4ef7-d221-55be-6e01" name="Sicaran Arcus*" hidden="true" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -7885,7 +7885,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b2c1-8d1f-9928-09b1" name="Legion Kratos Heavy Tank Squadron" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="b2c1-8d1f-9928-09b1" name="Legion Kratos Heavy Tank Squadron*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -7962,7 +7962,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <categoryLink id="2fa3-919b-23ca-535a" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="8a37-bd2a-7ee2-a631" name="Kratos Heavy Tank" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="8a37-bd2a-7ee2-a631" name="Kratos Heavy Tank*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9753-f4f9-f96e-1fd1" type="min"/>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8c80-f275-2add-86bc" type="max"/>
@@ -10333,7 +10333,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bb0-a145-a050-e09e" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="a56f-ea2c-64f7-78dd" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="a56f-ea2c-64f7-78dd" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -11998,7 +11998,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c8d-f4b5-891a-0a92" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="568f-ba85-9018-95c0" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="568f-ba85-9018-95c0" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -12238,7 +12238,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f88-f8d7-46fd-9a18" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="8046-b1ce-fa7f-cc8b" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="8046-b1ce-fa7f-cc8b" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -12545,7 +12545,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="231d-bca7-f44b-7670" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="231d-bca7-f44b-7670" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -12562,7 +12562,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b4b-a174-33c3-a93c" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="7d52-5d62-3986-6221" name="Termite Assault" hidden="false">
+                    <rule id="7d52-5d62-3986-6221" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -12588,7 +12588,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="796b-8965-7895-4921" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="a9ab-431f-3dd1-b045" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="a9ab-431f-3dd1-b045" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="80a2-20a3-03fe-26c7" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="07e3-5ab4-eb99-ea54" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -12617,7 +12617,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="4fb0-47c1-2707-351f" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="4fb0-47c1-2707-351f" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -15066,7 +15066,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="43c3-c024-f722-8258" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="43c3-c024-f722-8258" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -15083,7 +15083,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3f0-9e0e-d8c5-5c4b" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="9040-9f41-775f-be6a" name="Termite Assault" hidden="false">
+                    <rule id="9040-9f41-775f-be6a" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -15109,7 +15109,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb01-9256-17db-2932" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="0189-7a14-e262-5f2e" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="0189-7a14-e262-5f2e" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="22f5-b65f-f575-2d50" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="1fa8-297f-01c6-8699" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -15138,7 +15138,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="165a-eaa6-0e30-0f2c" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="165a-eaa6-0e30-0f2c" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -15875,7 +15875,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e68-5c13-8fe3-9589" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="50e1-3d3f-f80a-ba9f" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="50e1-3d3f-f80a-ba9f" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -16626,7 +16626,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27cd-aa7e-043a-fedc" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="d9cd-4d0e-ba22-87b5" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="d9cd-4d0e-ba22-87b5" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -17446,7 +17446,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ef3-9bd8-dbf2-7829" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="21b9-d18d-c74b-254b" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="21b9-d18d-c74b-254b" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -17920,7 +17920,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="8f32-613f-a47b-35ca" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="8f32-613f-a47b-35ca" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -19116,7 +19116,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ed8-8625-4dc0-9512" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="07ef-a5d5-1e78-809e" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="07ef-a5d5-1e78-809e" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -19296,7 +19296,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="416c-dd9a-a126-13c6" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="416c-dd9a-a126-13c6" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -19313,7 +19313,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebd0-0e66-a1ba-8357" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="f437-95bb-6382-c14f" name="Termite Assault" hidden="false">
+                    <rule id="f437-95bb-6382-c14f" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -19339,7 +19339,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b44-116f-a028-e00c" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="946e-8d45-36cd-654b" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="946e-8d45-36cd-654b" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="9bf8-f3ba-75dd-d117" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="728b-17ce-657f-561b" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -19368,7 +19368,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="bdb8-4317-4940-0ad8" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="bdb8-4317-4940-0ad8" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -19544,7 +19544,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="99fc-f0cf-e19d-67fc" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="99fc-f0cf-e19d-67fc" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -19561,7 +19561,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f112-7b91-d5d6-d79c" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="4968-c538-044b-8549" name="Termite Assault" hidden="false">
+                    <rule id="4968-c538-044b-8549" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -19587,7 +19587,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07e7-e4fa-f170-8a4f" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="0652-7288-40f8-2503" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="0652-7288-40f8-2503" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="b9df-aea0-c6c6-1991" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="aa3c-e9f7-301c-2886" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -19616,7 +19616,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="203c-970f-7ac4-abcc" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="203c-970f-7ac4-abcc" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -20147,7 +20147,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="2476-ade6-6729-b000" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="2476-ade6-6729-b000" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -20164,7 +20164,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef6e-0840-24a9-7505" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="26a6-07f6-2d20-0782" name="Termite Assault" hidden="false">
+                    <rule id="26a6-07f6-2d20-0782" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -20190,7 +20190,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a271-3db3-3a75-21ed" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="8d7a-13d5-5262-6239" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="8d7a-13d5-5262-6239" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="bc88-7074-6c1b-d26c" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="be18-cbd1-ceb0-e119" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -20219,7 +20219,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="8a76-16c4-2707-8fc7" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="8a76-16c4-2707-8fc7" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -20671,7 +20671,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7019-2e4a-f927-bf68" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="0b83-a010-90c7-5736" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="0b83-a010-90c7-5736" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -22155,7 +22155,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="257d-aade-3bf7-b9d1" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="257d-aade-3bf7-b9d1" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -22172,7 +22172,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc7d-ace6-76ec-c597" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="f702-b0ac-fa25-16e4" name="Termite Assault" hidden="false">
+                    <rule id="f702-b0ac-fa25-16e4" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -22198,7 +22198,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="228a-18e3-574f-66d1" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="69b7-e2b7-eb55-8a02" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="69b7-e2b7-eb55-8a02" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="be44-1683-a62d-e8c1" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="430b-c4cd-c7b8-f4e2" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -22619,7 +22619,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="567f-0d84-72eb-49a7" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="567f-0d84-72eb-49a7" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -22636,7 +22636,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="557e-9993-8dae-1e5f" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="ee56-40e4-c4c4-8898" name="Termite Assault" hidden="false">
+                    <rule id="ee56-40e4-c4c4-8898" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -22662,7 +22662,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a45-d360-e851-9d4b" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="baad-d947-b221-44e9" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="baad-d947-b221-44e9" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="4f31-808b-3bde-cbd8" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="67ec-df8f-f103-416a" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -23165,7 +23165,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d78-627f-b87a-ec85" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="1eb0-0166-5877-cb1e" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="1eb0-0166-5877-cb1e" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -23563,7 +23563,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="4d99-5918-f941-dd83" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="4d99-5918-f941-dd83" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -24537,7 +24537,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="51f7-b3e3-eb8d-7ea3" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="51f7-b3e3-eb8d-7ea3" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -24554,7 +24554,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c9f-0ae7-909c-c5f7" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="a539-1122-5142-80bd" name="Termite Assault" hidden="false">
+                    <rule id="a539-1122-5142-80bd" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -24580,7 +24580,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c336-7cd4-ed2e-8512" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="c8c6-7cec-4ebc-781d" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="c8c6-7cec-4ebc-781d" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="79fa-067f-c23a-4157" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="495d-2484-3985-b1d3" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -24961,7 +24961,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cb4b-9b09-4693-2ce3" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="cb4b-9b09-4693-2ce3" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -24978,7 +24978,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48fe-7d1d-2f70-c990" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="f2e7-4809-ba28-d4a2" name="Termite Assault" hidden="false">
+                    <rule id="f2e7-4809-ba28-d4a2" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -25004,7 +25004,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85d2-4bc7-9614-7b00" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="9e9c-974d-9585-1c8a" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="9e9c-974d-9585-1c8a" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="542b-a21c-99c1-7d17" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="badd-bbe3-aaa0-a679" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -25033,7 +25033,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="7b8c-66a4-f48e-e8e3" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="7b8c-66a4-f48e-e8e3" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -25559,7 +25559,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="f00b-00cb-e9c5-66b3" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="f00b-00cb-e9c5-66b3" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -25872,7 +25872,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1784-f694-cda5-1a8a" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="5096-4f0d-6d65-cf4c" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="5096-4f0d-6d65-cf4c" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -26661,7 +26661,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1788-eaf2-06c2-6186" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="1788-eaf2-06c2-6186" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -26678,7 +26678,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="488c-7e55-4b1a-8da8" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="6b98-9b17-adc0-d444" name="Termite Assault" hidden="false">
+                    <rule id="6b98-9b17-adc0-d444" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -26704,7 +26704,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb30-bd6c-7b44-5366" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="539a-e87a-bc93-87be" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="539a-e87a-bc93-87be" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="5145-f094-c015-1b85" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="5222-272f-98ee-da79" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -26738,7 +26738,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f900-d247-0e6e-2ab0" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="4c66-ed08-4273-d262" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="4c66-ed08-4273-d262" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -27253,7 +27253,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="974b-713d-0c0a-5083" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="8159-0147-173a-47d9" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="8159-0147-173a-47d9" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -27920,7 +27920,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f4dd-ea99-9888-fe3b" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="f4dd-ea99-9888-fe3b" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -27937,7 +27937,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76c9-f4fd-2679-f78e" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="e609-666a-9772-9d4a" name="Termite Assault" hidden="false">
+                    <rule id="e609-666a-9772-9d4a" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -27963,7 +27963,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d76d-b6b2-d6db-2ac8" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="9c77-ea0b-1664-820c" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="9c77-ea0b-1664-820c" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="6bdc-ff14-a3ca-0024" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="59e0-e68c-814a-3847" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -28246,7 +28246,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="2aea-f0b8-5297-e607" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="2aea-f0b8-5297-e607" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -28567,7 +28567,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="207f-d126-8e4c-1902" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="207f-d126-8e4c-1902" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -28584,7 +28584,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="512c-15ab-64a3-6975" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="4fe2-ac1d-eed2-b2d9" name="Termite Assault" hidden="false">
+                    <rule id="4fe2-ac1d-eed2-b2d9" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -28610,7 +28610,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e11-241e-b64c-b2c5" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="5ae0-052a-39f3-56b0" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="5ae0-052a-39f3-56b0" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="367d-a410-61ab-4f5c" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="06a5-23ae-f0c2-2204" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -28673,7 +28673,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0878-567e-0b39-a0b6" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="6c66-af74-1af2-132e" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="6c66-af74-1af2-132e" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -29474,7 +29474,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dc4-c42a-5fe2-8b50" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="ca88-fd42-4f31-8fd8" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="ca88-fd42-4f31-8fd8" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -30186,7 +30186,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4f2e-aa08-dc6c-5b15" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="4f2e-aa08-dc6c-5b15" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -30203,7 +30203,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8351-6d97-4e18-4844" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="fb0d-b675-3e1e-bb36" name="Termite Assault" hidden="false">
+                    <rule id="fb0d-b675-3e1e-bb36" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -30229,7 +30229,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e309-43e8-d3b1-3df5" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="2515-748d-914b-f0e8" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="2515-748d-914b-f0e8" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="5de1-334e-857f-f9fd" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="840a-7220-0beb-5564" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -31377,7 +31377,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20c2-d3f6-762a-1c83" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="ebd4-1d17-d45e-0057" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="ebd4-1d17-d45e-0057" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -35265,7 +35265,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7956-c804-2a8a-b5e8" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="7956-c804-2a8a-b5e8" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -35282,7 +35282,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deb8-71cd-4047-d4b6" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="8076-0241-dc9b-742f" name="Termite Assault" hidden="false">
+                    <rule id="8076-0241-dc9b-742f" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -35308,7 +35308,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c5b-dfe7-2333-f4c1" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="2c94-6729-5c5d-5659" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="2c94-6729-5c5d-5659" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="7fec-412c-a2d2-661a" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="2f72-cf11-d8b3-a2a6" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -35371,7 +35371,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fab0-637d-c3cb-b70e" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="54c7-44ac-896a-18fb" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="54c7-44ac-896a-18fb" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -35635,7 +35635,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9328-7ace-ae81-511b" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9328-7ace-ae81-511b" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -35652,7 +35652,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38f7-6858-f0ad-ff8a" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="7ecc-0d89-447c-aea2" name="Termite Assault" hidden="false">
+                    <rule id="7ecc-0d89-447c-aea2" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -35678,7 +35678,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff72-d0d2-3e34-8ed1" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="51e8-734b-0000-a769" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="51e8-734b-0000-a769" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="ef3d-f5ea-c05e-4b8a" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="5879-7c73-305c-6913" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -35758,7 +35758,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4f8-0bb1-bb89-1d95" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="ac0e-8a15-13d5-17c0" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="ac0e-8a15-13d5-17c0" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -36010,7 +36010,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a68e-e881-65e9-01f1" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="823a-37fb-9e42-f8de" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="823a-37fb-9e42-f8de" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -36762,7 +36762,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e902-e756-545b-c067" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="52f5-ff77-d489-e445" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="52f5-ff77-d489-e445" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -37083,7 +37083,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="aa47-7d02-fb0d-6267" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="aa47-7d02-fb0d-6267" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -37100,7 +37100,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf86-c92c-453e-9cbf" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="b8af-6b00-d092-4ccf" name="Termite Assault" hidden="false">
+                    <rule id="b8af-6b00-d092-4ccf" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -37126,7 +37126,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3900-3b1f-85a8-9393" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="06d8-2346-6f78-5c5f" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="06d8-2346-6f78-5c5f" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="f3fa-675a-503b-b675" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="6010-bb12-4390-2c69" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -37404,7 +37404,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2522-a0cf-fd6b-1b31" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="e489-c102-4c77-79cd" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="e489-c102-4c77-79cd" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -38366,7 +38366,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="c4ad-a780-59f7-757b" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="c4ad-a780-59f7-757b" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -38383,7 +38383,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a119-3a9f-fc02-5669" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="9b4c-9248-4d5a-2409" name="Termite Assault" hidden="false">
+                    <rule id="9b4c-9248-4d5a-2409" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -38409,7 +38409,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8054-a193-ce38-a764" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="4ddf-917d-57bf-e190" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="4ddf-917d-57bf-e190" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="5052-e3b7-2bff-44d4" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="2158-b40f-15d8-367c" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -39146,7 +39146,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="590c-c9f5-c44b-8b44" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="32e4-f377-6888-44e6" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="32e4-f377-6888-44e6" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -40077,7 +40077,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="64d7-c9bc-2d8a-98f4" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="64d7-c9bc-2d8a-98f4" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -40094,7 +40094,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e03-7ae7-aaf9-9fbc" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="399a-15dd-c656-2c3a" name="Termite Assault" hidden="false">
+                    <rule id="399a-15dd-c656-2c3a" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -40120,7 +40120,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92cd-08cb-89da-5bed" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="7776-0c71-1e9a-99bf" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="7776-0c71-1e9a-99bf" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="8f0e-cddc-bbec-4b53" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="7cdf-e1f5-9073-e2c7" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -40426,7 +40426,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="291b-ad2f-dfeb-8dd1" type="max"/>
               </constraints>
             </entryLink>
-            <entryLink id="32f2-2cae-95cb-8209" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="32f2-2cae-95cb-8209" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -40625,7 +40625,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="684e-1bc9-f994-3569" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="684e-1bc9-f994-3569" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -40830,7 +40830,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="4d2e-826a-f873-c582" name="Palisade Drop Pod" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+            <entryLink id="4d2e-826a-f873-c582" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -41451,7 +41451,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="cd08-b20b-5741-3014" name="Termite Assault" hidden="true" collective="false" import="true" type="upgrade">
+                <selectionEntry id="cd08-b20b-5741-3014" name="Termite Assault*" hidden="true" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
@@ -41468,7 +41468,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c33-c4f5-b457-22be" type="max"/>
                   </constraints>
                   <rules>
-                    <rule id="45d9-6a12-0932-b49f" name="Termite Assault" hidden="false">
+                    <rule id="45d9-6a12-0932-b49f" name="Termite Assault*" hidden="false">
                       <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
                     </rule>
                   </rules>
@@ -41494,7 +41494,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0070-f6e5-475d-54d5" type="max"/>
                       </constraints>
                       <selectionEntries>
-                        <selectionEntry id="9f3f-7196-d0d5-d508" name="Termite Assault Drill" hidden="false" collective="false" import="true" type="model">
+                        <selectionEntry id="9f3f-7196-d0d5-d508" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="1c60-e7b7-c994-03fe" name="Termite Assault Drill" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="49eb-8a12-7cf7-6025" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
@@ -42263,9 +42263,9 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <cost name="pts" typeId="points" value="50.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0c76-eba3-66ad-a127" name="Palisade Drop Pod" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="0c76-eba3-66ad-a127" name="Palisade Drop Pod*" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
-        <rule id="8ea4-62fe-8ba8-4b81" name="Palisade Drop Pod" hidden="false">
+        <rule id="8ea4-62fe-8ba8-4b81" name="Palisade Drop Pod*" hidden="false">
           <description>Only with Drop Assault. One of the formation's Drop Pods is a Palisade: once it lands, units of the formation within 15cm of it have a 6+ Invulnerable Save while they stay in range.</description>
         </rule>
       </rules>
@@ -42416,7 +42416,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(6+), Infiltrator.</characteristic>
       </characteristics>
     </profile>
-    <profile id="52dc-fa4f-a24a-57e4" name="Araknae Weapons Platform" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+    <profile id="52dc-fa4f-a24a-57e4" name="Araknae Weapons Platform*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
         <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
@@ -42444,7 +42444,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour.</characteristic>
       </characteristics>
     </profile>
-    <profile id="ff97-e43c-2cdb-6171" name="Ascalon" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
+    <profile id="ff97-e43c-2cdb-6171" name="Ascalon*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
         <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">25cm</characteristic>
@@ -43218,7 +43218,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save(5+), Infiltrator, Brutal.</characteristic>
       </characteristics>
     </profile>
-    <profile id="d30f-dbb7-b667-52f1" name="Kratos Heavy Tank" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
+    <profile id="d30f-dbb7-b667-52f1" name="Kratos Heavy Tank*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
         <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">25cm</characteristic>
@@ -43319,21 +43319,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Scout, Skimmer. A Land Speeder must select either a Multi-Melta OR Plasma Cannon &amp; Heavy Bolter weapon system before the start of the game.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2fe7-2c08-8748-f3d8" name="Legion Tarantula" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
-      <characteristics>
-        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannon OR&lt;BR&gt;&lt;BR&gt;TL Heavy Bolter</characteristic>
-        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
-        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
-        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
-        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. A Legion Tarantula is armed with a TL Lascannon OR a TL Heavy Bolter; choose one option before the game. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula with the Mechanicum Tarantula Platform's weapon choice, as in Legions Imperialis.)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="43d1-852a-4f3f-b699" name="Legion Tarantula Hyperios" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+    <profile id="43d1-852a-4f3f-b699" name="Legion Tarantula Hyperios*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
         <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
@@ -43345,6 +43331,20 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AA4+</characteristic>
         <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-</characteristic>
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula Hyperios.)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2fe7-2c08-8748-f3d8" name="Legion Tarantula*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannon OR&lt;BR&gt;&lt;BR&gt;TL Heavy Bolter</characteristic>
+        <characteristic name="Range" typeId="eac3-6a94-cb92-4e59">45cm&lt;BR&gt;&lt;BR&gt;30cm</characteristic>
+        <characteristic name="Firepower" typeId="d5dc-a6b1-1fdc-bb30">AT4+&lt;BR&gt;&lt;BR&gt;AP4+</characteristic>
+        <characteristic name="Weapon Notes" typeId="9000-985e-2684-f643">-&lt;BR&gt;&lt;BR&gt;-</characteristic>
+        <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Teleport, Scout. A Legion Tarantula is armed with a TL Lascannon OR a TL Heavy Bolter; choose one option before the game. (Fan-made, not on the EpicAU wiki: the Solar Auxilia Tarantula with the Mechanicum Tarantula Platform's weapon choice, as in Legions Imperialis.)</characteristic>
       </characteristics>
     </profile>
     <profile id="3e8f-538a-1969-e64f" name="Leman Russ, the Wolf King" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -43857,7 +43857,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Demi-God, Reinforced Armour, Thick Rear Armour, Fearless, Supreme Commander, Inspiring, Invulnerable Save, Jump Packs.</characteristic>
       </characteristics>
     </profile>
-    <profile id="b6b0-f0bb-1c97-a28c" name="Saturnine Dreadnought" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+    <profile id="b6b0-f0bb-1c97-a28c" name="Saturnine Dreadnought*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
         <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
@@ -43871,7 +43871,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Walker, Reinforced Armour, Invulnerable Save. A Saturnine Dreadnought carries a Heavy Plasma Bombard OR a Graviton Pulveriser, plus an Inversion Beamer; choose before the game. (Fan-made, not on the EpicAU wiki: the Deredeo's profile with two wounds' worth of protection, and weapons scaled from the Leviathan's grav-flux bombard, as in Legions Imperialis.)</characteristic>
       </characteristics>
     </profile>
-    <profile id="d473-d806-8dae-5a90" name="Saturnine Terminators" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+    <profile id="d473-d806-8dae-5a90" name="Saturnine Terminators*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
         <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
@@ -43913,7 +43913,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour, Invulnerable Save (5+).</characteristic>
       </characteristics>
     </profile>
-    <profile id="7774-442a-9fe0-8b1b" name="Sicaran Arcus" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+    <profile id="7774-442a-9fe0-8b1b" name="Sicaran Arcus*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
         <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">35cm</characteristic>
@@ -43955,7 +43955,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4040-48ee-f05b-5986" name="Sicaran Punisher" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+    <profile id="4040-48ee-f05b-5986" name="Sicaran Punisher*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
         <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">35cm</characteristic>
@@ -44121,7 +44121,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="072f-7f4a-18eb-925e">Reinforced Armour, Thick Rear Armour.</characteristic>
       </characteristics>
     </profile>
-    <profile id="d030-8cdc-d1b4-5ed1" name="Termite Assault Drill" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
+    <profile id="d030-8cdc-d1b4-5ed1" name="Termite Assault Drill*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
         <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>

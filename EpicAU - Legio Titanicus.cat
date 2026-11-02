@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="10" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="9" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="11" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5a43-d432-849f-519a" name="Legio Titanicus" hidden="false">
       <rules>
@@ -1094,7 +1094,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="725.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e859-7cf7-ccd7-b82e" name="Warbringer Nemesis Titan" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="e859-7cf7-ccd7-b82e" name="Warbringer Nemesis Titan*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -1160,7 +1160,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <categoryLink id="1f54-dc87-fd93-b5db" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="1a90-fdc0-01e5-723a" name="Warbringer Nemesis Titan" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="1a90-fdc0-01e5-723a" name="Warbringer Nemesis Titan*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef34-942d-ad91-8dd1" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0389-9d9a-2c39-d5f7" type="max"/>
@@ -1477,7 +1477,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="675.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="61e5-242d-a009-5b50" name="Warmaster Titan" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="61e5-242d-a009-5b50" name="Warmaster Titan*" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
           <conditions>
@@ -1546,7 +1546,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <categoryLink id="db3c-1dff-8f9e-888a" name="Line Detachment" hidden="false" targetId="71ca-c9e1-da76-27e2" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5b0f-adef-7680-a43c" name="Warmaster Heavy Battle Titan" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="5b0f-adef-7680-a43c" name="Warmaster Heavy Battle Titan*" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4707-5fdb-9c0d-026e" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="424c-eeab-023d-1f5b" type="max"/>
@@ -2304,7 +2304,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="794f-de8e-b77d-0a91" name="Warbringer Nemesis Titan" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
+    <profile id="794f-de8e-b77d-0a91" name="Warbringer Nemesis Titan*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
         <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">20cm</characteristic>
@@ -2355,7 +2355,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6494-b168-7d60-08ee" name="Warmaster Heavy Battle Titan" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
+    <profile id="6494-b168-7d60-08ee" name="Warmaster Heavy Battle Titan*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
         <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">15cm</characteristic>

@@ -10,6 +10,7 @@ BattleScribe (v2.03 schema) data for the EpicAU community's Horus Heresy supplem
 | `EpicAU - Legion Astartes.cat` | The Legion list: the core formations plus all 18 Legions' formations, Primarchs, allies and restrictions, chosen with a Legion selection |
 | `EpicAU - Legio Custodes / Solar Auxilia / Mechanicum Taghmata / Legio Titanicus / Knight Household / Imperial Militia / Daemons Of The Ruinstorm.cat` | The other army lists |
 | `tools/` | The scraper, list specs and generator used to build the files |
+| `site/` | The [Quartz](https://quartz.jzhao.xyz) site listing the new units, rules and changelog |
 
 To use it, copy the `.gst` and `.cat` files into a BattleScribe data folder, or zip them as a data index.
 
@@ -159,3 +160,14 @@ python3 check.py ..                               # integrity checks
 The army lists are transcribed by hand in `spec_legion.py` and `spec_others.py`, using the small DSL in `dsl.py`. Edit those files and re-run `generate.py`. IDs are deterministic, so they stay stable across rebuilds.
 
 Revisions are bumped automatically. `generate.py` compares each file with the copy already on disk and only rewrites files whose content changed; each rewrite raises that file's `revision` by one. A changed catalogue also records the current game system revision as `gameSystemRevision`. Running the generator twice in a row changes nothing. Always run it against the committed files rather than a fresh folder, otherwise every file starts again at revision 1.
+
+## Site
+
+`site/` builds a [Quartz](https://quartz.jzhao.xyz) site from the data files, published at <https://vanhornchadm.github.io/epicau-heresy-bsdata/>. It has a page for every fan-made or Departmento Munitorum formation, unit, upgrade and Titan weapon, the special rules they use, this README's roster rules and data decisions, the backlog in `TODO.md`, and a changelog built from the git history. Nothing in it is written by hand: `site/build_content.py` reads the `.gst` and `.cat` files, `README.md`, `TODO.md`, `MISSING_UNITS.md` and `git log`, so the site follows the data.
+
+```bash
+site/build.sh            # build into site/public
+site/build.sh --serve    # preview at http://localhost:8080
+```
+
+`build.sh` fetches the Quartz release pinned in it into `site/.quartz` and copies `site/quartz.config.ts` and `site/quartz.layout.ts` over its own. It needs git, Node 22 or later and Python 3. The `Deploy site to GitHub Pages` workflow rebuilds and publishes the site on every push to `main`; set the repository's Pages source to GitHub Actions once to turn it on.

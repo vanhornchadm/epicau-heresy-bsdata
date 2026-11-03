@@ -317,6 +317,7 @@ MILITIA = ARMY(
         F('Auxilia Malcador Heavy Tank Squadron', 'support', 350,
           [Mix(5, 5, ('Auxilia Malcador', 0), ('Auxilia Malcador Annihalator', 0))], extra_up=DM),
         F('Auxilia Rapier Battery', 'support', 100, [U(4, 'Auxilia Rapier Platform')], extra_up=DM),
+        F('Auxilia Flak Battery', 'support', 150, [U(3, 'Auxilia Hydra')], extra_up=DM, new=True),
         F('Auxilia Sentinel Scout Squadron', 'support', 100, [U(4, 'Auxilia Sentinel')], extra_up=DM),
         F('Auxilia Super Heavy Tank', 'support', 200,
           [Or(Opt('Baneblade', U(1, 'Auxilia Baneblade')), Opt('Stormhammer', U(1, 'Auxilia Stormhammer')))], extra_up=DM),

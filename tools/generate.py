@@ -103,6 +103,7 @@ LEGION_CHOICE = dict(label='Legion', none='None (core list)', none_rule='Core li
 # convert the Legions Imperialis profiles in the BSData Legions Imperialis data
 # (https://github.com/BSData/Horus-Heresy-Legions-Imperialis) against the EpicAU Mechanicum automata. The Acastus
 # Knight Asterius and Knight Moirax convert the same data's Knights library against the EpicAU Porphyrion and Armigers.
+# The Imperial Militia Hydra comes unchanged from the NetEA Imperial Guard lists.
 TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
               "than 2cm wide.")
 TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
@@ -340,6 +341,11 @@ EXTRA_UNITS = {
                     {'name': 'Kirus Siege Drill OR Kirus Grav Imploder', 'range': '-', 'firepower': '1 x Arm'}],
         'notes': 'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. '
                  f'{TITAN_STEP} {TITAN_CRIT}'}],
+    'Imperial Militia': [{
+        'name': 'Auxilia Hydra', 'type': 'AV', 'speed': '30cm', 'armour': '6+', 'cc': '6+', 'ff': '5+',
+        'weapons': [{'name': '2 x Twin Hydra Autocannon', 'range': '45cm', 'firepower': 'AP4+/AT5+/AA5+'},
+                    {'name': 'Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
+        'notes': '-'}],
 }
 # Fan-made Titan weapons for the Titans above, converted from Legions Imperialis against EpicAU's Titan weapons.
 FAN_TITAN_WEAPONS = {
@@ -364,7 +370,7 @@ FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion T
              'Malcador Vanquisher', 'Leman Russ Annihilator', 'Hellhammer', 'Aethon Heavy Sentinel',
              'Cyclops Demolition Vehicle', 'Scintillax', 'Errax', 'Tenebrax', 'Serperos', 'Harpax',
              'Arlatax Battle-Automata', 'Domitar Battle-Automata', 'Krios Venator', 'Archmagos Prime on Abeyant',
-             'Acastus Knight Asterius', 'Knight Moirax'}
+             'Acastus Knight Asterius', 'Knight Moirax', 'Auxilia Hydra'}
 
 
 def star(name, fan):

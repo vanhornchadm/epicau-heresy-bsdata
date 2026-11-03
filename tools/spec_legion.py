@@ -51,7 +51,8 @@ CORE_UPGRADES = [
             'Each Rhino carries 2 Tactical-sized units; one of them may be a Damocles Command Rhino. The count is set from the '
             'formation; add this upgrade last, or adjust the transports if you change units afterwards.'),
     UP('Tank', parts=[Mix(1, 2, ('Vindicator', 50), ('Predator', 60), ('Sicaran Battle Tank', 80),
-                          ('Typhon Siege Tank', 150), ('Cerberus Tank Destroyer', 150))]),
+                          ('Typhon Siege Tank', 150), ('Cerberus Tank Destroyer', 150),
+                          U((0, 2), 'Kratos Heavy Tank', 100, new=True))]),
     UP('Teleport', 50, rules=['Teleport'], desc='Add the Teleport special rule to each INF unit in the formation.'),
     # Fan-made (Legions Imperialis units with no Epic rules), behind 'Allow fan-made units'
     UP('Termite Assault', parts=[Carry(2, 'Termite Assault Drill', 30)], rules=['Tunneler'], new=True,
@@ -106,6 +107,7 @@ CORE_FORMATIONS = [
       'Drop Assault, Centurion', new=True),
     F('Legion Tarantula Battery', 'support', 125, [U(4, 'Legion Tarantula'), U(1, 'Legion Tarantula Hyperios')],
       new=True),
+    F('Legion Air Defence Battery', 'support', 225, [U(3, 'Whirlwind Hyperios')], 'Centurion', new=True),
     F('Legion Reconnaissance Squad', 'support', 150, [U(4, 'Reconnaissance Squad')],
       'Standard Transport OR Drop Assault OR Assault Claw, Centurion'),
     F('Legion Sicaran Battle Squadron', 'support', 0, [Mix(4, 6, *SICARANS, *NEW_SICARANS)], 'Centurion, Hyperios'),

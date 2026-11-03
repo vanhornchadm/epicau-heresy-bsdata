@@ -13,6 +13,8 @@ import sys
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 
+from sources import SOURCES, ENTRY_SOURCES, EPICAU_RULE_SOURCES
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, 'content')
@@ -501,6 +503,36 @@ def entry_notes(e):
     return first_notes(([e.name], False), ([e.name], True), (units, False), (sorted(e.parents), False))
 
 
+SOURCE_USES = defaultdict(list)  # source key -> [(link, what)], for the Sources page
+UNSOURCED = []
+
+
+def sources_of(*names):
+    """The sources of the first name that has any, as {source key: what came from it}."""
+    for group in names:
+        merged = {}
+        for n in ([group] if isinstance(group, str) else group):
+            for key, what in ENTRY_SOURCES.get(plain(n), ()):
+                if what not in merged.setdefault(key, []):
+                    merged[key].append(what)
+        if merged:
+            return {k: '; '.join(v) for k, v in merged.items()}
+    return {}
+
+
+def sources_section(srcs, page_link, name):
+    """The page's Sources section, recording each use for the Sources page."""
+    if not srcs:
+        UNSOURCED.append(name)
+        return ''
+    lines = []
+    for key, what in srcs.items():
+        title, url, _ = SOURCES[key]
+        SOURCE_USES[key].append((page_link, what))
+        lines.append(f'- ' + (f'[{title}]({url})' if url else title) + f': {what}')
+    return '## Sources\n\n' + '\n'.join(lines) + '\n\nSee [[sources|all sources]].\n\n'
+
+
 def model_page(m):
     p = chars(m.profile)
     war_engine = m.profile.get('typeName') == 'War Engine'
@@ -523,6 +555,7 @@ def model_page(m):
     if places:
         text += '## Taken in\n\n' + '\n'.join(places) + '\n\n'
     holders = [(FORMATIONS if k == 'formation' else UPGRADES).get((m.army, n)) for k, n in sorted(m.places)]
+    text += sources_section(sources_of(m.name, [h.name for h in holders if h]), model_link(m.army, m.name), m.name)
     text += design_notes(first_notes(([m.name], False), ([h.name for h in holders if h], False), ([m.name], True)))
     return text
 
@@ -584,6 +617,8 @@ def formation_page(e):
     text += '## Composition\n\n' + '\n'.join(comp) + '\n\n'
     if ups:
         text += '## Upgrades\n\n' + ', '.join(upgrade_link(e.army, u) for u in ups) + '\n\n'
+    new_units = list(dict.fromkeys(new_units_in(e.army, el)))
+    text += sources_section(sources_of(e.name, new_units), formation_link(e.army, e.name), e.name)
     text += design_notes(entry_notes(e))
     return text
 
@@ -604,6 +639,7 @@ def upgrade_page(e):
     parents = sorted(e.parents)
     text += f'## Taken by\n\n{len(parents)} formation{"s" if len(parents) != 1 else ""}:\n\n'
     text += '\n'.join(f'- {formation_link(e.army, p)}' for p in parents) + '\n\n'
+    text += sources_section(sources_of(e.name), upgrade_link(e.army, e.name), e.name)
     text += design_notes(entry_notes(e))
     return text
 
@@ -618,6 +654,7 @@ def weapon_page(e):
                                      weapon_rows(own_profiles(el), None)) + '\n\n'
     text += rules_section(el, e.name)
     text += '## Mounted on\n\n' + '\n'.join(f'- {formation_link(e.army, p)}' for p in sorted(e.parents)) + '\n\n'
+    text += sources_section(sources_of(e.name, sorted(e.parents)), weapon_link(e.army, e.name), e.name)
     text += design_notes(first_notes(([e.name], False), (sorted(e.parents), True)))
     return text
 
@@ -637,7 +674,28 @@ def rule_page(name, rule):
             f'- {model_link(a, n) if (a, n) in NEW_MODELS else upgrade_link(a, n)} ({a})' for a, n in new_users) + '\n\n'
     if old:
         n_old = sum(1 for _, _, nw in users if not nw)
-        text += f'Also used by {n_old} EpicAU unit{"s" if n_old != 1 else ""} in {", ".join(old)}.\n'
+        text += f'Also used by {n_old} EpicAU unit{"s" if n_old != 1 else ""} in {", ".join(old)}.\n\n'
+    srcs = sources_of(name) if new else dict(EPICAU_RULE_SOURCES)
+    text += sources_section(srcs, rule_link(name), name)
+    return text
+
+
+def sources_page():
+    text = frontmatter('Sources', ['sources'], 'Where the new units and rules come from.')
+    text += ('Where each unit, upgrade, weapon and rule added beyond the EpicAU wiki comes from. Each page also '
+             'lists its own sources, and the [[design-notes|design notes]] explain each conversion. Rule text is '
+             'summarised in our own words, not copied.\n\n')
+    for key, (title, url, about) in SOURCES.items():
+        uses = SOURCE_USES.get(key, [])
+        if not uses:
+            continue
+        text += f'## {title}\n\n{about}' + (f' <{url}>' if url else '') + '\n\n'
+        pages = [(l, w) for l, w in uses if not l.startswith('[[rules/')]
+        rules = [(l, w) for l, w in uses if l.startswith('[[rules/')]
+        if pages:
+            text += '\n'.join(f'- {l}: {w}' for l, w in pages) + '\n\n'
+        if rules:
+            text += f'Rules: {", ".join(l for l, _ in rules)}\n\n'
     return text
 
 
@@ -754,12 +812,29 @@ def index_page(rule_count):
              '- [[rules/index|Special rules]]: the rules the new units use\n'
              '- [[roster-rules|Roster rules]]: how rosters are built and what BattleScribe enforces\n'
              '- [[design-notes|Design notes]]: where each unit comes from and how it was converted\n'
-             '- [[backlog|Backlog]]: Legions Imperialis units still to port\n'
+             '- [[backlog|Backlog]]: fan-made candidates still to consider\n'
+             '- [[sources|Sources]]: where each new unit and rule comes from\n'
              '- [[changelog|Changelog]]: every change to the data\n\n')
     text += ('## Using the data\n\nCopy the `.gst` and `.cat` files from the '
              f'[repository]({REPO_URL}) into a BattleScribe data folder. Fan-made units stay hidden until a roster '
              'takes **Allow fan-made units** from its Configuration entry, and are marked with an asterisk (*).\n')
     return text
+
+
+def body(path):
+    """A Markdown file without its title line, or '' if it isn't there."""
+    full = os.path.join(ROOT, path)
+    return open(full).read().split('\n', 1)[1].strip() if os.path.exists(full) else ''
+
+
+def backlog():
+    """The fan-made candidates in TODO.md, then the Legions Imperialis coverage in MISSING_UNITS.md."""
+    text = body('TODO.md')
+    missing = body('MISSING_UNITS.md')
+    if missing:
+        text += '\n\n## Legions Imperialis coverage\n\n' + missing.replace('\n## ', '\n### ')
+    return md_page('Backlog', ['backlog'], 'Fan-made candidates still to consider, and Legions Imperialis coverage.',
+                   text)
 
 
 def main():
@@ -796,10 +871,12 @@ def main():
                                      section(README, 'Validation status')))
     write('design-notes.md', md_page('Design notes', ['notes'], 'Where each unit comes from and how it was converted.',
                                      section(README, 'Data decisions and gaps')))
-    missing = open(os.path.join(ROOT, 'MISSING_UNITS.md')).read().split('\n', 1)[1]
-    write('backlog.md', md_page('Backlog', ['backlog'], 'Legions Imperialis units still to port.', missing))
+    write('sources.md', sources_page())
+    write('backlog.md', backlog())
     write('changelog.md', changelog())
     write('index.md', index_page(len(rule_names)))
+    if UNSOURCED:
+        print(f'NO SOURCE in site/sources.py for: {", ".join(sorted(set(UNSOURCED)))}')
     print(f'Wrote {len(FORMATIONS)} formations, {len(UPGRADES)} upgrades, {len(WEAPONS)} weapons, '
           f'{len(NEW_MODELS)} units and {len(rule_names)} rules to {OUT}')
 

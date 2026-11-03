@@ -1,11 +1,9 @@
 """Generate BattleScribe data (.gst/.cat) for the EpicAU Horus Heresy supplement.
 
 Usage: python3 generate.py [output_dir]
-Reads source/units.json (reference sheets) and source/titan_weapons.json, plus the
-hand-transcribed army list specs in spec_legion.py / spec_others.py.
+Reads the units, Titan weapons, rules and army lists from the Markdown files in data/ (see markdown_data.py).
 """
 import hashlib
-import json
 import os
 import re
 import sys
@@ -13,10 +11,15 @@ from xml.sax.saxutils import escape, quoteattr
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-from rules import RULES, ALIASES, ACRONYMS  # noqa: E402
-from spec_legion import legion_catalogue  # noqa: E402
-from spec_others import OTHER_ARMIES, TITAN_WEAPON_SLOTS  # noqa: E402
-from weapon_options import WEAPON_OPTIONS, REPLACED_ROWS  # noqa: E402
+from markdown_data import load  # noqa: E402
+
+DATA = load()
+RULES, ALIASES, ACRONYMS = DATA['rules'], DATA['aliases'], DATA['acronyms']
+WEAPON_OPTIONS, REPLACED_ROWS, TITAN_WEAPON_SLOTS = DATA['weapon_options'], DATA['replaced_rows'], DATA['titan_slots']
+ARMIES = DATA['armies']
+# Fan-made units and Titan weapons (not on the EpicAU wiki or Departmento Munitorum) show an asterisk after their names,
+# as fan-made formations and upgrades do.
+FAN_UNITS, FAN_TITAN_WEAPONS = DATA['fan_units'], DATA['fan_titan_weapons']
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(HERE)
 BS_VERSION = '2.03'
@@ -61,10 +64,13 @@ def ally_rules():
     name no allies at all (Legio Custodes) are left out, so they place no restriction.
     """
     base = lambda names: {re.sub(r'\s*\(.*\)\s*$', '', n) for n in names}
-    legion = legion_catalogue()
-    lists = [(a['name'], a['cohesive'], a['disruptive']) for a in OTHER_ARMIES]
-    lists.append(('Legion Astartes (core list)',) + legion['core_allies'])
-    lists += [(f'Legion Astartes ({l["name"]})', l['cohesive'], l['disruptive']) for l in legion['legions']]
+    lists = []
+    for a in ARMIES:
+        if a.get('legions') and a['choice']['tag']:  # each choice names the primary army
+            lists.append((f'{a["name"]} (core list)',) + a['core_allies'])
+            lists += [(f'{a["name"]} ({l["name"]})', l['cohesive'], l['disruptive']) for l in a['legions']]
+        else:
+            lists.append((a['name'], a['cohesive'], a['disruptive']))
     return {f'Primary army: {name}': (base(c), base(d)) for name, c, d in lists if c or d}
 
 
@@ -85,313 +91,6 @@ COST_ID = {s: gid('cost', s) for s in TRANSPORT_SCHEMES}
 BULKY = re.compile(r'Terminator|Dreadnought|Ogryn|Thallax|Ursarax|Myrmidon|Aquilon')
 NA_CAT = 'Not available with the chosen Configuration'  # flags selections a Configuration choice has ruled out
 NEW_UNITS_ID = gid('config', 'Allow fan-made units')  # game-system toggle that shows fan-made units roster-wide
-# How a list's Configuration choice reads (an army may give its own as 'choice'). tag: each option names the primary
-# army for ally checks, as the Legion choice sets the allies.
-LEGION_CHOICE = dict(label='Legion', none='None (core list)', none_rule='Core list',
-                     none_text='The core Legion list, with no unique Legion.', allegiance_text='{} Legion.', tag=True)
-
-# Units not present on the wiki reference sheet: the Sabre from Departmento Munitorum, the Kratos from fan rules
-# posted on Dakka Dakka (https://www.dakkadakka.com/dakkaforum/posts/list/812078.page, last edited 2024-11-09), and
-# the Warbringer and Warmaster adapted from the Epic-UK Adeptus Titanicus codex (version 080925), and the Sicaran
-# Punisher and Arcus: the Sicaran Battle Tank's hull with main guns derived from existing EpicAU weapons. The Legion
-# Tarantulas use the Solar Auxilia Tarantula hulls with the Mechanicum Tarantula's weapon choice. The Ascalon, Araknae,
-# Saturnine Terminators and Dreadnought and the Termite convert their Legions Imperialis rules against EpicAU units.
-# Solar Auxilia: the Marauder Bomber and Thunderbolt come from the NetEA Imperial Guard lists, the Marauder Destroyer
-# from the Epic-UK Imperial Guard codex (version 011026), and the Malcador Annihilator from the EpicAU Imperial Militia
-# sheet on the Solar Auxilia Malcador's hull; the rest convert their Legions Imperialis rules against EpicAU units.
-# The Dark Mechanicum Stalkers and Harpax, and the Arlatax, Domitar, Krios Venator and Archmagos Prime on Abeyant,
-# convert the Legions Imperialis profiles in the BSData Legions Imperialis data
-# (https://github.com/BSData/Horus-Heresy-Legions-Imperialis) against the EpicAU Mechanicum automata. The Acastus
-# Knight Asterius and Knight Moirax convert the same data's Knights library against the EpicAU Porphyrion and Armigers.
-# The Imperial Militia Hydra comes unchanged from the NetEA Imperial Guard lists.
-TITAN_STEP = ("May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater "
-              "than 2cm wide.")
-TITAN_CRIT = ("Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, "
-              "destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan "
-              "loses a point of DC, 4-6 the reactor is repaired.")
-WARHOUND_CRIT = ('Critical Hit: The Titan staggers D6cm in a random direction taking an additional DC, any units that come '
-                 'into base contact with it as it staggers take a standard hit on a 6+.')
-EXTRA_UNITS = {
-    'Legion Astartes': [{
-        'name': 'Sabre Strike Tank', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Volkite Saker', 'range': '15cm', 'firepower': '2 x AP3+, Fleshbane, FxF'},
-                    {'name': 'Sabre Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'}],
-        'notes': 'Reinforced Armour.'}, {
-        'name': 'Kratos Heavy Tank', 'type': 'WE', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Kratos Battlecannon OR', 'range': '45cm', 'firepower': '2 x AP3+/AT3+, Armourbane'},
-                    {'name': 'Melta Cannon', 'range': '30cm',
-                     'firepower': '4 x MW5+, Armourbane'},
-                    {'name': 'Co-axial Autocannon', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
-                    {'name': '2 x Hull Heavy Bolters OR', 'range': '30cm', 'firepower': 'AP5+, Fwd'},
-                    {'name': '2 x Hull Lascannons', 'range': '45cm',
-                     'firepower': 'AT5+, Fwd'},
-                    {'name': '2 x Sponson Heavy Bolters OR', 'range': '30cm', 'firepower': 'AP5+'},
-                    {'name': '2 x Sponson Lascannons', 'range': '45cm',
-                     'firepower': 'AT5+'}],
-        'notes': 'DC2, Reinforced Armour, Thick Rear Armour. A Kratos must select either a Kratos Battlecannon OR Melta '
-                 'Cannon, and either Heavy Bolters OR Lascannons for its hull and for its sponsons, before the start of '
-                 'the game. Critical Hit: Unit is destroyed.'}, {
-        'name': 'Sicaran Punisher', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '3+',
-        'weapons': [{'name': 'Punisher Rotary Cannon', 'range': '30cm', 'firepower': '3 x AP3+/AT6+'},
-                    {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
-        'notes': 'Reinforced Armour'}, {
-        'name': 'Sicaran Arcus', 'type': 'AV', 'speed': '35cm', 'armour': '5+', 'cc': '6+', 'ff': '3+',
-        'weapons': [{'name': 'Arcus Missile Launcher', 'range': '45cm', 'firepower': '2 x AT4+/AA5+'},
-                    {'name': '3 x Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
-        'notes': 'Reinforced Armour'}, {
-        'name': 'Legion Tarantula', 'type': 'LV', 'speed': 'Immobile', 'armour': '6+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'TL Lascannon OR', 'range': '45cm', 'firepower': 'AT4+'},
-                    {'name': 'TL Heavy Bolter', 'range': '30cm', 'firepower': 'AP4+'}],
-        'notes': 'Teleport, Scout. A Legion Tarantula must select either a TL Lascannon OR TL Heavy Bolter before the '
-                 'start of the game.'}, {
-        'name': 'Legion Tarantula Hyperios', 'type': 'LV', 'speed': 'Immobile', 'armour': '6+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Missile Rack', 'range': '30cm', 'firepower': 'AA4+'}],
-        'notes': 'Teleport, Scout.'}, {
-        'name': 'Ascalon', 'type': 'WE', 'speed': '25cm', 'armour': '4+', 'cc': '5+', 'ff': '4+',
-        'weapons': [{'name': 'Ascalon Inferno Gun', 'range': '30cm AND (15cm)',
-                     'firepower': '2 x AP3+/AT6+, Ignore Cover AND (small arms) Ignore Cover'}],
-        'notes': 'DC3, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed and all units within 5cm '
-                 'suffer a standard hit on a 6+'}, {
-        'name': 'Araknae Weapons Platform', 'type': 'LV', 'speed': 'Immobile', 'armour': '5+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Quad Accelerator Autocannon OR', 'range': '45cm', 'firepower': '3 x AP4+/AT5+'},
-                    {'name': 'Twin Punisher Cannon OR', 'range': '30cm', 'firepower': '4 x AP3+/AT6+/AA5+'},
-                    {'name': 'Orias Heavy Frag Missiles', 'range': '45cm', 'firepower': '2 BP, Indirect Fire, Single Shot'}],
-        'notes': 'Invulnerable Save. An Araknae Weapons Platform must select one weapon system before the start of '
-                 'the game.'}, {
-        'name': 'Saturnine Terminators', 'type': 'INF', 'speed': '15cm', 'armour': '4+', 'cc': '4+', 'ff': '3+',
-        'weapons': [{'name': 'Plasma Bombards OR', 'range': '30cm', 'firepower': 'AP4+/AT5+, Indirect Fire'},
-                    {'name': 'Twin Heavy Disintegrators OR', 'range': '15cm', 'firepower': 'AP4+/AT4+, MW'},
-                    {'name': 'Disruption Fists', 'range': '(base contact)', 'firepower': '(assault weapons) MW, EA(+1)'}],
-        'notes': 'Reinforced Armour, Thick Rear Armour, Invulnerable Save. A Saturnine Terminator unit must select two '
-                 'weapons (the same one twice, or two different ones) before the start of the game.'}, {
-        'name': 'Saturnine Dreadnought', 'type': 'AV', 'speed': '15cm', 'armour': '3+', 'cc': '5+', 'ff': '4+',
-        'weapons': [{'name': 'Heavy Plasma Bombard OR', 'range': '30cm', 'firepower': '2 x AP4+/AT5+, Indirect Fire'},
-                    {'name': 'Graviton Pulveriser', 'range': '15cm', 'firepower': 'AP3+/AT4+, Disrupt'},
-                    {'name': 'Inversion Beamer', 'range': '30cm', 'firepower': 'AP5+/AT4+'}],
-        'notes': 'Invulnerable Save, Walker, Reinforced Armour. A Saturnine Dreadnought must select either a Heavy '
-                 'Plasma Bombard OR Graviton Pulveriser before the start of the game.'}, {
-        'name': 'Termite Assault Drill', 'type': 'AV', 'speed': '15cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Twin-linked Bolters', 'range': '(15cm)', 'firepower': '(small arms)'}],
-        'notes': 'Tunneler. Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 '
-                 'Terminator.'}],
-    'Solar Auxilia': [{
-        'name': 'Imperial Navy Marauder Bomber', 'type': 'AC', 'speed': 'Bomber', 'armour': '4+', 'cc': '', 'ff': '',
-        'weapons': [{'name': 'Twin Lascannon', 'range': '45cm', 'firepower': 'AT4+/AA4+, FxF'},
-                    {'name': 'Bomb Racks', 'range': '15cm', 'firepower': '3 BP, FxF'},
-                    {'name': '2 x Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'}],
-        'notes': ''}, {
-        'name': 'Imperial Navy Thunderbolt Fighter', 'type': 'AC', 'speed': 'Fighter-Bomber', 'armour': '6+',
-        'cc': '', 'ff': '',
-        'weapons': [{'name': 'Multilaser', 'range': '30cm', 'firepower': 'AP5+/AT6+/AA5+, FxF'},
-                    {'name': 'Underwing Rockets', 'range': '30cm', 'firepower': 'AT4+, FxF'},
-                    {'name': 'Storm Bolters', 'range': '15cm', 'firepower': 'AP4+/AA5+, FxF'}],
-        'notes': ''}, {
-        'name': 'Imperial Navy Marauder Destroyer', 'type': 'AC', 'speed': 'Bomber', 'armour': '3+', 'cc': '', 'ff': '',
-        'weapons': [{'name': 'Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'},
-                    {'name': 'Twin Assault Cannon', 'range': '15cm', 'firepower': 'AA4+, Rear Arc'},
-                    {'name': '3 x Twin Autocannon', 'range': '45cm', 'firepower': 'AP4+/AT5+, FxF'},
-                    {'name': '2 x Underwing Rockets', 'range': '30cm', 'firepower': 'AT4+, FxF'}],
-        'notes': ''}, {
-        'name': 'Imperial Navy Marauder Colossus', 'type': 'AC', 'speed': 'Bomber', 'armour': '4+', 'cc': '', 'ff': '',
-        'weapons': [{'name': 'Colossus Bomb', 'range': '15cm', 'firepower': '3 BP, MW, Single Shot, FxF'},
-                    {'name': 'Hellstrike Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'},
-                    {'name': '2 x Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'}],
-        'notes': ''}, {
-        'name': 'Imperial Navy Marauder Pathfinder', 'type': 'AC', 'speed': 'Bomber', 'armour': '4+', 'cc': '',
-        'ff': '',
-        'weapons': [{'name': '2 x Hellstrike Missiles', 'range': '30cm', 'firepower': 'AT4+, FxF'},
-                    {'name': '2 x Twin Heavy Bolter', 'range': '15cm', 'firepower': 'AA5+'}],
-        'notes': 'Auger Array: friendly formations making Indirect Fire attacks against an enemy formation within '
-                 '30cm of a Marauder Pathfinder on the table get the +1 to hit for Sustained Fire.'}, {
-        'name': 'Malcador Annihilator', 'type': 'AV', 'speed': '15cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Twin Lascannon', 'range': '45cm', 'firepower': 'AT4+'},
-                    {'name': '2 x Lascannon', 'range': '45cm', 'firepower': 'AT5+'},
-                    {'name': 'Demolisher Cannon', 'range': '30cm AND (15cm)',
-                     'firepower': 'AP3+/AT4+, Disrupt, Ignore Cover AND (small arms) Ignore Cover'}],
-        'notes': 'Reinforced Armour, Thick Rear Armour.'}, {
-        'name': 'Malcador Vanquisher', 'type': 'AV', 'speed': '15cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Vanquisher Cannon', 'range': '75cm', 'firepower': 'AP4+/AT2+'},
-                    {'name': '2 x Autocannons', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
-                    {'name': 'Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
-        'notes': 'Reinforced Armour, Thick Rear Armour.'}, {
-        'name': 'Leman Russ Annihilator', 'type': 'AV', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Annihilator Twin Lascannon', 'range': '45cm', 'firepower': 'AT3+'},
-                    {'name': 'Lascannon', 'range': '45cm', 'firepower': 'AT5+'}],
-        'notes': 'Reinforced Armour.'}, {
-        'name': 'Hellhammer', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '6+', 'ff': '4+',
-        'weapons': [{'name': '3 x TL Heavy Bolters', 'range': '30cm', 'firepower': 'AP4+'},
-                    {'name': 'Autocannon', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
-                    {'name': '2 x Lascannon', 'range': '45cm', 'firepower': 'AT5+'},
-                    {'name': 'Hellhammer Cannon', 'range': '45cm', 'firepower': 'AP3+/AT3+, Ignore Cover'},
-                    {'name': 'Demolisher Cannon', 'range': '30cm',
-                     'firepower': 'AP3+/AT4+ Ignore Cover AND (small arms) Ignore Cover, FxF'}],
-        'notes': 'DC 3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard '
-                 'hit on a 6+.'}, {
-        'name': 'Aethon Heavy Sentinel', 'type': 'LV', 'speed': '20cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Multilaser', 'range': '30cm', 'firepower': 'AP5+/AT6+'},
-                    {'name': 'Sentinel Missile Launcher', 'range': '45cm', 'firepower': 'AP5+/AT6+'}],
-        'notes': 'Scout, Walker.'}, {
-        'name': 'Cyclops Demolition Vehicle', 'type': 'LV', 'speed': '25cm', 'armour': '6+', 'cc': '6+', 'ff': '-',
-        'weapons': [{'name': 'Demolition Charge OR', 'range': '5cm', 'firepower': '1 BP, MW, Single Shot'},
-                    {'name': 'Incineration Charge', 'range': '5cm', 'firepower': '1 BP, Ignore Cover, Single Shot'}],
-        'notes': 'Remote Detonation: a Cyclops may only fire its charge while within 30cm of a friendly Leader, '
-                 'Commander or Supreme Commander, and is destroyed once it has fired. A Cyclops must select either a '
-                 'Demolition Charge OR Incineration Charge before the start of the game.'}],
-    'Mechanicum Taghmata': [{
-        'name': 'Arlatax Battle-Automata', 'type': 'AV', 'speed': '20cm', 'armour': '3+', 'cc': '3+', 'ff': '5+',
-        'weapons': [{'name': 'Autocannon OR', 'range': '45cm', 'firepower': 'AP5+/AT6+'},
-                    {'name': 'Plasma Cannon', 'range': '30cm', 'firepower': 'AP4+/AT5+'},
-                    {'name': 'Power Claws', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'}],
-        'notes': 'Cybernetica Cortex, Fearless, Invulnerable Save, Jump Packs. Dread Aura: enemy formations within '
-                 '15cm subtract 1 from their rally tests. An Arlatax must select either an Autocannon OR a Plasma '
-                 'Cannon before the start of the game.'}, {
-        'name': 'Domitar Battle-Automata', 'type': 'AV', 'speed': '15cm', 'armour': '3+', 'cc': '4+', 'ff': '5+',
-        'weapons': [{'name': 'Domitar Missile Launcher', 'range': '45cm', 'firepower': 'AP5+/AT5+'},
-                    {'name': 'Graviton Hammers', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'}],
-        'notes': 'Cybernetica Cortex, Fearless, Invulnerable Save, Walker. Dread Aura: enemy formations within 15cm '
-                 'subtract 1 from their rally tests.'}, {
-        'name': 'Krios Venator', 'type': 'AV', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '4+',
-        'weapons': [{'name': 'Pulsar Fusil', 'range': '30cm', 'firepower': 'AP5+/AT3+'},
-                    {'name': 'Volkite Caliver Sponsons', 'range': '15cm', 'firepower': 'AP5+, Disrupt'}],
-        'notes': 'Invulnerable Save, Reinforced Armour, Walker.'}, {
-        'name': 'Archmagos Prime on Abeyant', 'type': 'AV', 'speed': '15cm', 'armour': '4+', 'cc': '4+', 'ff': '5+',
-        'weapons': [{'name': 'Meltagun', 'range': '15cm', 'firepower': 'MW5+'},
-                    {'name': 'Power Weapons', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'}],
-        'notes': 'Supreme Commander, Reinforced Armour, Invulnerable Save, Cortex Controller.'}, {
-        'name': 'Scintillax', 'type': 'AV', 'speed': '20cm', 'armour': '4+', 'cc': '4+', 'ff': '5+',
-        'weapons': [{'name': 'Scintillax Lascutter', 'range': '(base contact)', 'firepower': '(assault weapons) EA(+1), MW'},
-                    {'name': 'Exo-planar Cannon OR', 'range': '15cm', 'firepower': 'AP4+, Ignore Cover'},
-                    {'name': 'Storm Laser', 'range': '30cm', 'firepower': 'AP5+/AT5+'}],
-        'notes': 'Invulnerable Save, Walker, Cortex Controller, Leader. A Scintillax must select either an Exo-planar '
-                 'Cannon OR a Storm Laser before the start of the game.'}, {
-        'name': 'Errax', 'type': 'AV', 'speed': '25cm', 'armour': '4+', 'cc': '3+', 'ff': '5+',
-        'weapons': [{'name': 'Errax Lascutters OR', 'range': '(base contact)', 'firepower': '(assault weapons) MW'},
-                    {'name': 'Errax Meltagun', 'range': '15cm', 'firepower': 'MW5+'},
-                    {'name': 'Stalker Maxima Bolters', 'range': '15cm', 'firepower': 'AP4+'}],
-        'notes': 'Cybernetica Cortex, Fearless, Invulnerable Save, Walker. An Errax must select either Errax '
-                 'Lascutters OR an Errax Meltagun before the start of the game.'}, {
-        'name': 'Tenebrax', 'type': 'LV', 'speed': '25cm', 'armour': '4+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Storm Laser Flenser', 'range': '45cm', 'firepower': 'AP4+/AT5+'},
-                    {'name': 'Stalker Volkite Culverins OR', 'range': '30cm', 'firepower': 'AP4+, Disrupt'},
-                    {'name': 'Exo-planar Cannon OR', 'range': '15cm', 'firepower': 'AP4+, Ignore Cover'},
-                    {'name': 'Stalker Maxima Bolters', 'range': '15cm', 'firepower': 'AP4+'}],
-        'notes': 'Cybernetica Cortex, Fearless, Walker. A Tenebrax must select Stalker Volkite Culverins OR an Exo-planar '
-                 'Cannon OR Stalker Maxima Bolters before the start of the game.'}, {
-        'name': 'Serperos', 'type': 'WE', 'speed': '20cm', 'armour': '3+', 'cc': '4+', 'ff': '4+',
-        'weapons': [{'name': 'Storm Laser Array OR', 'range': '30cm', 'firepower': '2 x AP4+/AT5+'},
-                    {'name': 'Exo-planar Bombard', 'range': '30cm', 'firepower': '2 x AP4+, Ignore Cover'},
-                    {'name': 'Serperos Lascutters OR', 'range': '(base contact)',
-                     'firepower': '(assault weapons) EA(+1), MW'},
-                    {'name': 'Irradiation Engine', 'range': '15cm', 'firepower': 'MW4+, Ignore Cover'}],
-        'notes': 'DC2, 1 Void Shield, Cybernetica Cortex, Fearless, Reinforced Armour, Walker. Construct Shield: its '
-                 'Void Shield is never repaired, in the end phase or by a regroup. A Serperos must select a Storm Laser '
-                 'Array OR an Exo-planar Bombard, and Serperos Lascutters OR an Irradiation Engine, before the start '
-                 'of the game. Critical Hit: Unit is destroyed.'}, {
-        'name': 'Harpax', 'type': 'INF', 'speed': '30cm', 'armour': '6+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': 'Exo-planar Repeaters OR', 'range': '15cm', 'firepower': 'AP5+, Ignore Cover'},
-                    {'name': 'Harpax Lascutters', 'range': '(base contact)', 'firepower': '(assault weapons) MW'}],
-        'notes': 'Jump Packs, Scout. A Harpax unit must select either Exo-planar Repeaters OR Harpax Lascutters '
-                 'before the start of the game.'}],
-    'Knight Household': [{
-        'name': 'Acastus Knight Asterius', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '6+', 'ff': '4+',
-        'weapons': [{'name': '2 x Conversion Beam Cannon', 'range': '75cm', 'firepower': 'MW3+'},
-                    {'name': 'Volkite Culverin', 'range': '45cm', 'firepower': 'AP4+, Disrupt'},
-                    {'name': 'Karacnos Mortar Battery', 'range': '45cm', 'firepower': 'BP 1, Ignore Cover, Fleshbane'}],
-        'notes': 'DC3, Ion Shield, Reinforced Armour, Walker. Ionic Flare Shield: its Ion Shield saves are 1 better '
-                 'against Barrage hits, to a maximum of 2+. Critical hit effect: Destroyed.'}, {
-        'name': 'Knight Moirax', 'type': 'LV', 'speed': '30cm', 'armour': '5+', 'cc': '4+ / 5+', 'ff': '5+',
-        'weapons': [{'name': 'Volkite Veuglair', 'range': '30cm', 'firepower': 'AP4+/AT6+, Disrupt'},
-                    {'name': 'Gyges Siege Claw OR', 'range': '(base contact)',
-                     'firepower': '(assault weapons) MW, EA(+1), TK(1)'},
-                    {'name': 'Armiger Lightning Locks', 'range': '30cm', 'firepower': '2 x AP4+/AT5+'}],
-        'notes': 'Ion Shield (5+), Scout, Walker. Ionic Flare Shield: its Ion Shield saves are 1 better against '
-                 'Barrage hits, to a maximum of 2+. A Knight Moirax must select either a Volkite Veuglair and Gyges '
-                 'Siege Claw OR Armiger Lightning Locks before the start of the game.'}],
-    'Legio Titanicus': [{
-        'name': 'Warbringer Nemesis Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
-        'weapons': [{'name': 'Quake Cannon OR Volcano Cannon', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'},
-                    {'name': '2 x Scout or Battle Titan Weapon Variants', 'range': '-', 'firepower': '2 x Arm, Forward Arc'},
-                    {'name': 'Carapace AA Guns', 'range': '45cm', 'firepower': '4 x AA5+'}],
-        'notes': f'DC 6, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} {TITAN_CRIT}'}, {
-        'name': 'Warmaster Heavy Battle Titan', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
-        'weapons': [{'name': '4 x Revelator Missile', 'range': '60cm', 'firepower': '1 BP, Single Shot, Fixed Forward'},
-                    {'name': '2 x Suzerain Plasma Destructor', 'range': '60cm',
-                     'firepower': '4 x MW3+, Slow Firing, Forward Arc'},
-                    {'name': 'Carapace AA Guns', 'range': '45cm', 'firepower': '4 x AA5+'},
-                    {'name': '1 x Scout or Battle Titan Weapon Variant', 'range': '-',
-                     'firepower': '1 x Carapace, Fixed Forward'}],
-        'notes': f'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. {TITAN_STEP} '
-                 f'{TITAN_CRIT}'}, {
-        'name': 'Dire Wolf Heavy Scout Titan', 'type': 'WE', 'speed': '30cm', 'armour': '5+', 'cc': '4+', 'ff': '4+',
-        'weapons': [{'name': 'Ardex Mega-Bolters', 'range': '30cm', 'firepower': '4 x AP4+/AT6+'},
-                    {'name': 'Volcano Cannon OR Neutron Laser OR Conversion Beam Dissipator', 'range': '-', 'firepower': '1 x Carapace, Fixed Forward'}],
-        'notes': 'DC 3, 2 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller, Infiltrator. '
-                 f'{TITAN_STEP} {WARHOUND_CRIT}'}, {
-        'name': 'Warlord-Sinister Battle Titan', 'type': 'WE', 'speed': '15cm', 'armour': '4+', 'cc': '2+', 'ff': '3+',
-        'weapons': [{'name': 'Sinistramanus Tenebrae', 'range': '75cm', 'firepower': '3 x MW3+, TK(1), Fwd'},
-                    {'name': 'Antipathic Tempest', 'range': '45cm', 'firepower': '2 BP, Ignore Cover, Disrupt'},
-                    {'name': 'Death Pulse', 'range': '(15cm)', 'firepower': '(small arms), EA(+2)'}],
-        'notes': 'DC 8, 6 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. Dread Aura: enemy '
-                 'formations within 15cm subtract 1 from their rally tests. A Psi-Titan for Loyalist Legions only. '
-                 f'{TITAN_STEP} {TITAN_CRIT}'}, {
-        'name': 'Warmaster Iconoclast Titan', 'type': 'WE', 'speed': '20cm', 'armour': '4+', 'cc': '3+', 'ff': '3+',
-        'weapons': [{'name': 'Desolator Chainsword', 'range': '(base contact)',
-                     'firepower': '(assault weapons) EA(+3), TK(D3)'},
-                    {'name': 'Cruciator Gatling Array', 'range': '45cm', 'firepower': '6 x AP4+/AT5+, Fwd'},
-                    {'name': 'Kirus Siege Drill OR Kirus Grav Imploder', 'range': '-', 'firepower': '1 x Arm'}],
-        'notes': 'DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. '
-                 f'{TITAN_STEP} {TITAN_CRIT}'}],
-    'Imperial Militia': [{
-        'name': 'Auxilia Hydra', 'type': 'AV', 'speed': '30cm', 'armour': '6+', 'cc': '6+', 'ff': '5+',
-        'weapons': [{'name': '2 x Twin Hydra Autocannon', 'range': '45cm', 'firepower': 'AP4+/AT5+/AA5+'},
-                    {'name': 'Heavy Bolter', 'range': '30cm', 'firepower': 'AP5+'}],
-        'notes': '-'}],
-}
-# Fan-made Titan weapons for the Titans above, converted from Legions Imperialis against EpicAU's Titan weapons.
-FAN_TITAN_WEAPONS = {
-    'Neutron Laser': {'name': 'Neutron Laser', 'range': '60cm', 'firepower': 'MW3+, Disrupt', 'notes': ''},
-    'Conversion Beam Dissipator': {'name': 'Conversion Beam Dissipator', 'range': '60cm', 'firepower': '3 x MW3+',
-                                   'notes': 'Within 15cm it fires 2 x AP4+/AT4+ instead.'},
-    'Kirus Siege Drill': {'name': 'Kirus Siege Drill', 'range': '(base contact)',
-                          'firepower': '(assault weapons) EA(+2), TK(D6), Siege', 'notes': ''},
-    'Kirus Grav Imploder': {'name': 'Kirus Grav Imploder', 'range': '15cm AND (base contact)',
-                            'firepower': '2 x MW3+, Disrupt, Ignore Cover AND (assault weapons) EA(+1), TK(D3)', 'notes': ''},
-}
-
-
-# Units whose stat lines are on the wiki reference sheet but whose weapons aren't: (weapons, notes) replaces the
-# sheet's empty weapons and its notes. The Dominus Knight-Castellan's weapons and Shieldbreaker rule come from Empire
-# of Ashes (Public v1.0, p. 60). Legions Imperialis has no Dominus Knights, so the Valiant keeps the Castellan's
-# siegebreaker and shieldbreakers and trades its plasma decimator and volcano lance for a conflagration cannon, the
-# EpicAU Knight-Acheron's flame cannon with a third shot, and a thundercoil harpoon, the volcano lance at 15cm and 3+.
-DOMINUS_NOTES = ('DC2, Ion Shield, Reinforced Armour, Walker. Shieldbreaker: Shieldbreaker Missiles ignore '
-                 'Invulnerable Saves and Void Shields. Critical hit effect: Destroyed.')
-DOMINUS_SHARED = [{'name': 'TL Siegebreaker Cannon', 'range': '15cm AND (15cm)',
-                   'firepower': 'AP5+/AT5+ AND (small arms) EA(+1)'},
-                  {'name': 'Shieldbreaker Missiles', 'range': '45cm', 'firepower': 'AT4+, Single Shot'}]
-SHEET_WEAPONS = {
-    'Dominus Knight-Castellan': ([{'name': 'Plasma Decimator', 'range': '30cm', 'firepower': 'AP3+/AT4+, MW, Slow Firing'},
-                                  {'name': 'Volcano Lance', 'range': '45cm', 'firepower': 'AT4+, TK(1)'}] + DOMINUS_SHARED,
-                                 DOMINUS_NOTES),
-    'Dominus Knight-Valiant': ([{'name': 'Conflagration Cannon', 'range': '30cm AND (15cm)',
-                                 'firepower': '3 x AP3+/AT6+, Ignore Cover AND (small arms) Ignore Cover'},
-                                {'name': 'Thundercoil Harpoon', 'range': '15cm', 'firepower': 'AT3+, TK(1)'}] + DOMINUS_SHARED,
-                               DOMINUS_NOTES),
-}
-
-
-# Fan-made units (not on the EpicAU wiki or Departmento Munitorum). They, and fan-made formations and upgrades, show
-# an asterisk after their names. The Dominus Knights are on both, but their weapons are fan-made.
-FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion Tarantula', 'Legion Tarantula Hyperios',
-             'Ascalon', 'Araknae Weapons Platform', 'Saturnine Terminators', 'Saturnine Dreadnought',
-             'Termite Assault Drill', 'Warbringer Nemesis Titan', 'Warmaster Heavy Battle Titan',
-             'Dire Wolf Heavy Scout Titan', 'Warlord-Sinister Battle Titan', 'Warmaster Iconoclast Titan',
-             'Imperial Navy Marauder Bomber', 'Imperial Navy Thunderbolt Fighter', 'Imperial Navy Marauder Destroyer',
-             'Imperial Navy Marauder Colossus', 'Imperial Navy Marauder Pathfinder', 'Malcador Annihilator',
-             'Malcador Vanquisher', 'Leman Russ Annihilator', 'Hellhammer', 'Aethon Heavy Sentinel',
-             'Cyclops Demolition Vehicle', 'Scintillax', 'Errax', 'Tenebrax', 'Serperos', 'Harpax',
-             'Arlatax Battle-Automata', 'Domitar Battle-Automata', 'Krios Venator', 'Archmagos Prime on Abeyant',
-             'Acastus Knight Asterius', 'Knight Moirax', 'Auxilia Hydra', *SHEET_WEAPONS}
 
 
 def star(name, fan):
@@ -540,17 +239,11 @@ def points_limit_label(owner, maxn, per, round_up):
 
 
 # ------------------------------------------------------------------ units & profiles
-UNITS = json.load(open(os.path.join(HERE, 'source', 'units.json')))
-for sheet, extra in EXTRA_UNITS.items():
-    UNITS[sheet].extend(extra)
-for u in (u for us in UNITS.values() for u in us if u['name'] in SHEET_WEAPONS):
-    assert not u['weapons'], f"{u['name']} now has weapons on the reference sheet"
-    u['weapons'], u['notes'] = SHEET_WEAPONS[u['name']]
-TITAN_WEAPONS = json.load(open(os.path.join(HERE, 'source', 'titan_weapons.json')))
-TITAN_WEAPONS.update(FAN_TITAN_WEAPONS)
-# Rule keywords are capitalised on the wiki, so match case-sensitively to avoid hits like "transport capacity".
-PATTERN_OVERRIDES = {'Scout': r'Scout(?! Titan)', 'Commander': r'(?<!Supreme )(?<!Lieutenant )(?<!Lord )Commander',
-                     'Transport': r'Transport(?= ?[:.])'}
+UNITS = DATA['units']  # reference sheet -> unit records
+TITAN_WEAPONS = DATA['titan_weapons']
+# Rule keywords are capitalised on the wiki, so match case-sensitively to avoid hits like "transport capacity". A rule
+# may give its own 'pattern' for its name.
+PATTERN_OVERRIDES = DATA['patterns']
 # A following capital is allowed so run-together text like "Ignore CoverAND" still matches.
 RULE_PATTERNS = [(name, re.compile(r'(?<![A-Za-z])' + PATTERN_OVERRIDES.get(name, re.escape(name)) + r'(?![a-z])'))
                  for name in RULES]
@@ -1418,8 +1111,9 @@ class Builder:
                 mods.add(X('modifier', {'type': 'add', 'field': 'category', 'value': CAT[NA_CAT]}, [off]))
 
     def choice(self):
-        """How the list's Configuration choice reads: the Legion, or another list's allegiance."""
-        return self.army.get('choice', LEGION_CHOICE)
+        """How the list's Configuration choice reads: the Legion, or another list's allegiance. tag: each option names
+        the primary army for ally checks, as the Legion choice sets the allies."""
+        return self.army['choice']
 
     def legion_entry(self):
         """The required Configuration choice: the first option keeps the core list; the others add and replace
@@ -1653,7 +1347,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     build_gst()
     missing = {}
-    armies = [legion_catalogue()] + OTHER_ARMIES
+    armies = ARMIES
     for a in armies:
         m = build_catalogue(a)
         if m:

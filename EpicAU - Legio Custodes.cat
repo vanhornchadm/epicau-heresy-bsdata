@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e58-c014-c5e4-5c80" name="EpicAU - Legio Custodes" revision="12" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e58-c014-c5e4-5c80" name="EpicAU - Legio Custodes" revision="13" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="6d49-ab7e-2c53-847a" name="Legio Custodes" hidden="false">
       <rules>
@@ -89,6 +89,259 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     </forceEntry>
   </forceEntries>
   <selectionEntries>
+    <selectionEntry id="469b-a311-5a34-2bd6" name="Ares Strike Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="703a-abb8-c7a0-d650" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
+        <categoryLink id="2cda-b9c5-ddb0-b4d0" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a6cd-99f3-ff25-2624" name="Ares Gunship" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6caa-29d3-8b99-25cb" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb76-bd94-ca3e-d2db" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="560f-e40c-51d4-9075" name="Ares Gunship" hidden="false" targetId="8f76-6ff3-53d5-50a9" type="profile"/>
+            <infoLink id="f1e4-9619-a0c3-a642" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
+            <infoLink id="7e4c-2731-7ddf-4735" name="Arachnus Magna-Blaze Cannon" hidden="false" targetId="d572-7f59-b7e3-4711" type="profile"/>
+            <infoLink id="f6f8-a062-b2b1-3b2a" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="275.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="458d-a282-10c2-d658" name="Caladius Grav-Tank Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c962-d1a0-21ce-0258" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="97f4-f7c4-acb0-123c" name="Callidus Grav-Tank" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8350-f573-8c58-e186" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4721-aa21-721e-ebed" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d5ba-53ee-db27-650e" name="Callidus Grav-Tank" hidden="false" targetId="0f82-9f3e-7ea0-bff5" type="profile"/>
+            <infoLink id="10ea-f98f-d634-83a2" name="Lastrum Bolt Cannon" hidden="false" targetId="23b0-453d-b819-a575" type="profile"/>
+            <infoLink id="bcc5-3a65-8b63-b7bb" name="Iliastus Accelerator Cannon" hidden="false" targetId="f989-47e2-c1fb-b411" type="profile"/>
+            <infoLink id="652a-c613-b544-af68" name="Special Rules (Callidus Grav-Tank)" hidden="false" targetId="3e55-dc0c-fe1f-b654" type="rule"/>
+            <infoLink id="c4ac-c383-ef60-73ef" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
+            <infoLink id="e65c-02cd-0ba3-46a5" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="6f2b-0a14-a19d-fc8a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="789a-21d8-13c7-0bbb" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="325.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b5e-df94-aecd-9138" name="Ephoroi Detachment" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="03ab-225a-deda-1477" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7f9f-1267-7f04-605c" name="Ephoroi Custodes" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44c7-2e9e-a2aa-bf80" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b1-febe-97ab-35ad" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="b08e-9e74-62ea-9265" name="Ephoroi Custodes" hidden="false" targetId="58aa-c915-6845-5d93" type="profile"/>
+            <infoLink id="8a94-7a00-627b-bd99" name="Guardian Spear" hidden="false" targetId="db5a-2a4d-acd4-acce" type="profile"/>
+            <infoLink id="c60e-fe77-0494-9073" name="Transport Space (Ephoroi Custodes)" hidden="false" targetId="a59e-6108-7fa4-af7b" type="rule"/>
+            <infoLink id="c543-fc2e-eb34-0443" name="Infiltrator" hidden="false" targetId="f14b-f1e8-683e-cd73" type="rule"/>
+            <infoLink id="cf37-bfdc-34e2-f66c" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
+            <infoLink id="7b51-5fac-f476-3853" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+            <infoLink id="9ea2-b587-c1ed-fc94" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="0283-0a95-a2ac-0e86" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="09ab-3409-58e0-f936" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="0fd0-398b-dbc9-e1f6" name="Carrier" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d779-f6e4-a877-a671" type="max"/>
+              </constraints>
+              <rules>
+                <rule id="d99e-8b30-6c75-c972" name="Carrier" hidden="false">
+                  <description>Add enough Coronus Grav-Carriers to transport the whole detachment (2 Custodes units or 1 Aquilon Terminator each); the count is set from the formation.</description>
+                </rule>
+              </rules>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="726c-7c85-4919-96a0" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="f4b7-59cf-8aba-1a22">
+                  <modifiers>
+                    <modifier type="increment" field="2323-866e-d617-3e45" value="1">
+                      <repeats>
+                        <repeat field="f52a-9ea6-2bb3-2a37" scope="9b5e-df94-aecd-9138" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="true"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" field="9027-51f0-fd7f-3d02" value="1">
+                      <repeats>
+                        <repeat field="f52a-9ea6-2bb3-2a37" scope="9b5e-df94-aecd-9138" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="true"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2323-866e-d617-3e45" type="min"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9027-51f0-fd7f-3d02" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="f4b7-59cf-8aba-1a22" name="Coronus Grav-Carrier" hidden="false" collective="false" import="true" type="model">
+                      <infoLinks>
+                        <infoLink id="6e77-adaf-8b99-b033" name="Coronus Grav-Carrier" hidden="false" targetId="c830-9578-99cc-d8c3" type="profile"/>
+                        <infoLink id="e1dd-aeb3-c503-a644" name="Iliastus Accelerator Cannon" hidden="false" targetId="f989-47e2-c1fb-b411" type="profile"/>
+                        <infoLink id="9d09-d11a-b173-539c" name="Arachnus Blaze Cannon" hidden="false" targetId="d6b3-c6fa-0406-8767" type="profile"/>
+                        <infoLink id="050f-6924-264e-9556" name="Special Rules (Coronus Grav-Carrier)" hidden="false" targetId="4b8e-2b6d-89e1-7104" type="rule"/>
+                        <infoLink id="8f7d-b3fd-155d-6f9f" name="Transport (Coronus Grav-Carrier)" hidden="false" targetId="2c00-35ce-a7a5-358d" type="rule"/>
+                        <infoLink id="9bd6-9094-cd51-b737" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
+                        <infoLink id="2a95-cab1-582c-dcba" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+                        <infoLink id="1712-e27d-31a5-a26d" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                        <infoLink id="cd4c-82ac-dffd-5ce5" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
+                        <infoLink id="e1ab-d7d6-8d14-21cd" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
+                        <infoLink id="c6ad-a7ae-071e-f7c6" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="75.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="325.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="56d6-5929-4684-9be3" name="Hykanatoi Detachment" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
@@ -105,12 +358,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
@@ -121,6 +372,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -154,8 +407,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="9124-c2d8-0f4b-ee6f" name="Special Rules (Sentinel Guard)" hidden="false" targetId="c348-7c7d-be98-a3bc" type="rule"/>
                     <infoLink id="af87-e3be-0c84-2b25" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
                     <infoLink id="3988-7f63-15ce-ec3e" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                    <infoLink id="2213-2bd9-d6b7-e59c" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                     <infoLink id="ffd5-42c9-7141-f977" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="2213-2bd9-d6b7-e59c" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -183,8 +436,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="3ac8-323e-5a32-3805" name="Special Rules (Custodian Guard)" hidden="false" targetId="ad0a-8bd4-6b12-2f5e" type="rule"/>
                     <infoLink id="c31a-9aa4-011d-485c" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
                     <infoLink id="19e9-74c9-9fc4-bf5d" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                    <infoLink id="06df-1915-218f-080f" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                     <infoLink id="4567-f8e3-5322-7ecb" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                    <infoLink id="06df-1915-218f-080f" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -262,10 +515,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <infoLink id="2608-d218-33f4-3f9f" name="Special Rules (Coronus Grav-Carrier)" hidden="false" targetId="4b8e-2b6d-89e1-7104" type="rule"/>
                         <infoLink id="59f4-8809-7789-5e33" name="Transport (Coronus Grav-Carrier)" hidden="false" targetId="2c00-35ce-a7a5-358d" type="rule"/>
                         <infoLink id="c436-f6e3-a4c6-3c10" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-                        <infoLink id="8d8f-e430-3564-6720" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                        <infoLink id="18b7-5c4e-851d-6488" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                         <infoLink id="aa25-19f9-b64b-09bc" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+                        <infoLink id="8d8f-e430-3564-6720" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                         <infoLink id="5968-415a-45e0-b36c" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
+                        <infoLink id="18b7-5c4e-851d-6488" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                         <infoLink id="ec81-1e47-035a-12da" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                       </infoLinks>
                       <costs>
@@ -328,12 +581,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
@@ -344,6 +595,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -364,12 +617,12 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="79b1-7551-f840-33c0" name="Custodes Agamatus" hidden="false" targetId="a611-44f7-1b78-0261" type="profile"/>
             <infoLink id="3ed7-bf31-56f3-8e2e" name="Power Lance" hidden="false" targetId="07ab-c77e-b119-4610" type="profile"/>
             <infoLink id="a601-7d80-8148-a2fc" name="Iliastus Bolt Cannon" hidden="false" targetId="0d04-ac8e-9886-6840" type="profile"/>
-            <infoLink id="20ad-685e-4ba8-758c" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
-            <infoLink id="7e64-3c2d-8db0-3aaf" name="Mounted" hidden="false" targetId="4357-7618-ea64-6347" type="rule"/>
             <infoLink id="f6d7-356f-5099-dda8" name="First Strike" hidden="false" targetId="d859-b0a0-af5c-bb73" type="rule"/>
+            <infoLink id="7e64-3c2d-8db0-3aaf" name="Mounted" hidden="false" targetId="4357-7618-ea64-6347" type="rule"/>
+            <infoLink id="20ad-685e-4ba8-758c" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
+            <infoLink id="331f-7dd9-135a-9900" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
             <infoLink id="ac18-175a-85e9-abef" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="5edf-7df9-39cf-51bb" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-            <infoLink id="331f-7dd9-135a-9900" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -391,6 +644,374 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="4301-1f1f-53c0-49af" name="Morotoi Detachment" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="71bf-ba68-fd02-a56a" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="12be-d450-3552-5b8c" name="Custodes Dreadnoughts" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9b-3409-2fd1-750d" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d72a-73ba-09bb-a88c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="de3c-a4b7-7ae1-5479" name="Contemptor-Achilles Dreadnought" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f6-7140-9280-a709" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3c8d-db19-1375-4096" name="Contemptor-Achilles Dreadnought" hidden="false" targetId="267b-d02f-a17f-5098" type="profile"/>
+                <infoLink id="d7ea-6f19-f73a-1f7b" name="Achilles Dreadspear" hidden="false" targetId="07fa-ff4f-24f0-8f12" type="profile"/>
+                <infoLink id="51f9-dfcc-35b1-3d99" name="Special Rules (Contemptor-Achilles Dreadnought)" hidden="false" targetId="2801-a9b0-83bd-b4b1" type="rule"/>
+                <infoLink id="d0dc-a81d-b3e1-e235" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+                <infoLink id="94ef-214d-bcb1-55da" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                <infoLink id="be97-a6a4-f5ef-210b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                <infoLink id="74a7-d1dd-16ee-b279" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                <infoLink id="07c9-fa78-5f28-bab3" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="51bb-1c59-d298-01a4" name="Contemptor-Galatus Dreadnought" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="152f-d35d-6854-2f87" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1388-a2ea-e856-ac72" name="Contemptor-Galatus Dreadnought" hidden="false" targetId="b9ce-2a59-87df-05a7" type="profile"/>
+                <infoLink id="e002-e33e-2889-9ab4" name="Galatus Warblade" hidden="false" targetId="7fa9-bd97-8d47-94a2" type="profile"/>
+                <infoLink id="eb7e-f28a-38b1-8b53" name="Special Rules (Contemptor-Galatus Dreadnought)" hidden="false" targetId="14af-f77c-a610-d746" type="rule"/>
+                <infoLink id="c7a2-180b-da30-6c34" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                <infoLink id="3a24-49a1-dc69-22bc" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+                <infoLink id="e300-f914-bed8-a318" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="c999-4322-79a3-8c79" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                <infoLink id="927b-894d-8912-d47b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                <infoLink id="c1d4-a7e5-25a4-d687" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                <infoLink id="59f8-b6ab-3c21-d56a" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                <infoLink id="179e-b004-4fd0-3656" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8a00-c066-cb40-e102" name="Telemon Heavy Dreadnought" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="701b-1fa0-36c3-342a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cfa1-98af-0bfa-6734" name="Telemon Heavy Dreadnought" hidden="false" targetId="428c-bef7-fdab-2828" type="profile">
+                  <modifiers>
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Telemon Caestus x2">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-7163-4ee9-46a8" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Arachnus Storm Cannon">
+                      <conditions>
+                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778d-f66d-de6b-202b" type="atLeast"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="88b5-4bc5-5113-b8e6" name="Special Rules (Telemon Heavy Dreadnought)" hidden="false" targetId="2c7c-d12c-f57f-0c51" type="rule"/>
+                <infoLink id="f177-603b-203a-6320" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+                <infoLink id="17dd-ed81-f695-ad43" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                <infoLink id="f458-af08-1ca5-d25c" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                <infoLink id="98f8-eaa7-1ff2-263f" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+                <infoLink id="7e46-76a9-27ae-954c" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+                <infoLink id="fde9-5ef4-27f7-ef94" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                <infoLink id="4015-9fa9-6279-3ceb" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="8601-4ba8-55c3-1872" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="4cf5-7163-4ee9-46a8">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="370b-680e-b131-8dbd" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be0e-0826-f2d0-6e2a" type="max"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="4cf5-7163-4ee9-46a8" name="2 x Telemon Caestus" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff0-7e8e-638e-848e" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="d2a1-ef42-8924-67c5" name="Telemon Caestus" hidden="false" targetId="8e6e-b80b-6aee-3c17" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="778d-f66d-de6b-202b" name="Arachnus Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82db-98ef-2326-7f4e" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="4f10-ff0d-7416-ea0d" name="Arachnus Storm Cannon" hidden="false" targetId="ef1b-26e5-81e7-bd6d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+                <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="350.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="493e-df48-3d61-c0cc" name="Orion Assault Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6a2d-c040-01ee-6d0d" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
+        <categoryLink id="53d6-a1a2-5dbd-58c2" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="2c38-1590-5d2f-eb66" name="Orion Assault Dropship" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e43-6ea4-7aa4-d2f2" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f22-6f79-aefb-2b52" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="2f1f-e56f-b790-e191" name="Orion Assault Dropship" hidden="false" targetId="6382-2139-06b7-cf1c" type="profile"/>
+            <infoLink id="e530-8a1b-f5b6-945f" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
+            <infoLink id="fd30-e424-bfaa-e68b" name="Lastrum Bolt Cannon" hidden="false" targetId="8d0a-131a-4eb8-1216" type="profile"/>
+            <infoLink id="956d-d0ff-e6b6-d9a4" name="Spiculus Heavy Bolt Launchers" hidden="false" targetId="0363-31c8-de8c-359c" type="profile"/>
+            <infoLink id="343d-9a81-010d-ad0c" name="Special Rules (Orion Assault Dropship)" hidden="false" targetId="c675-626f-d4a9-bfd0" type="rule"/>
+            <infoLink id="7bae-5934-87aa-d41f" name="Transport (Orion Assault Dropship)" hidden="false" targetId="0aa0-eaa2-518e-8a36" type="rule"/>
+            <infoLink id="7841-fd28-5ce1-cef1" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
+            <infoLink id="22d8-9165-faba-86e4" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="2907-dbbb-c7ff-9a3a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+            <infoLink id="9070-6568-3f53-530d" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
+            <infoLink id="b931-b908-1737-f6a0" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="300.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="28a6-3351-04cc-108a" name="Pallas Grav-Attack Squadron" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="40da-9f61-a9f3-0e13" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a7ea-a055-9152-ac1a" name="Pallas Grav-Attack Vehicle" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c642-1511-3cf4-e097" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ea4-608c-35fd-65f3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="671a-ee89-6b71-22d9" name="Pallas Grav-Attack Vehicle" hidden="false" targetId="c59d-3108-0377-0f03" type="profile"/>
+            <infoLink id="76a9-5fa0-1b59-b9fd" name="Arachnus Blaze Cannon" hidden="false" targetId="1fdc-25df-fcf6-57d5" type="profile"/>
+            <infoLink id="6439-aef2-66e3-8305" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
+            <infoLink id="e474-f0bc-ca51-ef88" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="7dd9-d03b-d06e-ea10" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e1c-2ca2-d951-f2ac" name="Sisters Detachment" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="fb9c-d112-73e2-bcb5" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="1f3e-d960-51cf-02f5" name="Sisters of Silence" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4226-67f9-fb4d-b734" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8168-d025-b06a-d2c6" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="5778-17fd-d14f-9b4f" name="Sisters of Silence" hidden="false" targetId="a5cf-6f56-096d-979f" type="profile"/>
+            <infoLink id="787d-9c36-1c21-1d1d" name="Boltguns" hidden="false" targetId="53b1-39fd-6b6b-37a4" type="profile"/>
+            <infoLink id="afa2-d2bb-99b7-0f7f" name="Transport Space (Sisters of Silence)" hidden="false" targetId="cb0d-10bf-6aae-4927" type="rule"/>
+            <infoLink id="1e5e-a953-f3f6-73c4" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
+            <infoLink id="e0aa-4bc3-3daa-93a1" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+            <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="794f-9262-c2d8-481d" name="Upgrades" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="6c89-aa41-d4ef-2383" name="Teleport" hidden="false" collective="false" import="true" targetId="e101-8948-b5a9-16b4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19bb-5a2b-481b-ad2c" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="250.0"/>
+      </costs>
+    </selectionEntry>
     <selectionEntry id="ab05-e037-4092-3d89" name="Tharanatoi Detachment" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
@@ -407,12 +1028,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
@@ -423,6 +1042,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -444,13 +1065,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="6f6d-74da-3cb8-3bdc" name="Lastrum Storm Bolter" hidden="false" targetId="caf0-e0dc-950c-e17c" type="profile"/>
             <infoLink id="666a-9f36-fae0-c164" name="Solerite Power Gauntlet" hidden="false" targetId="4db4-e681-2f4d-9f6b" type="profile"/>
             <infoLink id="7824-aeb9-e005-6174" name="Special Rules (Aquilon Terminator)" hidden="false" targetId="6d7a-8143-e0ff-e979" type="rule"/>
+            <infoLink id="e12e-7f0c-94eb-0f5a" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="d463-6201-681e-722a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="54d6-e6f8-48f8-4baf" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
-            <infoLink id="e12e-7f0c-94eb-0f5a" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="04f8-63c7-5dbf-390c" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-            <infoLink id="f824-2951-901f-03e4" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="9e53-85c8-6af2-4f71" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
             <infoLink id="0a12-eaee-62b0-480c" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+            <infoLink id="f824-2951-901f-03e4" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="04f8-63c7-5dbf-390c" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="9e53-85c8-6af2-4f71" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -519,10 +1140,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <infoLink id="719d-2321-c1e3-c1c9" name="Special Rules (Coronus Grav-Carrier)" hidden="false" targetId="4b8e-2b6d-89e1-7104" type="rule"/>
                             <infoLink id="a43e-1813-c609-3f2d" name="Transport (Coronus Grav-Carrier)" hidden="false" targetId="2c00-35ce-a7a5-358d" type="rule"/>
                             <infoLink id="d15e-ab65-a60f-ac09" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-                            <infoLink id="df97-a7a4-2823-4beb" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                            <infoLink id="013e-20d8-f85e-ba32" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                             <infoLink id="84a6-5af9-c399-e18b" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+                            <infoLink id="df97-a7a4-2823-4beb" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                             <infoLink id="84b8-6054-4713-88db" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
+                            <infoLink id="013e-20d8-f85e-ba32" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                             <infoLink id="e0a6-4a8b-8acf-078b" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                           </infoLinks>
                           <costs>
@@ -552,133 +1173,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <cost name="pts" typeId="points" value="375.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9b5e-df94-aecd-9138" name="Ephoroi Detachment" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="03ab-225a-deda-1477" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="7f9f-1267-7f04-605c" name="Ephoroi Custodes" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44c7-2e9e-a2aa-bf80" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8b1-febe-97ab-35ad" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="b08e-9e74-62ea-9265" name="Ephoroi Custodes" hidden="false" targetId="58aa-c915-6845-5d93" type="profile"/>
-            <infoLink id="8a94-7a00-627b-bd99" name="Guardian Spear" hidden="false" targetId="db5a-2a4d-acd4-acce" type="profile"/>
-            <infoLink id="c60e-fe77-0494-9073" name="Transport Space (Ephoroi Custodes)" hidden="false" targetId="a59e-6108-7fa4-af7b" type="rule"/>
-            <infoLink id="cf37-bfdc-34e2-f66c" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
-            <infoLink id="c543-fc2e-eb34-0443" name="Infiltrator" hidden="false" targetId="f14b-f1e8-683e-cd73" type="rule"/>
-            <infoLink id="9ea2-b587-c1ed-fc94" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="0283-0a95-a2ac-0e86" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-            <infoLink id="7b51-5fac-f476-3853" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="09ab-3409-58e0-f936" name="Upgrades" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="0fd0-398b-dbc9-e1f6" name="Carrier" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d779-f6e4-a877-a671" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="d99e-8b30-6c75-c972" name="Carrier" hidden="false">
-                  <description>Add enough Coronus Grav-Carriers to transport the whole detachment (2 Custodes units or 1 Aquilon Terminator each); the count is set from the formation.</description>
-                </rule>
-              </rules>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="726c-7c85-4919-96a0" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="f4b7-59cf-8aba-1a22">
-                  <modifiers>
-                    <modifier type="increment" field="2323-866e-d617-3e45" value="1">
-                      <repeats>
-                        <repeat field="f52a-9ea6-2bb3-2a37" scope="9b5e-df94-aecd-9138" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="true"/>
-                      </repeats>
-                    </modifier>
-                    <modifier type="increment" field="9027-51f0-fd7f-3d02" value="1">
-                      <repeats>
-                        <repeat field="f52a-9ea6-2bb3-2a37" scope="9b5e-df94-aecd-9138" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" repeats="1" roundUp="true"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2323-866e-d617-3e45" type="min"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9027-51f0-fd7f-3d02" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="f4b7-59cf-8aba-1a22" name="Coronus Grav-Carrier" hidden="false" collective="false" import="true" type="model">
-                      <infoLinks>
-                        <infoLink id="6e77-adaf-8b99-b033" name="Coronus Grav-Carrier" hidden="false" targetId="c830-9578-99cc-d8c3" type="profile"/>
-                        <infoLink id="e1dd-aeb3-c503-a644" name="Iliastus Accelerator Cannon" hidden="false" targetId="f989-47e2-c1fb-b411" type="profile"/>
-                        <infoLink id="9d09-d11a-b173-539c" name="Arachnus Blaze Cannon" hidden="false" targetId="d6b3-c6fa-0406-8767" type="profile"/>
-                        <infoLink id="050f-6924-264e-9556" name="Special Rules (Coronus Grav-Carrier)" hidden="false" targetId="4b8e-2b6d-89e1-7104" type="rule"/>
-                        <infoLink id="8f7d-b3fd-155d-6f9f" name="Transport (Coronus Grav-Carrier)" hidden="false" targetId="2c00-35ce-a7a5-358d" type="rule"/>
-                        <infoLink id="9bd6-9094-cd51-b737" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-                        <infoLink id="1712-e27d-31a5-a26d" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                        <infoLink id="e1ab-d7d6-8d14-21cd" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
-                        <infoLink id="2a95-cab1-582c-dcba" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                        <infoLink id="cd4c-82ac-dffd-5ce5" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
-                        <infoLink id="c6ad-a7ae-071e-f7c6" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="75.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="325.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="5534-6ade-a860-e2d4" name="Venatari Detachment" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
@@ -695,12 +1189,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
@@ -711,6 +1203,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -733,8 +1227,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="2527-d1a5-078d-70a6" name="Special Rules (Venatari Squad)" hidden="false" targetId="3fd5-5b65-6095-ca7a" type="rule"/>
             <infoLink id="67e2-6869-3007-5026" name="Transport Space (Venatari Squad)" hidden="false" targetId="5ded-a745-346b-525b" type="rule"/>
             <infoLink id="6613-1d80-43c0-f02c" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="8f81-456d-07cb-084c" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
             <infoLink id="c548-0d2c-6bec-76ea" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
+            <infoLink id="8f81-456d-07cb-084c" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
             <infoLink id="a642-a2f1-1ac9-be1f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
           </infoLinks>
           <costs>
@@ -745,500 +1239,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="350.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9e1c-2ca2-d951-f2ac" name="Sisters Detachment" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="fb9c-d112-73e2-bcb5" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="1f3e-d960-51cf-02f5" name="Sisters of Silence" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4226-67f9-fb4d-b734" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8168-d025-b06a-d2c6" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="5778-17fd-d14f-9b4f" name="Sisters of Silence" hidden="false" targetId="a5cf-6f56-096d-979f" type="profile"/>
-            <infoLink id="787d-9c36-1c21-1d1d" name="Boltguns" hidden="false" targetId="53b1-39fd-6b6b-37a4" type="profile"/>
-            <infoLink id="afa2-d2bb-99b7-0f7f" name="Transport Space (Sisters of Silence)" hidden="false" targetId="cb0d-10bf-6aae-4927" type="rule"/>
-            <infoLink id="1e5e-a953-f3f6-73c4" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="e0aa-4bc3-3daa-93a1" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-            <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="794f-9262-c2d8-481d" name="Upgrades" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="6c89-aa41-d4ef-2383" name="Teleport" hidden="false" collective="false" import="true" targetId="e101-8948-b5a9-16b4" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19bb-5a2b-481b-ad2c" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="250.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="4301-1f1f-53c0-49af" name="Morotoi Detachment" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="71bf-ba68-fd02-a56a" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="12be-d450-3552-5b8c" name="Custodes Dreadnoughts" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9b-3409-2fd1-750d" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d72a-73ba-09bb-a88c" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="de3c-a4b7-7ae1-5479" name="Contemptor-Achilles Dreadnought" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f6-7140-9280-a709" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3c8d-db19-1375-4096" name="Contemptor-Achilles Dreadnought" hidden="false" targetId="267b-d02f-a17f-5098" type="profile"/>
-                <infoLink id="d7ea-6f19-f73a-1f7b" name="Achilles Dreadspear" hidden="false" targetId="07fa-ff4f-24f0-8f12" type="profile"/>
-                <infoLink id="51f9-dfcc-35b1-3d99" name="Special Rules (Contemptor-Achilles Dreadnought)" hidden="false" targetId="2801-a9b0-83bd-b4b1" type="rule"/>
-                <infoLink id="d0dc-a81d-b3e1-e235" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="94ef-214d-bcb1-55da" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="07c9-fa78-5f28-bab3" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="74a7-d1dd-16ee-b279" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="be97-a6a4-f5ef-210b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-                <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="51bb-1c59-d298-01a4" name="Contemptor-Galatus Dreadnought" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="152f-d35d-6854-2f87" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1388-a2ea-e856-ac72" name="Contemptor-Galatus Dreadnought" hidden="false" targetId="b9ce-2a59-87df-05a7" type="profile"/>
-                <infoLink id="e002-e33e-2889-9ab4" name="Galatus Warblade" hidden="false" targetId="7fa9-bd97-8d47-94a2" type="profile"/>
-                <infoLink id="eb7e-f28a-38b1-8b53" name="Special Rules (Contemptor-Galatus Dreadnought)" hidden="false" targetId="14af-f77c-a610-d746" type="rule"/>
-                <infoLink id="e300-f914-bed8-a318" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="3a24-49a1-dc69-22bc" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="c999-4322-79a3-8c79" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="c7a2-180b-da30-6c34" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-                <infoLink id="59f8-b6ab-3c21-d56a" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="c1d4-a7e5-25a4-d687" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="179e-b004-4fd0-3656" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                <infoLink id="927b-894d-8912-d47b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-                <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="8a00-c066-cb40-e102" name="Telemon Heavy Dreadnought" hidden="false" collective="false" import="true" type="model">
-              <constraints>
-                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="701b-1fa0-36c3-342a" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="cfa1-98af-0bfa-6734" name="Telemon Heavy Dreadnought" hidden="false" targetId="428c-bef7-fdab-2828" type="profile">
-                  <modifiers>
-                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Telemon Caestus x2">
-                      <conditions>
-                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4cf5-7163-4ee9-46a8" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="append" field="4e39-030c-4e18-12e0" value="Arachnus Storm Cannon">
-                      <conditions>
-                        <condition field="selections" scope="8a00-c066-cb40-e102" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="778d-f66d-de6b-202b" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
-                <infoLink id="88b5-4bc5-5113-b8e6" name="Special Rules (Telemon Heavy Dreadnought)" hidden="false" targetId="2c7c-d12c-f57f-0c51" type="rule"/>
-                <infoLink id="17dd-ed81-f695-ad43" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="f177-603b-203a-6320" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="f458-af08-1ca5-d25c" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                <infoLink id="fde9-5ef4-27f7-ef94" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                <infoLink id="4015-9fa9-6279-3ceb" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
-                <infoLink id="7e46-76a9-27ae-954c" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                <infoLink id="98f8-eaa7-1ff2-263f" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="8601-4ba8-55c3-1872" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="4cf5-7163-4ee9-46a8">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="370b-680e-b131-8dbd" type="min"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be0e-0826-f2d0-6e2a" type="max"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry id="4cf5-7163-4ee9-46a8" name="2 x Telemon Caestus" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff0-7e8e-638e-848e" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="d2a1-ef42-8924-67c5" name="Telemon Caestus" hidden="false" targetId="8e6e-b80b-6aee-3c17" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="778d-f66d-de6b-202b" name="Arachnus Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82db-98ef-2326-7f4e" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="4f10-ff0d-7416-ea0d" name="Arachnus Storm Cannon" hidden="false" targetId="ef1b-26e5-81e7-bd6d" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-                <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <costs>
-        <cost name="pts" typeId="points" value="350.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="28a6-3351-04cc-108a" name="Pallas Grav-Attack Squadron" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="40da-9f61-a9f3-0e13" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="a7ea-a055-9152-ac1a" name="Pallas Grav-Attack Vehicle" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c642-1511-3cf4-e097" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ea4-608c-35fd-65f3" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="671a-ee89-6b71-22d9" name="Pallas Grav-Attack Vehicle" hidden="false" targetId="c59d-3108-0377-0f03" type="profile"/>
-            <infoLink id="76a9-5fa0-1b59-b9fd" name="Arachnus Blaze Cannon" hidden="false" targetId="1fdc-25df-fcf6-57d5" type="profile"/>
-            <infoLink id="6439-aef2-66e3-8305" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-            <infoLink id="7dd9-d03b-d06e-ea10" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="e474-f0bc-ca51-ef88" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="250.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="458d-a282-10c2-d658" name="Caladius Grav-Tank Squadron" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-          </conditions>
-        </modifier>
-        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="c962-d1a0-21ce-0258" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="97f4-f7c4-acb0-123c" name="Callidus Grav-Tank" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8350-f573-8c58-e186" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4721-aa21-721e-ebed" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="d5ba-53ee-db27-650e" name="Callidus Grav-Tank" hidden="false" targetId="0f82-9f3e-7ea0-bff5" type="profile"/>
-            <infoLink id="10ea-f98f-d634-83a2" name="Lastrum Bolt Cannon" hidden="false" targetId="23b0-453d-b819-a575" type="profile"/>
-            <infoLink id="bcc5-3a65-8b63-b7bb" name="Iliastus Accelerator Cannon" hidden="false" targetId="f989-47e2-c1fb-b411" type="profile"/>
-            <infoLink id="652a-c613-b544-af68" name="Special Rules (Callidus Grav-Tank)" hidden="false" targetId="3e55-dc0c-fe1f-b654" type="rule"/>
-            <infoLink id="c4ac-c383-ef60-73ef" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-            <infoLink id="6f2b-0a14-a19d-fc8a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="e65c-02cd-0ba3-46a5" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="789a-21d8-13c7-0bbb" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="325.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="493e-df48-3d61-c0cc" name="Orion Assault Squadron" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="6a2d-c040-01ee-6d0d" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
-        <categoryLink id="53d6-a1a2-5dbd-58c2" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="2c38-1590-5d2f-eb66" name="Orion Assault Dropship" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e43-6ea4-7aa4-d2f2" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f22-6f79-aefb-2b52" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="2f1f-e56f-b790-e191" name="Orion Assault Dropship" hidden="false" targetId="6382-2139-06b7-cf1c" type="profile"/>
-            <infoLink id="e530-8a1b-f5b6-945f" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
-            <infoLink id="fd30-e424-bfaa-e68b" name="Lastrum Bolt Cannon" hidden="false" targetId="8d0a-131a-4eb8-1216" type="profile"/>
-            <infoLink id="956d-d0ff-e6b6-d9a4" name="Spiculus Heavy Bolt Launchers" hidden="false" targetId="0363-31c8-de8c-359c" type="profile"/>
-            <infoLink id="343d-9a81-010d-ad0c" name="Special Rules (Orion Assault Dropship)" hidden="false" targetId="c675-626f-d4a9-bfd0" type="rule"/>
-            <infoLink id="7bae-5934-87aa-d41f" name="Transport (Orion Assault Dropship)" hidden="false" targetId="0aa0-eaa2-518e-8a36" type="rule"/>
-            <infoLink id="7841-fd28-5ce1-cef1" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-            <infoLink id="2907-dbbb-c7ff-9a3a" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="22d8-9165-faba-86e4" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="9070-6568-3f53-530d" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-            <infoLink id="b931-b908-1737-f6a0" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="300.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="469b-a311-5a34-2bd6" name="Ares Strike Squadron" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5392-39c4-501b-622c" type="instanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a7bb-d807-775b-67a3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="422d-1a0b-703f-b8be" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9058-983e-c324-62a4" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed05-1bd8-1e03-af1c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c10-b820-4588-74dd" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <categoryLinks>
-        <categoryLink id="703a-abb8-c7a0-d650" name="Lord of War" hidden="false" targetId="a748-07af-1c49-b4e9" primary="true"/>
-        <categoryLink id="2cda-b9c5-ddb0-b4d0" name="Allies &amp; Lords of War" hidden="false" targetId="b980-0dfd-c54d-3593" primary="false"/>
-      </categoryLinks>
-      <selectionEntries>
-        <selectionEntry id="a6cd-99f3-ff25-2624" name="Ares Gunship" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6caa-29d3-8b99-25cb" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb76-bd94-ca3e-d2db" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="560f-e40c-51d4-9075" name="Ares Gunship" hidden="false" targetId="8f76-6ff3-53d5-50a9" type="profile"/>
-            <infoLink id="f1e4-9619-a0c3-a642" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
-            <infoLink id="7e4c-2731-7ddf-4735" name="Arachnus Magna-Blaze Cannon" hidden="false" targetId="d572-7f59-b7e3-4711" type="profile"/>
-            <infoLink id="f6f8-a062-b2b1-3b2a" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -1257,13 +1257,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="8c4f-b2d4-41a6-91e3" name="Captain-General" hidden="false" targetId="824b-75aa-14d5-6589" type="profile"/>
             <infoLink id="2e04-530f-0fe9-d600" name="Apollonian Spear" hidden="false" targetId="056e-53b7-778b-12d1" type="profile"/>
             <infoLink id="5005-cbc9-5c55-2dfc" name="Special Rules (Captain-General)" hidden="false" targetId="bbcd-54a7-72f0-66d2" type="rule"/>
-            <infoLink id="5b0e-8b94-dd56-4d5f" name="Sniper" hidden="false" targetId="e5cd-d8ff-75bb-52b4" type="rule"/>
-            <infoLink id="6767-1724-4e69-c0ec" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="2ad2-53bc-1c58-dcc6" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
             <infoLink id="5a02-b7f8-bb6b-cc70" name="Inspiring" hidden="false" targetId="7308-eebe-f5c9-137b" type="rule"/>
-            <infoLink id="067d-de81-0e1d-f7cf" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-            <infoLink id="339d-d442-c929-a6c0" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="6767-1724-4e69-c0ec" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="5b0e-8b94-dd56-4d5f" name="Sniper" hidden="false" targetId="e5cd-d8ff-75bb-52b4" type="rule"/>
+            <infoLink id="2ad2-53bc-1c58-dcc6" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
             <infoLink id="f622-de1a-b600-34eb" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
+            <infoLink id="339d-d442-c929-a6c0" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
+            <infoLink id="067d-de81-0e1d-f7cf" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="2ef5-d4eb-f528-e4c5" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>
@@ -1288,8 +1288,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <infoLinks>
             <infoLink id="08e9-2551-1dc3-49c6" name="Tribune" hidden="false" targetId="3422-84d7-6e15-f121" type="profile"/>
             <infoLink id="723c-58f2-a410-3ad8" name="Special Rules (Tribune)" hidden="false" targetId="8f40-a3a0-b647-6f08" type="rule"/>
-            <infoLink id="9c80-4e98-b5c1-df9d" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
             <infoLink id="13e6-27de-dfd6-1be6" name="Commander" hidden="false" targetId="4c56-05fb-87be-3e8a" type="rule"/>
+            <infoLink id="9c80-4e98-b5c1-df9d" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
           </infoLinks>
           <categoryLinks>
             <categoryLink id="6264-ae1e-549c-8a2e" name="Character" hidden="false" targetId="5485-21a2-ac74-b69e" primary="false"/>

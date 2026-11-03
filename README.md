@@ -9,10 +9,21 @@ BattleScribe (v2.03 schema) data for the EpicAU community's Horus Heresy supplem
 | `Epic Armageddon - EpicAU Horus Heresy.gst` | Game system: costs, Unit, War Engine and Weapon profile types, categories, shared special rules |
 | `EpicAU - Legion Astartes.cat` | The Legion list: the core formations plus all 18 Legions' formations, Primarchs, allies and restrictions, chosen with a Legion selection |
 | `EpicAU - Legio Custodes / Solar Auxilia / Mechanicum Taghmata / Legio Titanicus / Knight Household / Imperial Militia / Daemons Of The Ruinstorm.cat` | The other army lists |
-| `tools/` | The scraper, list specs and generator used to build the files |
-| `site/` | The [Quartz](https://quartz.jzhao.xyz) site listing the new units, rules and changelog |
+| `data/` | The source: every army list, formation, upgrade, unit, Titan weapon and rule as a Markdown file (see [`data/README.md`](data/README.md)) |
+| `tools/` | The generator that builds the `.gst` and `.cat` files from `data/`, and the integrity checks |
+| `site/` | The [Quartz](https://quartz.jzhao.xyz) site that publishes `data/` |
 
-To use it, copy the `.gst` and `.cat` files into a BattleScribe data folder, or zip them as a data index.
+The `.gst` and `.cat` files are generated: edit `data/`, not them.
+
+## Using the data
+
+Add this data index in New Recruit or BattleScribe:
+
+```
+https://github.com/vanhornchadm/epicau-heresy-bsdata/releases/latest/download/epicau-heresy-bsdata.latest.bsi
+```
+
+It always points at the latest release, so the app picks up each update. You can also load the repository itself as a custom game system, or copy the `.gst` and `.cat` files into a BattleScribe data folder.
 
 ## Building a roster
 
@@ -69,7 +80,7 @@ These rules are shown as text only, not enforced:
 - **Weapon choices are picked on the unit.** Where a reference sheet lists alternative weapons ("X OR Y"), the unit has a pick for each choice, which starts on the first option. The Weapons column lists the fixed weapons and only the chosen ones, in sheet order, with no "OR". Only the chosen weapons' Weapon profiles are shown.
   - Some units pick twice: the Contemptor and Leviathan Dreadnoughts' two arm weapons, and the Saturnine Terminators' two weapons. Each pick may take the same weapon. The Contemptor's Havoc Launcher is an optional +5 pts pick.
   - Where the sheet gives one FF per option (Predator sponsons, Dreadnought, Veletaris, Mechanicum Tarantula and Land Raider, Militia Auxiliary), the choice sets the unit's FF.
-  - The choices are listed in `tools/weapon_options.py`. Rules that every unit in a formation must choose the same weapon (Solar Auxilia Rapiers, Veletaris, Militia Auxiliary) are not enforced.
+  - The choices are listed in each unit's "Weapon options" section in `data/`. Rules that every unit in a formation must choose the same weapon (Solar Auxilia Rapiers, Veletaris, Militia Auxiliary) are not enforced.
   - Titans work the same way, with one pick per weapon slot (for example Arm weapon 1, Carapace weapon 1). Each pick starts on the cheapest weapon. A chosen weapon's Notes give its arc, Fwd for arm weapons and FxF for carapace weapons, as the sheets give for each mount. Its mount restriction or other notes follow. Picks don't combine counts, so a Titan with two Inferno Guns lists "Inferno Gun" twice.
 - **Orks of Telon Reach is not included.** The Internet Archive never captured the army list page, only its unit reference sheet, so there are no formations to build from.
 - **Sabre Strike Tank** is in the Legion list but missing from the wiki reference sheet. Its stats come from Departmento Munitorum.
@@ -148,21 +159,31 @@ These rules are shown as text only, not enforced:
 
 Every file validates against the BattleScribe v2.03 XSD. `tools/check.py` confirms that IDs are unique and that every link, condition and modifier target resolves. **The data has not been opened in the BattleScribe app.** The Allied Contingent points allowance relies on BattleScribe's `instanceOf` force condition, so check it in-app first.
 
-## Regenerating
+## Editing the data
+
+Each entry is a Markdown file in `data/`: a unit's stat line and weapons are tables, a formation's composition is a bullet list, and its slot, cost and upgrades are settings at the top. [`data/README.md`](data/README.md) describes the format. Edit or add a file, then rebuild:
 
 ```bash
 cd tools
-python3 crawl.py <raw_dir>                        # fetch wiki pages from the Internet Archive
-python3 parse_tables.py <raw_dir> <parsed_dir>    # wiki HTML -> JSON tables
-python3 units.py <parsed_dir>                     # reference sheets -> units.json (move into source/)
-python3 titan_weapons.py <parsed_dir>             # titan weapon variants -> source/titan_weapons.json
-python3 generate.py ..                            # write .gst/.cat files
-python3 check.py ..                               # integrity checks
+python3 generate.py ..    # build the .gst/.cat files from data/
+python3 check.py ..       # integrity checks
 ```
 
-The army lists are transcribed by hand in `spec_legion.py` and `spec_others.py`, using the small DSL in `dsl.py`. Edit those files and re-run `generate.py`. IDs are deterministic, so they stay stable across rebuilds.
+The generator stops with the file and line of anything it can't read. IDs are built from names, so they stay stable across rebuilds; renaming a unit, formation or upgrade gives it a new ID, which saved rosters won't recognise.
+
+The data started as a conversion of the archived wiki's reference sheets and army lists. The scraper and the Python specs it replaced are in the git history before `data/` was added.
 
 Revisions are bumped automatically. `generate.py` compares each file with the copy already on disk and only rewrites files whose content changed; each rewrite raises that file's `revision` by one. A changed catalogue also records the current game system revision as `gameSystemRevision`. Running the generator twice in a row changes nothing. Always run it against the committed files rather than a fresh folder, otherwise every file starts again at revision 1.
+
+### Automatic builds
+
+The `Build data and site` workflow runs on every push to `main`:
+
+1. It rebuilds the `.gst` and `.cat` files from `data/`, runs the checks and commits any change, so the files in the repository always match `data/`.
+2. If the push changed the data files, it publishes a GitHub release with each file zipped (`.gstz`/`.catz`) and the `epicau-heresy-bsdata.latest.bsi` data index. `tools/release_assets.sh` builds them with BSData's `wham` tool, as BSData's own repositories do.
+3. It rebuilds and deploys the site.
+
+Pull requests only build and check the data. To publish a release without a data change, run the workflow by hand with "Publish a data release" ticked. The workflow pushes to `main` with the built-in token, so `main` must not require pull requests for the `github-actions` bot.
 
 ## Docs
 
@@ -174,11 +195,11 @@ Revisions are bumped automatically. `generate.py` compares each file with the co
 
 ## Site
 
-`site/` builds a [Quartz](https://quartz.jzhao.xyz) site from the data files, published at <https://vanhornchadm.github.io/epicau-heresy-bsdata/>. It has a page for every fan-made or Departmento Munitorum formation, unit, upgrade and Titan weapon, the special rules they use, where each comes from, this README's roster rules and data decisions, the backlog in `docs/TODO.md` and `docs/MISSING_UNITS.md`, and a changelog built from the git history. The pages are generated: `site/build_content.py` reads the `.gst` and `.cat` files, `README.md`, `docs/TODO.md`, `docs/MISSING_UNITS.md` and `git log`, so the site follows the data. The one hand-kept list is `site/sources.py`, which names where each new unit and rule comes from; add a line there when adding a unit, or the build reports it as having no source.
+`site/` publishes `data/` as a [Quartz](https://quartz.jzhao.xyz) site at <https://vanhornchadm.github.io/epicau-heresy-bsdata/>. Every army, Legion, formation, upgrade, unit, Titan weapon and special rule has a page, with fan-made entries marked. The site also has the sources, this README's roster rules and data decisions, the format guide, the backlog in `docs/TODO.md` and `docs/MISSING_UNITS.md`, and a changelog built from the git history. `site/build_content.py` writes the pages from `data/`, `README.md`, the docs and `git log`. It adds each page's settings, points its links at the right army's pages and adds its design notes from the README. It warns about any fan-made entry without a `## Sources` section.
 
 ```bash
 site/build.sh            # build into site/public
 site/build.sh --serve    # preview at http://localhost:8080
 ```
 
-`build.sh` fetches the Quartz release pinned in it into `site/.quartz` and copies `site/quartz.config.ts` and `site/quartz.layout.ts` over its own. It needs git, Node 22 or later and Python 3. The `Deploy site to GitHub Pages` workflow rebuilds and publishes the site on every push to `main`; set the repository's Pages source to GitHub Actions once to turn it on.
+`build.sh` fetches the Quartz release pinned in it into `site/.quartz` and copies `site/quartz.config.ts` and `site/quartz.layout.ts` over its own. It needs git, Node 22 or later and Python 3. The `Build data and site` workflow rebuilds and publishes the site on every push to `main`; set the repository's Pages source to GitHub Actions once to turn it on.

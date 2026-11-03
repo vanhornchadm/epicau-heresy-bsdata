@@ -5,7 +5,7 @@ Empire of Ashes is a fan ruleset for Epic Armageddon set in the Horus Heresy. It
 - **The rules PDF:** *Epic 30K AB: Empire of Ashes*, public v1.0, dated 25/04/02, 75 pages. It covers the same 25 armies as these catalogues: the 18 Legions, Solar Auxilia, Imperialis Militia, Knight Households, Legio Titanicus, Mechanicum Taghmata, Legio Custodes and Daemons of the Ruinstorm.
 - **The web builder:** [empire-of-ashes.vercel.app](https://empire-of-ashes.vercel.app/), an army builder for the PDF. It was compared using the army data bundled into the site (`static/js/main.a92b7f01.js`). Its own list validation wasn't tested.
 
-"Ours" means the EpicAU wiki data in `tools/spec_legion.py`, `tools/spec_others.py` and `tools/source/units.json`. Compared on 2026-11-02 (site) and 2026-11-03 (PDF).
+"Ours" means the EpicAU wiki data, then in `tools/spec_legion.py`, `tools/spec_others.py` and `tools/source/units.json` and now in `data/`. Compared on 2026-11-02 (site) and 2026-11-03 (PDF).
 
 ## Summary
 

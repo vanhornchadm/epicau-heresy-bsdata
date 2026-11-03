@@ -1,0 +1,112 @@
+name: Build data and site
+
+# On every push to main: rebuild the .gst/.cat files from data/ and commit them, publish a release with the zipped
+# files and a data index for BattleScribe and New Recruit when they changed, then rebuild the site. Pull requests
+# only check that data/ builds.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      release:
+        description: Publish a data release even if the data files didn't change
+        type: boolean
+        default: false
+
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # on main, the branch tip rather than the pushed commit, so a run queued behind another can still push
+          ref: ${{ github.event_name == 'pull_request' && github.sha || github.ref }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build the BattleScribe files from data/
+        run: |
+          cd tools
+          python3 generate.py ..
+          python3 check.py ..
+      - name: Commit the rebuilt files
+        id: commit
+        if: github.event_name != 'pull_request'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '*.gst' '*.cat'
+          if git diff --cached --quiet; then
+            echo "The BattleScribe files are up to date."
+          else
+            git commit -m "Rebuild the BattleScribe files from data/"
+            git push origin HEAD:main
+          fi
+          # Release when this push changed the data files, in its own commits or the rebuild.
+          before='${{ github.event.before }}'
+          if [ '${{ inputs.release }}' = true ] || ! git cat-file -e "$before^{commit}" 2>/dev/null \
+              || ! git diff --quiet "$before" HEAD -- '*.gst' '*.cat'; then
+            echo "release=true" >> "$GITHUB_OUTPUT"
+          fi
+      - uses: actions/setup-dotnet@v4
+        if: steps.commit.outputs.release == 'true'
+        with:
+          dotnet-version: 8.0.x
+      - name: Publish a data release
+        if: steps.commit.outputs.release == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tools/release_assets.sh "$RUNNER_TEMP/release" "$GITHUB_REPOSITORY" "EpicAU Horus Heresy"
+          tag="v$(date -u +%Y.%m.%d)-$GITHUB_RUN_NUMBER"
+          index="https://github.com/$GITHUB_REPOSITORY/releases/latest/download/${GITHUB_REPOSITORY#*/}.latest.bsi"
+          gh release create "$tag" "$RUNNER_TEMP"/release/* --target "$(git rev-parse HEAD)" --latest \
+            --title "Data $(date -u +%Y-%m-%d) ($(git rev-parse --short HEAD))" \
+            --notes "BattleScribe data built from data/ at $(git rev-parse --short HEAD).
+
+          Add this data index in BattleScribe or New Recruit to get each new release: $index"
+
+  site:
+    needs: data
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main # includes the data job's rebuild commit
+          fetch-depth: 0 # the changelog is built from the full git history
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build site
+        run: site/build.sh
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/public
+
+  deploy:
+    needs: site
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -163,7 +163,7 @@ Revisions are bumped automatically. `generate.py` compares each file with the co
 
 ## Site
 
-`site/` builds a [Quartz](https://quartz.jzhao.xyz) site from the data files, published at <https://vanhornchadm.github.io/epicau-heresy-bsdata/>. It has a page for every fan-made or Departmento Munitorum formation, unit, upgrade and Titan weapon, the special rules they use, this README's roster rules and data decisions, the backlog in `TODO.md`, and a changelog built from the git history. Nothing in it is written by hand: `site/build_content.py` reads the `.gst` and `.cat` files, `README.md`, `TODO.md`, `MISSING_UNITS.md` and `git log`, so the site follows the data.
+`site/` builds a [Quartz](https://quartz.jzhao.xyz) site from the data files, published at <https://vanhornchadm.github.io/epicau-heresy-bsdata/>. It has a page for every fan-made or Departmento Munitorum formation, unit, upgrade and Titan weapon, the special rules they use, this README's roster rules and data decisions, the backlog in `MISSING_UNITS.md`, and a changelog built from the git history. Nothing in it is written by hand: `site/build_content.py` reads the `.gst` and `.cat` files, `README.md`, `MISSING_UNITS.md` and `git log`, so the site follows the data.
 
 ```bash
 site/build.sh            # build into site/public

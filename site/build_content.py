@@ -754,7 +754,7 @@ def index_page(rule_count):
              '- [[rules/index|Special rules]]: the rules the new units use\n'
              '- [[roster-rules|Roster rules]]: how rosters are built and what BattleScribe enforces\n'
              '- [[design-notes|Design notes]]: where each unit comes from and how it was converted\n'
-             '- [[backlog|Backlog]]: fan-made candidates still to consider\n'
+             '- [[backlog|Backlog]]: Legions Imperialis units still to port\n'
              '- [[changelog|Changelog]]: every change to the data\n\n')
     text += ('## Using the data\n\nCopy the `.gst` and `.cat` files from the '
              f'[repository]({REPO_URL}) into a BattleScribe data folder. Fan-made units stay hidden until a roster '
@@ -796,11 +796,8 @@ def main():
                                      section(README, 'Validation status')))
     write('design-notes.md', md_page('Design notes', ['notes'], 'Where each unit comes from and how it was converted.',
                                      section(README, 'Data decisions and gaps')))
-    backlog = open(os.path.join(ROOT, 'TODO.md')).read().split('\n', 1)[1]
     missing = open(os.path.join(ROOT, 'MISSING_UNITS.md')).read().split('\n', 1)[1]
-    write('backlog.md', md_page('Backlog', ['backlog'], 'Fan-made candidates still to consider.',
-                                backlog + '\n\n## Legions Imperialis coverage\n' +
-                                missing.replace('\n## ', '\n### ')))
+    write('backlog.md', md_page('Backlog', ['backlog'], 'Legions Imperialis units still to port.', missing))
     write('changelog.md', changelog())
     write('index.md', index_page(len(rule_names)))
     print(f'Wrote {len(FORMATIONS)} formations, {len(UPGRADES)} upgrades, {len(WEAPONS)} weapons, '

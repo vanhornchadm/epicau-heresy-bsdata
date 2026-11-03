@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="18" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="5924-e3fb-5543-3044" name="Epic Armageddon - EpicAU Horus Heresy" revision="19" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Add a primary army force, then optionally an Allied Contingent force from another catalogue.</readme>
   <publications>
     <publication id="e750-7f22-5501-6b8d" name="EpicAU Wiki - Horus Heresy Supplement" publisherUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page"/>
@@ -219,6 +219,9 @@
     </rule>
     <rule id="1409-373f-7ba8-c148" name="Scout" hidden="false">
       <description>May deploy forward and has a wider zone of control and coherency spacing.</description>
+    </rule>
+    <rule id="4b9d-5436-fff5-c88c" name="Tunneler" hidden="false">
+      <description>A formation made up only of tunnelers (and the units they carry) may be kept off the table. Secretly record a surfacing point and turn: from turn two in your own half, or turn three in the opponent's half. It surfaces at the start of that turn, before teleporters, and transported units may disembark at once; surfacing does not trigger overwatch, disembarking does. If the point is impassable, under a friendly unit or in an enemy zone of control, the opponent moves it to the nearest valid spot. Multiple tunnelers record one point and are placed within 15cm of it, each within 5cm of one already placed. They may take an action on the turn they surface.</description>
     </rule>
     <rule id="f14b-f1e8-683e-cd73" name="Infiltrator" hidden="false">
       <description>May double its move when taking an Engage action and ignores enemy zones of control when doing so.</description>

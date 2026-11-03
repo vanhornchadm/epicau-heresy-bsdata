@@ -171,8 +171,8 @@ EXTRA_UNITS = {
                  'Plasma Bombard OR Graviton Pulveriser before the start of the game.'}, {
         'name': 'Termite Assault Drill', 'type': 'AV', 'speed': '15cm', 'armour': '5+', 'cc': '6+', 'ff': '5+',
         'weapons': [{'name': 'Twin-linked Bolters', 'range': '(15cm)', 'firepower': '(small arms)'}],
-        'notes': 'Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. A '
-                 'formation transported entirely in Termites may deploy as if it had the Teleport special rule.'}],
+        'notes': 'Tunneler. Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 '
+                 'Terminator.'}],
     'Solar Auxilia': [{
         'name': 'Imperial Navy Marauder Bomber', 'type': 'AC', 'speed': 'Bomber', 'armour': '4+', 'cc': '', 'ff': '',
         'weapons': [{'name': 'Twin Lascannon', 'range': '45cm', 'firepower': 'AT4+/AA4+, FxF'},

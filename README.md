@@ -94,7 +94,7 @@ These rules are shown as text only, not enforced:
     - Orias missiles, 45cm, 2 BP, Indirect Fire, single shot
   - **Legion Saturnine Terminator Detachment:** 4-6 units at 85 pts each. They're Terminators with an Invulnerable Save for their two wounds, but CC 4+. Each carries two of plasma bombards (30cm, AP4+/AT5+, Indirect Fire), twin heavy disintegrators (15cm, AP4+/AT4+, MW) or disruption fists.
   - **Legion Saturnine Dreadnought Talon:** 3-6 at 90 pts each. They're Deredeo-like walkers with an Invulnerable Save. Each carries a heavy plasma bombard (30cm, 2× AP4+/AT5+, Indirect Fire) or a graviton pulveriser (15cm, AP3+/AT4+, Disrupt), plus an inversion beamer (30cm, AP5+/AT4+).
-  - **Termite Assault:** a transport option offered wherever Assault Claw is. Each Termite costs 30 pts and carries 2 Tactical-sized units or 1 Terminator. A formation carried entirely in Termites may arrive as if it had Teleport.
+  - **Termite Assault:** a transport option offered wherever Assault Claw is. Each Termite costs 30 pts and carries 2 Tactical-sized units or 1 Terminator. A formation carried entirely in Termites may arrive using the Tunneler rule (NetEA rulebook 2.1.23, as on the Squat Termite) instead of Teleport.
   - **Palisade Drop Pod:** a 25-pt upgrade for formations with Drop Assault. Once it lands, units within 15cm get a 6+ Invulnerable Save.
   - **Not added:** the Dreadnought Drop Pod and Deathstorm Drop Pod. EpicAU's Drop Pod already carries Dreadnoughts and has a Deathstorm Bombardment.
 - **Solar Auxilia aircraft** are fan-made, not part of EpicAU. The Thunderbolt, Marauder Bomber and Marauder Destroyer are taken unchanged from published Epic lists; the Colossus and Pathfinder are converted from Legions Imperialis.

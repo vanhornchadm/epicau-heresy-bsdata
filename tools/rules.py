@@ -51,6 +51,7 @@ RULES = {
     'Walker': "May re-roll failed dangerous terrain tests.",
     'Skimmer': "May hover over terrain and pop up; can only be hit in assault by units able to engage skimmers.",
     'Scout': "May deploy forward and has a wider zone of control and coherency spacing.",
+    'Tunneler': "A formation made up only of tunnelers (and the units they carry) may be kept off the table. Secretly record a surfacing point and turn: from turn two in your own half, or turn three in the opponent's half. It surfaces at the start of that turn, before teleporters, and transported units may disembark at once; surfacing does not trigger overwatch, disembarking does. If the point is impassable, under a friendly unit or in an enemy zone of control, the opponent moves it to the nearest valid spot. Multiple tunnelers record one point and are placed within 15cm of it, each within 5cm of one already placed. They may take an action on the turn they surface.",
     'Infiltrator': "May double its move when taking an Engage action and ignores enemy zones of control when doing so.",
     'Jump Packs': "May move over terrain and other units as if skimming.",
     'Mounted': "Counts as a vehicle for terrain purposes while remaining INF.",

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="29" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="30" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -1238,11 +1238,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="c701-087e-7cda-dbcd" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="6881-bc19-519b-ea77" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="2141-d974-7706-e8bd" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="49e4-6555-8cfc-8b2d" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ccb-7927-d43d-afac">
@@ -1268,7 +1268,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="0615-4640-607d-1867" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="0711-dcd4-9bb5-0f75" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="e994-2c3d-653a-74bd" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="9a9a-68a9-1baa-fa47" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="6306-20bd-8c46-cb29" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="1088-b4d7-0ba2-5a0e" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="3718-decd-651c-cc12" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -2433,11 +2433,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="ffc3-c536-f658-9b9f" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="bc9e-4229-fb2c-d801" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="67af-9fad-4476-2e6e" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="8604-6d1d-4f4b-daea" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="4e8e-91fe-ef38-e6c4">
@@ -2463,7 +2463,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="d8ed-e262-dae4-ce33" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="9e23-6358-d34e-77c2" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="4c6a-4797-d47d-3335" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="cadc-009b-f36a-4e0f" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="39a7-057d-5d83-51a2" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="2ab4-1309-e81a-c9f7" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="bc8e-bc90-083d-e35e" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -3802,11 +3802,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="d27c-9421-c594-b8ea" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="9f74-c130-d88e-21b1" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="8b31-8602-a972-f262" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="667e-84c6-bb0c-74e6" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="693c-52d4-7af3-f7c1">
@@ -3832,7 +3832,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="8c64-c4a6-7fc4-5e43" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="32c0-8b95-979c-767a" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="b53f-1e80-9b87-9b8d" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="4f04-69fc-f842-081e" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="f0e3-73b0-08d5-b721" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="b054-9a81-c621-f8ae" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="8f5f-5a4f-3413-3fd9" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -4987,11 +4987,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="1990-6347-c7e2-26eb" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="d5fb-f969-186d-6cf0" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="02df-37ea-f0b9-f83b" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="f9ae-0929-6882-4760" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="7006-a381-af76-51cd">
@@ -5017,7 +5017,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="7f5b-a91a-2910-da25" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="453a-b8bb-d7e7-799d" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="fc8c-28e9-4464-674e" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="d96d-63c5-4c49-a353" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="8c5e-ecb0-2e00-2e78" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="a12d-586f-2e8e-0ef0" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="5bfd-c5eb-cc6a-d869" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -9912,11 +9912,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="0c01-1fcf-e6e6-e5a9" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="24df-5b8c-24db-d4d2" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="7e28-9bb2-4526-103f" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="e290-ea1f-948d-1cca" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="e7c5-bca2-8e9f-697a">
@@ -9942,7 +9942,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="2479-559a-0a79-52c7" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="9956-6928-d7ea-ca6e" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="8aa3-044d-10db-f0f8" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="2591-0176-c091-65b7" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="9d44-46a5-2c3a-c4d7" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="1f19-8e08-01c7-eb6a" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="3c6d-7fb4-fa68-aeab" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -15987,11 +15987,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="7d52-5d62-3986-6221" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="c3fa-0436-daf5-117e" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="96f1-6ecc-3231-65a5" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="5b2b-ff7c-c2df-00f0" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9ab-431f-3dd1-b045">
@@ -16017,7 +16017,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="80a2-20a3-03fe-26c7" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="5dc3-91b4-2378-dc90" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="613c-9569-3235-aaad" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="07e3-5ab4-eb99-ea54" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="65cc-e666-eeb2-bc6c" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="cab0-10a8-139f-c874" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="f4d6-5b8f-2944-3aca" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -19139,11 +19139,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="9040-9f41-775f-be6a" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="ba80-d731-ab09-39f8" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="c55c-1c97-35d7-59de" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="8245-ef4e-e187-f888" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="0189-7a14-e262-5f2e">
@@ -19169,7 +19169,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="22f5-b65f-f575-2d50" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="ac5a-5476-646a-ca63" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="c214-72d9-8606-91d4" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="1fa8-297f-01c6-8699" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="c82c-dfad-4991-01e0" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="6807-32c6-20f8-7d40" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="6255-aaa6-7a74-baff" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -24830,11 +24830,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="f437-95bb-6382-c14f" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="3721-2520-0970-452c" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="8fd9-7096-7c4d-a36d" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="5a76-7c63-2713-d411" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="946e-8d45-36cd-654b">
@@ -24860,7 +24860,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="9bf8-f3ba-75dd-d117" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="47cf-16da-ec09-3646" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="1b3d-aca4-5aed-82d2" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="728b-17ce-657f-561b" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="1fdc-3faa-c9fb-a491" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="7d9c-af12-f83a-20c3" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="c5f8-6cde-032a-b063" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -25086,11 +25086,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="4968-c538-044b-8549" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="a4cd-9022-ad29-06ea" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="cef3-f677-f8f0-c12b" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="8d26-8f47-2596-d9b4" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="0652-7288-40f8-2503">
@@ -25116,7 +25116,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="b9df-aea0-c6c6-1991" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="53d6-63c7-372d-afb3" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="eef7-8231-0db9-41f6" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="aa3c-e9f7-301c-2886" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="83cc-816a-0a63-cc33" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="e7db-da9d-b70e-ca88" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="86c2-a095-057f-c7c7" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -25756,11 +25756,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="26a6-07f6-2d20-0782" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="ab37-5058-c930-0249" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="078a-00be-1a83-f8b4" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="8693-1c23-9e76-3747" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="8d7a-13d5-5262-6239">
@@ -25786,7 +25786,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="bc88-7074-6c1b-d26c" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="b650-d32a-e45f-a028" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="6c39-d3fc-5ce7-193a" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="be18-cbd1-ceb0-e119" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="ed72-d065-90a8-8604" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="4341-5131-0eb2-f5d4" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="cf86-6729-4c1e-c32e" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -28283,11 +28283,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="f702-b0ac-fa25-16e4" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="a53a-4308-ec63-f91a" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="4298-f0e7-d75b-01ec" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="9fec-6f6b-f757-d6fd" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="69b7-e2b7-eb55-8a02">
@@ -28313,7 +28313,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="be44-1683-a62d-e8c1" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="e06d-81c0-f3c2-0e26" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="78e7-1088-215c-b977" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="430b-c4cd-c7b8-f4e2" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="8af9-ed49-60a0-f7da" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="7aea-25c5-efd9-a5cb" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="b238-5cdb-d336-6dec" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -28814,11 +28814,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="ee56-40e4-c4c4-8898" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="fef8-94fe-2aa3-6063" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="6a90-a856-6813-6a18" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="be16-850a-a837-b999" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="baad-d947-b221-44e9">
@@ -28844,7 +28844,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="4f31-808b-3bde-cbd8" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="b090-274a-abb2-26b4" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="5f46-09c8-ad9d-b489" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="67ec-df8f-f103-416a" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="59ba-516a-145d-a9c2" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="ccd6-085c-e7e9-2b51" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="57c2-e952-512e-f538" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -31305,11 +31305,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="a539-1122-5142-80bd" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="f35e-259d-cdc0-ef18" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="a281-299f-c522-ff65" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="7fdf-5fb5-1a1a-645f" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="c8c6-7cec-4ebc-781d">
@@ -31335,7 +31335,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="79fa-067f-c23a-4157" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="3f03-173b-25d8-6617" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="1696-9f60-92c0-a176" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="495d-2484-3985-b1d3" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="49d0-1f1f-fac0-8bb1" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="ee4b-310e-8854-ea9e" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="4dae-df9a-22ab-b27c" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -31740,11 +31740,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="f2e7-4809-ba28-d4a2" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="0fae-af69-d408-607e" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="d18a-806d-86cc-af37" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="a7d6-b925-e1b7-a691" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="9e9c-974d-9585-1c8a">
@@ -31770,7 +31770,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="542b-a21c-99c1-7d17" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="d244-62c2-0665-7fb2" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="fe81-94fd-7e15-25e6" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="badd-bbe3-aaa0-a679" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="9310-849d-f55c-0290" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="54f1-b42c-ca18-1d50" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="d6de-ab46-f282-930b" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -33857,11 +33857,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="6b98-9b17-adc0-d444" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="b5cb-76b0-6b5a-45c4" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="d460-d680-42ea-e5c4" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="c84d-50f5-7610-b06f" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="539a-e87a-bc93-87be">
@@ -33887,7 +33887,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="5145-f094-c015-1b85" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="ede2-7b60-d7fe-ed37" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="b8ff-8bb4-649d-2999" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="5222-272f-98ee-da79" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="f598-e7f1-5fb3-9e24" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="cf6f-f98b-c88f-8765" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="3e52-edec-4b25-1aab" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -35247,11 +35247,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="e609-666a-9772-9d4a" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="b494-e821-1e6d-0e26" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="d8be-9b12-2ca9-26de" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="8be8-8455-39dd-aec4" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="9c77-ea0b-1664-820c">
@@ -35277,7 +35277,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="6bdc-ff14-a3ca-0024" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="1df0-7d2e-f8de-b089" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="03fc-2f70-36b6-8026" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="59e0-e68c-814a-3847" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="2c7a-4ccd-4142-23d9" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="e046-c4e2-5b30-3f3a" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="de75-ba7a-57b1-5d25" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -35964,11 +35964,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="4fe2-ac1d-eed2-b2d9" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="3e6c-47a5-5dbb-add9" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="6c2e-8a44-1794-c320" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="31a2-f04d-7e6e-df75" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="5ae0-052a-39f3-56b0">
@@ -35994,7 +35994,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="367d-a410-61ab-4f5c" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="50e8-b270-e6b1-85e9" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="77a3-313b-bf42-3262" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="06a5-23ae-f0c2-2204" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="32bd-2157-cdd2-107b" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="d264-08b1-25af-fe00" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="1543-0b51-aa15-205d" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -37999,11 +37999,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="fb0d-b675-3e1e-bb36" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="1f97-08ed-786e-9372" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="ae85-b548-2254-71e1" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="6c8e-dd0f-ddca-aefa" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="2515-748d-914b-f0e8">
@@ -38029,7 +38029,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="5de1-334e-857f-f9fd" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="1227-d00d-07b4-2b03" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="c734-2569-79b0-7e3f" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="840a-7220-0beb-5564" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="52e1-1378-7113-f08e" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="5527-eddb-209d-7d22" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="bd92-6f81-9b91-051f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -44448,11 +44448,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="8076-0241-dc9b-742f" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="06cf-a0fc-d9e6-3cc0" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="495e-a4b5-c7c9-705b" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="54b9-a993-034e-62b4" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="2c94-6729-5c5d-5659">
@@ -44478,7 +44478,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="7fec-412c-a2d2-661a" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="6772-22da-02e1-e868" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="f9d1-abe5-ebcd-8b80" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="2f72-cf11-d8b3-a2a6" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="b34f-f391-93d8-54bd" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="ff26-0502-49af-c73e" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="7513-07d4-3a20-2560" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -44827,11 +44827,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="7ecc-0d89-447c-aea2" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="0999-0ea2-d827-08ff" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="efca-fce3-5737-f5ba" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="0e8b-2b55-905a-2884" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="51e8-734b-0000-a769">
@@ -44857,7 +44857,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="ef3d-f5ea-c05e-4b8a" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="d10c-776d-c9ea-f9b1" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="fa3d-f770-cb72-2062" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="5879-7c73-305c-6913" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="62a2-9b16-e9c7-826f" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="78da-3d00-49c3-fbd5" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="7aa0-7019-a146-9cbe" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -46987,11 +46987,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="b8af-6b00-d092-4ccf" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="7cdb-a412-7022-2f19" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="637e-5219-09f3-6e35" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="de36-2584-5078-a43b" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="06d8-2346-6f78-5c5f">
@@ -47017,7 +47017,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="f3fa-675a-503b-b675" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="7d51-9518-beaf-c4f4" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="a1dd-22ac-0024-4e29" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="6010-bb12-4390-2c69" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="a4b6-28f6-37f5-f9f7" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="33c4-86dc-001b-faf4" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="bc23-c1c8-45e2-6139" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -48587,11 +48587,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="9b4c-9248-4d5a-2409" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="70bc-e0eb-d10c-b9da" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="7ff6-aba3-b796-fde9" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="3e48-70bf-0a5c-21a0" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="4ddf-917d-57bf-e190">
@@ -48617,7 +48617,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="5052-e3b7-2bff-44d4" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="9c4f-dd9a-b579-1a42" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="2161-e402-d694-3f2d" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="2158-b40f-15d8-367c" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="2f25-8feb-5bb0-1730" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="9ff4-682a-baf4-0f38" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="5c6e-af32-555d-3b37" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -50773,11 +50773,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="399a-15dd-c656-2c3a" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="4aa5-1ab3-a36e-f6df" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="3692-8705-2296-8708" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="12b3-c226-1101-b357" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="7776-0c71-1e9a-99bf">
@@ -50803,7 +50803,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="8f0e-cddc-bbec-4b53" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="0d7d-20cf-3141-16ff" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="1935-2322-eb79-e83c" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="7cdf-e1f5-9073-e2c7" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="8348-2026-ea13-9a9d" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="f726-70bf-a862-f282" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="394a-6753-32f8-9cdf" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -52383,11 +52383,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                   </constraints>
                   <rules>
                     <rule id="45d9-6a12-0932-b49f" name="Termite Assault*" hidden="false">
-                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive as if it had the Teleport rule.</description>
+                      <description>Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 Terminator each); the count is set from the formation. A formation carried entirely in Termites may arrive using the Tunneler rule.</description>
                     </rule>
                   </rules>
                   <infoLinks>
-                    <infoLink id="1ae8-1420-7358-ecfe" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                    <infoLink id="4ec5-1940-5f78-41b5" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="9ea5-750e-9c24-9d4a" name="Transports" hidden="false" collective="false" import="true" defaultSelectionEntryId="9f3f-7196-d0d5-d508">
@@ -52413,7 +52413,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                             <infoLink id="1c60-e7b7-c994-03fe" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
                             <infoLink id="351d-377e-e91d-d6c0" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
                             <infoLink id="9654-f599-4f7b-5c04" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
-                            <infoLink id="49eb-8a12-7cf7-6025" name="Teleport" hidden="false" targetId="f8ed-bf3a-efe7-098f" type="rule"/>
+                            <infoLink id="ac15-ac4f-8790-d838" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
                             <infoLink id="728d-89da-ce7c-aaa4" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
                             <infoLink id="611a-3c82-f16c-53db" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
@@ -54292,7 +54292,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
       <description>May carry 20 of the following units; Tactical, Breacher, Assault, Rapier, Outrider Bike, Terminator. Additionally, 20 of the following units; Dreadnoughts, Rhinos, Land Raiders, Whirlwinds, Basilisk, Medusa, Sicaran, Predators or Vindicators; plus 6 Thunderhawks, 2 Storm Birds and enough Assault Rams, Assault Claws, Drop Pods or Storm Eagles to carry any other units on board.</description>
     </rule>
     <rule id="7c43-0379-c0de-aba8" name="Transport (Termite Assault Drill*)" hidden="false">
-      <description>May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. A formation transported entirely in Termites may deploy as if it had the Teleport special rule.</description>
+      <description>May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator.</description>
     </rule>
     <rule id="592f-60b0-fcd7-17b3" name="Transport (Thunderhawk Gunship)" hidden="false">
       <description>May carry 8 of the following units, Tactical, Breacher, Assault OR 4 Terminators OR 5 Outrider Squads.</description>

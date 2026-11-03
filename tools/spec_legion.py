@@ -54,10 +54,10 @@ CORE_UPGRADES = [
                           ('Typhon Siege Tank', 150), ('Cerberus Tank Destroyer', 150))]),
     UP('Teleport', 50, rules=['Teleport'], desc='Add the Teleport special rule to each INF unit in the formation.'),
     # Fan-made (Legions Imperialis units with no Epic rules), behind 'Allow fan-made units'
-    UP('Termite Assault', parts=[Carry(2, 'Termite Assault Drill', 30)], rules=['Teleport'], new=True,
+    UP('Termite Assault', parts=[Carry(2, 'Termite Assault Drill', 30)], rules=['Tunneler'], new=True,
        desc='Add enough Termite Assault Drills to transport the entire formation (2 Tactical-sized units or 1 '
             'Terminator each); the count is set from the formation. A formation carried entirely in Termites may '
-            'arrive as if it had the Teleport rule.'),
+            'arrive using the Tunneler rule.'),
     UP('Palisade Drop Pod', 25, rules=['Invulnerable Save'], new=True,
        desc='Only with Drop Assault. One of the formation\'s Drop Pods is a Palisade: once it lands, units of the '
             'formation within 15cm of it have a 6+ Invulnerable Save while they stay in range.'),

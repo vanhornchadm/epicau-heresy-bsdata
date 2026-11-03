@@ -164,9 +164,17 @@ The army lists are transcribed by hand in `spec_legion.py` and `spec_others.py`,
 
 Revisions are bumped automatically. `generate.py` compares each file with the copy already on disk and only rewrites files whose content changed; each rewrite raises that file's `revision` by one. A changed catalogue also records the current game system revision as `gameSystemRevision`. Running the generator twice in a row changes nothing. Always run it against the committed files rather than a fresh folder, otherwise every file starts again at revision 1.
 
+## Docs
+
+`docs/` holds working notes kept alongside the data:
+
+- [`TODO.md`](docs/TODO.md): fan-made candidates from Empire of Ashes to revisit.
+- [`MISSING_UNITS.md`](docs/MISSING_UNITS.md): Legions Imperialis units still to port.
+- [`EMPIRE_OF_ASHES_COMPARISON.md`](docs/EMPIRE_OF_ASHES_COMPARISON.md): how the Empire of Ashes PDF and web builder differ from this data, and the Departmento Munitorum cross-check.
+
 ## Site
 
-`site/` builds a [Quartz](https://quartz.jzhao.xyz) site from the data files, published at <https://vanhornchadm.github.io/epicau-heresy-bsdata/>. It has a page for every fan-made or Departmento Munitorum formation, unit, upgrade and Titan weapon, the special rules they use, where each comes from, this README's roster rules and data decisions, the backlog in `TODO.md` and `MISSING_UNITS.md`, and a changelog built from the git history. The pages are generated: `site/build_content.py` reads the `.gst` and `.cat` files, `README.md`, `TODO.md`, `MISSING_UNITS.md` and `git log`, so the site follows the data. The one hand-kept list is `site/sources.py`, which names where each new unit and rule comes from; add a line there when adding a unit, or the build reports it as having no source.
+`site/` builds a [Quartz](https://quartz.jzhao.xyz) site from the data files, published at <https://vanhornchadm.github.io/epicau-heresy-bsdata/>. It has a page for every fan-made or Departmento Munitorum formation, unit, upgrade and Titan weapon, the special rules they use, where each comes from, this README's roster rules and data decisions, the backlog in `docs/TODO.md` and `docs/MISSING_UNITS.md`, and a changelog built from the git history. The pages are generated: `site/build_content.py` reads the `.gst` and `.cat` files, `README.md`, `docs/TODO.md`, `docs/MISSING_UNITS.md` and `git log`, so the site follows the data. The one hand-kept list is `site/sources.py`, which names where each new unit and rule comes from; add a line there when adding a unit, or the build reports it as having no source.
 
 ```bash
 site/build.sh            # build into site/public

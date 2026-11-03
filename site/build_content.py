@@ -828,9 +828,9 @@ def body(path):
 
 
 def backlog():
-    """The fan-made candidates in TODO.md, then the Legions Imperialis coverage in MISSING_UNITS.md."""
-    text = body('TODO.md')
-    missing = body('MISSING_UNITS.md')
+    """The fan-made candidates in docs/TODO.md, then the Legions Imperialis coverage in docs/MISSING_UNITS.md."""
+    text = body('docs/TODO.md')
+    missing = body('docs/MISSING_UNITS.md')
     if missing:
         text += '\n\n## Legions Imperialis coverage\n\n' + missing.replace('\n## ', '\n### ')
     return md_page('Backlog', ['backlog'], 'Fan-made candidates still to consider, and Legions Imperialis coverage.',

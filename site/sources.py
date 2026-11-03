@@ -102,6 +102,12 @@ ENTRY_SOURCES = {
     # Knight Household
     'Acastus Knight Asterius': [('li', 'Knights library, converted against the EpicAU Porphyrion')],
     'Knight Moirax': [('li', 'Knights library, converted against the EpicAU Armigers')],
+    'Dominus Knights': [('empire-of-ashes', 'the Dominus Lance: formation and points'),
+                        ('derived', 'the Valiant as a second choice')],
+    'Dominus Knight-Castellan': [('epicau', 'stat line, from the wiki reference sheet'),
+                                 ('empire-of-ashes', 'weapons and the Shieldbreaker rule')],
+    'Dominus Knight-Valiant': [('epicau', 'stat line, from the wiki reference sheet'),
+                               ('derived', "the Castellan's Empire of Ashes weapons and the Knight-Acheron's flame cannon")],
 
     # Legio Titanicus
     'Warbringer Nemesis Titan': [('epic-uk', 'Adeptus Titanicus codex version 080925: stat line and fixed weapons'),

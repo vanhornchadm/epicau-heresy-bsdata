@@ -359,8 +359,29 @@ FAN_TITAN_WEAPONS = {
 }
 
 
+# Units whose stat lines are on the wiki reference sheet but whose weapons aren't: (weapons, notes) replaces the
+# sheet's empty weapons and its notes. The Dominus Knight-Castellan's weapons and Shieldbreaker rule come from Empire
+# of Ashes (Public v1.0, p. 60). Legions Imperialis has no Dominus Knights, so the Valiant keeps the Castellan's
+# siegebreaker and shieldbreakers and trades its plasma decimator and volcano lance for a conflagration cannon, the
+# EpicAU Knight-Acheron's flame cannon with a third shot, and a thundercoil harpoon, the volcano lance at 15cm and 3+.
+DOMINUS_NOTES = ('DC2, Ion Shield, Reinforced Armour, Walker. Shieldbreaker: Shieldbreaker Missiles ignore '
+                 'Invulnerable Saves and Void Shields. Critical hit effect: Destroyed.')
+DOMINUS_SHARED = [{'name': 'TL Siegebreaker Cannon', 'range': '15cm AND (15cm)',
+                   'firepower': 'AP5+/AT5+ AND (small arms) EA(+1)'},
+                  {'name': 'Shieldbreaker Missiles', 'range': '45cm', 'firepower': 'AT4+, Single Shot'}]
+SHEET_WEAPONS = {
+    'Dominus Knight-Castellan': ([{'name': 'Plasma Decimator', 'range': '30cm', 'firepower': 'AP3+/AT4+, MW, Slow Firing'},
+                                  {'name': 'Volcano Lance', 'range': '45cm', 'firepower': 'AT4+, TK(1)'}] + DOMINUS_SHARED,
+                                 DOMINUS_NOTES),
+    'Dominus Knight-Valiant': ([{'name': 'Conflagration Cannon', 'range': '30cm AND (15cm)',
+                                 'firepower': '3 x AP3+/AT6+, Ignore Cover AND (small arms) Ignore Cover'},
+                                {'name': 'Thundercoil Harpoon', 'range': '15cm', 'firepower': 'AT3+, TK(1)'}] + DOMINUS_SHARED,
+                               DOMINUS_NOTES),
+}
+
+
 # Fan-made units (not on the EpicAU wiki or Departmento Munitorum). They, and fan-made formations and upgrades, show
-# an asterisk after their names.
+# an asterisk after their names. The Dominus Knights are on both, but their weapons are fan-made.
 FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion Tarantula', 'Legion Tarantula Hyperios',
              'Ascalon', 'Araknae Weapons Platform', 'Saturnine Terminators', 'Saturnine Dreadnought',
              'Termite Assault Drill', 'Warbringer Nemesis Titan', 'Warmaster Heavy Battle Titan',
@@ -370,7 +391,7 @@ FAN_UNITS = {'Kratos Heavy Tank', 'Sicaran Punisher', 'Sicaran Arcus', 'Legion T
              'Malcador Vanquisher', 'Leman Russ Annihilator', 'Hellhammer', 'Aethon Heavy Sentinel',
              'Cyclops Demolition Vehicle', 'Scintillax', 'Errax', 'Tenebrax', 'Serperos', 'Harpax',
              'Arlatax Battle-Automata', 'Domitar Battle-Automata', 'Krios Venator', 'Archmagos Prime on Abeyant',
-             'Acastus Knight Asterius', 'Knight Moirax', 'Auxilia Hydra'}
+             'Acastus Knight Asterius', 'Knight Moirax', 'Auxilia Hydra', *SHEET_WEAPONS}
 
 
 def star(name, fan):
@@ -522,6 +543,9 @@ def points_limit_label(owner, maxn, per, round_up):
 UNITS = json.load(open(os.path.join(HERE, 'source', 'units.json')))
 for sheet, extra in EXTRA_UNITS.items():
     UNITS[sheet].extend(extra)
+for u in (u for us in UNITS.values() for u in us if u['name'] in SHEET_WEAPONS):
+    assert not u['weapons'], f"{u['name']} now has weapons on the reference sheet"
+    u['weapons'], u['notes'] = SHEET_WEAPONS[u['name']]
 TITAN_WEAPONS = json.load(open(os.path.join(HERE, 'source', 'titan_weapons.json')))
 TITAN_WEAPONS.update(FAN_TITAN_WEAPONS)
 # Rule keywords are capitalised on the wiki, so match case-sensitively to avoid hits like "transport capacity".

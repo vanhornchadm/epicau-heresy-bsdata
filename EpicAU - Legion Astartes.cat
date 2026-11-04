@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="32" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="33" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -4160,6 +4160,215 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9ef-4c51-bd19-0075" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3c7c-f6fd-47ad-c70c" name="Legion Deredeo Dreadnought Talon*" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="add" field="category" value="b980-0dfd-c54d-3593">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="813c-67a8-ed81-24f9">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fbc3-4530-e34d-3e92" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="027f-543a-9ab7-362f" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cdb7-8175-d8f5-e789" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0e75-595f-c943-9de7" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f63-b141-7da9-b4a9" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a914-8960-4425-06b1" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d300-75be-c303-5ebb" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3162-8794-c22f-7807" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d037-4311-962d-1cd1" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2fc6-7090-5156-e67b" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e0d0-2698-7314-b6b3" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4475-2bda-6380-001c" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="90e7-0b6b-eacd-a5ee" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddfc-8dee-03f2-0f39" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ee5-34f0-b818-8a51" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d15-2339-9ba7-4154" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0741-f83d-1df8-9c36" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="158a-6d8f-110a-3929" type="atLeast"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8e75-5c6e-2a7f-54dc" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="append" field="name" value=" (disruptive ally: -1 strategy rating)">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c0f7-9b93-3823-9b5b" type="instanceOf"/>
+              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a2-ea6d-4d79-445f" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="add" field="category" value="592b-0da0-9d99-08ca">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="653a-1b27-7e39-5e16" name="Support Detachment" hidden="false" targetId="287c-ab86-2eee-2e9f" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="638b-9d7a-8c99-5332" name="Deredeo Dreadnought" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd62-bb10-d94c-3c60" type="min"/>
+            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e69b-b237-6e86-2024" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="d55a-c329-631a-6ed7" name="Deredeo Dreadnought" hidden="false" targetId="c662-fdd2-6357-dc86" type="profile">
+              <modifiers>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Anvilus Autocannon Battery">
+                  <conditions>
+                    <condition field="selections" scope="638b-9d7a-8c99-5332" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0887-2c6e-78ee-bd97" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="append" field="4e39-030c-4e18-12e0" value="Hellfire Plasma Cannon">
+                  <conditions>
+                    <condition field="selections" scope="638b-9d7a-8c99-5332" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0503-5667-f106-ed46" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="2e71-31b4-327a-60cf" name="TL Heavy Bolter" hidden="false" targetId="2c63-9bce-abf2-cd0d" type="profile"/>
+            <infoLink id="2bab-e20e-1f83-c2a6" name="Aiolos Missile Launcher" hidden="false" targetId="b72d-8510-975d-a444" type="profile"/>
+            <infoLink id="7271-1acf-3dd9-9e0f" name="Helitical Targeting Array" hidden="false" targetId="251a-aec2-1b88-e65e" type="profile"/>
+            <infoLink id="ffac-5d9b-bc43-1470" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
+            <infoLink id="65cc-5303-31c0-89cb" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
+            <infoLink id="840c-a1e0-a0a9-3e63" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
+            <infoLink id="ef53-c960-865c-5c9f" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d017-ceea-983c-219a" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="0887-2c6e-78ee-bd97">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f28-0feb-e916-5923" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8362-b776-d0a0-02b5" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0887-2c6e-78ee-bd97" name="Anvilus Autocannon Battery" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="075e-df85-ba49-ee48" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c73f-7005-b866-f9c7" name="Anvilus Autocannon Battery" hidden="false" targetId="e5cc-89f2-80c8-9304" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="0503-5667-f106-ed46" name="Hellfire Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bfb-ebff-8867-ab76" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d612-3c59-7f4d-27c8" name="Hellfire Plasma Cannon" hidden="false" targetId="671b-555f-ae65-ebac" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="100.0"/>
+            <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
+            <cost name="Transport units" typeId="9b58-ba34-d974-341c" value="1.0"/>
+            <cost name="Assault Claw space" typeId="53ea-b6c5-c500-fb0e" value="4.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="59d3-2e1b-d6ba-b14b" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c43b-9284-34a8-2cf4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9522-84df-79f7-0210" name="Drop Assault" hidden="false" collective="false" import="true" targetId="965b-f895-bee5-e26d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d5d-756c-73c0-4a1c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ea71-d78e-746f-d905" name="Centurion" hidden="false" collective="false" import="true" targetId="839d-c809-7edd-2efd" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cfaf-6dba-96e9-0342" value="0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfaf-6dba-96e9-0342" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="00a4-b836-0199-61ca" name="Centurion" hidden="true" collective="false" import="true" targetId="6cd5-1fc8-ad5b-8711" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="e035-8c79-da57-a32d" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e035-8c79-da57-a32d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3983-e716-d2c6-110a" name="Palisade Drop Pod*" hidden="true" collective="false" import="true" targetId="0c76-eba3-66ad-a127" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="6bd3-a759-48ca-9058" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bd3-a759-48ca-9058" type="max"/>
               </constraints>
             </entryLink>
           </entryLinks>

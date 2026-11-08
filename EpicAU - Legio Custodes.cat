@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e58-c014-c5e4-5c80" name="EpicAU - Legio Custodes" revision="13" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e58-c014-c5e4-5c80" name="EpicAU - Legio Custodes" revision="14" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="6d49-ab7e-2c53-847a" name="Legio Custodes" hidden="false">
       <rules>
@@ -135,10 +135,23 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="560f-e40c-51d4-9075" name="Ares Gunship" hidden="false" targetId="8f76-6ff3-53d5-50a9" type="profile"/>
-            <infoLink id="f1e4-9619-a0c3-a642" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
             <infoLink id="7e4c-2731-7ddf-4735" name="Arachnus Magna-Blaze Cannon" hidden="false" targetId="d572-7f59-b7e3-4711" type="profile"/>
             <infoLink id="f6f8-a062-b2b1-3b2a" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="2fdb-96e5-04e2-a318" name="Arachnus Heavy Blaze Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b95-2ba9-a622-eff2" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd19-1981-f0b4-7c67" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ef45-c21e-44a2-4737" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -773,9 +786,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff0-7e8e-638e-848e" type="max"/>
                       </constraints>
-                      <infoLinks>
-                        <infoLink id="d2a1-ef42-8924-67c5" name="Telemon Caestus" hidden="false" targetId="8e6e-b80b-6aee-3c17" type="profile"/>
-                      </infoLinks>
+                      <selectionEntries>
+                        <selectionEntry id="692a-d9d0-735d-ad2d" name="Telemon Caestus" hidden="false" collective="false" import="true" type="upgrade">
+                          <constraints>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0673-feef-f62a-d54e" type="min"/>
+                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da93-9ac7-7b95-492c" type="max"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink id="6944-740e-f254-7fc7" name="Telemon Caestus" hidden="false" targetId="8e6e-b80b-6aee-3c17" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0.0"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
                       </costs>
@@ -852,9 +876,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="2f1f-e56f-b790-e191" name="Orion Assault Dropship" hidden="false" targetId="6382-2139-06b7-cf1c" type="profile"/>
-            <infoLink id="e530-8a1b-f5b6-945f" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
-            <infoLink id="fd30-e424-bfaa-e68b" name="Lastrum Bolt Cannon" hidden="false" targetId="8d0a-131a-4eb8-1216" type="profile"/>
-            <infoLink id="956d-d0ff-e6b6-d9a4" name="Spiculus Heavy Bolt Launchers" hidden="false" targetId="0363-31c8-de8c-359c" type="profile"/>
             <infoLink id="343d-9a81-010d-ad0c" name="Special Rules (Orion Assault Dropship)" hidden="false" targetId="c675-626f-d4a9-bfd0" type="rule"/>
             <infoLink id="7bae-5934-87aa-d41f" name="Transport (Orion Assault Dropship)" hidden="false" targetId="0aa0-eaa2-518e-8a36" type="rule"/>
             <infoLink id="7841-fd28-5ce1-cef1" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
@@ -863,6 +884,44 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="9070-6568-3f53-530d" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
             <infoLink id="b931-b908-1737-f6a0" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="4137-1dee-13b6-03ec" name="Arachnus Heavy Blaze Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="282d-0f5e-45da-f975" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65b1-d574-2ccd-5f42" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f160-b94f-e359-7dfd" name="Arachnus Heavy Blaze Cannon" hidden="false" targetId="5142-cf33-0eae-c28f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0b92-a8c2-5fe6-ef91" name="Lastrum Bolt Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b07-d876-4647-c3e4" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7e7-93bb-c636-db2b" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2722-7895-c26b-3067" name="Lastrum Bolt Cannon" hidden="false" targetId="8d0a-131a-4eb8-1216" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="39a2-038c-50c7-8f86" name="Spiculus Heavy Bolt Launchers" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6a1-059e-e6b6-50e9" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e8f-5f35-74fc-db5e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fdba-08ce-15bd-4726" name="Spiculus Heavy Bolt Launchers" hidden="false" targetId="0363-31c8-de8c-359c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="300.0"/>
           </costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="21" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="22" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -244,11 +244,24 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </constraints>
           <infoLinks>
             <infoLink id="ae75-34a3-3995-e2b4" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
-            <infoLink id="a9d7-d068-dcad-bebc" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
             <infoLink id="836d-d1fe-3742-e445" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="ff46-8e2d-9419-9255" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="e006-34d6-8771-153d" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="a2d6-070a-2923-b0b6" name="Graviton Guns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c01-d2d4-86d6-4784" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d97a-56ee-46ff-1d16" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fe27-7022-bc0a-7e75" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -403,9 +416,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c266-c161-3c5b-f1ba" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="499e-effd-2e82-30b9" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="182e-a0c4-8cf2-231f" name="Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5db5-0343-e13a-9b11" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1222-2205-99e7-887e" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="3968-ae21-bde0-d4d8" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -414,9 +438,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="036e-8ee1-79ec-b21b" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="b1be-e33d-34a9-d81f" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="1222-24cc-fc86-9f46" name="Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895f-345f-4c37-857d" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ba-a346-5b87-092b" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="d500-82d8-bc1e-e934" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -425,9 +460,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efdd-1a66-1c8b-6afc" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="770b-9c27-0464-f661" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="42ca-822b-c5fa-9abd" name="Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa7d-20b8-d827-606c" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9649-3836-02d9-45a2" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="82b3-effa-f2e5-2340" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -624,11 +670,24 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </constraints>
           <infoLinks>
             <infoLink id="e7ff-01cf-fd25-dfd4" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
-            <infoLink id="af07-f27e-ea53-495e" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
             <infoLink id="370b-76a8-06bc-c98a" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="43c2-67f2-7f2b-c889" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="7545-9b5c-6a8c-5d11" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="db37-cad4-3956-416a" name="Graviton Guns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d003-d680-1200-70ad" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c82-fc6e-1482-b6ad" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6ced-afff-9b4b-0c44" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -754,11 +813,24 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </constraints>
           <infoLinks>
             <infoLink id="b7bd-5834-8f6e-c6a7" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
-            <infoLink id="c2cf-644c-9049-4a85" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
             <infoLink id="54a5-f222-9698-67e9" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="a040-4a02-7eff-5f25" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="d3e5-2426-1789-bcc6" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="75ba-4847-3b7c-5e4a" name="Graviton Guns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a8c-dda6-e021-d306" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1095-d42e-3822-eb31" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7b50-b16c-580b-aa2a" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -895,11 +967,24 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </constraints>
           <infoLinks>
             <infoLink id="35e1-82c0-086f-53b0" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
-            <infoLink id="6b95-33cd-daea-2b7d" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
             <infoLink id="ec4f-33b3-f324-1601" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="61ee-ed5c-119e-fb19" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="489a-5686-8c4c-61de" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="8667-2a1b-697a-094f" name="Graviton Guns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="445e-cb06-ef7c-dbab" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b3-45af-0b20-86c3" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d277-8f88-2976-b290" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -1725,9 +1810,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d41d-9272-4795-9106" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="a011-d6ea-6d9f-c82f" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="14c8-690d-73ef-945b" name="Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa80-fef8-1604-4221" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f127-fa5b-173f-c1cc" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="e6dc-7b39-7f99-d03c" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -1736,9 +1832,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6382-1e18-53d1-89d7" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="e27f-7684-c233-0956" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="25a7-ef77-c34e-bc62" name="Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef43-d492-3b67-f22e" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3e-d18f-a553-792b" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="4c1c-d4e1-56f2-4c2d" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -1747,9 +1854,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d317-566b-6a67-4c58" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="4981-e280-fa99-e466" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="9a97-d424-4269-0dee" name="Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f664-4487-b1a2-fc25" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88e6-ae8b-e7d5-93e9" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="99cf-c5ab-4d9c-0b29" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -1886,8 +2004,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="b282-f539-644b-5b0e" name="Volkite Culverins" hidden="false" targetId="b413-0086-7889-ee2a" type="profile"/>
-            <infoLink id="2756-a523-df84-e7aa" name="Twin Lascannons" hidden="false" targetId="5ab9-0384-ef6e-89fe" type="profile"/>
             <infoLink id="9bec-480c-ea03-fdab" name="Critical Hit (Ordinatus Majoris)" hidden="false" targetId="11b4-7293-cd5f-c812" type="rule"/>
             <infoLink id="752b-614a-8407-15ef" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="ec41-5b0a-8d89-0c1a" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
@@ -1904,6 +2020,32 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <infoLink id="34af-c2cf-764b-4743" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="bb2b-2e79-2d8f-fbc8" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="d734-77a0-f3fb-40b9" name="Volkite Culverins" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd5-3063-f6a8-ebab" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6e6-9937-02a2-8bae" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4efc-9c34-8135-1ff0" name="Volkite Culverins" hidden="false" targetId="b413-0086-7889-ee2a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="ba1f-11ba-6b67-b9b7" name="Twin Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b7a-00dd-eb13-f008" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8fe-e542-4e4b-c83c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0f50-8e58-1f38-faa3" name="Twin Lascannons" hidden="false" targetId="5ab9-0384-ef6e-89fe" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="e038-c896-1d95-8bde" name="Main gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="3560-6a79-9e89-e304">
               <constraints>
@@ -1926,9 +2068,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74c8-e8e4-af88-4da1" type="max"/>
                   </constraints>
-                  <infoLinks>
-                    <infoLink id="d48f-67d5-06c5-69f2" name="Golgothan Missiles" hidden="false" targetId="f357-5c1c-a36e-2718" type="profile"/>
-                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="1063-9213-ce7b-6943" name="Golgothan Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35d6-8e6a-d625-aff2" type="min"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b55-63f7-bbd1-3b71" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="54e6-7479-bc61-03e9" name="Golgothan Missiles" hidden="false" targetId="f357-5c1c-a36e-2718" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2121,7 +2274,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="6322-1653-9294-6381" name="Volkite Culverins" hidden="false" targetId="b413-0086-7889-ee2a" type="profile"/>
             <infoLink id="c77c-a9d3-16d7-2b00" name="Critical Hit (Ordinatus Minoris)" hidden="false" targetId="6c2a-d7a4-943e-52fb" type="rule"/>
             <infoLink id="832f-b34e-2cfe-eb9e" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="e04d-c668-d1bd-a151" name="Lance" hidden="false" targetId="30d6-dddf-d298-0f34" type="rule"/>
@@ -2134,6 +2286,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <infoLink id="9c7d-e335-939b-7bd2" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
             <infoLink id="7f9a-22e0-6860-be49" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="aa45-3cc1-69db-6305" name="Volkite Culverins" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="607d-3856-4c9b-29f3" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="372e-5ba3-910a-f8aa" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a31a-8a86-afdf-8f6b" name="Volkite Culverins" hidden="false" targetId="b413-0086-7889-ee2a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="bccd-b289-a723-7a71" name="Main gun" hidden="false" collective="false" import="true" defaultSelectionEntryId="f73d-c735-8437-d722">
               <constraints>
@@ -2242,7 +2408,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           <infoLinks>
             <infoLink id="b56d-9f00-696f-91e2" name="Falchion" hidden="false" targetId="3b6d-0fb1-a224-5fb7" type="profile"/>
             <infoLink id="388a-db57-c566-0bc1" name="TL Volcano Cannon" hidden="false" targetId="2f87-e6e7-3e7a-6601" type="profile"/>
-            <infoLink id="7545-7266-5f61-a11d" name="Quad Lascannon" hidden="false" targetId="7f9b-c5fb-b24e-3709" type="profile"/>
             <infoLink id="1026-df30-9577-76a1" name="Critical Hit (Falchion)" hidden="false" targetId="5902-4d9a-c267-1f1c" type="rule"/>
             <infoLink id="b468-243c-2278-ef47" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
             <infoLink id="edeb-10f8-961b-b3e0" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
@@ -2251,6 +2416,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <infoLink id="ba40-c243-3be2-e027" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
             <infoLink id="6c58-c21e-b24b-1f42" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="fd76-a0ed-3daa-dc6b" name="Quad Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb54-275e-bb24-ee3d" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc4-988b-3650-2a64" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="55cd-a2cd-b604-401d" name="Quad Lascannon" hidden="false" targetId="7f9b-c5fb-b24e-3709" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -2704,9 +2883,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7fd-2a59-9971-e630" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="e947-b3a8-f998-edd0" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="6e91-5308-5c46-ac6a" name="Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba19-e412-9945-12f9" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94c8-438c-bfa7-6eb3" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="4f2f-baa0-1bce-afa8" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -2715,9 +2905,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c2b-9ec0-aeb8-56f0" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="ef6f-95a5-488e-089c" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="fd02-1d48-20d0-baea" name="Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0af-7fc5-2507-77d2" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cc1-face-9e91-e994" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="2208-d48c-a7d0-52a9" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -2726,9 +2927,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9d3-0668-7f2d-201b" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="ebd4-f698-b2f4-aa9d" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="15d3-96ab-2ca9-36f3" name="Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2645-580e-53af-08db" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e62a-d817-1573-fd9f" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="91b5-09bb-01d0-ca0a" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -3172,9 +3384,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df2b-d528-f060-1c1a" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="68fd-78b4-2ee5-d4d5" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="0497-29db-a0c7-cc26" name="Twin Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4971-abb0-4482-69e0" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c071-91bd-806e-3485" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="7833-529c-aaac-f06f" name="Twin Lascannon" hidden="false" targetId="2c71-cf4e-1b40-b5d0" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -3183,9 +3406,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4e9-ca03-9e53-b920" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="25e3-cf9a-c7e3-8ce1" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="93b5-32b0-3374-a509" name="Flamestorm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38f8-6f17-ebae-4e03" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed32-4a2f-39c9-36d1" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="9a37-64b1-06f6-ab68" name="Flamestorm Cannon" hidden="false" targetId="5250-e270-afcc-9ebf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -3194,9 +3428,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                                       <constraints>
                                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d9c-55fa-0b80-4f9f" type="max"/>
                                       </constraints>
-                                      <infoLinks>
-                                        <infoLink id="260d-9489-a6f9-502d" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
-                                      </infoLinks>
+                                      <selectionEntries>
+                                        <selectionEntry id="3c2d-6005-88ca-0632" name="Twin Multimelta" hidden="false" collective="false" import="true" type="upgrade">
+                                          <constraints>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51af-a597-1bea-74bf" type="min"/>
+                                            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e450-7aee-8d16-1f57" type="max"/>
+                                          </constraints>
+                                          <infoLinks>
+                                            <infoLink id="2ecf-26bd-b3a6-0786" name="Twin Multimelta" hidden="false" targetId="4177-f2e5-20da-4baf" type="profile"/>
+                                          </infoLinks>
+                                          <costs>
+                                            <cost name="pts" typeId="points" value="0.0"/>
+                                          </costs>
+                                        </selectionEntry>
+                                      </selectionEntries>
                                       <costs>
                                         <cost name="pts" typeId="points" value="0.0"/>
                                       </costs>
@@ -3406,10 +3651,23 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           <infoLinks>
             <infoLink id="252b-b9a0-c7bd-922b" name="Vultarax Stratos-Automata" hidden="false" targetId="829a-bafe-47c4-bdb4" type="profile"/>
             <infoLink id="184e-b425-6f11-fd63" name="Vultarax Arc Blaster" hidden="false" targetId="a233-4a7f-666c-2ee0" type="profile"/>
-            <infoLink id="ae06-e88f-777a-82b2" name="Setheno Havoc Launcher" hidden="false" targetId="65bc-c3ea-8c21-1c3c" type="profile"/>
             <infoLink id="6a93-c162-8c46-0028" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
             <infoLink id="1151-70b5-c8e1-8a48" name="Skimmer" hidden="false" targetId="27df-3871-dea6-a839" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="844b-4cf8-2e90-30f6" name="Setheno Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a32-58e5-85e8-38ca" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a53-1f4f-8257-41b5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c290-4cc8-1e16-1872" name="Setheno Havoc Launcher" hidden="false" targetId="65bc-c3ea-8c21-1c3c" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -4596,11 +4854,24 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </constraints>
           <infoLinks>
             <infoLink id="3dfe-7643-4540-3db9" name="Tech Priests" hidden="false" targetId="9e8e-edeb-ee6f-351e" type="profile"/>
-            <infoLink id="527b-2f39-d5f2-e215" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
             <infoLink id="4c5c-26dd-5c5b-005a" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
             <infoLink id="c3df-a9e8-b044-8749" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
             <infoLink id="3057-a793-a11f-612a" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="a9d3-3edc-4129-6cb4" name="Graviton Guns" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d57e-1956-59b7-35d7" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56bb-61b7-a76c-69f4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fb18-821c-56b7-a7f1" name="Graviton Guns" hidden="false" targetId="417d-52af-122a-2393" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>

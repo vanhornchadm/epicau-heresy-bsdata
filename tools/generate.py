@@ -431,6 +431,7 @@ class Catalogue:
         display = star(unit['name'], unit['name'] in FAN_UNITS)
         groups, fixed, followed = weapon_plan(unit)
         weapons = self.weapon_profiles([weapon_row(w) for w in fixed])
+        single, counted = [p for p, n in weapons if n == 1], [(p, n) for p, n in weapons if n > 1]
         if uid not in self.profiles:
             names = weapons_text([w['name'] or 'Weapons' for w in fixed])
             names = names + (',' if followed else '') if names else None if groups else '-'
@@ -466,15 +467,15 @@ class Catalogue:
             cats.append('Supreme Commander')
         if 'Demi-God' in unit['notes']:
             cats.append('Primarch')
-        return [(uid, display)] + weapons, rules_in(text), cats
+        return [(uid, display)] + single, rules_in(text), cats, counted
 
     def weapon_profiles(self, rows):
-        """(profile id, name) of the shared Weapon profile for each [name, range, firepower, notes] row; the count
-        in a name ('2 x Lascannons') stays in the unit's Weapons column. A cell too long for the table goes to a
-        '<weapon> notes' rule instead."""
-        ids = []
+        """[((profile id, name), count)] of the shared Weapon profile for each [name, range, firepower, notes] row,
+        each profile once with the rows' counts ('2 x Lascannons') added up; the count also stays in the unit's
+        Weapons column. A cell too long for the table goes to a '<weapon> notes' rule instead."""
+        ids = {}
         for row in rows:
-            name, vals = weapon_count(row[0])[1], row[1:]
+            (n, name), vals = weapon_count(row[0]), row[1:]
             wid = gid('prof', self.scope, 'weapon', name, *vals)
             if wid not in self.profiles:
                 details = ' '.join(f'{c}: {v}' for c, v in zip(WEAPON_CHARS, vals) if len(v) > CELL_LIMIT)
@@ -484,8 +485,19 @@ class Catalogue:
                     rid = gid('rule', self.scope, 'weapon', name, *vals, 'notes')
                     self.rules[rid] = rule_el(rid, f'{name} notes', details)
                     self.notes_rule[wid] = [(rid, f'{name} notes')]
-            ids.append((wid, name))
-        return list(dict.fromkeys(ids))
+            ids[(wid, name)] = ids.get((wid, name), 0) + n
+        return list(ids.items())
+
+    def weapon_entries(self, owner, counted):
+        """A fixed-count selection for each weapon a model carries more than one of (2 x Lascannons), so that a
+        roster counts every weapon: two tanks with 2 Lascannons each show 4 Lascannons, not 2."""
+        return [ordered('selectionEntry', {'id': (eid := gid('se', owner, 'weapon', pid)), 'name': name,
+                                           'hidden': 'false', 'collective': 'false', 'import': 'true',
+                                           'type': 'upgrade'},
+                        constraints=[constraint(gid('con', eid, 'min'), 'min', n),
+                                     constraint(gid('con', eid, 'max'), 'max', n)],
+                        infoLinks=self.info_links(eid, [(pid, name)]), costs=cost(0))
+                for (pid, name), n in counted]
 
     def info_links(self, owner, ids):
         """infoLinks to these profiles, then to the rules holding their notes."""
@@ -624,7 +636,7 @@ class Builder:
     def unit_entry(self, path, part, name=None, mods=(), extra_cons=(), extra_cats=(), hidden=False):
         unit = self.find_unit(part['unit'])
         eid = gid('se', self.cat_id, path)
-        ids, rules, cats = self.prof.unit_profiles(unit)
+        ids, rules, cats, counted = self.prof.unit_profiles(unit)
         space = self.army['transport_space']
         if space and (unit['name'] in space or 'Demi-God' in unit['notes']):
             cats = cats + ['Tactical Transport Space']
@@ -645,7 +657,8 @@ class Builder:
                                           'hidden': str(hidden).lower(), 'collective': 'false', 'import': 'true',
                                           'type': 'model'},
                        modifiers=list(mods), constraints=cons, infoLinks=links,
-                       categoryLinks=[cat_link(eid, c) for c in cats], selectionEntryGroups=groups,
+                       categoryLinks=[cat_link(eid, c) for c in cats],
+                       selectionEntries=self.prof.weapon_entries(eid, counted) or None, selectionEntryGroups=groups,
                        costs=self.unit_costs(unit, part['each']))
 
     def weapon_choices(self, eid, unit):
@@ -663,11 +676,14 @@ class Builder:
             kids = []
             for j, o in enumerate(g['options']):
                 oid = gid('se', eid, 'weapons', i, j)
-                links = self.prof.info_links(oid, self.prof.weapon_profiles(o['rows']))
+                weapons = self.prof.weapon_profiles(o['rows'])
+                links = self.prof.info_links(oid, [p for p, n in weapons if n == 1])
                 links += [info_rule(oid, r) for r in o.get('rules', [])]
                 kids.append(ordered('selectionEntry', {'id': oid, 'name': o['label'], 'hidden': 'false',
                                                        'collective': 'false', 'import': 'true', 'type': 'upgrade'},
                                     constraints=[constraint(gid('con', oid, 'max'), 'max', 1)], infoLinks=links,
+                                    selectionEntries=self.prof.weapon_entries(
+                                        oid, [(p, n) for p, n in weapons if n > 1]) or None,
                                     costs=cost(o['cost'])))
                 if o.get('requires'):
                     self.gate(kids[-1], show=self.upgrade_option_taken(*o['requires']), cmax=gid('con', oid, 'max'))

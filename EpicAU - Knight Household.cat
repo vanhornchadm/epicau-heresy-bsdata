@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="15" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="1897-edf7-b72c-17af" name="Knight Household" hidden="false">
       <rules>
@@ -187,7 +187,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="db9d-d1a8-8a94-f311" name="Acastus Knight Asterius*" hidden="false" targetId="fa69-738d-7560-67fe" type="profile"/>
-            <infoLink id="5927-ff85-248c-4e85" name="Conversion Beam Cannon" hidden="false" targetId="4abb-dd31-9a53-3a9a" type="profile"/>
             <infoLink id="3357-6336-a262-695f" name="Volkite Culverin" hidden="false" targetId="923e-3d43-70da-0e33" type="profile"/>
             <infoLink id="317d-e9d2-99a3-0a43" name="Karacnos Mortar Battery" hidden="false" targetId="0a1a-60bb-d060-2fdb" type="profile"/>
             <infoLink id="5f1c-3a2a-a778-2eba" name="Ionic Flare Shield (Acastus Knight Asterius*)" hidden="false" targetId="c656-8846-ac95-630d" type="rule"/>
@@ -202,6 +201,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="77a2-9ce4-4ec8-b51c" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
             <infoLink id="f058-9387-b46c-a831" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="d69b-b67f-2a49-412e" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f120-06dd-dd90-b414" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e307-7879-6515-eeb8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ee87-d8c6-a518-d724" name="Conversion Beam Cannon" hidden="false" targetId="4abb-dd31-9a53-3a9a" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="260.0"/>
           </costs>
@@ -288,7 +301,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="80e0-34cf-5f17-0bc4" name="Acastus Knight Porpyhrion" hidden="false" targetId="f782-b8b4-cf1f-fc4f" type="profile"/>
-            <infoLink id="6084-6d96-bf58-cc56" name="TL Magna Lascannon" hidden="false" targetId="75d6-ee45-4ba9-a056" type="profile"/>
             <infoLink id="0a9c-95c6-dfae-8460" name="Lascannon" hidden="false" targetId="e0fd-9129-80ff-9155" type="profile"/>
             <infoLink id="350d-a299-16d1-25e2" name="Autocannon" hidden="false" targetId="5921-aaed-0e52-ebb2" type="profile"/>
             <infoLink id="3035-abcf-d8cc-3594" name="Ironstorm Missile Pod" hidden="false" targetId="0d9b-17ca-4d37-99fa" type="profile"/>
@@ -300,6 +312,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="e6bd-dc60-e9f9-b404" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
             <infoLink id="c551-7b26-87db-16d0" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="fff9-f01e-0e42-dcfc" name="TL Magna Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd17-cfc8-a69d-c7f7" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9870-14c0-1131-9a54" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5dac-df34-8d22-a239" name="TL Magna Lascannon" hidden="false" targetId="75d6-ee45-4ba9-a056" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="250.0"/>
           </costs>
@@ -515,12 +541,25 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="bf9d-48cd-be58-3ad9" name="Armiger Knight-Helverin" hidden="false" targetId="bb6c-4b3d-8a1e-290a" type="profile"/>
-                    <infoLink id="85c7-98b0-1e5c-d577" name="Armiger Autocannon" hidden="false" targetId="7dd6-58e8-0641-e7ff" type="profile"/>
                     <infoLink id="2d60-7b8c-41e5-80d5" name="Special Rules (Armiger Knight-Helverin)" hidden="false" targetId="1509-bfb3-06b5-ec91" type="rule"/>
                     <infoLink id="c307-33fd-576b-4b3c" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
                     <infoLink id="c3f5-9119-6b75-26eb" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
                     <infoLink id="1129-49ac-f496-d60e" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="98c4-35a2-67d9-6c83" name="Armiger Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7558-c3a0-4953-e6fc" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ce2-7531-53a1-8a46" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="a21f-c4f8-4bbd-3383" name="Armiger Autocannon" hidden="false" targetId="7dd6-58e8-0641-e7ff" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>

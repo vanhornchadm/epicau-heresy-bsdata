@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="19" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="20" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
       <rules>
@@ -894,8 +894,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                               <infoLinks>
                                 <infoLink id="7b44-83c3-5f63-0a7a" name="Stormlord" hidden="false" targetId="1c25-2839-2e9b-5c39" type="profile"/>
                                 <infoLink id="bf63-835a-f765-fdcd" name="Vulcan Mega-Bolter" hidden="false" targetId="5ca4-5044-8db5-5bfc" type="profile"/>
-                                <infoLink id="63a4-2529-cefe-0b1c" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
-                                <infoLink id="3a44-3002-bfdf-7212" name="Heavy Flamers" hidden="false" targetId="762c-1bcc-9e23-b405" type="profile"/>
                                 <infoLink id="2f3e-2de3-f78e-03aa" name="Transport (Stormlord)" hidden="false" targetId="723b-30dd-7d67-71f9" type="rule"/>
                                 <infoLink id="503f-9592-7a6d-2aeb" name="Critical Hit (Stormlord)" hidden="false" targetId="82a5-28fc-ce4a-a34e" type="rule"/>
                                 <infoLink id="0705-ccbd-cbce-bfc8" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
@@ -907,6 +905,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                 <infoLink id="a55e-c6ee-7115-a176" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                                 <infoLink id="4ca6-96d9-f99e-069f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                               </infoLinks>
+                              <selectionEntries>
+                                <selectionEntry id="838b-042b-1c02-9889" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5955-6f0c-5f14-4e07" type="min"/>
+                                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6bb-cc5f-7f47-595c" type="max"/>
+                                  </constraints>
+                                  <infoLinks>
+                                    <infoLink id="eb3a-a34b-6fba-36e5" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                                <selectionEntry id="afd5-540d-5ae5-42ee" name="Heavy Flamers" hidden="false" collective="false" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a2bf-a5ad-1a4a-9928" type="min"/>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="977d-98f3-dbca-8ac4" type="max"/>
+                                  </constraints>
+                                  <infoLinks>
+                                    <infoLink id="1121-ab94-05c4-256f" name="Heavy Flamers" hidden="false" targetId="762c-1bcc-9e23-b405" type="profile"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                              </selectionEntries>
                               <costs>
                                 <cost name="pts" typeId="points" value="200.0"/>
                               </costs>
@@ -1189,8 +1213,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                               <infoLinks>
                                 <infoLink id="cf0a-e143-4b44-14c3" name="Stormlord" hidden="false" targetId="1c25-2839-2e9b-5c39" type="profile"/>
                                 <infoLink id="3be2-5492-501f-1d08" name="Vulcan Mega-Bolter" hidden="false" targetId="5ca4-5044-8db5-5bfc" type="profile"/>
-                                <infoLink id="3c07-134f-1406-06b9" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
-                                <infoLink id="53ec-054e-5acd-c3c7" name="Heavy Flamers" hidden="false" targetId="762c-1bcc-9e23-b405" type="profile"/>
                                 <infoLink id="1c4c-ae66-f164-566e" name="Transport (Stormlord)" hidden="false" targetId="723b-30dd-7d67-71f9" type="rule"/>
                                 <infoLink id="f1e1-8dca-1796-8ed8" name="Critical Hit (Stormlord)" hidden="false" targetId="82a5-28fc-ce4a-a34e" type="rule"/>
                                 <infoLink id="f20e-8492-538f-5491" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
@@ -1202,6 +1224,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                 <infoLink id="def4-ad14-b08b-1ec9" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                                 <infoLink id="5e73-ecfb-e9e2-85c3" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                               </infoLinks>
+                              <selectionEntries>
+                                <selectionEntry id="a15b-9b39-d8ca-5dc8" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a42-1bfd-68be-1d24" type="min"/>
+                                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23d8-3aa1-5a68-d104" type="max"/>
+                                  </constraints>
+                                  <infoLinks>
+                                    <infoLink id="f42c-5452-99f9-0b42" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                                <selectionEntry id="3929-3be7-3f34-d1fd" name="Heavy Flamers" hidden="false" collective="false" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74a0-899b-6862-0189" type="min"/>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35ff-7cc3-0218-8ec6" type="max"/>
+                                  </constraints>
+                                  <infoLinks>
+                                    <infoLink id="4a94-a591-739e-eb72" name="Heavy Flamers" hidden="false" targetId="762c-1bcc-9e23-b405" type="profile"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                              </selectionEntries>
                               <costs>
                                 <cost name="pts" typeId="points" value="200.0"/>
                               </costs>
@@ -1393,12 +1441,25 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <infoLinks>
                 <infoLink id="9aae-f82e-00a0-720a" name="Malcador Heavy Tank" hidden="false" targetId="1280-c35b-1340-10c6" type="profile"/>
-                <infoLink id="384e-e0d7-6e17-0ccb" name="Autocannons" hidden="false" targetId="dd5c-bd26-24c2-a959" type="profile"/>
                 <infoLink id="d119-e100-9f64-663b" name="Battlecannon" hidden="false" targetId="1820-02e2-98c9-14e5" type="profile"/>
                 <infoLink id="d6b2-c9a8-1487-3556" name="Heavy Bolter" hidden="false" targetId="c412-4fdc-798d-bff3" type="profile"/>
                 <infoLink id="24d9-5412-995e-ad58" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="5747-c2d7-db05-befb" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="0af3-faf8-35e6-387c" name="Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a4d-fd36-5284-515a" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6313-9a2b-5c89-3fca" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f0ea-3ac5-404c-9a3a" name="Autocannons" hidden="false" targetId="dd5c-bd26-24c2-a959" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1410,10 +1471,23 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <infoLinks>
                 <infoLink id="6184-a9a6-5b93-89e8" name="Malcador Infernus Special Weapons Tank" hidden="false" targetId="7dfc-a431-14cb-241d" type="profile"/>
                 <infoLink id="2452-eaed-9c32-ad44" name="Infernus Cannon" hidden="false" targetId="d11a-4b21-5c67-3532" type="profile"/>
-                <infoLink id="7b4b-d253-3ed6-709f" name="Autocannons" hidden="false" targetId="637e-73ad-4cfb-9bb8" type="profile"/>
                 <infoLink id="6f9d-8ca2-e5a9-e853" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="e479-13ca-98a3-1258" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="bc85-9cdf-8bff-2cba" name="Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7833-9840-2aaf-f186" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aca-ee2c-b33c-cd91" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="dea0-9ed9-0914-1043" name="Autocannons" hidden="false" targetId="637e-73ad-4cfb-9bb8" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1437,7 +1511,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <infoLinks>
                 <infoLink id="3b2e-edfb-6971-6c1f" name="Malcador Annihilator*" hidden="false" targetId="045f-1646-8d59-8704" type="profile"/>
                 <infoLink id="f3bd-fba2-e529-75cb" name="Twin Lascannon" hidden="false" targetId="3bfb-d362-ebc9-4331" type="profile"/>
-                <infoLink id="c2e0-9d12-e8a9-4b38" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
                 <infoLink id="31e6-ee4b-2506-2b32" name="Demolisher Cannon" hidden="false" targetId="6fd1-913c-920c-3622" type="profile"/>
                 <infoLink id="a78f-0657-c972-6027" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                 <infoLink id="03cc-d028-cb8e-953c" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
@@ -1445,6 +1518,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="274f-e1d2-b442-14a2" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
                 <infoLink id="40f4-baea-fb45-ef9c" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="8a8b-3a4d-4833-0f69" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7132-2a60-ef90-1972" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4336-5724-2087-b2f6" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="52f7-069f-a798-0167" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1468,11 +1555,24 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <infoLinks>
                 <infoLink id="cf07-a959-0114-9eb3" name="Malcador Vanquisher*" hidden="false" targetId="62d2-239a-c6ce-56c9" type="profile"/>
                 <infoLink id="4a4c-946b-5baf-81f8" name="Vanquisher Cannon" hidden="false" targetId="aab6-b586-d60c-d22c" type="profile"/>
-                <infoLink id="a4ff-85fc-6319-72d7" name="Autocannons" hidden="false" targetId="637e-73ad-4cfb-9bb8" type="profile"/>
                 <infoLink id="13e0-7a1d-00be-48fb" name="Heavy Bolter" hidden="false" targetId="c412-4fdc-798d-bff3" type="profile"/>
                 <infoLink id="7184-3774-50ee-b8a8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="008a-307a-329d-25d2" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="53ee-f083-c6c7-96ed" name="Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e6b-20f3-aec5-967e" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6230-eb83-e44e-8ac7" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6206-6cde-d5d5-1d9a" name="Autocannons" hidden="false" targetId="637e-73ad-4cfb-9bb8" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
               </costs>
@@ -1570,11 +1670,35 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="e080-5a3d-4e99-1d1b" name="Imperial Navy Marauder Destroyer*" hidden="false" targetId="734a-7f68-fe17-9b34" type="profile"/>
             <infoLink id="25ff-4b8e-edc9-6b62" name="Twin Heavy Bolter" hidden="false" targetId="8bf5-0879-c771-fd78" type="profile"/>
             <infoLink id="c362-010b-9aef-ced0" name="Twin Assault Cannon" hidden="false" targetId="8e30-c524-cbaf-6035" type="profile"/>
-            <infoLink id="9b48-2f04-7c64-ef66" name="Twin Autocannon" hidden="false" targetId="d20a-3960-fedd-e99e" type="profile"/>
-            <infoLink id="8413-303a-6594-f181" name="Underwing Rockets" hidden="false" targetId="eb0a-26de-a493-c3f8" type="profile"/>
             <infoLink id="be4b-8fbe-dd30-1f12" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
             <infoLink id="823c-9602-fcf9-f5c0" name="Rear Fire Arc" hidden="false" targetId="e953-40ea-7719-e17c" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="de3f-21de-160a-2780" name="Twin Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b24-1844-679f-b1ff" type="min"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d463-7759-0bc6-e0c3" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f537-cf4f-201e-b09e" name="Twin Autocannon" hidden="false" targetId="d20a-3960-fedd-e99e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8d6b-ac6c-0c5b-282b" name="Underwing Rockets" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8d3-1aa1-3be5-445f" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="65f7-1d0f-b755-a8a7" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f1ac-48b8-1283-b52e" name="Underwing Rockets" hidden="false" targetId="eb0a-26de-a493-c3f8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -1668,10 +1792,23 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="629a-9d62-9394-0ef3" name="Imperial Navy Marauder Bomber*" hidden="false" targetId="e127-c7b4-7931-c6d8" type="profile"/>
                 <infoLink id="d883-6730-21e4-99f4" name="Twin Lascannon" hidden="false" targetId="ddd3-9784-a106-6ff4" type="profile"/>
                 <infoLink id="d0b3-5364-b8f3-63dd" name="Bomb Racks" hidden="false" targetId="afe8-dcb5-3574-84f4" type="profile"/>
-                <infoLink id="e695-5968-29ba-8dcb" name="Twin Heavy Bolter" hidden="false" targetId="8bf5-0879-c771-fd78" type="profile"/>
                 <infoLink id="c5ea-e1a8-eb34-3969" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                 <infoLink id="03ed-612a-4034-efe5" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="cb51-8842-3d5a-4cc5" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc99-8257-d861-0875" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0c3-fef0-ace7-0543" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="dc36-fe97-95ea-b74a" name="Twin Heavy Bolter" hidden="false" targetId="8bf5-0879-c771-fd78" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1684,12 +1821,25 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <infoLink id="6dc1-fe5c-b8aa-c764" name="Imperial Navy Marauder Colossus*" hidden="false" targetId="7e59-523c-4709-7f75" type="profile"/>
                 <infoLink id="075c-e332-472b-3343" name="Colossus Bomb" hidden="false" targetId="15d8-8cb2-abdf-deae" type="profile"/>
                 <infoLink id="9c84-2e1d-b16d-69d2" name="Hellstrike Missiles" hidden="false" targetId="eae3-6da6-5a38-6248" type="profile"/>
-                <infoLink id="3127-8ac8-d4a3-84a8" name="Twin Heavy Bolter" hidden="false" targetId="8bf5-0879-c771-fd78" type="profile"/>
                 <infoLink id="618f-5841-7eb3-78c1" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
                 <infoLink id="5c0e-6fc2-15f9-bb5e" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
                 <infoLink id="89db-79dc-d944-02d5" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                 <infoLink id="7745-c7f4-1876-3ed7" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="c37f-3e66-6121-dacc" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a70-581c-c1cf-edc5" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19d5-8be9-5828-1f8a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a2af-f842-09c1-f85e" name="Twin Heavy Bolter" hidden="false" targetId="8bf5-0879-c771-fd78" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1700,12 +1850,36 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <infoLinks>
                 <infoLink id="1963-7d3d-ed0b-d77f" name="Imperial Navy Marauder Pathfinder*" hidden="false" targetId="d205-c1f3-f7dc-6cdc" type="profile"/>
-                <infoLink id="de3e-0350-4bc1-ffc6" name="Hellstrike Missiles" hidden="false" targetId="eae3-6da6-5a38-6248" type="profile"/>
-                <infoLink id="3df7-b81f-8148-c731" name="Twin Heavy Bolter" hidden="false" targetId="8bf5-0879-c771-fd78" type="profile"/>
                 <infoLink id="fadd-688a-d832-4d2d" name="Auger Array (Imperial Navy Marauder Pathfinder*)" hidden="false" targetId="62f2-b58c-7f78-e8e6" type="rule"/>
                 <infoLink id="5e26-83dd-077b-c15a" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
                 <infoLink id="8bcb-8a63-73b9-0b70" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="45f4-680e-e839-d370" name="Hellstrike Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="403a-b64e-8c07-5e19" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ad-36ef-64ae-391f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="e55d-4d5f-5e3f-3918" name="Hellstrike Missiles" hidden="false" targetId="eae3-6da6-5a38-6248" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="eddd-d4b5-6f90-6257" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d9f-be9f-ce8d-f617" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d637-56a9-91f7-61cf" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="66c8-97ce-2756-4b8f" name="Twin Heavy Bolter" hidden="false" targetId="8bf5-0879-c771-fd78" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -2229,9 +2403,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="9fb2-ee60-a48b-9862" name="Baneblade" hidden="false" targetId="2aba-f19a-d0e1-d601" type="profile"/>
-                    <infoLink id="50f6-9a2c-0de4-14f8" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
                     <infoLink id="bf23-d5c3-74f6-82da" name="Autocannon" hidden="false" targetId="018a-1960-9c59-ad7b" type="profile"/>
-                    <infoLink id="c140-b7fc-835e-568c" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
                     <infoLink id="e1c1-8717-27b9-f146" name="Baneblade Main Cannon" hidden="false" targetId="7e1b-a91e-69dc-2f8b" type="profile"/>
                     <infoLink id="308d-50a8-075e-6185" name="Demolisher Cannon" hidden="false" targetId="6f66-c64d-db09-b458" type="profile"/>
                     <infoLink id="9c73-57aa-277a-1e06" name="Critical Hit (Baneblade)" hidden="false" targetId="6440-4ee2-b83e-9825" type="rule"/>
@@ -2242,6 +2414,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="d3eb-840d-43db-8539" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="4108-9af1-d1fc-e7ec" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="3ca1-0806-5cde-f88d" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39de-83cb-e3f4-f9be" type="min"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3541-f8ab-cc5e-a3d1" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="c68f-3734-dcf7-c93f" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="165e-2057-3afb-e2f2" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18b2-2e3f-f2a1-544a" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db3b-3310-866c-0666" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="b84c-7129-cd50-c205" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2264,7 +2462,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="0b85-2ba3-56a7-c292" name="Shadowsword" hidden="false" targetId="f5e6-ad64-b4ee-0643" type="profile"/>
                     <infoLink id="3d6a-554e-e28b-45d7" name="Volcano Cannon" hidden="false" targetId="b504-173d-af1d-f20d" type="profile"/>
-                    <infoLink id="1615-fec1-e9d9-659e" name="Heavy Bolter" hidden="false" targetId="c412-4fdc-798d-bff3" type="profile"/>
                     <infoLink id="45d4-26b4-e168-b7eb" name="Critical Hit (Shadowsword)" hidden="false" targetId="2940-c983-1d20-50b7" type="rule"/>
                     <infoLink id="ddf3-13f9-3ee1-198d" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                     <infoLink id="01f7-1cc9-3f8a-bd55" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
@@ -2273,6 +2470,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="0c63-2a5a-d487-9137" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="3325-ae47-ef24-6f04" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="b667-9a13-2fc8-f3ef" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8be-1c21-2330-ee38" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60b9-a15e-e19b-fa77" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="387c-072f-f7a0-b4c7" name="Heavy Bolter" hidden="false" targetId="c412-4fdc-798d-bff3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2295,8 +2506,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="fdef-99de-1063-8819" name="Stormsword" hidden="false" targetId="3f91-5a3f-d3fc-d1cd" type="profile"/>
                     <infoLink id="a26d-b0e0-128b-0952" name="Stormsword Siege Cannon" hidden="false" targetId="14db-f58b-8585-3e0f" type="profile"/>
-                    <infoLink id="0b4a-f7fb-5fdd-ac9f" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
-                    <infoLink id="3e1b-636c-7596-ee68" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
                     <infoLink id="d840-da6f-c6b4-c19d" name="Critical Hit (Stormsword)" hidden="false" targetId="4679-f808-45ba-e553" type="rule"/>
                     <infoLink id="6982-0303-90d9-a20c" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                     <infoLink id="5a50-2b75-3a20-a91d" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
@@ -2305,6 +2514,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="9223-7dbe-c3de-9e90" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                     <infoLink id="28f1-6451-ed57-4d13" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="5ca2-97ad-5a4e-8277" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88ca-7ddb-91e4-4baf" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a3b-3247-503d-4837" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="0e4c-030e-3bbd-5eff" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="9500-1304-f7bb-f7a2" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc39-ee5c-5295-62cd" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="527f-ba29-702d-df19" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="39aa-d09e-0c50-17d4" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2327,8 +2562,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="ddfe-4736-7ee7-e258" name="Stormblade" hidden="false" targetId="799d-3704-9790-e091" type="profile"/>
                     <infoLink id="84c9-cc3b-e95e-61da" name="Plasma Blastgun" hidden="false" targetId="6c7e-08c0-a5cc-bb35" type="profile"/>
-                    <infoLink id="5556-eda1-3c68-40e8" name="TL Heavy Bolter" hidden="false" targetId="8f11-ed2b-1a5e-7a12" type="profile"/>
-                    <infoLink id="7d68-0f31-b641-d2e2" name="Lascannon" hidden="false" targetId="03c5-e410-ae5a-2b99" type="profile"/>
                     <infoLink id="365b-bccd-3e20-a8b5" name="Heavy Bolter" hidden="false" targetId="3435-6e50-8b95-84b2" type="profile"/>
                     <infoLink id="f13e-fbbd-157c-2d3f" name="Critical Hit (Stormblade)" hidden="false" targetId="5281-6d3a-0476-2595" type="rule"/>
                     <infoLink id="9a50-35c1-9ba0-b406" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -2338,6 +2571,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="2f5b-6045-2cbb-43ba" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="3642-05c3-a3d8-d873" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="e69e-6cbe-1847-727b" name="TL Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e147-aa3b-36fc-0992" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8c2-d405-59a1-e5a5" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="3c3e-6143-9b1e-d78b" name="TL Heavy Bolter" hidden="false" targetId="8f11-ed2b-1a5e-7a12" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="c5e4-4698-6b14-7c72" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ed-e9c9-d891-2361" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="591d-e004-ea07-f70a" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="3c2d-7171-d50d-510d" name="Lascannon" hidden="false" targetId="03c5-e410-ae5a-2b99" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2360,7 +2619,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="1508-963f-7275-858d" name="Stormhammer" hidden="false" targetId="5fdd-8517-235a-cb7f" type="profile"/>
                     <infoLink id="7b8e-a99e-9cd1-cfa9" name="Stormhammer Cannon" hidden="false" targetId="c94c-d09f-58df-1bd0" type="profile"/>
-                    <infoLink id="a3de-82ff-9b02-a218" name="Heavy Bolter (3 L, 3 R)" hidden="false" targetId="e7b9-caf8-8a90-b1d1" type="profile"/>
                     <infoLink id="5e36-9f21-290b-998d" name="Dual BattleCannon" hidden="false" targetId="e53b-afe2-25a8-c572" type="profile"/>
                     <infoLink id="4e11-0b6d-ddba-2c46" name="Lascannon" hidden="false" targetId="3357-4811-0a1a-69dc" type="profile"/>
                     <infoLink id="2a68-ca86-20d0-cc43" name="Critical Hit (Stormhammer)" hidden="false" targetId="e8cd-3ee7-c689-0648" type="rule"/>
@@ -2369,6 +2627,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="90f6-c55c-ce41-1a05" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                     <infoLink id="3746-feab-185a-21ce" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="7ee5-c986-5cae-e845" name="Heavy Bolter (3 L, 3 R)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4814-4b09-a6de-91aa" type="min"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba0-f7c0-73d9-cf51" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="992e-9e7a-136d-339b" name="Heavy Bolter (3 L, 3 R)" hidden="false" targetId="e7b9-caf8-8a90-b1d1" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2402,9 +2674,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="bb3f-aad4-400b-c907" name="Hellhammer*" hidden="false" targetId="e23a-cf6a-2ea5-b29f" type="profile"/>
-                    <infoLink id="1d7d-0462-eef6-d4b1" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
                     <infoLink id="ab59-1938-dc3d-70d8" name="Autocannon" hidden="false" targetId="018a-1960-9c59-ad7b" type="profile"/>
-                    <infoLink id="19ce-771b-ca2a-65bd" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
                     <infoLink id="a0ab-8d77-11ac-0a32" name="Hellhammer Cannon" hidden="false" targetId="8f33-1c8e-c7fc-2e65" type="profile"/>
                     <infoLink id="7c4c-cfea-c376-24ba" name="Demolisher Cannon" hidden="false" targetId="6f66-c64d-db09-b458" type="profile"/>
                     <infoLink id="65f4-acaa-c6e8-18ba" name="Critical Hit (Hellhammer*)" hidden="false" targetId="77f3-597a-fb11-6788" type="rule"/>
@@ -2415,6 +2685,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="8ad7-249b-6473-4cd2" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="5c3e-9619-051d-b412" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="e7e8-c15f-95fd-c07b" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38c9-114a-2803-1236" type="min"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e5-80f9-c58e-d108" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="c24d-fc70-1abe-8a53" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="5504-acd7-f7a1-c847" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6efc-d195-b511-48af" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd43-e902-1b3d-18b7" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="4c3b-efeb-ceeb-3756" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2520,9 +2816,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="3e12-ed93-f799-e9f3" name="Baneblade" hidden="false" targetId="2aba-f19a-d0e1-d601" type="profile"/>
-                    <infoLink id="8182-5708-d837-cbff" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
                     <infoLink id="877a-1455-d9c3-f696" name="Autocannon" hidden="false" targetId="018a-1960-9c59-ad7b" type="profile"/>
-                    <infoLink id="fc02-6662-d047-64a4" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
                     <infoLink id="71b6-7f5a-890b-aaf8" name="Baneblade Main Cannon" hidden="false" targetId="7e1b-a91e-69dc-2f8b" type="profile"/>
                     <infoLink id="f7c1-f2f9-f596-2ec6" name="Demolisher Cannon" hidden="false" targetId="6f66-c64d-db09-b458" type="profile"/>
                     <infoLink id="d1d4-db40-dc75-c0f3" name="Critical Hit (Baneblade)" hidden="false" targetId="6440-4ee2-b83e-9825" type="rule"/>
@@ -2533,6 +2827,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="28a9-fffe-1a2d-ce42" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="c120-e9b0-dc85-f53d" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="a9a7-f53e-50d6-c865" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="928b-0c1c-dae7-028c" type="min"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4026-ddd8-566c-a07a" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="83d4-9cb1-72db-095c" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="ec5b-6cad-a652-e270" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d44a-3a9d-dc85-3f9b" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="92ab-cce1-9372-0e72" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5385-7d71-976c-2f50" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2555,7 +2875,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="5d55-cc17-93a4-419e" name="Shadowsword" hidden="false" targetId="f5e6-ad64-b4ee-0643" type="profile"/>
                     <infoLink id="3bec-5ef9-85ef-5256" name="Volcano Cannon" hidden="false" targetId="b504-173d-af1d-f20d" type="profile"/>
-                    <infoLink id="635c-e89f-5160-2031" name="Heavy Bolter" hidden="false" targetId="c412-4fdc-798d-bff3" type="profile"/>
                     <infoLink id="9da1-4f31-a71b-d377" name="Critical Hit (Shadowsword)" hidden="false" targetId="2940-c983-1d20-50b7" type="rule"/>
                     <infoLink id="b49d-db3a-6415-6dd2" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                     <infoLink id="ab65-33c8-a55f-16c7" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
@@ -2564,6 +2883,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="fe12-fe6d-ebd0-8a6d" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                     <infoLink id="b4b4-1468-345d-7b7b" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="f146-d016-982c-0edb" name="Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8c8-b7db-60bf-68fe" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63af-f8f5-bba9-cf59" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="a471-4027-554c-a27d" name="Heavy Bolter" hidden="false" targetId="c412-4fdc-798d-bff3" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2586,8 +2919,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="6cc5-01e0-ff79-7544" name="Stormsword" hidden="false" targetId="3f91-5a3f-d3fc-d1cd" type="profile"/>
                     <infoLink id="a7cf-9ea3-032f-cc4a" name="Stormsword Siege Cannon" hidden="false" targetId="14db-f58b-8585-3e0f" type="profile"/>
-                    <infoLink id="a3d8-2228-3a3a-140b" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
-                    <infoLink id="2e1f-8c6b-6fa0-3d81" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
                     <infoLink id="8555-17f0-dd44-295a" name="Critical Hit (Stormsword)" hidden="false" targetId="4679-f808-45ba-e553" type="rule"/>
                     <infoLink id="1a02-d985-1731-9704" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
                     <infoLink id="05f3-9266-456e-35e1" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
@@ -2596,6 +2927,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="fad1-9c09-7824-90ab" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                     <infoLink id="4463-ce06-5fa2-0613" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="16c1-d81b-ed46-00a2" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cfe-38c3-0a13-ad93" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00a9-eebe-64cd-a9f3" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="d66d-76ef-c4ff-a875" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="dc6f-c015-539a-c431" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4682-765e-95e7-4e68" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ed3-4906-1545-7c24" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="20fc-32b6-8ece-36ab" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2618,8 +2975,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="0bb3-b4f1-b3cf-2df3" name="Stormblade" hidden="false" targetId="799d-3704-9790-e091" type="profile"/>
                     <infoLink id="a0db-6bf8-ed64-674a" name="Plasma Blastgun" hidden="false" targetId="6c7e-08c0-a5cc-bb35" type="profile"/>
-                    <infoLink id="e804-f35b-25c5-ae6f" name="TL Heavy Bolter" hidden="false" targetId="8f11-ed2b-1a5e-7a12" type="profile"/>
-                    <infoLink id="4df9-7e97-b273-9527" name="Lascannon" hidden="false" targetId="03c5-e410-ae5a-2b99" type="profile"/>
                     <infoLink id="1b0f-292a-e914-2aaf" name="Heavy Bolter" hidden="false" targetId="3435-6e50-8b95-84b2" type="profile"/>
                     <infoLink id="e863-fef0-f53b-c559" name="Critical Hit (Stormblade)" hidden="false" targetId="5281-6d3a-0476-2595" type="rule"/>
                     <infoLink id="f1b3-97b7-c649-5cb8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
@@ -2629,6 +2984,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="98c9-c15c-f800-2a49" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="c5f6-5f46-38d1-ed8b" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="a1ce-db99-7281-5d58" name="TL Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74dc-6a34-bb76-acb2" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d87-acf2-770f-5271" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="82ec-dd13-589f-7ea6" name="TL Heavy Bolter" hidden="false" targetId="8f11-ed2b-1a5e-7a12" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="a2d9-b8f4-b8b8-4ea0" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f4d5-1052-a344-186f" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd8f-d900-4fee-18ae" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="83bf-7b86-7991-e557" name="Lascannon" hidden="false" targetId="03c5-e410-ae5a-2b99" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2651,7 +3032,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   <infoLinks>
                     <infoLink id="f8cd-d72c-adf0-95d0" name="Stormhammer" hidden="false" targetId="5fdd-8517-235a-cb7f" type="profile"/>
                     <infoLink id="d63a-fc03-9aab-dd27" name="Stormhammer Cannon" hidden="false" targetId="c94c-d09f-58df-1bd0" type="profile"/>
-                    <infoLink id="2c58-4536-da9f-dc52" name="Heavy Bolter (3 L, 3 R)" hidden="false" targetId="e7b9-caf8-8a90-b1d1" type="profile"/>
                     <infoLink id="0741-70c7-479f-789c" name="Dual BattleCannon" hidden="false" targetId="e53b-afe2-25a8-c572" type="profile"/>
                     <infoLink id="4583-2ad7-52f9-fb2b" name="Lascannon" hidden="false" targetId="3357-4811-0a1a-69dc" type="profile"/>
                     <infoLink id="5b64-66f1-6dc5-499c" name="Critical Hit (Stormhammer)" hidden="false" targetId="e8cd-3ee7-c689-0648" type="rule"/>
@@ -2660,6 +3040,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="1e91-e4ce-7785-089b" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
                     <infoLink id="809d-28f6-2cee-c80d" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="1075-0754-d617-569d" name="Heavy Bolter (3 L, 3 R)" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e3c-5f1b-6b98-52f7" type="min"/>
+                        <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc0c-6e7b-de08-4f8f" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="e9f3-5bf0-e3d5-4feb" name="Heavy Bolter (3 L, 3 R)" hidden="false" targetId="e7b9-caf8-8a90-b1d1" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2693,9 +3087,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="37b5-38ab-1ea3-0383" name="Hellhammer*" hidden="false" targetId="e23a-cf6a-2ea5-b29f" type="profile"/>
-                    <infoLink id="e231-5ce9-0d7d-20ec" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
                     <infoLink id="32b9-dca8-7d0a-a1c1" name="Autocannon" hidden="false" targetId="018a-1960-9c59-ad7b" type="profile"/>
-                    <infoLink id="996b-37b7-e2cd-f3d5" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
                     <infoLink id="c0cc-1d40-7d88-9a6e" name="Hellhammer Cannon" hidden="false" targetId="8f33-1c8e-c7fc-2e65" type="profile"/>
                     <infoLink id="13ac-48e1-92ec-2d33" name="Demolisher Cannon" hidden="false" targetId="6f66-c64d-db09-b458" type="profile"/>
                     <infoLink id="9e4f-03f2-532f-6adf" name="Critical Hit (Hellhammer*)" hidden="false" targetId="77f3-597a-fb11-6788" type="rule"/>
@@ -2706,6 +3098,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="fb51-1a4d-4b75-9f09" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                     <infoLink id="a6ce-0582-d975-631a" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="1939-f144-1ce3-1b21" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80a3-a0c2-aa4b-6c53" type="min"/>
+                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d966-84e1-2fa9-65bf" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="dac8-1493-3275-5527" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="4b24-0e41-bd95-780e" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3d7-b7ca-1615-8827" type="min"/>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b0a-86d6-267d-7187" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="5da1-f149-b71e-edbe" name="Lascannon" hidden="false" targetId="2ce1-f87b-7f6d-e4ba" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3263,8 +3681,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                               <infoLinks>
                                 <infoLink id="9cac-0b4b-4e4e-8537" name="Stormlord" hidden="false" targetId="1c25-2839-2e9b-5c39" type="profile"/>
                                 <infoLink id="9a6b-2468-0f00-e5f5" name="Vulcan Mega-Bolter" hidden="false" targetId="5ca4-5044-8db5-5bfc" type="profile"/>
-                                <infoLink id="12da-cd3e-593f-2bf7" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
-                                <infoLink id="556e-34f7-308b-3153" name="Heavy Flamers" hidden="false" targetId="762c-1bcc-9e23-b405" type="profile"/>
                                 <infoLink id="5dd3-85a2-5bbf-fa46" name="Transport (Stormlord)" hidden="false" targetId="723b-30dd-7d67-71f9" type="rule"/>
                                 <infoLink id="0460-7455-9466-b1ad" name="Critical Hit (Stormlord)" hidden="false" targetId="82a5-28fc-ce4a-a34e" type="rule"/>
                                 <infoLink id="8121-ec31-3aec-7d3c" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
@@ -3276,6 +3692,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                                 <infoLink id="2f5e-5ed5-af6b-2ffc" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
                                 <infoLink id="d60d-87e5-cd49-53cc" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                               </infoLinks>
+                              <selectionEntries>
+                                <selectionEntry id="4c85-0a4b-8c13-454b" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b7f-da0b-07a9-c625" type="min"/>
+                                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f542-460c-023d-9767" type="max"/>
+                                  </constraints>
+                                  <infoLinks>
+                                    <infoLink id="52cc-9b64-54b0-54e6" name="TL Heavy Bolters" hidden="false" targetId="81cd-0f25-8c89-95ef" type="profile"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                                <selectionEntry id="9bfb-173c-0ea9-0934" name="Heavy Flamers" hidden="false" collective="false" import="true" type="upgrade">
+                                  <constraints>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ac5-c3ce-ca5e-731c" type="min"/>
+                                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f06-cf02-ef0d-6f7b" type="max"/>
+                                  </constraints>
+                                  <infoLinks>
+                                    <infoLink id="107a-742d-e29e-ad71" name="Heavy Flamers" hidden="false" targetId="762c-1bcc-9e23-b405" type="profile"/>
+                                  </infoLinks>
+                                  <costs>
+                                    <cost name="pts" typeId="points" value="0.0"/>
+                                  </costs>
+                                </selectionEntry>
+                              </selectionEntries>
                               <costs>
                                 <cost name="pts" typeId="points" value="200.0"/>
                               </costs>
@@ -3489,10 +3931,23 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               <infoLinks>
                 <infoLink id="f6e6-0cec-1ab4-5b95" name="Malcador Infernus Special Weapons Tank" hidden="false" targetId="7dfc-a431-14cb-241d" type="profile"/>
                 <infoLink id="c8a9-05c1-7cc5-1151" name="Infernus Cannon" hidden="false" targetId="d11a-4b21-5c67-3532" type="profile"/>
-                <infoLink id="18b7-dad9-3394-b6cf" name="Autocannons" hidden="false" targetId="637e-73ad-4cfb-9bb8" type="profile"/>
                 <infoLink id="161d-33bf-3a57-2069" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="59e6-77fd-fa20-78e1" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
               </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="4ce8-02da-1508-cb38" name="Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f230-3918-e882-0a6c" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="596a-f8a5-6ea7-409f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c6ba-fc21-c510-e9e0" name="Autocannons" hidden="false" targetId="637e-73ad-4cfb-9bb8" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>

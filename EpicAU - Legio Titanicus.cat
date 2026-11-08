@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="24" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="25" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5a43-d432-849f-519a" name="Legio Titanicus" hidden="false">
       <rules>
@@ -311,7 +311,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="f34b-a4c5-3754-3236" name="Plasma Annihilator" hidden="false" targetId="77a7-af11-1b09-c0ff" type="profile"/>
                     <infoLink id="6e47-3883-63bc-5797" name="Hellstorm Cannon" hidden="false" targetId="e718-630e-dcbe-d7de" type="profile"/>
                     <infoLink id="6bde-2dc5-b7b6-a3cd" name="Defense Laser" hidden="false" targetId="b512-0726-1374-94a5" type="profile"/>
-                    <infoLink id="378e-697f-5219-d004" name="Battle Cannons" hidden="false" targetId="a5a0-d170-0309-17f5" type="profile"/>
                     <infoLink id="be80-060e-dbc7-c2f1" name="Quake Cannon" hidden="false" targetId="480a-2301-72e4-68d7" type="profile"/>
                     <infoLink id="c95e-1913-9867-ca6a" name="Tertiary armament" hidden="false" targetId="34c4-0fe6-bde0-67e0" type="profile"/>
                     <infoLink id="a21e-f3ed-4ec5-a9e7" name="Leg Bastions" hidden="false" targetId="8413-08ea-bc96-388e" type="profile"/>
@@ -335,6 +334,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="0212-3b0c-7f04-3113" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                     <infoLink id="a0a2-cb4b-baff-6413" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="4063-5610-8c9b-9350" name="Battle Cannons" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9956-470c-17c0-d219" type="min"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a58-6425-d13e-62b3" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="1758-fa90-2e13-2ac6" name="Battle Cannons" hidden="false" targetId="a5a0-d170-0309-17f5" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -356,9 +369,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="5a93-4c16-9c8f-eb7a" name="Warmonger Support Titan (experimental)" hidden="false" targetId="67f8-2a9d-f36b-7da8" type="profile"/>
-                    <infoLink id="5ca9-d5a1-0411-fe24" name="Support Missiles" hidden="false" targetId="67c6-aef4-f7ec-f460" type="profile"/>
                     <infoLink id="ca76-d968-c628-115e" name="Vengeance Cannon" hidden="false" targetId="ca1f-bf32-749b-1b07" type="profile"/>
-                    <infoLink id="a966-775d-3a67-0c46" name="Hydra Autocannon" hidden="false" targetId="0a66-393f-a79c-dcce" type="profile"/>
                     <infoLink id="8c26-e296-af36-1a25" name="Fire Control Centre" hidden="false" targetId="5804-1413-ecaa-9c43" type="profile"/>
                     <infoLink id="9413-751b-4542-d407" name="Head Gun" hidden="false" targetId="388b-4d2b-11e8-94e8" type="profile"/>
                     <infoLink id="5a61-91e9-d96c-601e" name="Tertiary armament" hidden="false" targetId="34c4-0fe6-bde0-67e0" type="profile"/>
@@ -381,6 +392,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="13c5-6789-a352-56b7" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                     <infoLink id="1f32-2714-d4e6-26ef" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                   </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry id="22f4-c13f-a7ff-c0b9" name="Support Missiles" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0919-622b-45f7-d50d" type="min"/>
+                        <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9073-19a3-5992-7b36" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="b8ed-e3f8-0b16-5cd9" name="Support Missiles" hidden="false" targetId="67c6-aef4-f7ec-f460" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="4b6d-224a-c22d-6df7" name="Hydra Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b46c-fa2e-6f4f-a2d2" type="min"/>
+                        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c10-8990-e445-c28f" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="408a-4f1a-efbe-08de" name="Hydra Autocannon" hidden="false" targetId="0a66-393f-a79c-dcce" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -4359,8 +4396,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="7100-f236-b18e-a376" name="Revelator Missile" hidden="false" targetId="5121-7b0f-3274-3a14" type="profile"/>
-            <infoLink id="bfee-13a8-5ab3-ff53" name="Suzerain Plasma Destructor" hidden="false" targetId="d13c-35bb-beb6-acd6" type="profile"/>
             <infoLink id="301e-0522-d1a6-910e" name="Carapace AA Guns" hidden="false" targetId="5409-0db0-b6df-93d9" type="profile"/>
             <infoLink id="e813-b783-c273-fd6c" name="Titan Movement" hidden="false" targetId="9b1f-953c-13dc-ff19" type="rule"/>
             <infoLink id="afae-b4a0-3db3-6cb3" name="Critical Hit (Warmaster Heavy Battle Titan*)" hidden="false" targetId="8539-e5e4-7f2a-4e4b" type="rule"/>
@@ -4378,6 +4413,32 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             <infoLink id="bac5-a36f-1711-ef26" name="Fwd" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
             <infoLink id="94d5-b07a-06a4-bab6" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
           </infoLinks>
+          <selectionEntries>
+            <selectionEntry id="ec80-f868-bf6f-a4ef" name="Revelator Missile" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35c7-c156-32b2-5d51" type="min"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a77-3650-46f1-0616" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9b1e-2b2b-d217-0289" name="Revelator Missile" hidden="false" targetId="5121-7b0f-3274-3a14" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e11a-bea1-3343-c521" name="Suzerain Plasma Destructor" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="180d-0536-48fc-f412" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="511b-ff47-7a2e-0db0" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9446-1b69-bd29-d24f" name="Suzerain Plasma Destructor" hidden="false" targetId="d13c-35bb-beb6-acd6" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="0dcc-061b-6eab-dc26" name="Carapace weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="3abf-a00b-6f5c-8f22">
               <constraints>

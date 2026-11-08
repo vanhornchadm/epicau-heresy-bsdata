@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="19" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="20" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="8149-95da-d7f3-bbe3" name="Imperial Militia" hidden="false">
       <rules>
@@ -1239,10 +1239,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <selectionEntries>
             <selectionEntry id="4979-3315-6420-b922" name="Vanquisher" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="e3ff-7588-92af-bca3" value="0">
-                  <conditions>
-                    <condition field="selections" scope="4057-ca8e-6dac-4bec" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="4057-ca8e-6dac-4bec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4eed-b756-cc1e-907c" type="equalTo"/>
+                        <condition field="selections" scope="4057-ca8e-6dac-4bec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74a0-25d0-21b0-a750" type="equalTo"/>
+                        <condition field="selections" scope="4057-ca8e-6dac-4bec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a6fb-9ede-049c-be93" type="equalTo"/>
+                        <condition field="selections" scope="4057-ca8e-6dac-4bec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4979-3315-6420-b922" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>

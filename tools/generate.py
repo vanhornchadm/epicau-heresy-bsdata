@@ -759,6 +759,7 @@ class Builder:
                     for to, each in self.variants_for(u['unit']):
                         if (to, u['each'] + each) in seen:  # one entry per upgraded unit, whichever unit it replaces
                             self.variants['made'].append((u['unit'], to, each, self.context))
+                            self.variants['sources'].add(gid('se', self.cat_id, f'{pp}/{j}'))
                             continue
                         seen.add((to, u['each'] + each))
                         kids.append(self.variant_entry(f'{pp}/{j}', u, to, each))
@@ -790,6 +791,7 @@ class Builder:
                           [X('conditions', children=[condition('greaterThan', CAT['Upgraded Unit'], v['hi'], fid,
                                                                child=True)])]))
         v['made'].append((base['unit'], to, each, self.context))
+        v['sources'].add(gid('se', self.cat_id, path))
         return self.unit_entry(path + '/variant/' + to, {'unit': to, 'min': 0, 'max': None,
                                                          'each': (base['each'] or 0) + each, 'label': None},
                                mods=mods, extra_cons=[constraint(cmax, 'max', 0)], extra_cats=['Upgraded Unit'],
@@ -811,20 +813,29 @@ class Builder:
         return [self.unit_entry(path, part, mods=mods)] + variants
 
     def variant_marker(self, uid, name, u):
-        """The swap upgrade itself: counts towards the upgrade cap and requires lo..hi upgraded units."""
+        """The swap upgrade itself: counts towards the upgrade cap, and is shown only while the formation holds a
+        unit it can upgrade, so taking it always reveals upgraded units. Its 'lo' minimum isn't enforced: the
+        upgraded units stay hidden until it is taken, so requiring them first would make it impossible to take."""
         v = self.variants
         cmax = gid('con', uid, 'max')
-        mods = []
-        if v['lo']:
-            mods.append(X('modifier', {'type': 'set', 'field': cmax, 'value': '0'},
-                          [X('conditions', children=[condition('lessThan', CAT['Upgraded Unit'], v['lo'],
-                                                               self.formation_id, child=True)])]))
         v['desc'] = X('description', text='')
+        v['mods'] = X('modifiers')  # filled by swap_hidden once the formation's units are built
         return ordered('selectionEntry', {'id': uid, 'name': name, 'hidden': 'false', 'collective': 'false',
                                           'import': 'true', 'type': 'upgrade'},
-                       modifiers=mods, constraints=[constraint(cmax, 'max', 1)],
+                       modifiers=v['mods'], constraints=[constraint(cmax, 'max', 1)],
                        rules=[X('rule', {'id': gid('r', uid), 'name': name, 'hidden': 'false'}, [v['desc']])],
                        infoLinks=[info_rule(uid, r) for r in u['rules']], costs=cost(u['cost']))
+
+    def swap_hidden(self):
+        """Hide the swap upgrade while the formation holds none of the units it upgrades (such as before a Tank or
+        Heavy Transport upgrade adds them), unless it is already taken."""
+        v, fid = self.variants, self.formation_id
+        if v['mods'] is None:
+            return
+        none = [condition('equalTo', s, 0, fid, child=True) for s in sorted(v['sources'])]
+        none.append(condition('equalTo', v['uid'], 0, fid, child=True))
+        v['mods'].add(X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'true'},
+                        [joined('and', X('conditions', children=none))]))
 
     def variant_text(self):
         v = self.variants
@@ -1014,6 +1025,7 @@ class Builder:
             if not self.variants['made']:
                 raise ValueError(f'{self.army["name"]}: {f["name"]} has nothing {self.variants["name"]} can upgrade')
             self.variants['desc'].text = self.variant_text()
+            self.swap_hidden()
         self.variants, self.offered = None, set()
         el = ordered('selectionEntry', {'id': fid, 'name': star(f['name'], f.get('new')), 'hidden': 'false',
                                         'collective': 'false',
@@ -1169,7 +1181,7 @@ class Builder:
                     if ' OR ' in chunk or found:
                         raise ValueError(f'{self.army["name"]}: unsupported swap upgrade layout in {f["name"]}')
                     found.append({'name': n, 'uid': gid('upgrade', fid, n), 'swaps': sp['swaps'], 'lo': sp['min'],
-                                  'hi': sp['max'], 'made': [], 'desc': None,
+                                  'hi': sp['max'], 'made': [], 'desc': None, 'sources': set(), 'mods': None,
                                   'base_desc': self.army['upgrades'][n]['desc']})
         return found[0] if found else None
 

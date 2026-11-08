@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="18" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="19" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
       <rules>
@@ -601,10 +601,16 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <selectionEntries>
             <selectionEntry id="bee4-c898-6d1f-457c" name="Executioner" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="0e1f-bb82-3937-bcdb" value="0">
-                  <conditions>
-                    <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="89c1-8cba-4cc2-616e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="649f-0941-8d0c-764d" type="equalTo"/>
+                        <condition field="selections" scope="89c1-8cba-4cc2-616e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfb0-563a-9fb3-cc69" type="equalTo"/>
+                        <condition field="selections" scope="89c1-8cba-4cc2-616e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bee4-c898-6d1f-457c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -2103,10 +2109,16 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <selectionEntries>
             <selectionEntry id="b258-da7f-3ce7-7b1b" name="Vanquisher" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="e9af-b130-9f47-dbc2" value="0">
-                  <conditions>
-                    <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="b161-8983-ea36-2eb2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bce7-d92b-fe7a-d9ba" type="equalTo"/>
+                        <condition field="selections" scope="b161-8983-ea36-2eb2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da44-b55c-0a89-97ea" type="equalTo"/>
+                        <condition field="selections" scope="b161-8983-ea36-2eb2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b258-da7f-3ce7-7b1b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>

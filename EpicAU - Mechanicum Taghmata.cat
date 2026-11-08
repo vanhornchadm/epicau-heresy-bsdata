@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="20" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="21" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -2445,10 +2445,15 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           <selectionEntries>
             <selectionEntry id="5b1d-635e-64a6-5be5" name="Hyperios" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="171f-d718-577b-0af5" value="0">
-                  <conditions>
-                    <condition field="selections" scope="f3f7-cd03-02ef-218c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="f3f7-cd03-02ef-218c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f1c-d9d7-71c6-2040" type="equalTo"/>
+                        <condition field="selections" scope="f3f7-cd03-02ef-218c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b1d-635e-64a6-5be5" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5cf7-d880-4af1-62f1" name="EpicAU - Daemons Of The Ruinstorm" revision="12" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5cf7-d880-4af1-62f1" name="EpicAU - Daemons Of The Ruinstorm" revision="13" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="77f9-aab5-0ff4-5947" name="Daemons Of The Ruinstorm" hidden="false">
       <rules>
@@ -1360,10 +1360,15 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <selectionEntries>
             <selectionEntry id="5d49-4305-e190-ad5e" name="Daemon Prince (Khorne)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="7c5f-fb40-4b06-34da" value="0">
-                  <conditions>
-                    <condition field="selections" scope="b324-9a6e-fe0a-710b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="b324-9a6e-fe0a-710b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db19-9758-638d-b1da" type="equalTo"/>
+                        <condition field="selections" scope="b324-9a6e-fe0a-710b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d49-4305-e190-ad5e" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -1684,10 +1689,15 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <selectionEntries>
             <selectionEntry id="2c9a-1b54-ffe3-821f" name="Daemon Prince (Nurgle)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="f4b4-b3ec-28dc-3e44" value="0">
-                  <conditions>
-                    <condition field="selections" scope="599c-e23e-6b17-5438" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="599c-e23e-6b17-5438" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3144-ae09-3313-acd1" type="equalTo"/>
+                        <condition field="selections" scope="599c-e23e-6b17-5438" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c9a-1b54-ffe3-821f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -2011,10 +2021,15 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <selectionEntries>
             <selectionEntry id="2d23-3921-5647-5aee" name="Daemon Prince (Slaanesh)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="8308-df04-ffb8-bd90" value="0">
-                  <conditions>
-                    <condition field="selections" scope="f71c-7ff4-8715-e546" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="f71c-7ff4-8715-e546" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="87ec-a1f7-2f9a-5bf2" type="equalTo"/>
+                        <condition field="selections" scope="f71c-7ff4-8715-e546" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2d23-3921-5647-5aee" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -2327,10 +2342,15 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           <selectionEntries>
             <selectionEntry id="457b-dc03-31d5-5bbf" name="Daemon Prince (Tzeentch)" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="6316-b206-83db-18d2" value="0">
-                  <conditions>
-                    <condition field="selections" scope="9705-c3d5-947a-98f3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="9705-c3d5-947a-98f3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="83a3-b1f7-dfa3-4fb6" type="equalTo"/>
+                        <condition field="selections" scope="9705-c3d5-947a-98f3" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="457b-dc03-31d5-5bbf" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>

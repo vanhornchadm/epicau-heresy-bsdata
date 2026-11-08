@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="34" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="35" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -1718,10 +1718,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="d3bb-59dc-c4fa-cb00" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="ce95-6aef-1126-346b" value="0">
-                  <conditions>
-                    <condition field="selections" scope="4720-2f1b-b060-5759" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="4720-2f1b-b060-5759" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37e3-d557-7b52-1261" type="equalTo"/>
+                        <condition field="selections" scope="4720-2f1b-b060-5759" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cd3a-76aa-696c-ec52" type="equalTo"/>
+                        <condition field="selections" scope="4720-2f1b-b060-5759" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0e7-5172-76cd-501b" type="equalTo"/>
+                        <condition field="selections" scope="4720-2f1b-b060-5759" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e441-4b55-3b89-7203" type="equalTo"/>
+                        <condition field="selections" scope="4720-2f1b-b060-5759" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d3bb-59dc-c4fa-cb00" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -4086,10 +4094,15 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="647a-c448-43da-2001" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="8593-63a5-aa0a-32ab" value="0">
-                  <conditions>
-                    <condition field="selections" scope="571a-d5a4-a94b-ba62" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="571a-d5a4-a94b-ba62" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c57-ef9c-0340-af5d" type="equalTo"/>
+                        <condition field="selections" scope="571a-d5a4-a94b-ba62" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="647a-c448-43da-2001" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -5807,10 +5820,16 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="db9f-a46f-5087-ba74" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="34b5-b652-d3c7-d407" value="0">
-                  <conditions>
-                    <condition field="selections" scope="1608-0157-091f-13cf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="1608-0157-091f-13cf" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10d1-5054-ffae-3b1b" type="equalTo"/>
+                        <condition field="selections" scope="1608-0157-091f-13cf" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b6f-7c0c-2bea-50e3" type="equalTo"/>
+                        <condition field="selections" scope="1608-0157-091f-13cf" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="db9f-a46f-5087-ba74" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -6949,10 +6968,15 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="5ff6-ef42-0555-9d4c" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="2ea4-1cbf-6dfc-38c9" value="0">
-                  <conditions>
-                    <condition field="selections" scope="f562-a360-13e4-790b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="f562-a360-13e4-790b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea1a-6ac5-7c25-27d6" type="equalTo"/>
+                        <condition field="selections" scope="f562-a360-13e4-790b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5ff6-ef42-0555-9d4c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -9631,10 +9655,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="2ab0-ef22-c1a1-6a6f" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="d4ee-4a31-a235-80a4" value="0">
-                  <conditions>
-                    <condition field="selections" scope="dd54-c105-9864-9869" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="dd54-c105-9864-9869" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="09a0-c526-5d39-b7d5" type="equalTo"/>
+                        <condition field="selections" scope="dd54-c105-9864-9869" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="178a-4430-1f0a-0bb6" type="equalTo"/>
+                        <condition field="selections" scope="dd54-c105-9864-9869" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a9b8-a19c-9290-45fa" type="equalTo"/>
+                        <condition field="selections" scope="dd54-c105-9864-9869" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c09f-d4b4-db64-93f8" type="equalTo"/>
+                        <condition field="selections" scope="dd54-c105-9864-9869" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ab0-ef22-c1a1-6a6f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -11197,10 +11229,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="fdb7-8d79-a5d9-0140" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="54d6-1168-db76-5a27" value="0">
-                  <conditions>
-                    <condition field="selections" scope="f893-1109-8d27-58a1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="f893-1109-8d27-58a1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="632d-b835-80e3-d04f" type="equalTo"/>
+                        <condition field="selections" scope="f893-1109-8d27-58a1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6347-1723-992e-8331" type="equalTo"/>
+                        <condition field="selections" scope="f893-1109-8d27-58a1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="74ba-160a-a542-2d27" type="equalTo"/>
+                        <condition field="selections" scope="f893-1109-8d27-58a1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9dec-47ab-6a96-05dd" type="equalTo"/>
+                        <condition field="selections" scope="f893-1109-8d27-58a1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fdb7-8d79-a5d9-0140" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -12815,10 +12855,15 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="05fe-f120-84e1-4440" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="06e1-a242-6d3e-e633" value="0">
-                  <conditions>
-                    <condition field="selections" scope="21b9-52cf-57c0-9351" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="21b9-52cf-57c0-9351" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b38e-8992-232d-4d75" type="equalTo"/>
+                        <condition field="selections" scope="21b9-52cf-57c0-9351" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="05fe-f120-84e1-4440" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -13289,10 +13334,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="0c61-d213-97f7-573c" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="71d7-ab8e-e7aa-0677" value="0">
-                  <conditions>
-                    <condition field="selections" scope="d9ec-52fa-b15b-4f7c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="d9ec-52fa-b15b-4f7c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3bac-a06d-e539-ba48" type="equalTo"/>
+                        <condition field="selections" scope="d9ec-52fa-b15b-4f7c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58c7-de1c-ef72-7f52" type="equalTo"/>
+                        <condition field="selections" scope="d9ec-52fa-b15b-4f7c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7de-2515-2c69-e3cb" type="equalTo"/>
+                        <condition field="selections" scope="d9ec-52fa-b15b-4f7c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="caa8-19a8-6daf-2f1e" type="equalTo"/>
+                        <condition field="selections" scope="d9ec-52fa-b15b-4f7c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c61-d213-97f7-573c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -14789,10 +14842,15 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="d0e3-525f-edaf-fd56" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="554a-1a68-c320-d39e" value="0">
-                  <conditions>
-                    <condition field="selections" scope="8182-b4f4-9d48-847d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="8182-b4f4-9d48-847d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8b3f-007e-eeed-fc0a" type="equalTo"/>
+                        <condition field="selections" scope="8182-b4f4-9d48-847d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0e3-525f-edaf-fd56" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -18200,10 +18258,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="baa6-9820-233c-7603" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="6f5b-51e9-98ce-0016" value="0">
-                  <conditions>
-                    <condition field="selections" scope="1577-08d9-8d89-137f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="1577-08d9-8d89-137f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5471-cf40-0f54-9953" type="equalTo"/>
+                        <condition field="selections" scope="1577-08d9-8d89-137f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7574-3ada-474d-2673" type="equalTo"/>
+                        <condition field="selections" scope="1577-08d9-8d89-137f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8948-3df6-74b9-8928" type="equalTo"/>
+                        <condition field="selections" scope="1577-08d9-8d89-137f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a4e-73b8-09c4-fb54" type="equalTo"/>
+                        <condition field="selections" scope="1577-08d9-8d89-137f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="baa6-9820-233c-7603" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -20033,10 +20099,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="7016-cb9d-8dc7-5fe3" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="04fb-4d3c-29ba-b583" value="0">
-                  <conditions>
-                    <condition field="selections" scope="2351-682e-e559-50d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="2351-682e-e559-50d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a35-4add-d4ba-8cbf" type="equalTo"/>
+                        <condition field="selections" scope="2351-682e-e559-50d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a49a-a5de-5701-8691" type="equalTo"/>
+                        <condition field="selections" scope="2351-682e-e559-50d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa3d-541e-748e-34a4" type="equalTo"/>
+                        <condition field="selections" scope="2351-682e-e559-50d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d29b-6d22-8d09-cd13" type="equalTo"/>
+                        <condition field="selections" scope="2351-682e-e559-50d1" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7016-cb9d-8dc7-5fe3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -22052,10 +22126,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="470d-6482-1236-a38e" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="aaf6-4f3b-5983-3fff" value="0">
-                  <conditions>
-                    <condition field="selections" scope="b27f-15e2-700e-acb0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="b27f-15e2-700e-acb0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2342-4e8d-6b58-848b" type="equalTo"/>
+                        <condition field="selections" scope="b27f-15e2-700e-acb0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6eb1-9031-089a-8005" type="equalTo"/>
+                        <condition field="selections" scope="b27f-15e2-700e-acb0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c15e-e39e-8410-2c4e" type="equalTo"/>
+                        <condition field="selections" scope="b27f-15e2-700e-acb0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea9d-458e-d011-bae6" type="equalTo"/>
+                        <condition field="selections" scope="b27f-15e2-700e-acb0" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="470d-6482-1236-a38e" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -23650,10 +23732,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="8547-b2b7-8fa6-7323" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="14dc-ad60-3718-316a" value="0">
-                  <conditions>
-                    <condition field="selections" scope="cd2a-a3e0-e3fd-fd73" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="cd2a-a3e0-e3fd-fd73" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="524b-5de0-4662-8e65" type="equalTo"/>
+                        <condition field="selections" scope="cd2a-a3e0-e3fd-fd73" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6627-5114-fabc-b4b1" type="equalTo"/>
+                        <condition field="selections" scope="cd2a-a3e0-e3fd-fd73" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9fc5-facb-99f0-29f3" type="equalTo"/>
+                        <condition field="selections" scope="cd2a-a3e0-e3fd-fd73" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcdc-216e-5eda-df35" type="equalTo"/>
+                        <condition field="selections" scope="cd2a-a3e0-e3fd-fd73" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8547-b2b7-8fa6-7323" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -25084,10 +25174,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="c7da-71a9-1afa-abf5" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="8338-4a2b-dfa0-d360" value="0">
-                  <conditions>
-                    <condition field="selections" scope="7135-3191-9754-bdb5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="7135-3191-9754-bdb5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c61-ee35-b1b2-a6df" type="equalTo"/>
+                        <condition field="selections" scope="7135-3191-9754-bdb5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1385-c7ca-6b46-8ff5" type="equalTo"/>
+                        <condition field="selections" scope="7135-3191-9754-bdb5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8d87-833c-4707-ae69" type="equalTo"/>
+                        <condition field="selections" scope="7135-3191-9754-bdb5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6f8-f3d1-d32a-e90b" type="equalTo"/>
+                        <condition field="selections" scope="7135-3191-9754-bdb5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c7da-71a9-1afa-abf5" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -28003,10 +28101,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="9087-dd7a-23c6-f13f" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="4197-1a70-5f13-3fa6" value="0">
-                  <conditions>
-                    <condition field="selections" scope="ebe2-227b-e2b2-0c6d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="ebe2-227b-e2b2-0c6d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37df-0b42-4f7d-288e" type="equalTo"/>
+                        <condition field="selections" scope="ebe2-227b-e2b2-0c6d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f16-fef2-13bf-30a4" type="equalTo"/>
+                        <condition field="selections" scope="ebe2-227b-e2b2-0c6d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9a0e-3f5b-7615-3010" type="equalTo"/>
+                        <condition field="selections" scope="ebe2-227b-e2b2-0c6d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e967-2448-692b-184a" type="equalTo"/>
+                        <condition field="selections" scope="ebe2-227b-e2b2-0c6d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9087-dd7a-23c6-f13f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -29252,10 +29358,15 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="115e-4890-0334-d9a0" name="Scythes of the Khan" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="08ef-eab1-cc7e-eb3d" value="0">
-                  <conditions>
-                    <condition field="selections" scope="967d-7b49-00c3-d9db" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="967d-7b49-00c3-d9db" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d9e-37d3-6f40-a489" type="equalTo"/>
+                        <condition field="selections" scope="967d-7b49-00c3-d9db" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="115e-4890-0334-d9a0" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -31681,10 +31792,16 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="bad1-ce62-e0d7-7fc3" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="bac2-d3a9-eeca-941c" value="0">
-                  <conditions>
-                    <condition field="selections" scope="24b5-f00b-2430-6d64" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="24b5-f00b-2430-6d64" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7581-7b02-8bfa-d0a5" type="equalTo"/>
+                        <condition field="selections" scope="24b5-f00b-2430-6d64" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="adb6-c2de-88df-b5c4" type="equalTo"/>
+                        <condition field="selections" scope="24b5-f00b-2430-6d64" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bad1-ce62-e0d7-7fc3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -31997,10 +32114,16 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="0d3c-4b84-3ec0-557e" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="7114-556d-a35c-61d4" value="0">
-                  <conditions>
-                    <condition field="selections" scope="185b-5727-ca7f-7dd7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="185b-5727-ca7f-7dd7" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="29b4-2b8a-d83e-8964" type="equalTo"/>
+                        <condition field="selections" scope="185b-5727-ca7f-7dd7" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b78f-4c58-c4d5-3c80" type="equalTo"/>
+                        <condition field="selections" scope="185b-5727-ca7f-7dd7" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d3c-4b84-3ec0-557e" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -32735,10 +32858,16 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="7d88-099a-f494-2736" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="66e5-d90b-bcf7-5091" value="0">
-                  <conditions>
-                    <condition field="selections" scope="f495-1f7c-a607-2df2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="f495-1f7c-a607-2df2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="67e9-9cb6-d7d1-415e" type="equalTo"/>
+                        <condition field="selections" scope="f495-1f7c-a607-2df2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93cc-2270-192e-3255" type="equalTo"/>
+                        <condition field="selections" scope="f495-1f7c-a607-2df2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d88-099a-f494-2736" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -34276,10 +34405,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="3363-72d3-46b7-cddc" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="16b0-ea20-2415-6767" value="0">
-                  <conditions>
-                    <condition field="selections" scope="bca8-f5d0-fa6c-c1a8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="bca8-f5d0-fa6c-c1a8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ce5-7c12-0755-e768" type="equalTo"/>
+                        <condition field="selections" scope="bca8-f5d0-fa6c-c1a8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b89d-5775-9229-c6b1" type="equalTo"/>
+                        <condition field="selections" scope="bca8-f5d0-fa6c-c1a8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccd3-1fdd-3913-eb2e" type="equalTo"/>
+                        <condition field="selections" scope="bca8-f5d0-fa6c-c1a8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f55f-f5a0-5a44-b63e" type="equalTo"/>
+                        <condition field="selections" scope="bca8-f5d0-fa6c-c1a8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3363-72d3-46b7-cddc" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -38397,10 +38534,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="a73f-0798-d5eb-2fb0" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="ac35-2b36-5753-be62" value="0">
-                  <conditions>
-                    <condition field="selections" scope="81ac-0c61-bf8a-2dce" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="81ac-0c61-bf8a-2dce" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1da7-f4a0-ef98-6d08" type="equalTo"/>
+                        <condition field="selections" scope="81ac-0c61-bf8a-2dce" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dde-94d8-e808-dba2" type="equalTo"/>
+                        <condition field="selections" scope="81ac-0c61-bf8a-2dce" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa29-972b-4c1e-0757" type="equalTo"/>
+                        <condition field="selections" scope="81ac-0c61-bf8a-2dce" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee0b-9717-e940-ad6b" type="equalTo"/>
+                        <condition field="selections" scope="81ac-0c61-bf8a-2dce" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a73f-0798-d5eb-2fb0" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -41530,10 +41675,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="f9e4-7b60-14cd-1e39" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="c209-e04a-6a73-6e62" value="0">
-                  <conditions>
-                    <condition field="selections" scope="f467-2885-4220-131c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="f467-2885-4220-131c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34a6-1e5f-8535-9de8" type="equalTo"/>
+                        <condition field="selections" scope="f467-2885-4220-131c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="833e-80cd-8aa6-0b2c" type="equalTo"/>
+                        <condition field="selections" scope="f467-2885-4220-131c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a698-e9e6-ebd0-a711" type="equalTo"/>
+                        <condition field="selections" scope="f467-2885-4220-131c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e4d8-43b5-1485-79fc" type="equalTo"/>
+                        <condition field="selections" scope="f467-2885-4220-131c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f9e4-7b60-14cd-1e39" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -43067,10 +43220,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="de07-f53b-190c-f33c" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="040f-34d7-0940-b100" value="0">
-                  <conditions>
-                    <condition field="selections" scope="e0d9-a742-05ec-cbb6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="e0d9-a742-05ec-cbb6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3548-9cb4-3328-fe3c" type="equalTo"/>
+                        <condition field="selections" scope="e0d9-a742-05ec-cbb6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4889-0f99-26c0-85f8" type="equalTo"/>
+                        <condition field="selections" scope="e0d9-a742-05ec-cbb6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4b2-d460-4b06-9231" type="equalTo"/>
+                        <condition field="selections" scope="e0d9-a742-05ec-cbb6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f009-8fb5-f3c7-9e99" type="equalTo"/>
+                        <condition field="selections" scope="e0d9-a742-05ec-cbb6" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="de07-f53b-190c-f33c" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -43863,10 +44024,16 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="a608-f6c1-136d-14ae" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="5154-6214-2681-d03d" value="0">
-                  <conditions>
-                    <condition field="selections" scope="62d7-6bcb-8818-2818" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="62d7-6bcb-8818-2818" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="55db-5cdd-6030-7803" type="equalTo"/>
+                        <condition field="selections" scope="62d7-6bcb-8818-2818" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fd9c-1e8c-45cb-966f" type="equalTo"/>
+                        <condition field="selections" scope="62d7-6bcb-8818-2818" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a608-f6c1-136d-14ae" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -46153,10 +46320,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="227b-60e7-5cc3-3247" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="f051-bacc-dc0e-35a0" value="0">
-                  <conditions>
-                    <condition field="selections" scope="0c7e-9eff-02ad-a8c4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="0c7e-9eff-02ad-a8c4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="11b1-4aab-4115-3030" type="equalTo"/>
+                        <condition field="selections" scope="0c7e-9eff-02ad-a8c4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4eba-880e-e80d-57e6" type="equalTo"/>
+                        <condition field="selections" scope="0c7e-9eff-02ad-a8c4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51e5-9fb0-28b3-396c" type="equalTo"/>
+                        <condition field="selections" scope="0c7e-9eff-02ad-a8c4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d735-3096-b2fc-a3df" type="equalTo"/>
+                        <condition field="selections" scope="0c7e-9eff-02ad-a8c4" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="227b-60e7-5cc3-3247" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -48094,10 +48269,15 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           <selectionEntries>
             <selectionEntry id="0ede-be31-3ff3-1fcf" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="d2ec-c595-feda-9092" value="0">
-                  <conditions>
-                    <condition field="selections" scope="795e-950f-3ccf-3c0b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="795e-950f-3ccf-3c0b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="597c-81d4-6d0b-a5d8" type="equalTo"/>
+                        <condition field="selections" scope="795e-950f-3ccf-3c0b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0ede-be31-3ff3-1fcf" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -48886,10 +49066,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="a00f-8b57-3bee-1105" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="4f78-f6fd-18d8-988c" value="0">
-                  <conditions>
-                    <condition field="selections" scope="d637-5a8c-a688-97ec" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="d637-5a8c-a688-97ec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dc5-4ea9-4c71-fa92" type="equalTo"/>
+                        <condition field="selections" scope="d637-5a8c-a688-97ec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="26bd-481f-a941-4103" type="equalTo"/>
+                        <condition field="selections" scope="d637-5a8c-a688-97ec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2ed6-2546-52b8-fbb5" type="equalTo"/>
+                        <condition field="selections" scope="d637-5a8c-a688-97ec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b081-b0ea-0556-8f13" type="equalTo"/>
+                        <condition field="selections" scope="d637-5a8c-a688-97ec" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a00f-8b57-3bee-1105" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -50145,10 +50333,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="d6dd-200e-218b-ba1f" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="443e-47ac-3b2f-e195" value="0">
-                  <conditions>
-                    <condition field="selections" scope="5ff8-a985-0699-7b80" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="5ff8-a985-0699-7b80" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="353f-e8a1-e171-4538" type="equalTo"/>
+                        <condition field="selections" scope="5ff8-a985-0699-7b80" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d17-a662-a0de-4bf2" type="equalTo"/>
+                        <condition field="selections" scope="5ff8-a985-0699-7b80" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad9b-b99a-a698-72ee" type="equalTo"/>
+                        <condition field="selections" scope="5ff8-a985-0699-7b80" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c419-807b-3960-ff8d" type="equalTo"/>
+                        <condition field="selections" scope="5ff8-a985-0699-7b80" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d6dd-200e-218b-ba1f" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
@@ -52713,10 +52909,18 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntry>
             <selectionEntry id="0656-8bcb-2a68-47d3" name="Armoury Assets" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="61ca-2516-9776-3cc5" value="0">
-                  <conditions>
-                    <condition field="selections" scope="395e-5df7-89ec-a5dc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="lessThan"/>
-                  </conditions>
+                <modifier type="set" field="hidden" value="true">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="395e-5df7-89ec-a5dc" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0776-4ba0-86cc-71ba" type="equalTo"/>
+                        <condition field="selections" scope="395e-5df7-89ec-a5dc" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6b62-c60e-3ac5-2847" type="equalTo"/>
+                        <condition field="selections" scope="395e-5df7-89ec-a5dc" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5da-5f7a-9678-4eb5" type="equalTo"/>
+                        <condition field="selections" scope="395e-5df7-89ec-a5dc" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c8c0-6e71-0821-f7b0" type="equalTo"/>
+                        <condition field="selections" scope="395e-5df7-89ec-a5dc" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0656-8bcb-2a68-47d3" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>

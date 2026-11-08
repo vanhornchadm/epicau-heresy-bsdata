@@ -14,4 +14,4 @@ limit: 1 per 2000 pts
 
 ## Sources
 
-- Departmento Munitorum: composition and upgrades. The EpicAU wiki also offers 4-6 plain Terminators and Armoury Assets, but plain Terminators duplicate the core Legion Terminator Detachment, which Ultramarines can still take, and the formation has nothing for Armoury Assets to swap.
+- Departmento Munitorum: composition and upgrades. The EpicAU wiki also offers 4-6 plain Terminators and Armoury Assets, but plain Terminators duplicate the core Legion Terminator Detachment, which Ultramarines can still take, and Armoury Assets could only swap Heavy Transport Land Raiders.

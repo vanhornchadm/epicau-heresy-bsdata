@@ -2,7 +2,7 @@
 slot: low
 cost: 450
 upgrades:
-  - Heavy Transport OR Teleport OR Assault Claw OR Termite Assault
+  - Heavy Transport OR Teleport OR Assault Claw OR Termite Assault OR Drop Assault
 limit: 1 per army
 rules:
   - Demi-God
@@ -13,3 +13,7 @@ rules:
 
 - 1 [[Jaghatai Khan, the Great Khan]]
 - 3 [[Terminators]]
+
+## Sources
+
+- Departmento Munitorum: the Drop Assault upgrade, which the EpicAU wiki doesn't list

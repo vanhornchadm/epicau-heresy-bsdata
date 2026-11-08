@@ -2,7 +2,7 @@
 slot: support
 cost: 350
 upgrades:
-  - Drop Assault OR Assault Ram OR Heavy Transport
+  - Drop Assault OR Assault Ram OR Heavy Transport OR Teleport
   - Centurion
   - Tank
   - Armoury Assets
@@ -14,3 +14,7 @@ limit: 1 per 2000 pts
 ## Composition
 
 - 8 [[Phalanx Warder Squad]]
+
+## Sources
+
+- Departmento Munitorum: the Teleport upgrade, which the EpicAU wiki doesn't list

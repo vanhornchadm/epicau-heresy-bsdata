@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="20" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="21" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
       <rules>
@@ -556,18 +556,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="514a-4cd7-bcc8-364e" name="Leman Russ Executioner" hidden="true" collective="false" import="true" type="model">
+            <selectionEntry id="514a-4cd7-bcc8-364e" name="Leman Russ Executioner" hidden="false" collective="false" import="true" type="model">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bee4-c898-6d1f-457c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="9805-c493-90d1-a921" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bee4-c898-6d1f-457c" type="atLeast"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" field="9805-c493-90d1-a921" value="0">
                   <conditions>
                     <condition field="selections" scope="89c1-8cba-4cc2-616e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
@@ -575,7 +565,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9805-c493-90d1-a921" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9805-c493-90d1-a921" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="22ec-e15c-e3fb-1293" name="Leman Russ Executioner" hidden="false" targetId="f743-4acc-8fce-3bb6" type="profile"/>
@@ -590,39 +580,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="8569-391e-75c2-3ef1" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bee1-f93a-b87d-a869" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bee4-c898-6d1f-457c" name="Executioner" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="89c1-8cba-4cc2-616e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="649f-0941-8d0c-764d" type="equalTo"/>
-                        <condition field="selections" scope="89c1-8cba-4cc2-616e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfb0-563a-9fb3-cc69" type="equalTo"/>
-                        <condition field="selections" scope="89c1-8cba-4cc2-616e" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bee4-c898-6d1f-457c" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e1f-bb82-3937-bcdb" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="8c8c-78cb-15b8-20b8" name="Executioner" hidden="false">
-                  <description>Upgrade 1 unit in this formation: Leman Russ Demolisher or Leman Russ Incinerator to Leman Russ Executioner (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2240,18 +2197,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="891f-eecd-810b-0d22" name="Leman Russ Vanquisher" hidden="true" collective="false" import="true" type="model">
+            <selectionEntry id="891f-eecd-810b-0d22" name="Leman Russ Vanquisher" hidden="false" collective="false" import="true" type="model">
               <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b258-da7f-3ce7-7b1b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="63d8-2e05-55d8-f514" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b258-da7f-3ce7-7b1b" type="atLeast"/>
-                  </conditions>
-                </modifier>
                 <modifier type="set" field="63d8-2e05-55d8-f514" value="0">
                   <conditions>
                     <condition field="selections" scope="b161-8983-ea36-2eb2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
@@ -2259,7 +2206,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63d8-2e05-55d8-f514" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63d8-2e05-55d8-f514" type="max"/>
               </constraints>
               <infoLinks>
                 <infoLink id="0e51-1d3e-4009-dac2" name="Leman Russ Vanquisher" hidden="false" targetId="8254-a3b9-a3fd-93f5" type="profile"/>
@@ -2272,39 +2219,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </categoryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="25.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="9386-7ed6-15bb-f34d" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afd6-31ff-f312-2e96" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="b258-da7f-3ce7-7b1b" name="Vanquisher" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="b161-8983-ea36-2eb2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bce7-d92b-fe7a-d9ba" type="equalTo"/>
-                        <condition field="selections" scope="b161-8983-ea36-2eb2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="da44-b55c-0a89-97ea" type="equalTo"/>
-                        <condition field="selections" scope="b161-8983-ea36-2eb2" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b258-da7f-3ce7-7b1b" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9af-b130-9f47-dbc2" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="76ec-4e06-c8f7-3891" name="Vanquisher" hidden="false">
-                  <description>Upgrade 1 unit in this formation: Leman Russ Battle Tank or Leman Russ Exterminator to Leman Russ Vanquisher (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>

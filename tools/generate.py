@@ -799,9 +799,13 @@ class Builder:
         """An upgraded copy of `base`, hidden and unavailable until the swap upgrade is taken."""
         v, fid = self.variants, self.formation_id
         cmax = gid('con', self.cat_id, path, 'variant-max', to)
-        taken = [X('conditions', children=[condition('atLeast', v['uid'], 1, fid, child=True)])]
-        mods = [X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'false'}, taken),
-                X('modifier', {'type': 'set', 'field': cmax, 'value': fmt(v['hi'] or 99)}, taken)]
+        if v['free']:  # no toggle: the upgraded unit is always offered, up to the upgrade's maximum
+            mods, start = [], v['hi'] or 99
+        else:
+            taken = [X('conditions', children=[condition('atLeast', v['uid'], 1, fid, child=True)])]
+            mods = [X('modifier', {'type': 'set', 'field': 'hidden', 'value': 'false'}, taken),
+                    X('modifier', {'type': 'set', 'field': cmax, 'value': fmt(v['hi'] or 99)}, taken)]
+            start = 0
         if v['hi']:
             mods.append(X('modifier', {'type': 'set', 'field': cmax, 'value': '0'},
                           [X('conditions', children=[condition('greaterThan', CAT['Upgraded Unit'], v['hi'], fid,
@@ -810,8 +814,8 @@ class Builder:
         v['sources'].add(gid('se', self.cat_id, path))
         return self.unit_entry(path + '/variant/' + to, {'unit': to, 'min': 0, 'max': None,
                                                          'each': (base['each'] or 0) + each, 'label': None},
-                               mods=mods, extra_cons=[constraint(cmax, 'max', 0)], extra_cats=['Upgraded Unit'],
-                               hidden=True)
+                               mods=mods, extra_cons=[constraint(cmax, 'max', start)], extra_cats=['Upgraded Unit'],
+                               hidden=not v['free'])
 
     def unit_with_variants(self, path, part):
         """A unit entry plus its upgraded versions; each upgrade taken lowers the original's count by one."""
@@ -896,6 +900,12 @@ class Builder:
         """Upgrades whose contents depend on the formation are built inline rather than shared."""
         return any(p['kind'] in ('fill', 'swap') or (p['kind'] == 'or' and Builder.formation_bound(
             {'parts': [q for o in p['opts'] for q in o['parts']]})) for p in u['parts'])
+
+    @staticmethod
+    def free_swap(u):
+        """A swap upgrade that costs nothing and carries no rules of its own needs no toggle: its upgraded units are
+        always offered next to the units they replace."""
+        return not u['cost'] and not u['rules'] and not u['desc'] and len(u['parts']) == 1
 
     @staticmethod
     def swap_part(u):
@@ -983,6 +993,8 @@ class Builder:
         for chunk in [c.strip() for c in f['up'].split(',') if c.strip()]:
             names = [n.strip() for n in chunk.split(' OR ')]
             if len(names) == 1:
+                if self.variants and self.variants['free'] and names[0] == self.variants['name']:
+                    continue  # no toggle; upgraded units count towards the cap below instead
                 links += self.upgrade_link(fid, names[0])
             else:
                 sg = gid('seg', fid, chunk)
@@ -996,10 +1008,14 @@ class Builder:
             return None
         g = gid('seg', fid, 'upgrades')
         cons = [constraint(gid('con', g, 'max'), 'max', cap)] if cap else []
+        mods = []
+        if cap and self.variants and self.variants['free']:  # the swap upgrade still takes an upgrade slot once used
+            mods.append(X('modifier', {'type': 'decrement', 'field': gid('con', g, 'max'), 'value': '1'},
+                          [X('conditions', children=[condition('atLeast', CAT['Upgraded Unit'], 1, fid, child=True)])]))
         ses, els = self.split(links)
         return ordered('selectionEntryGroup', {'id': g, 'name': 'Upgrades', 'hidden': 'false', 'collective': 'false',
                                                'import': 'true'},
-                       constraints=cons, selectionEntries=ses, selectionEntryGroups=groups, entryLinks=els)
+                       modifiers=mods, constraints=cons, selectionEntries=ses, selectionEntryGroups=groups, entryLinks=els)
 
     # -- formations
     def formation(self, f):
@@ -1040,7 +1056,8 @@ class Builder:
         if self.variants:
             if not self.variants['made']:
                 raise ValueError(f'{self.army["name"]}: {f["name"]} has nothing {self.variants["name"]} can upgrade')
-            self.variants['desc'].text = self.variant_text()
+            if self.variants['desc'] is not None:
+                self.variants['desc'].text = self.variant_text()
             self.swap_hidden()
         self.variants, self.offered = None, set()
         el = ordered('selectionEntry', {'id': fid, 'name': star(f['name'], f.get('new')), 'hidden': 'false',
@@ -1198,6 +1215,7 @@ class Builder:
                         raise ValueError(f'{self.army["name"]}: unsupported swap upgrade layout in {f["name"]}')
                     found.append({'name': n, 'uid': gid('upgrade', fid, n), 'swaps': sp['swaps'], 'lo': sp['min'],
                                   'hi': sp['max'], 'made': [], 'desc': None, 'sources': set(), 'mods': None,
+                                  'free': self.free_swap(self.army['upgrades'][n]),
                                   'base_desc': self.army['upgrades'][n]['desc']})
         return found[0] if found else None
 

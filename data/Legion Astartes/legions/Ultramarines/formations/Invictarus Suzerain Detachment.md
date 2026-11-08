@@ -2,7 +2,7 @@
 slot: support
 cost: 300
 upgrades:
-  - Drop Assault OR Heavy Transport
+  - Drop Assault OR Heavy Transport OR Assault Claw
   - Armoury Assets
   - Tank
   - Hyperios
@@ -17,3 +17,7 @@ One Invictarus Suzerain Squad carries a Centurion (Champion) upgrade.
 
 - 4 [[Invictarus Suzerain Squad]]
 - 1 [[Champion|Centurion (Champion)]]
+
+## Sources
+
+- Departmento Munitorum: the Assault Claw upgrade, which the EpicAU wiki doesn't list

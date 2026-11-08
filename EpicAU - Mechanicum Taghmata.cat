@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="22" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="24" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -1268,6 +1268,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="038d-3c04-e8d0-d04b" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce9d-347d-e53c-4cac" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6bc4-2f9c-054f-c354" name="Krios" hidden="false" collective="false" import="true" targetId="9fde-6a83-0ed9-78ce" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebde-67f3-d5ef-731d" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="300.0"/>
       </costs>
@@ -2582,18 +2596,8 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
-        <selectionEntry id="1989-3a16-e87d-a1ab" name="Hyperios Platform" hidden="true" collective="false" import="true" type="model">
+        <selectionEntry id="1989-3a16-e87d-a1ab" name="Hyperios Platform" hidden="false" collective="false" import="true" type="model">
           <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="f3f7-cd03-02ef-218c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b1d-635e-64a6-5be5" type="atLeast"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" field="c6f7-6048-ae91-7b03" value="3.0">
-              <conditions>
-                <condition field="selections" scope="f3f7-cd03-02ef-218c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b1d-635e-64a6-5be5" type="atLeast"/>
-              </conditions>
-            </modifier>
             <modifier type="set" field="c6f7-6048-ae91-7b03" value="0">
               <conditions>
                 <condition field="selections" scope="f3f7-cd03-02ef-218c" value="3.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1c1a-168c-d3cf-3310" type="greaterThan"/>
@@ -2601,7 +2605,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f7-6048-ae91-7b03" type="max"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6f7-6048-ae91-7b03" type="max"/>
           </constraints>
           <infoLinks>
             <infoLink id="85ec-2494-ed7f-2be0" name="Hyperios Platform" hidden="false" targetId="c15e-56ed-60d3-1ee7" type="profile"/>
@@ -2616,40 +2620,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="545a-b53e-d4bf-077e" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e94-ff46-983e-aa54" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="5b1d-635e-64a6-5be5" name="Hyperios" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="f3f7-cd03-02ef-218c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1f1c-d9d7-71c6-2040" type="equalTo"/>
-                        <condition field="selections" scope="f3f7-cd03-02ef-218c" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5b1d-635e-64a6-5be5" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="171f-d718-577b-0af5" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="5722-fc69-c7e0-2d6b" name="Hyperios" hidden="false">
-                  <description>Upgrade 1-3 units in this formation: Tarantula Platform to Hyperios Platform (+50 pts each). Once this upgrade is taken, the upgraded units appear in the formation, next to the units they replace; pick them there.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="125.0"/>
       </costs>

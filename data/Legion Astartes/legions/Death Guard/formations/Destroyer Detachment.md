@@ -2,7 +2,7 @@
 slot: support
 cost: 225
 upgrades:
-  - Drop Assault
+  - Drop Assault OR Assault Claw
   - Centurion
   - Palisade Drop Pod
 limit: 1 per 1000 pts
@@ -12,3 +12,7 @@ limit: 1 per 1000 pts
 ## Composition
 
 - 4 [[Destroyer Squad]]
+
+## Sources
+
+- Departmento Munitorum: the Assault Claw upgrade, which the EpicAU wiki doesn't list

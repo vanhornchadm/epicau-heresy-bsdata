@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="16" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="17" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="1897-edf7-b72c-17af" name="Knight Household" hidden="false">
       <rules>
@@ -808,21 +808,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3c37-900b-c840-19b0" name="Cerastus Knight-Acheron" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="b63d-4c97-9e9b-33f3" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="3c37-900b-c840-19b0" name="Cerastus Knight-Acheron" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63d-4c97-9e9b-33f3" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63d-4c97-9e9b-33f3" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="2d10-9919-2e50-91b4" name="Cerastus Knight-Acheron" hidden="false" targetId="e2d3-517e-cc24-95b1" type="profile"/>
@@ -847,21 +835,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="613b-d268-7609-24c8" name="Cerastus Knight-Atropos" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="69f1-8761-e813-9cad" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="613b-d268-7609-24c8" name="Cerastus Knight-Atropos" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f1-8761-e813-9cad" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69f1-8761-e813-9cad" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="562e-679e-8ef9-c3ef" name="Cerastus Knight-Atropos" hidden="false" targetId="8701-2cdd-5975-8a50" type="profile"/>
@@ -939,21 +915,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="1cdb-5b29-7101-825f" name="Cerastus Knight-Acheron" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="a7b4-5e25-7826-9b7a" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="1cdb-5b29-7101-825f" name="Cerastus Knight-Acheron" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b4-5e25-7826-9b7a" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b4-5e25-7826-9b7a" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="aab0-4b1e-beef-96a4" name="Cerastus Knight-Acheron" hidden="false" targetId="e2d3-517e-cc24-95b1" type="profile"/>
@@ -978,21 +942,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="4eae-91cf-fe11-ea82" name="Cerastus Knight-Atropos" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="d581-8f50-0671-3d47" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="4eae-91cf-fe11-ea82" name="Cerastus Knight-Atropos" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d581-8f50-0671-3d47" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d581-8f50-0671-3d47" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="2110-85d6-9735-c9c0" name="Cerastus Knight-Atropos" hidden="false" targetId="8701-2cdd-5975-8a50" type="profile"/>
@@ -1025,34 +977,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         </selectionEntryGroup>
         <selectionEntryGroup id="83bb-5a91-a3bb-1f38" name="Upgrades" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="93bb-ac0b-cb6b-b7e3" name="Enhanced Forge" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1939-35cc-2bd1-0aa2" type="equalTo"/>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="48e9-ab91-7123-2baa" type="equalTo"/>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="70f5-fb61-7983-005c" type="equalTo"/>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ffe3-4b1a-a239-ce4f" type="equalTo"/>
-                        <condition field="selections" scope="23a8-5bd2-4acd-7902" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af74-b1c8-f6d5-ee3e" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="48aa-5252-c9d0-2b37" name="Enhanced Forge" hidden="false">
-                  <description>Upgrade 1 or more units in this formation: Cerastus Knight-Lancer or Cerastus Knight-Castigator to Cerastus Knight-Acheron (+25 pts each); Cerastus Knight-Lancer or Cerastus Knight-Castigator to Cerastus Knight-Atropos (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation and the Rally the Troops upgrade, next to the units they replace; pick them there.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="69bb-7a65-f442-cb8f" name="Rally the Troops" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0e7-7687-7e17-5a89" type="max"/>
@@ -1114,21 +1038,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <cost name="pts" typeId="points" value="125.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="8d5c-b64f-eecd-7a9a" name="Cerastus Knight-Acheron" hidden="true" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="aa79-c45b-f459-d3e4" value="99.0">
-                          <conditions>
-                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="8d5c-b64f-eecd-7a9a" name="Cerastus Knight-Acheron" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa79-c45b-f459-d3e4" type="max"/>
+                        <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa79-c45b-f459-d3e4" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="6071-975c-b3bf-c9ba" name="Cerastus Knight-Acheron" hidden="false" targetId="e2d3-517e-cc24-95b1" type="profile"/>
@@ -1153,21 +1065,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <cost name="pts" typeId="points" value="150.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="02cd-1479-444a-2277" name="Cerastus Knight-Atropos" hidden="true" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="8e9a-03ad-b5dc-91cd" value="99.0">
-                          <conditions>
-                            <condition field="selections" scope="23a8-5bd2-4acd-7902" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93bb-ac0b-cb6b-b7e3" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="02cd-1479-444a-2277" name="Cerastus Knight-Atropos" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e9a-03ad-b5dc-91cd" type="max"/>
+                        <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e9a-03ad-b5dc-91cd" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="02a2-ba94-fae5-5ecb" name="Cerastus Knight-Atropos" hidden="false" targetId="8701-2cdd-5975-8a50" type="profile"/>
@@ -1532,21 +1432,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9ed6-bcfa-d5c9-1f93" name="Questorius Knight-Warden" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="5f35-598e-2521-a51b" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="9ed6-bcfa-d5c9-1f93" name="Questorius Knight-Warden" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f35-598e-2521-a51b" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f35-598e-2521-a51b" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="0bda-7cd6-227e-dd65" name="Questorius Knight-Warden" hidden="false" targetId="1177-59bf-af99-29bc" type="profile"/>
@@ -1571,21 +1459,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a79c-25dc-6889-9195" name="Questorius Knight-Styrix" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="2d33-4cc9-1f62-7fb2" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="a79c-25dc-6889-9195" name="Questorius Knight-Styrix" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d33-4cc9-1f62-7fb2" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d33-4cc9-1f62-7fb2" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="d1de-3b52-eee7-2bde" name="Questorius Knight-Styrix" hidden="false" targetId="4b68-f11e-e5e3-2aaa" type="profile"/>
@@ -1611,21 +1487,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="7037-e58e-ffa9-b616" name="Questorius Knight-Crusader" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="e6a3-4313-e2a2-f230" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="7037-e58e-ffa9-b616" name="Questorius Knight-Crusader" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a3-4313-e2a2-f230" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a3-4313-e2a2-f230" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="3b9f-b22b-0093-585c" name="Questorius Knight-Crusader" hidden="false" targetId="aadc-48dc-a0ba-946f" type="profile"/>
@@ -1645,21 +1509,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="41a0-0ac7-402a-e3cc" name="Questorius Knight-Gallant" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="b278-a617-fd15-1adc" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="41a0-0ac7-402a-e3cc" name="Questorius Knight-Gallant" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b278-a617-fd15-1adc" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b278-a617-fd15-1adc" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="b3e3-837c-4846-6df2" name="Questorius Knight-Gallant" hidden="false" targetId="e0be-c41f-9c98-6460" type="profile"/>
@@ -1683,21 +1535,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="23df-2b63-04dc-da49" name="Questorius Knight-Magaera" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="7d50-b67b-089f-90c3" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="23df-2b63-04dc-da49" name="Questorius Knight-Magaera" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d50-b67b-089f-90c3" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d50-b67b-089f-90c3" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="0820-4af1-6a28-1bce" name="Questorius Knight-Magaera" hidden="false" targetId="863f-e14d-f4db-eadb" type="profile"/>
@@ -1805,21 +1645,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="e2d6-37f5-3940-a44f" name="Questorius Knight-Warden" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="4139-d45f-2e89-3134" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="e2d6-37f5-3940-a44f" name="Questorius Knight-Warden" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4139-d45f-2e89-3134" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4139-d45f-2e89-3134" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="2ab9-61a2-e588-c238" name="Questorius Knight-Warden" hidden="false" targetId="1177-59bf-af99-29bc" type="profile"/>
@@ -1844,21 +1672,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="f631-9b7a-c697-6843" name="Questorius Knight-Styrix" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="75d8-01ed-32c5-0d97" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="f631-9b7a-c697-6843" name="Questorius Knight-Styrix" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d8-01ed-32c5-0d97" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d8-01ed-32c5-0d97" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="ed84-664e-9c8b-8626" name="Questorius Knight-Styrix" hidden="false" targetId="4b68-f11e-e5e3-2aaa" type="profile"/>
@@ -1884,21 +1700,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a589-fe51-7828-4d94" name="Questorius Knight-Crusader" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="8f87-8bca-e577-d3b1" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="a589-fe51-7828-4d94" name="Questorius Knight-Crusader" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f87-8bca-e577-d3b1" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f87-8bca-e577-d3b1" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="703c-9041-f367-d7f0" name="Questorius Knight-Crusader" hidden="false" targetId="aadc-48dc-a0ba-946f" type="profile"/>
@@ -1918,21 +1722,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a6a7-3864-d5e9-3cc3" name="Questorius Knight-Gallant" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="81d7-31f4-6f6d-9bdf" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="a6a7-3864-d5e9-3cc3" name="Questorius Knight-Gallant" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d7-31f4-6f6d-9bdf" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81d7-31f4-6f6d-9bdf" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="00ae-96d6-3541-f01e" name="Questorius Knight-Gallant" hidden="false" targetId="e0be-c41f-9c98-6460" type="profile"/>
@@ -1956,21 +1748,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <cost name="pts" typeId="points" value="25.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="3315-ed7a-c1f0-c244" name="Questorius Knight-Magaera" hidden="true" collective="false" import="true" type="model">
-                  <modifiers>
-                    <modifier type="set" field="hidden" value="false">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="4b91-2eaa-f242-f4ad" value="99.0">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
+                <selectionEntry id="3315-ed7a-c1f0-c244" name="Questorius Knight-Magaera" hidden="false" collective="false" import="true" type="model">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b91-2eaa-f242-f4ad" type="max"/>
+                    <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b91-2eaa-f242-f4ad" type="max"/>
                   </constraints>
                   <infoLinks>
                     <infoLink id="c612-5247-602d-d34a" name="Questorius Knight-Magaera" hidden="false" targetId="863f-e14d-f4db-eadb" type="profile"/>
@@ -2003,34 +1783,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         </selectionEntryGroup>
         <selectionEntryGroup id="95d4-854b-b153-0608" name="Upgrades" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="80e8-ccee-595d-627d" name="Expanded Armoury" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="64ad-9cb8-81fd-b79c" type="equalTo"/>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6745-0214-6053-9005" type="equalTo"/>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3de-4aa4-9d7d-44aa" type="equalTo"/>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbc0-7d84-b9f9-eecb" type="equalTo"/>
-                        <condition field="selections" scope="c923-b7b6-bbb7-1024" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="equalTo"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bd2-76b4-1374-63d0" type="max"/>
-              </constraints>
-              <rules>
-                <rule id="d711-1093-c8bd-5f1c" name="Expanded Armoury" hidden="false">
-                  <description>Upgrade 1 or more units in this formation: Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Warden (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Styrix (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Crusader (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Gallant (+25 pts each); Questorius Knight-Paladin or Questorius Knight-Errant to Questorius Knight-Magaera (+25 pts each). Once this upgrade is taken, the upgraded units appear in the formation and the Raise the Banners upgrade, next to the units they replace; pick them there.</description>
-                </rule>
-              </rules>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="8463-0d53-1d35-c32b" name="Raise the Banners" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11aa-b53d-0f44-e5d5" type="max"/>
@@ -2089,21 +1841,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <cost name="pts" typeId="points" value="100.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="c13f-93b4-b98e-4b9e" name="Questorius Knight-Warden" hidden="true" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="5931-389c-9678-0c69" value="99.0">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="c13f-93b4-b98e-4b9e" name="Questorius Knight-Warden" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5931-389c-9678-0c69" type="max"/>
+                        <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5931-389c-9678-0c69" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="42e5-272b-c169-5aaf" name="Questorius Knight-Warden" hidden="false" targetId="1177-59bf-af99-29bc" type="profile"/>
@@ -2128,21 +1868,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <cost name="pts" typeId="points" value="125.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="1ca0-c04e-cda3-b87f" name="Questorius Knight-Styrix" hidden="true" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="0fb3-ef46-9462-1bd7" value="99.0">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="1ca0-c04e-cda3-b87f" name="Questorius Knight-Styrix" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb3-ef46-9462-1bd7" type="max"/>
+                        <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fb3-ef46-9462-1bd7" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="3c9d-2aae-e5e9-11cd" name="Questorius Knight-Styrix" hidden="false" targetId="4b68-f11e-e5e3-2aaa" type="profile"/>
@@ -2168,21 +1896,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <cost name="pts" typeId="points" value="125.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="75a2-c91a-5ebc-92d0" name="Questorius Knight-Crusader" hidden="true" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="ddeb-cbcf-7ba1-7c9e" value="99.0">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="75a2-c91a-5ebc-92d0" name="Questorius Knight-Crusader" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddeb-cbcf-7ba1-7c9e" type="max"/>
+                        <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddeb-cbcf-7ba1-7c9e" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="0205-426b-5879-596b" name="Questorius Knight-Crusader" hidden="false" targetId="aadc-48dc-a0ba-946f" type="profile"/>
@@ -2202,21 +1918,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <cost name="pts" typeId="points" value="125.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="009e-fd42-06a4-6068" name="Questorius Knight-Gallant" hidden="true" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="7ec6-dd43-348e-484a" value="99.0">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="009e-fd42-06a4-6068" name="Questorius Knight-Gallant" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ec6-dd43-348e-484a" type="max"/>
+                        <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ec6-dd43-348e-484a" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="19bb-d29f-9e34-a328" name="Questorius Knight-Gallant" hidden="false" targetId="e0be-c41f-9c98-6460" type="profile"/>
@@ -2240,21 +1944,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         <cost name="pts" typeId="points" value="125.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="092b-9fb3-be9e-2a94" name="Questorius Knight-Magaera" hidden="true" collective="false" import="true" type="model">
-                      <modifiers>
-                        <modifier type="set" field="hidden" value="false">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                        <modifier type="set" field="a098-749d-5f6a-eaba" value="99.0">
-                          <conditions>
-                            <condition field="selections" scope="c923-b7b6-bbb7-1024" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="80e8-ccee-595d-627d" type="atLeast"/>
-                          </conditions>
-                        </modifier>
-                      </modifiers>
+                    <selectionEntry id="092b-9fb3-be9e-2a94" name="Questorius Knight-Magaera" hidden="false" collective="false" import="true" type="model">
                       <constraints>
-                        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a098-749d-5f6a-eaba" type="max"/>
+                        <constraint field="selections" scope="parent" value="99.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a098-749d-5f6a-eaba" type="max"/>
                       </constraints>
                       <infoLinks>
                         <infoLink id="7625-ea09-d1fd-3723" name="Questorius Knight-Magaera" hidden="false" targetId="863f-e14d-f4db-eadb" type="profile"/>

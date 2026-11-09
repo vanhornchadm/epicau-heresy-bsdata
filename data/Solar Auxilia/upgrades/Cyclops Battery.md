@@ -4,10 +4,8 @@ fan-made: true
 ---
 # Cyclops Battery
 
-## Adds
-
-- 2 [[Cyclops Demolition Vehicle]]
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

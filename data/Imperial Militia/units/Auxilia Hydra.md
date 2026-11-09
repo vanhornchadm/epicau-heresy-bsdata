@@ -9,17 +9,10 @@ fan-made: true
 |---|---|---|---|---|
 | AV | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| 2 x Twin Hydra Autocannon | - | - |
-| Heavy Bolter | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
+TODO.
 
 ## Sources
 
-- Placeholder: added for a flak formation adapted from Empire of Ashes; its stats are to be written
+- TODO: added for a flak formation adapted from Empire of Ashes; its stats are to be written

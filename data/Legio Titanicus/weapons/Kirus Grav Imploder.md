@@ -9,6 +9,10 @@ fan-made: true
 |---|---|
 | - | - |
 
+## Notes
+
+TODO.
+
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

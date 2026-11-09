@@ -9,17 +9,10 @@ fan-made: true
 |---|---|---|---|---|
 | AV | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| Annihilator Twin Lascannon | - | - |
-| Lascannon | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

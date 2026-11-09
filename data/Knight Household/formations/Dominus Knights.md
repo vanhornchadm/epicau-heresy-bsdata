@@ -1,8 +1,6 @@
 ---
 slot: support
 cost: 0
-upgrades:
-  - Noble
 fan-made: true
 ---
 # Dominus Knights
@@ -15,4 +13,4 @@ fan-made: true
 
 ## Sources
 
-- Placeholder: its formation and points were adapted from Empire of Ashes, and are to be written
+- TODO: its formation and points were adapted from Empire of Ashes, and are to be written

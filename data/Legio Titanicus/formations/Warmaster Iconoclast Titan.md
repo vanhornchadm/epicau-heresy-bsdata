@@ -1,10 +1,6 @@
 ---
 slot: low
 cost: 0
-upgrades:
-  - Legate OR Veteran Princeps
-  - Air Defence
-  - Sacred Icon
 fan-made: true
 ---
 # Warmaster Iconoclast Titan
@@ -15,4 +11,4 @@ fan-made: true
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

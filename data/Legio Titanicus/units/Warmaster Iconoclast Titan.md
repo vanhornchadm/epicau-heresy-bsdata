@@ -1,7 +1,5 @@
 ---
 fan-made: true
-replaced-rows:
-  - Kirus Siege Drill OR Kirus Grav Imploder
 ---
 # Warmaster Iconoclast Titan
 
@@ -11,24 +9,10 @@ replaced-rows:
 |---|---|---|---|---|
 | WE | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| Desolator Chainsword | - | - |
-| Cruciator Gatling Array | - | - |
-| Kirus Siege Drill OR Kirus Grav Imploder | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
-
-## Titan weapons
-
-- **Arm**:
-  - [[Kirus Siege Drill]]
-  - [[Kirus Grav Imploder]]
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

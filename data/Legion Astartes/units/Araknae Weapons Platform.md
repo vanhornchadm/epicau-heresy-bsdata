@@ -9,25 +9,10 @@ fan-made: true
 |---|---|---|---|---|
 | LV | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| Quad Accelerator Autocannon OR | - | - |
-| Twin Punisher Cannon OR | - | - |
-| Orias Heavy Frag Missiles | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
-
-## Weapon options
-
-- **Weapon**: pick one
-  - Quad Accelerator Autocannon
-  - Twin Punisher Cannon
-  - Orias Heavy Frag Missiles
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

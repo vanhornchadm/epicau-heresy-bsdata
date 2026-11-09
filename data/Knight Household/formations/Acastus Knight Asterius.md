@@ -1,8 +1,6 @@
 ---
 slot: low
 cost: 0
-upgrades:
-  - Noble
 fan-made: true
 ---
 # Acastus Knight Asterius
@@ -13,4 +11,4 @@ fan-made: true
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

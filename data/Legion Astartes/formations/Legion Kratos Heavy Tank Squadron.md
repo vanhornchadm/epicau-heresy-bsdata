@@ -12,4 +12,4 @@ fan-made: true
 ## Sources
 
 - Dakka Dakka Kratos proposal: formation, stat line, weapons and points
-- Placeholder: the critical hit and upgrades were designed for this data; the formation has no upgrades until they are written
+- TODO: the critical hit and upgrades were designed for this data; the formation has no upgrades until they are written

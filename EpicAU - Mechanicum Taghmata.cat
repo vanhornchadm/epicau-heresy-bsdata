@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="25" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="26" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -602,56 +602,9 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ea0-f2f0-d00d-5317" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="b582-a600-3627-10e5" name="Arlatax Battle-Automata*" hidden="false" targetId="183d-f6e4-36c1-5d1b" type="profile">
-              <modifiers>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Autocannon,">
-                  <conditions>
-                    <condition field="selections" scope="c2f9-df57-99b2-1ced" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8fb-612a-7d97-2172" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Plasma Cannon,">
-                  <conditions>
-                    <condition field="selections" scope="c2f9-df57-99b2-1ced" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c32-89ba-7381-6c1e" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Power Claws"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="a84d-dc53-46f1-35f5" name="Power Claws" hidden="false" targetId="9961-a9d3-0459-f715" type="profile"/>
-            <infoLink id="35ec-8ff2-0932-ed5d" name="Placeholder (Arlatax Battle-Automata*)" hidden="false" targetId="b9ad-43f8-6b56-0c25" type="rule"/>
+            <infoLink id="b582-a600-3627-10e5" name="Arlatax Battle-Automata*" hidden="false" targetId="183d-f6e4-36c1-5d1b" type="profile"/>
+            <infoLink id="12b1-c458-0207-5050" name="Special Rules (Arlatax Battle-Automata*)" hidden="false" targetId="c97d-f3f1-7cf9-a6be" type="rule"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="0422-427f-0948-20b3" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8fb-612a-7d97-2172">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6c0-5e74-28a3-3a3e" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae11-434d-7f22-5992" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="a8fb-612a-7d97-2172" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e9-d898-f884-e727" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="e340-32a7-1d27-c7e4" name="Autocannon" hidden="false" targetId="8dd9-c8b3-1cd2-90db" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="0c32-89ba-7381-6c1e" name="Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8700-b22d-21ae-0bdf" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="2450-732a-18b3-fbe3" name="Plasma Cannon" hidden="false" targetId="fcb9-22f5-632b-22d4" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -687,30 +640,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="ddc3-b2b3-3c83-62c7" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="582f-612f-acc9-39ca" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="d3dd-ca34-2634-fd34" name="Magos" hidden="false" collective="false" import="true" targetId="c7e7-8d16-657e-7246" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="057e-691d-bc29-7388" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="06c2-05ac-676e-756c" name="Scyllax" hidden="false" collective="false" import="true" targetId="41a5-4798-8f8e-264d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f35-173f-97f0-0143" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="0077-1257-522f-ac3c" name="Thanatar" hidden="false" collective="false" import="true" targetId="fb53-6ee6-e0a2-6c8e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6328-e127-de1d-be21" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -938,9 +867,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </constraints>
           <infoLinks>
             <infoLink id="8949-a15d-caab-52c2" name="Domitar Battle-Automata*" hidden="false" targetId="c73d-4e05-1ae7-7d03" type="profile"/>
-            <infoLink id="9c69-2bc3-186e-c58f" name="Domitar Missile Launcher" hidden="false" targetId="52f2-9153-2813-f794" type="profile"/>
-            <infoLink id="cc97-ab61-a1fa-9490" name="Graviton Hammers" hidden="false" targetId="619b-cb44-235a-ab86" type="profile"/>
-            <infoLink id="8823-704e-5c71-f9aa" name="Placeholder (Domitar Battle-Automata*)" hidden="false" targetId="133c-590d-20f6-383e" type="rule"/>
+            <infoLink id="75c3-2ab6-5902-458f" name="Special Rules (Domitar Battle-Automata*)" hidden="false" targetId="af78-324d-cb71-c491" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -977,30 +904,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="3b95-fee0-510f-aa2d" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4087-c52c-e4aa-b365" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="df25-97d2-746b-6e32" name="Magos" hidden="false" collective="false" import="true" targetId="c7e7-8d16-657e-7246" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50de-66d5-a31b-3bc6" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="bdf0-ba71-2c66-9d01" name="Scyllax" hidden="false" collective="false" import="true" targetId="41a5-4798-8f8e-264d" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a70f-2b8e-18d7-6eef" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="cf20-6329-cda9-f6f8" name="Thanatar" hidden="false" collective="false" import="true" targetId="fb53-6ee6-e0a2-6c8e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f73-4f7d-33fa-78eb" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1419,9 +1322,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
               </constraints>
               <infoLinks>
                 <infoLink id="0ad1-75ce-c227-a2eb" name="Krios Venator*" hidden="false" targetId="ef8d-e3e9-189a-83e4" type="profile"/>
-                <infoLink id="6f2c-7a5c-2e3d-826b" name="Pulsar Fusil" hidden="false" targetId="410b-15f6-1bae-b29d" type="profile"/>
-                <infoLink id="bd17-bfc2-5d27-d201" name="Volkite Caliver Sponsons" hidden="false" targetId="61bf-de5d-b13c-a463" type="profile"/>
-                <infoLink id="1d2a-900a-8c06-3021" name="Placeholder (Krios Venator*)" hidden="false" targetId="4a0d-6134-6943-b189" type="rule"/>
+                <infoLink id="e977-f4e7-903c-af50" name="Special Rules (Krios Venator*)" hidden="false" targetId="6e91-485a-a806-806c" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -3719,104 +3620,14 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21fb-a47f-7ca4-547c" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="84f5-82e1-1fb7-f358" name="Errax*" hidden="false" targetId="f728-423e-ac66-3e3d" type="profile">
-              <modifiers>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Errax Lascutters,">
-                  <conditions>
-                    <condition field="selections" scope="520e-56a6-3911-cdc6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9591-54c8-db88-e28a" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Errax Meltagun,">
-                  <conditions>
-                    <condition field="selections" scope="520e-56a6-3911-cdc6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4b88-4001-daa1-422a" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Stalker Maxima Bolters"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="727b-aede-ea05-4f45" name="Stalker Maxima Bolters" hidden="false" targetId="0f1b-966c-af6d-55b9" type="profile"/>
-            <infoLink id="77e8-dd7a-7ddb-167c" name="Placeholder (Errax*)" hidden="false" targetId="7c98-3fbf-6bc7-1360" type="rule"/>
+            <infoLink id="84f5-82e1-1fb7-f358" name="Errax*" hidden="false" targetId="f728-423e-ac66-3e3d" type="profile"/>
+            <infoLink id="89eb-6022-52c5-4044" name="Special Rules (Errax*)" hidden="false" targetId="6b6b-a23e-e402-8e0e" type="rule"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="e195-a962-c479-22a5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9591-54c8-db88-e28a">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2afe-9c3b-c2f3-a0a1" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e06a-cf65-68df-9e45" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="9591-54c8-db88-e28a" name="Errax Lascutters" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31f3-7cc3-ac37-adbb" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="857d-2f77-f705-ba26" name="Errax Lascutters" hidden="false" targetId="604f-2344-a395-2a46" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="4b88-4001-daa1-422a" name="Errax Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c7-5916-25bc-ebc2" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="42f6-4501-8227-1f14" name="Errax Meltagun" hidden="false" targetId="a623-eeb6-fda0-ee87" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="206d-e529-f48a-ce0c" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ac4-78ba-91cb-2933" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="717f-6485-759c-7b00" name="Errax*" hidden="true" collective="false" import="true" targetId="1f9b-5c47-b20e-f89d" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="5099-cf71-c3a5-5824" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5099-cf71-c3a5-5824" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="4364-e363-121f-fae9" name="Scintillax*" hidden="true" collective="false" import="true" targetId="19bf-abcc-37cb-8fc3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="ad23-aa86-af39-7d5b" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad23-aa86-af39-7d5b" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -3910,54 +3721,9 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c42e-0aa1-972b-ccf8" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="0f68-b9a5-eb61-af10" name="Harpax*" hidden="false" targetId="6939-c7b6-38a8-f468" type="profile">
-              <modifiers>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Exo-planar Repeaters">
-                  <conditions>
-                    <condition field="selections" scope="998f-ee9f-c455-6b21" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="73af-2cfa-c5b7-b216" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Harpax Lascutters">
-                  <conditions>
-                    <condition field="selections" scope="998f-ee9f-c455-6b21" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c30-a3bf-3c65-9649" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink id="4820-8c8f-999b-dd01" name="Placeholder (Harpax*)" hidden="false" targetId="8c9b-2d7e-cd55-92f2" type="rule"/>
+            <infoLink id="0f68-b9a5-eb61-af10" name="Harpax*" hidden="false" targetId="6939-c7b6-38a8-f468" type="profile"/>
+            <infoLink id="13d0-b498-f6d7-536c" name="Special Rules (Harpax*)" hidden="false" targetId="ee88-586f-11cc-e0d9" type="rule"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="afa6-acf5-6b57-229f" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="73af-2cfa-c5b7-b216">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0de-726a-f80d-bfb1" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ed-dc21-fdc4-ac5b" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="73af-2cfa-c5b7-b216" name="Exo-planar Repeaters" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e8-6efb-8031-6255" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="d0aa-4a57-4f4d-ee13" name="Exo-planar Repeaters" hidden="false" targetId="7a0a-aaba-d635-d0be" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7c30-a3bf-3c65-9649" name="Harpax Lascutters" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="222c-979f-25b4-7b3c" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="104f-0af8-7210-de74" name="Harpax Lascutters" hidden="false" targetId="fbfe-7430-c8d7-4541" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="1.0"/>
@@ -4053,125 +3819,14 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fbe-118a-9035-23ad" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="fbcf-df32-0497-a004" name="Serperos*" hidden="false" targetId="6bf2-c755-59f6-a05c" type="profile">
-              <modifiers>
-                <modifier type="append" field="8053-23b9-7271-666e" value="Storm Laser Array,">
-                  <conditions>
-                    <condition field="selections" scope="c681-bc3a-5d10-669b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a1f7-e4bc-f1fa-648c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="8053-23b9-7271-666e" value="Exo-planar Bombard,">
-                  <conditions>
-                    <condition field="selections" scope="c681-bc3a-5d10-669b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="48cc-ae57-a461-12c2" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="8053-23b9-7271-666e" value="Serperos Lascutters">
-                  <conditions>
-                    <condition field="selections" scope="c681-bc3a-5d10-669b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="22bf-e6b6-863e-51ec" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="8053-23b9-7271-666e" value="Irradiation Engine">
-                  <conditions>
-                    <condition field="selections" scope="c681-bc3a-5d10-669b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1d66-096a-bf52-37d3" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink id="8f2d-033d-db47-7dfa" name="Placeholder (Serperos*)" hidden="false" targetId="7600-70e6-8f2e-691c" type="rule"/>
+            <infoLink id="fbcf-df32-0497-a004" name="Serperos*" hidden="false" targetId="6bf2-c755-59f6-a05c" type="profile"/>
+            <infoLink id="40b8-9eef-ce51-9be3" name="Special Rules (Serperos*)" hidden="false" targetId="f5d4-1ef5-5dd4-abf5" type="rule"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="68f6-a665-753c-9cee" name="Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="a1f7-e4bc-f1fa-648c">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d93-7bd1-d1a3-d3cc" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="595a-eaf9-4704-1244" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="a1f7-e4bc-f1fa-648c" name="Storm Laser Array" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d530-2bcc-fcae-987d" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="dd84-5115-9d51-5ca9" name="Storm Laser Array" hidden="false" targetId="b0fa-0022-19d6-71cd" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="48cc-ae57-a461-12c2" name="Exo-planar Bombard" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b66e-083c-ad53-b91a" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="ed16-d185-e6c9-6206" name="Exo-planar Bombard" hidden="false" targetId="304d-57ee-8440-15ab" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-            <selectionEntryGroup id="e077-9f29-d58f-bfc7" name="Weapon 2" hidden="false" collective="false" import="true" defaultSelectionEntryId="22bf-e6b6-863e-51ec">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0279-a4e6-3b87-feac" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c86-9833-4413-ab27" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="22bf-e6b6-863e-51ec" name="Serperos Lascutters" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="996e-7406-88f7-8078" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="cc6f-9251-8e9e-19bb" name="Serperos Lascutters" hidden="false" targetId="2811-cb00-0588-4180" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="1d66-096a-bf52-37d3" name="Irradiation Engine" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d45c-2805-c57f-078c" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="a7af-7389-1f45-48f3" name="Irradiation Engine" hidden="false" targetId="6ecd-67a0-edec-a919" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b1cf-5111-c356-c7ea" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="694a-e043-44e5-0402" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="b9dd-f420-d12d-9edf" name="Scintillax*" hidden="true" collective="false" import="true" targetId="19bf-abcc-37cb-8fc3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="9dbf-335e-c52c-5006" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dbf-335e-c52c-5006" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4265,102 +3920,14 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07c3-6fc6-9e34-2203" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="7b93-fecc-ce91-b0a9" name="Tenebrax*" hidden="false" targetId="8b80-a980-9fe5-92f1" type="profile">
-              <modifiers>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Stalker Volkite Culverins">
-                  <conditions>
-                    <condition field="selections" scope="f1bc-2602-8642-d9c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bac2-57d9-7439-1205" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Exo-planar Cannon">
-                  <conditions>
-                    <condition field="selections" scope="f1bc-2602-8642-d9c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a217-b353-a6d9-77dd" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Stalker Maxima Bolters">
-                  <conditions>
-                    <condition field="selections" scope="f1bc-2602-8642-d9c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9412-82a3-9d38-e909" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink id="f873-bf06-e9c9-d144" name="Storm Laser Flenser" hidden="false" targetId="9b17-67d5-007d-c4b2" type="profile"/>
-            <infoLink id="2fa1-45f3-872c-3fbd" name="Placeholder (Tenebrax*)" hidden="false" targetId="40a8-2726-87e6-dda6" type="rule"/>
+            <infoLink id="7b93-fecc-ce91-b0a9" name="Tenebrax*" hidden="false" targetId="8b80-a980-9fe5-92f1" type="profile"/>
+            <infoLink id="a1af-19a5-d802-2407" name="Special Rules (Tenebrax*)" hidden="false" targetId="847a-f0a8-b975-8c59" type="rule"/>
           </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="248a-6e38-02a0-f9c1" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="bac2-57d9-7439-1205">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="58ca-97ef-fc6b-e201" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c906-9cbb-6a28-c443" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="bac2-57d9-7439-1205" name="Stalker Volkite Culverins" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a3c-1da8-9a0e-2835" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="dd75-886f-fa34-f3c9" name="Stalker Volkite Culverins" hidden="false" targetId="19f5-fe8d-e00a-8135" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="a217-b353-a6d9-77dd" name="Exo-planar Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aac-7e86-b1ce-8561" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="5542-6e8c-53a7-9bba" name="Exo-planar Cannon" hidden="false" targetId="94f9-8b98-a812-ab16" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9412-82a3-9d38-e909" name="Stalker Maxima Bolters" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a621-a6f5-41a1-22f5" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="3c78-fd6d-4736-b1b0" name="Stalker Maxima Bolters" hidden="false" targetId="0f1b-966c-af6d-55b9" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="1279-699c-d540-15d4" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08b5-1971-dcde-dbe8" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="f768-18d5-61db-dd4a" name="Scintillax*" hidden="true" collective="false" import="true" targetId="19bf-abcc-37cb-8fc3" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="23b3-0ea3-6dc0-7506" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a361-b07f-1b9c-872c" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23b3-0ea3-6dc0-7506" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4368,68 +3935,11 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="1f9b-5c47-b20e-f89d" name="Errax*" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntries>
-        <selectionEntry id="5c0b-ea89-28f7-5505" name="Errax*" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fae-86a1-9ff9-df30" type="min"/>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c1b-3ed0-54a0-25c1" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="fc8a-37f0-a931-e784" name="Errax*" hidden="false" targetId="f728-423e-ac66-3e3d" type="profile">
-              <modifiers>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Errax Lascutters,">
-                  <conditions>
-                    <condition field="selections" scope="5c0b-ea89-28f7-5505" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d1bb-6f86-cb92-1fa2" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Errax Meltagun,">
-                  <conditions>
-                    <condition field="selections" scope="5c0b-ea89-28f7-5505" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d94a-34a3-fa80-2a4a" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Stalker Maxima Bolters"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="50b8-d3da-099a-f057" name="Stalker Maxima Bolters" hidden="false" targetId="0f1b-966c-af6d-55b9" type="profile"/>
-            <infoLink id="fbbd-9403-185e-9e73" name="Placeholder (Errax*)" hidden="false" targetId="7c98-3fbf-6bc7-1360" type="rule"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="1407-2eb3-412f-a290" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d1bb-6f86-cb92-1fa2">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cbf-c395-5c4b-f123" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b33-2f43-54f1-386b" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="d1bb-6f86-cb92-1fa2" name="Errax Lascutters" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f0b-8aa4-61d3-8e2f" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="ac97-8925-692e-53dd" name="Errax Lascutters" hidden="false" targetId="604f-2344-a395-2a46" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="d94a-34a3-fa80-2a4a" name="Errax Meltagun" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c84-f610-9f32-ca63" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="997c-c97b-fd08-e888" name="Errax Meltagun" hidden="false" targetId="a623-eeb6-fda0-ee87" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <rules>
+        <rule id="a9f7-f97f-26eb-6a3f" name="Errax*" hidden="false">
+          <description>TODO.</description>
+        </rule>
+      </rules>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4637,9 +4147,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                   </constraints>
                   <infoLinks>
                     <infoLink id="9724-a393-1fd1-f963" name="Archmagos Prime on Abeyant*" hidden="false" targetId="5728-3bb8-7345-6cec" type="profile"/>
-                    <infoLink id="6578-563c-1263-e64d" name="Meltagun" hidden="false" targetId="2a37-cf5d-ac01-44e1" type="profile"/>
-                    <infoLink id="ce9f-564b-6ee4-6c09" name="Power Weapons" hidden="false" targetId="e2c7-0a51-f478-d50c" type="profile"/>
-                    <infoLink id="3b9e-b78c-9024-882b" name="Placeholder (Archmagos Prime on Abeyant*)" hidden="false" targetId="7250-ae67-a368-af49" type="rule"/>
+                    <infoLink id="3c82-f5f1-e9b6-f166" name="Special Rules (Archmagos Prime on Abeyant*)" hidden="false" targetId="7ffc-6e91-24ba-9076" type="rule"/>
                     <infoLink id="ebd0-d47a-3998-166b" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
@@ -4664,70 +4172,9 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     <selectionEntry id="19bf-abcc-37cb-8fc3" name="Scintillax*" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="8d92-1d96-5494-1c21" name="Scintillax*" hidden="false">
-          <description>Add 1 Scintillax, the Cortex Controller for the formation's Stalkers.</description>
+          <description>TODO.</description>
         </rule>
       </rules>
-      <selectionEntries>
-        <selectionEntry id="5e21-ad56-657b-6911" name="Scintillax*" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43d9-32c2-9201-0251" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d70-b08f-6fa3-01ed" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="52c1-5b76-b2e6-776a" name="Scintillax*" hidden="false" targetId="8710-8e8c-d52c-5b48" type="profile">
-              <modifiers>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Exo-planar Cannon">
-                  <conditions>
-                    <condition field="selections" scope="5e21-ad56-657b-6911" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1dd5-18fd-3e9b-b411" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Storm Laser">
-                  <conditions>
-                    <condition field="selections" scope="5e21-ad56-657b-6911" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61dd-bf17-a74f-f17b" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink id="ed0a-1201-60ea-0d7b" name="Scintillax Lascutter" hidden="false" targetId="e9e9-35b9-e4d8-9ac5" type="profile"/>
-            <infoLink id="2ccf-286e-31ea-e3ef" name="Placeholder (Scintillax*)" hidden="false" targetId="5124-e27e-a225-2a6f" type="rule"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="7ab9-0443-8457-9936" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1dd5-18fd-3e9b-b411">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3c3-1198-a1ec-8aab" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a13-9510-2077-ece0" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="1dd5-18fd-3e9b-b411" name="Exo-planar Cannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c24-36a2-a864-8032" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="1ba2-3ee2-b248-c124" name="Exo-planar Cannon" hidden="false" targetId="94f9-8b98-a812-ab16" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="61dd-bf17-a74f-f17b" name="Storm Laser" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d8b-182a-639c-6bac" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="cd24-9483-4e91-e67d" name="Storm Laser" hidden="false" targetId="6c5f-6eaa-14b5-430d" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4879,35 +4326,26 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     <rule id="6c2a-d7a4-943e-52fb" name="Critical Hit (Ordinatus Minoris)" hidden="false">
       <description>The Ordinatus is destroyed. All units within 15cm suffer a standard hit on a 5+.</description>
     </rule>
-    <rule id="7250-ae67-a368-af49" name="Placeholder (Archmagos Prime on Abeyant*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="b9ad-43f8-6b56-0c25" name="Placeholder (Arlatax Battle-Automata*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="133c-590d-20f6-383e" name="Placeholder (Domitar Battle-Automata*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="7c98-3fbf-6bc7-1360" name="Placeholder (Errax*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="8c9b-2d7e-cd55-92f2" name="Placeholder (Harpax*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="4a0d-6134-6943-b189" name="Placeholder (Krios Venator*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="5124-e27e-a225-2a6f" name="Placeholder (Scintillax*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="7600-70e6-8f2e-691c" name="Placeholder (Serperos*)" hidden="false">
-      <description>Stats to be written.</description>
-    </rule>
-    <rule id="40a8-2726-87e6-dda6" name="Placeholder (Tenebrax*)" hidden="false">
-      <description>Stats to be written.</description>
+    <rule id="7ffc-6e91-24ba-9076" name="Special Rules (Archmagos Prime on Abeyant*)" hidden="false">
+      <description>TODO.</description>
     </rule>
     <rule id="4643-9fb8-ff01-2157" name="Special Rules (Archmagos Prime)" hidden="false">
       <description>Upgrades the unit type to AV.</description>
+    </rule>
+    <rule id="c97d-f3f1-7cf9-a6be" name="Special Rules (Arlatax Battle-Automata*)" hidden="false">
+      <description>TODO.</description>
+    </rule>
+    <rule id="af78-324d-cb71-c491" name="Special Rules (Domitar Battle-Automata*)" hidden="false">
+      <description>TODO.</description>
+    </rule>
+    <rule id="6b6b-a23e-e402-8e0e" name="Special Rules (Errax*)" hidden="false">
+      <description>TODO.</description>
+    </rule>
+    <rule id="ee88-586f-11cc-e0d9" name="Special Rules (Harpax*)" hidden="false">
+      <description>TODO.</description>
+    </rule>
+    <rule id="6e91-485a-a806-806c" name="Special Rules (Krios Venator*)" hidden="false">
+      <description>TODO.</description>
     </rule>
     <rule id="8aa6-e87a-1295-1748" name="Special Rules (Magos Prime)" hidden="false">
       <description>Upgrades the unit type to AV.</description>
@@ -4917,6 +4355,12 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     </rule>
     <rule id="8abe-8369-5f3a-dbc6" name="Special Rules (Myrmidon Secutors)" hidden="false">
       <description>May not take a March action.</description>
+    </rule>
+    <rule id="f5d4-1ef5-5dd4-abf5" name="Special Rules (Serperos*)" hidden="false">
+      <description>TODO.</description>
+    </rule>
+    <rule id="847a-f0a8-b975-8c59" name="Special Rules (Tenebrax*)" hidden="false">
+      <description>TODO.</description>
     </rule>
     <rule id="01d8-3d55-bd48-da66" name="Transport (Mechanicum Land Raider)" hidden="false">
       <description>May carry 1 Thallax, Ursarax or Myrmidon unit OR 2 of the following units: Tech Thrall, Tech Priest, Scyllax A Mechanicum Land Raider is armed with Twin Lascannons OR Flamestorm Cannons OR Twin Multi-Meltas, choose which weapon before the game.</description>
@@ -4943,7 +4387,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Meltagun, Power Weapons</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="183d-f6e4-36c1-5d1b" name="Arlatax Battle-Automata*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4953,14 +4397,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8dd9-c8b3-1cd2-90db" name="Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="f3b4-856c-1ae7-f9d8" name="Avenger Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4994,28 +4431,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Domitar Missile Launcher, Graviton Hammers</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="52f2-9153-2813-f794" name="Domitar Missile Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="604f-2344-a395-2a46" name="Errax Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="a623-eeb6-fda0-ee87" name="Errax Meltagun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="f728-423e-ac66-3e3d" name="Errax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -5025,28 +4441,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
-      </characteristics>
-    </profile>
-    <profile id="304d-57ee-8440-15ab" name="Exo-planar Bombard" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="94f9-8b98-a812-ab16" name="Exo-planar Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="7a0a-aaba-d635-d0be" name="Exo-planar Repeaters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3b6d-0fb1-a224-5fb7" name="Falchion" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -5083,20 +4478,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
       </characteristics>
     </profile>
-    <profile id="619b-cb44-235a-ab86" name="Graviton Hammers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="fbfe-7430-c8d7-4541" name="Harpax Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="6939-c7b6-38a8-f468" name="Harpax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
@@ -5104,7 +4485,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3b5f-8669-c1cd-c9f9" name="Heavy Stubber" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5158,13 +4539,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannons, TL Autocannons, Kraken Heavy Missiles</characteristic>
       </characteristics>
     </profile>
-    <profile id="6ecd-67a0-edec-a919" name="Irradiation Engine" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="02fd-6427-562f-dc1f" name="Karacnos Assault Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
@@ -5206,7 +4580,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Pulsar Fusil, Volkite Caliver Sponsons</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="bf35-6747-d536-9485" name="Las-Locks" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5269,13 +4643,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+ / 3+ / 4+</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2a37-cf5d-ac01-44e1" name="Meltagun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="ced4-d0a1-e084-4ed5" name="Minotaur Artillery Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -5355,13 +4722,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>
       </characteristics>
     </profile>
-    <profile id="fcb9-22f5-632b-22d4" name="Plasma Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="a9d0-4785-1e0a-3d9f" name="Power Axes" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
@@ -5376,13 +4736,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
       </characteristics>
     </profile>
-    <profile id="9961-a9d3-0459-f715" name="Power Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="935d-f3df-4e45-0dad" name="Power Fist" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
@@ -5390,25 +4743,11 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
       </characteristics>
     </profile>
-    <profile id="e2c7-0a51-f478-d50c" name="Power Weapons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="f96c-3f8b-4262-088e" name="Power Weapons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="410b-15f6-1bae-b29d" name="Pulsar Fusil" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="e969-2202-5984-1b67" name="Pulsar Fusil" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5432,23 +4771,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="e9e9-35b9-e4d8-9ac5" name="Scintillax Lascutter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8710-8e8c-d52c-5b48" name="Scintillax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
-      <characteristics>
-        <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Scintillax Lascutter,</characteristic>
-      </characteristics>
-    </profile>
     <profile id="87f8-c2e2-ef01-7a3a" name="Scyllax Guardian-Automata" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
@@ -5459,13 +4781,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Mechandrite Array</characteristic>
       </characteristics>
     </profile>
-    <profile id="2811-cb00-0588-4180" name="Serperos Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="6bf2-c755-59f6-a05c" name="Serperos*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
@@ -5473,7 +4788,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e"></characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">-</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
@@ -5505,41 +4820,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">100cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP10</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Disrupt, FxF</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="0f1b-966c-af6d-55b9" name="Stalker Maxima Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="19f5-fe8d-e00a-8135" name="Stalker Volkite Culverins" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="6c5f-6eaa-14b5-430d" name="Storm Laser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="b0fa-0022-19d6-71cd" name="Storm Laser Array" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="9b17-67d5-007d-c4b2" name="Storm Laser Flenser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="f307-563c-ab97-8375" name="TL Autocannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5621,7 +4901,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Storm Laser Flenser,</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="73a2-31a5-0d50-b1e3" name="Thallax" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -5704,13 +4984,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">6+</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Lightning Claws</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="61bf-de5d-b13c-a463" name="Volkite Caliver Sponsons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="456b-5faa-a0f5-8db7" name="Volkite Culverin" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

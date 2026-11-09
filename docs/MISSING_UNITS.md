@@ -5,4 +5,4 @@ Every Legions Imperialis Legion Astartes, Solar Auxilia, Mechanicum, Dark Mechan
 ## Related notes
 
 - **Covered another way:** the Dreadnought Drop Pod and Deathstorm Drop Pod. EpicAU's Drop Pod already carries Dreadnoughts and has a Deathstorm Bombardment.
-- The fan-made units that were converted from the [BSData Legions Imperialis](https://github.com/BSData/Horus-Heresy-Legions-Imperialis) data are now placeholders, with their stats, rules and points to be written. The README lists them.
+- The fan-made units that were converted from the [BSData Legions Imperialis](https://github.com/BSData/Horus-Heresy-Legions-Imperialis) data are now TODO entries, cleared out until they are rewritten by hand. The README lists them.

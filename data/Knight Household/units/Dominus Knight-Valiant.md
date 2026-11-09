@@ -10,20 +10,11 @@ fan-made: true
 |---|---|---|---|---|
 | WE | 15cm | 4+ | 4+ | 4+ |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| Conflagration Cannon | - | - |
-| Thundercoil Harpoon | - | - |
-| TL Siegebreaker Cannon | - | - |
-| Shieldbreaker Missiles | - | - |
-
 ## Notes
 
-DC2, Ion Shield. Placeholder: weapons and rules to be written.
+DC2, Ion Shield. TODO.
 
 ## Sources
 
 - EpicAU wiki (archived): stat line, from the wiki reference sheet
-- Placeholder: its weapons and rules were adapted from Empire of Ashes, and are to be written
+- TODO: its weapons and rules were adapted from Empire of Ashes, and are to be written

@@ -9,16 +9,10 @@ fan-made: true
 |---|---|---|---|---|
 | WE | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| Ascalon Inferno Gun | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

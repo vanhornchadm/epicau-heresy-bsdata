@@ -1,10 +1,6 @@
 ---
 slot: support
 cost: 0
-upgrades:
-  - Drop Assault
-  - Centurion
-  - Palisade Drop Pod
 fan-made: true
 ---
 # Legion Saturnine Dreadnought Talon
@@ -15,4 +11,4 @@ fan-made: true
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

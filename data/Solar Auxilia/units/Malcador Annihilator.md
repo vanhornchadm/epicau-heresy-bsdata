@@ -9,18 +9,10 @@ fan-made: true
 |---|---|---|---|---|
 | AV | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| Twin Lascannon | - | - |
-| 2 x Lascannon | - | - |
-| Demolisher Cannon | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
+TODO.
 
 ## Sources
 
-- Placeholder: it put the Imperial Militia sheet's weapons on the Solar Auxilia Malcador, a combination designed for this data; its stats are to be written
+- TODO: it put the Imperial Militia sheet's weapons on the Solar Auxilia Malcador, a combination designed for this data; its stats are to be written

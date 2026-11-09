@@ -9,23 +9,10 @@ fan-made: true
 |---|---|---|---|---|
 | INF | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| Exo-planar Repeaters OR | - | - |
-| Harpax Lascutters | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
-
-## Weapon options
-
-- **Weapons**: pick one
-  - Exo-planar Repeaters
-  - Harpax Lascutters
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

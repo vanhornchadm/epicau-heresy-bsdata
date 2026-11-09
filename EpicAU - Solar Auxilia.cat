@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="24" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7f9c-9621-3bba-e4e8" name="EpicAU - Solar Auxilia" revision="25" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="4bed-a77c-ebab-1136" name="Solar Auxilia" hidden="false">
       <rules>
@@ -188,22 +188,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="fc7b-a027-3b71-9591" name="Aethon Heavy Sentinel*" hidden="false" targetId="eb06-fd56-e0d7-7960" type="profile"/>
-            <infoLink id="761f-4b2e-3880-7dab" name="Multilaser" hidden="false" targetId="2b90-722a-f265-9d23" type="profile"/>
-            <infoLink id="cf03-3a1c-cac9-07bc" name="Sentinel Missile Launcher" hidden="false" targetId="3b62-cb41-d68b-50ed" type="profile"/>
-            <infoLink id="ebc5-7c62-6706-0eda" name="Placeholder (Aethon Heavy Sentinel*)" hidden="false" targetId="d9af-c7c0-053d-0872" type="rule"/>
+            <infoLink id="d083-f2b0-9d13-d58b" name="Special Rules (Aethon Heavy Sentinel*)" hidden="false" targetId="8cc7-96a4-61a3-1a4d" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="0fef-9f9f-bb85-accf" name="Legate Commander" hidden="false" collective="false" import="true" targetId="982e-f1a4-74bf-ba12" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5d5-9e3f-8812-e6a0" type="max"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1466,24 +1457,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <infoLinks>
                 <infoLink id="3b2e-edfb-6971-6c1f" name="Malcador Annihilator*" hidden="false" targetId="045f-1646-8d59-8704" type="profile"/>
-                <infoLink id="c3d2-97ba-b273-4764" name="Twin Lascannon" hidden="false" targetId="1af3-18b6-ad31-a35e" type="profile"/>
-                <infoLink id="ef35-bd3a-0293-33d9" name="Demolisher Cannon" hidden="false" targetId="2dd1-d3ac-f040-2819" type="profile"/>
-                <infoLink id="38c0-d08d-65c2-6d97" name="Placeholder (Malcador Annihilator*)" hidden="false" targetId="eb17-3251-cea6-15d4" type="rule"/>
+                <infoLink id="7e94-7302-96a5-751d" name="Special Rules (Malcador Annihilator*)" hidden="false" targetId="f846-b84f-c0f8-105f" type="rule"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="6df0-4c4e-857f-ea6a" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c00-9801-6185-4c47" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b9-93f2-16da-e84d" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f471-3e03-1526-04ba" name="Lascannon" hidden="false" targetId="d9d6-82f4-17b3-5938" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1506,8 +1481,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <infoLinks>
                 <infoLink id="cf07-a959-0114-9eb3" name="Malcador Vanquisher*" hidden="false" targetId="62d2-239a-c6ce-56c9" type="profile"/>
-                <infoLink id="ad09-e732-9466-cfc7" name="Vanquisher Cannon" hidden="false" targetId="e4d1-1764-6bb0-dd94" type="profile"/>
                 <infoLink id="13e0-7a1d-00be-48fb" name="Heavy Bolter" hidden="false" targetId="c412-4fdc-798d-bff3" type="profile"/>
+                <infoLink id="4888-8a04-a23f-8288" name="Special Rules (Malcador Vanquisher*)" hidden="false" targetId="5138-634c-34b7-86e5" type="rule"/>
                 <infoLink id="7184-3774-50ee-b8a8" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
                 <infoLink id="008a-307a-329d-25d2" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
               </infoLinks>
@@ -1771,23 +1746,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <infoLinks>
                 <infoLink id="6dc1-fe5c-b8aa-c764" name="Imperial Navy Marauder Colossus*" hidden="false" targetId="7e59-523c-4709-7f75" type="profile"/>
-                <infoLink id="be1a-020d-b770-395e" name="Colossus Bomb" hidden="false" targetId="5b0d-ab82-dcc0-08fc" type="profile"/>
-                <infoLink id="3894-172c-7d23-5fb3" name="Hellstrike Missiles" hidden="false" targetId="0ee6-1a0c-b624-f1ca" type="profile"/>
+                <infoLink id="bb7e-afdd-bbc3-29fc" name="Special Rules (Imperial Navy Marauder Colossus*)" hidden="false" targetId="383c-cbc1-5283-0be9" type="rule"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="fa65-b7ef-b32e-a3c0" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d51-2322-da09-48b1" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d752-152c-d803-801a" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="7fdf-9a4a-faec-f089" name="Twin Heavy Bolter" hidden="false" targetId="7f48-4132-81dc-1144" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -1798,34 +1758,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <infoLinks>
                 <infoLink id="1963-7d3d-ed0b-d77f" name="Imperial Navy Marauder Pathfinder*" hidden="false" targetId="d205-c1f3-f7dc-6cdc" type="profile"/>
-                <infoLink id="7046-56fb-a29a-5259" name="Placeholder (Imperial Navy Marauder Pathfinder*)" hidden="false" targetId="3576-ee8e-94f2-0ad1" type="rule"/>
+                <infoLink id="cf69-64d0-ccab-e2de" name="Special Rules (Imperial Navy Marauder Pathfinder*)" hidden="false" targetId="a0ed-3f7c-d284-97dc" type="rule"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="3af7-2512-f1df-2e22" name="Hellstrike Missiles" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30d2-8b0c-d980-f41c" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3108-4de8-e4de-94c7" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="22d4-4b28-10c8-f650" name="Hellstrike Missiles" hidden="false" targetId="0ee6-1a0c-b624-f1ca" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="6ded-43eb-524f-cda3" name="Twin Heavy Bolter" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3840-49e4-2a83-d518" type="min"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19c9-d43e-47d5-1fb0" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="52f8-17cd-5a7a-9962" name="Twin Heavy Bolter" hidden="false" targetId="7f48-4132-81dc-1144" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -2178,9 +2112,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
               </constraints>
               <infoLinks>
                 <infoLink id="09de-135f-2b20-ea93" name="Leman Russ Annihilator*" hidden="false" targetId="9d56-8fc5-11a2-365e" type="profile"/>
-                <infoLink id="13e6-84bf-6e25-ecbe" name="Annihilator Twin Lascannon" hidden="false" targetId="da55-a744-dc6e-ce5e" type="profile"/>
-                <infoLink id="a586-659d-b8d4-bd61" name="Lascannon" hidden="false" targetId="d9d6-82f4-17b3-5938" type="profile"/>
-                <infoLink id="a715-d1bd-6a0a-1cfe" name="Placeholder (Leman Russ Annihilator*)" hidden="false" targetId="f439-1e51-f01f-bbe7" type="rule"/>
+                <infoLink id="8436-d19f-84b5-ec1d" name="Special Rules (Leman Russ Annihilator*)" hidden="false" targetId="e131-3581-bcc7-2116" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -2577,37 +2509,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="bb3f-aad4-400b-c907" name="Hellhammer*" hidden="false" targetId="e23a-cf6a-2ea5-b29f" type="profile"/>
-                    <infoLink id="471b-ab0c-664e-9334" name="Autocannon" hidden="false" targetId="943d-b06d-97df-c039" type="profile"/>
-                    <infoLink id="f516-0034-3b7e-b305" name="Hellhammer Cannon" hidden="false" targetId="0ae2-5c29-95db-85d7" type="profile"/>
-                    <infoLink id="14e9-5e89-4bb0-1297" name="Demolisher Cannon" hidden="false" targetId="2dd1-d3ac-f040-2819" type="profile"/>
-                    <infoLink id="54bd-4645-48bd-94bb" name="Placeholder (Hellhammer*)" hidden="false" targetId="0d51-d9a4-08d8-04de" type="rule"/>
+                    <infoLink id="5d84-b0d8-17b6-ae91" name="Special Rules (Hellhammer*)" hidden="false" targetId="3ac0-a4d0-c045-42d9" type="rule"/>
                   </infoLinks>
-                  <selectionEntries>
-                    <selectionEntry id="f3b8-8e5e-5f41-1efa" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e53d-a1b4-4939-7f1d" type="min"/>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b9e-f47f-99bb-1742" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="13a7-353f-2031-b859" name="TL Heavy Bolters" hidden="false" targetId="e183-62af-efc7-145b" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="dafd-0e74-05d5-6202" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac2d-eef4-faee-f13e" type="min"/>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15db-c3ec-2338-c123" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="b971-65ad-f42d-0de8" name="Lascannon" hidden="false" targetId="d9d6-82f4-17b3-5938" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -2984,37 +2887,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="37b5-38ab-1ea3-0383" name="Hellhammer*" hidden="false" targetId="e23a-cf6a-2ea5-b29f" type="profile"/>
-                    <infoLink id="1ac7-10e3-dfe5-3d87" name="Autocannon" hidden="false" targetId="943d-b06d-97df-c039" type="profile"/>
-                    <infoLink id="b1c1-3ec1-0355-b255" name="Hellhammer Cannon" hidden="false" targetId="0ae2-5c29-95db-85d7" type="profile"/>
-                    <infoLink id="2b92-7dd4-0b85-6521" name="Demolisher Cannon" hidden="false" targetId="2dd1-d3ac-f040-2819" type="profile"/>
-                    <infoLink id="0211-d3ba-d2ea-49e9" name="Placeholder (Hellhammer*)" hidden="false" targetId="0d51-d9a4-08d8-04de" type="rule"/>
+                    <infoLink id="fcbc-18b7-2d14-99a3" name="Special Rules (Hellhammer*)" hidden="false" targetId="3ac0-a4d0-c045-42d9" type="rule"/>
                   </infoLinks>
-                  <selectionEntries>
-                    <selectionEntry id="df45-a53b-648a-dc50" name="TL Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5292-d55b-9110-3923" type="min"/>
-                        <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1668-cd8c-d1c4-f9de" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="fa45-d62a-aba7-b116" name="TL Heavy Bolters" hidden="false" targetId="e183-62af-efc7-145b" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry id="5d04-1a5b-5b29-de2d" name="Lascannon" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d45-34b3-f0f7-fdb8" type="min"/>
-                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0fc-9318-455e-c576" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="7401-5e3f-c520-ef3f" name="Lascannon" hidden="false" targetId="d9d6-82f4-17b3-5938" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
@@ -3717,66 +3591,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="fe44-831e-58cf-9a86" name="Cyclops Battery*" hidden="false" collective="false" import="true" type="upgrade">
-      <selectionEntries>
-        <selectionEntry id="d69b-cf53-a39d-4288" name="Cyclops Demolition Vehicle*" hidden="false" collective="false" import="true" type="model">
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00f5-1cd9-d83e-6b9d" type="min"/>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2591-b0e6-0808-4995" type="max"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="e70f-aefe-c15f-d5ea" name="Cyclops Demolition Vehicle*" hidden="false" targetId="6e5a-5955-8109-e78f" type="profile">
-              <modifiers>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Demolition Charge">
-                  <conditions>
-                    <condition field="selections" scope="d69b-cf53-a39d-4288" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4a2-b9df-ede4-b687" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="append" field="4e39-030c-4e18-12e0" value="Incineration Charge">
-                  <conditions>
-                    <condition field="selections" scope="d69b-cf53-a39d-4288" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="50ed-0400-d4aa-4cae" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-            <infoLink id="7c47-17fa-274e-aae3" name="Placeholder (Cyclops Demolition Vehicle*)" hidden="false" targetId="080b-f0cd-e8cb-15c4" type="rule"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="1b02-d466-4514-5b05" name="Charge" hidden="false" collective="false" import="true" defaultSelectionEntryId="f4a2-b9df-ede4-b687">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6731-9707-da42-d5bd" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="420e-21a4-a467-5598" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="f4a2-b9df-ede4-b687" name="Demolition Charge" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5f1-7e2a-a944-a7f9" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="f008-e872-cb53-ed80" name="Demolition Charge" hidden="false" targetId="4e06-53a3-42c4-596a" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="50ed-0400-d4aa-4cae" name="Incineration Charge" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae9f-8a5c-b7b5-88b2" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="0c16-2827-ab7d-0987" name="Incineration Charge" hidden="false" targetId="2417-18f1-9428-31c7" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <rules>
+        <rule id="9eed-4ebc-7baf-974a" name="Cyclops Battery*" hidden="false">
+          <description>TODO.</description>
+        </rule>
+      </rules>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4370,23 +4189,26 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="4679-f808-45ba-e553" name="Critical Hit (Stormsword)" hidden="false">
       <description>The unit is destroyed. All units within 5cm take a standard hit on a 6+.</description>
     </rule>
-    <rule id="d9af-c7c0-053d-0872" name="Placeholder (Aethon Heavy Sentinel*)" hidden="false">
-      <description>Stats to be written.</description>
+    <rule id="8cc7-96a4-61a3-1a4d" name="Special Rules (Aethon Heavy Sentinel*)" hidden="false">
+      <description>TODO.</description>
     </rule>
-    <rule id="080b-f0cd-e8cb-15c4" name="Placeholder (Cyclops Demolition Vehicle*)" hidden="false">
-      <description>Stats to be written.</description>
+    <rule id="3ac0-a4d0-c045-42d9" name="Special Rules (Hellhammer*)" hidden="false">
+      <description>TODO.</description>
     </rule>
-    <rule id="0d51-d9a4-08d8-04de" name="Placeholder (Hellhammer*)" hidden="false">
-      <description>Stats to be written.</description>
+    <rule id="383c-cbc1-5283-0be9" name="Special Rules (Imperial Navy Marauder Colossus*)" hidden="false">
+      <description>TODO.</description>
     </rule>
-    <rule id="3576-ee8e-94f2-0ad1" name="Placeholder (Imperial Navy Marauder Pathfinder*)" hidden="false">
-      <description>Stats to be written.</description>
+    <rule id="a0ed-3f7c-d284-97dc" name="Special Rules (Imperial Navy Marauder Pathfinder*)" hidden="false">
+      <description>TODO.</description>
     </rule>
-    <rule id="f439-1e51-f01f-bbe7" name="Placeholder (Leman Russ Annihilator*)" hidden="false">
-      <description>Stats to be written.</description>
+    <rule id="e131-3581-bcc7-2116" name="Special Rules (Leman Russ Annihilator*)" hidden="false">
+      <description>TODO.</description>
     </rule>
-    <rule id="eb17-3251-cea6-15d4" name="Placeholder (Malcador Annihilator*)" hidden="false">
-      <description>Stats to be written.</description>
+    <rule id="f846-b84f-c0f8-105f" name="Special Rules (Malcador Annihilator*)" hidden="false">
+      <description>TODO.</description>
+    </rule>
+    <rule id="5138-634c-34b7-86e5" name="Special Rules (Malcador Vanquisher*)" hidden="false">
+      <description>TODO.</description>
     </rule>
     <rule id="d358-e95d-e878-acc8" name="Transport (Arvus Lighter Orbital Shuttle)" hidden="false">
       <description>May carry two infantry units (Ogryn Charonite and Rapier Platforms take up two spaces each).</description>
@@ -4412,14 +4234,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Multilaser, Sentinel Missile Launcher</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="da55-a744-dc6e-ce5e" name="Annihilator Twin Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3a87-c4e8-db2b-836a" name="Archeotech Pistol" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4443,13 +4258,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="943d-b06d-97df-c039" name="Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -4542,23 +4350,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
       </characteristics>
     </profile>
-    <profile id="5b0d-ab82-dcc0-08fc" name="Colossus Bomb" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="6e5a-5955-8109-e78f" name="Cyclops Demolition Vehicle*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
-      <characteristics>
-        <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
-      </characteristics>
-    </profile>
     <profile id="fe70-74d3-f0af-fe9d" name="Dauntless Class Light Cruiser" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">SC</characteristic>
@@ -4567,13 +4358,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Orbital Bombardment / Lance Battery</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2dd1-d3ac-f040-2819" name="Demolisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="590c-ab29-2d7d-8700" name="Demolisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4588,13 +4372,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT4+ Ignore Cover AND (small arms) Ignore Cover</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4e06-53a3-42c4-596a" name="Demolition Charge" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3b2a-57fe-eb17-6727" name="Dracosan Armoured Transport" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -4676,13 +4453,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Rear Arc</characteristic>
       </characteristics>
     </profile>
-    <profile id="0ae2-5c29-95db-85d7" name="Hellhammer Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="e23a-cf6a-2ea5-b29f" name="Hellhammer*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
@@ -4690,17 +4460,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
         <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
         <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
-        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">TL Heavy Bolters x3, Autocannon, Lascannon x2, Hellhammer Cannon, Demolisher Cannon</characteristic>
+        <characteristic name="Weapons" typeId="8053-23b9-7271-666e">-</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="0ee6-1a0c-b624-f1ca" name="Hellstrike Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="ee62-a2e7-7e16-52b3" name="Imperial Navy Avenger Strike Fighter" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4730,7 +4493,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Colossus Bomb, Hellstrike Missiles, Twin Heavy Bolter x2</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="734a-7f68-fe17-9b34" name="Imperial Navy Marauder Destroyer*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4750,7 +4513,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Hellstrike Missiles x2, Twin Heavy Bolter x2</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="7c92-8f7f-c77e-81ae" name="Imperial Navy Primaris-Lightning Strike Fighter" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4771,13 +4534,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Multilaser, Underwing Rockets, Storm Bolters</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2417-18f1-9428-31c7" name="Incineration Charge" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="d11a-4b21-5c67-3532" name="Infernus Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4829,13 +4585,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
       </characteristics>
     </profile>
-    <profile id="d9d6-82f4-17b3-5938" name="Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="7706-4f26-e003-8439" name="Laser Destroyer" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
@@ -4860,7 +4609,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Annihilator Twin Lascannon, Lascannon</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="8c83-a24c-f980-af60" name="Leman Russ Battle Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4940,7 +4689,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin Lascannon, Lascannon x2, Demolisher Cannon</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
     <profile id="1280-c35b-1340-10c6" name="Malcador Heavy Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -4970,7 +4719,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
         <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
         <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
-        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Vanquisher Cannon, Autocannons x2, Heavy Bolter</characteristic>
+        <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Autocannons x2, Heavy Bolter</characteristic>
       </characteristics>
     </profile>
     <profile id="b237-9463-8e26-c0f1" name="Medusa" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -5001,13 +4750,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2b90-722a-f265-9d23" name="Multilaser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -5096,13 +4838,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire, Disrupt</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3b62-cb41-d68b-50ed" name="Sentinel Missile Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="f5e6-ad64-b4ee-0643" name="Shadowsword" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -5266,13 +5001,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="e183-62af-efc7-145b" name="TL Heavy Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="3565-a747-1bff-67cb" name="TL Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
@@ -5335,24 +5063,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
       </characteristics>
     </profile>
-    <profile id="7f48-4132-81dc-1144" name="Twin Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
     <profile id="8bf5-0879-c771-fd78" name="Twin Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AA5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="1af3-18b6-ad31-a35e" name="Twin Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -5384,13 +5098,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT2+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="e4d1-1764-6bb0-dd94" name="Vanquisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>

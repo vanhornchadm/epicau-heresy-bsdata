@@ -22,4 +22,4 @@ Teleport, Scout.
 ## Sources
 
 - Derived from EpicAU units: the Solar Auxilia Tarantula and Tarantula Hyperios
-- Placeholder: the formation, its points and the twin lascannon choice were designed for this data or adapted from Legions Imperialis, and are to be written
+- TODO: the formation, its points and the twin lascannon choice were designed for this data or adapted from Legions Imperialis, and are to be written

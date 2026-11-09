@@ -4,10 +4,8 @@ fan-made: true
 ---
 # Errax
 
-## Adds
-
-- 1-4 [[Errax]], +0 pts each
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

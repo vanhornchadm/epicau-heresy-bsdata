@@ -9,20 +9,10 @@ fan-made: true
 |---|---|---|---|---|
 | WE | - | - | - | - |
 
-## Weapons
-
-| Weapon | Range | Firepower |
-|---|---|---|
-| 3 x TL Heavy Bolters | - | - |
-| Autocannon | - | - |
-| 2 x Lascannon | - | - |
-| Hellhammer Cannon | - | - |
-| Demolisher Cannon | - | - |
-
 ## Notes
 
-Placeholder: stats to be written.
+TODO.
 
 ## Sources
 
-- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
+- TODO: was converted from Legions Imperialis (BSData); its stats and points are to be written

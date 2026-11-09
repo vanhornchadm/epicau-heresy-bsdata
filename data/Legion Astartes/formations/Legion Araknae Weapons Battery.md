@@ -7,8 +7,8 @@ fan-made: true
 
 ## Composition
 
-- 2-4 [[Araknae Weapons Platform]], +45 pts each
+- 2-4 [[Araknae Weapons Platform]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Tarantula
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

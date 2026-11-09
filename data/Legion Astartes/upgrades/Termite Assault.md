@@ -10,9 +10,8 @@ Add enough Termite Assault Drills to transport the entire formation (2 Tactical-
 
 ## Adds
 
-- Transports carrying 2 Transport space each: [[Termite Assault Drill]], +30 pts each
+- Transports carrying 2 Transport space each: [[Termite Assault Drill]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against EpicAU transports
-- Net Epic Armageddon rulebook: the Tunneler rule (2.1.23), as on the Squat Termite
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

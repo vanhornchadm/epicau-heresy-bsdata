@@ -7,19 +7,19 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| AV | 25cm | 4+ | 6+ | 5+ |
+| AV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Annihilator Twin Lascannon | 45cm | AT3+ |
-| Lascannon | 45cm | AT5+ |
+| Annihilator Twin Lascannon | - | - |
+| Lascannon | - | - |
 
 ## Notes
 
-Reinforced Armour.
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Leman Russ
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

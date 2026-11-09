@@ -7,8 +7,8 @@ fan-made: true
 
 | Range | Firepower |
 |---|---|
-| (base contact) | (assault weapons) EA(+2), TK(D6), Siege |
+| - | - |
 
 ## Sources
 
-- Legions Imperialis (BSData): the Warmaster Iconoclast weapon, converted
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

@@ -7,20 +7,20 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| WE | 20cm | 4+ | 6+ | 4+ |
+| WE | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| 2 x Conversion Beam Cannon | 75cm | MW3+ |
-| Volkite Culverin | 45cm | AP4+, Disrupt |
-| Karacnos Mortar Battery | 45cm | BP 1, Ignore Cover, Fleshbane |
+| 2 x Conversion Beam Cannon | - | - |
+| Volkite Culverin | - | - |
+| Karacnos Mortar Battery | - | - |
 
 ## Notes
 
-DC3, Ion Shield, Reinforced Armour, Walker. Ionic Flare Shield: its Ion Shield saves are 1 better against Barrage hits, to a maximum of 2+. Critical hit effect: Destroyed.
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): Knights library, converted against the EpicAU Porphyrion
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

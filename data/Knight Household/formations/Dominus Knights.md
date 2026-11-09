@@ -1,6 +1,6 @@
 ---
 slot: support
-cost: 425
+cost: 0
 upgrades:
   - Noble
 fan-made: true
@@ -15,5 +15,4 @@ fan-made: true
 
 ## Sources
 
-- Empire of Ashes: the Dominus Lance: formation and points
-- Derived from EpicAU units: the Valiant as a second choice
+- Placeholder: its formation and points were adapted from Empire of Ashes, and are to be written

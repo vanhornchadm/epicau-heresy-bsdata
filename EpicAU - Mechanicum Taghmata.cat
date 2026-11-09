@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="24" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f2de-6bf1-7172-6576" name="EpicAU - Mechanicum Taghmata" revision="25" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="f42c-88fc-997a-1cc8" name="Mechanicum Taghmata" hidden="false">
       <rules>
@@ -617,15 +617,8 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 <modifier type="append" field="4e39-030c-4e18-12e0" value="Power Claws"/>
               </modifiers>
             </infoLink>
-            <infoLink id="faa0-fefa-eaa5-7d1a" name="Power Claws" hidden="false" targetId="4443-752a-12e0-e53d" type="profile"/>
-            <infoLink id="85da-79bb-d5b6-e4fb" name="Dread Aura (Arlatax Battle-Automata*)" hidden="false" targetId="94ca-b496-7287-450c" type="rule"/>
-            <infoLink id="369b-4a4d-9643-e288" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
-            <infoLink id="9597-4c17-5a78-881e" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="73fc-7e14-e611-78d2" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="caff-4325-171e-94aa" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
-            <infoLink id="b7c7-8fd9-f7dd-f674" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="c792-3898-3fb3-1d14" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="d135-dd52-d04b-94b7" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="a84d-dc53-46f1-35f5" name="Power Claws" hidden="false" targetId="9961-a9d3-0459-f715" type="profile"/>
+            <infoLink id="35ec-8ff2-0932-ed5d" name="Placeholder (Arlatax Battle-Automata*)" hidden="false" targetId="b9ad-43f8-6b56-0c25" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="0422-427f-0948-20b3" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="a8fb-612a-7d97-2172">
@@ -639,7 +632,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e9-d898-f884-e727" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="40d9-b008-774e-6e8c" name="Autocannon" hidden="false" targetId="ad6e-14b4-6c23-799d" type="profile"/>
+                    <infoLink id="e340-32a7-1d27-c7e4" name="Autocannon" hidden="false" targetId="8dd9-c8b3-1cd2-90db" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -650,7 +643,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8700-b22d-21ae-0bdf" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="1e27-3869-cf25-8a87" name="Plasma Cannon" hidden="false" targetId="2450-431b-32a3-4f24" type="profile"/>
+                    <infoLink id="2450-732a-18b3-fbe3" name="Plasma Cannon" hidden="false" targetId="fcb9-22f5-632b-22d4" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -719,7 +712,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9777-5775-88b1-9448" name="Castellax Maniple" hidden="false" collective="false" import="true" type="unit">
@@ -945,16 +938,9 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
           </constraints>
           <infoLinks>
             <infoLink id="8949-a15d-caab-52c2" name="Domitar Battle-Automata*" hidden="false" targetId="c73d-4e05-1ae7-7d03" type="profile"/>
-            <infoLink id="0cd3-8a4b-d9e5-05a5" name="Domitar Missile Launcher" hidden="false" targetId="ce8c-e90b-9ddd-0b40" type="profile"/>
-            <infoLink id="7cbc-5295-9459-e9c9" name="Graviton Hammers" hidden="false" targetId="e493-f7ff-b3ed-a18a" type="profile"/>
-            <infoLink id="7d00-dccd-f61b-f0e3" name="Dread Aura (Domitar Battle-Automata*)" hidden="false" targetId="99da-9fe2-8755-81ee" type="rule"/>
-            <infoLink id="0c72-286e-125f-7875" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
-            <infoLink id="6602-e0b8-04fc-71bd" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="fb6f-bf05-d1ed-3dd5" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="e726-aaea-a95f-afd8" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="c676-5934-ce75-3473" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="6d70-aaba-3b94-0d21" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="9e4d-b746-9889-dfbe" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="9c69-2bc3-186e-c58f" name="Domitar Missile Launcher" hidden="false" targetId="52f2-9153-2813-f794" type="profile"/>
+            <infoLink id="cc97-ab61-a1fa-9490" name="Graviton Hammers" hidden="false" targetId="619b-cb44-235a-ab86" type="profile"/>
+            <infoLink id="8823-704e-5c71-f9aa" name="Placeholder (Domitar Battle-Automata*)" hidden="false" targetId="133c-590d-20f6-383e" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -1016,7 +1002,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="275.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9f43-494f-1547-80f1" name="Imperial Navy Avenger Wing" hidden="false" collective="false" import="true" type="unit">
@@ -1433,12 +1419,9 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
               </constraints>
               <infoLinks>
                 <infoLink id="0ad1-75ce-c227-a2eb" name="Krios Venator*" hidden="false" targetId="ef8d-e3e9-189a-83e4" type="profile"/>
-                <infoLink id="eec9-24a3-6d00-423f" name="Pulsar Fusil" hidden="false" targetId="e969-2202-5984-1b67" type="profile"/>
-                <infoLink id="b394-42e8-38e6-fbce" name="Volkite Caliver Sponsons" hidden="false" targetId="0894-e4be-0400-0d2a" type="profile"/>
-                <infoLink id="1f9a-5c38-4084-dcd2" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-                <infoLink id="f079-44b5-f903-30fd" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                <infoLink id="24ed-0d9f-50c2-5fc1" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                <infoLink id="31b4-a506-4da0-7d3a" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+                <infoLink id="6f2c-7a5c-2e3d-826b" name="Pulsar Fusil" hidden="false" targetId="410b-15f6-1bae-b29d" type="profile"/>
+                <infoLink id="bd17-bfc2-5d27-d201" name="Volkite Caliver Sponsons" hidden="false" targetId="61bf-de5d-b13c-a463" type="profile"/>
+                <infoLink id="1d2a-900a-8c06-3021" name="Placeholder (Krios Venator*)" hidden="false" targetId="4a0d-6134-6943-b189" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -3751,13 +3734,8 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 <modifier type="append" field="4e39-030c-4e18-12e0" value="Stalker Maxima Bolters"/>
               </modifiers>
             </infoLink>
-            <infoLink id="d566-90ab-ff2d-0fb4" name="Stalker Maxima Bolters" hidden="false" targetId="6b18-0448-41a2-deaa" type="profile"/>
-            <infoLink id="bef9-3f99-da54-3ab5" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
-            <infoLink id="0ec9-a624-db7f-4ddd" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="cf32-c0dd-adbd-63fd" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="d112-d5ff-82d5-1fc8" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="f157-f9e4-a827-5d9a" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="617e-a292-cda1-4e32" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="727b-aede-ea05-4f45" name="Stalker Maxima Bolters" hidden="false" targetId="0f1b-966c-af6d-55b9" type="profile"/>
+            <infoLink id="77e8-dd7a-7ddb-167c" name="Placeholder (Errax*)" hidden="false" targetId="7c98-3fbf-6bc7-1360" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="e195-a962-c479-22a5" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="9591-54c8-db88-e28a">
@@ -3771,7 +3749,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="31f3-7cc3-ac37-adbb" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="a64a-a1bf-eadc-b5ad" name="Errax Lascutters" hidden="false" targetId="7db2-cb12-4115-4b00" type="profile"/>
+                    <infoLink id="857d-2f77-f705-ba26" name="Errax Lascutters" hidden="false" targetId="604f-2344-a395-2a46" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3782,7 +3760,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c7-5916-25bc-ebc2" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="5b8f-578b-db2d-0978" name="Errax Meltagun" hidden="false" targetId="2347-fef7-2bc0-5f30" type="profile"/>
+                    <infoLink id="42f6-4501-8227-1f14" name="Errax Meltagun" hidden="false" targetId="a623-eeb6-fda0-ee87" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3840,7 +3818,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="250.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c8bb-0f15-8e73-f045" name="Harpax Scout Host*" hidden="true" collective="false" import="true" type="unit">
@@ -3946,11 +3924,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="7ee8-23fe-6d4e-3372" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="98ab-f0b7-9a92-271c" name="Jump Packs" hidden="false" targetId="2971-9d24-65e8-a53e" type="rule"/>
-            <infoLink id="a555-2f79-372a-31b2" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
-            <infoLink id="a3a5-c977-049b-df3e" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="692c-932e-d193-4680" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="4820-8c8f-999b-dd01" name="Placeholder (Harpax*)" hidden="false" targetId="8c9b-2d7e-cd55-92f2" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="afa6-acf5-6b57-229f" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="73af-2cfa-c5b7-b216">
@@ -3964,7 +3938,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e8-6efb-8031-6255" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="03e2-8c7a-58cd-40ca" name="Exo-planar Repeaters" hidden="false" targetId="a7a1-1a5c-2ff0-88af" type="profile"/>
+                    <infoLink id="d0aa-4a57-4f4d-ee13" name="Exo-planar Repeaters" hidden="false" targetId="7a0a-aaba-d635-d0be" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3975,7 +3949,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="222c-979f-25b4-7b3c" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="63e1-7fd9-18c4-e8df" name="Harpax Lascutters" hidden="false" targetId="0129-b354-1e0a-ac16" type="profile"/>
+                    <infoLink id="104f-0af8-7210-de74" name="Harpax Lascutters" hidden="false" targetId="fbfe-7430-c8d7-4541" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3991,7 +3965,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="100.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6fb9-9241-5305-353b" name="Serperos Heavy Stalker Maniple*" hidden="true" collective="false" import="true" type="unit">
@@ -4103,18 +4077,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="661d-c1de-8b46-4001" name="Construct Shield (Serperos*)" hidden="false" targetId="1a27-3932-aa55-e69d" type="rule"/>
-            <infoLink id="b6db-42a1-e318-5e64" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
-            <infoLink id="d5cc-13e2-dca6-c53b" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="7117-6890-86cf-1057" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="64c5-3cfe-a638-54f2" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="cbcf-c978-d710-5fb1" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="36b4-6055-0ccc-359f" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="b1e5-8704-b3a4-d4cc" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-            <infoLink id="f671-f077-449f-71d9" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-            <infoLink id="94ab-d3a0-e2b7-91ed" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="f21e-0678-ef5e-9343" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-            <infoLink id="11b4-e191-bbcb-484c" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
+            <infoLink id="8f2d-033d-db47-7dfa" name="Placeholder (Serperos*)" hidden="false" targetId="7600-70e6-8f2e-691c" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="68f6-a665-753c-9cee" name="Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="a1f7-e4bc-f1fa-648c">
@@ -4128,7 +4091,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d530-2bcc-fcae-987d" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="197a-c078-668a-7260" name="Storm Laser Array" hidden="false" targetId="9f93-34ed-47ea-a7a5" type="profile"/>
+                    <infoLink id="dd84-5115-9d51-5ca9" name="Storm Laser Array" hidden="false" targetId="b0fa-0022-19d6-71cd" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4139,7 +4102,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b66e-083c-ad53-b91a" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="028e-1028-3fa9-231c" name="Exo-planar Bombard" hidden="false" targetId="1486-699f-f7da-496c" type="profile"/>
+                    <infoLink id="ed16-d185-e6c9-6206" name="Exo-planar Bombard" hidden="false" targetId="304d-57ee-8440-15ab" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4158,7 +4121,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="996e-7406-88f7-8078" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="5575-2251-fb2d-2479" name="Serperos Lascutters" hidden="false" targetId="702e-0fd5-7103-817f" type="profile"/>
+                    <infoLink id="cc6f-9251-8e9e-19bb" name="Serperos Lascutters" hidden="false" targetId="2811-cb00-0588-4180" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4169,7 +4132,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d45c-2805-c57f-078c" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="735c-dd3d-7d5d-8a2e" name="Irradiation Engine" hidden="false" targetId="7292-dd49-237c-1dea" type="profile"/>
+                    <infoLink id="a7af-7389-1f45-48f3" name="Irradiation Engine" hidden="false" targetId="6ecd-67a0-edec-a919" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4179,7 +4142,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="125.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4321,12 +4284,8 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="c2d8-4c30-1492-d379" name="Storm Laser Flenser" hidden="false" targetId="ab78-51cf-a6fb-6a6a" type="profile"/>
-            <infoLink id="104b-4146-e9e4-1336" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
-            <infoLink id="a975-cd4d-3425-f7de" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-            <infoLink id="6d2c-49cf-96e6-0a4b" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="d494-5f43-719c-2d56" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="be4c-38ff-ccee-5062" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+            <infoLink id="f873-bf06-e9c9-d144" name="Storm Laser Flenser" hidden="false" targetId="9b17-67d5-007d-c4b2" type="profile"/>
+            <infoLink id="2fa1-45f3-872c-3fbd" name="Placeholder (Tenebrax*)" hidden="false" targetId="40a8-2726-87e6-dda6" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="248a-6e38-02a0-f9c1" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="bac2-57d9-7439-1205">
@@ -4340,7 +4299,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a3c-1da8-9a0e-2835" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="e39b-88cc-dda1-5c6c" name="Stalker Volkite Culverins" hidden="false" targetId="f5f2-7aec-5817-f15c" type="profile"/>
+                    <infoLink id="dd75-886f-fa34-f3c9" name="Stalker Volkite Culverins" hidden="false" targetId="19f5-fe8d-e00a-8135" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4351,7 +4310,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8aac-7e86-b1ce-8561" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="d999-6484-38be-bea6" name="Exo-planar Cannon" hidden="false" targetId="22c4-7a51-cc87-55eb" type="profile"/>
+                    <infoLink id="5542-6e8c-53a7-9bba" name="Exo-planar Cannon" hidden="false" targetId="94f9-8b98-a812-ab16" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4362,7 +4321,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a621-a6f5-41a1-22f5" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="8a58-e863-3d96-dc25" name="Stalker Maxima Bolters" hidden="false" targetId="6b18-0448-41a2-deaa" type="profile"/>
+                    <infoLink id="3c78-fd6d-4736-b1b0" name="Stalker Maxima Bolters" hidden="false" targetId="0f1b-966c-af6d-55b9" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4403,7 +4362,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="200.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -4431,13 +4390,8 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 <modifier type="append" field="4e39-030c-4e18-12e0" value="Stalker Maxima Bolters"/>
               </modifiers>
             </infoLink>
-            <infoLink id="cbd0-a17a-085f-41f0" name="Stalker Maxima Bolters" hidden="false" targetId="6b18-0448-41a2-deaa" type="profile"/>
-            <infoLink id="ba01-7b94-04c0-5cd9" name="Cybernetica Cortex" hidden="false" targetId="8d61-66bd-1c1d-5a6c" type="rule"/>
-            <infoLink id="029c-cdf1-3384-b167" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="62aa-fda8-80a6-b180" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="d22d-de96-668a-df7c" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="38fd-17d0-78cf-27ab" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="ef91-c9e1-199a-e836" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="50b8-d3da-099a-f057" name="Stalker Maxima Bolters" hidden="false" targetId="0f1b-966c-af6d-55b9" type="profile"/>
+            <infoLink id="fbbd-9403-185e-9e73" name="Placeholder (Errax*)" hidden="false" targetId="7c98-3fbf-6bc7-1360" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="1407-2eb3-412f-a290" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="d1bb-6f86-cb92-1fa2">
@@ -4451,7 +4405,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f0b-8aa4-61d3-8e2f" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="fe8c-437e-0727-7cf0" name="Errax Lascutters" hidden="false" targetId="7db2-cb12-4115-4b00" type="profile"/>
+                    <infoLink id="ac97-8925-692e-53dd" name="Errax Lascutters" hidden="false" targetId="604f-2344-a395-2a46" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4462,7 +4416,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c84-f610-9f32-ca63" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="cdc3-5539-11f3-d8e8" name="Errax Meltagun" hidden="false" targetId="2347-fef7-2bc0-5f30" type="profile"/>
+                    <infoLink id="997c-c97b-fd08-e888" name="Errax Meltagun" hidden="false" targetId="a623-eeb6-fda0-ee87" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4472,7 +4426,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4683,15 +4637,10 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                   </constraints>
                   <infoLinks>
                     <infoLink id="9724-a393-1fd1-f963" name="Archmagos Prime on Abeyant*" hidden="false" targetId="5728-3bb8-7345-6cec" type="profile"/>
-                    <infoLink id="3888-4d7f-d7b5-3f1e" name="Meltagun" hidden="false" targetId="a764-996f-2cdd-50d2" type="profile"/>
-                    <infoLink id="802f-0e1e-523f-4e80" name="Power Weapons" hidden="false" targetId="f96c-3f8b-4262-088e" type="profile"/>
-                    <infoLink id="39d9-3c6a-aa80-a16c" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
-                    <infoLink id="b0fd-f852-6069-68ce" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-                    <infoLink id="709b-8d40-d7ff-05f9" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
+                    <infoLink id="6578-563c-1263-e64d" name="Meltagun" hidden="false" targetId="2a37-cf5d-ac01-44e1" type="profile"/>
+                    <infoLink id="ce9f-564b-6ee4-6c09" name="Power Weapons" hidden="false" targetId="e2c7-0a51-f478-d50c" type="profile"/>
+                    <infoLink id="3b9e-b78c-9024-882b" name="Placeholder (Archmagos Prime on Abeyant*)" hidden="false" targetId="7250-ae67-a368-af49" type="rule"/>
                     <infoLink id="ebd0-d47a-3998-166b" name="Supreme Commander" hidden="false" targetId="d94c-8ff7-0b2a-e614" type="rule"/>
-                    <infoLink id="694d-43b6-8e27-dd9b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                    <infoLink id="0282-a1e5-6cfb-58f7" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                    <infoLink id="a975-a499-53e0-abe3" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
                   </infoLinks>
                   <categoryLinks>
                     <categoryLink id="8702-5997-3b90-abed" name="Supreme Commander" hidden="false" targetId="2012-97f3-e7fc-26b6" primary="false"/>
@@ -4702,7 +4651,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="125.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4739,15 +4688,8 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="8854-0e08-4695-a644" name="Scintillax Lascutter" hidden="false" targetId="fde3-44bc-0550-2fc9" type="profile"/>
-            <infoLink id="46a4-2711-fddf-937c" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
-            <infoLink id="4044-8ab0-d1a8-8e9c" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="09f8-947e-dd53-4ac6" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="e55b-de56-dad8-572c" name="Leader" hidden="false" targetId="5455-b041-3489-bee6" type="rule"/>
-            <infoLink id="42e6-c3b1-1c62-12d1" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="ad6b-4702-55ee-1776" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="644a-09f0-7f5f-8d16" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="3574-e1b1-7e60-9dd2" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="ed0a-1201-60ea-0d7b" name="Scintillax Lascutter" hidden="false" targetId="e9e9-35b9-e4d8-9ac5" type="profile"/>
+            <infoLink id="2ccf-286e-31ea-e3ef" name="Placeholder (Scintillax*)" hidden="false" targetId="5124-e27e-a225-2a6f" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="7ab9-0443-8457-9936" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1dd5-18fd-3e9b-b411">
@@ -4761,7 +4703,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c24-36a2-a864-8032" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="336b-821a-a266-fdfd" name="Exo-planar Cannon" hidden="false" targetId="22c4-7a51-cc87-55eb" type="profile"/>
+                    <infoLink id="1ba2-3ee2-b248-c124" name="Exo-planar Cannon" hidden="false" targetId="94f9-8b98-a812-ab16" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4772,7 +4714,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d8b-182a-639c-6bac" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="2597-392b-8927-d342" name="Storm Laser" hidden="false" targetId="1e14-4e14-798d-4f96" type="profile"/>
+                    <infoLink id="cd24-9483-4e91-e67d" name="Storm Laser" hidden="false" targetId="6c5f-6eaa-14b5-430d" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4787,7 +4729,7 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="75.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="41a5-4798-8f8e-264d" name="Scyllax" hidden="false" collective="false" import="true" type="upgrade">
@@ -4928,9 +4870,6 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="1a27-3932-aa55-e69d" name="Construct Shield (Serperos*)" hidden="false">
-      <description>Its Void Shield is never repaired, in the end phase or by a regroup.</description>
-    </rule>
     <rule id="5902-4d9a-c267-1f1c" name="Critical Hit (Falchion)" hidden="false">
       <description>This unit is destroyed and all units within 5cm of the Falchion suffer a standard hit on a 6+.</description>
     </rule>
@@ -4940,11 +4879,32 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     <rule id="6c2a-d7a4-943e-52fb" name="Critical Hit (Ordinatus Minoris)" hidden="false">
       <description>The Ordinatus is destroyed. All units within 15cm suffer a standard hit on a 5+.</description>
     </rule>
-    <rule id="94ca-b496-7287-450c" name="Dread Aura (Arlatax Battle-Automata*)" hidden="false">
-      <description>Enemy formations within 15cm subtract 1 from their rally tests.</description>
+    <rule id="7250-ae67-a368-af49" name="Placeholder (Archmagos Prime on Abeyant*)" hidden="false">
+      <description>Stats to be written.</description>
     </rule>
-    <rule id="99da-9fe2-8755-81ee" name="Dread Aura (Domitar Battle-Automata*)" hidden="false">
-      <description>Enemy formations within 15cm subtract 1 from their rally tests.</description>
+    <rule id="b9ad-43f8-6b56-0c25" name="Placeholder (Arlatax Battle-Automata*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="133c-590d-20f6-383e" name="Placeholder (Domitar Battle-Automata*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="7c98-3fbf-6bc7-1360" name="Placeholder (Errax*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="8c9b-2d7e-cd55-92f2" name="Placeholder (Harpax*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="4a0d-6134-6943-b189" name="Placeholder (Krios Venator*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="5124-e27e-a225-2a6f" name="Placeholder (Scintillax*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="7600-70e6-8f2e-691c" name="Placeholder (Serperos*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="40a8-2726-87e6-dda6" name="Placeholder (Tenebrax*)" hidden="false">
+      <description>Stats to be written.</description>
     </rule>
     <rule id="4643-9fb8-ff01-2157" name="Special Rules (Archmagos Prime)" hidden="false">
       <description>Upgrades the unit type to AV.</description>
@@ -4979,27 +4939,27 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     <profile id="5728-3bb8-7345-6cec" name="Archmagos Prime on Abeyant*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Meltagun, Power Weapons</characteristic>
       </characteristics>
     </profile>
     <profile id="183d-f6e4-36c1-5d1b" name="Arlatax Battle-Automata*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">3+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
-    <profile id="ad6e-14b4-6c23-799d" name="Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="8dd9-c8b3-1cd2-90db" name="Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT6+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -5030,63 +4990,63 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     <profile id="c73d-4e05-1ae7-7d03" name="Domitar Battle-Automata*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Domitar Missile Launcher, Graviton Hammers</characteristic>
       </characteristics>
     </profile>
-    <profile id="ce8c-e90b-9ddd-0b40" name="Domitar Missile Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="52f2-9153-2813-f794" name="Domitar Missile Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="7db2-cb12-4115-4b00" name="Errax Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="604f-2344-a395-2a46" name="Errax Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="2347-fef7-2bc0-5f30" name="Errax Meltagun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="a623-eeb6-fda0-ee87" name="Errax Meltagun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="f728-423e-ac66-3e3d" name="Errax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">25cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">3+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
-    <profile id="1486-699f-f7da-496c" name="Exo-planar Bombard" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="304d-57ee-8440-15ab" name="Exo-planar Bombard" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="22c4-7a51-cc87-55eb" name="Exo-planar Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="94f9-8b98-a812-ab16" name="Exo-planar Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="a7a1-1a5c-2ff0-88af" name="Exo-planar Repeaters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="7a0a-aaba-d635-d0be" name="Exo-planar Repeaters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3b6d-0fb1-a224-5fb7" name="Falchion" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -5123,27 +5083,27 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
       </characteristics>
     </profile>
-    <profile id="e493-f7ff-b3ed-a18a" name="Graviton Hammers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="619b-cb44-235a-ab86" name="Graviton Hammers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="0129-b354-1e0a-ac16" name="Harpax Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="fbfe-7430-c8d7-4541" name="Harpax Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="6939-c7b6-38a8-f468" name="Harpax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">30cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
@@ -5198,11 +5158,11 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">TL Lascannons, TL Autocannons, Kraken Heavy Missiles</characteristic>
       </characteristics>
     </profile>
-    <profile id="7292-dd49-237c-1dea" name="Irradiation Engine" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="6ecd-67a0-edec-a919" name="Irradiation Engine" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="02fd-6427-562f-dc1f" name="Karacnos Assault Tank" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -5242,10 +5202,10 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     <profile id="ef8d-e3e9-189a-83e4" name="Krios Venator*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">25cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Pulsar Fusil, Volkite Caliver Sponsons</characteristic>
       </characteristics>
     </profile>
@@ -5311,10 +5271,10 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
-    <profile id="a764-996f-2cdd-50d2" name="Meltagun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="2a37-cf5d-ac01-44e1" name="Meltagun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -5395,10 +5355,10 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>
       </characteristics>
     </profile>
-    <profile id="2450-431b-32a3-4f24" name="Plasma Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="fcb9-22f5-632b-22d4" name="Plasma Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -5416,11 +5376,11 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
       </characteristics>
     </profile>
-    <profile id="4443-752a-12e0-e53d" name="Power Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="9961-a9d3-0459-f715" name="Power Claws" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="935d-f3df-4e45-0dad" name="Power Fist" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5430,11 +5390,25 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
       </characteristics>
     </profile>
+    <profile id="e2c7-0a51-f478-d50c" name="Power Weapons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
     <profile id="f96c-3f8b-4262-088e" name="Power Weapons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="410b-15f6-1bae-b29d" name="Pulsar Fusil" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="e969-2202-5984-1b67" name="Pulsar Fusil" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5458,20 +5432,20 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="fde3-44bc-0550-2fc9" name="Scintillax Lascutter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="e9e9-35b9-e4d8-9ac5" name="Scintillax Lascutter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="8710-8e8c-d52c-5b48" name="Scintillax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">20cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Scintillax Lascutter,</characteristic>
       </characteristics>
     </profile>
@@ -5485,24 +5459,24 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Mechandrite Array</characteristic>
       </characteristics>
     </profile>
-    <profile id="702e-0fd5-7103-817f" name="Serperos Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="2811-cb00-0588-4180" name="Serperos Lascutters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+1)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="6bf2-c755-59f6-a05c" name="Serperos*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
-        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">20cm</characteristic>
-        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">3+</characteristic>
-        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">4+</characteristic>
-        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
+        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">-</characteristic>
+        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
+        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
+        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e"></characteristic>
-        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
-        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">1</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Unit is destroyed.</characteristic>
+        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
+        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="65bc-c3ea-8c21-1c3c" name="Setheno Havoc Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5533,38 +5507,38 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Disrupt, FxF</characteristic>
       </characteristics>
     </profile>
-    <profile id="6b18-0448-41a2-deaa" name="Stalker Maxima Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="0f1b-966c-af6d-55b9" name="Stalker Maxima Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="f5f2-7aec-5817-f15c" name="Stalker Volkite Culverins" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="19f5-fe8d-e00a-8135" name="Stalker Volkite Culverins" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="1e14-4e14-798d-4f96" name="Storm Laser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="9f93-34ed-47ea-a7a5" name="Storm Laser Array" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="6c5f-6eaa-14b5-430d" name="Storm Laser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP4+/AT5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="ab78-51cf-a6fb-6a6a" name="Storm Laser Flenser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="b0fa-0022-19d6-71cd" name="Storm Laser Array" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9b17-67d5-007d-c4b2" name="Storm Laser Flenser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -5643,10 +5617,10 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
     <profile id="8b80-a980-9fe5-92f1" name="Tenebrax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">25cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Storm Laser Flenser,</characteristic>
       </characteristics>
     </profile>
@@ -5732,11 +5706,11 @@ Its formations are fan-made: take "Allow fan-made units" to see them.</descripti
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Lightning Claws</characteristic>
       </characteristics>
     </profile>
-    <profile id="0894-e4be-0400-0d2a" name="Volkite Caliver Sponsons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="61bf-de5d-b13c-a463" name="Volkite Caliver Sponsons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="456b-5faa-a0f5-8db7" name="Volkite Culverin" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">

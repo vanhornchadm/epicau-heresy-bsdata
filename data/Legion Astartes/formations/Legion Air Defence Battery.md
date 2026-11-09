@@ -1,6 +1,6 @@
 ---
 slot: support
-cost: 225
+cost: 0
 upgrades:
   - Centurion
 fan-made: true
@@ -13,5 +13,4 @@ fan-made: true
 
 ## Sources
 
-- Derived from EpicAU units: the EpicAU Whirlwind Hyperios at the Hyperios upgrade's price
-- Empire of Ashes: the idea of a Legion air defence formation
+- Placeholder: the formation was adapted from Empire of Ashes; its points are to be written

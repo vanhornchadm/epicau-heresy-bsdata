@@ -1,6 +1,6 @@
 ---
 slot: low
-cost: 1100
+cost: 0
 upgrades:
   - Legate OR Veteran Princeps
   - Air Defence
@@ -15,4 +15,4 @@ fan-made: true
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the Warmaster
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

@@ -14,16 +14,16 @@ fan-made: true
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Conflagration Cannon | 30cm AND (15cm) | 3 x AP3+/AT6+, Ignore Cover AND (small arms) Ignore Cover |
-| Thundercoil Harpoon | 15cm | AT3+, TK(1) |
-| TL Siegebreaker Cannon | 15cm AND (15cm) | AP5+/AT5+ AND (small arms) EA(+1) |
-| Shieldbreaker Missiles | 45cm | AT4+, Single Shot |
+| Conflagration Cannon | - | - |
+| Thundercoil Harpoon | - | - |
+| TL Siegebreaker Cannon | - | - |
+| Shieldbreaker Missiles | - | - |
 
 ## Notes
 
-DC2, Ion Shield, Reinforced Armour, Walker. Shieldbreaker: Shieldbreaker Missiles ignore Invulnerable Saves and Void Shields. Critical hit effect: Destroyed.
+DC2, Ion Shield. Placeholder: weapons and rules to be written.
 
 ## Sources
 
 - EpicAU wiki (archived): stat line, from the wiki reference sheet
-- Derived from EpicAU units: the Castellan's Empire of Ashes weapons and the Knight-Acheron's flame cannon
+- Placeholder: its weapons and rules were adapted from Empire of Ashes, and are to be written

@@ -7,22 +7,22 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| WE | 15cm | 4+ | 6+ | 4+ |
+| WE | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| 3 x TL Heavy Bolters | 30cm | AP4+ |
-| Autocannon | 45cm | AP5+/AT6+ |
-| 2 x Lascannon | 45cm | AT5+ |
-| Hellhammer Cannon | 45cm | AP3+/AT3+, Ignore Cover |
-| Demolisher Cannon | 30cm | AP3+/AT4+ Ignore Cover AND (small arms) Ignore Cover, FxF |
+| 3 x TL Heavy Bolters | - | - |
+| Autocannon | - | - |
+| 2 x Lascannon | - | - |
+| Hellhammer Cannon | - | - |
+| Demolisher Cannon | - | - |
 
 ## Notes
 
-DC 3, Reinforced Armour. Critical Hit: The unit is destroyed. All units within 5cm take a standard hit on a 6+.
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Baneblade
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

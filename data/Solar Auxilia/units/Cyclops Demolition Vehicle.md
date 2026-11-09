@@ -7,18 +7,18 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| LV | 25cm | 6+ | 6+ | - |
+| LV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Demolition Charge OR | 5cm | 1 BP, MW, Single Shot |
-| Incineration Charge | 5cm | 1 BP, Ignore Cover, Single Shot |
+| Demolition Charge OR | - | - |
+| Incineration Charge | - | - |
 
 ## Notes
 
-Remote Detonation: a Cyclops may only fire its charge while within 30cm of a friendly Leader, Commander or Supreme Commander, and is destroyed once it has fired. A Cyclops must select either a Demolition Charge OR Incineration Charge before the start of the game.
+Placeholder: stats to be written.
 
 ## Weapon options
 
@@ -28,4 +28,4 @@ Remote Detonation: a Cyclops may only fire its charge while within 30cm of a fri
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against EpicAU units
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

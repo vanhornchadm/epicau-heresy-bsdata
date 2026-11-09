@@ -7,19 +7,19 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| LV | 20cm | 5+ | 6+ | 5+ |
+| LV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Multilaser | 30cm | AP5+/AT6+ |
-| Sentinel Missile Launcher | 45cm | AP5+/AT6+ |
+| Multilaser | - | - |
+| Sentinel Missile Launcher | - | - |
 
 ## Notes
 
-Scout, Walker.
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Militia Sentinel
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

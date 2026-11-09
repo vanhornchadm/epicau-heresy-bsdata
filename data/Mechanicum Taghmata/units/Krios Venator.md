@@ -7,19 +7,19 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| AV | 25cm | 4+ | 6+ | 4+ |
+| AV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Pulsar Fusil | 30cm | AP5+/AT3+ |
-| Volkite Caliver Sponsons | 15cm | AP5+, Disrupt |
+| Pulsar Fusil | - | - |
+| Volkite Caliver Sponsons | - | - |
 
 ## Notes
 
-Invulnerable Save, Reinforced Armour, Walker.
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): Mechanicum library, converted against the EpicAU Krios
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

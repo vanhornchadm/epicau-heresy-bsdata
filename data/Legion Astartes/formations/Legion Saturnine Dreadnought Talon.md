@@ -11,8 +11,8 @@ fan-made: true
 
 ## Composition
 
-- 3-6 [[Saturnine Dreadnought]], +90 pts each
+- 3-6 [[Saturnine Dreadnought]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Deredeo
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

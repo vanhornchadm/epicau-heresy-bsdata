@@ -1,6 +1,6 @@
 ---
 slot: line
-cost: 300
+cost: 0
 upgrades:
   - Veteran Princeps
 fan-made: true
@@ -13,4 +13,4 @@ fan-made: true
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Warhound
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

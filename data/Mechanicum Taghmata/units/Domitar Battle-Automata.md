@@ -7,19 +7,19 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| AV | 15cm | 3+ | 4+ | 5+ |
+| AV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Domitar Missile Launcher | 45cm | AP5+/AT5+ |
-| Graviton Hammers | (base contact) | (assault weapons) EA(+1), MW |
+| Domitar Missile Launcher | - | - |
+| Graviton Hammers | - | - |
 
 ## Notes
 
-Cybernetica Cortex, Fearless, Invulnerable Save, Walker. Dread Aura: enemy formations within 15cm subtract 1 from their rally tests.
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): Mechanicum library, converted against the EpicAU Castellax
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

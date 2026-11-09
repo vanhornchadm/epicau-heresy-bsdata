@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="17" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="50ce-a1ff-19bf-1d2f" name="EpicAU - Knight Household" revision="19" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="1897-edf7-b72c-17af" name="Knight Household" hidden="false">
       <rules>
@@ -187,28 +187,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="db9d-d1a8-8a94-f311" name="Acastus Knight Asterius*" hidden="false" targetId="fa69-738d-7560-67fe" type="profile"/>
-            <infoLink id="3357-6336-a262-695f" name="Volkite Culverin" hidden="false" targetId="923e-3d43-70da-0e33" type="profile"/>
-            <infoLink id="317d-e9d2-99a3-0a43" name="Karacnos Mortar Battery" hidden="false" targetId="0a1a-60bb-d060-2fdb" type="profile"/>
-            <infoLink id="5f1c-3a2a-a778-2eba" name="Ionic Flare Shield (Acastus Knight Asterius*)" hidden="false" targetId="c656-8846-ac95-630d" type="rule"/>
-            <infoLink id="9818-ea4f-51dc-0c9d" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
-            <infoLink id="183b-ee46-5901-e40c" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-            <infoLink id="140d-f4b2-c4c9-2821" name="Fleshbane" hidden="false" targetId="2bb4-5124-ca44-774e" type="rule"/>
-            <infoLink id="81a9-d54e-6415-ec3f" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="24a0-0960-b681-339d" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-            <infoLink id="43ee-3716-a1e3-e4cd" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="dd46-dfc8-30d1-ef93" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="bd23-5339-5950-705b" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-            <infoLink id="77a2-9ce4-4ec8-b51c" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-            <infoLink id="f058-9387-b46c-a831" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="fecf-a663-e55b-93d3" name="Volkite Culverin" hidden="false" targetId="29dd-73ae-61f6-7495" type="profile"/>
+            <infoLink id="13ae-b3fb-5f30-11b3" name="Karacnos Mortar Battery" hidden="false" targetId="00da-9bc2-edf2-bcb7" type="profile"/>
+            <infoLink id="187b-6712-d782-ca7b" name="Placeholder (Acastus Knight Asterius*)" hidden="false" targetId="91eb-4dc1-b697-2112" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="d69b-b67f-2a49-412e" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="fa65-5f36-936c-f2c8" name="Conversion Beam Cannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f120-06dd-dd90-b414" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e307-7879-6515-eeb8" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe45-f162-4de7-bcad" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="55f7-02ea-541a-390e" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="ee87-d8c6-a518-d724" name="Conversion Beam Cannon" hidden="false" targetId="4abb-dd31-9a53-3a9a" type="profile"/>
+                <infoLink id="e940-3462-3e41-8cf0" name="Conversion Beam Cannon" hidden="false" targetId="a234-05f5-0e2e-e408" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -216,7 +206,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="260.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -616,18 +606,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                         </modifier>
                       </modifiers>
                     </infoLink>
-                    <infoLink id="30aa-0f44-94ac-c27b" name="Special Rules (Knight Moirax*)" hidden="false" targetId="4394-21a0-2f90-d5de" type="rule"/>
-                    <infoLink id="7019-22d1-76ee-a55e" name="Ionic Flare Shield (Knight Moirax*)" hidden="false" targetId="7bdd-cc62-a563-f178" type="rule"/>
-                    <infoLink id="3af2-7e06-9432-9728" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
-                    <infoLink id="858b-df70-bfe1-f52c" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-                    <infoLink id="0968-e05b-9879-2ed2" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                    <infoLink id="3576-f24b-7393-1dc6" name="Scout" hidden="false" targetId="1409-373f-7ba8-c148" type="rule"/>
-                    <infoLink id="35cf-0366-4426-c16f" name="Siege" hidden="false" targetId="d4c1-724d-bbcb-8056" type="rule"/>
-                    <infoLink id="02d6-f5e4-a0ec-425f" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                    <infoLink id="03bf-1f48-ab5f-0640" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                    <infoLink id="f89f-4ada-5f6d-eab6" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                    <infoLink id="18aa-b209-cb0d-cd2a" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                    <infoLink id="28d2-8f21-182c-2a12" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="ec53-1ba2-11db-b77e" name="Placeholder (Knight Moirax*)" hidden="false" targetId="bc47-0426-d8d1-b8ac" type="rule"/>
                   </infoLinks>
                   <selectionEntryGroups>
                     <selectionEntryGroup id="46bf-42ef-540d-fbd4" name="Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="6f96-4992-8f7b-0f82">
@@ -641,8 +620,8 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6c5-27fb-425e-5aba" type="max"/>
                           </constraints>
                           <infoLinks>
-                            <infoLink id="8827-54d4-c2f7-320d" name="Volkite Veuglair" hidden="false" targetId="b522-03c4-f974-17ef" type="profile"/>
-                            <infoLink id="5b31-c314-4668-bc7b" name="Gyges Siege Claw" hidden="false" targetId="2b4e-8971-8bb8-5f36" type="profile"/>
+                            <infoLink id="c5e8-bda3-6635-d8a3" name="Volkite Veuglair" hidden="false" targetId="3e81-1b65-2270-fb1d" type="profile"/>
+                            <infoLink id="5b3f-2d95-2cd7-524e" name="Gyges Siege Claw" hidden="false" targetId="4138-8317-fa8e-1872" type="profile"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -653,7 +632,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="189e-477f-61d8-baef" type="max"/>
                           </constraints>
                           <infoLinks>
-                            <infoLink id="9feb-8467-6f19-7014" name="Armiger Lightning Locks" hidden="false" targetId="b7ce-b759-f805-8249" type="profile"/>
+                            <infoLink id="7f0a-d4ff-3ca5-c105" name="Armiger Lightning Locks" hidden="false" targetId="37bd-e72d-5095-61b4" type="profile"/>
                           </infoLinks>
                           <costs>
                             <cost name="pts" typeId="points" value="0.0"/>
@@ -668,7 +647,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </selectionEntry>
               </selectionEntries>
               <costs>
-                <cost name="pts" typeId="points" value="25.0"/>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1203,23 +1182,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="3720-2b78-8cd6-2a25" name="Dominus Knight-Castellan*" hidden="false" targetId="9a1e-6222-4bb9-1060" type="profile"/>
-                    <infoLink id="e03e-b202-4cf2-a7b5" name="Plasma Decimator" hidden="false" targetId="53b2-65e4-c4bc-7f2c" type="profile"/>
-                    <infoLink id="b43b-a987-13a2-4b8c" name="Volcano Lance" hidden="false" targetId="ce9e-bb18-06e8-4503" type="profile"/>
-                    <infoLink id="e26d-63a3-343a-fb51" name="TL Siegebreaker Cannon" hidden="false" targetId="881c-959c-96d0-0de4" type="profile"/>
-                    <infoLink id="c62e-df96-9c66-2147" name="Shieldbreaker Missiles" hidden="false" targetId="c0ee-11a5-ac66-cd60" type="profile"/>
-                    <infoLink id="536a-72bb-46d2-b6ad" name="Shieldbreaker (Dominus Knight-Castellan*)" hidden="false" targetId="31c4-c324-0853-a2d4" type="rule"/>
+                    <infoLink id="a39b-0010-acf2-dee0" name="Plasma Decimator" hidden="false" targetId="62bb-006e-4885-f2ea" type="profile"/>
+                    <infoLink id="8c29-cc81-4fa9-a21e" name="Volcano Lance" hidden="false" targetId="98e3-ad43-e1e3-5615" type="profile"/>
+                    <infoLink id="487b-e88e-2169-fc25" name="TL Siegebreaker Cannon" hidden="false" targetId="e0fa-619c-6731-e2f8" type="profile"/>
+                    <infoLink id="aeb3-2af1-5f06-8513" name="Shieldbreaker Missiles" hidden="false" targetId="da92-618c-bdfc-a093" type="profile"/>
+                    <infoLink id="1139-4b63-c81e-0d55" name="Placeholder (Dominus Knight-Castellan*)" hidden="false" targetId="1844-9e09-b778-04bf" type="rule"/>
                     <infoLink id="13ae-41d5-c402-237b" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                    <infoLink id="5d4a-f49b-17ba-676f" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                    <infoLink id="0139-264d-8757-ad46" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
-                    <infoLink id="9a7b-e314-0884-65af" name="Slow Firing" hidden="false" targetId="fe36-0a82-a4ee-3f54" type="rule"/>
-                    <infoLink id="f742-60ae-1980-be87" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
-                    <infoLink id="664c-4f42-d1a1-f8f9" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                    <infoLink id="ae9c-1e8e-2cca-822c" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                     <infoLink id="d3fe-def4-a249-cbb4" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                    <infoLink id="faf1-5361-9794-fa30" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                    <infoLink id="835e-2fde-77a7-4b62" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                    <infoLink id="92cb-c160-f743-b031" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                    <infoLink id="aa2a-de7a-5a5b-cb07" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1242,22 +1211,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                   </constraints>
                   <infoLinks>
                     <infoLink id="bbba-994f-a8cf-91d1" name="Dominus Knight-Valiant*" hidden="false" targetId="fc5c-578b-ecd7-63ca" type="profile"/>
-                    <infoLink id="9023-1ff3-9846-ad48" name="Conflagration Cannon" hidden="false" targetId="b9b5-9fe7-98b4-3c39" type="profile"/>
-                    <infoLink id="c58e-f641-93a4-9556" name="Thundercoil Harpoon" hidden="false" targetId="9233-9adf-eb4c-c9c4" type="profile"/>
-                    <infoLink id="31db-3638-940f-a515" name="TL Siegebreaker Cannon" hidden="false" targetId="881c-959c-96d0-0de4" type="profile"/>
-                    <infoLink id="57a2-2578-26f1-0329" name="Shieldbreaker Missiles" hidden="false" targetId="c0ee-11a5-ac66-cd60" type="profile"/>
-                    <infoLink id="6d42-d366-59d2-62a8" name="Shieldbreaker (Dominus Knight-Valiant*)" hidden="false" targetId="d703-3503-a84f-f59b" type="rule"/>
-                    <infoLink id="9965-ae04-70a6-9bfe" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
+                    <infoLink id="3d02-2808-5644-4a1e" name="Conflagration Cannon" hidden="false" targetId="011d-2c38-2b2d-e949" type="profile"/>
+                    <infoLink id="f95a-808f-b92a-59ed" name="Thundercoil Harpoon" hidden="false" targetId="5a1e-6239-fd82-876e" type="profile"/>
+                    <infoLink id="38ec-c795-938b-7003" name="TL Siegebreaker Cannon" hidden="false" targetId="e0fa-619c-6731-e2f8" type="profile"/>
+                    <infoLink id="c3f3-a8c7-4bb8-74e6" name="Shieldbreaker Missiles" hidden="false" targetId="da92-618c-bdfc-a093" type="profile"/>
+                    <infoLink id="01c5-bdb0-ed78-6f2a" name="Placeholder (Dominus Knight-Valiant*)" hidden="false" targetId="a721-7c21-a961-625e" type="rule"/>
                     <infoLink id="e58b-93a8-c40f-e802" name="Ion Shield" hidden="false" targetId="db8a-9a85-3182-f8d3" type="rule"/>
-                    <infoLink id="a8e9-d449-e836-76ed" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-                    <infoLink id="22ba-7df9-c4a5-5a6b" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
-                    <infoLink id="81b5-4c0c-1814-ad56" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
-                    <infoLink id="52e0-f5c9-d68c-b597" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-                    <infoLink id="db81-c435-bbe5-3759" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
                     <infoLink id="466f-f91b-08e8-21b4" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-                    <infoLink id="84ae-eae1-0c2c-e560" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                    <infoLink id="0d90-b307-1b55-dece" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-                    <infoLink id="3265-e7e1-a2d2-f458" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1281,7 +1241,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="425.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c923-b7b6-bbb7-1024" name="Questoris Knights" hidden="false" collective="false" import="true" type="unit">
@@ -2245,17 +2205,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="54e0-a935-b9c2-19bd" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist notes" hidden="false">
       <description>Notes: Ignores Cover AND / (small arms) Ignores Cover / AP4+ / (assault weapons) MW, EA(+1), TK(1)</description>
     </rule>
-    <rule id="c656-8846-ac95-630d" name="Ionic Flare Shield (Acastus Knight Asterius*)" hidden="false">
-      <description>Its Ion Shield saves are 1 better against Barrage hits, to a maximum of 2+.</description>
+    <rule id="91eb-4dc1-b697-2112" name="Placeholder (Acastus Knight Asterius*)" hidden="false">
+      <description>Stats to be written.</description>
     </rule>
-    <rule id="7bdd-cc62-a563-f178" name="Ionic Flare Shield (Knight Moirax*)" hidden="false">
-      <description>Its Ion Shield saves are 1 better against Barrage hits, to a maximum of 2+.</description>
+    <rule id="1844-9e09-b778-04bf" name="Placeholder (Dominus Knight-Castellan*)" hidden="false">
+      <description>Weapons and rules to be written.</description>
     </rule>
-    <rule id="31c4-c324-0853-a2d4" name="Shieldbreaker (Dominus Knight-Castellan*)" hidden="false">
-      <description>Shieldbreaker Missiles ignore Invulnerable Saves and Void Shields.</description>
+    <rule id="a721-7c21-a961-625e" name="Placeholder (Dominus Knight-Valiant*)" hidden="false">
+      <description>Weapons and rules to be written.</description>
     </rule>
-    <rule id="d703-3503-a84f-f59b" name="Shieldbreaker (Dominus Knight-Valiant*)" hidden="false">
-      <description>Shieldbreaker Missiles ignore Invulnerable Saves and Void Shields.</description>
+    <rule id="bc47-0426-d8d1-b8ac" name="Placeholder (Knight Moirax*)" hidden="false">
+      <description>Stats to be written.</description>
     </rule>
     <rule id="1509-bfb3-06b5-ec91" name="Special Rules (Armiger Knight-Helverin)" hidden="false">
       <description>Ion Shield (5+).</description>
@@ -2263,22 +2223,19 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="6508-de87-9a4b-8fc7" name="Special Rules (Armiger Knight-Warglaive)" hidden="false">
       <description>Ion Shield (5+).</description>
     </rule>
-    <rule id="4394-21a0-2f90-d5de" name="Special Rules (Knight Moirax*)" hidden="false">
-      <description>Ion Shield (5+).</description>
-    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="fa69-738d-7560-67fe" name="Acastus Knight Asterius*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
-        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">20cm</characteristic>
-        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
-        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">6+</characteristic>
-        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
+        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">-</characteristic>
+        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
+        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
+        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Conversion Beam Cannon x2, Volkite Culverin, Karacnos Mortar Battery</characteristic>
-        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">3</characteristic>
+        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Destroyed.</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="f782-b8b4-cf1f-fc4f" name="Acastus Knight Porpyhrion" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -2321,10 +2278,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Reaper Chain-cleaver, Thermal Spear</characteristic>
       </characteristics>
     </profile>
-    <profile id="b7ce-b759-f805-8249" name="Armiger Lightning Locks" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="37bd-e72d-5095-61b4" name="Armiger Lightning Locks" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP4+/AT5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -2422,17 +2379,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">EA(+1), First strike, TK(1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="b9b5-9fe7-98b4-3c39" name="Conflagration Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="011d-2c38-2b2d-e949" name="Conflagration Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm AND (15cm)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 x AP3+/AT6+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover AND (small arms) Ignore Cover</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="4abb-dd31-9a53-3a9a" name="Conversion Beam Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="a234-05f5-0e2e-e408" name="Conversion Beam Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW3+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -2446,7 +2403,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Plasma Decimator, Volcano Lance, TL Siegebreaker Cannon, Shieldbreaker Missiles</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Destroyed.</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="fc5c-578b-ecd7-63ca" name="Dominus Knight-Valiant*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -2459,7 +2416,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Conflagration Cannon, Thundercoil Harpoon, TL Siegebreaker Cannon, Shieldbreaker Missiles</characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Destroyed.</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="b8c7-a8e6-58e6-d548" name="Flame cannon / Twin Heavy Bolter / Destroyer Chainfist" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2469,11 +2426,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">See weapon notes</characteristic>
       </characteristics>
     </profile>
-    <profile id="2b4e-8971-8bb8-5f36" name="Gyges Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="4138-8317-fa8e-1872" name="Gyges Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">EA(+1), TK(1)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="660f-9a4b-697a-6eaa" name="Hekaton Siege Claw" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2504,20 +2461,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire</characteristic>
       </characteristics>
     </profile>
-    <profile id="0a1a-60bb-d060-2fdb" name="Karacnos Mortar Battery" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="00da-9bc2-edf2-bcb7" name="Karacnos Mortar Battery" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">BP 1</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Fleshbane</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="fcc4-6eae-cd3f-c7f6" name="Knight Moirax*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">30cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+ / 5+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
@@ -2552,11 +2509,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="53b2-65e4-c4bc-7f2c" name="Plasma Decimator" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="62bb-006e-4885-f2ea" name="Plasma Decimator" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW, Slow Firing</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="a168-d5c5-ccec-ab99" name="Preceptor" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -2705,11 +2662,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Master Knight Commander</characteristic>
       </characteristics>
     </profile>
-    <profile id="c0ee-11a5-ac66-cd60" name="Shieldbreaker Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="da92-618c-bdfc-a093" name="Shieldbreaker Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Single Shot</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="afab-d8c8-7628-9467" name="Shock Blast" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2733,10 +2690,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Lance</characteristic>
       </characteristics>
     </profile>
-    <profile id="881c-959c-96d0-0de4" name="TL Siegebreaker Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="e0fa-619c-6731-e2f8" name="TL Siegebreaker Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm AND (15cm)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT5+ AND (small arms) EA(+1)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -2761,11 +2718,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="9233-9adf-eb4c-c9c4" name="Thundercoil Harpoon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="5a1e-6239-fd82-876e" name="Thundercoil Harpoon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT3+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK(1)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="0213-288e-1efb-f9ea" name="Thunderstrike Gauntlet" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2796,11 +2753,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="ce9e-bb18-06e8-4503" name="Volcano Lance" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="98e3-ad43-e1e3-5615" name="Volcano Lance" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AT4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK(1)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="368e-3fa8-2625-fc88" name="Volkite Chieorovile" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -2810,18 +2767,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
       </characteristics>
     </profile>
-    <profile id="923e-3d43-70da-0e33" name="Volkite Culverin" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="29dd-73ae-61f6-7495" name="Volkite Culverin" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="b522-03c4-f974-17ef" name="Volkite Veuglair" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="3e81-1b65-2270-fb1d" name="Volkite Veuglair" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT6+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

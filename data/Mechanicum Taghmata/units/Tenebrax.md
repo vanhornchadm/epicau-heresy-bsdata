@@ -7,20 +7,20 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| LV | 25cm | 4+ | 6+ | 5+ |
+| LV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Storm Laser Flenser | 45cm | AP4+/AT5+ |
-| Stalker Volkite Culverins OR | 30cm | AP4+, Disrupt |
-| Exo-planar Cannon OR | 15cm | AP4+, Ignore Cover |
-| Stalker Maxima Bolters | 15cm | AP4+ |
+| Storm Laser Flenser | - | - |
+| Stalker Volkite Culverins OR | - | - |
+| Exo-planar Cannon OR | - | - |
+| Stalker Maxima Bolters | - | - |
 
 ## Notes
 
-Cybernetica Cortex, Fearless, Walker. A Tenebrax must select Stalker Volkite Culverins OR an Exo-planar Cannon OR Stalker Maxima Bolters before the start of the game.
+Placeholder: stats to be written.
 
 ## Weapon options
 
@@ -31,4 +31,4 @@ Cybernetica Cortex, Fearless, Walker. A Tenebrax must select Stalker Volkite Cul
 
 ## Sources
 
-- Legions Imperialis (BSData): Dark Mechanicum catalogue, converted against the EpicAU automata
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

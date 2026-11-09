@@ -7,12 +7,12 @@ fan-made: true
 
 | Range | Firepower |
 |---|---|
-| 60cm | 3 x MW3+ |
+| - | - |
 
 ## Notes
 
-Within 15cm it fires 2 x AP4+/AT4+ instead.
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): the Dire Wolf weapon, converted
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

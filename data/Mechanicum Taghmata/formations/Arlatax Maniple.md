@@ -1,6 +1,6 @@
 ---
 slot: line
-cost: 300
+cost: 0
 upgrades:
   - Magos
   - Scyllax
@@ -16,4 +16,4 @@ fan-made: true
 
 ## Sources
 
-- Legions Imperialis (BSData): Mechanicum library, converted against the EpicAU Castellax
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

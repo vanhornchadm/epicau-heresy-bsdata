@@ -7,20 +7,20 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| AV | 15cm | 4+ | 6+ | 5+ |
+| AV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Twin Lascannon | 45cm | AT4+ |
-| 2 x Lascannon | 45cm | AT5+ |
-| Demolisher Cannon | 30cm AND (15cm) | AP3+/AT4+, Disrupt, Ignore Cover AND (small arms) Ignore Cover |
+| Twin Lascannon | - | - |
+| 2 x Lascannon | - | - |
+| Demolisher Cannon | - | - |
 
 ## Notes
 
-Reinforced Armour, Thick Rear Armour.
+Placeholder: stats to be written.
 
 ## Sources
 
-- EpicAU wiki (archived): the Imperial Militia sheet's weapons on the Solar Auxilia Malcador
+- Placeholder: it put the Imperial Militia sheet's weapons on the Solar Auxilia Malcador, a combination designed for this data; its stats are to be written

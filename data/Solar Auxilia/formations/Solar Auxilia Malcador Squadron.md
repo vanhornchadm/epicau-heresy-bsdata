@@ -12,4 +12,4 @@ extra-upgrades:
   - [[Malcador Heavy Tank]]
   - [[Malcador Infernus Special Weapons Tank]]
   - [[Malcador Annihilator]] (fan-made)
-  - [[Malcador Vanquisher]], +25 pts each (fan-made)
+  - [[Malcador Vanquisher]], +0 pts each (fan-made)

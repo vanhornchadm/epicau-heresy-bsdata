@@ -7,19 +7,19 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| INF | 15cm | 4+ | 4+ | 3+ |
+| INF | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Plasma Bombards OR | 30cm | AP4+/AT5+, Indirect Fire |
-| Twin Heavy Disintegrators OR | 15cm | AP4+/AT4+, MW |
-| Disruption Fists | (base contact) | (assault weapons) MW, EA(+1) |
+| Plasma Bombards OR | - | - |
+| Twin Heavy Disintegrators OR | - | - |
+| Disruption Fists | - | - |
 
 ## Notes
 
-Reinforced Armour, Thick Rear Armour, Invulnerable Save. A Saturnine Terminator unit must select two weapons (the same one twice, or two different ones) before the start of the game.
+Placeholder: stats to be written.
 
 ## Weapon options
 
@@ -34,4 +34,4 @@ Reinforced Armour, Thick Rear Armour, Invulnerable Save. A Saturnine Terminator 
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against EpicAU Terminators
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

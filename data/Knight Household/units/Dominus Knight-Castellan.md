@@ -14,16 +14,16 @@ fan-made: true
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Plasma Decimator | 30cm | AP3+/AT4+, MW, Slow Firing |
-| Volcano Lance | 45cm | AT4+, TK(1) |
-| TL Siegebreaker Cannon | 15cm AND (15cm) | AP5+/AT5+ AND (small arms) EA(+1) |
-| Shieldbreaker Missiles | 45cm | AT4+, Single Shot |
+| Plasma Decimator | - | - |
+| Volcano Lance | - | - |
+| TL Siegebreaker Cannon | - | - |
+| Shieldbreaker Missiles | - | - |
 
 ## Notes
 
-DC2, Ion Shield, Reinforced Armour, Walker. Shieldbreaker: Shieldbreaker Missiles ignore Invulnerable Saves and Void Shields. Critical hit effect: Destroyed.
+DC2, Ion Shield. Placeholder: weapons and rules to be written.
 
 ## Sources
 
 - EpicAU wiki (archived): stat line, from the wiki reference sheet
-- Empire of Ashes: weapons and the Shieldbreaker rule
+- Placeholder: its weapons and rules were adapted from Empire of Ashes, and are to be written

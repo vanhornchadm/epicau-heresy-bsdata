@@ -7,16 +7,19 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| AV | 30cm | 6+ | 6+ | 5+ |
+| AV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| 2 x Twin Hydra Autocannon | 45cm | AP4+/AT5+/AA5+ |
-| Heavy Bolter | 30cm | AP5+ |
+| 2 x Twin Hydra Autocannon | - | - |
+| Heavy Bolter | - | - |
+
+## Notes
+
+Placeholder: stats to be written.
 
 ## Sources
 
-- NetEA Imperial Guard lists: the Hydra and its price, unchanged
-- Empire of Ashes: the idea of a Militia flak formation
+- Placeholder: added for a flak formation adapted from Empire of Ashes; its stats are to be written

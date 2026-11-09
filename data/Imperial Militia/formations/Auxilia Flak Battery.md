@@ -1,6 +1,6 @@
 ---
 slot: support
-cost: 150
+cost: 0
 extra-upgrades:
   - Discipline Master
 fan-made: true
@@ -13,5 +13,4 @@ fan-made: true
 
 ## Sources
 
-- NetEA Imperial Guard lists: the Hydra and its price, unchanged
-- Empire of Ashes: the idea of a Militia flak formation
+- Placeholder: the formation was adapted from Empire of Ashes; its points are to be written

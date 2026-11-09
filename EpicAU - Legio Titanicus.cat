@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="25" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="09b9-a81e-36e7-0078" name="EpicAU - Legio Titanicus" revision="28" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="5a43-d432-849f-519a" name="Legio Titanicus" hidden="false">
       <rules>
@@ -162,21 +162,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="b6d6-8867-a1e6-91f0" name="Ardex Mega-Bolters" hidden="false" targetId="5929-1dcd-7611-27b7" type="profile"/>
-            <infoLink id="e19c-53f2-b663-3664" name="Titan Movement" hidden="false" targetId="9b1f-953c-13dc-ff19" type="rule"/>
-            <infoLink id="1d0a-6f77-1d20-db7f" name="Critical Hit (Dire Wolf Heavy Scout Titan*)" hidden="false" targetId="8d6c-2930-2108-c3b7" type="rule"/>
-            <infoLink id="faea-b210-58b8-0faa" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
-            <infoLink id="adf5-7f5b-233c-6d37" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="7267-553e-2acb-b219" name="Infiltrator" hidden="false" targetId="f14b-f1e8-683e-cd73" type="rule"/>
-            <infoLink id="dbbf-5447-c2dc-e5e1" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="1941-0fe6-c6e6-8ac2" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
-            <infoLink id="4eef-57f8-2c33-9716" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="a90b-a78a-9190-f4ef" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-            <infoLink id="1b0e-418f-5c02-a9cf" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-            <infoLink id="27e9-c987-f8f1-7938" name="FxF" hidden="false" targetId="8f11-c190-ff78-a7d6" type="rule"/>
+            <infoLink id="5290-fd44-1867-6ed5" name="Ardex Mega-Bolters" hidden="false" targetId="3773-c3f7-1d10-d7f3" type="profile"/>
+            <infoLink id="c109-dcd7-afb5-5191" name="Placeholder (Dire Wolf Heavy Scout Titan*)" hidden="false" targetId="4566-4746-11a4-d316" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup id="78a5-5afd-b817-7256" name="Carapace weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="c8e8-3f90-3316-ace9">
+            <selectionEntryGroup id="78a5-5afd-b817-7256" name="Carapace weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="43cd-9e1e-859f-0b67">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59f8-6afc-0f24-4765" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be5a-c9ac-b17c-d215" type="max"/>
@@ -192,7 +182,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <infoLink id="aaaf-2a7c-2a61-3b64" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c8e8-3f90-3316-ace9" name="Neutron Laser*" hidden="false" collective="false" import="true" type="upgrade">
@@ -200,12 +190,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf48-4e78-402a-5d60" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="7214-009b-3cb5-3e08" name="Neutron Laser" hidden="false" targetId="d842-f197-33bb-914c" type="profile"/>
-                    <infoLink id="7649-0847-27a0-e53e" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-                    <infoLink id="0ce1-5888-8d7e-0511" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="cd75-8be1-bab5-11ba" name="Neutron Laser" hidden="false" targetId="3f50-a44e-2feb-f400" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="25.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d149-82a3-ed25-b87c" name="Conversion Beam Dissipator*" hidden="false" collective="false" import="true" type="upgrade">
@@ -213,11 +201,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b242-9508-776f-b435" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="335e-cea8-a2e1-1a3f" name="Conversion Beam Dissipator" hidden="false" targetId="aa39-af2a-95f2-cf0b" type="profile"/>
-                    <infoLink id="3d8a-3a21-b7a1-44c9" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+                    <infoLink id="6279-84c5-2e8d-925c" name="Conversion Beam Dissipator" hidden="false" targetId="b75c-5053-07ac-ab07" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="50.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -240,7 +227,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="300.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7576-555f-a93c-363d" name="Emperor Class Titan" hidden="false" collective="false" import="true" type="unit">
@@ -4004,27 +3991,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="9b4d-fe5b-ae28-63fa" name="Warlord-Sinister Battle Titan*" hidden="false" targetId="9dff-de28-13d7-d18c" type="profile"/>
-            <infoLink id="bf2b-dfed-465e-f022" name="Sinistramanus Tenebrae" hidden="false" targetId="3f59-1e14-6978-5996" type="profile"/>
-            <infoLink id="3882-a650-1ab4-0198" name="Antipathic Tempest" hidden="false" targetId="ecf5-cb84-c023-acc7" type="profile"/>
-            <infoLink id="e07c-cf0f-4917-99fb" name="Death Pulse" hidden="false" targetId="bafe-2701-f39a-709f" type="profile"/>
-            <infoLink id="27e4-b6d4-f811-907c" name="Dread Aura (Warlord-Sinister Battle Titan*)" hidden="false" targetId="b04d-0965-8677-1344" type="rule"/>
-            <infoLink id="350b-68c3-efed-bd36" name="Titan Movement" hidden="false" targetId="9b1f-953c-13dc-ff19" type="rule"/>
-            <infoLink id="e129-7e2d-1cee-2a52" name="Critical Hit (Warlord-Sinister Battle Titan*)" hidden="false" targetId="9763-fd5f-bacb-79fe" type="rule"/>
-            <infoLink id="5f3e-2e1b-790f-0599" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
-            <infoLink id="a296-d123-fced-a44b" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-            <infoLink id="10f9-7854-959e-f727" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="232a-dedd-7e75-52ab" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="578f-3f72-9c42-96dd" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="d3b4-7e68-85ca-ffb4" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
-            <infoLink id="643e-0f63-084d-19dd" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="5c5d-7876-2f5e-9e1f" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
-            <infoLink id="022d-6842-64cc-341a" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-            <infoLink id="6669-0d6f-3761-cab6" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-            <infoLink id="9f69-4270-7dec-d659" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="accd-42e5-f23e-c7b6" name="Fwd" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
-            <infoLink id="f5d0-f0f0-40ac-4ac4" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-            <infoLink id="a5a4-7287-1a7e-0213" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
-            <infoLink id="8117-8e5c-a35d-4cdc" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+            <infoLink id="5320-1cc5-9df2-556a" name="Sinistramanus Tenebrae" hidden="false" targetId="8712-92cb-ef15-1833" type="profile"/>
+            <infoLink id="4717-ed50-d4a5-4303" name="Antipathic Tempest" hidden="false" targetId="680a-1c45-d5e4-f02c" type="profile"/>
+            <infoLink id="fdd2-0b65-9990-e29d" name="Death Pulse" hidden="false" targetId="0db8-aa0e-7532-5142" type="profile"/>
+            <infoLink id="ffb2-6136-c3b0-dcee" name="Placeholder (Warlord-Sinister Battle Titan*)" hidden="false" targetId="aa77-fa30-4196-3fb8" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4067,7 +4037,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="950.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="55e3-671b-9c0a-6490" name="Warmaster Iconoclast Titan*" hidden="true" collective="false" import="true" type="unit">
@@ -4147,21 +4117,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="a637-ec2b-3ebf-6753" name="Desolator Chainsword" hidden="false" targetId="2b43-273a-2631-1340" type="profile"/>
-            <infoLink id="0a16-32b9-8143-27fd" name="Cruciator Gatling Array" hidden="false" targetId="fbc4-f039-0033-668c" type="profile"/>
-            <infoLink id="fe20-c725-f71f-8e8f" name="Titan Movement" hidden="false" targetId="9b1f-953c-13dc-ff19" type="rule"/>
-            <infoLink id="c519-70f5-70c6-ba04" name="Critical Hit (Warmaster Iconoclast Titan*)" hidden="false" targetId="7f89-a93d-f398-057a" type="rule"/>
-            <infoLink id="97db-ac7a-26cd-705f" name="Cortex Controller" hidden="false" targetId="dc68-8e9b-a532-5ad8" type="rule"/>
-            <infoLink id="3c51-532c-eec9-a507" name="Fearless" hidden="false" targetId="aba9-b846-28f1-57e0" type="rule"/>
-            <infoLink id="1ef7-1928-3f59-574d" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="d32f-6160-3e1b-3b29" name="Void Shields" hidden="false" targetId="b807-4dc8-c02d-988b" type="rule"/>
-            <infoLink id="edf2-c3ad-1795-0630" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
-            <infoLink id="599b-b786-0701-746b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="0aa0-15df-fe3c-bf94" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-            <infoLink id="93ac-b499-d4b0-180b" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-            <infoLink id="9816-a496-3b2a-425d" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="4cb7-7c64-9bcc-d72f" name="Fwd" hidden="false" targetId="e787-7eab-2cba-d6f0" type="rule"/>
-            <infoLink id="b135-0e36-58a1-73fc" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+            <infoLink id="30fb-a151-8648-aac0" name="Desolator Chainsword" hidden="false" targetId="680e-7348-abd1-7deb" type="profile"/>
+            <infoLink id="ad1f-f58c-9901-6cab" name="Cruciator Gatling Array" hidden="false" targetId="c4e9-e16f-fd3a-641a" type="profile"/>
+            <infoLink id="4114-31d8-d43e-ae63" name="Placeholder (Warmaster Iconoclast Titan*)" hidden="false" targetId="091c-c438-ec85-df9a" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="4908-028b-c6f6-7130" name="Arm weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6466-5b53-5fce-2e2a">
@@ -4175,11 +4133,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b63e-c3ef-372d-71e4" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="6ffe-b471-7d74-e00e" name="Kirus Siege Drill" hidden="false" targetId="b72e-d7b3-6066-6384" type="profile"/>
-                    <infoLink id="a01d-eb88-95be-8de5" name="Siege" hidden="false" targetId="d4c1-724d-bbcb-8056" type="rule"/>
-                    <infoLink id="db31-1b0f-38a6-abdc" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                    <infoLink id="244e-2e9f-e4ec-9d37" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                    <infoLink id="9b4f-ac79-a254-191d" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="eb63-d9c8-ef78-821e" name="Kirus Siege Drill" hidden="false" targetId="9c73-5109-c19a-3d99" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4190,13 +4144,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff12-ddd8-9041-2405" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="4a9a-16f3-9713-41bc" name="Kirus Grav Imploder" hidden="false" targetId="e360-6a93-9f83-4a45" type="profile"/>
-                    <infoLink id="cb3d-63c6-75c0-3320" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-                    <infoLink id="0fc6-31dc-1cd1-e0f1" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-                    <infoLink id="32b8-acaa-1c97-f737" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-                    <infoLink id="0a93-e6f9-78a4-6147" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-                    <infoLink id="7a7f-b3dc-8adb-b235" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
-                    <infoLink id="4c01-b50f-21fa-c16b" name="TK" hidden="false" targetId="ed59-9ced-a699-b761" type="rule"/>
+                    <infoLink id="9a49-e425-c16a-1724" name="Kirus Grav Imploder" hidden="false" targetId="29d2-f0ff-2a09-e319" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4246,7 +4194,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="1100.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="90e8-10bc-fa8a-7f2d" name="Warmaster Titan*" hidden="true" collective="false" import="true" type="unit">
@@ -4807,9 +4755,6 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="19b0-5987-ad29-97d6" name="Corvus Assault Pod notes" hidden="false">
       <description>Notes: Fwd. Transport. May carry 10 infantry units. Terminators, Breachers, Thallax, Ursarax, Myrmidon take up 2 spaces each.</description>
     </rule>
-    <rule id="8d6c-2930-2108-c3b7" name="Critical Hit (Dire Wolf Heavy Scout Titan*)" hidden="false">
-      <description>The Titan staggers D6cm in a random direction taking an additional DC, any units that come into base contact with it as it staggers take a standard hit on a 6+.</description>
-    </rule>
     <rule id="ed91-8491-4429-544c" name="Critical Hit (Imperator Support Titan (experimental))" hidden="false">
       <description>Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.</description>
     </rule>
@@ -4825,20 +4770,20 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="e1be-4cff-2b2b-52c6" name="Critical Hit (Warlord Battle Titan)" hidden="false">
       <description>Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.</description>
     </rule>
-    <rule id="9763-fd5f-bacb-79fe" name="Critical Hit (Warlord-Sinister Battle Titan*)" hidden="false">
-      <description>Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.</description>
-    </rule>
     <rule id="8539-e5e4-7f2a-4e4b" name="Critical Hit (Warmaster Heavy Battle Titan*)" hidden="false">
-      <description>Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.</description>
-    </rule>
-    <rule id="7f89-a93d-f398-057a" name="Critical Hit (Warmaster Iconoclast Titan*)" hidden="false">
       <description>Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.</description>
     </rule>
     <rule id="79c4-0356-ec55-8f08" name="Critical Hit (Warmonger Support Titan (experimental))" hidden="false">
       <description>Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.</description>
     </rule>
-    <rule id="b04d-0965-8677-1344" name="Dread Aura (Warlord-Sinister Battle Titan*)" hidden="false">
-      <description>Enemy formations within 15cm subtract 1 from their rally tests. A Psi-Titan for Loyalist Legions only.</description>
+    <rule id="4566-4746-11a4-d316" name="Placeholder (Dire Wolf Heavy Scout Titan*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="aa77-fa30-4196-3fb8" name="Placeholder (Warlord-Sinister Battle Titan*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="091c-c438-ec85-df9a" name="Placeholder (Warmaster Iconoclast Titan*)" hidden="false">
+      <description>Stats to be written.</description>
     </rule>
     <rule id="0a85-b554-92d5-e187" name="Special Rules (Imperator Support Titan (experimental))" hidden="false">
       <description>Secondary Targeting Protocols.</description>
@@ -4854,11 +4799,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="ecf5-cb84-c023-acc7" name="Antipathic Tempest" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="680a-1c45-d5e4-f02c" name="Antipathic Tempest" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 BP</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Disrupt</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3d14-194c-059c-e10e" name="Apocalypse Missile Launcher" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4875,10 +4820,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt, Fwd</characteristic>
       </characteristics>
     </profile>
-    <profile id="5929-1dcd-7611-27b7" name="Ardex Mega-Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="3773-c3f7-1d10-d7f3" name="Ardex Mega-Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">4 x AP4+/AT6+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -4920,11 +4865,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK(D3), Fwd. Arm mount only.</characteristic>
       </characteristics>
     </profile>
-    <profile id="aa39-af2a-95f2-cf0b" name="Conversion Beam Dissipator" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="b75c-5053-07ac-ab07" name="Conversion Beam Dissipator" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">60cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 x MW3+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF. Within 15cm it fires 2 x AP4+/AT4+ instead.</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF. Placeholder: stats to be written.</characteristic>
       </characteristics>
     </profile>
     <profile id="3810-f716-4d20-4b5c" name="Corvus Assault Pod" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4941,18 +4886,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">See weapon notes</characteristic>
       </characteristics>
     </profile>
-    <profile id="fbc4-f039-0033-668c" name="Cruciator Gatling Array" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="c4e9-e16f-fd3a-641a" name="Cruciator Gatling Array" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">6 x AP4+/AT5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Fwd</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="bafe-2701-f39a-709f" name="Death Pulse" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="0db8-aa0e-7532-5142" name="Death Pulse" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">EA(+2)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="b512-0726-1374-94a5" name="Defense Laser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4962,24 +4907,24 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="2b43-273a-2631-1340" name="Desolator Chainsword" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="680e-7348-abd1-7deb" name="Desolator Chainsword" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+3)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK(D3)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="fb55-6cba-fdc1-da63" name="Dire Wolf Heavy Scout Titan*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
-        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">30cm</characteristic>
-        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">5+</characteristic>
-        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">4+</characteristic>
-        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
+        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">-</characteristic>
+        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
+        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
+        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Ardex Mega-Bolters,</characteristic>
-        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">3</characteristic>
-        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">2</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>
+        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
+        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="5804-1413-ecaa-9c43" name="Fire Control Centre" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5051,18 +4996,18 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, Fwd</characteristic>
       </characteristics>
     </profile>
-    <profile id="e360-6a93-9f83-4a45" name="Kirus Grav Imploder" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="29d2-f0ff-2a09-e319" name="Kirus Grav Imploder" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm AND (base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x MW3+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt, Ignore Cover AND (assault weapons) EA(+1), TK(D3), Fwd</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Fwd</characteristic>
       </characteristics>
     </profile>
-    <profile id="b72e-d7b3-6066-6384" name="Kirus Siege Drill" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="9c73-5109-c19a-3d99" name="Kirus Siege Drill" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) EA(+2)</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK(D6), Siege, Fwd</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Fwd</characteristic>
       </characteristics>
     </profile>
     <profile id="0f83-10ea-0982-2c30" name="Laser Blaster" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5131,11 +5076,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="d842-f197-33bb-914c" name="Neutron Laser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="3f50-a44e-2feb-f400" name="Neutron Laser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">60cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">MW3+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt, FxF</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">FxF</characteristic>
       </characteristics>
     </profile>
     <profile id="77a7-af11-1b09-c0ff" name="Plasma Annihilator" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5238,11 +5183,11 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="3f59-1e14-6978-5996" name="Sinistramanus Tenebrae" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="8712-92cb-ef15-1833" name="Sinistramanus Tenebrae" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">75cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 x MW3+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">TK(1), Fwd</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="04e0-5cff-fca4-9d85" name="Support Missile" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -5374,14 +5319,14 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <profile id="9dff-de28-13d7-d18c" name="Warlord-Sinister Battle Titan*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
-        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">15cm</characteristic>
-        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
-        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">2+</characteristic>
-        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">3+</characteristic>
+        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">-</characteristic>
+        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
+        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
+        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Sinistramanus Tenebrae, Antipathic Tempest, Death Pulse</characteristic>
-        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">8</characteristic>
-        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">6</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>
+        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
+        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="6494-b168-7d60-08ee" name="Warmaster Heavy Battle Titan*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
@@ -5400,14 +5345,14 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <profile id="6fd9-c90e-8293-103b" name="Warmaster Iconoclast Titan*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
-        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">20cm</characteristic>
-        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
-        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">3+</characteristic>
-        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">3+</characteristic>
+        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">-</characteristic>
+        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
+        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
+        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Desolator Chainsword, Cruciator Gatling Array,</characteristic>
-        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">10</characteristic>
-        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">7</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>
+        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
+        <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="67f8-2a9d-f36b-7da8" name="Warmonger Support Titan (experimental)" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">

@@ -7,8 +7,8 @@ fan-made: true
 
 | Range | Firepower |
 |---|---|
-| 60cm | MW3+, Disrupt |
+| - | - |
 
 ## Sources
 
-- Legions Imperialis (BSData): the Dire Wolf weapon, converted
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

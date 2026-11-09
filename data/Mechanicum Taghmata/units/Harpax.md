@@ -7,18 +7,18 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| INF | 30cm | 6+ | 6+ | 5+ |
+| INF | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Exo-planar Repeaters OR | 15cm | AP5+, Ignore Cover |
-| Harpax Lascutters | (base contact) | (assault weapons) MW |
+| Exo-planar Repeaters OR | - | - |
+| Harpax Lascutters | - | - |
 
 ## Notes
 
-Jump Packs, Scout. A Harpax unit must select either Exo-planar Repeaters OR Harpax Lascutters before the start of the game.
+Placeholder: stats to be written.
 
 ## Weapon options
 
@@ -28,4 +28,4 @@ Jump Packs, Scout. A Harpax unit must select either Exo-planar Repeaters OR Harp
 
 ## Sources
 
-- Legions Imperialis (BSData): Dark Mechanicum catalogue, converted against the EpicAU automata
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

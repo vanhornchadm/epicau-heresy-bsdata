@@ -10,9 +10,9 @@ fan-made: true
 
 ## Composition
 
-- 4-6 [[Arquitor Bombard]], +55 pts each
+- 4-6 [[Arquitor Bombard]], +0 pts each
 
 ## Sources
 
 - EpicAU wiki (archived): the Arquitor's stat line, from the wiki reference sheet
-- Derived from EpicAU units: formation and points, priced against the Predator
+- Placeholder: the formation and its points were designed for this data, and are to be written

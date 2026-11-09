@@ -23,7 +23,7 @@ fan-made: true
 
 ## Notes
 
-DC2, Reinforced Armour, Thick Rear Armour. A Kratos must select either a Kratos Battlecannon OR Melta Cannon, and either Heavy Bolters OR Lascannons for its hull and for its sponsons, before the start of the game. Critical Hit: Unit is destroyed.
+DC2, Reinforced Armour, Thick Rear Armour. A Kratos must select either a Kratos Battlecannon OR Melta Cannon, and either Heavy Bolters OR Lascannons for its hull and for its sponsons, before the start of the game. Critical Hit: Placeholder, to be written.
 
 ## Weapon options
 
@@ -40,4 +40,5 @@ DC2, Reinforced Armour, Thick Rear Armour. A Kratos must select either a Kratos 
 ## Sources
 
 - Dakka Dakka Kratos proposal: stat line and weapons
+- Placeholder: the critical hit was designed for this data, and is to be written
 - Empire of Ashes: the Kratos as a Legion Tank upgrade choice

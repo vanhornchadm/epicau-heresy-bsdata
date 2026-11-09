@@ -11,9 +11,9 @@ fan-made: true
 
 ## Composition
 
-- 3-6 [[Deredeo Dreadnought]], +100 pts each
+- 3-6 [[Deredeo Dreadnought]], +0 pts each
 
 ## Sources
 
 - EpicAU wiki (archived): the Deredeo's stat line, from the wiki reference sheet
-- Derived from EpicAU units: formation and points, at the Dreadnought upgrade's 100 pts per Deredeo (a 60-pt Contemptor plus Armoury Assets' +40 swap), sized like the Saturnine Dreadnought Talon
+- Placeholder: the formation and its points were designed for this data, and are to be written

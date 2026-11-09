@@ -51,3 +51,7 @@ A separate fan ruleset built on EpicAU ("Epic 30K AB", Public v1.0). Its candida
 ## Derived from EpicAU units
 
 Built from existing EpicAU units and weapons, with points set against comparable units.
+
+## Placeholder
+
+Entries whose stats, rules or points were adapted from Legions Imperialis or Empire of Ashes. That data has been removed until it is rewritten, and they keep only their names, unit types, weapon names and place in the lists.

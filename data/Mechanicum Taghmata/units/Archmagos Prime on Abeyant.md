@@ -7,19 +7,19 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| AV | 15cm | 4+ | 4+ | 5+ |
+| AV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Meltagun | 15cm | MW5+ |
-| Power Weapons | (base contact) | (assault weapons) EA(+1), MW |
+| Meltagun | - | - |
+| Power Weapons | - | - |
 
 ## Notes
 
-Supreme Commander, Reinforced Armour, Invulnerable Save, Cortex Controller.
+Supreme Commander. Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): Mechanicum library, converted against the EpicAU Archmagos Prime
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

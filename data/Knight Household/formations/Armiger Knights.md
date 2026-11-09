@@ -12,4 +12,4 @@ limit: 1 per 2000 pts
 - One of:
   - **Armiger Knight-Warglaives**: 5 [[Armiger Knight-Warglaive]]
   - **Armiger Knight-Helverins**: 5 [[Armiger Knight-Helverin]]
-  - **Knight Moiraxes**, +25 pts: 5 [[Knight Moirax]] (fan-made)
+  - **Knight Moiraxes**, +0 pts: 5 [[Knight Moirax]] (fan-made)

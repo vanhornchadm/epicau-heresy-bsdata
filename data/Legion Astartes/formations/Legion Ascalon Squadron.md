@@ -7,8 +7,8 @@ fan-made: true
 
 ## Composition
 
-- 1-3 [[Ascalon]], +125 pts each
+- 1-3 [[Ascalon]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Spartan and Knight-Acheron
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

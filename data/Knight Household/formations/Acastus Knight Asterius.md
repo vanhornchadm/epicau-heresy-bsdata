@@ -9,8 +9,8 @@ fan-made: true
 
 ## Composition
 
-- 1-2 [[Acastus Knight Asterius]], +260 pts each
+- 1-2 [[Acastus Knight Asterius]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): Knights library, converted against the EpicAU Porphyrion
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

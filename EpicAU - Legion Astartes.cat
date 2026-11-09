@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="38" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ecff-e131-e26d-022e" name="EpicAU - Legion Astartes" revision="42" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="93b4-b1ec-0fbc-b0c8" name="Legion Astartes" hidden="false">
       <rules>
@@ -656,7 +656,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="225.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="73af-c872-10e4-3b9c" name="Legion Araknae Weapons Battery*" hidden="true" collective="false" import="true" type="unit">
@@ -756,10 +756,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="2594-f8de-9328-a43b" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-            <infoLink id="6a84-ed81-38ff-ed72" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="ba3f-b388-affc-1be2" name="Single Shot" hidden="false" targetId="c8b5-a2a9-69b5-d152" type="rule"/>
-            <infoLink id="8af4-f8d3-d30d-242e" name="BP" hidden="false" targetId="f379-0377-5661-ed26" type="rule"/>
+            <infoLink id="7e8e-a0fc-9ec5-47ff" name="Placeholder (Araknae Weapons Platform*)" hidden="false" targetId="fccb-36a7-c2af-e6c4" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="d2f7-ad15-baa1-f408" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="7017-abff-f4cf-56a3">
@@ -773,7 +770,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88ad-731c-8090-b016" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="47b3-0b98-dc66-ca9b" name="Quad Accelerator Autocannon" hidden="false" targetId="f35b-2cd5-3fa2-b812" type="profile"/>
+                    <infoLink id="2318-a907-fdc1-bbe3" name="Quad Accelerator Autocannon" hidden="false" targetId="e4c2-5879-21eb-64ff" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -784,7 +781,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c11d-6b3f-d4dc-032c" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="7701-8c08-9cdd-edf1" name="Twin Punisher Cannon" hidden="false" targetId="c1f6-fa93-962a-e537" type="profile"/>
+                    <infoLink id="72f0-0b12-cf33-85ab" name="Twin Punisher Cannon" hidden="false" targetId="f865-a2f2-a5f0-2614" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -795,7 +792,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="686a-239b-27a2-c68e" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="5f33-9ea7-5137-e728" name="Orias Heavy Frag Missiles" hidden="false" targetId="b70f-d62f-1ef0-af9f" type="profile"/>
+                    <infoLink id="fb16-00fd-82dd-fe2d" name="Orias Heavy Frag Missiles" hidden="false" targetId="8bd4-d8ff-62da-fd12" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -805,7 +802,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="45.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -897,7 +894,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             <infoLink id="4486-c016-1348-c504" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="55.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1286,17 +1283,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           </constraints>
           <infoLinks>
             <infoLink id="ff8c-3259-730c-40cb" name="Ascalon*" hidden="false" targetId="ff97-e43c-2cdb-6171" type="profile"/>
-            <infoLink id="5788-ec84-b609-5645" name="Ascalon Inferno Gun" hidden="false" targetId="fe48-5587-1fca-a3c2" type="profile"/>
-            <infoLink id="e40c-d2b3-7a29-df96" name="Critical Hit (Ascalon*)" hidden="false" targetId="0b56-850d-a3b4-376c" type="rule"/>
-            <infoLink id="baf6-24b4-1a79-c10a" name="Ignore Cover" hidden="false" targetId="0c8c-0dee-e0e3-4837" type="rule"/>
-            <infoLink id="55bf-506d-1d35-39fa" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="b953-825a-1332-4a02" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
-            <infoLink id="2d3b-4ba3-ff2e-5757" name="Critical Hits" hidden="false" targetId="f048-04fb-786f-b4e5" type="rule"/>
-            <infoLink id="7d4b-38dd-94f3-64d0" name="Damage Capacity" hidden="false" targetId="b2d2-de55-191a-358d" type="rule"/>
-            <infoLink id="e71d-f019-766b-b21f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
+            <infoLink id="77fc-3b83-3fcc-5a89" name="Ascalon Inferno Gun" hidden="false" targetId="cd7a-c0b7-09cb-7637" type="profile"/>
+            <infoLink id="6eef-f70d-7a25-edfc" name="Placeholder (Ascalon*)" hidden="false" targetId="4369-49bb-6283-1f0c" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="125.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2503,14 +2494,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="693c-52d4-7af3-f7c1" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="8c64-c4a6-7fc4-5e43" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="32c0-8b95-979c-767a" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="7db7-6003-b164-acae" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="b53f-1e80-9b87-9b8d" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="6c6a-9987-c0e1-46aa" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="b054-9a81-c621-f8ae" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="f0e3-73b0-08d5-b721" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="8f5f-5a4f-3413-3fd9" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3367,14 +3357,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="7006-a381-af76-51cd" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="7f5b-a91a-2910-da25" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="453a-b8bb-d7e7-799d" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="03ce-56f4-5136-51a3" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="fc8c-28e9-4464-674e" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="7030-d66d-acd8-2931" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="a12d-586f-2e8e-0ef0" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="8c5e-ecb0-2e00-2e78" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="5bfd-c5eb-cc6a-d869" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -4516,7 +4505,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="100.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
             <cost name="Transport units" typeId="9b58-ba34-d974-341c" value="1.0"/>
             <cost name="Assault Claw space" typeId="53ea-b6c5-c500-fb0e" value="4.0"/>
@@ -5723,54 +5712,6 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="071e-1248-4c03-638b" name="Upgrades" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cbd-4a6f-f188-9997" type="max"/>
-          </constraints>
-          <entryLinks>
-            <entryLink id="a48b-714e-df95-feab" name="Centurion" hidden="false" collective="false" import="true" targetId="839d-c809-7edd-2efd" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="212c-5bec-0a5e-58b0" value="0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="212c-5bec-0a5e-58b0" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="ca30-b465-7fad-0156" name="Centurion" hidden="true" collective="false" import="true" targetId="6cd5-1fc8-ad5b-8711" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="4f88-ec2a-328a-2383" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5abe-114a-26c1-466f" type="atLeast"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f88-ec2a-328a-2383" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="b5ec-97ac-0cdd-3c46" name="Hyperios" hidden="false" collective="false" import="true" targetId="b7c4-f844-14b7-809b" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4630-6a89-2e9f-e4e1" type="max"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -7812,14 +7753,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="e7c5-bca2-8e9f-697a" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="2479-559a-0a79-52c7" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="9956-6928-d7ea-ca6e" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="23ad-9055-034f-562f" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="8aa3-044d-10db-f0f8" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="6100-ceb6-d3bd-065d" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="1f19-8e08-01c7-eb6a" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="9d44-46a5-2c3a-c4d7" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="3c6d-7fb4-fa68-aeab" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -8118,12 +8058,8 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 <modifier type="append" field="4e39-030c-4e18-12e0" value="Inversion Beamer"/>
               </modifiers>
             </infoLink>
-            <infoLink id="f11b-d161-3f89-8280" name="Inversion Beamer" hidden="false" targetId="a0a0-e893-2628-7854" type="profile"/>
-            <infoLink id="c80c-aea0-1ada-2a4e" name="Disrupt" hidden="false" targetId="e9e3-ad45-1546-7db4" type="rule"/>
-            <infoLink id="502c-ea62-c4c3-aefd" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-            <infoLink id="80bc-dd45-65b6-e050" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="0cb3-8c7a-3a60-3b0c" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="5428-7227-290a-d075" name="Walker" hidden="false" targetId="f378-6c2c-d474-1f3d" type="rule"/>
+            <infoLink id="c574-fa72-1912-33d8" name="Inversion Beamer" hidden="false" targetId="bb61-826e-d8b1-b4c9" type="profile"/>
+            <infoLink id="a9c3-11e3-6a08-d313" name="Placeholder (Saturnine Dreadnought*)" hidden="false" targetId="eef6-5f28-546d-1824" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="f621-165c-8260-88a8" name="Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="b3bc-17a7-9c92-e9fa">
@@ -8137,7 +8073,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ad0-710b-7ee7-2f12" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="4c8f-9ca3-03f6-e83e" name="Heavy Plasma Bombard" hidden="false" targetId="3746-bbe9-0b04-1312" type="profile"/>
+                    <infoLink id="20f0-50f7-e7fd-d610" name="Heavy Plasma Bombard" hidden="false" targetId="f6ab-165c-d484-c18b" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8148,7 +8084,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc11-1317-4908-c7aa" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="bf30-5391-7bd9-dba9" name="Graviton Pulveriser" hidden="false" targetId="8d03-4d15-05b2-c5ce" type="profile"/>
+                    <infoLink id="87f2-0aeb-7f2b-2853" name="Graviton Pulveriser" hidden="false" targetId="6eac-127d-7795-68ae" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8158,7 +8094,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="90.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
             <cost name="Transport units" typeId="9b58-ba34-d974-341c" value="1.0"/>
             <cost name="Assault Claw space" typeId="53ea-b6c5-c500-fb0e" value="4.0"/>
@@ -8346,13 +8282,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                 </modifier>
               </modifiers>
             </infoLink>
-            <infoLink id="7faf-84c0-dda4-5423" name="Indirect Fire" hidden="false" targetId="392f-db6b-487f-fe1a" type="rule"/>
-            <infoLink id="5294-714a-7304-81f4" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-            <infoLink id="ece4-58ce-c2d5-326e" name="Reinforced Armour" hidden="false" targetId="4927-be7a-ebf9-a1cf" type="rule"/>
-            <infoLink id="bec8-6c7e-74fb-09e3" name="Thick Rear Armour" hidden="false" targetId="c562-9990-f721-32fb" type="rule"/>
-            <infoLink id="25c2-eb80-eed1-252b" name="Assault Weapons" hidden="false" targetId="5d5a-3534-a8bf-4935" type="rule"/>
-            <infoLink id="5754-2b86-f9f2-b2b8" name="EA" hidden="false" targetId="4b49-c4e2-b896-4689" type="rule"/>
-            <infoLink id="41d8-1e24-7cb4-5efa" name="MW" hidden="false" targetId="cdd5-87d5-df9f-9349" type="rule"/>
+            <infoLink id="18be-48a7-d0ac-450e" name="Placeholder (Saturnine Terminators*)" hidden="false" targetId="3dc7-f0b6-bede-3340" type="rule"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup id="ab13-0426-964a-b92a" name="Weapon 1" hidden="false" collective="false" import="true" defaultSelectionEntryId="9bcd-18f5-0c95-9c27">
@@ -8366,7 +8296,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6969-b5c6-0749-70ca" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="2a2a-07fa-6d1d-c3a2" name="Plasma Bombards" hidden="false" targetId="38c3-98cc-a7a0-68d7" type="profile"/>
+                    <infoLink id="d331-3659-5975-2b3a" name="Plasma Bombards" hidden="false" targetId="8fe0-865a-9377-f3e1" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8377,7 +8307,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f481-60f7-29e2-eabb" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="5a6a-5a41-33ec-44fc" name="Twin Heavy Disintegrators" hidden="false" targetId="7dd8-77de-88f7-9a80" type="profile"/>
+                    <infoLink id="1a2f-dd3f-abb6-3240" name="Twin Heavy Disintegrators" hidden="false" targetId="f37b-2523-f0ba-cca4" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8388,7 +8318,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfdd-26f3-4c05-6ed0" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="ca1e-ffd8-1612-2ef0" name="Disruption Fists" hidden="false" targetId="be13-feba-95df-6898" type="profile"/>
+                    <infoLink id="6573-a143-8a7f-7637" name="Disruption Fists" hidden="false" targetId="0902-28a5-7a7d-fec1" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8407,7 +8337,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a00-5650-f20c-b932" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="68f7-8949-f9bb-66cf" name="Plasma Bombards" hidden="false" targetId="38c3-98cc-a7a0-68d7" type="profile"/>
+                    <infoLink id="0d01-5062-e5f5-f5dd" name="Plasma Bombards" hidden="false" targetId="8fe0-865a-9377-f3e1" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8418,7 +8348,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88b7-2885-acb2-7afb" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="2bd8-309d-af3e-9e4f" name="Twin Heavy Disintegrators" hidden="false" targetId="7dd8-77de-88f7-9a80" type="profile"/>
+                    <infoLink id="b446-ce1e-69a6-5051" name="Twin Heavy Disintegrators" hidden="false" targetId="f37b-2523-f0ba-cca4" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8429,7 +8359,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e7b-5da6-3d7f-8a1b" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="6c0b-a9cb-b40c-7294" name="Disruption Fists" hidden="false" targetId="be13-feba-95df-6898" type="profile"/>
+                    <infoLink id="5855-89c4-707e-2e62" name="Disruption Fists" hidden="false" targetId="0902-28a5-7a7d-fec1" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -8439,7 +8369,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
-            <cost name="pts" typeId="points" value="85.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
             <cost name="Transport space" typeId="f52a-9ea6-2bb3-2a37" value="2.0"/>
             <cost name="Transport units" typeId="9b58-ba34-d974-341c" value="1.0"/>
             <cost name="Assault Claw space" typeId="53ea-b6c5-c500-fb0e" value="2.0"/>
@@ -11038,14 +10968,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="4ccb-7927-d43d-afac" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="0615-4640-607d-1867" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="0711-dcd4-9bb5-0f75" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="9388-f0fd-db59-2a96" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="e994-2c3d-653a-74bd" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="b2ce-4ad3-893d-553a" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="1088-b4d7-0ba2-5a0e" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="6306-20bd-8c46-cb29" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="3718-decd-651c-cc12" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -11771,7 +11700,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e007-dd5f-ed2c-e996" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="241a-3a53-47b3-b130" name="TL Lascannon" hidden="false" targetId="79c9-c90e-b274-97bd" type="profile"/>
+                    <infoLink id="b3d9-2feb-fde5-d465" name="TL Lascannon" hidden="false" targetId="82a4-cd9d-699e-1f44" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -11812,7 +11741,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="125.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f893-1109-8d27-58a1" name="Legion Terminator Detachment" hidden="false" collective="false" import="true" type="unit">
@@ -12717,14 +12646,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="2e8f-f917-06e8-ba4f" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="69fa-4360-11ec-962b" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="9858-ef03-5825-944b" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="0bd0-b45b-e050-ad08" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="8981-3f09-448b-e658" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="b94d-b8b9-35e5-3b02" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="95af-c914-cc26-9517" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="7ccc-b093-f0f9-e970" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="6063-9dc6-19ce-6a69" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -17654,14 +17582,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="a9ab-431f-3dd1-b045" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="80a2-20a3-03fe-26c7" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="5dc3-91b4-2378-dc90" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="242c-9c78-48c1-1e77" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="613c-9569-3235-aaad" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="65fa-6249-60f7-9059" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="cab0-10a8-139f-c874" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="65cc-e666-eeb2-bc6c" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="f4d6-5b8f-2944-3aca" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -23531,14 +23458,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="0189-7a14-e262-5f2e" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="22f5-b65f-f575-2d50" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="ac5a-5476-646a-ca63" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="0c8c-dfca-322d-80bc" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="c214-72d9-8606-91d4" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="310f-c0c7-9b76-2ca4" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="6807-32c6-20f8-7d40" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="c82c-dfad-4991-01e0" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="6255-aaa6-7a74-baff" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -29790,14 +29716,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="946e-8d45-36cd-654b" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="9bf8-f3ba-75dd-d117" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="47cf-16da-ec09-3646" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="05c7-f98d-c955-f881" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="1b3d-aca4-5aed-82d2" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="bba3-fde9-b314-d10f" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="7d9c-af12-f83a-20c3" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="1fdc-3faa-c9fb-a491" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="c5f8-6cde-032a-b063" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -30083,14 +30008,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="8d7a-13d5-5262-6239" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="bc88-7074-6c1b-d26c" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="b650-d32a-e45f-a028" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="2f29-22d3-89a4-9199" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="6c39-d3fc-5ce7-193a" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="2161-689c-ed31-afbe" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="4341-5131-0eb2-f5d4" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="ed72-d065-90a8-8604" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="cf86-6729-4c1e-c32e" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -30352,14 +30276,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="0652-7288-40f8-2503" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="b9df-aea0-c6c6-1991" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="53d6-63c7-372d-afb3" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="af66-b168-ecb9-1b3a" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="eef7-8231-0db9-41f6" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="a274-6bb7-17dd-8076" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="e7db-da9d-b70e-ca88" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="83cc-816a-0a63-cc33" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="86c2-a095-057f-c7c7" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -33147,14 +33070,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="69b7-e2b7-eb55-8a02" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="be44-1683-a62d-e8c1" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="e06d-81c0-f3c2-0e26" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="d84e-e2ba-45d7-b098" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="78e7-1088-215c-b977" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="a711-0bc4-e243-83a9" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="7aea-25c5-efd9-a5cb" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="8af9-ed49-60a0-f7da" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="b238-5cdb-d336-6dec" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -33741,14 +33663,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="8571-adec-579e-d608" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="ecfb-f81d-3154-daef" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="d766-bc6a-6674-28c7" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="ba37-77cf-0158-e241" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="7537-6a2e-6331-1229" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="f720-75e9-c474-bf6e" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="70a6-c0ea-4a3e-9613" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="3733-f203-1b2e-8cb0" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="1d47-3e5f-6574-eba2" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -36211,14 +36132,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="c8c6-7cec-4ebc-781d" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="79fa-067f-c23a-4157" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="3f03-173b-25d8-6617" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="8de1-1b63-bee1-a2e4" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="1696-9f60-92c0-a176" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="1f88-5bb4-dbec-3b1e" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="ee4b-310e-8854-ea9e" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="49d0-1f1f-fac0-8bb1" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="4dae-df9a-22ab-b27c" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -38865,14 +38785,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="539a-e87a-bc93-87be" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="5145-f094-c015-1b85" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="ede2-7b60-d7fe-ed37" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="6e4a-09ff-26ea-00c0" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="b8ff-8bb4-649d-2999" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="fc46-0087-c005-0585" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="cf6f-f98b-c88f-8765" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="f598-e7f1-5fb3-9e24" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="3e52-edec-4b25-1aab" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -39270,14 +39189,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="9e9c-974d-9585-1c8a" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="542b-a21c-99c1-7d17" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="d244-62c2-0665-7fb2" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="f84b-b6b3-a29e-70f8" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="fe81-94fd-7e15-25e6" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="3bf2-1059-77fc-9e2b" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="54f1-b42c-ca18-1d50" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="9310-849d-f55c-0290" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="d6de-ab46-f282-930b" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -40216,14 +40134,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="9c77-ea0b-1664-820c" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="6bdc-ff14-a3ca-0024" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="1df0-7d2e-f8de-b089" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="7bab-d353-e9a9-70f8" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="03fc-2f70-36b6-8026" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="5c0d-ca34-70d4-3e4e" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="e046-c4e2-5b30-3f3a" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="2c7a-4ccd-4142-23d9" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="de75-ba7a-57b1-5d25" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -42406,14 +42323,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="2515-748d-914b-f0e8" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="5de1-334e-857f-f9fd" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="1227-d00d-07b4-2b03" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="cc98-757c-6cf8-d213" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="c734-2569-79b0-7e3f" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="f6b5-a142-64a1-11b7" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="5527-eddb-209d-7d22" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="52e1-1378-7113-f08e" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="bd92-6f81-9b91-051f" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -44642,14 +44558,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="5ae0-052a-39f3-56b0" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="367d-a410-61ab-4f5c" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="50e8-b270-e6b1-85e9" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="136a-5eed-1407-def0" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="77a3-313b-bf42-3262" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="867d-78b8-4a0b-85ad" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="d264-08b1-25af-fe00" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="32bd-2157-cdd2-107b" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="1543-0b51-aa15-205d" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -52595,14 +52510,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="51e8-734b-0000-a769" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="ef3d-f5ea-c05e-4b8a" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="d10c-776d-c9ea-f9b1" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="24ad-7481-dd07-c525" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="fa3d-f770-cb72-2062" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="e6c7-7c66-a905-3564" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="78da-3d00-49c3-fbd5" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="62a2-9b16-e9c7-826f" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="7aa0-7019-a146-9cbe" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -53114,14 +53028,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="2c94-6729-5c5d-5659" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="7fec-412c-a2d2-661a" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="6772-22da-02e1-e868" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="b85c-b2e0-37da-f287" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="f9d1-abe5-ebcd-8b80" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="ae10-b16e-af92-d55d" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="ff26-0502-49af-c73e" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="b34f-f391-93d8-54bd" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="7513-07d4-3a20-2560" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -56137,14 +56050,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="4ddf-917d-57bf-e190" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="5052-e3b7-2bff-44d4" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="9c4f-dd9a-b579-1a42" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="cacd-c31e-5e2d-73c6" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="2161-e402-d694-3f2d" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="7505-9961-6bdb-594d" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="9ff4-682a-baf4-0f38" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="2f25-8feb-5bb0-1730" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="5c6e-af32-555d-3b37" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -57666,14 +57578,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="06d8-2346-6f78-5c5f" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="f3fa-675a-503b-b675" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="7d51-9518-beaf-c4f4" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="7bd1-3574-0113-6792" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="a1dd-22ac-0024-4e29" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="6d5f-c7bb-e312-ea36" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="33c4-86dc-001b-faf4" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="a4b6-28f6-37f5-f9f7" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="bc23-c1c8-45e2-6139" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -59070,14 +58981,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="7776-0c71-1e9a-99bf" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="8f0e-cddc-bbec-4b53" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="0d7d-20cf-3141-16ff" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="31db-49a4-03cb-3327" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="1935-2322-eb79-e83c" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="c3e8-f796-df88-a367" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="f726-70bf-a862-f282" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="8348-2026-ea13-9a9d" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="394a-6753-32f8-9cdf" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -61411,14 +61321,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
                         <selectionEntry id="9f3f-7196-d0d5-d508" name="Termite Assault Drill*" hidden="false" collective="false" import="true" type="model">
                           <infoLinks>
                             <infoLink id="1c60-e7b7-c994-03fe" name="Termite Assault Drill*" hidden="false" targetId="d030-8cdc-d1b4-5ed1" type="profile"/>
-                            <infoLink id="351d-377e-e91d-d6c0" name="Twin-linked Bolters" hidden="false" targetId="8e8b-c1b8-a682-4033" type="profile"/>
+                            <infoLink id="0100-62a4-00c6-f80c" name="Twin-linked Bolters" hidden="false" targetId="20ad-287b-bab7-62d5" type="profile"/>
                             <infoLink id="9654-f599-4f7b-5c04" name="Transport (Termite Assault Drill*)" hidden="false" targetId="7c43-0379-c0de-aba8" type="rule"/>
+                            <infoLink id="fa6a-77a5-2334-cd78" name="Placeholder (Termite Assault Drill*)" hidden="false" targetId="889f-575b-a681-da7f" type="rule"/>
                             <infoLink id="728d-89da-ce7c-aaa4" name="Transport" hidden="false" targetId="3f9e-9cb4-20b7-6736" type="rule"/>
-                            <infoLink id="ac15-ac4f-8790-d838" name="Tunneler" hidden="false" targetId="4b9d-5436-fff5-c88c" type="rule"/>
-                            <infoLink id="611a-3c82-f16c-53db" name="Small Arms" hidden="false" targetId="b2c9-ae47-ce23-0fa6" type="rule"/>
                           </infoLinks>
                           <costs>
-                            <cost name="pts" typeId="points" value="30.0"/>
+                            <cost name="pts" typeId="points" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -63142,14 +63051,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
     <selectionEntry id="0c76-eba3-66ad-a127" name="Palisade Drop Pod*" hidden="false" collective="false" import="true" type="upgrade">
       <rules>
         <rule id="8ea4-62fe-8ba8-4b81" name="Palisade Drop Pod*" hidden="false">
-          <description>Only with Drop Assault. One of the formation's Drop Pods is a Palisade: once it lands, units of the formation within 15cm of it have a 6+ Invulnerable Save while they stay in range.</description>
+          <description>Only with Drop Assault. One of the formation's Drop Pods is a Palisade. Placeholder: its rules are to be written.</description>
         </rule>
       </rules>
-      <infoLinks>
-        <infoLink id="b407-acd6-d91f-2316" name="Invulnerable Save" hidden="false" targetId="3826-e379-3e86-c292" type="rule"/>
-      </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="25.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="abc6-9fb7-022e-9fba" name="Praetor" hidden="false" collective="false" import="true" type="upgrade">
@@ -64017,11 +63923,23 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="0b56-850d-a3b4-376c" name="Critical Hit (Ascalon*)" hidden="false">
-      <description>Unit is destroyed and all units within 5cm suffer a standard hit on a 6+.</description>
-    </rule>
     <rule id="e3e0-54f2-b512-f299" name="Critical Hit (Spartan Assault Tank)" hidden="false">
       <description>Unit is destroyed and all units within 5cm suffer a standard hit on a 6+.</description>
+    </rule>
+    <rule id="fccb-36a7-c2af-e6c4" name="Placeholder (Araknae Weapons Platform*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="4369-49bb-6283-1f0c" name="Placeholder (Ascalon*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="eef6-5f28-546d-1824" name="Placeholder (Saturnine Dreadnought*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="3dc7-f0b6-bede-3340" name="Placeholder (Saturnine Terminators*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
+    <rule id="889f-575b-a681-da7f" name="Placeholder (Termite Assault Drill*)" hidden="false">
+      <description>Stats to be written.</description>
     </rule>
     <rule id="9a78-0401-231a-016b" name="Slow and Steady (Battle Barge)" hidden="false">
       <description>May not be used on the first turn of a battle unless the scenario specifically says otherwise.</description>
@@ -64306,10 +64224,10 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
     <profile id="52dc-fa4f-a24a-57e4" name="Araknae Weapons Platform*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">LV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">Immobile</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
@@ -64344,24 +64262,24 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Spicula Rocket System, Heavy Bolter</characteristic>
       </characteristics>
     </profile>
-    <profile id="fe48-5587-1fca-a3c2" name="Ascalon Inferno Gun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="cd7a-c0b7-09cb-7637" name="Ascalon Inferno Gun" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm AND (15cm)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP3+/AT6+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover AND (small arms) Ignore Cover</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="ff97-e43c-2cdb-6171" name="Ascalon*" hidden="false" typeId="a3a4-6088-7144-07b6" typeName="War Engine">
       <characteristics>
         <characteristic name="Type" typeId="060e-c5b1-5155-b844">WE</characteristic>
-        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">25cm</characteristic>
-        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">4+</characteristic>
-        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">5+</characteristic>
-        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">4+</characteristic>
+        <characteristic name="Speed" typeId="f5e6-b542-20ce-5e5f">-</characteristic>
+        <characteristic name="Armour" typeId="4dec-9e47-21ab-b418">-</characteristic>
+        <characteristic name="CC" typeId="720d-edd1-f5f0-6a73">-</characteristic>
+        <characteristic name="FF" typeId="6aea-f6b7-e754-4fea">-</characteristic>
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e">Ascalon Inferno Gun</characteristic>
-        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">3</characteristic>
+        <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">-</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">See rules</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">-</characteristic>
       </characteristics>
     </profile>
     <profile id="fa50-ed38-aefc-8e58" name="Assault Grenade Launchers" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -64786,11 +64704,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Assault Launcher</characteristic>
       </characteristics>
     </profile>
-    <profile id="be13-feba-95df-6898" name="Disruption Fists" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="0902-28a5-7a7d-fec1" name="Disruption Fists" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(base contact)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(assault weapons) MW</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">EA(+1)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="bdf6-dea6-996a-a3eb" name="Dreadhammer Siege Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -65116,11 +65034,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">EA(+1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="8d03-4d15-05b2-c5ce" name="Graviton Pulveriser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="6eac-127d-7795-68ae" name="Graviton Pulveriser" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP3+/AT4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Disrupt</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="a6fc-45bf-0053-7d31" name="Graviton Weapons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -65230,11 +65148,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover AND (small arms) Ignore Cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="3746-bbe9-0b04-1312" name="Heavy Plasma Bombard" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="f6ab-165c-d484-c18b" name="Heavy Plasma Bombard" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 x AP4+/AT5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="81ca-80a2-fd8e-61d9" name="Heavy Support Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -65351,10 +65269,10 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Ignore Cover, EA(+1)</characteristic>
       </characteristics>
     </profile>
-    <profile id="a0a0-e893-2628-7854" name="Inversion Beamer" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="bb61-826e-d8b1-b4c9" name="Inversion Beamer" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP5+/AT4+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -65486,7 +65404,7 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Weapons" typeId="8053-23b9-7271-666e"></characteristic>
         <characteristic name="Damage Capacity" typeId="4829-b112-1d5a-a2af">2</characteristic>
         <characteristic name="Void Shields" typeId="008c-819b-8cb1-5aad">-</characteristic>
-        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Unit is destroyed.</characteristic>
+        <characteristic name="Critical Hit" typeId="1acb-7796-a6da-6469">Placeholder, to be written.</characteristic>
       </characteristics>
     </profile>
     <profile id="724f-45cb-0d03-92d4" name="Kyzagan Assault Speeder" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -65935,11 +65853,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
       </characteristics>
     </profile>
-    <profile id="b70f-d62f-1ef0-af9f" name="Orias Heavy Frag Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="8bd4-d8ff-62da-fd12" name="Orias Heavy Frag Missiles" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2 BP</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire, Single Shot</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="c686-5145-9b77-401a" name="Outrider Squad" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
@@ -66020,11 +65938,11 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW, Slow Firing, FxF</characteristic>
       </characteristics>
     </profile>
-    <profile id="38c3-98cc-a7a0-68d7" name="Plasma Bombards" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="8fe0-865a-9377-f3e1" name="Plasma Bombards" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT5+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Indirect Fire</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="5e0f-01f6-ef47-e7a4" name="Plasma Burners" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -66199,10 +66117,10 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Flame Projector</characteristic>
       </characteristics>
     </profile>
-    <profile id="f35b-2cd5-3fa2-b812" name="Quad Accelerator Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="e4c2-5879-21eb-64ff" name="Quad Accelerator Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">3 x AP4+/AT5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
@@ -66386,20 +66304,20 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
     <profile id="b6b0-f0bb-1c97-a28c" name="Saturnine Dreadnought*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">3+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">5+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">4+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
     <profile id="d473-d806-8dae-5a90" name="Saturnine Terminators*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">INF</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">4+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">4+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">3+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0"></characteristic>
       </characteristics>
     </profile>
@@ -66759,6 +66677,13 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
+    <profile id="82a4-cd9d-699e-1f44" name="TL Lascannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
     <profile id="0368-af37-c41a-2caa" name="TL Lascannons" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
@@ -66858,10 +66783,10 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
     <profile id="d030-8cdc-d1b4-5ed1" name="Termite Assault Drill*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">15cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">5+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin-linked Bolters</characteristic>
       </characteristics>
     </profile>
@@ -66998,24 +66923,24 @@ Disruptive allies: Imperial Militia, Solar Auxilia, Mechanicum Taghmata, Knight 
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="7dd8-77de-88f7-9a80" name="Twin Heavy Disintegrators" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="f37b-2523-f0ba-cca4" name="Twin Heavy Disintegrators" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">15cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT4+</characteristic>
-        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">MW</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c1f6-fa93-962a-e537" name="Twin Punisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">4 x AP3+/AT6+/AA5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="8e8b-c1b8-a682-4033" name="Twin-linked Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="f865-a2f2-a5f0-2614" name="Twin Punisher Cannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">(15cm)</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">(small arms)</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="20ad-287b-bab7-62d5" name="Twin-linked Bolters" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>

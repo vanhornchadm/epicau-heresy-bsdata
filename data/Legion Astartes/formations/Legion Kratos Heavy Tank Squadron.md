@@ -1,9 +1,6 @@
 ---
 slot: support
 cost: 0
-upgrades:
-  - Centurion
-  - Hyperios
 fan-made: true
 ---
 # Legion Kratos Heavy Tank Squadron
@@ -15,4 +12,4 @@ fan-made: true
 ## Sources
 
 - Dakka Dakka Kratos proposal: formation, stat line, weapons and points
-- Derived from EpicAU units: critical hit and upgrades, as on the other Legion tank squadrons
+- Placeholder: the critical hit and upgrades were designed for this data; the formation has no upgrades until they are written

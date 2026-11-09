@@ -1,5 +1,5 @@
 ---
-cost: 25
+cost: 0
 fan-made: true
 ---
 # Cyclops Battery
@@ -10,4 +10,4 @@ fan-made: true
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against EpicAU units
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

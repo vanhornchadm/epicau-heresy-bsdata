@@ -7,19 +7,18 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| AV | 15cm | 5+ | 6+ | 5+ |
+| AV | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Twin-linked Bolters | (15cm) | (small arms) |
+| Twin-linked Bolters | - | - |
 
 ## Notes
 
-Tunneler. Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator.
+Transport: May carry 2 of the following units Tactical, Breacher, Assault OR 1 Terminator. Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against EpicAU transports
-- Net Epic Armageddon rulebook: the Tunneler rule (2.1.23), as on the Squat Termite
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

@@ -1,6 +1,6 @@
 ---
 slot: support
-cost: 150
+cost: 0
 extra-upgrades:
   - Legate Commander
 fan-made: true
@@ -13,4 +13,4 @@ fan-made: true
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Militia Sentinel
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

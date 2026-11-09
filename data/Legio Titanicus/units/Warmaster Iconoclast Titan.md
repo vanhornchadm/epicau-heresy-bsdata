@@ -9,19 +9,19 @@ replaced-rows:
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| WE | 20cm | 4+ | 3+ | 3+ |
+| WE | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Desolator Chainsword | (base contact) | (assault weapons) EA(+3), TK(D3) |
-| Cruciator Gatling Array | 45cm | 6 x AP4+/AT5+, Fwd |
-| Kirus Siege Drill OR Kirus Grav Imploder | - | 1 x Arm |
+| Desolator Chainsword | - | - |
+| Cruciator Gatling Array | - | - |
+| Kirus Siege Drill OR Kirus Grav Imploder | - | - |
 
 ## Notes
 
-DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. May step over impassable terrain or dangerous terrain that is lower than the titan's knees and no greater than 2cm wide. Critical Hit: Roll a D6 in the end phase for the remainder of the game, on a 1, the Titan's reactor explodes, destroying it completely and hitting all units within 5cm on a standard 4+ to hit, on a 2-3, the Titan loses a point of DC, 4-6 the reactor is repaired.
+Placeholder: stats to be written.
 
 ## Titan weapons
 
@@ -31,4 +31,4 @@ DC 10, 7 Void Shields, Fearless, Reinforced Armour, Walker, Cortex Controller. M
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the Warmaster
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="22" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e98-d50b-da40-11e0" name="EpicAU - Imperial Militia" revision="23" battleScribeVersion="2.03" authorName="EpicAU Horus Heresy (community) - BSData conversion" authorContact="" authorUrl="https://web.archive.org/web/20201111221247/http://epicau.com/mw/index.php/Main_Page" library="false" gameSystemId="5924-e3fb-5543-3044" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="8149-95da-d7f3-bbe3" name="Imperial Militia" hidden="false">
       <rules>
@@ -296,16 +296,17 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
           </constraints>
           <infoLinks>
             <infoLink id="e028-c76e-f5ab-2518" name="Auxilia Hydra*" hidden="false" targetId="e751-33a2-4043-7010" type="profile"/>
-            <infoLink id="5ae1-eade-09e0-5d5c" name="Heavy Bolter" hidden="false" targetId="d7a9-5a74-a6d3-607a" type="profile"/>
+            <infoLink id="c1f5-ce55-b5fe-0164" name="Heavy Bolter" hidden="false" targetId="9bea-f2b2-a3c9-adf9" type="profile"/>
+            <infoLink id="f042-1853-6206-9220" name="Placeholder (Auxilia Hydra*)" hidden="false" targetId="23e4-b5bc-3bdb-c27f" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry id="7a1c-a398-493f-d842" name="Twin Hydra Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="87f0-e7b9-d93b-8afa" name="Twin Hydra Autocannon" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dbd-b3fa-b2f6-77fa" type="min"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afa2-3b8d-a615-c504" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b09e-9e52-70cb-e3e7" type="min"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b88f-5f6e-e8ef-c5b6" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="b4ca-7d26-e23e-bc1e" name="Twin Hydra Autocannon" hidden="false" targetId="b88f-b2ae-d800-ca85" type="profile"/>
+                <infoLink id="bdd8-5828-dfa6-3202" name="Twin Hydra Autocannon" hidden="false" targetId="d25d-e8e1-ba7e-847c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -325,7 +326,7 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="150.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fe2-194e-57f2-4cd2" name="Auxilia Heavy Ordnance Battery" hidden="false" collective="false" import="true" type="unit">
@@ -4052,6 +4053,9 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <rule id="913c-8006-a6f4-b598" name="Critical Hit (Auxilia Stormhammer)" hidden="false">
       <description>Destroyed. any units within 5cm of the model suffer a hit on a roll of 6+.</description>
     </rule>
+    <rule id="23e4-b5bc-3bdb-c27f" name="Placeholder (Auxilia Hydra*)" hidden="false">
+      <description>Stats to be written.</description>
+    </rule>
     <rule id="1501-61e2-ff5b-e8f6" name="Slow and Steady (Emperor Class Battleship)" hidden="false">
       <description>May not be used on the first two turns of a battle unless the scenario specifically says otherwise.</description>
     </rule>
@@ -4124,10 +4128,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
     <profile id="e751-33a2-4043-7010" name="Auxilia Hydra*" hidden="false" typeId="5e39-4dae-2d39-3e75" typeName="Unit">
       <characteristics>
         <characteristic name="Type" typeId="c497-e948-9495-63cc">AV</characteristic>
-        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">30cm</characteristic>
-        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">6+</characteristic>
-        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">6+</characteristic>
-        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">5+</characteristic>
+        <characteristic name="Speed" typeId="6644-be7b-6187-e2cd">-</characteristic>
+        <characteristic name="Armour" typeId="462a-a0d1-1868-59af">-</characteristic>
+        <characteristic name="CC" typeId="cc43-f6de-2798-fb59">-</characteristic>
+        <characteristic name="FF" typeId="5376-4e08-3028-9ae5">-</characteristic>
         <characteristic name="Weapons" typeId="4e39-030c-4e18-12e0">Twin Hydra Autocannon x2, Heavy Bolter</characteristic>
       </characteristics>
     </profile>
@@ -4335,6 +4339,13 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">30 cm</characteristic>
         <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">2BP</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">Fwd, Indirect, Single Shot</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9bea-f2b2-a3c9-adf9" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
+        <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
     <profile id="d7a9-5a74-a6d3-607a" name="Heavy Bolter" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
@@ -4735,10 +4746,10 @@ Allied Contingent: formations here count towards the primary army's Allies &amp;
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="b88f-b2ae-d800-ca85" name="Twin Hydra Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
+    <profile id="d25d-e8e1-ba7e-847c" name="Twin Hydra Autocannon" hidden="false" typeId="34e7-5c9b-31e6-d0ce" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">45cm</characteristic>
-        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">AP4+/AT5+/AA5+</characteristic>
+        <characteristic name="Range" typeId="4b89-f4f0-2a22-1135">-</characteristic>
+        <characteristic name="Firepower" typeId="75e3-c2c3-88a9-45ff">-</characteristic>
         <characteristic name="Notes" typeId="b5b6-fc7a-ca09-528c">-</characteristic>
       </characteristics>
     </profile>

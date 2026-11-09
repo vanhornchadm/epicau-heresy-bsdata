@@ -10,8 +10,8 @@ fan-made: true
 
 ## Composition
 
-- 4-6 [[Saturnine Terminators]], +85 pts each
+- 4-6 [[Saturnine Terminators]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against EpicAU Terminators
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

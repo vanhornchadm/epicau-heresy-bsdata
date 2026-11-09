@@ -11,8 +11,8 @@ only-with:
 
 ## Composition
 
-- 2-4 [[Serperos]], +125 pts each
+- 2-4 [[Serperos]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): Dark Mechanicum catalogue, converted against the EpicAU automata
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

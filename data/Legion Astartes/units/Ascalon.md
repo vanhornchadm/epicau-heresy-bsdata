@@ -7,18 +7,18 @@ fan-made: true
 
 | Type | Speed | Armour | CC | FF |
 |---|---|---|---|---|
-| WE | 25cm | 4+ | 5+ | 4+ |
+| WE | - | - | - | - |
 
 ## Weapons
 
 | Weapon | Range | Firepower |
 |---|---|---|
-| Ascalon Inferno Gun | 30cm AND (15cm) | 2 x AP3+/AT6+, Ignore Cover AND (small arms) Ignore Cover |
+| Ascalon Inferno Gun | - | - |
 
 ## Notes
 
-DC3, Reinforced Armour, Thick Rear Armour. Critical Hit: Unit is destroyed and all units within 5cm suffer a standard hit on a 6+
+Placeholder: stats to be written.
 
 ## Sources
 
-- Legions Imperialis (BSData): converted against the EpicAU Spartan and Knight-Acheron
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

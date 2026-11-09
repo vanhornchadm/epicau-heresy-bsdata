@@ -6,8 +6,8 @@ fan-made: true
 
 ## Adds
 
-- 1-4 [[Errax]], +50 pts each
+- 1-4 [[Errax]], +0 pts each
 
 ## Sources
 
-- Legions Imperialis (BSData): Dark Mechanicum catalogue, converted against the EpicAU automata
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written

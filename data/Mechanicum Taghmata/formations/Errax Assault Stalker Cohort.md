@@ -1,6 +1,6 @@
 ---
 slot: line
-cost: 250
+cost: 0
 upgrades:
   - Errax
   - Scintillax
@@ -16,4 +16,4 @@ only-with:
 
 ## Sources
 
-- Legions Imperialis (BSData): Dark Mechanicum catalogue, converted against the EpicAU automata
+- Placeholder: was converted from Legions Imperialis (BSData); its stats and points are to be written
